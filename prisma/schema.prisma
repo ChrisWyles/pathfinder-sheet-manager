@@ -1,0 +1,623 @@
+// Pathfinder Sheet Manager — data model
+//
+// Covers Pathfinder 1e and Spheres of Power characters. Library tables
+// (GameClass, Feat, Spell, Sphere, Talent, Item, Skill) hold shared rules
+// content; the seed adds a handful and `scripts/import-foundry.ts` bulk-loads
+// the rest from the Foundry VTT `pf1` system + Spheres module datasets.
+//
+// `data Json?` bags exist deliberately so the app can evolve system-specific
+// fields during early development without a migration for every tweak.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ---------------------------------------------------------------------------
+// Enums
+// ---------------------------------------------------------------------------
+
+enum RulesSystem {
+  PATHFINDER_1E
+  SPHERES_OF_POWER
+}
+
+enum UserRole {
+  USER
+  ADMIN
+}
+
+enum Ability {
+  STR
+  DEX
+  CON
+  INT
+  WIS
+  CHA
+}
+
+enum CreatureSize {
+  FINE
+  DIMINUTIVE
+  TINY
+  SMALL
+  MEDIUM
+  LARGE
+  HUGE
+  GARGANTUAN
+  COLOSSAL
+}
+
+enum Progression {
+  GOOD
+  POOR
+}
+
+enum BabProgression {
+  FULL
+  THREE_QUARTER
+  HALF
+}
+
+enum ItemType {
+  WEAPON
+  ARMOR
+  SHIELD
+  GEAR
+  CONSUMABLE
+  TOOL
+  WONDROUS
+  RING
+  ROD
+  STAFF
+  WAND
+  POTION
+  SCROLL
+  AMMUNITION
+  TREASURE
+  OTHER
+}
+
+enum WeaponCategory {
+  SIMPLE
+  MARTIAL
+  EXOTIC
+  NATURAL
+}
+
+enum ArmorCategory {
+  NONE
+  LIGHT
+  MEDIUM
+  HEAVY
+}
+
+enum SphereType {
+  MAGIC
+  MIGHT
+}
+
+enum RollKind {
+  ATTACK
+  DAMAGE
+  SAVE
+  SKILL
+  ABILITY_CHECK
+  INITIATIVE
+  CONCENTRATION
+  CUSTOM
+}
+
+// ---------------------------------------------------------------------------
+// Auth.js (NextAuth) — database session strategy via @auth/prisma-adapter
+// ---------------------------------------------------------------------------
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  role          UserRole  @default(USER)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  accounts   Account[]
+  sessions   Session[]
+  characters Character[]
+  rollLogs   RollLog[]
+
+  // Library content this user authored.
+  items    Item[]
+  feats    Feat[]
+  spells   Spell[]
+  spheres  Sphere[]
+  talents  Talent[]
+  classes  GameClass[]
+}
+
+model Account {
+  id                       String  @id @default(cuid())
+  userId                   String
+  type                     String
+  provider                 String
+  providerAccountId        String
+  refresh_token            String? @db.Text
+  access_token             String? @db.Text
+  expires_at               Int?
+  token_type               String?
+  scope                    String?
+  id_token                 String? @db.Text
+  session_state            String?
+  refresh_token_expires_in Int?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@index([userId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model VerificationToken {
+  identifier String
+  token      String
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+// ---------------------------------------------------------------------------
+// Characters
+// ---------------------------------------------------------------------------
+
+model Character {
+  id     String @id @default(cuid())
+  userId String
+
+  name     String
+  system   RulesSystem
+  race     String      @default("")
+  alignment String     @default("")
+  deity    String      @default("")
+  size     CreatureSize @default(MEDIUM)
+  gender   String      @default("")
+  age      Int?
+  notes    String      @default("")
+
+  xp        Int @default(0)
+  baseSpeed Int @default(30)
+
+  // Base (pre-modifier) ability scores. Racial / enhancement / inherent
+  // adjustments live in `abilityModifiers` and are applied by the derived-stat
+  // calculator, never written back here.
+  strength     Int @default(10)
+  dexterity    Int @default(10)
+  constitution Int @default(10)
+  intelligence Int @default(10)
+  wisdom       Int @default(10)
+  charisma     Int @default(10)
+
+  // { "enhancement": { "STR": 2 }, "inherent": { "CON": 1 }, ... }
+  abilityModifiers Json @default("{}")
+
+  // Hit points.
+  maxHp     Int @default(0)
+  currentHp Int @default(0)
+  tempHp    Int @default(0)
+  nonlethal Int @default(0)
+  hpRolls   Json @default("[]") // per-level hit die rolls: number[]
+
+  // Misc typed modifiers the calculator folds in, e.g.
+  // { "ac": { "natural": 1, "deflection": 1 }, "saves": { "fort": 1 }, "initiative": 2 }
+  modifiers Json @default("{}")
+
+  // Spheres of Power casting pool (null for straight PF1e characters).
+  spellPoints    Int?
+  maxSpellPoints Int?
+
+  // Discord delivery target for this character's rolls.
+  discordWebhookUrl   String?
+  discordWebhookLabel String?
+
+  // Flexible bag for system-specific state during early development.
+  data Json @default("{}")
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user       User                 @relation(fields: [userId], references: [id], onDelete: Cascade)
+  classes    CharacterClass[]
+  skillRanks CharacterSkillRank[]
+  feats      CharacterFeat[]
+  spells     CharacterSpell[]
+  spheres    CharacterSphere[]
+  talents    CharacterTalent[]
+  inventory  InventoryItem[]
+  rollLogs   RollLog[]
+
+  @@index([userId])
+}
+
+model CharacterClass {
+  id          String  @id @default(cuid())
+  characterId String
+  gameClassId String?
+
+  name              String
+  levels            Int     @default(1)
+  archetype         String  @default("")
+  isFavoredClass    Boolean @default(false)
+  hitDie            Int     @default(8)
+  skillRanksPerLevel Int    @default(2)
+  babProgression    BabProgression @default(THREE_QUARTER)
+  fortProgression   Progression    @default(POOR)
+  refProgression    Progression    @default(POOR)
+  willProgression   Progression    @default(POOR)
+
+  data Json @default("{}")
+
+  character Character  @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  gameClass GameClass? @relation(fields: [gameClassId], references: [id])
+
+  @@index([characterId])
+}
+
+model CharacterSkillRank {
+  id          String @id @default(cuid())
+  characterId String
+  skillId     String
+
+  ranks      Int     @default(0)
+  isClassSkill Boolean @default(false)
+  miscMod    Int     @default(0)
+  notes      String  @default("")
+
+  character Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  skill     Skill     @relation(fields: [skillId], references: [id])
+
+  @@unique([characterId, skillId])
+  @@index([characterId])
+}
+
+model CharacterFeat {
+  id          String  @id @default(cuid())
+  characterId String
+  featId      String?
+
+  name         String
+  takenAtLevel Int     @default(1)
+  notes        String  @default("")
+
+  character Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  feat      Feat?     @relation(fields: [featId], references: [id])
+
+  @@index([characterId])
+}
+
+model CharacterSpell {
+  id          String  @id @default(cuid())
+  characterId String
+  spellId     String?
+
+  name     String
+  level    Int     @default(0)
+  known    Boolean @default(true)
+  prepared Int     @default(0)
+  notes    String  @default("")
+
+  character Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  spell     Spell?    @relation(fields: [spellId], references: [id])
+
+  @@index([characterId])
+}
+
+model CharacterSphere {
+  id          String  @id @default(cuid())
+  characterId String
+  sphereId    String?
+
+  name  String
+  notes String  @default("")
+
+  character Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  sphere    Sphere?   @relation(fields: [sphereId], references: [id])
+
+  @@index([characterId])
+}
+
+model CharacterTalent {
+  id          String  @id @default(cuid())
+  characterId String
+  talentId    String?
+
+  name       String
+  sphereName String  @default("")
+  notes      String  @default("")
+
+  character Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  talent    Talent?   @relation(fields: [talentId], references: [id])
+
+  @@index([characterId])
+}
+
+model InventoryItem {
+  id          String  @id @default(cuid())
+  characterId String
+  itemId      String?
+
+  name       String
+  quantity   Int     @default(1)
+  weight     Float   @default(0)
+  costCp     Int     @default(0)
+  equipped   Boolean @default(false)
+  slot       String  @default("")
+  notes      String  @default("")
+
+  // Snapshot / overrides for custom or edited items so the sheet is stable
+  // even if the library entry later changes.
+  customData Json @default("{}")
+
+  character Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  item      Item?     @relation(fields: [itemId], references: [id])
+
+  @@index([characterId])
+}
+
+// ---------------------------------------------------------------------------
+// Library / catalog content
+// ---------------------------------------------------------------------------
+
+model GameClass {
+  id     String      @id @default(cuid())
+  system RulesSystem @default(PATHFINDER_1E)
+
+  name               String
+  hitDie             Int            @default(8)
+  babProgression     BabProgression @default(THREE_QUARTER)
+  fortProgression    Progression    @default(POOR)
+  refProgression     Progression    @default(POOR)
+  willProgression    Progression    @default(POOR)
+  skillRanksPerLevel Int            @default(2)
+  classSkills        String[]       @default([])
+  description        String         @default("")
+
+  source      String  @default("")
+  isSrd       Boolean @default(false)
+  createdById String?
+
+  data Json @default("{}")
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  createdBy       User?            @relation(fields: [createdById], references: [id])
+  features        ClassFeature[]
+  characterClasses CharacterClass[]
+
+  @@unique([system, name, source])
+  @@index([name])
+}
+
+model ClassFeature {
+  id      String @id @default(cuid())
+  classId String
+
+  name        String
+  level       Int    @default(1)
+  description String @default("")
+  data        Json   @default("{}")
+
+  gameClass GameClass @relation(fields: [classId], references: [id], onDelete: Cascade)
+
+  @@index([classId])
+}
+
+model Skill {
+  id     String      @id @default(cuid())
+  system RulesSystem @default(PATHFINDER_1E)
+
+  name              String
+  keyAbility        Ability
+  trainedOnly       Boolean @default(false)
+  armorCheckPenalty Boolean @default(false)
+  description       String  @default("")
+
+  source String  @default("")
+  isSrd  Boolean @default(false)
+
+  characterRanks CharacterSkillRank[]
+
+  @@unique([system, name])
+  @@index([name])
+}
+
+model Feat {
+  id String @id @default(cuid())
+
+  name          String
+  featTypes     String[] @default([]) // e.g. ["Combat", "Metamagic"]
+  prerequisites String   @default("")
+  benefit       String   @default("")
+  description   String   @default("")
+
+  source      String  @default("")
+  isSrd       Boolean @default(false)
+  createdById String?
+
+  data Json @default("{}")
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  createdBy      User?           @relation(fields: [createdById], references: [id])
+  characterFeats CharacterFeat[]
+
+  @@unique([name, source])
+  @@index([name])
+}
+
+model Spell {
+  id String @id @default(cuid())
+
+  name         String
+  school       String  @default("")
+  subschool    String  @default("")
+  descriptors  String[] @default([])
+  levels       Json     @default("{}") // { "wizard": 3, "cleric": 4 }
+  castingTime  String   @default("")
+  components   String   @default("")
+  range        String   @default("")
+  area         String   @default("")
+  duration     String   @default("")
+  savingThrow  String   @default("")
+  spellResistance String @default("")
+  description  String   @default("")
+
+  source      String  @default("")
+  isSrd       Boolean @default(false)
+  createdById String?
+
+  data Json @default("{}")
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  createdBy       User?            @relation(fields: [createdById], references: [id])
+  characterSpells CharacterSpell[]
+
+  @@unique([name, source])
+  @@index([name])
+}
+
+model Sphere {
+  id   String     @id @default(cuid())
+  type SphereType @default(MAGIC)
+
+  name        String
+  description String @default("")
+
+  source      String  @default("")
+  isSrd       Boolean @default(false)
+  createdById String?
+
+  data Json @default("{}")
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  createdBy        User?             @relation(fields: [createdById], references: [id])
+  talents          Talent[]
+  characterSpheres CharacterSphere[]
+
+  @@unique([name, source])
+  @@index([name])
+}
+
+model Talent {
+  id       String  @id @default(cuid())
+  sphereId String?
+
+  name          String
+  sphereName    String   @default("")
+  talentTypes   String[] @default([])
+  prerequisites String   @default("")
+  description   String   @default("")
+
+  source      String  @default("")
+  isSrd       Boolean @default(false)
+  createdById String?
+
+  data Json @default("{}")
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  createdBy        User?             @relation(fields: [createdById], references: [id])
+  sphere           Sphere?           @relation(fields: [sphereId], references: [id])
+  characterTalents CharacterTalent[]
+
+  @@unique([name, source])
+  @@index([name])
+}
+
+model Item {
+  id     String      @id @default(cuid())
+  system RulesSystem @default(PATHFINDER_1E)
+
+  name        String
+  type        ItemType @default(GEAR)
+  description String   @default("")
+  costCp      Int      @default(0)
+  weight      Float    @default(0)
+
+  // Weapon fields (null for non-weapons).
+  weaponCategory  WeaponCategory?
+  damage          String?
+  damageType      String?
+  critRange       Int?            @default(20)
+  critMultiplier  Int?            @default(2)
+  rangeIncrement  Int?
+
+  // Armor / shield fields (null for non-armor).
+  armorCategory   ArmorCategory?
+  acBonus         Int?
+  maxDexBonus     Int?
+  armorCheckPenalty Int?
+  spellFailure    Int?
+
+  source      String  @default("")
+  isSrd       Boolean @default(false)
+  createdById String?
+
+  data Json @default("{}")
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  createdBy     User?           @relation(fields: [createdById], references: [id])
+  inventoryRefs InventoryItem[]
+
+  @@unique([system, name, source])
+  @@index([name])
+  @@index([type])
+}
+
+// ---------------------------------------------------------------------------
+// Roll history
+// ---------------------------------------------------------------------------
+
+model RollLog {
+  id          String  @id @default(cuid())
+  characterId String
+  userId      String
+
+  kind       RollKind
+  label      String
+  expression String
+  total      Int
+  breakdown  Json     @default("{}") // { modifiers: [{ source, value }], ... }
+  dice       Json     @default("[]") // per-die results
+
+  discordDelivered Boolean @default(false)
+  discordError     String?
+
+  createdAt DateTime @default(now())
+
+  character Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([characterId, createdAt])
+}

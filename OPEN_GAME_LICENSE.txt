@@ -1,0 +1,21 @@
+OPEN GAME LICENSE VERSION 1.0a
+==============================
+
+This project distributes Open Game Content (see ATTRIBUTION.md for the
+Section 15 copyright notices and the data sources).
+
+The full, canonical text of the Open Game License v1.0a must accompany that
+content. It is intentionally NOT reproduced here by the code generator; add it
+before publishing a build that ships rules content.
+
+Get the canonical text from either:
+
+  - Paizo (PRD):   https://paizo.com/pathfinderRPG/prd/openGameLicense.html
+  - Open Gaming Foundation / d20 SRD
+
+Then replace everything below this line with that text, keeping the Section 15
+entries from ATTRIBUTION.md appended to Section 15.
+
+--------------------------------------------------------------------------------
+[ PASTE THE FULL TEXT OF THE OPEN GAME LICENSE v1.0a HERE ]
+--------------------------------------------------------------------------------
