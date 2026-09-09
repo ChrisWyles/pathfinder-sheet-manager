@@ -38,6 +38,9 @@ yarn-error.log*
 .env*
 !.env.example
 
+# neon cli — linked project context (contains project id)
+.neon
+
 # vercel
 .vercel
 

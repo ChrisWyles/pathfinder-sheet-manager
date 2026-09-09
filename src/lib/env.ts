@@ -7,7 +7,10 @@ import { z } from "zod";
  */
 const serverSchema = z.object({
   DATABASE_URL: z.url(),
+  // Unpooled connection for migrations. `DIRECT_URL` when set by hand;
+  // `DATABASE_URL_UNPOOLED` when provisioned by the Neon CLI (`neon deploy`).
   DIRECT_URL: z.url().optional(),
+  DATABASE_URL_UNPOOLED: z.url().optional(),
   AUTH_SECRET: z.string().min(1),
   AUTH_DISCORD_ID: z.string().min(1),
   AUTH_DISCORD_SECRET: z.string().min(1),

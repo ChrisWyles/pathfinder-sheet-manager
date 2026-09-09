@@ -1,4 +1,4 @@
-import "dotenv/config";
+import "../load-env";
 
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
@@ -34,7 +34,10 @@ const PACKS_DIR = flag("packs");
 const DRY_RUN = args.includes("--dry-run");
 
 const connectionString =
-  process.env.DIRECT_URL || process.env.DATABASE_URL || "";
+  process.env.DATABASE_URL ||
+  process.env.DIRECT_URL ||
+  process.env.DATABASE_URL_UNPOOLED ||
+  "";
 const prisma = new PrismaClient({
   adapter: new PrismaPg({ connectionString }),
 });
