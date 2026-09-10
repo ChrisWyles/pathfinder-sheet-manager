@@ -1,0 +1,302 @@
+{
+  "slug": "guardian",
+  "name": "Guardian",
+  "type": "MIGHT",
+  "description": "You gain a delayed damage pool equal to your 3 x your base attack bonus. When you receive damage, as part of taking the damage you may redirect all or part of it to your delayed damage pool. Apply damage reduction and resistance before redirecting the damage. You may not redirect damage that would exceed the maximum capacity of the damage pool. Your delayed damage pool empties at the end of your turn each round, inflicting any damage stored in the pool on you, bypassing any damage reduction or resistance you possess and resetting to 0. Any additional effects of the attack, such as poison, are still incurred immediately even if the entire damage of the attack is redirected to the delayed damage pool. Any healing you receive in excess of your maximum hp automatically reduces the amount of damage in your delayed damage pool. Should you lose access to the Guardian sphere, any damage (or other effects if you possess certain talents) is incurred at the end of your turn. In addition, choose one of the following packages: As a move action, you may issue a challenge to a creature you can see. You may expend martial focus to reduce this to a swift action. A creature must be able to perceive your challenge to be affected by it. The creature takes a -2 penalty on attack rolls that do not include you as a target and a +2 bonus on attack rolls targeting only you. Creatures receiving this effect are aware of it, though do not gain insight to its duration. This penalty (but not bonus) increa",
+  "source": "Spheres of Power wiki",
+  "url": "http://spheresofpower.wikidot.com/guardian",
+  "talents": [
+    {
+      "name": "Braggadocious Repartee",
+      "sphereName": "Guardian",
+      "talentTypes": [
+        "utility"
+      ],
+      "source": "Spheres of Power wiki [DRS]",
+      "description": "Your challenge also imposes an equal penalty to skill checks that do not include you as a target, and a +2 bonus to those that do—this includes skill checks made against objects that a creature may be attending (such as using Disable Device to sabotage). This does not affect skill checks that do not involve targeting a creature or their equipment (such as using Acrobatics to balance across a surface) or that targets an ally (such as the Heal skill).\n\nAdditionally, you can choose to have a challenged creature become distracted by you.\n\nYou can also choose to make a special challenge using this talent. This functions as a normal challenge except that it only imposes this talent's effects, and is generally considered a non-hostile action."
+    },
+    {
+      "name": "Cold Iron Call",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "When targeted by a spell or spell-like ability, you may delay the onset of its effects until the end of your next turn as if it were damage. Each effect is treated as if it were an amount of hit point damage equal to its caster level for the purpose of your delayed damage pool. If you do not have enough space remaining in the delayed damage pool, you may not delay the effect.\n\nIf you possess the (patrol) package and the Defend Other talent, when an ally within the area of your patrol is the target of a spell or spell-like ability, you may spend an attack of opportunity to move to put that ally within reach (with the normal limits for moving as part of your patrol) and redirect the effect to yourself.\n\nIf you possess the (challenge) package, any time a creature under the effects of your challenge casts a spell or uses a spell-like ability that does not include you in its effect, it suffers a -2 penalty to the spell's save DC. This penalty increases by 1 for every 4 points of base attack bonus you possess.\n\nAuthor's Note: This is intended to permit characters to remove effects caused by things this ability can delay before they take effect. While effects are \"treated\" as damage when stored, they are removed using the appropriate effect (such as a remove paralysis spell removing a delayed paralysis condition)."
+    },
+    {
+      "name": "Complex Patrol",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "You may expend your martial focus when using patrol to apply two (zone) talents instead of only one. If you possess the Swift Guardian talent, you may increase the required action to initiate a patrol by one step (standard action to full-round action) instead of expending your martial focus."
+    },
+    {
+      "name": "Defend Other",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "When an ally within your threatened area is the target of an attack roll, you may spend an immediate action to grant them a competence bonus to their armor class equal to 1/2 your base attack bonus (rounded down, minimum +1) against that attack. If this attack would still hit, you may choose to take the damage in your ally's place.\n\nIf you possess the (patrol) package, when using this talent you may move to put the ally within your reach (with the normal limits for moving as part of your patrol) as part of activating this talent."
+    },
+    {
+      "name": "Durable",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "When targeted by a natural, extraordinary or supernatural ability that inflicts ability damage, ability drain, disease, negative levels, poison or any of the following conditions: (blinded, confused, cowering, dazed, dazzled, entangled, exhausted, fascinated, fatigued, frightened, nauseated, panicked, paralyzed, petrified, shaken, sickened, staggered, stunned, unconscious) you may delay the onset of its effects until the end of your next turn. Each effect is treated as if it were an amount of hit point damage equal to the attacking creature's Hit Dice for determining the capacity of your delayed damage pool. If you do not have enough space remaining in the delayed damage pool, you may not delay the effect.\n\nIf you possess the (patrol) package and the Defend Other talent, when an ally within the area of your patrol is the target of such an ability, you may spend an attack of opportunity to move to put that ally within reach (with the normal limits for moving as part of your patrol) and redirect the effect to yourself.\n\nIf you possess the (challenge) package, any time a creature under the effects of your challenge uses such an ability that does not include you in its effect, it suffers a -2 penalty to the ability's save DC. This penalty increases by 1 for every 4 points of base attack bonus you possess.\n\nAuthor's Note: This is intended to permit characters to remove effects caused by things this ability can delay before they take effect. While effects are \"treated\" as damage when stored, they are removed using the appropriate effect (such as a remove paralysis spell removing a delayed paralysis condition)."
+    },
+    {
+      "name": "Endure Pain",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "When you receive damage from your delayed damage pool, you take it as nonlethal damage. This nonlethal damage ignores any resistance or immunity to nonlethal damage you may possess."
+    },
+    {
+      "name": "Expanded Guardian",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "You gain one Guardian package you do not possess."
+    },
+    {
+      "name": "Extended Guard",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki [LG]",
+      "description": "While fighting defensively or taking the total defense action, allies within your reach benefit from any AC bonuses you receive from these actions. You may take this talent a second time, in which case allies within your patrol benefit from any AC bonuses you receive from these actions."
+    },
+    {
+      "name": "Flush Of Victory",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "When a creature affected by your challenge is reduced to 0 or fewer hit points, you gain temporary hit points equal to your base attack bonus. These temporary hit points expire after 1 round + 1 round per 2 points of base attack bonus you possess. The creature must have a CR of at least half your character level (rounded down, minimum 0)."
+    },
+    {
+      "name": "Greater Delayed Damage",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "The size of your delayed damage pool increases by +1 per point of base attack bonus you possess. You may take this talent twice; the effects stack."
+    },
+    {
+      "name": "Guardian's Focus",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "When a creature affected by your challenge is reduced to 0 or fewer hit points or you succeed on a combat maneuver check made on an attack of opportunity while you have a patrol set up, you may regain martial focus as an immediate action.\n\nIf you posses the Defend Other talent, you may regain focus on your next turn whenever an enemy misses an ally benefiting from that talent with an attack."
+    },
+    {
+      "name": "Iron Wall",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "If you possess the (challenge) package, any time a creature under the effects of your challenge attacks an ally within Close range of you (25 ft + 5 ft. per 2 base attack bonus), that attack suffers a 20% miss chance.\n\nIf you possess the (patrol) package, allies within the area of your patrol, not including yourself, gain a 20% miss chance against melee attacks originating from a creature that you threaten.\n\nIf an attack would be subject to both miss chances, the miss chance increases to 50%."
+    },
+    {
+      "name": "Mageguard",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "When a hostile creature within your threatened area attempts to cast a spell defensively, they take a penalty to their concentration check equal to 1/2 your base attack bonus (minimum 1). The creature is aware of this penalty. This ability stacks with the Disruptive feat and similar effects.\n\nIf you possess the (challenge) package, if the creature is under the effects of your challenge, they provoke an attack of opportunity from you whenever they fail a concentration check to cast a spell defensively."
+    },
+    {
+      "name": "Mass Challenge",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "When using your challenge ability, you may increase the required time by one step (move to standard or swift to move if expending martial focus) to issue your challenge to one additional creature, + 1 additional creature per 2 points of base attack bonus you possess (minimum 1)."
+    },
+    {
+      "name": "Roaming Patrol",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki [DRS]",
+      "description": "While patrolling, your base movement speed is treated as being 10 feet higher for determining the total movement you can make to bring a creature within your reach. For every 5 points of base attack bonus you possess, this increases by +5 feet.\n\nIf you possess the (challenge) package, this movement does not provoke attacks of opportunity from creatures under the effects of your challenge."
+    },
+    {
+      "name": "Seeking Challenge",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki [Apoc]",
+      "description": "When a creature affected by your challenge is reduced to 0 or fewer hit points, you may issue a challenge to a creature you can see as a free action (even if it is not your turn). A creature challenged this way gains an additional +2 bonus on attack rolls against you until the end of its next turn.\n\nIf you have Mass Challenge, challenging a creature this way does not end your challenge on any other creatures."
+    },
+    {
+      "name": "Steel Hide",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "If a creature under the effects of your challenge confirms a critical hit against you, you may end the challenge on that creature only to have the attack instead deal normal damage. If you possess the Defend Other talent, you may use this talent whenever a creature affected by your challenge confirms a critical against an ally within your threatened area while your patrol is active."
+    },
+    {
+      "name": "Sweeping Defense",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "When making an attack action, you may grant yourself a -2 penalty on all attack rolls until the beginning of your next turn to cause your attack action to deal damage to multiple targets. Choose one target that is adjacent to your primary target and also within your reach, and compare your attack roll to the AC of both targets. If your attack roll exceeds either target's AC (including the primary target), that target suffers half damage from your attack. The additional target is not subject to non-damage parts of your attack action, such as additional effects granted by feats or talents. Additionally, all targets damaged by your Sweeping Defence suffer a -2 penalty to all attack rolls until the start of your next turn.\n\nAt +10 base attack bonus, this penalty increases to -4 and you may target up to three adjacent targets with sweeping defense."
+    },
+    {
+      "name": "Swift Guardian",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "If you possess the (challenge) package, you reduce the required action to use challenge by 1 step (move to swift, swift to free).\n\nIf you possess the (patrol) package, you may use patrol as a standard action. You may instead expend your martial focus to use patrol as a move action."
+    },
+    {
+      "name": "Swift Reflexes",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "As long as you have martial focus, you gain +1 attack of opportunity per round. You may make attacks of opportunity even when flat-footed. These additional attacks of opportunity stack with those granted by the Combat Reflexes or Muscular Reflexes feat. For every 4 points of base attack bonus you possess, you gain an additional attack of opportunity."
+    },
+    {
+      "name": "Assist",
+      "sphereName": "Guardian",
+      "talentTypes": [
+        "zone"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "When an ally within the area of your patrol makes an attack, is targeted by an attack, or attempts a saving throw, you may spend an attack of opportunity to move to put that ally within reach (with the normal limits for moving as part of your patrol) and use the aid another action to improve that ally's attack roll, AC, or saving throw as appropriate to the triggering action. Associated Feat: Bodyguard."
+    },
+    {
+      "name": "Clear Path",
+      "sphereName": "Guardian",
+      "talentTypes": [
+        "zone"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Allies do not provoke attacks of opportunity from enemies for moving through the area of your patrol. Associated Feat: Escape Route."
+    },
+    {
+      "name": "Insulate",
+      "sphereName": "Guardian",
+      "talentTypes": [
+        "zone"
+      ],
+      "source": "Spheres of Power wiki [LG]",
+      "description": "Allies within your patrol gain DR 1/- and energy resistance against acid, cold, electricity, and fire equal to twice this damage reduction. This damage reduction increases by 1 for every 5 points of base attack bonus you possess. This damage reduction and energy resistance stack with any damage reduction or energy resistance the target already possesses."
+    },
+    {
+      "name": "Mage Warden",
+      "sphereName": "Guardian",
+      "talentTypes": [
+        "zone"
+      ],
+      "source": "Spheres of Power wiki [DRS]",
+      "description": "Whenever an ally within the area of your patrol attempts a concentration check, you can spend an attack of opportunity to roll 1d20 + your base attack bonus + your Strength or Dexterity modifier (minimum 1). The ally can choose to use either their own concentration check result or the result of your d20 roll when determining if their concentration check is a success.\n\nAdditionally, whenever an enemy within the area of your patrol attempts an attack of opportunity against a creature due to them casting a spell or sphere ability, using a spell-like ability, or activating a magic item, they must roll the attack roll twice and take the lowest result."
+    },
+    {
+      "name": "Punishing Rebuke",
+      "sphereName": "Guardian",
+      "talentTypes": [
+        "zone"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "When a creature attacks an ally within the area of your patrol, not including yourself, they provoke an attack of opportunity from you."
+    },
+    {
+      "name": "Roving Flanker",
+      "sphereName": "Guardian",
+      "talentTypes": [
+        "zone"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Your allies (but not you) may consider all squares threatened by you while using patrol to be occupied by an ally for the purpose of determining flanking bonuses."
+    },
+    {
+      "name": "Stand Still",
+      "sphereName": "Guardian",
+      "talentTypes": [
+        "zone"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "While you have a patrol in place, when a foe provokes an attack of opportunity due to moving through your threatened area, you can make a reposition attempt against the creature as your attack of opportunity. This reposition attempt may be made using any weapon you are wielding. If successful, the creature cannot move for the rest of its turn. The creature can still take the rest of its action, but cannot move out of the square the reposition maneuver leaves it in. Associated Feat: Stand Still."
+    },
+    {
+      "name": "Steel Hedge",
+      "sphereName": "Guardian",
+      "talentTypes": [
+        "zone"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "All hostile creatures treat your threatened area as difficult terrain until the end of your patrol."
+    },
+    {
+      "name": "Challenge The Masses",
+      "sphereName": "Guardian",
+      "talentTypes": [
+        "eo3"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Guardian sphere (Mass Challenge), base attack bonus +7.\n\nWhen using the Mass Challenge talent to affect multiple creatures, you can instead issue your challenge to all hostile creatures (including swarms) within close range (25 feet + 5 feet per 2 points of base attack bonus). You can expend your martial focus when using this talent to increase this to medium range (100 feet + 10 feet per point of base attack bonus)."
+    },
+    {
+      "name": "Cruel Worg's Challenge",
+      "sphereName": "Guardian",
+      "talentTypes": [
+        "bth"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You channel the wicked cruelty of the worg, demanding the attention of the mighty and cowing the meek.\n\nPrerequisites: Guardian sphere ((challenge) package), base attack bonus +5.\n\nYou may challenge creatures with no Intelligence score (Intelligence score of (–)).\n\nWhenever a creature affected by your challenge ends its turn and that creature did not make an attack roll or otherwise target you or include you in a non-harmless effect, you may move up to your speed as an immediate action, provided that you move into a space closer to the creature. If the creature is within your reach at the end of this movement, that creature must succeed at a Reflex save or be knocked prone. This movement does not provoke an attack of opportunity from the creature but does provoke from other creatures as normal."
+    },
+    {
+      "name": "Final Retribution",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Guardian sphere, Indomitable, Punishment, base attack bonus +10.\n\nWhen you use the Punishment talent while postponing death with Indomitable, you may force the target to make a Fortitude save or die immediately. This is a death effect. Regardless of the success or failure of this save, you die immediately, even if immune to death effects."
+    },
+    {
+      "name": "I Will Come",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Guardian sphere, I Will Hear, Defend Other, base attack bonus +10.\n\nWhen a creature calls you with the I Will Hear talent, you may spend a full-round action to teleport to their location. You can bring along objects as long as their weight doesn't exceed your maximum load. You may also bring one additional willing Medium or smaller creature (carrying gear or objects up to its maximum load) or its equivalent per three points of base attack bonus you possess. A Large creature counts as two Medium creatures, a Huge creature counts as two Large creatures, and so forth. All creatures to be teleported must be in contact with one another, and at least one of those creatures must be in contact with you. You arrive in the safe space nearest to the calling creature that is large enough for you and any creatures you bring along to occupy. You are exhausted for 10 minutes after using this ability, and fatigued for 1 hour thereafter. You may expend focus as a free action to delay these conditions for a number of rounds equal to your base attack bonus. You incur the penalties of these conditions even if you are immune to the exhausted and fatigued conditions. You may attempt to use this ability while exhausted or fatigued, but doing so incurs a 50% chance that the ability fails to work; regardless of whether you succeed at this attempt, you suffer 1d6 points of Constitution damage and the duration of the exhausted and fatigued conditions caused by using this ability are doubled. You may only travel to a particular creature using this ability once per day. This is a supernatural teleportation effect."
+    },
+    {
+      "name": "I Will Hear",
+      "sphereName": "Guardian",
+      "talentTypes": [
+        "utility"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Guardian sphere, Defend Other.\n\nYou may form a bond with a creature as a full-round action. A bonded creature can call your name as an immediate action; if you are within 1 mile per base attack bonus, you become immediately aware of the call and the direction to the creature. At +5 base attack bonus, this range increases to 10 miles per base attack bonus. At +10 base attack bonus, the range becomes unlimited as long as you are both on the same plane. At +15 base attack bonus, you may hear the call across the planes and gain knowledge of what plane the calling creature is on. You may maintain a number of these bonds equal to your base attack bonus.\n\nAuthor's Note: To form a bond, a creature must be within your reach + 5 ft. + 5 ft. for every 4 points of base attack bonus you possess."
+    },
+    {
+      "name": "Indomitable",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Guardian sphere, delayed damage pool, base attack bonus +6.\n\nWhen you would die, you may expend your martial focus to delay the onset of the dead condition until the end of your next turn. If you are not unconscious, you do not fall unconscious from hit point loss during this time. Any healing you receive during that turn that would bring you above your death threshold can prevent you from dying. Such healing has no affect on death from anything other than hit point damage. You may only delay death in this manner once per time that you would die."
+    },
+    {
+      "name": "Inescapable Challenge",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Guardian sphere ((challenge) package), base attack bonus +7.\n\nA creature affected by your challenge must make a Will save each time it attempts to move away from you (including via teleportation or other magical effects) or lose the attempted action. The creature does not lose any spell, spell points, or magic item uses on a failed save if this prevents a teleportation attempt. The creature may be moved normally by other creatures. This is an extraordinary mind affecting compulsion effect."
+    },
+    {
+      "name": "Punishing Challenge",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Guardian sphere ((challenge) package), base attack bonus +5.\n\nWhenever a creature affected by your challenge makes an attack roll or casts a non-harmless spell that does not target you or include you in its effect, that creature takes untyped damage equal to your base attack bonus. This damage is not subject to resistance or damage reduction. This is a supernatural effect."
+    },
+    {
+      "name": "Punishment",
+      "sphereName": "Guardian",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Guardian sphere, base attack bonus +5.\n\nWhen you deal damage to a creature while you have damage in your delayed damage pool, you may spend an immediate action to expend your martial focus and deal damage equal to the damage in your delayed damage pool to the target creature. If you possess the Cold Iron Call or Durable talents, you may also inflict any effects you are postponing with those abilities. If the effect allowed a save, the target may make a save immediately at the original DC.\n\nA successful Fortitude save reduces the amount of damage inflicted by this talent by half and negates the infliction of any effects.\n\nWiki Note: Adjusted for clarity."
+    },
+    {
+      "name": "Singularity",
+      "sphereName": "Guardian",
+      "talentTypes": [
+        "zone"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Guardian sphere, base attack bonus +5.\n\nAt the start of their turns, hostile creatures within the area of your patrol must succeed on a Fortitude save or be moved 5 ft. closer to you, though stop when they become adjacent. This movement does not provoke attacks of opportunity. Hostile creatures within the area of your patrol count every square of movement directed away from you as two squares when determining their movement for the round. This stacks with the effects of difficult terrain. At +10 base attack bonus, the distance moved toward you and the additional cost of movement away from you increases by 5 ft. This is a supernatural effect."
+    }
+  ]
+}

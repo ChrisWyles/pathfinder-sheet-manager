@@ -4,6 +4,8 @@ coverage/
 playwright-report/
 test-results/
 prisma/migrations/
+data/
+.cache/
 pnpm-lock.yaml
 package-lock.json
 *.md

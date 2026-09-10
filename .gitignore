@@ -41,6 +41,9 @@ yarn-error.log*
 # neon cli — linked project context (contains project id)
 .neon
 
+# scraper html cache (raw fetched pages)
+.cache
+
 # vercel
 .vercel
 

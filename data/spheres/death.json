@@ -1,0 +1,416 @@
+{
+  "slug": "death",
+  "name": "Death",
+  "type": "MAGIC",
+  "description": "As a standard action, you may make a ghost strike, summoning negative energy as a melee touch attack or a ranged touch attack within medium range. A ghost strike is considered a negative energy death effect, and as such has no effect on undead, constructs, and other creatures immune to such things (although some talents provide exceptions). Ghost strike effects do not stack with themselves, and are subject to spell resistance. You gain the following ghost strike when you gain the Death sphere: The subject of your ghost strike becomes fatigued for 1 round per caster level (Fortitude negates). You may spend a spell point to increases this effect to making the target exhausted for 1 minute per caster level (Fortitude partial). On a successful save, the target is still fatigued for 1 round. Unlike regular fatigue and exhaustion, these conditions end as soon as the duration expires. As a standard action, you may touch an intact dead body and spend a spell point to reanimate it as a zombie or skeleton (depending on the composition of the body in question) for 1 minute per caster level. This creature gains the zombie or skeleton template and obeys your commands, although only basic commands such as “go”, “stay”, “follow me”, “attack”, or “guard” are understandable. While specifics can be given (“guard this area against humans but let goblins pass”), undead are unintelligent and easily fooled.",
+  "source": "Spheres of Power wiki",
+  "url": "http://spheresofpower.wikidot.com/death",
+  "talents": [
+    {
+      "name": "Dominion",
+      "sphereName": "Death",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "New to The Gravecaller's Handbook is an update and errata to a number of talents that previously used or interacted with the Master's Presence talent, primarily to use its range if you possessed the talent, or a default range otherwise. This change standardizes the range of these talents to close range and taking the Ranged Death talent can increase this range, instead of needing to take Master's Presence additional times.\n\nThis handbook has added the (dominion) descriptor to the following talents and advanced talent in addition to other minor changes:\n\nDark Sacrifice (Ultimate Spheres of Power pg. 269) Master's Presence (Ultimate Spheres of Power pg. 270) Reanimated Warriors (Ultimate Spheres of Power pg. 270) Shroud (Ultimate Spheres of Power pg. 270) Undead Whisperer (Ultimate Spheres of Power pg. 271) Corpse Forge (advanced talent) (Ultimate Spheres of Power pg. 393)\n\nSome Death talents are designated (dominion), which grant you new ways to interact with your raised and controlled undead. (Dominion) talents have a range of close."
+    },
+    {
+      "name": "Corpse Bomb",
+      "sphereName": "Death",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "You may make any of your ghost strikes against any corpse capable of being raised as a skeleton or zombie, or against any corporeal mindless undead under your control. The corpse explodes in a 20-foot radius, affecting all creatures in range as if they had been struck by the chosen ghost strike; if the ghost strike does not allow a saving throw, creatures affected are allowed a Reflex save to negate its effects.\n\nThe corpse or undead collapses and is destroyed; it cannot be reanimated or targeted by another Corpse Bomb."
+    },
+    {
+      "name": "Corpse Manipulation",
+      "sphereName": "Death",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "You can alter a corpse in one of the following ways by touching it as a standard action:\n\nYou grow flesh on a decomposed or skeletonized corpse, providing it with sufficient flesh that it can be animated as a zombie rather than a skeleton. The corpse looks as it did just before death. The new flesh is not fit for eating. You decompose the flesh from a corpse, leaving behind a perfectly cleaned skeleton. You can spend a spell point to touch a collapsed or destroyed undead corpse, mending it so it is a valid target to be reanimated again. You can spend a spell point to preserve the remains of a dead creature for 1 day per caster level so that they do not decay. Doing so effectively extends the time limit on raising that creature from the dead. Days spent under the influence of this spell do not count against the time limit. Additionally, this makes transporting a slain (and thus decaying) comrade less unpleasant. This ability also works on severed body parts and the like. You can reshape the dead body to look like another creature or even a specific person so long as you have firsthand knowledge of how that creature or person actually looks. You can make the corpse one size larger or smaller or change its apparent type, gender, or age. Attempt a Disguise check to determine how convincing the change is, though you may substitute your caster level for ranks in Disguise if desired."
+    },
+    {
+      "name": "Cryptic Strike",
+      "sphereName": "Death",
+      "talentTypes": [
+        "strike"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "As a standard action, you may make a single weapon attack in conjunction with making a ghost strike. This casting cannot be reduced below a standard action, and does not provoke attacks of opportunity, unless as usual if making a ranged attack. If the target is struck by the attack, it is also struck by the ghost strike. If using a scatter weapon, the strike only applies to a single target, chosen at the time of attack."
+    },
+    {
+      "name": "Empowered Reanimate",
+      "sphereName": "Death",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "All creatures you reanimate gain a +4 enhancement bonus to their Strength and Dexterity."
+    },
+    {
+      "name": "Gravetongue",
+      "sphereName": "Death",
+      "talentTypes": [
+        "utility"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may spend a spell point as a standard action to gain the ability to speak with undead and corpses for 1 minute per caster level. You can communicate with, ask questions of, and receive answers from them. A mindless undead or corpse spoken to with gravetongue does not maintain any memory of its life or death - only the time that has elapsed since its death (and reanimation).\n\nA normal corpse's sense of its surroundings is limited, so it will not be able to give (or recognize) detailed descriptions of creatures or answer questions about events outside its immediate vicinity. The spell does not make undead creatures any more friendly or cooperative than normal, and while mindless undead and corpses will always answer truthfully, their ability to answer more than simple questions is restricted. You do not need to share a language with the target.\n\nAddendum: At the GM's discretion, in worlds where magic can more easily access the afterlife or spiritual remnants of creatures, those with the Gravetongue talent and at least 5th caster level may be able to pull information from the remaining traces of a spirit in a corpse they can touch. By remaining in contact with a corpse for 1 minute while under the effects of the Gravetongue talent and spending a spell point, you may ask it up to 1 question per 5 caster levels you possess.\n\nIf the corpse is unwilling, it may attempt a Will save to either refuse or attempt to deceive you (such as by attempting a Bluff check). Questions asked and answers given this way must be brief; no more than ten words each, plus two additional words per caster level above 5th, and a corpse cannot be questioned more than once per week this way. If the corpse is particularly old (older than 100 years), is heavily damaged, only a partial corpse or otherwise in poor shape, any answers given may be vague and incomplete or only partially correct. [Archamgi's HB]"
+    },
+    {
+      "name": "Haunting Apparition",
+      "sphereName": "Death",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "You may place a ghost strike of your choice onto an adjacent, unoccupied area up to one 5-foot square per two caster levels (minimum one 5-foot square), that lashes out at the first creature who enter its area, similar to a haunt.\n\nThe first creature who steps onto an affected square is affected by your ghost strike. If the ghost strike does not allow a saving throw, the creature affected is allowed a Will save to negate its effects. After activation, this haunt disappears.\n\nA haunting apparition lasts for 10 minutes per caster level before becoming inert. It shares your alignment, and its Perception DC and hit points are equal to its save DC. You may only have one active haunt apparition at a time; placing a second haunting apparition deactivates the first. You may select this talent multiple times. Each time it is taken, increase the number of haunting apparitions you may have active at once by 1."
+    },
+    {
+      "name": "Icy Grip",
+      "sphereName": "Death",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "When you use a ghost strike, instead of unleashing an attack yourself, you may have an undead you control within range deliver the attack as a melee touch attack sometime within the next round. This charge is ‘held' through the round; if the undead gets multiple attacks, it can attempt to deliver the touch attack additional times if the first attempt failed. If you spend an additional spell point, you may grant a use of this ghost strike to each undead you control, but multiple undead cannot affect the same target with the same ghost strike that round."
+    },
+    {
+      "name": "Instill Death",
+      "sphereName": "Death",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki [instill]",
+      "description": "As a standard action you may touch a small container of liquid and instill a reanimate inside it, which functions as an oil. This cannot be combined with Sustained Reanimation, and undead created through an instilled liquid still consider you their creator, counting against your totals and following your commands.\n\nAlternatively, you may spend a spell point to instill a ghost strike. As a standard action, this can be primed and thrown as a splash weapon. All targets affected by the splash (5-foot radius) must save against any ghost strike effect requiring a saving throw, but any target not affected by a direct hit treats any dice rolls from the effect as if they had rolled their minimum.\n\nAn instilled liquid remains potent until you rest to regain spell points. If you have equipment on hand (such as an alchemy lab), the cost of bottles and water is considered negligible. You may target food but not an already-magical item, such as a potion. All spell points must be spent and all variables of the sphere effect must be chosen at the time the instilled liquid is created. You cannot instill multiple effects in a single liquid, nor create multiple instilled liquids with a single action."
+    },
+    {
+      "name": "Killing Curse",
+      "sphereName": "Death",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Your ghost strikes can rip the very soul from the living. If a target fails their saving throws against your ghost strikes 3 times within a 1-minute period, they immediately die (Fortitude negates). If a ghost strike does not allow a save, it is not usable with this talent."
+    },
+    {
+      "name": "Necromantic Conscription",
+      "sphereName": "Death",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki [DbH]",
+      "description": "Whenever you take control of one or more undead with Command Undead or a similar ability, you may, as a swift action, spend a spell point to grant those undead the benefits of any talents that you apply to an undead upon reanimation (such as increased ability scores from Empowered Reanimate or a bonus feat from Reanimated Warriors). These benefits last for the duration of your control over the undead."
+    },
+    {
+      "name": "Taint Soul",
+      "sphereName": "Death",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Whenever a target fails their saving throw against your ghost strike, the creature affected has all healing effects used on it halved for 1 round per 2 caster levels. If you spend an additional spell point, it cannot heal hit point damage by any means for the duration, including fast healing and regeneration. In addition, you can touch a willing creature as a standard action to cause them to be healed by negative energy and harmed by positive energy for 1 minute (Fortitude negates if unwilling); as normal, fast healing is unaffected."
+    },
+    {
+      "name": "Tomb Of Flesh",
+      "sphereName": "Death",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "You can make a melee touch attack against a living creature up to your size to attempt to absorb it into your body, similar to the swallow whole ability (Reflex negates).\n\nBeing absorbed causes a creature to take negative energy damage each round equal to 1d6 + 1d6 for every three caster levels you have (undead are not affected). An absorbed creature gains the grappled condition, while you do not. An absorbed creature can try to cut its way free with any light slashing or piercing weapon (the amount of cutting damage required to get free is equal to 1/10 your total hit points), or it can just try to escape as if escaping a grapple (using your CMD or your MSD, whichever is higher). The armor class of your interior is 10 + 1/2 your caster level, with no modifiers for size or Dexterity. If an absorbed creature cuts its way out, you cannot use this talent again until the damage is healed.\n\nAlternatively, you can touch a corpse or undead that you control as a move action to absorb it into your body or to expel an absorbed corpse or undead into an adjacent square. While absorbed, an undead cannot use any of its senses or take any actions, and time passes normally - corpses rot and reanimate's duration continues to pass.\n\nYou can have a number of corpses or controlled undead absorbed at a time equal to 1 plus 1 for every 3 caster levels you have. You can spend a spell point to expel all absorbed corpses and undead with a single swift action. While you have at least one undead absorbed, you give off an aura that can be detected by Divine Undead equal to the highest Hit Dice undead absorbed, but your appearance is not otherwise changed.\n\nCreatures and bodies stored within your tomb of flesh are stored in an extradimensional space; you do not increase in size no matter how many creatures and bodies are stored inside you."
+    },
+    {
+      "name": "Bleeding Wounds",
+      "sphereName": "Death",
+      "talentTypes": [
+        "ghost strike"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may make a ghost strike that deals 1 bleed damage per caster level (minimum 1; no save). Targets take damage on the round they are hit, plus each additional round until the bleed effect stops (usually through the Heal skill or an application of magical healing). You may spend a spell point to improve this effect to 2 bleed damage per caster level (minimum 2)."
+    },
+    {
+      "name": "Command Undead",
+      "sphereName": "Death",
+      "talentTypes": [
+        "ghost strike"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may spend a spell point to make a ghost strike that grants you a measure of control over an undead creature (Will negates). For 1 minute per caster level, an unintelligent undead creature falls under your control or an intelligent undead becomes friendly toward you. You can give an intelligent undead creature orders, but you must win an opposed Charisma check to convince it to do anything it would not ordinarily do. Retries are not allowed. An intelligent commanded undead never obeys suicidal or obviously harmful orders, but it might be convinced that something very dangerous is worth doing. Any act by you or your apparent allies that threatens the commanded undead (regardless of its Intelligence) breaks this effect.\n\nYour commands are not telepathic; the undead creature must be able to hear you. Intelligent undead remember they were manipulated and may seek revenge."
+    },
+    {
+      "name": "Curse",
+      "sphereName": "Death",
+      "talentTypes": [
+        "ghost strike",
+        "curse"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may spend 2 spell points to make a ghost strike that bestows a permanent curse on the target (Will negates). Curses may be removed with the Break Enchantment Life talent, rituals such as break enchantment or remove curse, wishes, upon your death, or by your choice as a free action, but otherwise cannot be dispelled.\n\nChoose one of the following curses to bestow upon the target:\n\nThe target suffers a -4 decrease to an ability score plus an additional -2 per 5 caster levels (minimum 1). The target suffers a -3 penalty on all attack rolls, saving throws, ability checks, and skill checks plus an additional -1 per 5 caster levels. Each turn the target has a 25% chance to take no action. This chance increases by 5% per 2 caster levels (maximum 75%).\n\nCurses do not stack with themselves, but a target can be afflicted by multiple different curses. With GM permission, you may invent your own curse, but it should be of equal power to those listed. The following effects would be considered appropriate:\n\nBlack Mark: The target is trailed by an unpleasant aura. The target takes a penalty on all Diplomacy and Handle Animal checks equal to 1/2 your caster level. All creatures begin with an attitude of unfriendly towards you (unless their attitude would start worse). Any animals the target interacts with react wildly, with prey animals running away and predator animals baring fangs or even attacking the target. [Gravecaller's HB] Clumsy: The target cannot move faster than half their speed without an Acrobatics check vs. the curse's DC. On a failure, the target falls prone. Extreme Hunger: The target must eat and drink three times as much as normal every day or begin suffering from thirst and starvation. Fumble: Anytime the victim picks up or retrieves an object (including drawing a weapon or ammunition), there is a 50% chance that he immediately drops it. If ammunition is dropped, the attack being made is lost. Any remaining attacks in a full attack action may still be attempted. Greater Pain: Whenever the victim takes damage, he is staggered for 1 round. Magically Conductive: When the victim is adjacent to the area of a damaging spell or spell-like effect, the area expands to include the victim. Old Age: The target gains the penalties (but not the benefits) of advancing to the next age category. This does not actually increase their age. Phobia: The target is cursed with a fear of a concept, chosen by the caster (such as crowds, spiders, rats, thunder, loud noises, e"
+    },
+    {
+      "name": "Drain",
+      "sphereName": "Death",
+      "talentTypes": [
+        "ghost strike"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may spend a spell point to make a ghost strike that imposes 1 temporary negative level on the target for one hour per caster level (no save). This increases by 1 die size per 5 caster levels (1d2, 1d3, 1d4, and 1d6). Unlike with other ghost strikes, negative levels stack. While normally negative levels have a chance to become permanent and can kill a target whose negative levels equal its Hit Dice, these negative levels do not last long enough to become permanent, and if a negative level from this ghost strike would reduce the creature to 0 Hit Dice, the creature instead takes 4 points of Constitution drain for the duration of the effect. If a negative level lasts longer than 1 day, the target must succeed at a Fortitude save per negative level or have the negative level become permanent. If this ability is used on an undead creature, it instead grants the creature 5 temporary hit points per negative level, which last for 1 hour."
+    },
+    {
+      "name": "Hunger",
+      "sphereName": "Death",
+      "talentTypes": [
+        "ghost strike"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may spend a spell point to make a ghost strike that saps a creature of its energy (Will negates). On a failed save, the subject is fatigued and takes nonlethal damage equal to 1d8 per caster level. This is considered starvation damage, and as such the fatigue and nonlethal damage cannot be healed, even by magic, until the target consumes some sort of food (a standard action, assuming the food is on hand and need not be dug out of a backpack first). If no food is available, the target begins to attempt Constitution checks per day as normal for starvation.\n\nMultiple applications of hunger do not stack; only the highest nonlethal damage applies."
+    },
+    {
+      "name": "Inflict Disease",
+      "sphereName": "Death",
+      "talentTypes": [
+        "ghost strike"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may spend a spell point to make a ghost strike that causes the target to contract a disease (Fortitude negates). The subject contracts one of the following diseases: blinding sickness, bubonic plague, cackle fever, filth fever, leprosy, mindfire, red ache, shakes, or slimy doom. The disease is contracted immediately (the onset period does not apply). Use the disease's listed frequency and save DC to determine further effects."
+    },
+    {
+      "name": "Manipulate Undeath",
+      "sphereName": "Death",
+      "talentTypes": [
+        "ghost strike"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may make a ghost strike that harms undead, dealing 1d8 damage per 2 caster levels (minimum 1d8, Will half). You may spend a spell point to instead heal the undead for this amount."
+    },
+    {
+      "name": "Necrotic Feeding",
+      "sphereName": "Death",
+      "talentTypes": [
+        "ghost strike"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may make a ghost strike that causes a living creature that is below 0 hit points but stabilized to resume dying. You may also spend a spell point to make a ghost strike that, when it strikes a target below 0 hit points, kills it instantly (Will negates).\n\nIf the target fails their saving throw, you gain temporary hit points equal to twice the target's Hit Dice, as well as a +2 enhancement bonus to Strength and Dexterity, which increases by +2 for every 8 Hit Dice the target possesses. These effects last for 10 minutes per Hit Die of the slain creature. Bonuses from multiple creatures do not stack; only the highest bonuses apply."
+    },
+    {
+      "name": "Poltergeist",
+      "sphereName": "Death",
+      "talentTypes": [
+        "ghost strike"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may make a ghost strike that attaches a vengeful poltergeist to the target, disrupting their actions. Whenever the target makes a d20 roll within 1 round per caster level, you can choose for them take a -3 penalty to the roll, ending this effect. This penalty is increased by 1 for every 6 caster levels you have.\n\nIf you spend a spell point when you use this ghost strike, you can impose the penalty on up to one d20 roll the target makes each round for the effect's duration, and imposing the penalty does not end the effect. A creature can only be affected by one poltergeist at a time."
+    },
+    {
+      "name": "Sickening",
+      "sphereName": "Death",
+      "talentTypes": [
+        "ghost strike"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may make a ghost strike that causes the target to be sickened for 1 round per caster level (Fortitude negates). You may spend a spell point to cause the target to instead become nauseated. On a successful save, the target is still sickened for 1 round."
+    },
+    {
+      "name": "Spectral Distortion",
+      "sphereName": "Death",
+      "talentTypes": [
+        "ghost strike"
+      ],
+      "source": "Spheres of Power wiki [Apoc]",
+      "description": "You may spend a spell point to make a ghost strike that disrupts the bonds between layered planes. An incorporeal creature hit by this ghost strike must succeed a Will saving throw or be considered corporeal for a number of rounds equal to your caster level (minimum 1). The creature can attempt another saving throw at the end of their turn to dismiss this effect."
+    },
+    {
+      "name": "Vampiric Strike",
+      "sphereName": "Death",
+      "talentTypes": [
+        "ghost strike"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may spend a spell point to make a ghost strike that deals 1d6 damage per 2 caster levels to the target (minimum 1d6) and grants yourself an equal number of temporary hit points that last 1 minute per caster level (Fortitude half). You cannot gain more temporary hit points in this manner than the subject's current hit points + their Constitution score. If you strike multiple targets at once with the same vampiric strike (for example, through the Mass Death Magic talent) you cannot gain more temporary hit points than 3 per caster level (minimum 6)."
+    },
+    {
+      "name": "Weakening",
+      "sphereName": "Death",
+      "talentTypes": [
+        "ghost strike"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may make a ghost strike that inflicts a 1d4 point penalty to the target's Strength or Dexterity (your choice, Fortitude negates) for 1 round per level. You may spend a spell point to increase this reduction by half your caster level (minimum 1) and cause a successful Fortitude save to only halve the effect instead of negate it. This cannot reduce the target's Strength or Dexterity scores to less than 1."
+    },
+    {
+      "name": "Astral Projection",
+      "sphereName": "Death",
+      "talentTypes": [
+        "utility",
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Death sphere (Project Spirit (advanced)), caster level 10th.\n\nWhen using the Project Spirit advanced Death talent, you may spend an additional spell point to project your spirit into the Astral Plane instead of the Ethereal Plane. You may bring up to 1 additional willing creature per 2 caster levels with you, provided these creatures are linked in a circle with you at the time. These fellow travelers are dependent upon you and must accompany you at all times. If something happens to you during the journey, your companions are stranded wherever you left them.\n\nWhile you are on the Astral Plane, your astral body is connected at all times to your physical body by an incorporeal silver cord. If the cord is broken, you are killed, astrally and physically.\n\nLuckily, very few things can destroy a silver cord. Unlike a regular use of the Project Spirit talent, you and your companions may travel through the Astral Plane in this manner indefinitely, until you either choose to end the effect (which returns you to your body) or it is ended by some outside means. This effect may be dispelled like any other sphere effect by targeting either your astral form or your physical body. Dispelling this effect immediately returns you to your body."
+    },
+    {
+      "name": "Astral Travel",
+      "sphereName": "Death",
+      "talentTypes": [
+        "utility",
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Death sphere (Astral Projection (advanced), Project Spirit (advanced)), caster level 15th.\n\nWhen projecting yourself and/or your allies into the Astral Plane, you may spend an additional spell point (bringing the total to 3) to allow you and your allies to travel astrally to any of the other planes that border the Astral Plane. If you choose to enter one of these planes, you form a new physical body (and equipment) on that plane of existence, exactly like your true form, although the silver cord remains invisibly attached to this new body, and magic items used still count against the item's total uses. You are still subject to the weaknesses of an astral form (you may be dispelled, your cord may be broken, etc.). If your new form is killed, you are returned to your original body, gaining 2 permanent negative levels as normal."
+    },
+    {
+      "name": "Create Haunt",
+      "sphereName": "Death",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Death sphere (Haunting Apparition), caster level 5th.\n\nYou may spend 1 minute and 5 spell points to create a haunt with a CR equal to or less than 1/2 your Death sphere caster level. These haunts share your alignment. Haunts created through this talent have a destruction condition of being successfully affected with the Break Enchantment talent from the Life sphere or other effects that would counter a curse."
+    },
+    {
+      "name": "Create Soul Gem",
+      "sphereName": "Death",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki [DbH]",
+      "description": "Prerequisites: Death sphere, caster level 5th.\n\nYou draw forth the ebbing life force of a dying creature or one that has died in the past round, transforming it into a soul gem. The target must be within range of your ghost strike in order for you to use this ability on them (or within close range if you do not possess the ability to use ghost strike). If the creature is dying but alive and fails its saving throw, it dies and you capture its soul in the gem.\n\nIf the creature is dead, it can still resist this effect by attempting a Will save as if it were still alive. The value of the soul gem created depends on the nature of the creature it is made from (see below). Soul gems created by this effect crumble to dust after 1 day per caster level, releasing the trapped soul to travel on to the afterlife.\n\nOnly one soul gem can be created from a dying creature. Any attempt to resurrect a body whose soul is trapped in a soul gem requires a magical skill check against your MSD. Failure results in the resurrection having no effect, while success shatters the target's soul gem and returns the creature to life as normal. If you possess the Death sphere Soul Trap advanced talent, you may transfer a soul contained in a soul gem into an appropriate gemstone as a standard action by spending 3 spell points.\n\nIf a creature does not possess a soul, they are unaffected by this talent. If a creature's soul is already pledged to another entity such as a god or outsider, said entity may seek to reclaim the soul somehow.\n\nThe Value of Souls\n\nTrapped souls are one of the fundamental currencies throughout Abaddon, the Abyss, and Hell. Three key factors influence a soul's value in the soul trade: the strength of the soul's life force (which relates directly to the CR of the creature from which the soul was harvested), the soul's age (how long the soul has been cycled through reincarnation, which directly relates to the sapience of the creature from which the soul was harvested), and the soul's flavor (which is determined by factors that include the alignment, personality, and religion of the creature from which the soul was harvested). It is worth noting that while trading in souls may prove lucrative, the practice may be considered evil or an affront to the natural order in certain settings unless one is trading souls for an altruistic purpose (such as to smash purchased prisons and release the souls trapped within).\n\nLife Force: A souls' life force sets its base gp value. This i"
+    },
+    {
+      "name": "Cut The Cord",
+      "sphereName": "Death",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki [LG]",
+      "description": "Prerequisites: Death sphere (Soul Trap (advanced)), caster level 15th.\n\nWhen using the Soul Trap talent to trap a soul, you may instead choose to sever it. You do not need a gemstone and do not capture its soul. Instead the creature can no longer be resurrected except by use of spells such as wish, miracle or true resurrection or talents such as Supreme Resurrection from the Life sphere.\n\nIf your permanent caster level is at least 20, a creature whose soul has been severed can only be brought back to life with a wish, miracle or true resurrection if the soul is located (typically, the soul is hidden somewhere important to the original creature). Magical search by a crystal ball, a locate object spell, or other similar divinations (including most effects from the Divination sphere) does not reveal the fact that a creature's soul is severed, but the wish, miracle, discern location or the Discern Location advanced talent do reveal the location of the severed soul. Even if the soul is located, attempting to resurrect the severed soul requires a successful magic skill check against 15 + your permanent caster level unless the effect comes from an artifact, deity, or mythic creature with more mythic tiers or ranks than you."
+    },
+    {
+      "name": "Deadlord's Reach",
+      "sphereName": "Death",
+      "talentTypes": [
+        "dominion",
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki [DbH]",
+      "description": "Prerequisites: Death sphere (Icy Grip, any one (dominion) talent), caster level 5th.\n\nWhile an undead you reanimated is within your dominion range, you may spend an additional spell point as part of creating a magical sphere effect to treat the undead as the point of origin for any effect you create. Personal-range spells take effect on the undead channeling the effect rather than yourself."
+    },
+    {
+      "name": "Enervation",
+      "sphereName": "Death",
+      "talentTypes": [
+        "eo3",
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Death sphere (Drain (ghost strike)), caster level 15th.\n\nYou may spend an additional spell point when using the Drain ghost strike to increase the number of temporary negative levels by one additional die (2d4, 2d6, 2d8, etc., maximum 2d12) and increase the duration of these negative levels to 24 hours (if this duration would be higher)."
+    },
+    {
+      "name": "Extended Command",
+      "sphereName": "Death",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki [DbH]",
+      "description": "Prerequisites: Death sphere (Command Undead (ghost strike), Sustained Necromancy).\n\nWhen a creature fails its saving throw against your Command Undead ghost strike, you may extend the duration of the effect to 1 hour per caster level. If you do, the Hit Dice of the controlled undead count towards the number of Hit Dice of undead you may reanimate."
+    },
+    {
+      "name": "Greater Curse",
+      "sphereName": "Death",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Death sphere (Curse (ghost strike)), caster level 15th.\n\nWhen you successfully apply a curse through your Curse ghost strike, the DC to remove it is increased by +5. Additionally, you may apply much more powerful curses to the target, examples of which are outlined below:\n\nCurse of Ages: The target ages 1 year every day.\n\nDaybane: The target suffers 1d6 points of nonlethal damage for every minute of exposure to bright light, including daylight. This does not become lethal damage if the target falls unconscious.\n\nDayblind: The target is blind except in dim light or darkness.\n\nFamine: Any food that the target attempts to consume instantly rots into a putrescent mass. The target can attempt a Fortitude save to choke down the spoiled food. If the target fails at the check, she takes 1d2 points of Constitution damage. In either case, attempting to consume food leaves the target sickened and unable to eat for 1d4 hours. Food created by magic can resist spoilage with a successful magic skill check against the DC of the curse.\n\nFont of Truth: The target is unable to intentionally lie. In addition, anytime the target is asked a question, she must succeed at a Will save or answer in exacting, truthful detail. The target receives an additional save once per minute to cease elaborating upon her answer.\n\nInsanity: The target gains either amnesia, mania/phobia, multiple personality disorder, paranoia, psychosis, or schizophrenia, as detailed in the Pathfinder RPG GameMastery Guide.\n\nLycanthropy: The target becomes afflicted with lycanthropy.\n\nRavenous: The target must attempt a Fortitude save every hour. If it fails, it must eat a full day's worth of food. If sufficient food is not available, starvation advances at the rate of 1 day per failed Fortitude save.\n\nUnluck: Once per hour, the target must reroll one roll (decided by the GM) and take the worse result.\n\nVenerable: The target gains the penalties (but not the benefits) of advancing to the venerable age range. This does not actually increase their age.\n\nVulnerability: The target gains vulnerability to a single energy type. This has no effect on targets immune to the chosen energy type."
+    },
+    {
+      "name": "Greater Undead",
+      "sphereName": "Death",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Death sphere (Sustained Necromancy, Permanent Undead (advanced)), caster level 5th.\n\nYou may spend 3 spell points and 1 hour to reanimate a body as a greater form of undead, including banshees, vampires, wights, and others. This is always an instantaneous effect, creating permanent undead that cannot be dispelled.\n\nThe created undead cannot have a challenge rating above 1/2 your caster level, and the created undead are not automatically under your control; alternate means of control must be established. Many undead have specific requirements for their creation listed in their descriptions (banshees are the spirits of female elves who either betrayed a lover or were betrayed by one, bodaks are extraplanar undead created in the Abyss, allips are the spirits of insane suicides, etc.). These prerequisites must be met in order to create a specific kind of undead.\n\nAt caster level 15th, you may create any form of undead, regardless of CR, provided you meet its additional prerequisites. GMs always have the final say over what prerequisites an undead might require."
+    },
+    {
+      "name": "Hollow Body",
+      "sphereName": "Death",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki [DbH]",
+      "description": "Prerequisites: Death sphere.\n\nWhenever you kill a creature using a Death sphere effect, you may choose to leave the body completely intact but empty of a soul. The soul passes on, but the body itself remains alive in a catatonic state. Mind-affecting effects and abilities such as possession can be used on this hollow body as if it were a willing living creature. Hollow bodies still require food to survive and become a regular corpse should they die. A hollow body that is dominated or possessed functions as if it had been given the zombie template (or one of the variant zombies creatable through Expanded Necromancy if you possess that talent), save that it lacks undead traits and retains the traits of its original creature type. They are treated as their original type, not undead, for the resolution of magical effects and attacks. Channelling positive energy cannot harm a hollow body zombie, for example, nor does negative energy heal it.\n\nIf you possess the Life sphere, you may reanimate a creature as a hollow body rather than as a skeleton or zombie."
+    },
+    {
+      "name": "Mercy Killing",
+      "sphereName": "Death",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Death sphere (Corpse Manipulation or Killing Curse).\n\nAs a standard action, you may target a conscious and willing creature with your ghost strike, and they immediately die without any pain or discomfort. However, for 1 day per caster level the creature is treated as having died for no more than 1 round for the purposes of the Resuscitate talent and other spells or abilities that are used to bring creatures back from the dead. While this effect lasts, the remains of the dead creature do not decay and cannot be reanimated by anyone but you without a successful magic skill check made against your MSD."
+    },
+    {
+      "name": "Nothing Shall Bear Your Name",
+      "sphereName": "Death",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki [LG]",
+      "description": "Prerequisites: Death sphere (Soul Trap (advanced)), Mind sphere (Inception (charm), Mass Charm, Powerful Charm), caster level 15th.\n\nWhen you use Cut The Cord* or Soul TrapUSoP on a creature, any recollection of the target is wiped from existence. Any memories including that target are revised such that no creature which can be affected by your charm ever recalls the target's existence, their memories being revised as per the Inception greater charm (this effect functions even across planes). You can choose to exempt any number of creatures from the memory revisions of this talent.\n\nIf you have the Witness Across Time advanced Time talent, you may choose to also affect all alternate timeline versions of the deceased creature you are aware of who had an equal number or fewer of Hit Dice and mythic ranks to the deceased creature with either Cut The Cord or Soul Trap, trapping or severing all of them. If using Soul Trap, all versions of the creature are trapped within the same gem and count as a single trapped soul. If using Cut The Cord, all versions of the creature's soul are confined to a single timeline which one of them occupied."
+    },
+    {
+      "name": "Permanent Undead",
+      "sphereName": "Death",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Death sphere (Sustained Necromancy), caster level 5th.\n\nWhen you reanimate a corpse as a skeleton or zombie, you may spend 2 spell points to make the reanimation an instantaneous effect. The undead creature exists independent of your concentration, has no duration, and cannot be dispelled. These undead still count against the total number of undead you may have reanimated at any one time. If you create more undead than your total, old permanent undead are not destroyed; instead, they are simply released from service and will attack you or any other nearby living creatures."
+    },
+    {
+      "name": "Possession",
+      "sphereName": "Death",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Death sphere (Project Spirit (advanced)), caster level 10th.\n\nWhen you project your spirit by use of the Project Spirit advanced Death talent, you may move into the same space as a material creature and attempt to possess it. You must spend a spell point to attempt a possession, and the target is allowed a Will save to negate. If their saving throw fails, the target's soul is repressed, and yours assumes control of the body. You may only possess a physical creature with a soul (this includes most living creatures and intelligent undead but not constructs, unintelligent undead, or outsiders).\n\nAttempting to possess a body is a full-round action. You may only attempt to possess a creature once during any individual projection of your spirit.\n\nIf you are successful, your life force occupies the host body. You keep your Intelligence, Wisdom, Charisma, level, class, base attack bonus, base save bonuses, feats, talents, alignment, mental abilities, extraordinary abilities, supernatural abilities, and magical abilities such as spells and sphere abilities. The body retains its Strength, Dexterity, Constitution, hit points, natural abilities, and automatic abilities. A body with extra limbs does not allow you to make more attacks (or more advantageous two-weapon attacks) than normal. You cannot choose to activate the body's extraordinary or supernatural abilities.\n\nThe creature's spells and spell-like abilities do not stay with the body. You may possess a body for up to 1 hour per caster level, but may always end the effect early as a standard action. If the host body is slain, you return to your body and suffer 2 permanent negative levels. As is usual when projecting your spirit, this effect may be dispelled at either your body or the host's body."
+    },
+    {
+      "name": "Project Spirit",
+      "sphereName": "Death",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Death sphere, caster level 10th.\n\nYou may spend a spell point to project your spirit out of your body for up to 1 round per caster level. During this time, your body falls into a state of suspended animation; it requires neither food nor water and does not age, although it may be slain through normal means.\n\nYour spirit manifests as an ethereal version of you with your hit points and abilities, and carries a copy of all of your equipment. It is invisible, insubstantial, and capable of moving in any direction, even up or down, albeit at half normal speed.\n\nIt can move through solid objects, including living creatures, and may see and hear its surroundings, although as it is on the Ethereal Plane, it can only see and hear the Material Plane to a distance of 60 feet. When the time limit expires, your spirit immediately returns to your body. Using magic items (such as scrolls, wands, potions, and other items with a limited number of charges or uses per day) while ethereal counts against the item's total remaining uses when you return to your body.\n\nYour spirit cannot attack or otherwise affect creatures and objects on the Material Plane nor generally be affected by them, although some effects (such as force damage) specifically target ethereal creatures when used by material creatures. Certain material creatures or objects also have attacks or effects that can specifically affect creatures on the Ethereal Plane. These effects do not work in reverse to allow your spirit to affect material creatures.\n\nYour spirit treats other ethereal creatures and ethereal objects as if they were material. Your spirit may use any magic you possess, but such magic can only affect other ethereal things.\n\nIf your spirit self is slain, your spirit instantly returns to your body, reviving it from its state of suspended animation. This is a traumatic affair, however, and you gain two permanent negative levels."
+    },
+    {
+      "name": "Soul Drain",
+      "sphereName": "Death",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Death sphere, caster level 5th.\n\nEach time you use a ghost strike that does not cause negative levels or immediately kill its target (such as Killing Curse), you can choose for it not to count as a death effect, meaning it can affect creatures normally resistant or immune to death effects, such as outsiders with the daemon subtype. This allows you to affect constructs and undead with your ghost strikes. Such creatures gain a +4 bonus to any granted saving throw, and may still be immune to the effects caused by your ghost strike (disease, etc.)."
+    },
+    {
+      "name": "Soul Trap",
+      "sphereName": "Death",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Death sphere, caster level 15th.\n\nAs a standard action, when adjacent to a creature that has died very recently (within 1 round per caster level) you may spend 3 spell points to trap their soul into a gem. The target is allowed a Will save to negate the effect, and the gemstone's value must be at least 1,000 gp per Hit Die of the creature you are attempting to trap. If successful, the creature's soul becomes trapped within the gemstone. A trapped creature cannot be resurrected or have its spirit summoned, unless the caster is in possession of this gemstone. The creature trapped inside the gemstone always fails its saving throws if the holder of the gemstone uses the Summon Spirit advanced Death talent on it.\n\nIf the gemstone is broken, the spirit is released. If the spirit is called through the Summon Spirit advanced Death talent, the caster may choose to release the spirit, in which case it travels to the afterlife, leaving the gem empty and reusable."
+    },
+    {
+      "name": "Summon Spirit",
+      "sphereName": "Death",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Death sphere, caster level 5th.\n\nYou may spend 3 spell points and 1 hour to summon the spirit of a dead creature. You must know the exact creature you are trying to summon and be able to designate them (such as their name or place and time of death, etc.) and the more familiar you are with the spirit and the more recently they died, the more likely they are to appear. The spirit you are trying to summon is allowed a Will save with the following modifiers depending on your knowledge and connection to the target, as well as its time of death:\n\nTable: Familiarity (Spirit)\n\nKnowledge Will Save Modifier None^ +10 Secondhand (you have heard of the subject) +5 Firsthand (you have met the subject) +0 Familiar (you know the subject well) -5\n\n^You must have some sort of connection (see below) to a creature of which you have no knowledge.\n\nTable: Connection (Spirit)\n\nConnection Will Save Modifier Likeness or picture -2 Possession or garment -4 Corpse/remains -10\n\nTable: Time Deceased\n\nTime the Creature has been Dead Will Save Modifier 1 year +2 10 years +4 100 years +6 1000 years +8\n\nOn a successful saving throw, the target does not appear and may choose to retaliate spiritually, giving you 2 temporary negative levels that last 24 hours (meaning you must save against them becoming permanent). While friends may choose to purposefully fail their saving throw and come willingly, in most other cases being ripped from the afterlife is a horrid experience and can turn even the nicest of spirits hostile. If a spirit succeeds at their saving throw against this effect they cannot be summoned again by the same caster for 1 month. Sometimes, the spirits of heroes, kings, and others are protected by a deity and are simply unable to be summoned.\n\nOnce a spirit has been summoned, you may do any of the following:\n\nYou may ask one question per two caster levels. The corpse's knowledge is limited to what it knew during life, including the languages it spoke. Answers may be brief, cryptic, or repetitive. A creature who would have opposed you in life may attempt a new Will save to refuse to answer or to lie with the Bluff skill. You may use the spirit as a component when creating an animated object or undead creature (Will negates if unwilling; if the spirit succeeds at its save, it immediately returns to the afterlife as if it had made its original saving throw). You must create the undead creature or animated object as usual, but by placing the spirit into the target, "
+    },
+    {
+      "name": "Temporal Projection",
+      "sphereName": "Death",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki [LG]",
+      "description": "Prerequisites: Death sphere (Astral Projection (advanced), Astral Travel (advanced), Project Spirit (advanced)), Time sphere, caster level 20th.\n\nWhen you use Astral Travel to travel into the astral plane, you may spend 2 additional spell points (bringing the total to 5) to allow you and your allies to travel astrally to other points in time on the planes you enter. The alternate time period reached through Temporal Projection is an alternate timeline that is functionally identical to your own in all ways, meaning that you cannot change your current timeline's history through your spirit or return to the same alternate timeline after the effect ends. You return to your original timeline when the effect ends or your new form is killed. Any objects you have brought from your original timeline return with you to the original timeline. Your Temporal Projection expires if it would be used to arrive at a point in time where another instance of your Temporal Projection is active.\n\nIf you have the Witness Across Time advanced Time talent, you may use Temporal Projection to project your spirit into a specific alternate timeline you are aware of.\n\nIf you have the Possession advanced Death talent and project your spirit into a timeline where an alternate version of yourself exists, you may automatically possess that alternate version of yourself. The alternate version is not allowed a saving throw to resist this possession and you may continue to possess the body for the duration of your spirit projection."
+    },
+    {
+      "name": "Written Out Of History",
+      "sphereName": "Death",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki [LG]",
+      "description": "Prerequisites: Death sphere (Cut The Cord (advanced), Nothing Shall Bear Your Name (advanced), Soul Trap (advanced)), Mind sphere (Inception (charm), Mass Charm, Powerful Charm), Time sphere, Warp sphere (Distant Teleport, Timeline Drift (advanced), Time Warp (advanced), True Teleport (advanced), Unseeing Teleport), caster level 20th.\n\nWhen you use Cut The Cord in conjunction with Nothing Shall Bear Your Name on a deceased creature, you may rewrite history so that the target never existed in the first place. You create a new timeline where the deceased creature never existed or affected events and transport yourself and up to one other creature per caster level to this new timeline. Only the creatures transported from the old timeline recall the original creature that was erased and the actions that they took."
+    }
+  ]
+}

@@ -1,0 +1,335 @@
+{
+  "slug": "warleader-sphere",
+  "name": "Warleader",
+  "type": "MIGHT",
+  "description": "Tactics are coordinated battle plans that require continuing direction from the practitioner to maintain. A creature must have line of sight to, and be able to see, the practitioner to benefit from a tactic. Beginning a tactic is a move action, and it can be maintained each round as a move or swift action. Once activated, you may switch between any tactics you know each time you use a swift action to maintain an ongoing tactic. Tactics affect all allied creatures within a radius of 10 ft. + 5ft. per rank in Diplomacy you possess, and may be centered on any square you have both line of sight and line of effect to. You may recenter an ongoing tactic at a new location as part of the swift action used to maintain it. The benefits of your tactics end immediately if you are helpless, killed, paralyzed, rendered unconscious, or stunned. When you first gain the Warleader sphere, you gain the following tactic: While within the affected area of this tactic, allied creatures are considered to be flanking as long as they both threaten the same creature, regardless of their comparative positioning. Shouts are sound-based effects centered on the practitioner that affect creatures in an area of effect centered on the practitioner with a radius of 10 ft. + 5 ft. per 2 ranks in Diplomacy the practitioner possesses. The practitioner may choose whether or not to include himself in the effects of his shout. The effects of shouts last for a number of rounds equal to 1 + 1 for every 4 ranks in Dip",
+  "source": "Spheres of Power wiki",
+  "url": "http://spheresofpower.wikidot.com/warleader-sphere",
+  "talents": [
+    {
+      "name": "Breath Support",
+      "sphereName": "Warleader",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "When performing a shout, you may change the area of effect to a cone of twice the length of the shout's normal radius."
+    },
+    {
+      "name": "Focusing Tactics",
+      "sphereName": "Warleader",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Any ally currently affected by one of your shouts or tactics may spend a move action to restore your martial focus. The creature spending a move action must have an Intelligence of at least 3 and possess a number of Hit Dice at least equal to 1/2 your total Hit Dice."
+    },
+    {
+      "name": "Rallying Beseechment",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "utility",
+        "lots"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Whenever you make a Diplomacy or Perform check to make a request, you treat indifferent and friendly creatures as one step more friendly for the purpose of the request and its DC. In addition, you do not increase the DC for making a request to a group."
+    },
+    {
+      "name": "Roaring Reservoir",
+      "sphereName": "Warleader",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "You may use a shout that normally requires you to expend your martial focus without expending your martial focus, but doing so makes you fatigued for 1 minute. If you are already fatigued, you become exhausted for this duration instead. You cannot use this talent while exhausted."
+    },
+    {
+      "name": "Strategically Distant Examination",
+      "sphereName": "Warleader",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki [Apoc]",
+      "description": "When you are benefiting from cover or concealment against at least one opponent and you are not within the threatened area of any opponent, increase morale bonuses granted by your tactics and shouts by 1 for every 10 ranks in Diplomacy you possess (minimum 1) until the start of your next turn. Associated Feat: Lead from the Back."
+    },
+    {
+      "name": "Verbal Commands",
+      "sphereName": "Warleader",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Creatures may benefit from your tactics even if they cannot see you, as long as they can hear your instructions; this allows creatures who are blind, but not deaf, to benefit from your tactics. You must still be able to see affected creatures and the area within your tactic's radius to issue commands, but need not have direct line of sight or line of effect; for example, if you are watching an area through a magical viewing device and have a method of communicating verbally with affected allies in the area each round, you can maintain a tactic and grant its benefits to your allies without being physically present."
+    },
+    {
+      "name": "Verbal Counter",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "utility"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "While outside of combat, whenever a creature makes a Bluff check against you that involves speaking, you can make a Bluff, Diplomacy, or Intimidate check opposed by their Bluff check; upon making a successful opposed check, you can force them to either tell the truth (as far as they know) about the subject or take a -5 penalty on Charisma-based skill and ability checks (this includes Bluff, Diplomacy, and Intimidate, even if the target uses an alternate ability score to determine their bonuses with these skills) against everyone who listened to them speak for 1 day."
+    },
+    {
+      "name": "Call Attention",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "shout"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "When you use this shout, your opponents' attention is drawn to you for its duration, making it hard for them to focus on your allies. Allies within the shout's affected area may make a Stealth check to hide even if they do not have cover or concealment for the duration of the shout, but you automatically fail any Stealth checks for the shout's duration."
+    },
+    {
+      "name": "Cry Of Confrontation",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "shout"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may expend your martial focus to use this shout and cause all enemy creatures who fail their Will save against this shout to take a -1 penalty on all attack rolls that do not include you as a target. Creatures incapable of targeting you with their attacks (for example, if you are flying out of reach of an enemy whose only available weapons are melee attacks) ignore this penalty. For every 4 ranks in Diplomacy you possess, this penalty increases by -1."
+    },
+    {
+      "name": "Disarming Roar",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "shout"
+      ],
+      "source": "Spheres of Power wiki [Apoc]",
+      "description": "You may expend your martial focus to cause all affected enemies to attempt a Will saving throw. On a failed save, the creature loses their martial focus. This is an instantaneous effect."
+    },
+    {
+      "name": "Dispiriting Roar",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "shout"
+      ],
+      "source": "Spheres of Power wiki [Apoc]",
+      "description": "When you use this shout, all hostile creatures within its radius must succeed at a Will saving throw or have all morale bonuses benefiting them reduced by 1 for the shout's duration. This is a mind-affecting fear effect. For every 4 ranks in Diplomacy you possess, the creature's morale bonuses are reduced by an additional 1."
+    },
+    {
+      "name": "Focusing Cry",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "shout"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may expend your martial focus to use this shout to restore the martial focus of 1 creature other than yourself within the shout's affected area. For every 4 ranks in Diplomacy you possess, you may restore the martial focus of 1 additional creature. This is an instantaneous effect."
+    },
+    {
+      "name": "Frightful Roar",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "shout"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "When you use this shout, all hostile creatures within its radius must succeed on a Will saving throw or be shaken. This is a mind-affecting fear effect. This talent may be taken up to twice; the second time this talent is taken, any creature affected by this shout who is already shaken is instead frightened for the shout's duration."
+    },
+    {
+      "name": "Harangue",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "shout"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may expend your martial focus to use this shout, allowing all allies within its radius to make a new saving throw against any ongoing effect they are currently suffering from that normally grants a saving throw using the original DC, even if they have already failed the initial save and would not normally be granted another. Poison and disease effects that can worsen on a failed saving throw do not count this saving throw as a failure when determining such effects if it is unsuccessful. A creature can only benefit from this shout once in regard to any individual effect."
+    },
+    {
+      "name": "Inspiring Speech",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "shout"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may call your allies to arms and give them the strength to push through exhaustion. For the shout's duration, you and your affected allies may ignore the penalties associated with the fatigued or exhausted conditions. This does not end those conditions nor allow an exhausted creature to use the Roaring Reservoir talent, it simply removes the penalties associated with those conditions for the time being."
+    },
+    {
+      "name": "Make It Hurt",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "shout"
+      ],
+      "source": "Spheres of Power wiki [LG]",
+      "description": "You may expend your martial focus to use this shout, causing all allies in the area to threaten a critical hit on a 19 or 20 on their attack rolls (or using the normal critical threat range of their weapon, whichever is better). Allies affected by this shout gain a morale bonus on critical hit confirmation rolls equal to half your ranks in Diplomacy."
+    },
+    {
+      "name": "Rallying Speech",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "shout"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You can rally your allies against the effects of fear. For the duration of the effect, you and your allies ignore the effects of the shaken condition, and reduce the effects of the frightened condition to become those of the shaken condition. Panicked creatures ignore the effects of this shout."
+    },
+    {
+      "name": "Rousing Claxon",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "shout"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may expend your martial focus to use this shout, granting you and all affected allies a number of temporary hit points equal to your ranks in Diplomacy; these temporary hit points expire at the end of the shout's duration."
+    },
+    {
+      "name": "Courier's Dash",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "tactic"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "All allies that start their turn within the radius of this tactic gain a +5 ft enhancement bonus to their base land speed. An ally who begins or ends their turn outside of this tactic's affected area loses its benefits until they once more start their turn within its radius. For every 5 ranks in Diplomacy you possess, this enhancement bonus is increased by an additional 5 ft.\n\nAddendum [Conq. HB]: You may take this talent twice. If taken a second time, instead of granting an enhancement bonus to base land speed, you may allow allies benefiting from this tactic to move through 5 feet of difficult terrain as if it were normal terrain, increasing by 5 feet for every 10 ranks of Diplomacy you possess, and allows allies to take a 5-foot step into difficult terrain.\n\nAssociated Feat: Nimble Moves (if taken twice)."
+    },
+    {
+      "name": "Coordinated Reflexes",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "tactic"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Allies within range of this tactic are granted a +1 morale bonus on Reflex saves to avoid damage from attacks and effects that target an area, such as a fireball spell or the splash damage from an alchemist's bombs. For every 4 ranks in Diplomacy you possess, this bonus increases by +1. Once per round when an ally affected by this tactic fails their Reflex save against such an effect, you may spend an immediate action to allow them to reroll the save."
+    },
+    {
+      "name": "Deadly Herdsman",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "tactic"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Whenever you or an ally benefiting from this tactic successfully deal damage to an enemy with an attack made using the attack action, the individual who made the attack may attempt a bull rush or reposition combat maneuver against the target of the attack as a free action that does not provoke attacks of opportunity. If you possess 10 or more ranks in Diplomacy, the forced movement caused by the maneuver provokes an attack of opportunity from threatening allies other than the one initiating the movement."
+    },
+    {
+      "name": "Fortifying Phalanx",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "tactic"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Allies within range of this tactic are granted a +1 morale bonus on Fortitude saving throws, +1 for every 4 ranks in Diplomacy you possess, as long as they are within the natural reach of at least one other ally affected by this tactic. Once per round when an ally affected by this tactic fails a Fortitude saving throw, you may spend an immediate action to allow them to reroll the save."
+    },
+    {
+      "name": "Militant Will",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "tactic"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Allies within range of this tactic are granted a +1 morale bonus on Will saves against charm, compulsion, and fear effects, +1 per 4 ranks in Diplomacy you possess. Once per round when an ally affected by this tactic fails their Will save against such an effect, you may spend an immediate action to allow them to reroll the save."
+    },
+    {
+      "name": "Preparation",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "tactic"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Affected targets gain a bonus to their initiative checks equal to 1/4th your ranks in Diplomacy (minimum: 1). A creature cannot benefit from this tactic more than an hour in any given day."
+    },
+    {
+      "name": "Shieldbrothers",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "tactic"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "As long as an ally affected by this tactic is adjacent to at least one other ally, they gain a competence bonus to AC equal to 1/4 your ranks in Diplomacy (minimum 1)."
+    },
+    {
+      "name": "Synchronized Strikes",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "tactic",
+        "warden"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "When an ally within range of this tactic makes a successful weapon attack against a creature, the next successful weapon attack against that creature made by another ally within range of this tactic ignores any damage reduction or hardness the creature may possess.\n\nAuthor's Note: Attacks subject to this tactic either allow the next attack to ignore damage reduction and hardness, or ignores damage reduction and hardness (if any). When an attack would ignore damage reduction or hardness, it does not allow the subsequent attack to also ignore damage reduction or hardness.\n\nEffectively: Attack A allows Attack B to ignore damage reduction or hardness, but Attack B does not allow Attack C to ignore damage reduction or hardness. Attack C, however, enables Attack D, and continues alternating."
+    },
+    {
+      "name": "Armies Of The Dead",
+      "sphereName": "Warleader",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Warleader sphere, Diplomacy 6 ranks.\n\nYou may make Diplomacy checks to improve the attitude of undead, including mindless undead. Undead creatures with an attitude of friendly or better towards you can benefit from any morale bonuses, teamwork feats, or mind-affecting effects your shouts or tactics would bestow, and mindless undead whose attitude has been improved to friendly will follow your orders to the best of their ability, though undead who are not closely watched may quickly revert to their prior inclinations. If the undead is under the control of a creature (such as a spellcaster or cleric using the Command Undead feat), the orders of that creature still supercede your own."
+    },
+    {
+      "name": "Darkland's Cry",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "shout"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Warleader sphere, Diplomacy 15 ranks.\n\nYou may expend your focus to perform a shout that saps the very life and will to live from a creature. Any creature within this shout's radius who fails a Fortitude saving throw suffers 1d4 temporary negative levels that lasts 1 day. You may spend a move action to warn your allies before using this effect protecting them from the shout's effects, but doing so grants all other creatures a +5 circumstance bonus on their saving throw. This is a supernatural effect."
+    },
+    {
+      "name": "Explosive Ululation",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "shout"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Warleader sphere, Diplomacy 1 rank.\n\nYou may perform an ear-splitting scream. All targets within the area of effect suffer 1d8 sonic damage, +1d8 per 4 ranks in Diplomacy you possess. In addition, the targets become deafened for 1 round, +1 per 4 ranks in Diplomacy you possess. Targets are allowed a Fortitude save to halve the sonic damage and negate the deafened effect.\n\nYou may expend your martial focus when performing an explosive ululation. If you do so, all targets who fail their Fortitude save (as well as unattended objects) are immediately subject to a bull rush combat maneuver performed as a free action that does not provoke an attack of opportunity, using your ranks in Diplomacy + your Charisma modifier as your CMB. Targets are pushed directly away from you, and you cannot move as part of this maneuver. There is no size limitation on what creatures you may bull rush in this manner.\n\nYou may spend a free action to warn your allies before using this effect protecting them from the shout's effects, but doing so grants all other creatures a +5 circumstance bonus on their saving throw. This is a supernatural effect."
+    },
+    {
+      "name": "Legion Unending",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "tactic"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Warleader sphere, Rousing Claxon, Diplomacy 10 ranks.\n\nWhenever an ally affected by this tactic would be reduced to 0 or fewer hit points, you may spend an immediate action to grant them a number of temporary hit points equal to twice your ranks in Diplomacy. These temporary hit points are applied directly to the damage dealt first, with any remaining temporary hit points applied after the attack is resolved. This ability may be used as a free action that can be taken even when it's not your turn, though doing so expends your martial focus and ends the tactic."
+    },
+    {
+      "name": "Master's Aura",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "tactic",
+        "utility"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Warleader sphere, Diplomacy 7 ranks.\n\nAny ally affected by this tactic can use the aid another action to assist you on a skill or ability check as an immediate action as long as they are within close range. Any creature who comes into physical contact with you while this tactic is active must succeed on a Will saving throw or have their attitude towards you instantly improved by 1 step for 1 hour. Once a given creature has attempted a saving throw against this effect, they cannot be affected by it again for 24 hours."
+    },
+    {
+      "name": "Piercing Voice",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "warden"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Warleader sphere.\n\nWhenever you would be affected by a magic effect that would make you unable to speak (such as the silence option of the Suppression Illusion talent), the caster must first attempt a magic skill check against a DC equal to 10 + 1/2 your Diplomacy ranks + your practitioner modifier (minimum 1). If the caster fails, your voice is not affected by the magic effect, allowing you to speak, use shouts, tactics with verbal components, etc. If the caster succeeds, your voice is completely silenced and affected by the effect normally. If the effect would suppress other forms of noise (such as moving), they still remain suppressed even if the caster fails.\n\nAdditionally, whenever the effects of your shouts would be either reduced in range or completely negated with a solid barrier or wall, they instead carry through the obstruction without interruption."
+    },
+    {
+      "name": "Recall Spirit",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "shout"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Warleader sphere, Rousing Claxon, Diplomacy 10 ranks.\n\nYou may expend your focus to recall the spirit of a creature within range of your shout that has died within 1 round. The target is healed for an amount equal to your ranks in Diplomacy + your Charisma modifier. If this healing is enough to raise the slain creature's hit points to an amount greater than its Constitution score in negative hit points, it is returned to life and stabilizes at its new hit point total. If the creature's hit point total would still be at a negative amount greater than or equal to its Constitution score, it remains dead. Creatures brought back to life via this ability gain a temporary negative level that lasts for one day. This is a supernatural effect."
+    },
+    {
+      "name": "Resonating Chorus",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "shout",
+        "warden"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Diplomacy 5 ranks, Warleader sphere.\n\nYou may release a shout that causes nearby metal weapons to suddenly resonate with sound. For the shout's duration, you and your affected allies' weapon attacks made with metal weapons deal an additional 1d6 points of sonic damage. This damage increases by 1d6 at 10 ranks in Diplomacy and every 5 ranks beyond.\n\nYou may expend your martial focus when using this shout to allow the shout to benefit all kinds of weapons. Additionally, at 10 ranks in Diplomacy, the damage die size is also increased to d8s instead of d6s."
+    },
+    {
+      "name": "Supreme Commander",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "utility"
+      ],
+      "source": "Spheres of Power wiki [SM—]",
+      "description": "Prerequisites: Warleader sphere\n\nYou or any army that is under your command gains a +1 bonus on Morale checks. This value increases by 1 for every 5 ranks in Diplomacy you possess. Additionally, you gain an additional boon of your choice plus an additional boon for every 7 ranks in Diplomacy you possess. Associated Feat: Inspirational Commander."
+    },
+    {
+      "name": "Unending Loyalty",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "shout"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Warleader sphere, Recall Spirit, Rousing Claxon, Legion Unending, Diplomacy 15 ranks.\n\nYou may use your recall spirit shout on a target that has been dead within 1 minute rather than 1 round. Rather than healing the target for a specific amount, the target is returned to life with a number of hit points equal to twice your ranks in Diplomacy + your Charisma modifier, and no negative level (if this would grant them more hit points than they would normally have, they gain any excess as temporary hit points). At the end of the shout's duration, the creature dies regardless of its hit points, and may not be affected with this talent a second time unless they are returned to life by other means. This is a supernatural effect."
+    },
+    {
+      "name": "Watch My Back",
+      "sphereName": "Warleader",
+      "talentTypes": [
+        "tactic"
+      ],
+      "source": "Spheres of Power wiki [LG]",
+      "description": "Prerequisites: Guardian sphere (Extended Guard*), Warleader sphere.\n\nAny ally affected by this tactic may share any AC bonuses granted from fighting defensively or taking the total defense action with allies within their reach.\n\nSpheres of Might by Drop Dead Studios Using Spheres of Might Classes Armiger Blacksmith Commander Conscript Scholar Sentinel Striker Technician Prestige Classes Aeronaut Captain Spheres Alchemy Athletics Barrage Barroom Beastmastery Berserker Boxing Brute Dual Wielding Duelist Equipment Fencing Gladiator Guardian Lancer Leadership Open Hand Scoundrel Scout Shield Sniper Tech Trap Warleader Wrestling Pilot (3PP) Rules About Legendary Talents Martial Traditions Martial Packages Practitioner Feats Practitioner Traits Practitioner FCB's Practitioner Bestiary Associated Feats & Skills Ultimate Engineering (Tinker) Starfinder Conversion [3pp] Get Spheres of Might on DriveThruRPG Mythic Spheres of Might Ultimate Engineering The Conqueror's Handbook The General's Handbook The Highlander's Handbook The Inventor's Handbook The Inventor's Handbook 2 The Jester's Handbook Woodfaring Adventures The Youxia's Handbook Spheres Apocrypha Alch. Formulae Alch. Poisons Alch. Poisons 2 Armor Talents Astrologian Archetype Debilitating Talents Pugilists Racial Ranged Swashbucklers Tandem Tricks & Traps"
+    }
+  ]
+}

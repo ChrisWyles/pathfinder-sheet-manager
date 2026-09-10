@@ -98,6 +98,7 @@ enum ArmorCategory {
 enum SphereType {
   MAGIC
   MIGHT
+  GUILE
 }
 
 enum RollKind {

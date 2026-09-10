@@ -20,6 +20,7 @@
     "db:seed": "prisma db seed",
     "db:studio": "prisma studio",
     "import:foundry": "tsx scripts/import-foundry.ts",
+    "scrape:spheres": "tsx scripts/scrape-spheres.ts",
     "postinstall": "prisma generate"
   },
   "dependencies": {
@@ -60,6 +61,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@vitejs/plugin-react": "^6.1.1",
+    "cheerio": "^1.2.0",
     "eslint": "^9",
     "eslint-config-next": "16.3.4",
     "eslint-config-prettier": "^10.1.8",

@@ -1,0 +1,316 @@
+{
+  "slug": "scoundrel",
+  "name": "Scoundrel",
+  "type": "MIGHT",
+  "description": "All practitioners of the Scoundrel sphere gain the following abilities: You may use your Dexterity in place of your Strength when attempting a dirty trick or steal maneuver and may use your ranks in the Sleight of Hand skill in place of your base attack bonus when determining your combat maneuver bonus to perform a dirty trick or steal maneuver. In addition, you may apply any enhancement bonuses to your unarmed strikes to your dirty trick and steal combat maneuvers. You may make a melee touch attack against a creature as a swift action; if this attack is successful, the creature is battered and takes a -1 penalty on Perception checks for 1 round. For every 4 ranks in Sleight of Hand you possess, this penalty is increased by 1. Trick: Whenever you perform a steal or dirty trick combat maneuver, or make a Sleight of Hand check to take an object from a target unnoticed, you may apply one (trick) talent to it. (Trick) talents cannot be applied to maneuvers performed as a free action.",
+  "source": "Spheres of Power wiki",
+  "url": "http://spheresofpower.wikidot.com/scoundrel",
+  "talents": [
+    {
+      "name": "Bob And Weave",
+      "sphereName": "Scoundrel",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "As long as you have an ally adjacent to you, you can spend a swift action to have that ally provide you with soft cover until the beginning of your next turn, even if the ally providing soft cover moves. You can use this soft cover to make a Stealth check."
+    },
+    {
+      "name": "Brazen Snatcher",
+      "sphereName": "Scoundrel",
+      "talentTypes": [
+        "utility",
+        "lots"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may use your steal Combat Maneuver Bonus in place of your Sleight of Hand bonus when attempting Sleight of Hand checks."
+    },
+    {
+      "name": "Clever Fox's Heist",
+      "sphereName": "Scoundrel",
+      "talentTypes": [
+        "bth"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You channel the fox, weaving expert thievery with grace. You may perform the dirty trick or steal combat maneuver as an attack of opportunity. You cannot apply (trick) talents to a combat maneuver performed this way unless you expend martial focus or spend an additional attack of opportunity.\n\nWhenever you successfully perform a dirty trick or steal combat maneuver as an attack of opportunity, as an immediate action, you may move up to half your base speed. This movement does not provoke an attack of opportunity from the target of your dirty trick or steal. If you take an action to move during your next turn, subtract the amount of movement you made using this ability from your total movement.\n\nAssociated Feat: Fox Trickery.\n\nSpecial: If you would be granted an attack of opportunity against a target because of a dirty trick or steal combat maneuver you performed, such as a (trick) causing the target to provoke an attack of opportunity, you may not use this talent to perform a dirty trick or steal maneuver as an attack of opportunity."
+    },
+    {
+      "name": "Combat Hustle",
+      "sphereName": "Scoundrel",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki [Apoc]",
+      "description": "So long as you have martial focus, when you attempt a dirty trick or steal combat maneuver against an enemy threatened by at least 1 ally, you gain a +2 circumstance bonus for each ally threatening that enemy. This does not provoke attacks of opportunity."
+    },
+    {
+      "name": "Counter Theft",
+      "sphereName": "Scoundrel",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Whenever a creature within your natural reach makes an attack against you with a manufactured melee weapon, you can expend your martial focus as an immediate action to perform a steal combat maneuver against that creature to attempt to disarm them of the weapon being used for the attack before the attack resolves, although any bonuses the target possesses against disarm checks, such as wearing a locked gauntlet, apply to their CMD against this maneuver."
+    },
+    {
+      "name": "Cut And Run",
+      "sphereName": "Scoundrel",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "As long as you have martial focus, whenever you successfully perform a dirty trick or steal combat maneuver against a creature, you may move up to half your base speed as a free action. This movement does not provoke an attack of opportunity from the target of your maneuver."
+    },
+    {
+      "name": "Distracting Trickery",
+      "sphereName": "Scoundrel",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Whenever you successfully perform a dirty trick or steal combat maneuver against a creature, the target cannot make attacks of opportunity against anyone except you for 1 round. For every 5 ranks in Sleight of Hand you possess, the duration of this talent's effect increases by 1 round."
+    },
+    {
+      "name": "Filthy Distraction",
+      "sphereName": "Scoundrel",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Whenever you successfully perform a dirty trick combat maneuver against an unaware creature, the target takes a -5 penalty to Perception checks and is unable to participate in surprise rounds for 1 minute in addition to the effect of the dirty trick."
+    },
+    {
+      "name": "Focusing Thievery",
+      "sphereName": "Scoundrel",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Whenever you successfully perform a Steal or Dirty Trick maneuver against an opponent within your reach, you may make a Sleight of Hand check against their CMD. If successful, the opponent is entangled until the start of your next turn, and you may spend an immediate action to move to any other unoccupied space adjacent to the target creature and regain your martial focus."
+    },
+    {
+      "name": "Improved Grifting",
+      "sphereName": "Scoundrel",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "You gain a +1 competence bonus to your dirty trick and steal combat maneuver checks, as well as to your CMD vs. those maneuvers. This bonus increases by +1 for every 4 ranks in Sleight of Hand you possess. This bonus does not stack with the bonus to these maneuvers provided by the Improved or Greater Dirty Trick or Improved or Greater Steal feats. Associated Feats: Improved Steal, Improved Dirty Trick."
+    },
+    {
+      "name": "Lingering Slight",
+      "sphereName": "Scoundrel",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki [Apoc]",
+      "description": "Whenever you successfully perform a dirty trick combat maneuver against a creature that is currently not affected by a condition inflicted by a previous dirty trick (whether your own or another creature's), you may expend your martial focus to cause the condition caused by the maneuver remain for 1 additional round after it would be removed."
+    },
+    {
+      "name": "Master Thief",
+      "sphereName": "Scoundrel",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Creatures no longer gain a +5 (or higher) bonus to their CMD when you attempt to steal secured items (such as cloaks, pouches, or sheathed weapons) and you may use a steal combat maneuver in place of a disarm combat maneuver (if you would receive a bonus to disarm checks, they apply to steal checks made with this talent). If you have at least 10 ranks in Sleight of Hand, you can attempt steal checks against closely worn items (except for armor) with a -10 penalty on your combat maneuver check."
+    },
+    {
+      "name": "Meddling Mark",
+      "sphereName": "Scoundrel",
+      "talentTypes": [
+        "utility",
+        "lots"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "A creature affected by your marked target ability takes a penalty to Appraise and Sense Motive checks equal to the penalty to Perception checks from your marked target ability."
+    },
+    {
+      "name": "Melee Confusion",
+      "sphereName": "Scoundrel",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Whenever you attempt a dirty trick or steal combat maneuver, you may select one creature within melee reach of your target, treating that creature as an ally for the purposes of flanking until the end of your next turn."
+    },
+    {
+      "name": "Misdirected Attack",
+      "sphereName": "Scoundrel",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Whenever you provoke an attack of opportunity due to leaving a creature's threatened square, you gain a dodge bonus to your AC equal to 1/4 your ranks in Sleight of Hand (minimum 1). If an attack of opportunity provoked in this way misses you, you can expend an attack of opportunity to choose to redirect the attack to a creature within the attacker's reach (other than the attacker themselves), adding a bonus to the attack roll equal to the dodge bonus granted by this talent."
+    },
+    {
+      "name": "Playing Dirty",
+      "sphereName": "Scoundrel",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "As long as you have martial focus, creatures affected by a dirty trick combat maneuver you perform must spend a standard action to remove the effects of your dirty trick. Associated Feat: Greater Dirty Trick."
+    },
+    {
+      "name": "Switcheroo",
+      "sphereName": "Scoundrel",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Whenever you successfully perform a steal combat maneuver, you may replace what you stole with a different item, placing it in either an empty hand or pocket of the creature. If the item you placed on their person is somehow volatile (such as a vial of alchemist's fire, a thunderstone, or an alchemist's bomb), you can rig that item to explode as an immediate action (you must choose when to make the item explode within a number of rounds equal to your ranks in Sleight of Hand); you are immune to any damage or effects of explosions triggered in this manner. When you have at least 10 ranks in Sleight of Hand, you may choose when to make the item explode within a number of minutes equal to your ranks in Sleight of Hand."
+    },
+    {
+      "name": "Twist The Knife",
+      "sphereName": "Scoundrel",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Whenever you successfully confirm a critical hit against a creature, you may expend your martial focus to attempt a dirty trick combat maneuver against that creature as an immediate action, gaining a circumstance bonus on your combat maneuver check equal to the critical multiplier of the weapon that scored the critical hit."
+    },
+    {
+      "name": "Blustering Shenanigans",
+      "sphereName": "Scoundrel",
+      "talentTypes": [
+        "trick"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Whenever you successfully perform a dirty trick combat maneuver, you may attempt an Intimidate check to demoralize that foe."
+    },
+    {
+      "name": "Broke And Broken",
+      "sphereName": "Scoundrel",
+      "talentTypes": [
+        "trick"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "As long as you have martial focus, whenever you successfully perform a dirty trick combat maneuver, you may attempt a steal combat maneuver against the same target as a free action."
+    },
+    {
+      "name": "Cleaned Out",
+      "sphereName": "Scoundrel",
+      "talentTypes": [
+        "trick"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Whenever you successfully perform a steal combat maneuver, you may steal up to two items from the target of your maneuver instead of one. When you have at least 10 ranks in Sleight of Hand, you may instead steal up to three items."
+    },
+    {
+      "name": "Double Dip",
+      "sphereName": "Scoundrel",
+      "talentTypes": [
+        "trick"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Whenever you successfully perform a dirty trick combat maneuver, you may expend your martial focus as a free action to select two different conditions to apply to a creature instead of just one, although both conditions may be removed with the same action. When you have at least 10 ranks in Sleight of Hand, you can instead apply up to three conditions. You cannot use this talent to apply conditions that could not normally be applied by a dirty trick (such as with the savage dirty trick rage power)."
+    },
+    {
+      "name": "Fancy Footwork",
+      "sphereName": "Scoundrel",
+      "talentTypes": [
+        "trick"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Whenever you successfully perform a steal or dirty trick combat maneuver, you can attempt a reposition combat maneuver against the target of the successful steal or dirty trick as a free action that does not provoke attacks of opportunity."
+    },
+    {
+      "name": "Flustering Antics",
+      "sphereName": "Scoundrel",
+      "talentTypes": [
+        "trick"
+      ],
+      "source": "Spheres of Power wiki [Apoc]",
+      "description": "Whenever you successfully perform a steal or dirty trick combat maneuver the target must succeed at a Will save or lose their martial focus. On a failed save, you may regain your martial focus as an immediate action."
+    },
+    {
+      "name": "Mug",
+      "sphereName": "Scoundrel",
+      "talentTypes": [
+        "trick"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "When you successfully perform a steal combat maneuver against a target, you may make a single attack against that target with any weapon you possess as a free action. Creatures damaged by this attack are battered for 1 round. You may select this talent a second time; if you do, you may also apply it to successful dirty tricks."
+    },
+    {
+      "name": "Ranged Trickery",
+      "sphereName": "Scoundrel",
+      "talentTypes": [
+        "trick"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "As long as you have martial focus, you may attempt a dirty trick combat maneuver against a creature within 15 ft. of yourself, +5 ft. per 4 ranks in Sleight of Hand you possess. For every 10 ft. you are from a creature, you take a -2 penalty on your combat maneuver check."
+    },
+    {
+      "name": "Savage Tricks",
+      "sphereName": "Scoundrel",
+      "talentTypes": [
+        "trick"
+      ],
+      "source": "Spheres of Power wiki [Apoc]",
+      "description": "Whenever you successfully perform a dirty trick combat maneuver, you may also inflict the battered or fatigued conditions to a creature when selecting a condition to apply to the affected creature.\n\nOriginal Condition New Condition Battered Flat-footed Dazzled Treat all creatures as if they had concealment (20% miss chance) Entangled Suffers the penalties of being grappled (but is not actually grappled) Fatigued As fatigued, but -4 penalty to Strength and Dexterity. Shaken Frightened Sickened Staggered\n\nAssociated Feat: Dirty Trick Master."
+    },
+    {
+      "name": "Swipe",
+      "sphereName": "Scoundrel",
+      "talentTypes": [
+        "trick"
+      ],
+      "source": "Spheres of Power wiki [DRS]",
+      "description": "When you successfully perform a steal combat maneuver against a target, you can expend your martial focus as an immediate action to use the stolen object (if possible). This generally involves drinking a stolen potion, applying a stolen oil or poison to a weapon, throwing a splash weapon, etc., but only as long as it could be used as a standard action or faster."
+    },
+    {
+      "name": "Tunnel Vision",
+      "sphereName": "Scoundrel",
+      "talentTypes": [
+        "trick"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Whenever you successfully perform a steal combat maneuver the target must make a successful Reflex save or treat all creatures as having concealment until the end of its next turn. When you have at least 10 ranks in Sleight of Hand, this instead becomes total concealment."
+    },
+    {
+      "name": "Devastating Tricks",
+      "sphereName": "Scoundrel",
+      "talentTypes": [
+        "trick"
+      ],
+      "source": "Spheres of Power wiki [Apoc]",
+      "description": "Prerequisites: Sleight of Hand 10 ranks, Scoundrel sphere (Savage Tricks (trick))\n\nWhenever you use the Savage Tricks talent to inflict a greater condition upon a creature, you may choose to inflict an even more intense condition when expending your martial focus.\n\nOriginal Condition New Condition Battered Stunned Dazzled Dazed Entangled Pinned Fatigued Exhausted Shaken Panicked Sickened Nauseated"
+    },
+    {
+      "name": "Dirty Curse",
+      "sphereName": "Scoundrel",
+      "talentTypes": [
+        "trick"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Scoundrel sphere, Sleight of Hand 7 ranks.\n\nWhenever you successfully perform a dirty trick combat maneuver, the effects of that dirty trick are treated as a curse with a caster level equal to your ranks in Sleight of Hand, and a spell level equal to 1/2 your ranks in Sleight of Hand (maximum 9th) for the purposes of being able to remove it. This does not extend the duration of the dirty trick's effect. A creature may only be cursed by this talent once per day. This is a supernatural effect."
+    },
+    {
+      "name": "Steal Charm",
+      "sphereName": "Scoundrel",
+      "talentTypes": [
+        "trick",
+        "utility"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Scoundrel sphere.\n\nWhen performing a steal combat maneuver, rather than steal an item, you may expend your martial focus to steal their Charisma. If successful, the creature suffers a -4 penalty on all Charisma-based skill checks for 10 minutes. They are unaware of this penalty. For every 4 ranks in Sleight of Hand you possess, this penalty increases by -2. When you have at least 10 ranks in Sleight of Hand, this penalty lasts for one hour. This is a supernatural effect."
+    },
+    {
+      "name": "Steal Heart",
+      "sphereName": "Scoundrel",
+      "talentTypes": [
+        "trick"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Scoundrel sphere, Sleight of Hand 7 ranks.\n\nYou may expend your martial focus to perform a steal combat maneuver as a full-round action. Rather than steal an object, you may force the target to make a successful Will saving throw or have their attitude towards you improved to friendly for a number of minutes equal to your ranks in Sleight of Hand. If the target is in combat, is already hostile to you, or is aware you are using this ability, they gain a +5 bonus to this saving throw. This is a spell-like, mind-altering (charm) effect.\n\nYou may only have a number of creatures charmed at a time equal to your practitioner modifier; if you attempt to charm another, the creature you have had charmed for the longest is no longer charmed. Once a creature has been affected by or made a saving throw against this talent, they cannot be affected by it again for 24 hours.\n\nYou may only affect creatures who share your creature type with this talent. When you possess 10 or more ranks in Sleight of Hand, you may target any creature regardless of creature type (except for those immune to such abilities)."
+    },
+    {
+      "name": "Steal Identity",
+      "sphereName": "Scoundrel",
+      "talentTypes": [
+        "trick",
+        "utility"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Scoundrel sphere, Sleight of Hand 3 ranks.\n\nWhen performing a steal combat maneuver, rather than steal an item, you may expend your martial focus to harness an understanding of the creature's appearance and behavior. You gain a +10 bonus on Disguise checks to disguise yourself as that creature for 1 hour. This bonus does not stack with the benefit to Disguise checks granted by polymorph effects. In addition, targets gain half the usual benefit to their Perception checks based on familiarity with the target. This is a supernatural effect."
+    },
+    {
+      "name": "Steal Skill",
+      "sphereName": "Scoundrel",
+      "talentTypes": [
+        "trick",
+        "utility"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Scoundrel sphere, Sleight of Hand 5 ranks.\n\nWhen performing a steal combat maneuver, rather than steal an item, you may expend your martial focus to attempt to steal ranks in one skill that the target possesses. This does not grant you knowledge of what skills the target possesses; you must either know or guess a skill with ranks in order to steal them. If successful, the target loses all of their ranks in that skill for 1 round per rank in Sleight of Hand you possess, and you gain an equal number of skill ranks in that skill for the same duration (this cannot grant you more ranks in that skill than your total number of Hit Dice).\n\nAt 10 ranks in Sleight of Hand, the duration increases to 1 minute per rank you possess. If something would dispel or otherwise end this effect prematurely on either you or the target, the effect ends for both. This is a supernatural effect."
+    },
+    {
+      "name": "Steal Spells",
+      "sphereName": "Scoundrel",
+      "talentTypes": [
+        "trick"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Scoundrel sphere, Sleight of Hand 9 ranks.\n\nWhen performing a steal combat maneuver, rather than steal an item, you may attempt to transfer an ongoing spell effect from that target to yourself for 1 round per rank in Sleight of Hand you possess. At the end of this duration, the effect ends on yourself and returns to the creature it was stolen from. Time spent stolen still counts against the effect's duration, and if the effect's duration expires while it is stolen, it ends as normal. At 10 ranks in Sleight of Hand, the duration increases to 1 minute per rank you possess.\n\nThis functions with spell effects with a target of ‘self', but does not otherwise function with spell effects that would consider you an invalid target (for example, if the effect only targets specific creature types). This is a supernatural effect."
+    },
+    {
+      "name": "Steal Talent",
+      "sphereName": "Scoundrel",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Scoundrel sphere, Steal Skill, Sleight of Hand 7 ranks.\n\nWhenever you use the Steal Skill talent, you may choose to steal a feat or talent (magic or combat) instead of a skill. Associated feats and talents count as each other for this purpose, as do skill ranks and talents that provide skill ranks. The target's CMD is increased by 2 for every feat or talent the target possesses that has the targeted feat or talent as a prerequisite. Likewise, the target's CMD is also increased by 2 for every talent the target possesses in a sphere if you are trying to steal the base sphere. This is a supernatural effect.\n\nSpheres of Might by Drop Dead Studios Using Spheres of Might Classes Armiger Blacksmith Commander Conscript Scholar Sentinel Striker Technician Prestige Classes Aeronaut Captain Spheres Alchemy Athletics Barrage Barroom Beastmastery Berserker Boxing Brute Dual Wielding Duelist Equipment Fencing Gladiator Guardian Lancer Leadership Open Hand Scoundrel Scout Shield Sniper Tech Trap Warleader Wrestling Pilot (3PP) Rules About Legendary Talents Martial Traditions Martial Packages Practitioner Feats Practitioner Traits Practitioner FCB's Practitioner Bestiary Associated Feats & Skills Ultimate Engineering (Tinker) Starfinder Conversion [3pp] Get Spheres of Might on DriveThruRPG Mythic Spheres of Might Ultimate Engineering The Conqueror's Handbook The General's Handbook The Highlander's Handbook The Inventor's Handbook The Inventor's Handbook 2 The Jester's Handbook Woodfaring Adventures The Youxia's Handbook Spheres Apocrypha Alch. Formulae Alch. Poisons Alch. Poisons 2 Armor Talents Astrologian Archetype Debilitating Talents Pugilists Racial Ranged Swashbucklers Tandem Tricks & Traps"
+    }
+  ]
+}

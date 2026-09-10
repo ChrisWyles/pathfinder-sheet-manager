@@ -1,0 +1,357 @@
+{
+  "slug": "mana",
+  "name": "Mana",
+  "type": "MAGIC",
+  "description": "The Flow of Magic: Some talents or abilities in the Mana sphere, as well as some other spheres, grant temporary spell points. Only temporary spell points from different sources stack together. Temporary spell points from any source may never be used to cast Mana sphere effects. Temporary spell points granted by the Mana sphere only last 1 round per caster level if not specified otherwise. Temporary spell points must always be spent first. Finally, any effect with a non-instantaneous duration cast with temporary spell points expires when the the temporary spell points would expire, even if their duration would otherwise be longer. If an effect uses temporary spell points with different remaining durations, use the shortest remaining duration to determine the effects cast with them. When attempting a magic skill check against a creature that does not have a magic skill defense, treat their magic skill defense as if it were 11. For creatures of strong magical or supernatural nature without a magic skill defense, treat the creature's CR as their magic skill bonus, and their magic skill defense as 11 + their CR. Sphere Restrictions: Unless otherwise specified, animal companions, cohorts, Conjuration sphere companions, drake companions, eidolons, familiars, followers and other similar companions or pets cannot gain this sphere or talents from this sphere.",
+  "source": "Spheres of Power wiki",
+  "url": "http://spheresofpower.wikidot.com/mana",
+  "talents": [
+    {
+      "name": "Defensive Bond",
+      "sphereName": "Mana",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Whenever you are the target of a magical sphere effect or supernatural effect, you may spend a spell point as an immediate action to create a manabond between yourself and another creature within manabond range. If the creature is unwilling, you must succeed on a magic skill check to create the manabond."
+    },
+    {
+      "name": "Draining Spellburn",
+      "sphereName": "Mana",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "When using the Spellburn expunge, you may cause the initial spell point damage to be treated as if the caster had spent them normally (using your caster level if one is required), causing it to trigger effects that occur when they spend spell points."
+    },
+    {
+      "name": "Explosive Expunge",
+      "sphereName": "Mana",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "When using expunge, you may spend an additional 2 spell points to instead affect a 10-foot radius burst, increasing by 5 feet for every 5 caster levels you possess, centered within your expunge range. If the ability requires a magic skill check or attack roll, make a single roll and compare it to the magic skill defense or AC, respectively, of every creature affected. Otherwise, they each roll their save as normal. The caster is unaffected by this ability if they are within the area of effect.\n\nEven if you affect multiple creatures, you may only create a manabond with a single creature. If you possess the Magical Conduit talent, you can create a manabond with all creatures affected by this talent."
+    },
+    {
+      "name": "Hardened Bond",
+      "sphereName": "Mana",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "When creating a manabond, you may spend a spell point to allow your manabond to manifest as a physical cord connecting yourself and the target creature, although you must have line of effect to the target. These physical bonds are tough, durable chains made of raw energy that inhibit movement. The two creatures connected by such a manabond cannot move further than the maximum range for the manabond without either destroying the tether (hardness equal to your caster level, hit points equal to twice your caster level + 5, AC 10), or by making a Strength check to burst it with a DC equal to your Mana sphere DC. Destroying the tether does not end the manabond, but does cause it to lose its physicality, removing any effects granted by this talent. When moving past the maximum range of the manabond, a creature affected by this talent may make a drag attempt as a free action made as part of any movement they make, allowing them to pull the creature in the direction they move, up to a maximum amount of distance determined by the drag attempt. The host of a hardened bond may use their caster level + their casting ability modifier in place of their combat maneuver bonus, and gain a bonus equal to twice their caster level to their combat maneuver defense on drag attempts made against them using the hardened bond. In addition, you may create shorter manabonds than normal.\n\nWhen creating one, they can be as short as 5 feet, or as long as your normal maximum range, but they must be measured in 5 feet increments. You can shorten or lengthen them as part of the action made to concentrate on them, although if the cord is not long enough to reach the target creature after shrinking it will break and end the effect."
+    },
+    {
+      "name": "Magical Conduit",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "mass"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You have achieved mastery over opening magical windows between yourself and others. You can create a manabond as a free action as part of casting another Mana sphere ability, creating multiple manabonds if the ability affects multiple creatures. You can also host multiple manabonds (but not benefit from being the recipient to multiple). Additionally, whenever you touch a creature to create a manabond, you may spend an additional spell point to touch an additional 1 creature per 2 caster levels (minimum 1), creating a manabond with each one.\n\nWhen you spend a swift action to concentrate on a manabond, you count as if you were concentrating on all active manabonds you are the host of. You may also spend a spell point as part of creating a manabond to allow it to remain for 1 minute per caster level without concentration, although you may still activate effects that otherwise require concentrating on the manabond as a swift action."
+    },
+    {
+      "name": "Manasurge Strike",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "strike"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "As a standard action, you can make one ranged or melee attack using a weapon in conjunction with using an (expunge) or (manipulation) talent. This casting cannot be reduced below a standard action and does not provoke attacks of opportunity, unless as usual if making a ranged attack. If the target is struck by the attack, they are also struck by the (expunge) or (manipulation) talent. If using a scatter weapon, the chosen effect only applies to a single target, chosen before any attack rolls are made.\n\nSpecial: If you have the Counterspell feat, you may use it as part of using this talent, treating the counterspell as if it were an (expunge) talent."
+    },
+    {
+      "name": "Manavore",
+      "sphereName": "Mana",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Whenever you would gain spell points (whether temporary or not) from any effect, you can instead choose to consume the spell points, fueling your vitality. The first spell point consumed this way per effect heals you for an amount of health equal to the caster level of the originating effect, plus your casting ability modifier. Spell points beyond the first heal you each for an additional amount equal to your casting ability modifier."
+    },
+    {
+      "name": "Overpowering Expunge",
+      "sphereName": "Mana",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "You may either increase the casting time of your expunge by one step (normally from a standard to a full-round action) or spend an additional spell point in order to apply the effects of two (expunge) talents."
+    },
+    {
+      "name": "Ranged Mana",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "range"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Your expunge and manipulation abilities have a range of medium instead of close, and your manabonds remain active up to medium range instead of close. If a recipient is beyond close range for your manabond (but still within the manabond range), the recipient may attempt a Will save at the end of each of their turns in order to end the manabond.\n\nYou can take this talent a second time, increasing the range from medium to long."
+    },
+    {
+      "name": "Retained Imbuement",
+      "sphereName": "Mana",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Temporary spell points you grant from any Mana sphere effect last for 1 minute per caster level rather than 1 round per caster level."
+    },
+    {
+      "name": "Sudden Empowerment/Weakening",
+      "sphereName": "Mana",
+      "talentTypes": [],
+      "source": "Spheres of Power wiki",
+      "description": "Whenever the recipient of the Mystical Bond (manabond) would cast an instantaneous sphere effect, as a free action that can be taken outside your turn, you may dismiss the manabond to empower or hinder the caster, doubling the penalty or bonus of Mystical Bond for the specific sphere effect. You may affect non-instantaneous sphere effects by spending an additional spell point as part of dismissing the manabond.\n\nWhen used in this way, your Mystical Bond can reduce the caster level of a sphere effect to below 1. If this reduces the sphere effect's caster level to 0 or below, it automatically fails, and any spell points are wasted."
+    },
+    {
+      "name": "Disorient",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "expunge"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may damage the target's control over their magic. The target must make a Will save. On a failed save, the target suffers a -2 penalty to the caster level of the next sphere effect they use within 1 minute per caster level. If this would reduce the sphere effect's caster level to 0 or below, the sphere effect automatically fails, and any spell points are wasted. This penalty increases by 1 for every 4 caster levels you possess."
+    },
+    {
+      "name": "Ignition",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "expunge"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may spend a spell point and make a ranged touch attack against a target within range, causing their magical essence to be set ablaze. On a successful hit, the target suffers 1d8 untyped damage, plus an additional 1d8 for every 3 caster levels beyond 1st. For every 5 points of damage the creature suffers, they suffer 1 spell point damage (minimum 0), a -1 penalty to their magic skill defense and to the next save they make for 1 round, plus 1 round per 10 caster levels you possess.\n\nSpecial: If you possess the Transfer talent, you can utilize this talent on creatures that cannot normally store spell points. If you do, instead of losing spell points or suffering a penalty to their magic skill defense, they instead suffer a penalty to the next saving throw they make against a magical effect equal to the penalty they would have suffered to their magic skill defense, for the same duration."
+    },
+    {
+      "name": "Mark Of Instability",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "expunge"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may spend a spell point to have the target become separated from their magic. The target is permitted a Fortitude save to resist this effect, otherwise they become unable to voluntarily spend spell points on any effect for 1 round, plus 1 round per 4 caster levels beyond 1st. This does not stop a target from using abilities that do not require a spell point to use, and can be used on creatures normally immune to Fortitude saves (such as undead and constructs). Creatures affected by this ability may attempt a new Fortitude saving throw as a standard action once each round to attempt to end its effects."
+    },
+    {
+      "name": "Mark Of Lifeburn",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "expunge"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may spend a spell point to have the target's magical reservoir become dangerous to tap into unless they succeed at a Fortitude saving throw. On a failed save, once per round whenever the target spends at least one spell point, they suffer 1d8 nonlethal damage per 3 caster levels you possess; or twice the amount of damage dice if they spend at least 3 spell points at once.\n\nThe target may voluntarily release 1 spell point, + 1 additional spellpoint at 5th caster level and every 5 levels thereafter, as a standard action (which does not damage them) to end this effect, otherwise lasting for 1 minute per caster level."
+    },
+    {
+      "name": "Control Resistance",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "manabond"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "As a manabond, you form a connection that attempts to bolster a creature's spell resistance. If the recipient of this manabond has spell resistance, you can raise it up to 11 + your caster level. If the recipient does not have spell resistance, you can spend a spell point to grant them spell resistance equal to 11 + your caster level for as long as the manabond holds."
+    },
+    {
+      "name": "Flow",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "manabond"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "As a manabond, you can create a magical stream between yourself and the recipient. Each round, as part of maintaining your manabond, you may choose to either funnel or sap the recipient of this manabond.\n\nFunnel: You spend a spell point, granting the recipient a single spell point. Unwilling recipients are allowed a Will save to resist this. Sap: The recipient suffers 1 spell point damage, and you gain 1 temporary spell point. Unwilling recipients are allowed a Will save to resist this. The target must actually lose spell points in order for you to gain temporary spell points.\n\nYou may choose to pay any spell point costs that the recipient may incur from using their abilities with your own spell points, either partially or in whole. Any spell points granted from this talent stack with themselves. This type of (manabond) cannot be placed on a creature that cannot possess the Mana sphere, such as subordinates."
+    },
+    {
+      "name": "Magical Misdirection",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "manabond"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You form a manabond that confounds targeted magical effects. Any time you or the recipient is targeted by a single-targeted sphere effect that is harmless or requires a Fortitude or Will saving throw, you may redirect the effect to yourself or the recipient as a free action that can be taken outside of your turn (Will negates if the recipient is unwilling).\n\nIf you or a willing recipient is targeted by a single-targeted harmless effect, you may redirect the effect to yourself or the recipient as a free action that can be taken outside of your turn. A sphere effect can be redirected multiple times across multiple willing recipients, as long as all creatures have a suitable manabond linking them."
+    },
+    {
+      "name": "Manabond Channeling",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "manabond"
+      ],
+      "source": "Spheres of Power wiki [DbH]",
+      "description": "As a manabond, you may create a magical conduit between yourself and the recipient. As long as the manabond holds, you may target the creature with any magic sphere effects with a range of touch or greater as if the creature was in range and you had line of sight and line of effect to the creature. You may not use this ability to channel effects that require an attack roll."
+    },
+    {
+      "name": "Soulmate",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "manabond"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "As a manabond, you can create a warm bond between yourself and a willing creature. Whenever you (but not the recipient) are targeted by a harmless magical effect that lasts for at least 2 rounds and does not require concentration, you may clone the effect and grant it to the recipient for 2 rounds, plus 1 round for every 10 caster levels you possess, or a number of rounds equal to half the original effect's duration, whichever is fewer.\n\nAdditionally, whenever you are magically healed any amount of hit points (except from sources such as fast healing, regeneration, etc.), you can redirect any amount of that healing to the recipient as a free action that can be taken outside of your turn. Due to the healing being redirected, the healing is still limited by effects that would limit the original healing (such as not being able to heal creatures above half health, or used to damage creatures that are usually damaged by the received healing."
+    },
+    {
+      "name": "Bulwark",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "manipulation"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You can manipulate magic into a magical or physical barrier by spending a spell point. This barrier has 1 layer, plus 1 layer per 10 caster levels, the type of which can vary between each layer:\n\nMagical Barrier: The next time a magical effect would affect your target, the caster must succeed at a magic skill check against your magic skill defense. On a failure, the magic effect excludes the target from its effects, otherwise functioning normally. Physical Barrier: The next time the target is attacked by a weapon attack, the attacker must succeed at a magic skill check against your magic skill defense. The attacker may substitute their CR (or total hit dice, if they possess no racial hit dice) for their MSB on this check. On a failure, the attack is deflected. This effect triggers before an attack roll is made.\n\nWhenever a barrier deflects an attack or prevents a magical effect from affecting the target, the barrier loses that layer. Layers from multiple castings do not stack, and each layer lasts for 1 minute per caster level."
+    },
+    {
+      "name": "Essentialize",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "manipulation"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may manipulate a target within range that is under the effects of a harmless sphere effect, causing the effect to end. If the effect has a duration greater than 1 minute and at least half its original duration remaining, you gain temporary spell points equal to half the effect's cost in spell points (minimum 0). You gain no spell points if the effect cost no spell points or was cast using temporary spell points (even partially), or if the effect had targeted multiple creatures. At 10th caster level, you instead gain temporary spell points equal to its full cost, but only if the duration was greater than 1 hour and had at least half its original duration remaining.\n\nYou can target yourself with this ability as a swift action. Attempting to target an unwilling creature requires you to succeed at a magic skill check against the effect with a -2 penalty. On a failure, you cannot attempt to essentialize the effect again for 24 hours. When utilized this way, Essentialize functions as a counterspell attempt and the magic skill check gains any bonuses you might have to counterspelling.\n\nNote: In order for Essentialize to function, it must completely end any ongoing effects created as part of a sphere ability. If a sphere ability provides an ongoing effect to multiple creatures, Essentialize cannot grant temporary spell points. Likewise, effects that can be partially used such as the Mystic Shell aegis of the Protection sphere can only function be Essentialized if it has not been used (i.e all layers must still be remaining)."
+    },
+    {
+      "name": "Gift Of Knowledge",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "manipulation"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You may manipulate your magical essence, granting a target access to your own magical knowledge by spending a spell point. Choose a single base sphere or talent you possess that the target does not. The target may use this talent or base sphere ability once, using your caster level at the time this ability is cast (not including temporary bonuses or bonuses gained from items) and related sphere-specific and general drawbacks. The target must use this ability within 1 minute per caster level, and must pay any spell point costs as normal. You may not grant advanced talents with this talent, and the target must qualify for the sphere or talent in order to use it (including qualifying for it due to other instances of Gift of Knowledge)."
+    },
+    {
+      "name": "Relinquish Magic",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "manipulation"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "As a swift action, you can manipulate the magic of a harmless sphere effect with a non-instantaneous duration that only affects you, granting any amount of creatures within your natural reach its effects. Doing so ends the effect and divides the remaining duration of the effect across all affected creatures. The duration must be divided in the same increments the effect's duration was granted in (for example, an aegis must be divided in 1 hour increments). This talent can only be used to relinquish effects within 1 round of the effect's creation.\n\nYou can spend a spell point to transfer non-harmless effects on creatures, requiring a successful magic skill check against the creature, and a Will saving throw if unwilling. This talent cannot be used on curse effects.\n\nIf you possess Ranged Mana, you may grant the effects of the manipulated magic to creatures within your manipulation range, rather than your natural reach.\n\nNote: Similar to Essentialize, Relinquish must completely end an ongoing effect as it was created in order to function. If the sphere ability provides an ongoing effect to multiple creatures, Relinquish cannot be used to divide it up further. Likewise, effects that can be partially used such as the Mystic Shell aegis of the Protection sphere can only function with Relinquish if it has not been used (i.e all layers must still be remaining). Sphere effects created through Relinquish must be able to affect their target to be granted, and cannot be used on abilities that could only target the sphere caster that created them."
+    },
+    {
+      "name": "Transfer",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "manipulation"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "You can spend a spell point to bestow your magical potential to a creature other than yourself, granting the target 2 temporary spell points, plus 1 for every 5 caster levels you possess. After the target uses a sphere effect that costs at least 1 spell point, all granted temporary spell points are removed, even if the effect did not use all of them.\n\nAlternatively, you may spend a spell point as a standard action to grant your target a normal spell point (Will negates if unwilling). You may grant spell points to creatures that do not possess a spell pool, temporarily granting them access to a spell pool for as long as the granted spell points last (or until you next rest to regain spell points if they are not temporary).\n\nNote: Occasionally, a setting might have different sources of magic that are mutually incompatible, or a GM might wish to seperate how magic can be transferred across characters. In games like this, the GM may be encouraged to add restrictions to how the Transfer and Flow talents can be used. For example, they might rule that an arcane caster cannot grant spell points to a divine caster, or that spherecasters of a specific tradition cannot grant spell points to any other tradition. GMs are encouraged to examine how magic works in their games and arbitrate what, if any, limits on transferring magic might exist."
+    },
+    {
+      "name": "Cruel King",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Mana sphere (Flow (manabond), Vassalize (advanced)), caster level 15th.\n\nWhen using the Vassalize advanced talent, you may target creatures that do not normally possess a spell pool. When doing so, your sphere effects are fueled by their mental capacity: On a failed save, they suffer 1 ability burn to all of their mental ability scores for each spell point needed to cast your sphere effect for 24 hours, and you may cast the sphere effect without paying its regular cost. You may use this talent as long as none of the creature's mental ability scores would become penalized to 0 due to the ability burn. Any attempt to utilize this talent in such a way causes the effect to fail, and the action to be wasted."
+    },
+    {
+      "name": "Curse Of Mana",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "curse",
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Mana sphere, caster level 10th.\n\nWhen you use a ‘Mark' expunge talent, you can spend an additional 3 spell points to have the effect's duration be increased to permanent. Marks that grant additional consecutive saving throws no longer grant them. This is a curse effect. This can be only be dispelled using the Break Enchantment Life talent, break enchantment, miracle, remove curse, wish, or similar effects."
+    },
+    {
+      "name": "Flash of Arcana",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki [SM—]",
+      "description": "Prerequisites: Mana Sphere\n\nYou may spend an additional spell point to use a manipulate effect within range as an immediate action rather than a standard action. If you do, the duration of any effect used in this way is reduced to 1 round and you cannot spend a spell point or concentrate to increase the duration."
+    },
+    {
+      "name": "Eternal Shackles",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki [DbH]",
+      "description": "Prerequisites: Mana sphere (Infinite Bond (advanced), Ranged Mana x2), caster level 15th.\n\nYour manabonds no longer have a maximum range when used on willing or unwilling targets and stay activated even when a creature is on a different plane from you. If a creature is beyond close range for your manabond, they may only attempt a magic skill check against your MSD to end the manabond once per day rather than at the end of every turn."
+    },
+    {
+      "name": "Harness Ambient Knowledge",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki [DbH]",
+      "description": "Prerequisites: Mana sphere (Gift Of Knowledge (manipulation)), Counterspell, caster level 5th, magic skill bonus +5.\n\nWhen you successfully counterspell an effect, you may spend an additional spell point to gain a single base sphere or talent used in the effect for 1 round. The sphere or talent is selected at random from those you do not already possess."
+    },
+    {
+      "name": "Infinite Bond",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Mana sphere (Ranged Mana [range] x2), caster level 10th.\n\nYour manabonds no longer have a maximum range when used on willing targets, and stays activated so long as the creature is on the same plane as you. If the creature you are bonded to leaves the plane you are on or vice-versa, the effect expires after 1 minute unless they or you return to the same plane within this time limit and you cannot activate or use the effects of your manabond unless they or you return to the same plane before it expires. If you applied Permanent Bond, the manabond does not expire, but still can only be used if you and the recipient are on the same plane."
+    },
+    {
+      "name": "Knowledge Drain",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Mana sphere (Manathief (advanced, expunge), Gift Of Knowledge (manipulation)), caster level 1st.\n\nYour knowledge and experience in stealing the mana from others has pushed you to a new discovery; stealing their prowess in the magical arts. Whenever you successfully drain spell points from a target using Manathief, they must attempt an additional Will saving throw with a penalty equal to the amount of spell points lost from Manathief. On a failure, you steal a single magic talent you are aware they possess (or base sphere if they possess no other talents within the sphere), gaining access to it. The target cannot use the stolen sphere or talent until they rest to regain spell points. The stolen talent lasts for 24 hours, but you may spend a spell point to retain it for an additional 24 hours; each time you do so, the spell point cost increases by 1. You may only retain one talent or sphere gained this way at one time, although you may choose to replace the talent if you use this talent again. You may retain one additional talent at a time for every 10 caster levels you possess."
+    },
+    {
+      "name": "Manathief",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "expunge",
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Mana sphere, caster level 1st.\n\nYou may attempt to drain the target's spell points rather than damage it, but doing so limits your destructive potential. Your target must make a Will save, otherwise the target suffers one spell point damage and you gain one spell point. For every 5 caster levels you possess, the spell point damage dealt and spell points received increases by one. Damaging the spell points of creatures with less than half your magic skill bonus results in no spell points being drained, and you may only gain spell points up to the amount of spell points the target lost due to damage.\n\nNote: Manathief is considered an advanced talent for its implications in worlds it exists in, but also its mechanical powers. As Manathief costs no spell points to use, and grants spell points to the caster, it's important to understand that this talent allows spherecasters to effectively replenish their reserves (for example, by capturing spherecasters and draining them of all the magic they can). A GM is advised to create limitations in what creatures they can drain spell points from, as well as how often they can from the same creature. For example, a spherecaster with the Conjuration sphere can create a Mage companion of which they can drain spell points from to fuel their power. Each GM should understand the possibilities of this ability, and limit it in such a way that it fits their world, and the power level they desire for their game."
+    },
+    {
+      "name": "Mark Of Incompetency",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "expunge",
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Requirements: Mana sphere (Mark Of Instability), caster level 1st.\n\nYou may spend a spell point to limit the target's magical potency for 24 hours unless they succeed at a Will saving throw. On a failed save, you grant one of the following drawbacks to the target: Draining Casting, Magical Signs, Painful Casting, Rigorous Concentration, Unstable Storage, Verbal Casting. At 5th caster level, you gain additional drawbacks you can grant Center Of Power or Variant Wild Magic. For every 5 caster levels beyond 1st, you may apply an additional drawback to the target. The target does not gain additional spell points from the granted drawbacks, and they can only suffer from one instance of this ability at a time. Creatures suffering from this talent are aware of the drawbacks they are affected by. At the GM's discretion, other drawbacks not listed may be granted with this talent."
+    },
+    {
+      "name": "Permanent Bond",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Mana sphere (Magical Conduit), caster level 10th.\n\nWhen you create a manabond, you can spend 3 spell points to increase the duration to permanent. If you otherwise would need to concentrate to activate the effects of such a manabond, you can instead activate it once per turn on your turn as a free action. Unwilling creatures may attempt a new save every day at the start of the day, to try and break permanent manabonds.\n\nIf a bonded creature moves outside of the range of your manabond, the effect deactivates and cannot be used until they are once again within range."
+    },
+    {
+      "name": "Reactive Shuffle",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Requirements: Mana sphere, caster level 7th.\n\nYou may use the shuffle ability as an immediate action by spending 2 additional spell points. A shuffle ability used this way has a duration of 1 round and cannot be concentrated on."
+    },
+    {
+      "name": "Ties That Bind",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki [DbH]",
+      "description": "Prerequisite: Mana sphere (Infinite Bond (advanced), Magical Conduit, Ranged Mana x2), caster level 10th.\n\nAny creature that swears an Oath of Loyalty to you is considered to have a permanent manabond on them that cannot be dispelled so long as the oath remains. You do not need to concentrate on this manabond."
+    },
+    {
+      "name": "Tradition Override",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki [SM—]",
+      "description": "Prerequisites: Mana Sphere (Gift of Knowledge (manipulation))\n\nWhenever you grant one or more spheres or talents to a creature using Gift of Knowledge, you may spend 2 spell points to allow the target to use magic effects that incorporate the granted spheres or talents using one of your casting traditions or no casting tradition at all (this does not change the caster level, casting ability modifier, MSB, or MSD of the creature)."
+    },
+    {
+      "name": "Unbind Spell",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki [DbH]",
+      "description": "Prerequisites: Mana sphere (Essentialize (manipulation)), caster level 10th.\n\nBy spending an additional spell point, you may use Essentialize as an immediate action on a sphere effect as it is being cast with a -5 penalty to the attempt. If you possess the Counterspell Mastery feat, the penalty is reduced to 0. The targeted effect need not be harmless if you use Essentialize in this way, but this effect costs an additional spell point if the target is not harmless. You may treat instantaneous effects as if they had a duration of at least one minute for the purpose of how many temporary spell points are gained."
+    },
+    {
+      "name": "Vassalize",
+      "sphereName": "Mana",
+      "talentTypes": [
+        "advanced"
+      ],
+      "source": "Spheres of Power wiki",
+      "description": "Prerequisites: Mana sphere (Flow (manabond)), caster level 7th.\n\nWhenever you cast a sphere effect while you have the Flow manabond active, you can attempt to utilize the recipient's spell pool to cast your own magic. The recipient must succeed at a Will saving throw or they must pay any spell point costs you would have spent otherwise. If the recipient does not have enough spell points, they take ability damage to their casting ability modifier equal to the difference in spell point cost, and you must spend your own spell points to pay the difference. If you lack the spell points to cast the sphere effect, any spell points you have spent are wasted and the sphere effect fails. Willing creatures may automatically fail this save, and this talent does not drain temporary spell points. The recipient must possess a spell pool in order for this ability to be used on them."
+    }
+  ]
+}

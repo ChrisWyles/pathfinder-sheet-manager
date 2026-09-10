@@ -16,6 +16,7 @@ send every roll to your table's Discord channel with a full breakdown.
 | Roll history | ✅ working |
 | Rules library (skills, classes + features, feats, spells, spheres, talents, equipment) | ✅ schema + seed |
 | Bulk import from the Foundry VTT `pf1` dataset | 🚧 `scripts/import-foundry.ts` skeleton |
+| Spheres of Power / Might / Guile data | ✅ scraped to `data/spheres/*.json` (62 spheres, ~3,150 talents) via `scripts/scrape-spheres.ts`; `--write-db` to load |
 | Guided step-by-step creation wizard | 🚧 single-page form today |
 | Guided level-up | 🚧 checklist today |
 | Add / edit inventory and custom items in the UI | 🚧 schema ready, UI pending |
@@ -82,6 +83,7 @@ Open http://localhost:3000.
 | `npm run db:seed` | Seed the rules library |
 | `npm run db:studio` | Prisma Studio |
 | `npm run import:foundry -- --packs <dir>` | Bulk-import Foundry `pf1` data |
+| `npm run scrape:spheres [-- --only <slug>] [--write-db]` | Scrape Spheres data from the community wiki into `data/spheres/` (and optionally the DB) |
 
 ## Deployment (Vercel + Neon)
 
@@ -125,4 +127,7 @@ src/
     rolls/             authoritative server-side roll + intent schema
 scripts/
   import-foundry.ts    bulk data importer (skeleton)
+  scrape-spheres.ts    Spheres of Power/Might/Guile wiki scraper
+data/
+  spheres/*.json       scraped sphere + talent data (one file per sphere)
 ```

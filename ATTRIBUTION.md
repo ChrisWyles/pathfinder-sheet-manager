@@ -24,6 +24,7 @@ adventure/flavor prose, logos and artwork.
 | Spheres of Power (Drop Dead Studios) | Seed data (spheres, talents, Spheres class chassis) | Open Game Content |
 | Foundry VTT "Pathfinder 1e" game system (`foundryvtt/pf1`) | Target of `scripts/import-foundry.ts` | System code MIT; compendium content is Open Game Content |
 | "Pathfinder 1e Spheres" Foundry module | Target of `scripts/import-foundry.ts` | Open Game Content |
+| Spheres of Power community wiki (`spheresofpower.wikidot.com`) | Scraped by `scripts/scrape-spheres.ts` into `data/spheres/*.json` | Fan-maintained reproduction of Open Game Content from Spheres of Power / Might / Guile; robots.txt permits crawling. Product Identity is not present on these pages and is not scraped. |
 
 ## Section 15 — Copyright Notice
 
@@ -44,6 +45,10 @@ Pathfinder Roleplaying Game Core Rulebook. © 2009, Paizo Publishing, LLC;
 Author: Jason Bulmahn.
 
 Spheres of Power. © 2014, Drop Dead Studios; Author: Adam Meyers.
+
+Spheres of Might. © 2017, Drop Dead Studios; Author: Adam Meyers.
+
+Spheres of Guile. © 2020, Drop Dead Studios; Author: Adam Meyers.
 
 Pathfinder 1e game system for Foundry Virtual Tabletop. © the FoundryVTT
 Pathfinder 1e system contributors.
