@@ -1,0 +1,310 @@
+{
+  "slug": "bokor",
+  "name": "Bokor",
+  "group": "spherecaster",
+  "url": "http://spheresofpower.wikidot.com/bokor",
+  "source": "Spheres of Power wiki",
+  "hitDie": 6,
+  "alignment": "Any",
+  "role": "",
+  "classSkills": [
+    "Knowledge (arcana)",
+    "Knowledge (religion)",
+    "Sense Motive",
+    "Spellcraft"
+  ],
+  "skillRanksPerLevel": null,
+  "babProgression": null,
+  "saveProgressions": {
+    "fort": "POOR",
+    "ref": "POOR",
+    "will": "POOR"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+0",
+      "fortSave": "+0",
+      "refSave": "+0",
+      "willSave": "+1",
+      "special": [
+        "Spell pool",
+        "spherespell (1st)"
+      ],
+      "columns": {
+        "Spells per Day": "+1 level of existing spellcasting class",
+        "Caster Level": "+1",
+        "Magic Talents": "1"
+      },
+      "choices": []
+    },
+    {
+      "level": 2,
+      "bab": "+1",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+1",
+      "special": [
+        "Dissolve spell (1st)"
+      ],
+      "columns": {
+        "Spells per Day": "+1 level of existing spellcasting class",
+        "Caster Level": "+2",
+        "Magic Talents": "2"
+      },
+      "choices": []
+    },
+    {
+      "level": 3,
+      "bab": "+1",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+2",
+      "special": [
+        "Spherespell (2nd)"
+      ],
+      "columns": {
+        "Spells per Day": "+1 level of existing spellcasting class",
+        "Caster Level": "+3",
+        "Magic Talents": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 4,
+      "bab": "+2",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+2",
+      "special": [
+        "Dissolve spell (2nd)"
+      ],
+      "columns": {
+        "Spells per Day": "+1 level of existing spellcasting class",
+        "Caster Level": "+4",
+        "Magic Talents": "4"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+2",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+3",
+      "special": [
+        "Spherespell (3rd)"
+      ],
+      "columns": {
+        "Spells per Day": "+1 level of existing spellcasting class",
+        "Caster Level": "+5",
+        "Magic Talents": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 6,
+      "bab": "+3",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+3",
+      "special": [
+        "Dissolve spell (3rd)"
+      ],
+      "columns": {
+        "Spells per Day": "+1 level of existing spellcasting class",
+        "Caster Level": "+6",
+        "Magic Talents": "6"
+      },
+      "choices": []
+    },
+    {
+      "level": 7,
+      "bab": "+3",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+4",
+      "special": [
+        "Spherespell (4th)"
+      ],
+      "columns": {
+        "Spells per Day": "+1 level of existing spellcasting class",
+        "Caster Level": "+7",
+        "Magic Talents": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+4",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+4",
+      "special": [
+        "Dissolve spell (4th)"
+      ],
+      "columns": {
+        "Spells per Day": "+1 level of existing spellcasting class",
+        "Caster Level": "+8",
+        "Magic Talents": "8"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+4",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+5",
+      "special": [
+        "Spherespell (5th)"
+      ],
+      "columns": {
+        "Spells per Day": "+1 level of existing spellcasting class",
+        "Caster Level": "+9",
+        "Magic Talents": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+5",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+5",
+      "special": [
+        "Dissolve spell (5th)",
+        "spell synthesis"
+      ],
+      "columns": {
+        "Spells per Day": "+1 level of existing spellcasting class",
+        "Caster Level": "+10",
+        "Magic Talents": "10"
+      },
+      "choices": []
+    }
+  ],
+  "talentColumns": [
+    "Spells per Day",
+    "Caster Level",
+    "Magic Talents"
+  ],
+  "features": [
+    {
+      "name": "Weapon and Armor Proficiency",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "Bokors gain no proficiency with any weapon or armor."
+    },
+    {
+      "name": "Spells per Day",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "When a new bokor level is gained, the character gains new spells per day as if he had also gained a level in any one spellcasting class he belonged to before he added the prestige class. He does not, however, gain other benefits a character of that class would have gained, such as domain spells, bloodline spells, or new spells for his spell book.\n\nThis essentially means that he adds the level of bokor to the level of whatever other spellcasting class the character has, then determines spells per day, spells known, and caster level accordingly. If a character had more than one spellcasting class before he became a bokor, he must decide to which class he adds each level of bokor for the purpose of determining spells per day."
+    },
+    {
+      "name": "Caster Level",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "A bokor is considered a High-Caster."
+    },
+    {
+      "name": "Magic Talents",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "A bokor gains 1 magic talent every level."
+    },
+    {
+      "name": "Spell Pool",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A bokor increases his spell pool by 1 spell point for every bokor level he possesses."
+    },
+    {
+      "name": "Spherespell",
+      "type": "Su",
+      "levels": [
+        1,
+        3,
+        5,
+        7,
+        9
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A bokor can use his spell points to replace spells he has previously cast. At 1st level, the bokor can spend a spell point as a free action to recall a spell he had previously cast that day, returning it to memory so that it may be recast. If he has levels in a class that casts spells spontaneously, he may spend a spell point to cast a spell without using one of his spells per day. He may do this with 1st level spells when he gains his first bokor level. At every odd bokor level gained beyond the first, he may use this ability with spells 1 level higher, up to 5th level spells at his 9th bokor level."
+    },
+    {
+      "name": "Dissolve Spell",
+      "type": "Su",
+      "levels": [
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A bokor may sacrifice a spell as a swift action, turning it into energy to empower a sphere ability. The bokor gains an enhancement bonus equal to the spell's level to his caster level with the next sphere effect he uses by the end of his turn. He may do this with 1st level spells when he gains his second bokor level. At every even bokor level gained beyond the first, he may use this ability with spells 1 level higher, up to 5th level spells at his 10th bokor level."
+    },
+    {
+      "name": "Spell Synthesis",
+      "type": "Su",
+      "levels": [
+        10
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 10th level, a bokor may combine a spell with a sphere ability, using both with the same action. The combined effect uses the longest casting time of the two, and the bokor can make any decisions concerning the spells/talent independently of each other. Any target affected by both of the spells takes a -2 penalty on saves made against both the spell and sphere ability. The bokor also receives a +2 bonus on caster level checks made to overcome spell resistance with these two effects. A bokor may use this ability once per day.\n\nAlignment: Any\n\nHit Die: d6.\n\nClass Skills: The bokor's class skills (and the key ability for each skill) are Knowledge (Arcana; Int), Knowledge (Religion; Int), Sense Motive (Wis), and Spellcraft (Int).\n\nSkill Ranks at Each Level: 2 + Int modifier."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 4,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": [
+    "10-level class (prestige/advanced) — advances an existing class"
+  ]
+}

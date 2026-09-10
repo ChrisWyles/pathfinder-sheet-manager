@@ -1,0 +1,544 @@
+{
+  "slug": "fey-adept",
+  "name": "Fey Adept",
+  "group": "spherecaster",
+  "url": "http://spheresofpower.wikidot.com/fey-adept",
+  "source": "Spheres of Power wiki",
+  "hitDie": 6,
+  "alignment": "Any",
+  "role": "Fey adepts are versatile casters and experts of trickery",
+  "classSkills": [
+    "Appraise",
+    "Bluff",
+    "Craft",
+    "Disguise",
+    "Escape Artist",
+    "Intimidate",
+    "Knowledge (arcana)",
+    "Knowledge (local)",
+    "Knowledge (nature)",
+    "Linguistics",
+    "Perception",
+    "Perform",
+    "Sense Motive",
+    "Sleight of Hand",
+    "Spellcraft",
+    "Stealth",
+    "Use Magic Device"
+  ],
+  "skillRanksPerLevel": 4,
+  "babProgression": "HALF",
+  "saveProgressions": {
+    "fort": "POOR",
+    "ref": "POOR",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+0",
+      "fortSave": "+0",
+      "refSave": "+0",
+      "willSave": "+2",
+      "special": [
+        "Casting",
+        "fey magic",
+        "master illusionist",
+        "shadowmark (1d6, -1)",
+        "shadowstuff",
+        "spell pool"
+      ],
+      "columns": {
+        "Caster Level": "+1",
+        "Talents": "1 (+2)"
+      },
+      "choices": [
+        "fey magic"
+      ]
+    },
+    {
+      "level": 2,
+      "bab": "+1",
+      "fortSave": "+0",
+      "refSave": "+0",
+      "willSave": "+3",
+      "special": [
+        "Darkvision"
+      ],
+      "columns": {
+        "Caster Level": "+2",
+        "Talents": "2"
+      },
+      "choices": []
+    },
+    {
+      "level": 3,
+      "bab": "+1",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+3",
+      "special": [
+        "Shadowmark (2d6, -1)"
+      ],
+      "columns": {
+        "Caster Level": "+3",
+        "Talents": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 4,
+      "bab": "+2",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Truesight (1/day)"
+      ],
+      "columns": {
+        "Caster Level": "+4",
+        "Talents": "4"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+2",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Shadowmark (3d6, -1)"
+      ],
+      "columns": {
+        "Caster Level": "+5",
+        "Talents": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 6,
+      "bab": "+3",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Create reality"
+      ],
+      "columns": {
+        "Caster Level": "+6",
+        "Talents": "6"
+      },
+      "choices": []
+    },
+    {
+      "level": 7,
+      "bab": "+3",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Shadowmark (4d6, -2)"
+      ],
+      "columns": {
+        "Caster Level": "+7",
+        "Talents": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+4",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+6",
+      "special": [
+        "Truesight (2/day)"
+      ],
+      "columns": {
+        "Caster Level": "+8",
+        "Talents": "8"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+4",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+6",
+      "special": [
+        "Shadowmark (5d6, -2)"
+      ],
+      "columns": {
+        "Caster Level": "+9",
+        "Talents": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+5",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Hide in plain sight"
+      ],
+      "columns": {
+        "Caster Level": "+10",
+        "Talents": "10"
+      },
+      "choices": []
+    },
+    {
+      "level": 11,
+      "bab": "+5",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Shadowmark (6d6, -2)"
+      ],
+      "columns": {
+        "Caster Level": "+11",
+        "Talents": "11"
+      },
+      "choices": []
+    },
+    {
+      "level": 12,
+      "bab": "+6/+1",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Create reality (improved)",
+        "truesight (3/day)"
+      ],
+      "columns": {
+        "Caster Level": "+12",
+        "Talents": "12"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+6/+1",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Shadowmark (7d6, -3)"
+      ],
+      "columns": {
+        "Caster Level": "+13",
+        "Talents": "13"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+7/+2",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+9",
+      "special": [
+        "See in darkness"
+      ],
+      "columns": {
+        "Caster Level": "+14",
+        "Talents": "14"
+      },
+      "choices": []
+    },
+    {
+      "level": 15,
+      "bab": "+7/+2",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+9",
+      "special": [
+        "Shadowmark (8d6, -3)"
+      ],
+      "columns": {
+        "Caster Level": "+15",
+        "Talents": "15"
+      },
+      "choices": []
+    },
+    {
+      "level": 16,
+      "bab": "+8/+3",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Truesight (4/day)"
+      ],
+      "columns": {
+        "Caster Level": "+16",
+        "Talents": "16"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+8/+3",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Shadowmark (9d6, -3)"
+      ],
+      "columns": {
+        "Caster Level": "+17",
+        "Talents": "17"
+      },
+      "choices": []
+    },
+    {
+      "level": 18,
+      "bab": "+9/+4",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Create reality (improved)"
+      ],
+      "columns": {
+        "Caster Level": "+18",
+        "Talents": "18"
+      },
+      "choices": []
+    },
+    {
+      "level": 19,
+      "bab": "+9/+4",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Shadowmark (10d6, -4)"
+      ],
+      "columns": {
+        "Caster Level": "+19",
+        "Talents": "19"
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+10/+5",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+12",
+      "special": [
+        "Feytouched",
+        "permanent illusion",
+        "truesight (5/day)"
+      ],
+      "columns": {
+        "Caster Level": "+20",
+        "Talents": "20"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Caster Level",
+    "Talents"
+  ],
+  "features": [
+    {
+      "name": "Weapon and Armor Proficiency",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "A fey adept is proficient with all simple weapons."
+    },
+    {
+      "name": "Casting",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A fey adept may combine spheres and talents to create magical effects. A fey adept is considered a High-Caster. (Note: All casters gain 2 bonus talents and a casting tradition the first time they gain the casting class feature.)"
+    },
+    {
+      "name": "Spell Pool",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A fey adept gains a small reservoir of energy he can call on to create truly wondrous effects, called a spell pool. This pool contains a number of spell points equal to his class level + his casting ability modifier (minimum 1). This pool replenishes once per day after roughly 8 hours of rest."
+    },
+    {
+      "name": "Magic Talents",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "A fey adept gains a magic talent every class level, according to Table: The Fey Adept."
+    },
+    {
+      "name": "Fey Magic",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 1st level the fey adept gains the Illusion sphere as a bonus magic talent."
+    },
+    {
+      "name": "Master Illusionist",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Whenever the fey adept ceases to concentrate on an illusion he is maintaining through concentration, or if he decides not to maintain an illusion at all after its creation, it remains for a number of rounds equal to 1/2 his fey adept level (minimum 1) before disappearing."
+    },
+    {
+      "name": "Shadowstuff",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Fey adepts gain a limited ability to wield shadowstuff-the pure essence of shadows. With this power, the fey adept can affect the world around him with his illusions by weaving reality into the images.\n\nThe fey adept gains a pool of shadow points equal to his Charisma modifier + 1/2 his fey adept level (minimum 1) that refills when the fey adept regains all of their spell points. A fey adept may spend shadow points to create any of the following effects.\n\n• Shadowmark\n\nThe fey adept may spend a shadow point to hurl pure shadowstuff at a target within his illusion range, weakening its body and making its mind more susceptible to the fey adept's magic. This requires a ranged touch attack. If successful, the target takes 1d6 damage and suffers a -1 penalty to Will saves against all the fey adept's sphere abilities for 1 minute. This damage improves by 1d6 for every odd level the fey adept possesses, to a maximum of 10d6 at 19th level. The Will penalty increases to -2 at 7th level, -3 at 13th level, and -4 at 19th level. This penalty does not stack with itself. This is considered an illusion (figment, shadow) effect from the Illusion sphere.\n\n• Create Reality\n\nAt 6th level, the fey adept may spend shadow points in conjunction with creating an illusion with the Illusion sphere to weave reality into the illusion. This grants the illusion the [shadow] descriptor.\n\nThis follows all the usual rules for creating and maintaining illusions, except the illusion gains an additional benefit depending on what illusion is created. Many of these benefits improve at 12th and 18th levels. Illusions still must possess the appropriate (sensory) talents to be believed. When using an illusion to mimic an effect from another sphere the effect still counts as an Illusion sphere effect (such as when calculating caster level) and does not count as the alternate sphere for other purposes, such as when applying talents or feats based on those spheres.\n\nIn order to create reality, the fey adept must spend spell points as usual to create the illusion, plus 1 shadow point + 1 per spell point that would be required by the mimicked effect in question. This includes spell point costs to maintain a"
+    },
+    {
+      "name": "Darkvision",
+      "type": "Ex",
+      "levels": [
+        2
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level, a fey adept gains darkvision 60 feet. If he already possesses darkvision with a range of 30 feet or more, the range increases by 30 feet."
+    },
+    {
+      "name": "Truesight",
+      "type": "Sp",
+      "levels": [
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Once per day at 4th level, a fey adept may grant himself the ability to see all things as they truly are to a range of 120 feet for 1 round per level. The fey adept sees through magical darkness, notices secret doors hidden by magic, sees the exact locations of creatures or objects under blur or displacement effects, sees invisible creatures or objects normally, succeeds at all saving throws against illusions and sees through them naturally, and sees the true form of polymorphed, changed, or transmuted things. The fey adept may use this ability an additional time per day for every 4 levels beyond 4th, to a maximum of 5 times at 20th level. This does not allow the target to see through mundane disguises, non-magical means of hiding things, fog, or other such effects.\n\nThis cannot be combined with other magic that enhances the senses, such as a crystal ball."
+    },
+    {
+      "name": "Hide in Plain Sight",
+      "type": "Su",
+      "levels": [
+        10
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 10th level, a fey adept can use the Stealth skill even while being observed. As long as he is within 10 feet of an area of dim light, a fey adept can hide himself from view in the open without anything to actually hide behind. He cannot, however, hide in his own shadow."
+    },
+    {
+      "name": "See in Darkness",
+      "type": "Su",
+      "levels": [
+        14
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 14th level, a fey adept can see perfectly in darkness of any kind, even magical darkness that normally impedes darkvision."
+    },
+    {
+      "name": "Feytouched",
+      "type": "",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level, a fey adept is treated as a fey rather than as a humanoid (or whatever the fey adept's creature type was) for the purpose of spells and magical effects. He also gains DR 10/cold iron, and a +2 luck bonus on all saving throws."
+    },
+    {
+      "name": "Permanent Illusion",
+      "type": "",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At level 20, the fey adept can make one of his illusions permanent. Only one illusion may be made permanent in this way at one time. If another illusion is designated as permanent, the previous permanent illusion ends."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 1,
+      "choices": [
+        "fey magic"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

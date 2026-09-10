@@ -1,0 +1,626 @@
+{
+  "slug": "sentinel",
+  "name": "Sentinel",
+  "group": "practitioner",
+  "url": "http://spheresofpower.wikidot.com/sentinel",
+  "source": "Spheres of Power wiki",
+  "hitDie": 12,
+  "alignment": "Any",
+  "role": "A sentinel stands in the thick of battle, absorbing punishment and defending those weaker than herself",
+  "classSkills": [
+    "Bluff",
+    "Climb",
+    "Craft",
+    "Diplomacy",
+    "Handle Animal",
+    "Heal",
+    "Intimidate",
+    "Knowledge (nobility)",
+    "Perception",
+    "Profession",
+    "Ride",
+    "Sense Motive",
+    "Swim"
+  ],
+  "skillRanksPerLevel": 4,
+  "babProgression": "FULL",
+  "saveProgressions": {
+    "fort": "GOOD",
+    "ref": "POOR",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+1",
+      "fortSave": "+2",
+      "refSave": "+0",
+      "willSave": "+2",
+      "special": [
+        "Combat training",
+        "defender's soul",
+        "guardian challenge",
+        "sentinel's reserve",
+        "wise reflexes"
+      ],
+      "columns": {
+        "Combat Talents": "1"
+      },
+      "choices": [
+        "defender's soul"
+      ]
+    },
+    {
+      "level": 2,
+      "bab": "+2",
+      "fortSave": "+3",
+      "refSave": "+0",
+      "willSave": "+3",
+      "special": [
+        "Dedicated defense",
+        "guard wall"
+      ],
+      "columns": {
+        "Combat Talents": "2"
+      },
+      "choices": []
+    },
+    {
+      "level": 3,
+      "bab": "+3",
+      "fortSave": "+3",
+      "refSave": "+1",
+      "willSave": "+3",
+      "special": [
+        "Second wind"
+      ],
+      "columns": {
+        "Combat Talents": "3"
+      },
+      "choices": [
+        "Second wind"
+      ]
+    },
+    {
+      "level": 4,
+      "bab": "+4",
+      "fortSave": "+4",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Sentinel's imposition"
+      ],
+      "columns": {
+        "Combat Talents": "4"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+5",
+      "fortSave": "+4",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Opportunistic offense"
+      ],
+      "columns": {
+        "Combat Talents": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 6,
+      "bab": "+6/+1",
+      "fortSave": "+5",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Counter Critical",
+        "dedicated defense"
+      ],
+      "columns": {
+        "Combat Talents": "6"
+      },
+      "choices": []
+    },
+    {
+      "level": 7,
+      "bab": "+7/+2",
+      "fortSave": "+5",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Defender's determination"
+      ],
+      "columns": {
+        "Combat Talents": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+8/+3",
+      "fortSave": "+6",
+      "refSave": "+2",
+      "willSave": "+6",
+      "special": [
+        "Deathless challenge"
+      ],
+      "columns": {
+        "Combat Talents": "8"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+9/+4",
+      "fortSave": "+6",
+      "refSave": "+3",
+      "willSave": "+6",
+      "special": [
+        "Stalwart"
+      ],
+      "columns": {
+        "Combat Talents": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+10/+5",
+      "fortSave": "+7",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Dedicated defense"
+      ],
+      "columns": {
+        "Combat Talents": "10"
+      },
+      "choices": []
+    },
+    {
+      "level": 11,
+      "bab": "+11/+6/+1",
+      "fortSave": "+7",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Empowering challenge"
+      ],
+      "columns": {
+        "Combat Talents": "11"
+      },
+      "choices": []
+    },
+    {
+      "level": 12,
+      "bab": "+12/+7/+2",
+      "fortSave": "+8",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Sentinel's wrath"
+      ],
+      "columns": {
+        "Combat Talents": "12"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+13/+8/+3",
+      "fortSave": "+8",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Sentinel's poise"
+      ],
+      "columns": {
+        "Combat Talents": "13"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+14/+9/+4",
+      "fortSave": "+9",
+      "refSave": "+4",
+      "willSave": "+9",
+      "special": [
+        "Dedicated defense",
+        "eternal challenge"
+      ],
+      "columns": {
+        "Combat Talents": "14"
+      },
+      "choices": []
+    },
+    {
+      "level": 15,
+      "bab": "+15/+10/+5",
+      "fortSave": "+9",
+      "refSave": "+5",
+      "willSave": "+9",
+      "special": [
+        "Instant challenge"
+      ],
+      "columns": {
+        "Combat Talents": "15"
+      },
+      "choices": []
+    },
+    {
+      "level": 16,
+      "bab": "+16/+11/+6/+1",
+      "fortSave": "+10",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Diamond aegis"
+      ],
+      "columns": {
+        "Combat Talents": "16"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+17/+12/+7/+2",
+      "fortSave": "+10",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Sentinel's surge"
+      ],
+      "columns": {
+        "Combat Talents": "17"
+      },
+      "choices": []
+    },
+    {
+      "level": 18,
+      "bab": "+18/+13/+8/+3",
+      "fortSave": "+11",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Dedicated defense"
+      ],
+      "columns": {
+        "Combat Talents": "18"
+      },
+      "choices": []
+    },
+    {
+      "level": 19,
+      "bab": "+19/+14/+9/+4",
+      "fortSave": "+11",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Invincible soul"
+      ],
+      "columns": {
+        "Combat Talents": "19"
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+20/+15/+10/+5",
+      "fortSave": "+12",
+      "refSave": "+6",
+      "willSave": "+12",
+      "special": [
+        "Final challenge"
+      ],
+      "columns": {
+        "Combat Talents": "20"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Combat Talents"
+  ],
+  "features": [
+    {
+      "name": "Combat Training",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A sentinel may combine combat spheres and talents to create powerful martial techniques. Sentinels are considered Expert practitioners and use Wisdom as their practitioner modifier."
+    },
+    {
+      "name": "Defender's Soul",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "A sentinel gains the Guardian sphere as a bonus sphere, although she must select the challenge package. If she already possesses the Guardian sphere challenge package, she instead gains a Guardian talent for which she qualifies."
+    },
+    {
+      "name": "Guardian Challenge",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 1st level, whenever a sentinel uses the challenge ability of the Guardian sphere, for the duration of the challenge she gains a +1 bonus to attack and damage rolls against a challenged creature. At 5th level and every four levels thereafter, these bonuses increase by +1, to a maximum of +5 at 17th level."
+    },
+    {
+      "name": "Sentinel's Reserve",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Each day, a sentinel gains a number of reserve points equal to 1/2 her sentinel level + her Wisdom modifier (minimum 1). She can spend a reserve point as a swift action to gain an amount of temporary hit points equal to two times her base attack bonus + her Wisdom modifier; these temporary hit points last for 1 minute or until lost, whichever comes first. She regains reserve points after resting for 8 hours, although she may only regain reserve points once every 24 hours."
+    },
+    {
+      "name": "Wise Reflexes",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A sentinel can use her Wisdom modifier in place of her Dexterity when determining her initiative and Reflex save bonus, although this bonus cannot exceed her class level."
+    },
+    {
+      "name": "Guard Wall",
+      "type": "Ex",
+      "levels": [
+        2
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level, whenever a sentinel ends her turn without moving more than 5 ft., she gains a +2 circumstance bonus to her CMD. At 12th level, this bonus increases to +4."
+    },
+    {
+      "name": "Dedicated Defense",
+      "type": "Ex",
+      "levels": [
+        2,
+        6,
+        10,
+        14,
+        18
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level, a sentinel's devotion begins to manifest in a more powerful fashion, granting her DR 1/- (this damage reduction stacks with similar damage reduction, such as that granted by wearing adamantine armor or the barbarian class feature). At 6th level and every four levels afterwards, this damage reduction is increased by 1."
+    },
+    {
+      "name": "Second Wind",
+      "type": "Ex",
+      "levels": [
+        3
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 3rd level, a sentinel can choose to spend a reserve point as a swift action; if she does so, she heals 1d6 hit points of damage for every two sentinel levels she possesses + her Wisdom modifier; this healing cannot raise a sentinel's hit points beyond 1/2 of their maximum amount. She can reduce this healing by half to also regain her martial focus, but she must decide to do so before rolling to determine how much she would be healed."
+    },
+    {
+      "name": "Sentinel's Imposition",
+      "type": "Ex",
+      "levels": [
+        4
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 4th level, whenever a creature that has been challenged by the sentinel makes an attack that does not include the sentinel as a target, they provoke an attack of opportunity from her."
+    },
+    {
+      "name": "Opportunistic Offense",
+      "type": "Ex",
+      "levels": [
+        5
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 5th level, once per round when the sentinel makes an attack of opportunity, she can treat it as an attack action for the purpose of which talents she can apply to the attack."
+    },
+    {
+      "name": "Counter Critical",
+      "type": "Ex",
+      "levels": [
+        6
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 6th level, whenever a critical hit is confirmed against the sentinel, she can expend her martial focus as a free action which can be taken even when it is not her turn to make an opposed attack roll. If the sentinel's attack roll is higher than the confirmation roll for the critical hit, the critical hit instead deals normal damage. A helpless sentinel cannot use this ability."
+    },
+    {
+      "name": "Defender's Determination",
+      "type": "Ex",
+      "levels": [
+        7
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 7th level, whenever a sentinel uses her second wind, she can also ignore the following conditions for 1 minute: blinded, deafened, entangled, fatigued, sickened, shaken, or staggered. Once a specific instance of a condition has been ignored by this ability, it cannot be ignored again for 24 hours, or until she has rested for 8 hours (whichever comes first). She can also spend an additional point of reserve while using her second wind to ignore the normal limitations on how much she can heal with it."
+    },
+    {
+      "name": "Deathless Challenge",
+      "type": "Ex",
+      "levels": [
+        8
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 8th level, as long as the sentinel has an active challenge, whenever her hit points are 0 or lower but she is not dead, she automatically stabilizes and can act as though she was disabled instead of dying. While disabled, she is not staggered, although she still takes 1 damage for making a standard action. The sentinel adds her Wisdom score to her Constitution when determining her death threshold, even while not making a challenge."
+    },
+    {
+      "name": "Stalwart",
+      "type": "Ex",
+      "levels": [
+        9
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 9th level, a sentinel can use mental and physical resiliency to avoid certain attacks. If she makes a Fortitude or Will saving throw against an attack that has a reduced effect on a successful save, she instead avoids the effect entirely. A helpless sentinel does not gain the benefit of the stalwart ability."
+    },
+    {
+      "name": "Empowering Challenge",
+      "type": "Ex",
+      "levels": [
+        11
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 11th level, whenever a sentinel reduces the target of her challenge to 0 or fewer hit points, she gains temporary hit points equal to her sentinel level + her Wisdom modifier which last for 1 minute or until lost, whichever comes first. If the target of her challenge has fewer Hit Dice than half of her class level, this ability does not activate."
+    },
+    {
+      "name": "Sentinel's Wrath",
+      "type": "Ex",
+      "levels": [
+        12
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 12th level, whenever a sentinel makes an attack action against a creature she has challenged, she rolls damage twice and chooses whichever result she desires."
+    },
+    {
+      "name": "Sentinel's Poise",
+      "type": "Ex",
+      "levels": [
+        13
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 13th level, whenever the sentinel uses her second wind, she can also ignore the following conditions: dazed, exhausted, frightened, nauseated, paralyzed, or stunned (if a condition would cause the sentinel to be unable to act, as long as she can take purely mental actions, she can use her second wind)."
+    },
+    {
+      "name": "Eternal Challenge",
+      "type": "Ex",
+      "levels": [
+        14
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 14th level, whenever the sentinel has an active challenge and her hit points are 0 or lower but she is not dead, she is no longer disabled. As long as she is below 0 hit points, she gains fast healing equal to her Wisdom modifier."
+    },
+    {
+      "name": "Instant Challenge",
+      "type": "Ex",
+      "levels": [
+        15
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 15th level, if the target of the sentinel's challenge is reduced to 0 or fewer hit points, she can challenge another creature as a free action (even when it isn't her turn)."
+    },
+    {
+      "name": "Diamond Aegis",
+      "type": "Ex",
+      "levels": [
+        16
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 16th level, whenever the sentinel fails a saving throw, she can spend a reserve point as a free action, even if it is not her turn."
+    },
+    {
+      "name": "Sentinel's Surge",
+      "type": "Ex",
+      "levels": [
+        17
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 17th level, whenever a sentinel reduces the target of her challenge to 0 or fewer hit points, she is treated as though she used her second wind. If the target of her challenge has less Hit Dice than half of her sentinel level, this ability does not activate."
+    },
+    {
+      "name": "Invincible Soul",
+      "type": "Ex",
+      "levels": [
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 19th level, any damage reduction the sentinel possesses is doubled against attacks made by creatures under the effects of her challenge and the sentinel is immune to critical hits and sneak attack from the target of her challenge."
+    },
+    {
+      "name": "Final Challenge",
+      "type": "Ex",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level, a sentinel cannot die while she has an active challenge against a creature she considers an enemy, regardless of her hit points. She can still be killed by death effects and other similar abilities, and if she would die due to her hit points being too low, she dies immediately if she has no active challenges for one turn."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 1,
+      "choices": [
+        "defender's soul"
+      ]
+    },
+    {
+      "level": 3,
+      "choices": [
+        "Second wind"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

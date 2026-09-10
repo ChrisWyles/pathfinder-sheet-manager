@@ -21,6 +21,7 @@
     "db:studio": "prisma studio",
     "import:foundry": "tsx scripts/import-foundry.ts",
     "scrape:spheres": "tsx scripts/scrape-spheres.ts",
+    "scrape:classes": "tsx scripts/scrape-sphere-classes.ts",
     "postinstall": "prisma generate"
   },
   "dependencies": {

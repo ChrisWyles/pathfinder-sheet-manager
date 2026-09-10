@@ -1,0 +1,142 @@
+{
+  "slug": "tempestarii",
+  "name": "Tempestarii",
+  "group": "spherecaster",
+  "url": "http://spheresofpower.wikidot.com/tempestarii",
+  "source": "Spheres of Power wiki",
+  "hitDie": null,
+  "alignment": "Any Hit Dice: d6 Requirements To qualify to become a tempestarii, a character must fulfill all the following criteria",
+  "role": "",
+  "classSkills": [
+    "Fly",
+    "Intimidate",
+    "Knowledge",
+    "Knowledge",
+    "Perception",
+    "Profession",
+    "Spellcraft",
+    "Survival"
+  ],
+  "skillRanksPerLevel": null,
+  "babProgression": null,
+  "saveProgressions": {
+    "fort": null,
+    "ref": null,
+    "will": null
+  },
+  "advancement": [],
+  "talentColumns": [],
+  "features": [
+    {
+      "name": "Weapon and Armor Proficiency",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "A tempestarii gains no proficiency with any weapon or armor."
+    },
+    {
+      "name": "Casting",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "A tempestarii may combine spheres and talents to create magical effects. A tempestarii is considered a High-Caster and may use either Intelligence, Wisdom, or Charisma as her casting modifier. (Note: All casters gain 2 bonus talents and may select a casting tradition the first time they gain the casting class feature)."
+    },
+    {
+      "name": "Spell Pool",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "A tempestarii gains a small reservoir of energy he can call on to create truly wondrous effects, called a spell pool. This pool contains a number of spell points equal to his class level + his casting ability modifier (minimum: 1). This pool replenishes once per day after roughly 8 hours of rest."
+    },
+    {
+      "name": "Magic Talents",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "A tempestarii gains 1 magic talent every time he gains a caster level, according to Table: Tempestarii. This does not stack with caster levels gained from other sources."
+    },
+    {
+      "name": "Rapid Weather",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "A tempestarii is an expert at manipulating weather, and can do so much more quickly than most. When using control weather to change the weather's severity, the change happens by an additional level per round for every tempestarii level possessed; 2 steps at level 1, 3 steps at level 2, etc."
+    },
+    {
+      "name": "Ship Smasher",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "Beginning at 2nd level, when damaging objects (including airships and other vehicles) with his weather effects (including cold, heat, and lightning), the damage is not divided in half, as would be normal for energy effects."
+    },
+    {
+      "name": "Grand Weather",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "The reach of your weather effects increases: medium range becomes long range, while long range becomes extreme range (1000 ft. +100 ft. per level). If using the Climate advanced talent, double its reach."
+    },
+    {
+      "name": "Ship Killer",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "Beginning at 4th level, damage dealt to objects (including airships and other vehicles) by the tempestarii's weather effects are doubled."
+    },
+    {
+      "name": "Deadly Weather",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "At 5th level, whenever you deal damage with a weather effect created by control weather, it deals maximum damage."
+    },
+    {
+      "name": "Instant Weather",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "At 5th level, when the tempestarii uses control weather to change the weather's severity, the change happens immediately, no matter how many levels the severity is being changed.\n\nU: Part of Ultimate Spheres of Power and does not need to be bought separately from that book"
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [],
+  "notes": [
+    "no 20-level advancement table on the page — likely an archetype or prestige-style class that modifies a base class"
+  ]
+}

@@ -1,0 +1,606 @@
+{
+  "slug": "symbiat",
+  "name": "Symbiat",
+  "group": "spherecaster",
+  "url": "http://spheresofpower.wikidot.com/symbiat",
+  "source": "Spheres of Power wiki",
+  "hitDie": 8,
+  "alignment": "Any",
+  "role": "A symbiat's abilities make them masters of defence and can push both themselves and their teammates to powerful new heights with the psionics",
+  "classSkills": [
+    "Acrobatics",
+    "Craft",
+    "Diplomacy",
+    "Fly",
+    "Intimidate",
+    "Knowledge (all)",
+    "Linguistics",
+    "Perception",
+    "Profession",
+    "Sense Motive",
+    "Spellcraft",
+    "Stealth"
+  ],
+  "skillRanksPerLevel": 4,
+  "babProgression": "THREE_QUARTER",
+  "saveProgressions": {
+    "fort": "POOR",
+    "ref": "GOOD",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+0",
+      "fortSave": "+0",
+      "refSave": "+2",
+      "willSave": "+2",
+      "special": [
+        "Battlefield sense",
+        "casting",
+        "mental powers",
+        "psionics",
+        "spell pool"
+      ],
+      "columns": {
+        "Caster Level": "+0 (1)",
+        "Magic Talents": "0 (+2)",
+        "AC Bonus": "+0",
+        "Pushed Movement": "+0 ft."
+      },
+      "choices": []
+    },
+    {
+      "level": 2,
+      "bab": "+1",
+      "fortSave": "+0",
+      "refSave": "+3",
+      "willSave": "+3",
+      "special": [
+        "ESP",
+        "evasion"
+      ],
+      "columns": {
+        "Caster Level": "+1",
+        "Magic Talents": "1",
+        "AC Bonus": "+0",
+        "Pushed Movement": "+0 ft."
+      },
+      "choices": []
+    },
+    {
+      "level": 3,
+      "bab": "+2",
+      "fortSave": "+1",
+      "refSave": "+3",
+      "willSave": "+3",
+      "special": [
+        "Pushed movement",
+        "share expertise",
+        "danger sense +1"
+      ],
+      "columns": {
+        "Caster Level": "+2",
+        "Magic Talents": "2",
+        "AC Bonus": "+0",
+        "Pushed Movement": "+10 ft."
+      },
+      "choices": []
+    },
+    {
+      "level": 4,
+      "bab": "+3",
+      "fortSave": "+1",
+      "refSave": "+4",
+      "willSave": "+4",
+      "special": [
+        "Uncanny dodge"
+      ],
+      "columns": {
+        "Caster Level": "+3",
+        "Magic Talents": "3",
+        "AC Bonus": "+1",
+        "Pushed Movement": "+10 ft."
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+3",
+      "fortSave": "+1",
+      "refSave": "+4",
+      "willSave": "+4",
+      "special": [
+        "Two minds"
+      ],
+      "columns": {
+        "Caster Level": "+3",
+        "Magic Talents": "3",
+        "AC Bonus": "+1",
+        "Pushed Movement": "+10 ft."
+      },
+      "choices": []
+    },
+    {
+      "level": 6,
+      "bab": "+4",
+      "fortSave": "+2",
+      "refSave": "+5",
+      "willSave": "+5",
+      "special": [
+        "Danger sense +2"
+      ],
+      "columns": {
+        "Caster Level": "+4",
+        "Magic Talents": "4",
+        "AC Bonus": "+1",
+        "Pushed Movement": "+20 ft."
+      },
+      "choices": []
+    },
+    {
+      "level": 7,
+      "bab": "+5",
+      "fortSave": "+2",
+      "refSave": "+5",
+      "willSave": "+5",
+      "special": [
+        "Battlefield relay (+3)",
+        "share capacity"
+      ],
+      "columns": {
+        "Caster Level": "+5",
+        "Magic Talents": "5",
+        "AC Bonus": "+1",
+        "Pushed Movement": "+20 ft."
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+6/+1",
+      "fortSave": "+2",
+      "refSave": "+6",
+      "willSave": "+6",
+      "special": [
+        "Improved uncanny dodge"
+      ],
+      "columns": {
+        "Caster Level": "+6",
+        "Magic Talents": "6",
+        "AC Bonus": "+2",
+        "Pushed Movement": "+20 ft."
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+6/+1",
+      "fortSave": "+3",
+      "refSave": "+6",
+      "willSave": "+6",
+      "special": [
+        "Danger sense +3",
+        "improved evasion",
+        "improved mind link"
+      ],
+      "columns": {
+        "Caster Level": "+6",
+        "Magic Talents": "6",
+        "AC Bonus": "+2",
+        "Pushed Movement": "+30 ft."
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+7/+2",
+      "fortSave": "+3",
+      "refSave": "+7",
+      "willSave": "+7",
+      "special": [
+        "Share expertise (others)"
+      ],
+      "columns": {
+        "Caster Level": "+7",
+        "Magic Talents": "7",
+        "AC Bonus": "+2",
+        "Pushed Movement": "+30 ft."
+      },
+      "choices": []
+    },
+    {
+      "level": 11,
+      "bab": "+8/+3",
+      "fortSave": "+3",
+      "refSave": "+7",
+      "willSave": "+7",
+      "special": [
+        "Psionic fortress"
+      ],
+      "columns": {
+        "Caster Level": "+8",
+        "Magic Talents": "8",
+        "AC Bonus": "+2",
+        "Pushed Movement": "+30 ft."
+      },
+      "choices": []
+    },
+    {
+      "level": 12,
+      "bab": "+9/+4",
+      "fortSave": "+4",
+      "refSave": "+8",
+      "willSave": "+8",
+      "special": [
+        "Danger sense +4"
+      ],
+      "columns": {
+        "Caster Level": "+9",
+        "Magic Talents": "9",
+        "AC Bonus": "+3",
+        "Pushed Movement": "+40 ft."
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+9/+4",
+      "fortSave": "+4",
+      "refSave": "+8",
+      "willSave": "+8",
+      "special": [
+        "Battlefield relay (+4)"
+      ],
+      "columns": {
+        "Caster Level": "+9",
+        "Magic Talents": "9",
+        "AC Bonus": "+3",
+        "Pushed Movement": "+40 ft."
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+10/+5",
+      "fortSave": "+4",
+      "refSave": "+9",
+      "willSave": "+9",
+      "special": [
+        "Share capacity (others)"
+      ],
+      "columns": {
+        "Caster Level": "+10",
+        "Magic Talents": "10",
+        "AC Bonus": "+3",
+        "Pushed Movement": "+40 ft."
+      },
+      "choices": []
+    },
+    {
+      "level": 15,
+      "bab": "+11/+6/+1",
+      "fortSave": "+5",
+      "refSave": "+9",
+      "willSave": "+9",
+      "special": [
+        "Danger sense +5"
+      ],
+      "columns": {
+        "Caster Level": "+11",
+        "Magic Talents": "11",
+        "AC Bonus": "+3",
+        "Pushed Movement": "+50 ft."
+      },
+      "choices": []
+    },
+    {
+      "level": 16,
+      "bab": "+12/+7/+2",
+      "fortSave": "+5",
+      "refSave": "+10",
+      "willSave": "+10",
+      "special": [
+        "Telekinetic colossus"
+      ],
+      "columns": {
+        "Caster Level": "+12",
+        "Magic Talents": "12",
+        "AC Bonus": "+4",
+        "Pushed Movement": "+50 ft."
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+12/+7/+2",
+      "fortSave": "+5",
+      "refSave": "+10",
+      "willSave": "+10",
+      "special": [
+        "Greater mind link"
+      ],
+      "columns": {
+        "Caster Level": "+12",
+        "Magic Talents": "12",
+        "AC Bonus": "+4",
+        "Pushed Movement": "+50 ft."
+      },
+      "choices": []
+    },
+    {
+      "level": 18,
+      "bab": "+13/+8/+3",
+      "fortSave": "+6",
+      "refSave": "+11",
+      "willSave": "+11",
+      "special": [
+        "Danger sense +6"
+      ],
+      "columns": {
+        "Caster Level": "+13",
+        "Magic Talents": "13",
+        "AC Bonus": "+4",
+        "Pushed Movement": "+60 ft."
+      },
+      "choices": []
+    },
+    {
+      "level": 19,
+      "bab": "+14/+9/+4",
+      "fortSave": "+6",
+      "refSave": "+11",
+      "willSave": "+11",
+      "special": [
+        "Battlefield relay (+5)"
+      ],
+      "columns": {
+        "Caster Level": "+14",
+        "Magic Talents": "14",
+        "AC Bonus": "+4",
+        "Pushed Movement": "+60 ft."
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+15/+10/+5",
+      "fortSave": "+6",
+      "refSave": "+12",
+      "willSave": "+12",
+      "special": [
+        "Greater psionics"
+      ],
+      "columns": {
+        "Caster Level": "+15",
+        "Magic Talents": "15",
+        "AC Bonus": "+5",
+        "Pushed Movement": "+60 ft"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Caster Level",
+    "Magic Talents",
+    "AC Bonus",
+    "Pushed Movement"
+  ],
+  "features": [
+    {
+      "name": "Weapon and Armor Proficiency",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "A symbiat is proficient with all simple weapons, plus the longsword, rapier, sap, short sword, shortbow, and whip. A symbiat is proficient with no armor, but is proficient with shields. A symbiat wearing armor or carrying a medium or heavy load loses the benefit of their battlefield sense."
+    },
+    {
+      "name": "Casting",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A symbiat may combine spheres and talents to create magical effects. A symbiat is considered a Mid-Caster. (Note: All casters gain 2 bonus talents and a casting tradition the first time they gain the casting class feature.)"
+    },
+    {
+      "name": "Spell Pool",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A symbiat gains a small reservoir of energy he can call on to create truly wondrous effects, called a spell pool. This pool contains a number of spell points equal to his class level + his casting ability modifier (minimum 1). This pool replenishes once per day after roughly 8 hours of rest."
+    },
+    {
+      "name": "Magic Talents",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "A symbiat gains 3/4ths of a magic talent per level, according to Table: The Symbiat."
+    },
+    {
+      "name": "Mental Powers",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A symbiat gains the Mind and Telekinesis spheres as bonus magic talents."
+    },
+    {
+      "name": "Battlefield Sense",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "When unarmored and unencumbered, the symbiat's second mind may subtly push the symbiat, protecting him from danger. The symbiat adds his Intelligence bonus (if any) to his AC and CMD. These bonuses apply even against touch attacks or when the symbiat is flat-footed and increase by +1 for every 4 symbiat levels possessed to a maximum of +5 at 20th level. The symbiat loses this bonus when he is immobilized or helpless, when he wears any armor, or when he carries a medium or heavy load."
+    },
+    {
+      "name": "Psionics",
+      "type": "Su",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A symbiat's alien mind empowers the symbiat with strength and subtlety far beyond what most casters can achieve. A symbiat may create psionic effects from the list below for a total number of rounds per day equal to 4 + his Intelligence modifier. Every level gained beyond 1st grants him an additional 2 rounds he may create psionic effects.\n\nA symbiat may activate any psionic effect he possesses as a standard action, but need only spend a free action to maintain the effect each round. Changing from one psionic effect to another requires the symbiat to stop the previous effect and start a new one as a standard action. A psionic effect cannot be disrupted, but it ends immediately if the symbiat is killed, stunned, knocked unconscious, or otherwise prevented from taking a mental free action to maintain it each round. A symbiat cannot maintain more than one psionic effect at one time. At 7th level, a symbiat can start a psionic effect as a move action instead of a standard action. At 13th level, a symbiat can start a psionic effect as a swift action.\n\n• Mind Link\n\nThe symbiat may link the minds of himself and any number of willing targets with Intelligence scores of 3 or higher. All targets to be connected must be within 60 feet of the symbiat when the effect is begun, but they need not remain within 60 feet while it is maintained. All affected creatures may communicate with each other through this mental link, provided they share a language. Where there is no shared language, only simple communication (go, come, attack, help) may be sent.\n\n• Battlefield Relay\n\nThe symbiat may open the mind of an opponent, reading their intentions and relaying this information to his allies. Designating a target is a mind-altering effect, and the target is allowed a Will save (DC 10 + 1/2 his symbiat level + his Intelligence modifier) to negate this designation. If a creature is successfully designated as a target, the symbiat and all allies within 60 feet of the symbiat gain a +2 circumstance bonus to attack rolls and skill checks made against the target, a +2 dodge bonus to AC against attacks coming from the target, and a +2 circumstance bonus saving throws against any effect origi"
+    },
+    {
+      "name": "ESP",
+      "type": "Ex",
+      "levels": [
+        2
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A symbiat is aware of more of his surroundings than his physical senses can account for. Beginning at 2nd level, he gains a bonus to Sense Motive and Perception checks equal to 1/2 his symbiat level."
+    },
+    {
+      "name": "Evasion",
+      "type": "Ex",
+      "levels": [
+        2
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level and higher, a symbiat's added senses allow him to avoid even magical and unusual attacks with great agility. If he succeeds at a Reflex saving throw against an attack that normally deals half damage on a successful save, he instead takes no damage. Evasion can be used only if the symbiat is wearing light armor or no armor. A helpless symbiat does not gain the benefit of evasion."
+    },
+    {
+      "name": "Pushed Movement",
+      "type": "Su",
+      "levels": [
+        3
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, a symbiat gains the ability to unconsciously push their body to greater speeds through their telekinesis. The symbiat gains a +10 feet bonus to their base movement speed. This bonus increases by +10 feet for every 3 symbiat levels possessed beyond 3rd, to a maximum of +60 feet at 18th level."
+    },
+    {
+      "name": "Danger Sense",
+      "type": "Ex",
+      "levels": [
+        3,
+        6,
+        9,
+        12,
+        15,
+        18
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, a symbiat gains a +1 bonus on Reflex saves to avoid traps and a +1 dodge bonus to AC against attacks made by traps. In addition, he gains a +1 bonus on Perception checks to avoid being surprised by a foe. These bonuses increase by 1 every 3 symbiat levels thereafter (to a maximum of +6 at 18th level). This ability counts as trap sense for the purpose of any feat or class prerequisite. The bonuses gained from this ability stack with those gained from trap sense (from another class)."
+    },
+    {
+      "name": "Uncanny Dodge",
+      "type": "Ex",
+      "levels": [
+        4
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Starting at 4th level, a symbiat's mental senses let him react to danger before his physical senses would normally allow him to do so. He cannot be caught flat-footed, nor does he lose his Dexterity bonus to AC if the attacker is invisible. He still loses his Dexterity bonus to AC if immobilized. A symbiat with this ability can still lose his Dexterity bonus to AC if an opponent successfully uses the feint action against him.\n\nIf a symbiat already has uncanny dodge from a different class, he automatically gains improved uncanny dodge (see below) instead."
+    },
+    {
+      "name": "Two Minds",
+      "type": "Ex",
+      "levels": [
+        5
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 5th level, a symbiat's two minds give him a greater resilience to mind-affecting attacks. Whenever the symbiat attempts a Will saving throw, he may roll twice and take the better result. If the symbiat would be able to roll twice through any other ability, he may roll three times and take the better result."
+    },
+    {
+      "name": "Improved Uncanny Dodge",
+      "type": "Ex",
+      "levels": [
+        8
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A symbiat of 8th level or higher can no longer be flanked. This defense denies a rogue the ability to sneak attack the character by flanking him, unless the attacker has at least four more rogue levels than the target does.\n\nIf a character already has uncanny dodge from another class, the levels from the classes that grant uncanny dodge stack to determine the minimum rogue level required to flank the character."
+    },
+    {
+      "name": "Improved Evasion",
+      "type": "Ex",
+      "levels": [
+        9
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 9th level, a symbiat's evasion ability improves. He still takes no damage on a successful Reflex saving throw against attacks, but henceforth he takes only half damage on a failed save. A helpless symbiat does not gain the benefit of improved evasion."
+    },
+    {
+      "name": "Greater Psionics",
+      "type": "",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level, a symbiat may use two psionic effects at once by spending 2 rounds of psionic power each round. Each effect must be begun separately, and ending one effect does not necessitate ending the other."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 4,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

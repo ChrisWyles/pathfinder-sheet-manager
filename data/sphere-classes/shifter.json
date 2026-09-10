@@ -1,0 +1,686 @@
+{
+  "slug": "shifter",
+  "name": "Shifter",
+  "group": "spherecaster",
+  "url": "http://spheresofpower.wikidot.com/shifter",
+  "source": "Spheres of Power wiki",
+  "hitDie": 8,
+  "alignment": "Any non-lawful",
+  "role": "Shifters are experts at infiltration and combat, using their powers to assume many shapes to fit whatever situation they find themselves in",
+  "classSkills": [
+    "Acrobatics",
+    "Bluff",
+    "Climb",
+    "Craft",
+    "Disguise",
+    "Fly",
+    "Handle Animal",
+    "Intimidate",
+    "Knowledge (geography)",
+    "Knowledge (nature)",
+    "Perception",
+    "Profession",
+    "Sense Motive",
+    "Spellcraft",
+    "Stealth",
+    "Survival",
+    "Swim"
+  ],
+  "skillRanksPerLevel": 4,
+  "babProgression": "THREE_QUARTER",
+  "saveProgressions": {
+    "fort": "GOOD",
+    "ref": "GOOD",
+    "will": "POOR"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+0",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+0",
+      "special": [
+        "Casting",
+        "quick transformation",
+        "shapeshifter",
+        "spell points",
+        "wild empathy"
+      ],
+      "columns": {
+        "Caster Level": "+0 (1)",
+        "Magic Talents": "0 (+2)"
+      },
+      "choices": [
+        "shapeshifter"
+      ]
+    },
+    {
+      "level": 2,
+      "bab": "+1",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+0",
+      "special": [
+        "Bestial trait"
+      ],
+      "columns": {
+        "Caster Level": "+1",
+        "Magic Talents": "1"
+      },
+      "choices": [
+        "Bestial trait"
+      ]
+    },
+    {
+      "level": 3,
+      "bab": "+2",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+1",
+      "special": [
+        "Endurance"
+      ],
+      "columns": {
+        "Caster Level": "+2",
+        "Magic Talents": "2"
+      },
+      "choices": [
+        "Endurance"
+      ]
+    },
+    {
+      "level": 4,
+      "bab": "+3",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+1",
+      "special": [
+        "Bestial trait",
+        "enhanced attacks (magic)",
+        "lingering transformation"
+      ],
+      "columns": {
+        "Caster Level": "+3",
+        "Magic Talents": "3"
+      },
+      "choices": [
+        "Bestial trait",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+3",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+1",
+      "special": [
+        "Steal language"
+      ],
+      "columns": {
+        "Caster Level": "+3",
+        "Magic Talents": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 6,
+      "bab": "+4",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+2",
+      "special": [
+        "Bestial trait"
+      ],
+      "columns": {
+        "Caster Level": "+4",
+        "Magic Talents": "4"
+      },
+      "choices": [
+        "Bestial trait"
+      ]
+    },
+    {
+      "level": 7,
+      "bab": "+5",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+2",
+      "special": [
+        "Enhanced attacks (cold iron, silver)",
+        "enhanced physicality"
+      ],
+      "columns": {
+        "Caster Level": "+5",
+        "Magic Talents": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+6/+1",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+2",
+      "special": [
+        "Bestial trait",
+        "immunity to poison"
+      ],
+      "columns": {
+        "Caster Level": "+6",
+        "Magic Talents": "6"
+      },
+      "choices": [
+        "Bestial trait",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+6/+1",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+3",
+      "special": [
+        "Extended transformation"
+      ],
+      "columns": {
+        "Caster Level": "+6",
+        "Magic Talents": "6"
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+7/+2",
+      "fortSave": "+7",
+      "refSave": "+7",
+      "willSave": "+3",
+      "special": [
+        "Bestial trait",
+        "enhanced attacks (chaotic)"
+      ],
+      "columns": {
+        "Caster Level": "+7",
+        "Magic Talents": "7"
+      },
+      "choices": [
+        "Bestial trait"
+      ]
+    },
+    {
+      "level": 11,
+      "bab": "+8/+3",
+      "fortSave": "+7",
+      "refSave": "+7",
+      "willSave": "+3",
+      "special": [
+        "Boundless communication"
+      ],
+      "columns": {
+        "Caster Level": "+8",
+        "Magic Talents": "8"
+      },
+      "choices": []
+    },
+    {
+      "level": 12,
+      "bab": "+9/+4",
+      "fortSave": "+8",
+      "refSave": "+8",
+      "willSave": "+4",
+      "special": [
+        "Bestial trait",
+        "immunity to disease"
+      ],
+      "columns": {
+        "Caster Level": "+9",
+        "Magic Talents": "9"
+      },
+      "choices": [
+        "Bestial trait",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+9/+4",
+      "fortSave": "+8",
+      "refSave": "+8",
+      "willSave": "+4",
+      "special": [
+        "Enhanced physicality"
+      ],
+      "columns": {
+        "Caster Level": "+9",
+        "Magic Talents": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+10/+5",
+      "fortSave": "+9",
+      "refSave": "+9",
+      "willSave": "+4",
+      "special": [
+        "Bestial trait"
+      ],
+      "columns": {
+        "Caster Level": "+10",
+        "Magic Talents": "10"
+      },
+      "choices": [
+        "Bestial trait"
+      ]
+    },
+    {
+      "level": 15,
+      "bab": "+11/+6/+1",
+      "fortSave": "+9",
+      "refSave": "+9",
+      "willSave": "+5",
+      "special": [
+        "Endless communication"
+      ],
+      "columns": {
+        "Caster Level": "+11",
+        "Magic Talents": "11"
+      },
+      "choices": []
+    },
+    {
+      "level": 16,
+      "bab": "+12/+7/+2",
+      "fortSave": "+10",
+      "refSave": "+10",
+      "willSave": "+5",
+      "special": [
+        "Bestial trait",
+        "enhanced attacks (adamantine)"
+      ],
+      "columns": {
+        "Caster Level": "+12",
+        "Magic Talents": "12"
+      },
+      "choices": [
+        "Bestial trait",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+12/+7/+2",
+      "fortSave": "+10",
+      "refSave": "+10",
+      "willSave": "+5",
+      "special": [
+        "Greater transformation"
+      ],
+      "columns": {
+        "Caster Level": "+12",
+        "Magic Talents": "12"
+      },
+      "choices": []
+    },
+    {
+      "level": 18,
+      "bab": "+13/+8/+3",
+      "fortSave": "+11",
+      "refSave": "+11",
+      "willSave": "+6",
+      "special": [
+        "Bestial trait"
+      ],
+      "columns": {
+        "Caster Level": "+13",
+        "Magic Talents": "13"
+      },
+      "choices": [
+        "Bestial trait"
+      ]
+    },
+    {
+      "level": 19,
+      "bab": "+14/+9/+4",
+      "fortSave": "+11",
+      "refSave": "+11",
+      "willSave": "+6",
+      "special": [
+        "Enhanced physicality"
+      ],
+      "columns": {
+        "Caster Level": "+14",
+        "Magic Talents": "14"
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+15/+10/+5",
+      "fortSave": "+12",
+      "refSave": "+12",
+      "willSave": "+6",
+      "special": [
+        "Bestial trait",
+        "second skin"
+      ],
+      "columns": {
+        "Caster Level": "+15",
+        "Magic Talents": "15"
+      },
+      "choices": [
+        "Bestial trait",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Caster Level",
+    "Magic Talents"
+  ],
+  "features": [
+    {
+      "name": "Weapon and Armor Proficiency",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "A shifter is proficient with all simple weapons and light armor."
+    },
+    {
+      "name": "Casting",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A shifter may combine spheres and talents to create magical effects. A shifter is considered a Mid-Caster. (Note: All casters gain 2 bonus talents and a casting tradition the first time they gain the casting class feature.)"
+    },
+    {
+      "name": "Spell Pool",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "A shifter gains a small reservoir of energy she can call on to create truly wondrous effects, called a spell pool. This pool contains a number of spell points equal to her class level + her casting ability modifier (minimum 1). This pool replenishes once per day after roughly 8 hours of rest."
+    },
+    {
+      "name": "Magic Talents",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "A shifter gains 3/4ths of a magic talent per level, according to Table: The Shifter."
+    },
+    {
+      "name": "Shapeshifter",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At first level the shifter gains the Alteration sphere as a bonus magic talent. The shifter uses her class level as her caster level for this sphere. This stacks normally with caster levels gained from other sources."
+    },
+    {
+      "name": "Wild Empathy",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A shifter gains wild empathy as the druid class feature, treating her shifter levels as druid levels for this purpose."
+    },
+    {
+      "name": "Quick Transformation",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "The shifter may use the Alteration sphere to apply a shapeshift to herself and only herself as a move action. Maintaining this effect through concentration only requires a move action each round."
+    },
+    {
+      "name": "Bestial Trait",
+      "type": "",
+      "levels": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 2nd level and every 2 levels thereafter the shifter gains a bestial trait, representing the ways she has changed through her assumption of other forms.\n\nThe shifter may choose to keep these traits when she assumes other forms, even if the trait would normally be removed (such as natural claws).\n\n• Accommodating Form [Apoc]\n\nSource: The Apex Shifter\n\nThe shifter chooses one Alteration sphere talent (including the base talent that grants Blank Form) that she possesses that grants traits. When she applies a shapeshift to herself, she can choose one of the traits from that talent that does not cost an additional spell point to apply. That trait does not count towards her maximum amount of traits she may possess on a form. She may select this bestial trait once per every 4 shifter levels she possesses (minimum 1). Each time she does so she selects another talent.\n\n• Adaptation (Ex)\n\nThe shifter suffers no harm from being in a hot or cold environment and can exist comfortably in conditions between -50 and 140 degrees Fahrenheit (-45 and 60 degrees Celsius) without having to attempt Fortitude saves. Her equipment is likewise protected. This trait does not provide any protection from fire or cold damage, nor does it protect against other environmental hazards such as smoke, lack of air, and so forth.\n\nIf she possesses the flight bestial trait, she also is acclimated to living at high altitudes and treats her altitude zone as if it were one lower. At shifter level 10, she may treat it as two levels lower.\n\nIf she possesses the home in water bestial trait, she also is immune to the pressures of the ocean and takes no damage from water pressure.\n\n• Adaptation, Improved (requires adaptation)\n\nThe shifter gains resistance to acid, cold, electricity, fire, and sonic equal to her shifter level.\n\n• Adaptation, Greater (requires adaptation, improved adaptation, shifter 10)\n\nChoose a damage type the shifter has resistance to through improved adaptation. She gains immunity to that damage type. She may select this trait multiple times. The effects do not stack. Each time it is gained, choose another damage type.\n\n• Animal Advisor (Su)\n\nThe shifter gains a familiar, treating her "
+    },
+    {
+      "name": "Endurance",
+      "type": "Ex",
+      "levels": [
+        3
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 3rd level the shifter gains Endurance as a bonus feat."
+    },
+    {
+      "name": "Lingering Transformation",
+      "type": "",
+      "levels": [
+        4
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 4th level, when the shifter applies a shapeshift to herself and maintains it through concentration or decides not to maintain the shapeshift at all, the shapeshift lasts an additional number of rounds equal to 1/2 her shifter level before ending."
+    },
+    {
+      "name": "Enhanced Attacks",
+      "type": "Su",
+      "levels": [
+        4,
+        7,
+        10,
+        16
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Starting at 4th level, the shifter's magic begins to augment her natural attacks, in both her normal and transformed shapes. All the shifter's natural attacks are treated as magic weapons for the purpose of overcoming damage reduction. At 7th level they are treated as cold iron and silver weapons. At 10th level, the shifter has come to embody fluidity so much that her natural attacks are treated as chaotic weapons for the purpose of overcoming damage reduction. At 16th level, they are treated as adamantine weapons for this purpose.\n\n• Alternate Class Feature: Enhanced Defense (Ex) [Origin]\n\nAt 4th level, the shifter gains DR/magic equal to 1/3 their shifter level. If the shifter would gain damage reduction from another source which is bypassed by a material or alignment, that damage reduction is improved to also require a magic weapon. For example, a shifter which gains damage reduction bypassed by silver would instead gain damage reduction bypassed by silver and magic (noted DR/ silver and magic) and a shifter which gains damage reduction bypassed by a good-aligned weapon would instead gain damage reduction bypassed by a good-aligned magic weapon (noted DR/good and magic).\n\nNote: An alternate class feature is similar to a modular archetype. By swapping out a single class feature for another similar class feature, a player is able to more customize and finetune their character through their chosen classes. An alternate class feature is treated as the original class feature for the purposes of exchanging it with an archetype and cannot be selected if an archetype would replace the original class feature."
+    },
+    {
+      "name": "Steal Language",
+      "type": "Su",
+      "levels": [
+        5
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 5th level, a shifter can not only change her body, but also her mind. The shifter may touch a target, gaining for 24 hours the ability to speak and understand one language that creature speaks. This can work on animals and other creatures that do not have a language, but only allows communication with that particular type of creature (eagle, dog, wolf, etc.). She may only have one language acquired at a time in this manner; acquiring a second language dismisses the first."
+    },
+    {
+      "name": "Enhanced Physicality",
+      "type": "Ex",
+      "levels": [
+        7,
+        13,
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 7th level, the shifter's body begins to become naturally enhanced through her transformations. She gains a +2 inherent bonus to her Constitution score. This increases to +4 at 13th level, and +6 at 19th level."
+    },
+    {
+      "name": "Immunity to Poison",
+      "type": "Ex",
+      "levels": [
+        8
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 8th level, the shifter gains immunity to all poisons."
+    },
+    {
+      "name": "Extended Transformation",
+      "type": "Sp",
+      "levels": [
+        9
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 9th level, the shifter's control over Alteration magic makes her transformations unusually powerful. Whenever the shifter spends a spell point to allow a shapeshift to continue without concentration, the effect lasts for 10 minutes per level instead of 1 minute per level."
+    },
+    {
+      "name": "Boundless Communication",
+      "type": "Ex",
+      "levels": [
+        11
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 11th level, the shifter's ability to communicate increases. She may understand and be understood by any creature with a language."
+    },
+    {
+      "name": "Immunity to Disease",
+      "type": "Ex",
+      "levels": [
+        12
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 12th level, the shifter gains immunity to all diseases, including magical diseases."
+    },
+    {
+      "name": "Endless Communication",
+      "type": "Ex",
+      "levels": [
+        15
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 15th level, the shifter's communicative powers encompasses all life. She may communicate with and understand any living creature, even those without languages such as animals and plants."
+    },
+    {
+      "name": "Greater Transformation",
+      "type": "Su",
+      "levels": [
+        17
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 17th level, whenever the shifter spends a spell point to allow a shapeshift to endure without concentration, the effect lasts for 1 hour per level."
+    },
+    {
+      "name": "Second Skin",
+      "type": "Ex",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level the shifter becomes a master of Alteration magic. Whenever she changes her own form with a shapeshift it is considered an extraordinary ability instead of a magical effect. This means it does not provoke an attack of opportunity, cannot be dispelled or countered, and can be used within an antimagic field. Changes to herself have an unlimited duration without the need to spend any spell points."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 1,
+      "choices": [
+        "shapeshifter"
+      ]
+    },
+    {
+      "level": 2,
+      "choices": [
+        "Bestial trait"
+      ]
+    },
+    {
+      "level": 3,
+      "choices": [
+        "Endurance"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "Bestial trait",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 6,
+      "choices": [
+        "Bestial trait"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "Bestial trait",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 10,
+      "choices": [
+        "Bestial trait"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "Bestial trait",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 14,
+      "choices": [
+        "Bestial trait"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "Bestial trait",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 18,
+      "choices": [
+        "Bestial trait"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "Bestial trait",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

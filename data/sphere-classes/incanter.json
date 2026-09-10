@@ -1,0 +1,592 @@
+{
+  "slug": "incanter",
+  "name": "Incanter",
+  "group": "spherecaster",
+  "url": "http://spheresofpower.wikidot.com/incanter",
+  "source": "Spheres of Power wiki",
+  "hitDie": 6,
+  "alignment": "Any",
+  "role": "An incanter is a master of magical spheres, bending magic to their needs more fully than any other caster",
+  "classSkills": [
+    "Appraise",
+    "Craft",
+    "Fly",
+    "Knowledge (all)",
+    "Linguistics",
+    "Profession",
+    "Spellcraft"
+  ],
+  "skillRanksPerLevel": 4,
+  "babProgression": "HALF",
+  "saveProgressions": {
+    "fort": "POOR",
+    "ref": "POOR",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+0",
+      "fortSave": "+0",
+      "refSave": "+0",
+      "willSave": "+2",
+      "special": [
+        "Bonus feat",
+        "bonus talent",
+        "casting",
+        "specializations",
+        "spell pool"
+      ],
+      "columns": {
+        "Caster Level": "+1",
+        "Magic Talents": "1 (+2)"
+      },
+      "choices": [
+        "Bonus feat",
+        "bonus talent",
+        "specializations"
+      ]
+    },
+    {
+      "level": 2,
+      "bab": "+1",
+      "fortSave": "+0",
+      "refSave": "+0",
+      "willSave": "+3",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Caster Level": "+2",
+        "Magic Talents": "2"
+      },
+      "choices": [
+        "Bonus feat"
+      ]
+    },
+    {
+      "level": 3,
+      "bab": "+1",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+3",
+      "special": [
+        "Bonus talent"
+      ],
+      "columns": {
+        "Caster Level": "+3",
+        "Magic Talents": "3"
+      },
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 4,
+      "bab": "+2",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Caster Level": "+4",
+        "Magic Talents": "4"
+      },
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+2",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Bonus talent"
+      ],
+      "columns": {
+        "Caster Level": "+5",
+        "Magic Talents": "5"
+      },
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 6,
+      "bab": "+3",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Caster Level": "+6",
+        "Magic Talents": "6"
+      },
+      "choices": [
+        "Bonus feat"
+      ]
+    },
+    {
+      "level": 7,
+      "bab": "+3",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Bonus talent"
+      ],
+      "columns": {
+        "Caster Level": "+7",
+        "Magic Talents": "7"
+      },
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 8,
+      "bab": "+4",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+6",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Caster Level": "+8",
+        "Magic Talents": "8"
+      },
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+4",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+6",
+      "special": [
+        "Bonus talent"
+      ],
+      "columns": {
+        "Caster Level": "+9",
+        "Magic Talents": "9"
+      },
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 10,
+      "bab": "+5",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Caster Level": "+10",
+        "Magic Talents": "10"
+      },
+      "choices": [
+        "Bonus feat"
+      ]
+    },
+    {
+      "level": 11,
+      "bab": "+5",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Bonus talent"
+      ],
+      "columns": {
+        "Caster Level": "+11",
+        "Magic Talents": "11"
+      },
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 12,
+      "bab": "+6/+1",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Caster Level": "+12",
+        "Magic Talents": "12"
+      },
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+6/+1",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Bonus talent"
+      ],
+      "columns": {
+        "Caster Level": "+13",
+        "Magic Talents": "13"
+      },
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 14,
+      "bab": "+7/+2",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+9",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Caster Level": "+14",
+        "Magic Talents": "14"
+      },
+      "choices": [
+        "Bonus feat"
+      ]
+    },
+    {
+      "level": 15,
+      "bab": "+7/+2",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+9",
+      "special": [
+        "Bonus talent"
+      ],
+      "columns": {
+        "Caster Level": "+15",
+        "Magic Talents": "15"
+      },
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 16,
+      "bab": "+8/+3",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Caster Level": "+16",
+        "Magic Talents": "16"
+      },
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+8/+3",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Bonus talent"
+      ],
+      "columns": {
+        "Caster Level": "+17",
+        "Magic Talents": "17"
+      },
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 18,
+      "bab": "+9/+4",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Caster Level": "+18",
+        "Magic Talents": "18"
+      },
+      "choices": [
+        "Bonus feat"
+      ]
+    },
+    {
+      "level": 19,
+      "bab": "+9/+4",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Bonus talent"
+      ],
+      "columns": {
+        "Caster Level": "+19",
+        "Magic Talents": "19"
+      },
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 20,
+      "bab": "+10/+5",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+12",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Caster Level": "+20",
+        "Magic Talents": "20"
+      },
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Caster Level",
+    "Magic Talents"
+  ],
+  "features": [
+    {
+      "name": "Weapon and Armor Proficiency",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "An incanter is proficient with all simple weapons."
+    },
+    {
+      "name": "Casting",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "An incanter may combine spheres and talents to create magical effects. An incanter is considered a High-Caster. (Note: All casters gain 2 bonus talents and a casting tradition the first time they gain the casting class feature.)"
+    },
+    {
+      "name": "Spell Pool",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "An incanter gains a small reservoir of energy he can call on to create truly wondrous effects, called a spell pool. This pool contains a number of spell points equal to his class level + his casting ability modifier (minimum 1). This pool replenishes once per day after roughly 8 hours of rest."
+    },
+    {
+      "name": "Magic Talents",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "An incanter gains 1 magic talent every level, according to Table: The Incanter. The incanter also gains a bonus magic talent at every odd incanter level."
+    },
+    {
+      "name": "Bonus Feat",
+      "type": "",
+      "levels": [
+        1,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 1st, 2nd, and every 2 levels thereafter, an incanter gains a bonus feat. This may be spent to gain an extra magic talent, drawback, proxy, and theurge feats, or any feat which has casting as a prerequisite (item creation feats, metamagic feats, Sphere Focus, Circle Casting, etc.).\n\nAuthor's Note: \"Any feat which has casting as a prerequisite\" includes feats that require a magic sphere. Many of those feats do not list \"casting class feature\" as a prerequisite due to redundancy. For example, an incanter could take a feat which requires the Life sphere with a prerequisite line of \"Prerequisites: Life sphere\"."
+    },
+    {
+      "name": "Incanter Specializations",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "At 1st level, the incanter may choose a series of specializations, gaining additional abilities at the cost of some versatility. Every specialization costs a number of the incanter's bonus feats, as indicated by the chart below. Each specialization costs either 1, 2, or 3 specialization points. The incanter cannot have more than 5 points worth of specializations.\n\nHe uses his incanter level as their effective cleric, sorcerer, or wizard level when determining the power of these abilities.\n\nMost specializations come into effect beginning at 1st level. However, if the incanter possesses multiple specializations, he may only gain the benefits of one at 1st level, plus another at every odd level after 1st. Two specializations that both only cost 1 specialization point count as a single specialization for this purpose.\n\n• Admixture Adept (2 specialization points)\n\nThe incanter gains the Admixture talent as a bonus magic talent. He also gains an admixture pool as an admixture savant (see elementalist archetypes in chapter 4) of half his incanter level (minimum 1). These levels stack with admixture savant levels for determining the size of his admixture pool.\n\n• Channel Energy (2 specialization points)\n\nThe incanter may channel energy as the cleric class feature a total number of times per day equal to 3 + his casting ability modifier, using his casting ability modifier in place of Charisma when determining its associated saving throw. He must choose whether to channel positive or negative energy when he gains this ability. Once this choice is made, it cannot be changed.\n\n• Cleric Domains (1 specialization point)\n\nThe incanter gains the powers and abilities associated with one cleric domain of his choice, using his incanter level as his cleric level. This stacks with levels from other classes that grant domains, but only if the domains chosen by both classes are the same. This does not grant domain spells. He uses his casting ability modifier in place of Wisdom when determining the power of his domains, and he may choose subdomains. He may take this specialization multiple times. Each time it is taken, he gains another domain.\n\n• Familiar (1-2 specialization points)\n\nT"
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 1,
+      "choices": [
+        "Bonus feat",
+        "bonus talent",
+        "specializations"
+      ]
+    },
+    {
+      "level": 2,
+      "choices": [
+        "Bonus feat"
+      ]
+    },
+    {
+      "level": 3,
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 6,
+      "choices": [
+        "Bonus feat"
+      ]
+    },
+    {
+      "level": 7,
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 10,
+      "choices": [
+        "Bonus feat"
+      ]
+    },
+    {
+      "level": 11,
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 14,
+      "choices": [
+        "Bonus feat"
+      ]
+    },
+    {
+      "level": 15,
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 18,
+      "choices": [
+        "Bonus feat"
+      ]
+    },
+    {
+      "level": 19,
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

@@ -1,0 +1,574 @@
+{
+  "slug": "elementalist",
+  "name": "Elementalist",
+  "group": "spherecaster",
+  "url": "http://spheresofpower.wikidot.com/elementalist",
+  "source": "Spheres of Power wiki",
+  "hitDie": 8,
+  "alignment": "Any",
+  "role": "Elementalists are magical warriors, wielding elemental damage with the same skill and tactical precision a fighter might wield their sword or bow",
+  "classSkills": [
+    "Acrobatics",
+    "Bluff",
+    "Climb",
+    "Craft",
+    "Escape Artist",
+    "Fly",
+    "Intimidate",
+    "Knowledge (arcana)",
+    "Knowledge (nature)",
+    "Knowledge (planes)",
+    "Perception",
+    "Profession",
+    "Spellcraft",
+    "Stealth",
+    "Survival",
+    "Swim"
+  ],
+  "skillRanksPerLevel": 4,
+  "babProgression": "THREE_QUARTER",
+  "saveProgressions": {
+    "fort": "GOOD",
+    "ref": "GOOD",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+0",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+2",
+      "special": [
+        "Casting",
+        "spell pool",
+        "weave energy"
+      ],
+      "columns": {
+        "Caster Level": "+0 (1)",
+        "Magic Talents": "0 (+2)"
+      },
+      "choices": [
+        "weave energy"
+      ]
+    },
+    {
+      "level": 2,
+      "bab": "+1",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+3",
+      "special": [
+        "Combat feat",
+        "evasion"
+      ],
+      "columns": {
+        "Caster Level": "+1",
+        "Magic Talents": "1"
+      },
+      "choices": []
+    },
+    {
+      "level": 3,
+      "bab": "+2",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+3",
+      "special": [
+        "Favored element"
+      ],
+      "columns": {
+        "Caster Level": "+2",
+        "Magic Talents": "2"
+      },
+      "choices": []
+    },
+    {
+      "level": 4,
+      "bab": "+3",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+4",
+      "special": [
+        "Dodge bonus +1"
+      ],
+      "columns": {
+        "Caster Level": "+3",
+        "Magic Talents": "3"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+3",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+4",
+      "special": [
+        "Elemental defense"
+      ],
+      "columns": {
+        "Caster Level": "+3",
+        "Magic Talents": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 6,
+      "bab": "+4",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+5",
+      "special": [
+        "Combat feat"
+      ],
+      "columns": {
+        "Caster Level": "+4",
+        "Magic Talents": "4"
+      },
+      "choices": []
+    },
+    {
+      "level": 7,
+      "bab": "+5",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+5",
+      "special": [
+        "Elemental movement"
+      ],
+      "columns": {
+        "Caster Level": "+5",
+        "Magic Talents": "5"
+      },
+      "choices": [
+        "Elemental movement"
+      ]
+    },
+    {
+      "level": 8,
+      "bab": "+6/+1",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+6",
+      "special": [
+        "Dodge bonus +2"
+      ],
+      "columns": {
+        "Caster Level": "+6",
+        "Magic Talents": "6"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+6/+1",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+6",
+      "special": [
+        "Favored element"
+      ],
+      "columns": {
+        "Caster Level": "+6",
+        "Magic Talents": "6"
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+7/+2",
+      "fortSave": "+7",
+      "refSave": "+7",
+      "willSave": "+7",
+      "special": [
+        "Combat feat"
+      ],
+      "columns": {
+        "Caster Level": "+7",
+        "Magic Talents": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 11,
+      "bab": "+8/+3",
+      "fortSave": "+7",
+      "refSave": "+7",
+      "willSave": "+7",
+      "special": [
+        "Elemental defense",
+        "improved evasion"
+      ],
+      "columns": {
+        "Caster Level": "+8",
+        "Magic Talents": "8"
+      },
+      "choices": []
+    },
+    {
+      "level": 12,
+      "bab": "+9/+4",
+      "fortSave": "+8",
+      "refSave": "+8",
+      "willSave": "+8",
+      "special": [
+        "Dodge bonus +3"
+      ],
+      "columns": {
+        "Caster Level": "+9",
+        "Magic Talents": "9"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+9/+4",
+      "fortSave": "+8",
+      "refSave": "+8",
+      "willSave": "+8",
+      "special": [
+        "Elemental movement"
+      ],
+      "columns": {
+        "Caster Level": "+9",
+        "Magic Talents": "9"
+      },
+      "choices": [
+        "Elemental movement"
+      ]
+    },
+    {
+      "level": 14,
+      "bab": "+10/+5",
+      "fortSave": "+9",
+      "refSave": "+9",
+      "willSave": "+9",
+      "special": [
+        "Combat feat"
+      ],
+      "columns": {
+        "Caster Level": "+10",
+        "Magic Talents": "10"
+      },
+      "choices": []
+    },
+    {
+      "level": 15,
+      "bab": "+11/+6/+1",
+      "fortSave": "+9",
+      "refSave": "+9",
+      "willSave": "+9",
+      "special": [
+        "Favored element"
+      ],
+      "columns": {
+        "Caster Level": "+11",
+        "Magic Talents": "11"
+      },
+      "choices": []
+    },
+    {
+      "level": 16,
+      "bab": "+12/+7/+2",
+      "fortSave": "+10",
+      "refSave": "+10",
+      "willSave": "+10",
+      "special": [
+        "Dodge bonus +4"
+      ],
+      "columns": {
+        "Caster Level": "+12",
+        "Magic Talents": "12"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+12/+7/+2",
+      "fortSave": "+10",
+      "refSave": "+10",
+      "willSave": "+10",
+      "special": [
+        "Elemental defense"
+      ],
+      "columns": {
+        "Caster Level": "+12",
+        "Magic Talents": "12"
+      },
+      "choices": []
+    },
+    {
+      "level": 18,
+      "bab": "+13/+8/+3",
+      "fortSave": "+11",
+      "refSave": "+11",
+      "willSave": "+11",
+      "special": [
+        "Combat feat"
+      ],
+      "columns": {
+        "Caster Level": "+13",
+        "Magic Talents": "13"
+      },
+      "choices": []
+    },
+    {
+      "level": 19,
+      "bab": "+14/+9/+4",
+      "fortSave": "+11",
+      "refSave": "+11",
+      "willSave": "+11",
+      "special": [
+        "Elemental movement"
+      ],
+      "columns": {
+        "Caster Level": "+14",
+        "Magic Talents": "14"
+      },
+      "choices": [
+        "Elemental movement"
+      ]
+    },
+    {
+      "level": 20,
+      "bab": "+15/+10/+5",
+      "fortSave": "+12",
+      "refSave": "+12",
+      "willSave": "+12",
+      "special": [
+        "Dodge bonus +5",
+        "energy body"
+      ],
+      "columns": {
+        "Caster Level": "+15",
+        "Magic Talents": "15"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Caster Level",
+    "Magic Talents"
+  ],
+  "features": [
+    {
+      "name": "Weapon and Armor Proficiency",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "An elementalist is proficient with all martial and simple weapons and light armor."
+    },
+    {
+      "name": "Casting",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "An elementalist may combine spheres and talents to create magical effects. An elementalist is considered a Mid-Caster. (Note: All casters gain 2 bonus talents and a casting tradition the first time they gain the casting class feature.)"
+    },
+    {
+      "name": "Spell Pool",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "An elementalist gains a small reservoir of energy he can call on to create truly wondrous effects, called a spell pool. This pool contains a number of spell points equal to his class level + his casting ability modifier (minimum 1). This pool replenishes once per day after roughly 8 hours of rest."
+    },
+    {
+      "name": "Magic Talents",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "An elementalist gains 3/4ths of a magic talent per level, according to Table: The Elementalist."
+    },
+    {
+      "name": "Weave Energy",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "An elementalist gains the Destruction sphere as a bonus magic talent and uses his class level as his caster level with the Destruction sphere. This stacks normally with caster levels gained from other sources."
+    },
+    {
+      "name": "Evasion",
+      "type": "Ex",
+      "levels": [
+        2
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level an elementalist learns to avoid damage from many area-effect attacks. If an elementalist succeeds at a Reflex saving throw against an attack that normally deals half damage on a successful save, he instead takes no damage. Evasion can be used only if the elementalist is wearing light armor or no armor and carrying no more than a light load. A helpless elementalist does not gain the benefit of evasion."
+    },
+    {
+      "name": "Combat Feat",
+      "type": "",
+      "levels": [
+        2,
+        6,
+        10,
+        14,
+        18
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "An elementalist's martial focus grants him a bonus combat feat at 2nd level and every 4 levels thereafter, chosen from those for which he qualifies."
+    },
+    {
+      "name": "Favored Element",
+      "type": "Su",
+      "levels": [
+        3,
+        9,
+        15
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, the elementalist chooses one blast type group from the Destruction sphere. When creating a destructive blast from this blast type group, it deals an additional +1/2 damage per elementalist level.\n\nAt 9th and 15th level, the elementalist chooses an additional favored element, gaining the same bonus. In addition, the bonus granted by his previous favored elements increase by an additional +1/2 damage per elementalist level."
+    },
+    {
+      "name": "Dodge Bonus",
+      "type": "",
+      "levels": [
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 4th level, an elementalist gains a +1 dodge bonus to his AC. This increases by one for every 4 levels thereafter, to a maximum of +5 at 20th level."
+    },
+    {
+      "name": "Elemental Defense",
+      "type": "Su",
+      "levels": [
+        5,
+        11,
+        17
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 5th level, an elementalist gains resistance 5 to acid, cold, fire, and electricity. At 11th level, this resistance increases to 10. At 17th level, this resistance increases to 15."
+    },
+    {
+      "name": "Elemental Movement",
+      "type": "",
+      "levels": [
+        7,
+        13,
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 7th level, the elementalist gains one of the following: a 30 feet swim speed, a 20 feet fly speed with maneuverability (average), a 15 feet burrow speed, or a +20 feet bonus to his base speed. At 13th and 19th levels, the elementalist gains an additional elemental movement and all elemental movements possessed increase by 10 feet."
+    },
+    {
+      "name": "Improved Evasion",
+      "type": "Ex",
+      "levels": [
+        11
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 11th level, an elementalist's evasion ability improves. He still takes no damage on a successful Reflex saving throw against attacks, but henceforth he takes only half damage on a failed save. A helpless elementalist does not gain the benefit of improved evasion."
+    },
+    {
+      "name": "Energy Body",
+      "type": "",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level, the elementalist's body has become one with the energy he weaves. His elemental defense increases to resistance 20, and he gains immunity to sneak attacks and critical hits, and gains DR 10/magic."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 1,
+      "choices": [
+        "weave energy"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 7,
+      "choices": [
+        "Elemental movement"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "choices": [
+        "Elemental movement"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 19,
+      "choices": [
+        "Elemental movement"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

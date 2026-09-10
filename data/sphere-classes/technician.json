@@ -1,0 +1,610 @@
+{
+  "slug": "technician",
+  "name": "Technician",
+  "group": "practitioner",
+  "url": "http://spheresofpower.wikidot.com/technician",
+  "source": "Spheres of Power wiki",
+  "hitDie": 8,
+  "alignment": "Any",
+  "role": "The technician is a support class that aids his allies through tricks, traps, and machines",
+  "classSkills": [
+    "Appraise",
+    "Bluff",
+    "Climb",
+    "Craft",
+    "Diplomacy",
+    "Disable Device",
+    "Knowledge (dungeoneering)",
+    "Knowledge (engineering)",
+    "Knowledge (geography)",
+    "Knowledge (local)",
+    "Linguistics",
+    "Perception",
+    "Profession",
+    "Sense Motive",
+    "Sleight of Hand",
+    "Stealth",
+    "Swim",
+    "Use Magic Device"
+  ],
+  "skillRanksPerLevel": 6,
+  "babProgression": "THREE_QUARTER",
+  "saveProgressions": {
+    "fort": "POOR",
+    "ref": "GOOD",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+0",
+      "fortSave": "0",
+      "refSave": "+2",
+      "willSave": "+2",
+      "special": [
+        "Gadgets",
+        "invention (1)",
+        "trap specialist",
+        "trapfinding"
+      ],
+      "columns": {
+        "Combat Talents": "0"
+      },
+      "choices": []
+    },
+    {
+      "level": 2,
+      "bab": "+1",
+      "fortSave": "0",
+      "refSave": "+3",
+      "willSave": "+3",
+      "special": [
+        "Technical insight",
+        "technically minded"
+      ],
+      "columns": {
+        "Combat Talents": "1"
+      },
+      "choices": [
+        "Technical insight"
+      ]
+    },
+    {
+      "level": 3,
+      "bab": "+2",
+      "fortSave": "+1",
+      "refSave": "+3",
+      "willSave": "+3",
+      "special": [
+        "Danger sense +1",
+        "invention (2)",
+        "trap insight"
+      ],
+      "columns": {
+        "Combat Talents": "2"
+      },
+      "choices": [
+        "trap insight"
+      ]
+    },
+    {
+      "level": 4,
+      "bab": "+3",
+      "fortSave": "+1",
+      "refSave": "+4",
+      "willSave": "+4",
+      "special": [
+        "Technical insight"
+      ],
+      "columns": {
+        "Combat Talents": "3"
+      },
+      "choices": [
+        "Technical insight",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+3",
+      "fortSave": "+1",
+      "refSave": "+4",
+      "willSave": "+4",
+      "special": [
+        "Improvements (2)"
+      ],
+      "columns": {
+        "Combat Talents": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 6,
+      "bab": "+4",
+      "fortSave": "+2",
+      "refSave": "+5",
+      "willSave": "+5",
+      "special": [
+        "Danger sense +2",
+        "technical insight"
+      ],
+      "columns": {
+        "Combat Talents": "4"
+      },
+      "choices": [
+        "technical insight"
+      ]
+    },
+    {
+      "level": 7,
+      "bab": "+5",
+      "fortSave": "+2",
+      "refSave": "+5",
+      "willSave": "+5",
+      "special": [
+        "Invention (3)",
+        "trapmaster"
+      ],
+      "columns": {
+        "Combat Talents": "5"
+      },
+      "choices": [
+        "trapmaster"
+      ]
+    },
+    {
+      "level": 8,
+      "bab": "+6/+1",
+      "fortSave": "+2",
+      "refSave": "+6",
+      "willSave": "+6",
+      "special": [
+        "Technical insight"
+      ],
+      "columns": {
+        "Combat Talents": "6"
+      },
+      "choices": [
+        "Technical insight",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+6/+1",
+      "fortSave": "+3",
+      "refSave": "+6",
+      "willSave": "+6",
+      "special": [
+        "Danger sense +3",
+        "improvements (3)"
+      ],
+      "columns": {
+        "Combat Talents": "6"
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+7/+2",
+      "fortSave": "+3",
+      "refSave": "+7",
+      "willSave": "+7",
+      "special": [
+        "Technical insight"
+      ],
+      "columns": {
+        "Combat Talents": "7"
+      },
+      "choices": [
+        "Technical insight"
+      ]
+    },
+    {
+      "level": 11,
+      "bab": "+8/+3",
+      "fortSave": "+3",
+      "refSave": "+7",
+      "willSave": "+7",
+      "special": [
+        "Greater Trapmaster",
+        "invention (4)"
+      ],
+      "columns": {
+        "Combat Talents": "8"
+      },
+      "choices": []
+    },
+    {
+      "level": 12,
+      "bab": "+9/+4",
+      "fortSave": "+4",
+      "refSave": "+8",
+      "willSave": "+8",
+      "special": [
+        "Danger sense +4",
+        "technical insight"
+      ],
+      "columns": {
+        "Combat Talents": "9"
+      },
+      "choices": [
+        "technical insight",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+9/+4",
+      "fortSave": "+4",
+      "refSave": "+8",
+      "willSave": "+8",
+      "special": [
+        "Improvements (4)"
+      ],
+      "columns": {
+        "Combat Talents": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+10/+5",
+      "fortSave": "+4",
+      "refSave": "+9",
+      "willSave": "+9",
+      "special": [
+        "Technical insight"
+      ],
+      "columns": {
+        "Combat Talents": "10"
+      },
+      "choices": [
+        "Technical insight"
+      ]
+    },
+    {
+      "level": 15,
+      "bab": "+11/+6/+1",
+      "fortSave": "+5",
+      "refSave": "+9",
+      "willSave": "+9",
+      "special": [
+        "Danger sense +5",
+        "invention (5)",
+        "supreme trapmaster"
+      ],
+      "columns": {
+        "Combat Talents": "11"
+      },
+      "choices": []
+    },
+    {
+      "level": 16,
+      "bab": "+12/+7/+2",
+      "fortSave": "+5",
+      "refSave": "+10",
+      "willSave": "+10",
+      "special": [
+        "Technical insight"
+      ],
+      "columns": {
+        "Combat Talents": "12"
+      },
+      "choices": [
+        "Technical insight",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+12/+7/+2",
+      "fortSave": "+5",
+      "refSave": "+10",
+      "willSave": "+10",
+      "special": [
+        "Improvements (5)"
+      ],
+      "columns": {
+        "Combat Talents": "12"
+      },
+      "choices": []
+    },
+    {
+      "level": 18,
+      "bab": "+13/+8/+3",
+      "fortSave": "+6",
+      "refSave": "+11",
+      "willSave": "+11",
+      "special": [
+        "Danger sense +6",
+        "technical insight"
+      ],
+      "columns": {
+        "Combat Talents": "13"
+      },
+      "choices": [
+        "technical insight"
+      ]
+    },
+    {
+      "level": 19,
+      "bab": "+14/+9/+4",
+      "fortSave": "+6",
+      "refSave": "+11",
+      "willSave": "+11",
+      "special": [
+        "Invention (6)",
+        "perfect trapmaster"
+      ],
+      "columns": {
+        "Combat Talents": "14"
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+15/+10/+5",
+      "fortSave": "+6",
+      "refSave": "+12",
+      "willSave": "+12",
+      "special": [
+        "Technical insight",
+        "true genius"
+      ],
+      "columns": {
+        "Combat Talents": "15"
+      },
+      "choices": [
+        "Technical insight",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Combat Talents"
+  ],
+  "features": [
+    {
+      "name": "Combat Training",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "A technician may combine combat spheres and talents to create powerful martial techniques. Technicians are considered Adept combatants and use Intelligence as their practitioner modifier."
+    },
+    {
+      "name": "Gadgets",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Technicians are experts at building things, be they improvised tools or unique mechanical marvels. These items, called gadgets, are built out of components the technician has prepared in his spare time out of commonly-found items; so long as the technician has access to a trap bag, he is assumed to have access to all the parts he needs to build his gadgets, and to have already prepared components beforehand to quickly create whatever gadget he needs.\n\nCreating and activating a gadget is a standard action, but may be reduced to a move action by expending martial focus.\n\nA technician can create a total number of gadgets in a day equal to 1/2 his technician level + his Intelligence modifier (minimum: 1). If a gadget calls for a saving throw, that saving throw's DC is equal to 10 + 1/2 his technician level + his Intelligence modifier. A gadget must be used the round it is created, or fall apart back into its component parts, which does not expend the gadget.\n\n• Improvised Tools\n\nBy expending one use of his gadgets, the technician can make any skill check that requires having tools and requires less than 1 hour to make as if he possessed the necessary tools. The technician does not suffer the usual penalties for using improvised tools. If the technician already possesses the necessary tools, the technician can expend a gadget to treat those tools as masterwork for one skill check. The technician can create improvised tools that function as masterwork tools for one skill check, but doing so expends 2 gadgets.\n\n• Constructed Weapons\n\nThe technician can expend a gadget to allow an improvised weapon to function as a simple melee weapon of his choice for 1 minute.\n\n• Detonator\n\nThe technician may create a gadget that explodes in 1 round, at the end of his turn. As part of the standard action used to create this detonator, he may throw the detonator (with a range increment of 10 ft.), place it, or hide it in a space within his natural reach. After one round (at the end of his turn), the detonator explodes, dealing 1d6 damage per technician level to everything within 5 ft. of the square in which the detonator sits, half fire damage and half bludgeoning/piercing/slashing dam"
+    },
+    {
+      "name": "Trap Specialist",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 1st level, the technician gains the Trap sphere as a bonus sphere. If he already possesses this sphere, he instead gains one talent from that sphere."
+    },
+    {
+      "name": "Trapfinding",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A technician adds 1/2 his level on Perception checks to locate traps and on all Disable Device checks (minimum +1). A technician can use Disable Device to disarm magic traps."
+    },
+    {
+      "name": "Inventions",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "Every technician knows how to create custom items, called inventions. Inventions could be anything from a simple improved crossbow, to a powerful and complex machine that to the uneducated appears to be magic. Inventions are finicky, improvised things that require constant tinkering and fixing, and there is a limit to how many a technician can maintain at any one time. A technician can have and maintain a maximum of 1 invention at 1st level, plus an additional invention at 3rd level and every 4 levels thereafter. If the technician has already reached this limit and wishes to create a new invention, he must select one of his existing inventions to dismantle. Whenever an invention includes an ability that calls for a saving throw, the DC equals 10 + 1/2 the technician's class level + the technician's Intelligence modifier.\n\nSome inventions have prerequisites, which must be met before the invention can be created. These prerequisites might be items, a cost in gp for specialty parts, or feats and skill ranks the technician must possess. A technician may create any invention which he meets the necessary prerequisites to create.\n\nCreating an invention takes 8 hours of work. The work need not be consecutive, and the technician can do this work while out adventuring, but in that situation he can only devote 4 hours each day to item creation, and only nets 2 hours' worth of work due to being in a distracting environment. Once the invention has been created, altering its improvements requires only 1 hour of work.\n\nSee 'inventions' at the bottom of this page for more information on creating inventions."
+    },
+    {
+      "name": "Technical Insight",
+      "type": "",
+      "levels": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 2nd level and every 2 levels thereafter, the technician gains additional insights that expand his knowledge and capacity. He may choose one of the technical insights below. Unless otherwise noted, a technical insight may only be selected once.\n\nSee below for more information on creating inventions."
+    },
+    {
+      "name": "Technically Minded",
+      "type": "",
+      "levels": [
+        2
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level, a technician gains a bonus to all Knowledge (engineering) checks equal to 1/2 his technician level, and takes half the usual time when using the Craft skill to repair an object.\n\nWhenever the technician uses the Disable Device skill, he reduces the required time by 1 step (2d4 rounds, 1d4 rounds, 1 round, a standard action, a move action, a swift action)."
+    },
+    {
+      "name": "Danger Sense",
+      "type": "Ex",
+      "levels": [
+        3,
+        6,
+        9,
+        12,
+        15,
+        18
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, a technician gains a +1 bonus on Reflex saves to avoid traps and a +1 dodge bonus to AC against attacks made by traps. In addition, he gains a +1 bonus on Perception checks to avoid being surprised by a foe. These bonuses increase by 1 every 3 technician levels thereafter (to a maximum of +6 at 18th level). This ability counts as trap sense for the purpose of any feat or class prerequisite. The bonuses gained from this ability stack with those gained from trap sense (from another class)."
+    },
+    {
+      "name": "Trap Insight",
+      "type": "Ex",
+      "levels": [
+        3
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 3rd level the technician gains Heightened Awareness from the Scout sphere, whether or not he possesses that sphere. If he already possesses that talent, he may instead gain any one martial talent for which he qualifies."
+    },
+    {
+      "name": "Trapmaster",
+      "type": "Ex",
+      "levels": [
+        7
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 7th level, all uses of the Disable Device skill have their required time decreased by 2 steps instead of 1.\n\nWhen a technician disarms a trap through the Disable Device skill and beats the trap's DC by 10 or more, in addition to being able to pass by the trap without activating it, he gains one of the following benefits as well:\n\nTrap Sphere: If the technician beats the DC by 10 of a trap from the Trap sphere, he may take control of that trap. The trap's previous owner is no longer able to pass through the trap's space unharmed, although any creatures who knew where the trap was placed still gain the usual bonuses against activating the trap. Additionally, the technician may upgrade the trap if it is inferior to his own and it is a trap he is able to create, changing its variables such as damage, and saving throws, to become as if he had been the one to place the trap.\n\nMagical Trap: When disarming a magic trap that allows specific creatures to pass without danger and beating the trap's DC by 10 or more, the technician can modify which creatures are allowed to pass, such as adding his allies or restricting his enemies if he desires."
+    },
+    {
+      "name": "Greater Trapmaster",
+      "type": "Ex",
+      "levels": [
+        11
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 11th level, all uses of the Disable Device skill have their required time decreased by 3 steps instead of 2, to a minimum of a swift action.\n\nIn addition to using Disable Device to sabotage mechanical gadgets, the technician can also use the Disable Device skill to tamper with magical effects as well. With 2d4 rounds of work (reduced to 1 round with the benefits of trapmaster and greater trapmaster), the technician may make a Disable Device check (DC 11 + the effect's caster level) that dispels magical effects on a creature or area.\n\nInstantaneous effects cannot be disabled in this fashion. The technician may target a specific effect if he has identified it, otherwise the effect with the highest caster level is affected first. He may also target a magical item, in which case the magic is not dispelled, but is instead suppressed for 1d4 rounds. The technician must be touching the target to affect it in this way; he may use this power on an unwilling target, but must succeed at a melee touch attack, and must remain in contact with the target for the entire process (if this process requires 1 round or longer, often the target must be grappled, helpless, unaware of the technician, or in some other way unable to get away from the technician for the duration)."
+    },
+    {
+      "name": "Supreme Trapmaster",
+      "type": "Ex",
+      "levels": [
+        15
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 15th level, all uses of the Disable Device skill have their required time decreased by 4 steps instead of 3, to a minimum of a swift action. In addition, the technician may use his Disable Device skill to dispel all non-item magical effects on a target, rather than just one. When making the Disable Device check, compare it to each effect individually; if the check exceeds a DC of 11 + that effect's caster level, the effect ends."
+    },
+    {
+      "name": "Perfect Trapmaster",
+      "type": "Ex",
+      "levels": [
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 19th level, all uses of the Disable Device skill have their required time decreased by 5 steps instead of 4, to a minimum of a swift action. In addition, when the technician is the direct target of an unwanted magical effect, as an immediate action he may attempt a Disable Device check to negate the incoming effect before it can affect him, as detailed under greater trapmaster."
+    },
+    {
+      "name": "True Genius",
+      "type": "",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level, the technician gains a permanent +2 bonus to all mental ability scores."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 2,
+      "choices": [
+        "Technical insight"
+      ]
+    },
+    {
+      "level": 3,
+      "choices": [
+        "trap insight"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "Technical insight",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 6,
+      "choices": [
+        "technical insight"
+      ]
+    },
+    {
+      "level": 7,
+      "choices": [
+        "trapmaster"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "Technical insight",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 10,
+      "choices": [
+        "Technical insight"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "technical insight",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 14,
+      "choices": [
+        "Technical insight"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "Technical insight",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 18,
+      "choices": [
+        "technical insight"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "Technical insight",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

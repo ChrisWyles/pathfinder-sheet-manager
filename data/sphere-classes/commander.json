@@ -1,0 +1,558 @@
+{
+  "slug": "commander",
+  "name": "Commander",
+  "group": "practitioner",
+  "url": "http://spheresofpower.wikidot.com/commander",
+  "source": "Spheres of Power wiki",
+  "hitDie": 8,
+  "alignment": "Commanders can be of any",
+  "role": "Commanders are leaders who inspire and coordinate their allies, exhorting them to greater achievements",
+  "classSkills": [
+    "Appraise",
+    "Bluff",
+    "Climb",
+    "Craft",
+    "Diplomacy",
+    "Handle Animal",
+    "Intimidate",
+    "Knowledge (engineering)",
+    "Knowledge (geography)",
+    "Knowledge (history)",
+    "Knowledge (local)",
+    "Knowledge (nobility)",
+    "Linguistics",
+    "Perception",
+    "Profession",
+    "Ride",
+    "Sense Motive",
+    "Survival",
+    "Swim"
+  ],
+  "skillRanksPerLevel": 6,
+  "babProgression": "THREE_QUARTER",
+  "saveProgressions": {
+    "fort": "GOOD",
+    "ref": "POOR",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+0",
+      "fortSave": "+2",
+      "refSave": "+0",
+      "willSave": "+2",
+      "special": [
+        "Combat training",
+        "commander",
+        "lingering commands"
+      ],
+      "columns": {
+        "Combat Talents": "0"
+      },
+      "choices": []
+    },
+    {
+      "level": 2,
+      "bab": "+1",
+      "fortSave": "+3",
+      "refSave": "+0",
+      "willSave": "+3",
+      "special": [
+        "Enhanced tactics"
+      ],
+      "columns": {
+        "Combat Talents": "1"
+      },
+      "choices": [
+        "Enhanced tactics"
+      ]
+    },
+    {
+      "level": 3,
+      "bab": "+2",
+      "fortSave": "+3",
+      "refSave": "+1",
+      "willSave": "+3",
+      "special": [
+        "Battlefield specialist"
+      ],
+      "columns": {
+        "Combat Talents": "2"
+      },
+      "choices": [
+        "Battlefield specialist"
+      ]
+    },
+    {
+      "level": 4,
+      "bab": "+3",
+      "fortSave": "+4",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Enhanced tactics"
+      ],
+      "columns": {
+        "Combat Talents": "3"
+      },
+      "choices": [
+        "Enhanced tactics",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+3",
+      "fortSave": "+4",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Group focus 1/day"
+      ],
+      "columns": {
+        "Combat Talents": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 6,
+      "bab": "+4",
+      "fortSave": "+5",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Enhanced tactics"
+      ],
+      "columns": {
+        "Combat Talents": "4"
+      },
+      "choices": [
+        "Enhanced tactics"
+      ]
+    },
+    {
+      "level": 7,
+      "bab": "+5",
+      "fortSave": "+5",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Logistic specialty"
+      ],
+      "columns": {
+        "Combat Talents": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+6/+1",
+      "fortSave": "+6",
+      "refSave": "+2",
+      "willSave": "+6",
+      "special": [
+        "Enhanced tactics"
+      ],
+      "columns": {
+        "Combat Talents": "6"
+      },
+      "choices": [
+        "Enhanced tactics",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+6/+1",
+      "fortSave": "+6",
+      "refSave": "+3",
+      "willSave": "+6",
+      "special": [
+        "Battlefield specialist"
+      ],
+      "columns": {
+        "Combat Talents": "6"
+      },
+      "choices": [
+        "Battlefield specialist"
+      ]
+    },
+    {
+      "level": 10,
+      "bab": "+7/+2",
+      "fortSave": "+7",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Advanced tactician",
+        "enhanced tactics"
+      ],
+      "columns": {
+        "Combat Talents": "7"
+      },
+      "choices": [
+        "enhanced tactics"
+      ]
+    },
+    {
+      "level": 11,
+      "bab": "+8/+3",
+      "fortSave": "+7",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Group focus 2/day"
+      ],
+      "columns": {
+        "Combat Talents": "8"
+      },
+      "choices": []
+    },
+    {
+      "level": 12,
+      "bab": "+9/+4",
+      "fortSave": "+8",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Enhanced tactics"
+      ],
+      "columns": {
+        "Combat Talents": "9"
+      },
+      "choices": [
+        "Enhanced tactics",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+9/+4",
+      "fortSave": "+8",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Logistic specialty"
+      ],
+      "columns": {
+        "Combat Talents": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+10/+5",
+      "fortSave": "+9",
+      "refSave": "+4",
+      "willSave": "+9",
+      "special": [
+        "Enhanced tactics"
+      ],
+      "columns": {
+        "Combat Talents": "10"
+      },
+      "choices": [
+        "Enhanced tactics"
+      ]
+    },
+    {
+      "level": 15,
+      "bab": "+11/+6/+1",
+      "fortSave": "+9",
+      "refSave": "+5",
+      "willSave": "+9",
+      "special": [
+        "Battlefield specialist"
+      ],
+      "columns": {
+        "Combat Talents": "11"
+      },
+      "choices": [
+        "Battlefield specialist"
+      ]
+    },
+    {
+      "level": 16,
+      "bab": "+12/+7/+2",
+      "fortSave": "+10",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Enhanced tactics"
+      ],
+      "columns": {
+        "Combat Talents": "12"
+      },
+      "choices": [
+        "Enhanced tactics",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+12/+7/+2",
+      "fortSave": "+10",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Group focus 3/day"
+      ],
+      "columns": {
+        "Combat Talents": "12"
+      },
+      "choices": []
+    },
+    {
+      "level": 18,
+      "bab": "+13/+8/+3",
+      "fortSave": "+11",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Enhanced tactics"
+      ],
+      "columns": {
+        "Combat Talents": "13"
+      },
+      "choices": [
+        "Enhanced tactics"
+      ]
+    },
+    {
+      "level": 19,
+      "bab": "+14/+9/+4",
+      "fortSave": "+11",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Logistic specialty"
+      ],
+      "columns": {
+        "Combat Talents": "14"
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+15/+10/+5",
+      "fortSave": "+12",
+      "refSave": "+6",
+      "willSave": "+12",
+      "special": [
+        "Enhanced tactics",
+        "expert tactician"
+      ],
+      "columns": {
+        "Combat Talents": "15"
+      },
+      "choices": [
+        "Enhanced tactics",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Combat Talents"
+  ],
+  "features": [
+    {
+      "name": "Combat Training",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A commander may combine combat spheres and talents to create powerful martial techniques. Commanders are considered Adept combatants and use the higher of their Charisma or Intelligence as their practitioner modifier."
+    },
+    {
+      "name": "Commander",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A commander gains the Warleader sphere as a bonus sphere at 1st level."
+    },
+    {
+      "name": "Lingering Commands",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "The commander is an expert at commanding troops, even under the most difficult of conditions. Whenever the benefits of a shout or tactic the commander initiated would end, their benefits persist for a number of rounds equal to the higher of his Intelligence or Charisma modifiers. Instantaneous effects are not affected by this ability, nor are tactics that end because the commander used a swift action to activate a different tactic."
+    },
+    {
+      "name": "Enhanced Tactics",
+      "type": "Ex",
+      "levels": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "Starting at 2nd level and every two levels thereafter, the commander may select an enhanced tactic. Enhanced tactics are special bonuses and abilities that can affect any ally currently benefiting from one of the commander's tactics or shouts granted by the Warleader sphere. The commander may start an enhanced tactic as part of the same action used to begin a tactic or initiate a shout, and the commander may switch to any enhanced tactic he knows as a free action once per round. The commander may only have one enhanced tactic active at a time.\n\nSome enhanced tactics allow an ally to make a free action even when it isn't their turn. A single creature cannot make more than one such free action in a round, no matter how many enhanced tactics it might be benefiting from, even from multiple commanders.\n\n• Command Attack\n\nThe commander may use a standard action to allow any one creature currently benefiting from one of his shouts or tactics to immediately use an attack action as a free action that can be taken even if it's not their turn. If the granted action is not taken immediately following the commander's use of this ability, this effect is wasted (the benefiting target cannot “store” the action for use at a later time).\n\n• Command Movement\n\nThe commander may use a move action to allow any one creature currently benefiting from one of his shouts or tactics to immediately use a move action as a free action that can be taken even if it's not their turn. If the granted action is not taken immediately following the commander's use of this ability, this effect is wasted (the benefiting target cannot “store” the action for use at a later time).\n\n• Coordinated Assault\n\nWhenever the commander uses an attack action to make a melee attack, he may immediately spend a move action to allow each ally threatening the target and currently benefiting from one of his shouts or tactics to make a single melee attack against the target as an immediate action.\n\n• Defensive Rally\n\nAs long as this enhanced tactic is active, the commander may use a move action to allow all allies currently benefiting from one of his shouts or tactics to move up to 15 ft. directly towards him. This moveme"
+    },
+    {
+      "name": "Battlefield Specialist",
+      "type": "Ex",
+      "levels": [
+        3,
+        9,
+        15
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 3rd level and every 6 levels thereafter, the commander may select a specific terrain he excels at coordinating battles in. The commander chooses one terrain and its associated benefits each time he gains this ability.\n\n• Cold\n\nThe commander is an expert at fighting and leading warriors on icy glaciers and across snowy tundras. When fighting or traveling in such terrain, the commander and any ally affected by one of his tactics or shouts are not impeded by ice effects (Pathfinder Core Rulebook, Cold Dangers), are immune to nonlethal damage caused by cold exposure, do not take a penalty to ranged attacks or Perception checks when fighting in snow, and take only the standard penalties for snow when fighting in heavy snow.\n\n• Desert\n\nWhether over sandy dunes or through blasted wastelands, the commander learns to excel and lead his allies to thrive where others wither. When fighting or traveling in desert terrain, the commander and any ally affected by one of his tactics or shouts can ignore the effects of non-magical difficult terrain, double the distance at which they can make Perception checks to detect the presence of other creatures, gain a bonus on Perception checks to notice natural hazards equal to the higher of the commander's Charisma or Intelligence modifiers (minimum 1), and are immune to nonlethal damage caused by exposure to heat or sandstorms.\n\n• Forest (coniferous and deciduous)\n\nThe commander has become an expert at fighting in forested terrain, learning to leverage the forest's cover and bounty to his advantage. When fighting or traveling in forested terrain, the commander and any ally affected by one of his tactics or shouts are treated as having the evasion ability while standing in the same square as a tree, do not have the DC of Acrobatics checks increased due to undergrowth or heavy undergrowth, and need only spend two squares of movement to move into heavy undergrowth.\n\n• Jungle\n\nThe commander has learned to take the natural hazards of jungle fighting and turn them into tactical advantages. When fighting or traveling in jungle terrain, the commander and any ally affected by one of his tactics or shouts gain a bonus to saving throws against "
+    },
+    {
+      "name": "Group Focus",
+      "type": "Ex",
+      "levels": [
+        5,
+        11,
+        17
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Starting at 5th level, the commander may fly into a strenuous and exhausting flurry as a standard action, shouting out commands, redirecting attention, calling out threats, and generally imposing his will and order upon the battlefield, restoring the martial focus of all allies who can see and hear him. If an affected ally would not benefit from regaining martial focus, they instead gain a morale bonus to their attack rolls, damage rolls, saving throws, AC, and CMD equal to the higher of the commander's Charisma or Intelligence bonus for 1 round. The commander may use this ability 1/day at 5th level, and gains an additional use every 6 levels thereafter."
+    },
+    {
+      "name": "Logistic Specialty",
+      "type": "Ex",
+      "levels": [
+        7,
+        13,
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 7th level and every 6 levels thereafter, the commander learns a logistic specialty from the following list:\n\n• Call In A Specialist\n\nThe commander makes many contacts over the course of his career, including individuals with unique skill sets capable of turning the tide of a critical battle or provide crucial information. Once per week, the commander may spread the word in any small town or larger settlement that he is looking for such a specialist to aid in a particular task.\n\nThe specialist appears within 24 hours, minus 1 hour for each level the commander possesses (minimum time until appearance of 1 hour). The specialist stays until their task (as described in their entry) is completed, or for a number of days equal to 1/2 the commander's class level, whichever comes first.\n\nSpecialists whose services are acquired in this way generally will not become directly involved in combat; if forced into a situation where combat is inevitable, they will fight to protect themselves but will otherwise avoid conflict. If a specialist is killed in the course of performing their services as defined in this ability, the commander must wait 1 month before another specialist will work with him again. Each time the commander uses this ability, he chooses a particular type of specialist from the following list:\n\nThe commander gains the services of a blacksmith whose class level is equal to the commander's class level -3. This equipment specialist will use his maintenance class feature for the commander and up to 5 other individuals in preparation for the following day. In addition, the blacksmith can use his reforge ability to repair or reforge one magic weapon in the commander's possession.\n\nThe commander gains the services of a bard or rogue whose class level is equal to the commander's class level -3. This information specialist can perform one of two services; first, they can provide the commander with a detailed map of the local town or city, including hidden passages, sewer passageways (if any), guild hall locations (both legitimate businesses and illicit organizations such as thieves guilds), and other relevant points of interest. Secondly, they can spend 5 days study"
+    },
+    {
+      "name": "Advanced Tactician",
+      "type": "",
+      "levels": [
+        10
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Commanders of at least 10th level may have two enhanced tactics active at a time, and may activate or switch both enhanced tactics using the largest same action, as long as it is the largest activation action from among the two (for example, the commander could activate two enhanced tactics that both require a move action as a move action, but an enhanced tactic that requires a standard action and an enhanced tactic that requires a move action would require a standard action to activate together)."
+    },
+    {
+      "name": "Expert Tactician",
+      "type": "",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level, the commander may have up to three enhanced tactics active at a time, and may activate or switch all three enhanced tactics using the same action as long as he uses the largest activation action."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 2,
+      "choices": [
+        "Enhanced tactics"
+      ]
+    },
+    {
+      "level": 3,
+      "choices": [
+        "Battlefield specialist"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "Enhanced tactics",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 6,
+      "choices": [
+        "Enhanced tactics"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "Enhanced tactics",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "choices": [
+        "Battlefield specialist"
+      ]
+    },
+    {
+      "level": 10,
+      "choices": [
+        "enhanced tactics"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "Enhanced tactics",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 14,
+      "choices": [
+        "Enhanced tactics"
+      ]
+    },
+    {
+      "level": 15,
+      "choices": [
+        "Battlefield specialist"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "Enhanced tactics",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 18,
+      "choices": [
+        "Enhanced tactics"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "Enhanced tactics",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

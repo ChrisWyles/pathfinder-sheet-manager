@@ -1,0 +1,507 @@
+{
+  "slug": "thaumaturge",
+  "name": "Thaumaturge",
+  "group": "spherecaster",
+  "url": "http://spheresofpower.wikidot.com/thaumaturge",
+  "source": "Spheres of Power wiki",
+  "hitDie": 8,
+  "alignment": "Any",
+  "role": "A thaumaturge is a focused caster, often choosing at most one or two specialty spheres and using those specialties in ways no other caster could",
+  "classSkills": [
+    "Craft",
+    "Diplomacy",
+    "Disguise",
+    "Fly",
+    "Heal",
+    "Intimidate",
+    "Knowledge (all)",
+    "Linguistics",
+    "Perform",
+    "Profession",
+    "Sense Motive",
+    "Spellcraft",
+    "Use Magic Device"
+  ],
+  "skillRanksPerLevel": 4,
+  "babProgression": "THREE_QUARTER",
+  "saveProgressions": {
+    "fort": "POOR",
+    "ref": "POOR",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+0",
+      "fortSave": "+0",
+      "refSave": "+0",
+      "willSave": "+2",
+      "special": [
+        "Casting",
+        "forbidden lore (+2)",
+        "invocations",
+        "spell pool"
+      ],
+      "columns": {
+        "Caster Level": "+1",
+        "Magic Talents": "0 (+2)"
+      },
+      "choices": []
+    },
+    {
+      "level": 2,
+      "bab": "+1",
+      "fortSave": "+0",
+      "refSave": "+0",
+      "willSave": "+3",
+      "special": [
+        "Occult knowledge +1"
+      ],
+      "columns": {
+        "Caster Level": "+2",
+        "Magic Talents": "1"
+      },
+      "choices": []
+    },
+    {
+      "level": 3,
+      "bab": "+2",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+3",
+      "special": [
+        "Invocations"
+      ],
+      "columns": {
+        "Caster Level": "+3",
+        "Magic Talents": "1"
+      },
+      "choices": []
+    },
+    {
+      "level": 4,
+      "bab": "+3",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Caster Level": "+4",
+        "Magic Talents": "2"
+      },
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+3",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Forbidden lore (+3)"
+      ],
+      "columns": {
+        "Caster Level": "+5",
+        "Magic Talents": "2"
+      },
+      "choices": []
+    },
+    {
+      "level": 6,
+      "bab": "+4",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Occult knowledge +2"
+      ],
+      "columns": {
+        "Caster Level": "+6",
+        "Magic Talents": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 7,
+      "bab": "+5",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Invocations"
+      ],
+      "columns": {
+        "Caster Level": "+7",
+        "Magic Talents": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+6/+1",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+6",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Caster Level": "+8",
+        "Magic Talents": "4"
+      },
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+6/+1",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+6",
+      "special": [
+        "Forbidden lore (+4)"
+      ],
+      "columns": {
+        "Caster Level": "+9",
+        "Magic Talents": "4"
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+7/+2",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Occult knowledge +3"
+      ],
+      "columns": {
+        "Caster Level": "+10",
+        "Magic Talents": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 11,
+      "bab": "+8/+3",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Invocations"
+      ],
+      "columns": {
+        "Caster Level": "+11",
+        "Magic Talents": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 12,
+      "bab": "+9/+4",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Caster Level": "+12",
+        "Magic Talents": "6"
+      },
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+9/+4",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Forbidden lore (+5)"
+      ],
+      "columns": {
+        "Caster Level": "+13",
+        "Magic Talents": "6"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+10/+5",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+9",
+      "special": [
+        "Occult knowledge +4"
+      ],
+      "columns": {
+        "Caster Level": "+14",
+        "Magic Talents": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 15,
+      "bab": "+11/+6/+1",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+9",
+      "special": [
+        "Invocations"
+      ],
+      "columns": {
+        "Caster Level": "+15",
+        "Magic Talents": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 16,
+      "bab": "+12/+7/+2",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Caster Level": "+16",
+        "Magic Talents": "8"
+      },
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+12/+7/+2",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Forbidden lore (+6)"
+      ],
+      "columns": {
+        "Caster Level": "+17",
+        "Magic Talents": "8"
+      },
+      "choices": []
+    },
+    {
+      "level": 18,
+      "bab": "+13/+8/+3",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Occult knowledge +5"
+      ],
+      "columns": {
+        "Caster Level": "+18",
+        "Magic Talents": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 19,
+      "bab": "+14/+9/+4",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Invocations"
+      ],
+      "columns": {
+        "Caster Level": "+19",
+        "Magic Talents": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+15/+10/+5",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+12",
+      "special": [
+        "Bonus feat",
+        "master invoker"
+      ],
+      "columns": {
+        "Caster Level": "+20",
+        "Magic Talents": "10"
+      },
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Caster Level",
+    "Magic Talents"
+  ],
+  "features": [
+    {
+      "name": "Weapon and Armor Training",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "A thaumaturge is proficient with all simple weapons and light armor."
+    },
+    {
+      "name": "Casting",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A thaumaturge may combine spheres and talents to create magical effects. A thaumaturge is considered a High-Caster. (Note: All casters gain 2 bonus talents and a casting tradition the first time they gain the casting class feature.)"
+    },
+    {
+      "name": "Spell Pool",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A thaumaturge gains a small reservoir of energy he can call on to create truly wondrous effects, called a spell pool. This pool contains a number of spell points equal to his class level + his casting ability modifier (minimum 1). This pool replenishes once per day after roughly 8 hours of rest."
+    },
+    {
+      "name": "Magic Talents",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "A thaumaturge gains a magic talent at 2nd level and every 2 levels thereafter, according to Table: The Thaumaturge."
+    },
+    {
+      "name": "Forbidden Lore",
+      "type": "",
+      "levels": [
+        1,
+        5,
+        9,
+        13,
+        17
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Thaumaturges use bargains, secrets, and dangerous magical practices to push their casting to greater heights than their more careful contemporaries achieve. A thaumaturge may, as part of the action required to use a spell or sphere effect, increase his caster level by 2 for that effect.\n\nThis applies to variables dependent on a particular casting of an effect (damage, duration, number of targets etc.), but it does not apply to the caster's total caster level with that sphere (i.e., it does not determine the strength of a companion from the Conjuration sphere, nor to the total number of Hit Dice of reanimated creatures that may be controlled through the Death sphere). This bonus increases by +1 at 5th level, and by an additional +1 for every 4 levels thereafter to a maximum of +6 at 17th level.\n\nWhenever a thaumaturge uses forbidden lore to enhance their magic, there is a 15% chance the thaumaturge will suffer backlash; the spell or sphere effect does not manifest, and any spell slot or spell points spent are lost. In addition, the thaumaturge suffers a -1 penalty to attack rolls, saving throws, skill checks, and to their effective caster level (minimum 1), which lasts until he rests to regain spell points. This penalty is cumulative; every time the thaumaturge suffers backlash in a day, these penalties increase by 1."
+    },
+    {
+      "name": "Invocations",
+      "type": "",
+      "levels": [
+        1,
+        3,
+        7,
+        11,
+        15,
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Thaumaturges control power in its purest form; whether through bargains with outsiders, the summoning of primal spirits, or simply an untamable spark in their soul, a thaumaturge can invoke a limited amount of truly wondrous power.\n\nA thaumaturge may use invocations a number of times per day equal to his casting ability modifier + 1/2 his class level, which refreshes when he rests to regain spell points. Whenever an invocation calls for a saving throw, the DC is equal to 10 + 1/2 his thaumaturge's level + his thaumaturge's casting ability modifier. A thaumaturge may only use invocations of his level or lower. Using an invocation is a free action that may be taken even when it is not the thaumaturge's turn, but the thaumaturge cannot use multiple invocations as part of the same saving throw, check, or use of forbidden lore.\n\n• Lingering Blessing\n\nAt 1st level, when using forbidden lore to augment a spell or sphere effect, the thaumaturge may use an invocation to cause the affected targets to gain 1 temporary hit point per thaumaturge level for 1 round per thaumaturge level.\n\n• Lingering Pain\n\nAt 1st level, when using forbidden lore to augment a spell or sphere effect, the thaumaturge may use an invocation to cause the affected targets to become sickened for 1 round (Fortitude negates).\n\n• Meditation\n\nAt 1st level, the thaumaturge may reroll a failed Knowledge check. The thaumaturge may only use this ability once for any given Knowledge check.\n\n• Empowered Attack\n\nAt 3rd level, when using forbidden lore to augment a spell or sphere effect, the thaumaturge may use an invocation to grant himself a bonus to attack rolls equal to his forbidden lore bonus for a number of rounds equal to his casting ability modifier.\n\n• Empowered Defense\n\nAt 3rd level, when using forbidden lore to augment a spell or sphere effect, the thaumaturge may use an invocation to grant himself a dodge bonus to AC equal to his forbidden lore bonus for a number of rounds equal to his casting ability modifier.\n\n• Channel Punishment\n\nAt 7th level, if the thaumaturge suffers backlash when using forbidden lore, he may use an invocation to pass the penalty off to another creature within 30 feet. If tha"
+    },
+    {
+      "name": "Occult Knowledge",
+      "type": "",
+      "levels": [
+        2,
+        6,
+        10,
+        14,
+        18
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level, a thaumaturge gains a +1 bonus to all Knowledge checks, Spellcraft checks, and Use Magic Device checks. This bonus increases by 1 for every 4 additional thaumaturge levels possessed, to a maximum of +5 at 18th level."
+    },
+    {
+      "name": "Bonus Feats",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "At 4th level and every 4 levels thereafter, a thaumaturge gains a bonus feat. This may be spent to gain an extra magic talent, or any feat which has casting as a prerequisite (item creation feats, metamagic feats, Sphere Focus, Circle Casting, etc.)."
+    },
+    {
+      "name": "Master Invoker",
+      "type": "",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level, the thaumaturge selects two invocations other than rebuke death; he may use these invocations at will without using one of his invocations per day."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 4,
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

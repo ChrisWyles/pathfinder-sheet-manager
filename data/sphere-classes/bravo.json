@@ -1,0 +1,716 @@
+{
+  "slug": "bravo",
+  "name": "Bravo",
+  "group": "champion",
+  "url": "http://spheresofpower.wikidot.com/bravo",
+  "source": "Spheres of Power wiki",
+  "hitDie": 10,
+  "alignment": "Any",
+  "role": "A bravo perfectly combines skill and martial prowess, allowing them to surprise their opponents and subsequently take advantage of that surprise at a moment's notice",
+  "classSkills": [],
+  "skillRanksPerLevel": 4,
+  "babProgression": "FULL",
+  "saveProgressions": {
+    "fort": "POOR",
+    "ref": "GOOD",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+1",
+      "fortSave": "+0",
+      "refSave": "+2",
+      "willSave": "+2",
+      "special": [
+        "Blended training",
+        "confounding strike",
+        "moxie",
+        "whim"
+      ],
+      "columns": {
+        "Dodge Pool": "-",
+        "Any": "1",
+        "Utility": "0"
+      },
+      "choices": []
+    },
+    {
+      "level": 2,
+      "bab": "+2",
+      "fortSave": "+0",
+      "refSave": "+3",
+      "willSave": "+3",
+      "special": [
+        "Cunning celerity",
+        "steadfast"
+      ],
+      "columns": {
+        "Dodge Pool": "50%",
+        "Any": "2",
+        "Utility": "1"
+      },
+      "choices": [
+        "steadfast"
+      ]
+    },
+    {
+      "level": 3,
+      "bab": "+3",
+      "fortSave": "+1",
+      "refSave": "+3",
+      "willSave": "+3",
+      "special": [
+        "Careful footwork",
+        "exploit uncertainty (+1)"
+      ],
+      "columns": {
+        "Dodge Pool": "65%",
+        "Any": "3",
+        "Utility": "1"
+      },
+      "choices": [
+        "exploit uncertainty (+1)"
+      ]
+    },
+    {
+      "level": 4,
+      "bab": "+4",
+      "fortSave": "+1",
+      "refSave": "+4",
+      "willSave": "+4",
+      "special": [
+        "Spontaneous technique"
+      ],
+      "columns": {
+        "Dodge Pool": "80%",
+        "Any": "3",
+        "Utility": "2"
+      },
+      "choices": [
+        "Spontaneous technique",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+5",
+      "fortSave": "+1",
+      "refSave": "+4",
+      "willSave": "+4",
+      "special": [
+        "Mercurial celerity",
+        "whim ability"
+      ],
+      "columns": {
+        "Dodge Pool": "95%",
+        "Any": "4",
+        "Utility": "2"
+      },
+      "choices": []
+    },
+    {
+      "level": 6,
+      "bab": "+6/+1",
+      "fortSave": "+2",
+      "refSave": "+5",
+      "willSave": "+5",
+      "special": [
+        "Exploit uncertainty (+2)",
+        "uncanny dodge"
+      ],
+      "columns": {
+        "Dodge Pool": "110%",
+        "Any": "5",
+        "Utility": "3"
+      },
+      "choices": [
+        "Exploit uncertainty (+2)"
+      ]
+    },
+    {
+      "level": 7,
+      "bab": "+7/+2",
+      "fortSave": "+2",
+      "refSave": "+5",
+      "willSave": "+5",
+      "special": [
+        "Adamant astonishment",
+        "dynamic dodge"
+      ],
+      "columns": {
+        "Dodge Pool": "125%",
+        "Any": "6",
+        "Utility": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+8/+3",
+      "fortSave": "+2",
+      "refSave": "+6",
+      "willSave": "+6",
+      "special": [
+        "Spontaneous technique (2 talents)"
+      ],
+      "columns": {
+        "Dodge Pool": "140%",
+        "Any": "6",
+        "Utility": "4"
+      },
+      "choices": [
+        "Spontaneous technique (2 talents)",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+9/+4",
+      "fortSave": "+3",
+      "refSave": "+6",
+      "willSave": "+6",
+      "special": [
+        "Sudden shift"
+      ],
+      "columns": {
+        "Dodge Pool": "155%",
+        "Any": "7",
+        "Utility": "4"
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+10/+5",
+      "fortSave": "+3",
+      "refSave": "+7",
+      "willSave": "+7",
+      "special": [
+        "Exploit uncertainty (+3)",
+        "incredible stunt 1/day",
+        "whim ability"
+      ],
+      "columns": {
+        "Dodge Pool": "170%",
+        "Any": "8",
+        "Utility": "5"
+      },
+      "choices": [
+        "Exploit uncertainty (+3)"
+      ]
+    },
+    {
+      "level": 11,
+      "bab": "+11/+6/+1",
+      "fortSave": "+3",
+      "refSave": "+7",
+      "willSave": "+7",
+      "special": [
+        "Improved uncanny dodge"
+      ],
+      "columns": {
+        "Dodge Pool": "185%",
+        "Any": "9",
+        "Utility": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 12,
+      "bab": "+12/+7/+2",
+      "fortSave": "+4",
+      "refSave": "+8",
+      "willSave": "+8",
+      "special": [
+        "Incredible stunt 2/day"
+      ],
+      "columns": {
+        "Dodge Pool": "200%",
+        "Any": "9",
+        "Utility": "6"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+13/+8/+3",
+      "fortSave": "+4",
+      "refSave": "+8",
+      "willSave": "+8",
+      "special": [
+        "Capricious",
+        "quicksilver celerity"
+      ],
+      "columns": {
+        "Dodge Pool": "215%",
+        "Any": "10",
+        "Utility": "6"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+14/+9/+4",
+      "fortSave": "+4",
+      "refSave": "+9",
+      "willSave": "+9",
+      "special": [
+        "Exploit uncertainty (+4)",
+        "incredible stunt 3/day",
+        "spontaneous technique (3 talents)"
+      ],
+      "columns": {
+        "Dodge Pool": "230%",
+        "Any": "11",
+        "Utility": "7"
+      },
+      "choices": [
+        "Exploit uncertainty (+4)",
+        "spontaneous technique (3 talents)"
+      ]
+    },
+    {
+      "level": 15,
+      "bab": "+15/+10/+5",
+      "fortSave": "+5",
+      "refSave": "+9",
+      "willSave": "+9",
+      "special": [
+        "Whim ability"
+      ],
+      "columns": {
+        "Dodge Pool": "245%",
+        "Any": "12",
+        "Utility": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 16,
+      "bab": "+16/+11/+6/+1",
+      "fortSave": "+5",
+      "refSave": "+10",
+      "willSave": "+10",
+      "special": [
+        "Incredible stunt 4/day"
+      ],
+      "columns": {
+        "Dodge Pool": "260%",
+        "Any": "12",
+        "Utility": "8"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+17/+12/+7/+2",
+      "fortSave": "+5",
+      "refSave": "+10",
+      "willSave": "+10",
+      "special": [
+        "Unfettered alacrity"
+      ],
+      "columns": {
+        "Dodge Pool": "275%",
+        "Any": "13",
+        "Utility": "8"
+      },
+      "choices": []
+    },
+    {
+      "level": 18,
+      "bab": "+18/+13/+8/+3",
+      "fortSave": "+6",
+      "refSave": "+11",
+      "willSave": "+11",
+      "special": [
+        "Exploit uncertainty (+5)",
+        "incredible stunt 5/day",
+        "spontaneous technique (4 talents)"
+      ],
+      "columns": {
+        "Dodge Pool": "290%",
+        "Any": "14",
+        "Utility": "9"
+      },
+      "choices": [
+        "Exploit uncertainty (+5)",
+        "spontaneous technique (4 talents)"
+      ]
+    },
+    {
+      "level": 19,
+      "bab": "+19/+14/+9/+4",
+      "fortSave": "+6",
+      "refSave": "+11",
+      "willSave": "+11",
+      "special": [
+        "Skirt death"
+      ],
+      "columns": {
+        "Dodge Pool": "305%",
+        "Any": "15",
+        "Utility": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+20/+15/+10/+5",
+      "fortSave": "+6",
+      "refSave": "+12",
+      "willSave": "+12",
+      "special": [
+        "Incredible stunt 6/day",
+        "outwit mastery",
+        "whim ability"
+      ],
+      "columns": {
+        "Dodge Pool": "320%",
+        "Any": "15",
+        "Utility": "10"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Dodge Pool",
+    "Any",
+    "Utility"
+  ],
+  "features": [
+    {
+      "name": "Weapon and Armor Proficiencies",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "Bravos are proficient with simple weapons, light armor, and bucklers. In addition, if this is this character's first level in any class, he may select a martial tradition of his choice."
+    },
+    {
+      "name": "Blended Training",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "The bravo gains a combat or skill talent at 1st, 2nd, and 3rd level, and 3/4ths of a talent thereafter, according to Table: Bravo. In addition, they gain a utility talent at every even level. A bravo uses his operative modifier as his practitioner modifier."
+    },
+    {
+      "name": "Confounding Strike",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "The bravo is capable of instilling brief-yet powerful-moments of uncertainty and doubt in those that he wishes to catch off guard.\n\nAt 1st level, as long as the bravo has martial focus, he can make a confounding strike against a creature as an immediate action whenever he succeeds an attack roll or combat maneuver against them (and they are within close range). The creature must succeed at a Will saving throw (using the sphere DC of the bravo's chosen whim) or become uncertain for 1 round + 1 round per 4 bravo levels he possesses.\n\nThis is a mind-affecting, emotion, and disorientation effect.\n\nAt 7th level, the creature instead becomes shocked on a failed save, or uncertain for the duration on a successful save."
+    },
+    {
+      "name": "Moxie",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 1st level, whenever the bravo is suffering from an emotion-based condition that is caused by a skill use, every 1 round that elapses on the condition's duration instead counts as 2 rounds.\n\nAdditionally, the DC to affect him with skill checks is increased by 2 + 1 for every 2 bravo levels thereafter he possesses.\n\nLastly, the bravo can use his Charisma score in place of Intelligence when determining if he meets the prerequisites for combat feats."
+    },
+    {
+      "name": "Whim",
+      "type": "",
+      "levels": [
+        1,
+        5,
+        10,
+        15,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 1st level, the bravo chooses a whim from the list at the end of the class description, representing his own unique combat style and blend of martial prowess and skill. The bravo gains the spheres associated with his whim as bonus spheres, in addition to an additional ability from his chosen whim at 2nd level, 5th level, and every 5 levels thereafter.\n\nIf a whim ability would call for a saving throw, it is equal to the highest saving throw DC of the spheres associated with his whim."
+    },
+    {
+      "name": "Cunning Celerity",
+      "type": "Ex",
+      "levels": [
+        2
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "The bravo has an unnatural knack for getting himself out of danger, especially when he is on the move.\n\nAt 2nd level, the bravo gains a dodge pool equal to 50% + 15% for every bravo level he attains after 2nd.\n\nThe bravo can expend an attack of opportunity and reduce his dodge pool in increments of 5% to gain an equivalent amount of miss chance (maximum 20%) against an attack that he is aware of. This miss chance stacks with other miss chances, although the combined miss chances cannot exceed the maximum miss chance he could apply using this ability. If an attack affected by this ability still hits the bravo, his dodge pool replenishes half the expended amount from the attack.\n\nThe bravo loses access to his dodge pool if he is fatigued, exhausted, or has lost his Dexterity bonus to AC.\n\nIf the bravo moves at least 10 feet on his turn, the maximum miss chance he can grant himself using his dodge pool increases to 50%. This dodge pool replenishes after 1 hour of rest."
+    },
+    {
+      "name": "Steadfast",
+      "type": "Ex",
+      "levels": [
+        2
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 2nd level, the bravo gains either Combat Reflexes or Muscular Reflexes as a bonus feat."
+    },
+    {
+      "name": "Exploit Uncertainty",
+      "type": "Ex",
+      "levels": [
+        3,
+        6,
+        10,
+        14,
+        18
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, whenever the bravo outwits a creature, he gains a +1 bonus to weapon attack and damage rolls against them and a +10-foot morale bonus to all speeds he possesses for a number of rounds equal to his operative modifier (minimum 1). At 6th level and every four levels thereafter, the bonus to attack and damage rolls increases by +1."
+    },
+    {
+      "name": "Careful Footwork",
+      "type": "Ex",
+      "levels": [
+        3
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, whenever the bravo moves from his space, the first square he moves from is not considered threatened by any opponent he can see (invisible creatures still get attacks of opportunity against him).\n\nAdditionally, the bravo can spend a swift action to take a 5-foot step, which does not count as movement for the purposes of determining if he can 5-foot step or otherwise move during his turn."
+    },
+    {
+      "name": "Spontaneous Technique",
+      "type": "Ex",
+      "levels": [
+        4,
+        8,
+        14,
+        18
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "The bravo embraces the innate chaos of conflict, allowing him to think of new ways of handling such exchanges.\n\nAt 4th level, once per day, the bravo can spend 1 hour and choose a number of combat or skill talents he does not possess equal to his operative modifier (minimum 1), +1 per 3 bravo levels after 4th, making them prepared. Once chosen, these talents cannot be changed until he spends another 1 hour to change them. The bravo must possess the talent's base sphere and must meet any prerequisites (if the talent is legendary or exceptional); if a talent offers a choice as part of gaining it, he makes that choice when he prepares the talent.\n\nAs a move action, the bravo gains (or replaces) 1 prepared talent, +1 talent at 8th, 14th, and 18th level-he can only have 1 prepared talent active at one time, +1 at 8th, 14th, and 18th level. The bravo can use this ability a number of times per day equal to 3 + 1/2 his bravo level. When he can have multiple prepared talents active at once, a talent can meet the prerequisites of another talent for as long as both remain prepared.\n\nAt 8th level, the bravo can spend a swift action to gain (or replace) 1 prepared talent, +1 talent at 14th and 18th level. Additionally, the bravo can spend 1 minute (or a standard action by spending 1 use of skill leverage) and 1 use of spontaneous technique to change a prepared talent (as long as he does not choose a [utility] talent).\n\nAt 14th level, the bravo can spend a free or immediate action to gain (or replace) 1 prepared talent, +1 talent at 18th level."
+    },
+    {
+      "name": "Mercurial Celerity",
+      "type": "Ex",
+      "levels": [
+        5
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 5th level, whenever the bravo uses his cunning celerity class feature, he can expend his martial focus or outwit the attacker to have the percentile die rolled twice, taking the best result.\n\nAdditionally, if the bravo avoids an attack using his cunning celerity ability, the bravo can outwit the attacker to make an attack of opportunity against them."
+    },
+    {
+      "name": "Uncanny Dodge",
+      "type": "Ex",
+      "levels": [
+        6
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 6th level, the bravo gains the ability to react to danger before his senses would normally allow him to do so. He cannot be caught flat-footed, nor does he lose his Dexterity bonus to AC if the attacker is invisible. The bravo still loses his Dexterity bonus to armor class if immobilized. A bravo with this ability can still lose his Dexterity bonus to armor class if a creature successfully uses the feint action against him.\n\nIf a bravo already has uncanny dodge from a different class, he automatically gains improved uncanny dodge (see below) instead."
+    },
+    {
+      "name": "Adamant Astonishment",
+      "type": "Ex",
+      "levels": [
+        7
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 7th level, whenever the bravo outwits a creature by expending a condition, the effects of the condition remain for 1 round after it is expended. This condition cannot be expended again to outwit."
+    },
+    {
+      "name": "Dynamic Dodge",
+      "type": "Ex",
+      "levels": [
+        7
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 7th level, the bravo can expend his martial focus as a free action and expend any amount from his dodge pool to gain half as much miss chance from his cunning celerity ability until the beginning of his next turn (for example, he could gain a 50% miss chance by spending 100% from his dodge pool)."
+    },
+    {
+      "name": "Sudden Shift",
+      "type": "Ex",
+      "levels": [
+        9
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 9th level, the bravo can use his careful footwork ability as an immediate action instead of a swift action. If used to avoid an attack or area effect, he still has a chance to be affected but this movement grants him a dodge bonus to AC and Reflex saves equal to 1/2 his bravo level.\n\nAdditionally, when the bravo rolls initiative and is not surprised, he can take a 5-foot step as part of rolling initiative."
+    },
+    {
+      "name": "Incredible Stunt",
+      "type": "Ex",
+      "levels": [
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "The bravo can strain himself to pull off truly extraordinary feats of skill.\n\nAt 10th level, once per day as a standard action (unless otherwise specified) the bravo can perform an incredible stunt-its benefits last for 2 rounds, after which the bravo becomes fatigued (or exhausted if he was already fatigued, or unconscious for 1d4 rounds if he was already exhausted).\n\nAt 12th level and every 2 bravo levels thereafter, he can perform an incredible stunt an additional time per day.\n\nThe bravo gains the following incredible stunt, in addition to one determined by his whim:\n\n• Addling Assault\n\nThe bravo can make an incredible stunt as part of using his confounding strike ability, making the creature dumbfounded for the stunt's duration and shocked for the remaining duration on a failed save, or shocked for the stunt's duration and uncertain for the remaining duration on a successful save."
+    },
+    {
+      "name": "Improved Uncanny Dodge",
+      "type": "Ex",
+      "levels": [
+        11
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 11th level, the bravo can no longer be flanked. This defense denies a rogue the ability to sneak attack the bravo by flanking him, unless the attacker has at least four more rogue levels than the target has bravo levels.\n\nIf a character already has uncanny dodge (see above) from another class, the levels from the classes that grant uncanny dodge stack to determine the minimum rogue level required to flank the character."
+    },
+    {
+      "name": "Capricious",
+      "type": "Ex",
+      "levels": [
+        13
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 13th level, whenever the bravo attempts a Reflex saving throw, he can reduce his dodge pool in increments of 5% to gain an equal percentage chance to avoid the effect entirely; unlike his normal dodge pool, he has no maximum percentage he can apply to this use of his dodge pool.\n\nThe bravo rolls 1d100; if the result is less than or equal to the percentage chance, then he avoids the effect entirely. If the result is greater than the percentage chance, he must attempt the saving throw as normal."
+    },
+    {
+      "name": "Quicksilver Celerity",
+      "type": "Ex",
+      "levels": [
+        13
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 13th level, the maximum miss chance he can gain from his cunning celerity ability increases to 50%, or 75% if the bravo moves at least 10 feet on his turn.\n\nAdditionally, the bravo can expend his martial focus or an incredible stunt as a swift action to replenish 50% to his dodge pool (or 100% if he spends both as a single swift action) as long as he is currently in combat with a challenging foe (challenge rating no lower than his level - 2) or in comparable danger; he cannot recover dodge pool this way if the combat proves no threat."
+    },
+    {
+      "name": "Unfettered Alacrity",
+      "type": "Su",
+      "levels": [
+        17
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 17th level, as long as the bravo has at least 150% within his dodge pool, he can move and attack normally even when affected by abilities that usually impede movement, such as the paralyzed, staggered and stunned conditions, solid fog, slow, etc. All combat maneuver checks made to grapple the bravo automatically fail, and he automatically succeeds at any combat maneuver checks and Escape Artist checks attempted to escape a grapple or pin.\n\nFor each effect that the bravo ignores (or is able to automatically succeed at) per round, he loses 10% from his dodge pool at the end of the turn he used unfettered alacrity."
+    },
+    {
+      "name": "Skirt Death",
+      "type": "Ex",
+      "levels": [
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 19th level, as an incredible stunt whenever the bravo is reduced to 0 hit points or fewer, he can spend all of his dodge pool to instead be reduced to 1 hit point as long as he has at least 5% to spend from his dodge pool. Effects that would kill the bravo outright without dealing hit point damage are not affected by this ability.\n\nOnce the bravo uses this ability to save himself, he cannot do so again until 1 minute has passed."
+    },
+    {
+      "name": "Outwit Mastery",
+      "type": "Ex",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level, whenever the bravo outwits a creature, critical hits made against them are automatically confirmed, and the weapons critical multiplier is increased by 1 on such an attack (×2 becomes ×3, and so on). This benefit lasts for the same number of rounds as his exploit uncertainty ability."
+    },
+    {
+      "name": "Bravo Whims",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "• Audacity\n\nUse your words to cut your opponents down.\n\nWhim Spheres: Athletics and Bluster.\n\n• Freestyle Antics (Ex)\n\nAt 2nd level, the bravo's confounding strike ability can also be triggered whenever he succeeds at an Acrobatics, Bluff, or Intimidate check that targets a creature (such as a check to avoid an attack of opportunity, feint, demoralize, etc.). Additionally, whenever the bravo would normally trigger his confounding strike ability, he can expend his martial focus and outwit the creature as a cost to deliver a quip against them instead of its normal effects.\n\nAt 5th level, the bravo does not need to expend his martial focus to quip this way. Alternatively, he can still expend his martial focus to deliver this quip as part of a creature failing their saving throw against his confounding strike ability.\n\nWiki Note: The bravo does not need the confounding strike class feature to activate a quip in the way described in the first paragraph of this ability (such as if it is replaced by an archetype or alternate class feature), although the 5th level ability wouldn't function due to its reliance on confounding strike.\n\n• Exploit Uncertainty: Too Slow (Ex)\n\nAt 5th level, the bravo's exploit uncertainty bonus also applies as a dodge bonus against the outwitted creature's attacks.\n\n• Incredible Stunt: Flow State (Ex)\n\nAt 10th level, the bravo can use this incredible stunt as part of a move action to move to enter a state of pure flow with his movements. The bravo gains a 10-foot enhancement bonus to all movement modes he possesses. Whenever the bravo rolls a skill check associated with his current movement mode, any natural roll of a 14 or lower is treated as a 15. At 20th level, this improves to treat any such roll as if he had rolled a 20.\n\nAdditionally, the bravo ignores all difficult terrain when he moves, and may charge or run through squares that contain allies (and enemies if he succeeds an Acrobatics check to move through their square) without impeding his movement.\n\n• Overwhelming Antics (Ex)\n\nAt 15th level, whenever the bravo avoids an attack using his cunning celerity ability, he can use a quip against the attacker as an immediate action. Whenever "
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 2,
+      "choices": [
+        "steadfast"
+      ]
+    },
+    {
+      "level": 3,
+      "choices": [
+        "exploit uncertainty (+1)"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "Spontaneous technique",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 6,
+      "choices": [
+        "Exploit uncertainty (+2)"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "Spontaneous technique (2 talents)",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 10,
+      "choices": [
+        "Exploit uncertainty (+3)"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 14,
+      "choices": [
+        "Exploit uncertainty (+4)",
+        "spontaneous technique (3 talents)"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 18,
+      "choices": [
+        "Exploit uncertainty (+5)",
+        "spontaneous technique (4 talents)"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

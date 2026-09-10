@@ -1,0 +1,495 @@
+[
+  {
+    "slug": "armorist",
+    "name": "Armorist",
+    "group": "spherecaster",
+    "hitDie": 10,
+    "babProgression": "FULL",
+    "levels": 20,
+    "features": 11,
+    "talentColumns": [
+      "Max Bonus",
+      "Caster Level",
+      "Magic Talents"
+    ]
+  },
+  {
+    "slug": "elementalist",
+    "name": "Elementalist",
+    "group": "spherecaster",
+    "hitDie": 8,
+    "babProgression": "THREE_QUARTER",
+    "levels": 20,
+    "features": 13,
+    "talentColumns": [
+      "Caster Level",
+      "Magic Talents"
+    ]
+  },
+  {
+    "slug": "eliciter",
+    "name": "Eliciter",
+    "group": "spherecaster",
+    "hitDie": 8,
+    "babProgression": "THREE_QUARTER",
+    "levels": 20,
+    "features": 12,
+    "talentColumns": [
+      "Caster Level",
+      "Magic Talents"
+    ]
+  },
+  {
+    "slug": "fey-adept",
+    "name": "Fey Adept",
+    "group": "spherecaster",
+    "hitDie": 6,
+    "babProgression": "HALF",
+    "levels": 20,
+    "features": 13,
+    "talentColumns": [
+      "Caster Level",
+      "Talents"
+    ]
+  },
+  {
+    "slug": "hedgewitch",
+    "name": "Hedgewitch",
+    "group": "spherecaster",
+    "hitDie": 8,
+    "babProgression": "THREE_QUARTER",
+    "levels": 20,
+    "features": 7,
+    "talentColumns": [
+      "Caster Level",
+      "Magic Talents"
+    ]
+  },
+  {
+    "slug": "incanter",
+    "name": "Incanter",
+    "group": "spherecaster",
+    "hitDie": 6,
+    "babProgression": "HALF",
+    "levels": 20,
+    "features": 6,
+    "talentColumns": [
+      "Caster Level",
+      "Magic Talents"
+    ]
+  },
+  {
+    "slug": "mageknight",
+    "name": "Mageknight",
+    "group": "spherecaster",
+    "hitDie": 10,
+    "babProgression": "FULL",
+    "levels": 20,
+    "features": 12,
+    "talentColumns": [
+      "Caster Level",
+      "Magic Talents"
+    ]
+  },
+  {
+    "slug": "shifter",
+    "name": "Shifter",
+    "group": "spherecaster",
+    "hitDie": 8,
+    "babProgression": "THREE_QUARTER",
+    "levels": 20,
+    "features": 20,
+    "talentColumns": [
+      "Caster Level",
+      "Magic Talents"
+    ]
+  },
+  {
+    "slug": "soul-weaver",
+    "name": "Soul Weaver",
+    "group": "spherecaster",
+    "hitDie": 6,
+    "babProgression": "HALF",
+    "levels": 20,
+    "features": 9,
+    "talentColumns": [
+      "Caster Level",
+      "Magic Talents"
+    ]
+  },
+  {
+    "slug": "symbiat",
+    "name": "Symbiat",
+    "group": "spherecaster",
+    "hitDie": 8,
+    "babProgression": "THREE_QUARTER",
+    "levels": 20,
+    "features": 16,
+    "talentColumns": [
+      "Caster Level",
+      "Magic Talents",
+      "AC Bonus",
+      "Pushed Movement"
+    ]
+  },
+  {
+    "slug": "thaumaturge",
+    "name": "Thaumaturge",
+    "group": "spherecaster",
+    "hitDie": 8,
+    "babProgression": "THREE_QUARTER",
+    "levels": 20,
+    "features": 9,
+    "talentColumns": [
+      "Caster Level",
+      "Magic Talents"
+    ]
+  },
+  {
+    "slug": "wraith",
+    "name": "Wraith",
+    "group": "spherecaster",
+    "hitDie": 8,
+    "babProgression": "THREE_QUARTER",
+    "levels": 20,
+    "features": 10,
+    "talentColumns": [
+      "Caster Level",
+      "Magic Talents"
+    ]
+  },
+  {
+    "slug": "bokor",
+    "name": "Bokor",
+    "group": "spherecaster",
+    "hitDie": 6,
+    "babProgression": null,
+    "levels": 10,
+    "features": 8,
+    "talentColumns": [
+      "Spells per Day",
+      "Caster Level",
+      "Magic Talents"
+    ]
+  },
+  {
+    "slug": "forest-lord",
+    "name": "Forest Lord",
+    "group": "spherecaster",
+    "hitDie": null,
+    "babProgression": null,
+    "levels": 0,
+    "features": 10,
+    "talentColumns": []
+  },
+  {
+    "slug": "magemage",
+    "name": "Magemage",
+    "group": "spherecaster",
+    "hitDie": 8,
+    "babProgression": null,
+    "levels": 10,
+    "features": 12,
+    "talentColumns": [
+      "Caster Level",
+      "Magic Talents"
+    ]
+  },
+  {
+    "slug": "realmwalker",
+    "name": "Realmwalker",
+    "group": "spherecaster",
+    "hitDie": 10,
+    "babProgression": null,
+    "levels": 0,
+    "features": 9,
+    "talentColumns": []
+  },
+  {
+    "slug": "tempestarii",
+    "name": "Tempestarii",
+    "group": "spherecaster",
+    "hitDie": null,
+    "babProgression": null,
+    "levels": 0,
+    "features": 10,
+    "talentColumns": []
+  },
+  {
+    "slug": "waking-sleeper",
+    "name": "Waking Sleeper",
+    "group": "spherecaster",
+    "hitDie": 10,
+    "babProgression": null,
+    "levels": 0,
+    "features": 9,
+    "talentColumns": []
+  },
+  {
+    "slug": "armiger",
+    "name": "Armiger",
+    "group": "practitioner",
+    "hitDie": 10,
+    "babProgression": "FULL",
+    "levels": 20,
+    "features": 10,
+    "talentColumns": [
+      "Combat Talents",
+      "Talents Granted per Customized Weapon"
+    ]
+  },
+  {
+    "slug": "blacksmith",
+    "name": "Blacksmith",
+    "group": "practitioner",
+    "hitDie": 10,
+    "babProgression": "FULL",
+    "levels": 20,
+    "features": 10,
+    "talentColumns": [
+      "Combat Talents"
+    ]
+  },
+  {
+    "slug": "commander",
+    "name": "Commander",
+    "group": "practitioner",
+    "hitDie": 8,
+    "babProgression": "THREE_QUARTER",
+    "levels": 20,
+    "features": 9,
+    "talentColumns": [
+      "Combat Talents"
+    ]
+  },
+  {
+    "slug": "conscript",
+    "name": "Conscript",
+    "group": "practitioner",
+    "hitDie": 10,
+    "babProgression": "FULL",
+    "levels": 20,
+    "features": 4,
+    "talentColumns": [
+      "Combat Talents"
+    ]
+  },
+  {
+    "slug": "scholar",
+    "name": "Scholar",
+    "group": "practitioner",
+    "hitDie": 6,
+    "babProgression": "HALF",
+    "levels": 20,
+    "features": 10,
+    "talentColumns": [
+      "Combat Talents"
+    ]
+  },
+  {
+    "slug": "sentinel",
+    "name": "Sentinel",
+    "group": "practitioner",
+    "hitDie": 12,
+    "babProgression": "FULL",
+    "levels": 20,
+    "features": 23,
+    "talentColumns": [
+      "Combat Talents"
+    ]
+  },
+  {
+    "slug": "striker",
+    "name": "Striker",
+    "group": "practitioner",
+    "hitDie": 10,
+    "babProgression": "FULL",
+    "levels": 20,
+    "features": 15,
+    "talentColumns": [
+      "Combat Talents"
+    ]
+  },
+  {
+    "slug": "technician",
+    "name": "Technician",
+    "group": "practitioner",
+    "hitDie": 8,
+    "babProgression": "THREE_QUARTER",
+    "levels": 20,
+    "features": 14,
+    "talentColumns": [
+      "Combat Talents"
+    ]
+  },
+  {
+    "slug": "aeronaut-captain",
+    "name": "Aeronaut Captain",
+    "group": "practitioner",
+    "hitDie": null,
+    "babProgression": null,
+    "levels": 0,
+    "features": 9,
+    "talentColumns": []
+  },
+  {
+    "slug": "bravo",
+    "name": "Bravo",
+    "group": "champion",
+    "hitDie": 10,
+    "babProgression": "FULL",
+    "levels": 20,
+    "features": 23,
+    "talentColumns": [
+      "Dodge Pool",
+      "Any",
+      "Utility"
+    ]
+  },
+  {
+    "slug": "crimson-dancer",
+    "name": "Crimson Dancer",
+    "group": "champion",
+    "hitDie": 10,
+    "babProgression": "FULL",
+    "levels": 20,
+    "features": 19,
+    "talentColumns": [
+      "Caster Level",
+      "Blended Training Talents"
+    ]
+  },
+  {
+    "slug": "dissident",
+    "name": "Dissident",
+    "group": "champion",
+    "hitDie": 8,
+    "babProgression": "THREE_QUARTER",
+    "levels": 20,
+    "features": 18,
+    "talentColumns": [
+      "Any",
+      "Utility",
+      "Caster Level"
+    ]
+  },
+  {
+    "slug": "dragoon-class",
+    "name": "Dragoon",
+    "group": "champion",
+    "hitDie": 8,
+    "babProgression": "THREE_QUARTER",
+    "levels": 20,
+    "features": 15,
+    "talentColumns": [
+      "Combat & Magic Talents",
+      "Caster Level"
+    ]
+  },
+  {
+    "slug": "mountebank",
+    "name": "Mountebank",
+    "group": "champion",
+    "hitDie": 8,
+    "babProgression": "THREE_QUARTER",
+    "levels": 20,
+    "features": 19,
+    "talentColumns": [
+      "Combat & Magic Talents",
+      "Caster Level"
+    ]
+  },
+  {
+    "slug": "necros",
+    "name": "Necros",
+    "group": "champion",
+    "hitDie": 8,
+    "babProgression": "THREE_QUARTER",
+    "levels": 20,
+    "features": 25,
+    "talentColumns": [
+      "Combat & Magic Talents",
+      "Caster Level"
+    ]
+  },
+  {
+    "slug": "prodigy",
+    "name": "Prodigy",
+    "group": "champion",
+    "hitDie": 8,
+    "babProgression": "THREE_QUARTER",
+    "levels": 20,
+    "features": 23,
+    "talentColumns": [
+      "Blended Training Talents",
+      "Caster Level"
+    ]
+  },
+  {
+    "slug": "reaper",
+    "name": "Reaper",
+    "group": "champion",
+    "hitDie": 10,
+    "babProgression": "FULL",
+    "levels": 20,
+    "features": 19,
+    "talentColumns": [
+      "Combat & Magic Talents",
+      "Caster Level"
+    ]
+  },
+  {
+    "slug": "sage",
+    "name": "Sage",
+    "group": "champion",
+    "hitDie": 6,
+    "babProgression": "HALF",
+    "levels": 20,
+    "features": 11,
+    "talentColumns": [
+      "AC Bonus",
+      "Combat Talents"
+    ]
+  },
+  {
+    "slug": "theorist",
+    "name": "Theorist",
+    "group": "champion",
+    "hitDie": 6,
+    "babProgression": "HALF",
+    "levels": 20,
+    "features": 14,
+    "talentColumns": [
+      "Any",
+      "Utility",
+      "Caster Level"
+    ]
+  },
+  {
+    "slug": "troubadour",
+    "name": "Troubadour",
+    "group": "champion",
+    "hitDie": null,
+    "babProgression": "THREE_QUARTER",
+    "levels": 20,
+    "features": 15,
+    "talentColumns": [
+      "Caster Level",
+      "Combat Talents",
+      "Personas"
+    ]
+  },
+  {
+    "slug": "warden-class",
+    "name": "Warden",
+    "group": "champion",
+    "hitDie": 10,
+    "babProgression": "THREE_QUARTER",
+    "levels": 20,
+    "features": 20,
+    "talentColumns": [
+      "Blended Training Talents",
+      "Caster Level"
+    ]
+  }
+]

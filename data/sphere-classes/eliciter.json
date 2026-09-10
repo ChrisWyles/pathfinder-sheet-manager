@@ -1,0 +1,531 @@
+{
+  "slug": "eliciter",
+  "name": "Eliciter",
+  "group": "spherecaster",
+  "url": "http://spheresofpower.wikidot.com/eliciter",
+  "source": "Spheres of Power wiki",
+  "hitDie": 8,
+  "alignment": "Any",
+  "role": "Eliciters are masters of mind magic, making them powerful negotiators and boons to their allies",
+  "classSkills": [
+    "Acrobatics",
+    "Bluff",
+    "Climb",
+    "Craft",
+    "Diplomacy",
+    "Disguise",
+    "Handle Animal",
+    "Intimidate",
+    "Knowledge (local)",
+    "Knowledge (nobility)",
+    "Linguistics",
+    "Perform",
+    "Profession",
+    "Sense Motive",
+    "Spellcraft",
+    "Stealth",
+    "Use Magic Device"
+  ],
+  "skillRanksPerLevel": 4,
+  "babProgression": "THREE_QUARTER",
+  "saveProgressions": {
+    "fort": "POOR",
+    "ref": "GOOD",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+0",
+      "fortSave": "+0",
+      "refSave": "+2",
+      "willSave": "+2",
+      "special": [
+        "Casting",
+        "enchanter",
+        "fascinate",
+        "hypnotism",
+        "persuasive +2",
+        "spell pool"
+      ],
+      "columns": {
+        "Caster Level": "+0 (1)",
+        "Magic Talents": "0 (+2)"
+      },
+      "choices": []
+    },
+    {
+      "level": 2,
+      "bab": "+1",
+      "fortSave": "+0",
+      "refSave": "+3",
+      "willSave": "+3",
+      "special": [
+        "Emotion"
+      ],
+      "columns": {
+        "Caster Level": "+1",
+        "Magic Talents": "1"
+      },
+      "choices": []
+    },
+    {
+      "level": 3,
+      "bab": "+2",
+      "fortSave": "+1",
+      "refSave": "+3",
+      "willSave": "+3",
+      "special": [
+        "Defensive empathy"
+      ],
+      "columns": {
+        "Caster Level": "+2",
+        "Magic Talents": "2"
+      },
+      "choices": []
+    },
+    {
+      "level": 4,
+      "bab": "+3",
+      "fortSave": "+1",
+      "refSave": "+4",
+      "willSave": "+4",
+      "special": [
+        "Liberate"
+      ],
+      "columns": {
+        "Caster Level": "+3",
+        "Magic Talents": "3"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+3",
+      "fortSave": "+1",
+      "refSave": "+4",
+      "willSave": "+4",
+      "special": [
+        "Emotion"
+      ],
+      "columns": {
+        "Caster Level": "+3",
+        "Magic Talents": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 6,
+      "bab": "+4",
+      "fortSave": "+2",
+      "refSave": "+5",
+      "willSave": "+5",
+      "special": [
+        "Persuasive +3"
+      ],
+      "columns": {
+        "Caster Level": "+4",
+        "Magic Talents": "4"
+      },
+      "choices": []
+    },
+    {
+      "level": 7,
+      "bab": "+5",
+      "fortSave": "+2",
+      "refSave": "+5",
+      "willSave": "+5",
+      "special": [
+        "Terrorize"
+      ],
+      "columns": {
+        "Caster Level": "+5",
+        "Magic Talents": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+6/+1",
+      "fortSave": "+2",
+      "refSave": "+6",
+      "willSave": "+6",
+      "special": [
+        "Emotion"
+      ],
+      "columns": {
+        "Caster Level": "+6",
+        "Magic Talents": "6"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+6/+1",
+      "fortSave": "+3",
+      "refSave": "+6",
+      "willSave": "+6",
+      "special": [
+        "Convincing"
+      ],
+      "columns": {
+        "Caster Level": "+6",
+        "Magic Talents": "6"
+      },
+      "choices": [
+        "Convincing"
+      ]
+    },
+    {
+      "level": 10,
+      "bab": "+7/+2",
+      "fortSave": "+3",
+      "refSave": "+7",
+      "willSave": "+7",
+      "special": [
+        "Inspire greatness"
+      ],
+      "columns": {
+        "Caster Level": "+7",
+        "Magic Talents": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 11,
+      "bab": "+8/+3",
+      "fortSave": "+3",
+      "refSave": "+7",
+      "willSave": "+7",
+      "special": [
+        "Emotion"
+      ],
+      "columns": {
+        "Caster Level": "+8",
+        "Magic Talents": "8"
+      },
+      "choices": []
+    },
+    {
+      "level": 12,
+      "bab": "+9/+4",
+      "fortSave": "+4",
+      "refSave": "+8",
+      "willSave": "+8",
+      "special": [
+        "Persuasive +4"
+      ],
+      "columns": {
+        "Caster Level": "+9",
+        "Magic Talents": "9"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+9/+4",
+      "fortSave": "+4",
+      "refSave": "+8",
+      "willSave": "+8",
+      "special": [
+        "Insanity"
+      ],
+      "columns": {
+        "Caster Level": "+9",
+        "Magic Talents": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+10/+5",
+      "fortSave": "+4",
+      "refSave": "+9",
+      "willSave": "+9",
+      "special": [
+        "Emotion"
+      ],
+      "columns": {
+        "Caster Level": "+10",
+        "Magic Talents": "10"
+      },
+      "choices": []
+    },
+    {
+      "level": 15,
+      "bab": "+11/+6/+1",
+      "fortSave": "+5",
+      "refSave": "+9",
+      "willSave": "+9",
+      "special": [
+        "Link"
+      ],
+      "columns": {
+        "Caster Level": "+11",
+        "Magic Talents": "11"
+      },
+      "choices": []
+    },
+    {
+      "level": 16,
+      "bab": "+12/+7/+2",
+      "fortSave": "+5",
+      "refSave": "+10",
+      "willSave": "+10",
+      "special": [
+        "Inspire heroics"
+      ],
+      "columns": {
+        "Caster Level": "+12",
+        "Magic Talents": "12"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+12/+7/+2",
+      "fortSave": "+5",
+      "refSave": "+10",
+      "willSave": "+10",
+      "special": [
+        "Emotion"
+      ],
+      "columns": {
+        "Caster Level": "+12",
+        "Magic Talents": "12"
+      },
+      "choices": []
+    },
+    {
+      "level": 18,
+      "bab": "+13/+8/+3",
+      "fortSave": "+6",
+      "refSave": "+11",
+      "willSave": "+11",
+      "special": [
+        "Persuasive +5"
+      ],
+      "columns": {
+        "Caster Level": "+13",
+        "Magic Talents": "13"
+      },
+      "choices": []
+    },
+    {
+      "level": 19,
+      "bab": "+14/+9/+4",
+      "fortSave": "+6",
+      "refSave": "+11",
+      "willSave": "+11",
+      "special": [
+        "Reverence"
+      ],
+      "columns": {
+        "Caster Level": "+14",
+        "Magic Talents": "14"
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+15/+10/+5",
+      "fortSave": "+6",
+      "refSave": "+12",
+      "willSave": "+12",
+      "special": [
+        "Domination",
+        "emotion"
+      ],
+      "columns": {
+        "Caster Level": "+15",
+        "Magic Talents": "15"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Caster Level",
+    "Magic Talents"
+  ],
+  "features": [
+    {
+      "name": "Weapon and Armor Proficiency",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "An eliciter gains proficiency with all simple weapons, light armor, and shields, as well as the longsword, rapier, sap, shortsword, shortbow, and whip."
+    },
+    {
+      "name": "Casting",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "An eliciter may combine spheres and talents to create magical effects. An eliciter is considered a Mid-Caster. (Note: All casters gain 2 bonus talents and a casting tradition the first time they gain the casting class feature.)"
+    },
+    {
+      "name": "Spell Pool",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "An eliciter gains a small reservoir of energy he can call on to create truly wondrous effects, called a spell pool. This pool contains a number of spell points equal to his class level + his casting ability modifier (minimum 1). This pool replenishes once per day after roughly 8 hours of rest."
+    },
+    {
+      "name": "Magic Talents",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "An eliciter gains 3/4ths of a magic talent per level, according to Table: The Eliciter."
+    },
+    {
+      "name": "Enchanter",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "An eliciter gains the Mind sphere as a bonus sphere at 1st level and treats his class level as his caster level for this sphere. This stacks normally with caster levels gained from other sources."
+    },
+    {
+      "name": "Persuasive",
+      "type": "Su",
+      "levels": [
+        1,
+        6,
+        12,
+        18
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "An eliciter's empathic abilities gives him greater insights into the workings of the mind and makes his words (both magical and mundane) harder to resist. An eliciter gains a +2 bonus to the DCs of his Mind sphere abilities and eliciter class features, as well as Bluff, Diplomacy, and Intimidate checks. These bonuses increase to +3 at 6th level, +4 at 12th level, and +5 at 18th level."
+    },
+    {
+      "name": "Hypnotism",
+      "type": "Su",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "An eliciter may manipulate another with little more than a look and a word. The eliciter targets a single creature, which must be within close range and able to see and hear the eliciter. Hypnotizing a target is a standard action. The eliciter may use hypnotism a number of times per day equal to 3 + 1/2 his eliciter level.\n\nWhen hypnotizing a target, the eliciter chooses one effect available to him from the list below. If this ability calls for a saving throw, the DC is equal to 10 + 1/2 his eliciter level + his Charisma modifier + his Persuasive bonus. Hypnotism is a mind-affecting ability. An eliciter may target himself with his own hypnotism, even if he cannot see or hear himself.\n\nFascinate The eliciter causes the target to become fascinated with him for 1 round per eliciter level (Will negates). While fascinated, a target takes no action except to stand or sit quietly and watch the eliciter. The target takes a -4 penalty on skill checks made as reactions, such as Perception checks. Any potential threat to the target allows the target to attempt a new saving throw to end the fascination effect. Any obvious threat, such as someone drawing a weapon, casting a spell, or aiming a weapon at the target, automatically breaks the effect.\n\nLiberate At 4th level, the eliciter may use hypnotism to free a target's mind of harmful effects. The target may reroll a Will save (using the eliciter's bonus if it is higher) against each harmful mind-affecting effect they are suffering from. The eliciter may also allow the target to reroll a Will save made to disbelieve an illusion, but this may only be used against an illusion that the eliciter has already successfully disbelieved.\n\nTerrorize At 7th level, the eliciter may demolish the target's mind, granting the target a penalty to their Will saving throws equal to his Persuasive bonus (no save). This lasts a number of rounds equal to his casting ability modifier. While a target is affected in this manner, the eliciter does not gain his Persuasive bonus to eliciter abilities and Mind sphere effects against that target.\n\nInspire Greatness At 10th level, the eliciter may use hypnotism to instill the target with the effects of th"
+    },
+    {
+      "name": "Emotions",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "An eliciter's power comes from his command of emotions, both his own and others. At 2nd level, an eliciter chooses an emotion, gaining the minor power associated with that emotion. At 5th level and every 3 levels thereafter, the eliciter may choose to gain the minor power of a new emotion, or gain access to the next level of an emotion he already possesses (lesser, greater, and master). An eliciter cannot gain a lesser power before 5th level, a greater power before 8th level, or a master power before 11th level. All emotions are mind-affecting effects. If an emotion calls for a saving throw, the DC is equal to 10 + 1/2 his eliciter level + his Charisma modifier + his persuasive bonus."
+    },
+    {
+      "name": "Defensive Empathy",
+      "type": "Su",
+      "levels": [
+        3
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, an eliciter adds his persuasive bonus to Sense Motive checks, as well as Will saves against enchantment (charm) and enchantment (compulsion) effects."
+    },
+    {
+      "name": "Convincing",
+      "type": "Ex",
+      "levels": [
+        9
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 9th level, an eliciter may take 10 with any Bluff, Diplomacy, Intimidate, or Sense Motive check if he has ranks in that skill, even if circumstances would normally prohibit this action.\n\nIn addition, once per day the eliciter may choose to take 20 on one of these skill checks without taking additional time. He may use this ability twice per day at 13th level, and three times per day at 17th level."
+    },
+    {
+      "name": "Link",
+      "type": "Su",
+      "levels": [
+        15
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 15th level, whenever the eliciter charms or dominates a target (such as through the Enthrall charm from the Mind sphere, the love emotion power, or the domination eliciter class ability), the eliciter may send thoughts and instructions telepathically to that creature. The target may also communicate back to the eliciter via this same telepathic link. The target must be within 60 feet for this ability to function."
+    },
+    {
+      "name": "Domination",
+      "type": "Su",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level, an eliciter may permanently enslave a target's mind. Once per day as a standard action, the eliciter may make a touch attack against a target and attempt to dominate it. This is a compulsion, mind-affecting effect. The target is allowed a Will save (DC 10 + 1/2 his eliciter level + his casting ability modifier + his Persuasive bonus) and on a failed save, the target becomes devoted to the eliciter, gaining a disposition of helpful and obeying any orders the eliciter gives to the exclusion of all other activities except those necessary for survival (eating, sleeping, etc.). The target never obeys obviously self-destructive commands, and is allowed a new save with a +2 bonus to throw off the compulsion if asked to do something against its nature. A DC 25 Sense Motive check reveals the target is under compulsion.\n\nThe eliciter may only have one target dominated in this fashion at a time; if the eliciter successfully uses this ability to dominate a second target, the first is immediately released from service."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 4,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "choices": [
+        "Convincing"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

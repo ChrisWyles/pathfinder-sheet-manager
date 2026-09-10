@@ -1,0 +1,664 @@
+{
+  "slug": "reaper",
+  "name": "Reaper",
+  "group": "champion",
+  "url": "http://spheresofpower.wikidot.com/reaper",
+  "source": "Spheres of Power wiki",
+  "hitDie": 10,
+  "alignment": "Any",
+  "role": "Reapers are dedicated to finding and killing their chosen prey, and the frontline is their preferred place on the battlefield",
+  "classSkills": [
+    "Acrobatics",
+    "Bluff",
+    "Climb",
+    "Craft",
+    "Disguise",
+    "Heal",
+    "Intimidate",
+    "Knowledge (arcana)",
+    "Knowledge (dungeoneering)",
+    "Knowledge (local)",
+    "Knowledge (nature)",
+    "Knowledge (planes)",
+    "Knowledge (religion)",
+    "Linguistics",
+    "Perception",
+    "Profession",
+    "Ride",
+    "Sense Motive",
+    "Spellcraft",
+    "Stealth",
+    "Survival",
+    "Use Magic Device"
+  ],
+  "skillRanksPerLevel": 6,
+  "babProgression": "FULL",
+  "saveProgressions": {
+    "fort": "GOOD",
+    "ref": "POOR",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+1",
+      "fortSave": "+2",
+      "refSave": "+0",
+      "willSave": "+2",
+      "special": [
+        "Blended training",
+        "bloodletter",
+        "casting",
+        "cult (ability)",
+        "favored prey +2",
+        "reaper trophy",
+        "spell pool"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "1 (+2 magic)",
+        "Caster Level": "+0 (1)"
+      },
+      "choices": [
+        "bloodletter",
+        "casting",
+        "favored prey +2"
+      ]
+    },
+    {
+      "level": 2,
+      "bab": "+2",
+      "fortSave": "+3",
+      "refSave": "+0",
+      "willSave": "+3",
+      "special": [
+        "Reaper technique",
+        "track"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "2",
+        "Caster Level": "+1"
+      },
+      "choices": []
+    },
+    {
+      "level": 3,
+      "bab": "+3",
+      "fortSave": "+3",
+      "refSave": "+1",
+      "willSave": "+3",
+      "special": [
+        "Blessing of silver",
+        "prey casting bonus +1"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "3",
+        "Caster Level": "+1"
+      },
+      "choices": [
+        "Blessing of silver"
+      ]
+    },
+    {
+      "level": 4,
+      "bab": "+4",
+      "fortSave": "+4",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Reaper technique"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "4",
+        "Caster Level": "+2"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+5",
+      "fortSave": "+4",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Cult (ability)",
+        "favored prey +4"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "5",
+        "Caster Level": "+2"
+      },
+      "choices": [
+        "favored prey +4"
+      ]
+    },
+    {
+      "level": 6,
+      "bab": "+6/+1",
+      "fortSave": "+5",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Reaper technique"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "6",
+        "Caster Level": "+3"
+      },
+      "choices": []
+    },
+    {
+      "level": 7,
+      "bab": "+7/+2",
+      "fortSave": "+5",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Blood hunter",
+        "prey casting bonus +2"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "7",
+        "Caster Level": "+3"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+8/+3",
+      "fortSave": "+6",
+      "refSave": "+2",
+      "willSave": "+6",
+      "special": [
+        "Reaper technique"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "8",
+        "Caster Level": "+4"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+9/+4",
+      "fortSave": "+6",
+      "refSave": "+3",
+      "willSave": "+6",
+      "special": [
+        "Cult (ability)",
+        "tireless foe"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "9",
+        "Caster Level": "+4"
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+10/+5",
+      "fortSave": "+7",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Favored prey +6",
+        "reaper technique"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "10",
+        "Caster Level": "+5"
+      },
+      "choices": [
+        "Favored prey +6"
+      ]
+    },
+    {
+      "level": 11,
+      "bab": "+11/+6/+1",
+      "fortSave": "+7",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Discern true form",
+        "prey casting bonus +3"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "11",
+        "Caster Level": "+5"
+      },
+      "choices": []
+    },
+    {
+      "level": 12,
+      "bab": "+12/+7/+2",
+      "fortSave": "+8",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Reaper technique"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "12",
+        "Caster Level": "+6"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+13/+8/+3",
+      "fortSave": "+8",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Cult (ability)",
+        "engorged scent"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "13",
+        "Caster Level": "+6"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+14/+9/+4",
+      "fortSave": "+9",
+      "refSave": "+4",
+      "willSave": "+9",
+      "special": [
+        "Reaper technique"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "14",
+        "Caster Level": "+7"
+      },
+      "choices": []
+    },
+    {
+      "level": 15,
+      "bab": "+15/+10/+5",
+      "fortSave": "+9",
+      "refSave": "+5",
+      "willSave": "+9",
+      "special": [
+        "Favored prey +8",
+        "prey casting bonus +4"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "15",
+        "Caster Level": "+7"
+      },
+      "choices": [
+        "Favored prey +8"
+      ]
+    },
+    {
+      "level": 16,
+      "bab": "+16/+11/+6/+1",
+      "fortSave": "+10",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Reaper technique"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "16",
+        "Caster Level": "+8"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+17/+12/+7/+2",
+      "fortSave": "+10",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Cult (ability)",
+        "reality shudders"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "17",
+        "Caster Level": "+8"
+      },
+      "choices": []
+    },
+    {
+      "level": 18,
+      "bab": "+18/+13/+8/+3",
+      "fortSave": "+11",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Reaper technique"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "18",
+        "Caster Level": "+9"
+      },
+      "choices": []
+    },
+    {
+      "level": 19,
+      "bab": "+19/+14/+9/+4",
+      "fortSave": "+11",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Eternal foe",
+        "prey casting bonus +5"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "19",
+        "Caster Level": "+9"
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+20/+15/+10/+5",
+      "fortSave": "+12",
+      "refSave": "+6",
+      "willSave": "+12",
+      "special": [
+        "Favored prey +10",
+        "reaper technique",
+        "soul crisis"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "20",
+        "Caster Level": "+10"
+      },
+      "choices": [
+        "Favored prey +10",
+        "soul crisis",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Combat & Magic Talents",
+    "Caster Level"
+  ],
+  "features": [
+    {
+      "name": "Proficiencies",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "Reapers are proficient with simple weapons, as well as light armor and bucklers. In addition, if this is this character's first level in any class, they may select a martial tradition of their choice."
+    },
+    {
+      "name": "Casting",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "A reaper may combine spheres and talents to create magical effects. A reaper is considered a Low-Caster. They may use their choice of Intelligence, Wisdom, or Charisma as their casting ability modifier and must make this choice at 1st level. (Note: all casters may select a casting tradition the first time they gain the casting class feature.)"
+    },
+    {
+      "name": "Spell Pool",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A reaper gains a small reservoir of energy they can call on to create truly wondrous effects, called a spell pool. This pool contains a number of spell points equal to their level + their casting ability modifier (minimum: 1). This pool replenishes once per day after roughly 8 hours of rest."
+    },
+    {
+      "name": "Blended Training",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A reaper gains combat or magic talents according to Table: Reaper, gaining their choice of combat or magic talents at each level they would gain a talent. Reapers use their casting ability modifier as their practitioner modifier."
+    },
+    {
+      "name": "Bloodletter",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 1st level, a reaper gains the Duelist sphere as a bonus talent, or a talent from the Duelist sphere if they already possess the base sphere. Additionally, the reaper gains the Bloody Slasher drawback, but gains the Ooze Ichor talent instead of Long Cuts."
+    },
+    {
+      "name": "Favored Prey",
+      "type": "Ex",
+      "levels": [
+        1,
+        5,
+        10,
+        15,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 1st level, a reaper selects a creature type from the ranger favored enemies table. They gain a +2 bonus on Bluff, Knowledge, Perception, Sense Motive, and Survival checks against creatures of their selected type. Likewise, the reaper gets a +2 bonus on weapon attack and damage rolls against them. A reaper may make Knowledge skill checks untrained when attempting to identify these creatures.\n\nAt 5th level and every 5 levels thereafter (10th, 15th, and 20th level), this bonus increases by +2. Unlike a ranger, the reaper does not select an additional creature type at these levels. Instead, they may change their favored prey by meditating on a reaper trophy they've created for 1 minute. The trophy does not need to be held, only carried on the reaper's body."
+    },
+    {
+      "name": "Reaper Trophy",
+      "type": "Su",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "The reaper may create a small object called a reaper trophy with the remains of a creature they've slain in battle and 1 hour of work. Whenever a reaper meditates on a reaper trophy they've created, their favored prey type changes to the type corresponding to the creature used to make the trophy."
+    },
+    {
+      "name": "Reaper Cult",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "At 1st level, a reaper must select a cult to focus on. A cult is an area of intense occult study centred around a specific creature, and the root of their eldritch powers. The reaper learns how to hunt the creatures belonging to the creature's type, and eventually gains those creatures' powers. At 1st, 5th, and every 4 levels after, the reaper gains an ability specific to that cult.\n\n• Cult of the Blight [Baron's Otherworldly Citadel]\n\nIn your battle against contaminating forces which seem to subsume the world in their mindless hunger, you straddle the line between a reasoning being and an unthinking plague. In forsaking the constituency that oozes and plants feed upon, you hope to starve our or even consume such threats yourself.\n\n• Blight Hunter (Ex)\n\nAt 1st level, you are always treated as if you've selected plants and oozes with your favored prey class feature, in addition to the currently selected creature type.\n\n• Symbiotic Servitor (Ex)\n\nAt 5th level, you can extract a servitor from your body to carry out your will. As a standard action, you can have your servitor detach itself from your body as a separate creature with the statistics of a plant companion with an effective druid level of your reaper level (the type of plant companion is chosen when you gain this ability). The servitor can reattach itself to you as a standard action. When attached to you, the servitor has fast healing equal to your reaper level. If a servitor dies, it can be replaced in the same manner as a normal plant companion. If you die, your servitor gradually becomes you, replacing its own statistics with yours after 1d6 days. When this process is complete, you take full control of the servitor as if it was your original character. While your servitor is separated from your body, it carries a fragment of its consciousness with it, imposing a -2 penalty on Will saves as well as Intelligence, Wisdom, and Charisma-based skill checks on you.\n\n• Uncanny Physiology (Ex)\n\nAt 9th level, your body takes on an amorphous form as ooze overtakes it. You gain the compression universal monster ability and no longer need to breathe. You and your servitor do not take any damage or take any penalty f"
+    },
+    {
+      "name": "Track",
+      "type": "Ex",
+      "levels": [
+        2
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level, a reaper adds half their level to Survival skill checks made to follow tracks."
+    },
+    {
+      "name": "Reaper Techniques",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "At 2nd level and every 2 levels afterwards, a reaper selects a reaper technique and learns new tactics for aiding in their hunt. Each reaper technique can only be selected once unless otherwise noted. The reaper chooses from the list below:\n\nAccelerated Corruption: [Lost Champions Reaper: Apocrypha] You gain your choice of either Transformation, Transformation, Hybrid, or Transformation, Improved as a bonus feat. You must meet the prerequisites of the chosen feat. You may select this reaper technique more than once, each time gaining an additional feat of your choice.\n\nArmored Stride: You may move in medium armor without a penalty to your movement speed. At 8th level, you may move in heavy armor without a penalty to your movement speed.\n\nBane of the Transformed: [Baron's Otherworldly Citadel] Choose up to three acquired templates. You always treat creatures with these templates as your favored prey. You may select this technique multiple times, each time selecting a different set of templates.\n\nChampion: Gain a Champion feat of your choice as a bonus feat. You must meet the prerequisites of the feat. You may select this reaper technique more than once. Each time it is selected, gain an additional feat.\n\nCourt Hunter (requires Partisan): [Baron's Otherworldly Citadel] Whenever you would select a favored prey with your reaper trophy, you may instead select a country with whose courtly graces you are wholly versed and studied. You apply your favored prey bonus against courtiers, officials, nobles, and gentry from that nation.\n\nDeceptive Weapon: Choose one weapon or shield with which you are proficient. You may add one other weapon to the chosen item. Each weapon acts as a mode for the deceptive weapon, being wielded and dealing damage as that weapon. Modes may be switched between as a free action. The deceptive weapon requires as many hands to wield as the current configuration. A deceptive weapon uses the same rules as a technician's invention for the purpose of rebuilding it, but does not count against the total number of inventions you can possess if you possess the invention class feature.\n\nDeceptive Weapon, Improved (requires deceptive weapon): [Lost Champions"
+    },
+    {
+      "name": "Prey Casting Bonus",
+      "type": "Ex",
+      "levels": [
+        3,
+        7,
+        11,
+        15,
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, whenever a reaper uses a magical sphere effect which targets or includes in its effect only favored prey, the DCs and spell penetration checks for the effect each increase by 1. At 7th level and every 4 levels after, these bonuses increase by 1."
+    },
+    {
+      "name": "Blessing of Silver",
+      "type": "Su",
+      "levels": [
+        3
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, a reaper always treats their weapons as being made of silver for the purposes of bypassing damage reduction. The blessing causes the reaper's held weapons to gleam as if cast in pale moonlight, though not so much as to impede attempts at stealth."
+    },
+    {
+      "name": "Blood Hunter",
+      "type": "Ex",
+      "levels": [
+        7
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 7th level, a reaper gains the scent universal monster ability. The range at which they can detect blood and bleeding creatures (including due to the bloodletter ability) is tripled, as if it were an overwhelming scent."
+    },
+    {
+      "name": "Tireless Foe",
+      "type": "Ex",
+      "levels": [
+        9
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 9th level, a reaper learns to sustain themselves with the minimum possible in order to hunt their prey relentlessly. The reaper only needs an eighth of their usual required food and water to survive, and the reaper only needs to sleep 2 hours per day to gain the benefit of 8 hours of sleep."
+    },
+    {
+      "name": "Discern True Form",
+      "type": "Ex",
+      "levels": [
+        11
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 11th level, a reaper's gains intimate knowledge on how monsters act while trying to hide their true forms. The reaper adds half their level to all Perception checks to see through disguises, and ignores any magical bonuses to Disguise checks made to oppose their Perception checks."
+    },
+    {
+      "name": "Engorged Scent",
+      "type": "Ex",
+      "levels": [
+        13
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 13th level, a reaper's base scent range is doubled. This range increase is applied separately to multipliers for strong or overpowering scents, so the reaper could detect an overpowering scent like a bleeding creature as far as 180 feet away in still air."
+    },
+    {
+      "name": "Reality Shudders",
+      "type": "Su",
+      "levels": [
+        17
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 17th level, a reaper has become so much like the monsters they study that reality itself has a difficult time telling if the reaper has joined their ranks or not. The reaper can pass as the creature type (or subtype) of the favored prey granted at 1st level by their cult class feature without the need for a Disguise check, and might be mistaken as one by a casual observer unless the reaper actively asserts their original identity.\n\nOnce the reaper reaches 20th level, this ability ceases to function and instead gives the reaper a +5 competence bonus to disguise checks."
+    },
+    {
+      "name": "Eternal Foe",
+      "type": "Ex",
+      "levels": [
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 19th level, a reaper's obsessive drive to hunt their favored prey has almost completely subsumed their mortality. The reaper no longer takes ability score penalties or receives ability score bonuses for aging and cannot be magically aged. As long as the reaper has attempted to hunt one of their favored prey within the last year, they cannot die of old age.\n\nAdditionally, the reaper no longer needs to sleep, eat, or drink in order to survive in a given day as long as they've drunk a mouthful of blood or inflicted bleed damage with their bloodletter ability that day."
+    },
+    {
+      "name": "Soul Crisis",
+      "type": "Ex",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 20th level, a reaper faces a choice. Their occult studies have almost completely devoured their soul, and they must choose to reclaim or surrender their soul.\n\nIf the reaper surrenders their soul, they undergo a final transformation listed in the apotheosis ability of their chosen cult. If they instead reclaim their soul, the reaper reasserts their identity and purges the corruption their occult teachings have caused.\n\nA reclaimed soul causes the reaper to lose all benefits of the cult class feature except for the permanent favored prey gained at 1st level. In exchange, the reaper immediately gains five combat feats of their choice, fast healing 5, and becomes immune to ability damage, ability drain, death effects, and level drain."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 1,
+      "choices": [
+        "bloodletter",
+        "casting",
+        "favored prey +2"
+      ]
+    },
+    {
+      "level": 3,
+      "choices": [
+        "Blessing of silver"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "choices": [
+        "favored prey +4"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 10,
+      "choices": [
+        "Favored prey +6"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 15,
+      "choices": [
+        "Favored prey +8"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "Favored prey +10",
+        "soul crisis",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

@@ -1,0 +1,563 @@
+{
+  "slug": "conscript",
+  "name": "Conscript",
+  "group": "practitioner",
+  "url": "http://spheresofpower.wikidot.com/conscript",
+  "source": "Spheres of Power wiki",
+  "hitDie": 10,
+  "alignment": "Any",
+  "role": "Conscripts learn all of their combat training on the battlefield, and typically learn to fill whatever",
+  "classSkills": [
+    "Climb",
+    "Craft",
+    "Handle Animal",
+    "Knowledge (local)",
+    "Perception",
+    "Profession",
+    "Survival",
+    "Swim",
+    "chosen at character creation"
+  ],
+  "skillRanksPerLevel": 4,
+  "babProgression": "FULL",
+  "saveProgressions": {
+    "fort": "GOOD",
+    "ref": "GOOD",
+    "will": "POOR"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+1",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+0",
+      "special": [
+        "Bonus feat",
+        "bonus talent",
+        "combat specializations",
+        "combat training"
+      ],
+      "columns": {
+        "Combat Talents": "1"
+      },
+      "choices": [
+        "Bonus feat",
+        "bonus talent",
+        "combat specializations",
+        "combat training"
+      ]
+    },
+    {
+      "level": 2,
+      "bab": "+2",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+0",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Combat Talents": "2"
+      },
+      "choices": [
+        "Bonus feat"
+      ]
+    },
+    {
+      "level": 3,
+      "bab": "+3",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+1",
+      "special": [
+        "Bonus talent"
+      ],
+      "columns": {
+        "Combat Talents": "3"
+      },
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 4,
+      "bab": "+4",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+1",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Combat Talents": "4"
+      },
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+5",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+1",
+      "special": [
+        "Bonus talent"
+      ],
+      "columns": {
+        "Combat Talents": "5"
+      },
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 6,
+      "bab": "+6/+1",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+2",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Combat Talents": "6"
+      },
+      "choices": [
+        "Bonus feat"
+      ]
+    },
+    {
+      "level": 7,
+      "bab": "+7/+2",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+2",
+      "special": [
+        "Bonus talent"
+      ],
+      "columns": {
+        "Combat Talents": "7"
+      },
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 8,
+      "bab": "+8/+3",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+2",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Combat Talents": "8"
+      },
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+9/+4",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+3",
+      "special": [
+        "Bonus talent"
+      ],
+      "columns": {
+        "Combat Talents": "9"
+      },
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 10,
+      "bab": "+10/+5",
+      "fortSave": "+7",
+      "refSave": "+7",
+      "willSave": "+3",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Combat Talents": "10"
+      },
+      "choices": [
+        "Bonus feat"
+      ]
+    },
+    {
+      "level": 11,
+      "bab": "+11/+6/+1",
+      "fortSave": "+7",
+      "refSave": "+7",
+      "willSave": "+3",
+      "special": [
+        "Bonus talent"
+      ],
+      "columns": {
+        "Combat Talents": "11"
+      },
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 12,
+      "bab": "+12/+7/+2",
+      "fortSave": "+8",
+      "refSave": "+8",
+      "willSave": "+4",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Combat Talents": "12"
+      },
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+13/+8/+3",
+      "fortSave": "+8",
+      "refSave": "+8",
+      "willSave": "+4",
+      "special": [
+        "Bonus talent"
+      ],
+      "columns": {
+        "Combat Talents": "13"
+      },
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 14,
+      "bab": "+14/+9/+4",
+      "fortSave": "+9",
+      "refSave": "+9",
+      "willSave": "+4",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Combat Talents": "14"
+      },
+      "choices": [
+        "Bonus feat"
+      ]
+    },
+    {
+      "level": 15,
+      "bab": "+15/+10/+5",
+      "fortSave": "+9",
+      "refSave": "+9",
+      "willSave": "+5",
+      "special": [
+        "Bonus talent"
+      ],
+      "columns": {
+        "Combat Talents": "15"
+      },
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 16,
+      "bab": "+16/+11/+6/+1",
+      "fortSave": "+10",
+      "refSave": "+10",
+      "willSave": "+5",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Combat Talents": "16"
+      },
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+17/+12/+7/+2",
+      "fortSave": "+10",
+      "refSave": "+10",
+      "willSave": "+5",
+      "special": [
+        "Bonus talent"
+      ],
+      "columns": {
+        "Combat Talents": "17"
+      },
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 18,
+      "bab": "+18/+13/+8/+3",
+      "fortSave": "+11",
+      "refSave": "+11",
+      "willSave": "+6",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Combat Talents": "18"
+      },
+      "choices": [
+        "Bonus feat"
+      ]
+    },
+    {
+      "level": 19,
+      "bab": "+19/+14/+9/+4",
+      "fortSave": "+11",
+      "refSave": "+11",
+      "willSave": "+6",
+      "special": [
+        "Bonus talent"
+      ],
+      "columns": {
+        "Combat Talents": "19"
+      },
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 20,
+      "bab": "+20/+15/+10/+5",
+      "fortSave": "+12",
+      "refSave": "+12",
+      "willSave": "+6",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Combat Talents": "20"
+      },
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Combat Talents"
+  ],
+  "features": [
+    {
+      "name": "Combat Training",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "A conscript may combine combat spheres and talents to create powerful martial techniques. Conscripts are considered Expert combatants. When they gain their first level in the conscript class, conscripts may choose either Charisma, Intelligence or Wisdom as their practitioner modifier."
+    },
+    {
+      "name": "Bonus Feat",
+      "type": "",
+      "levels": [
+        1,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 1st, 2nd, and every 2 levels thereafter, a conscript gains a bonus feat. This may be spent on any combat or teamwork feat the conscript qualifies for, including the Extra Combat Talent feat."
+    },
+    {
+      "name": "Bonus Talent",
+      "type": "",
+      "levels": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 1st level and every 2 levels thereafter, the conscript gains a bonus talent in addition to those gained from his combat training class feature. These talents can be used to buy a new base combat sphere or to purchase any combat talent the conscript qualifies for from a sphere he possesses."
+    },
+    {
+      "name": "Combat Specializations",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 1st level, a conscript may choose specializations, gaining additional abilities at the cost of some versatility. Every specialization costs a number of the conscript's bonus feats, as indicated on Table: Conscript Specializations. Each specialization costs either 1, 2, or 3 specialization points. A conscript cannot have more than 5 points worth of specializations.\n\n• Armor Training (Ex) (1 point)\n\nStarting at 3rd level, the conscript learns to be more maneuverable while wearing armor. Whenever he is wearing armor, the conscript reduces the armor check penalty by 1 (to a minimum of 0) and increases the maximum Dexterity bonus allowed by his armor by 1. At 6th level and every four levels thereafter (10th, 14th, and 18th), these bonuses increase by +1 each time, to a maximum -5 reduction of the armor check penalty and a +5 increase of the maximum Dexterity bonus allowed.\n\nIn addition, he can also move at his normal speed while wearing medium armor. At 8th level, he can move at his normal speed while wearing heavy armor.\n\n• Banner (Ex) (1 point)\n\nFrom 2nd level on, the conscript gains a banner that becomes a symbol of inspiration to his allies and companions. As long as the conscript's banner is clearly visible, all allies within 60 ft. receive a +1 morale bonus on saving throws against fear and a +1 morale bonus on attack rolls made as part of a charge. At 6th level, and every four levels thereafter, these bonuses increase by +1. The banner must be at least Small or larger and must be carried or displayed by the conscript or a creature he is currently using as a mount.\n\n• Barbarian Training (Ex) (2 points) [Conq. HB]\n\nAt 1st level, the conscript gains the Berserker sphere as a bonus sphere. If he already possesses a drawback that would remove berserking, he instead buys off that drawback.\n\nThe conscript is treated as having the barbarian's rage class feature, and treats his conscript levels as barbarian levels for the purposes of qualifying for feats, prerequisites, and determining the effects of rage powers. The conscript may use a rage power while berserking as though it were an (adrenaline) talent. The conscript may use rage powers as though they were (adrena"
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 1,
+      "choices": [
+        "Bonus feat",
+        "bonus talent",
+        "combat specializations",
+        "combat training"
+      ]
+    },
+    {
+      "level": 2,
+      "choices": [
+        "Bonus feat"
+      ]
+    },
+    {
+      "level": 3,
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 6,
+      "choices": [
+        "Bonus feat"
+      ]
+    },
+    {
+      "level": 7,
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 10,
+      "choices": [
+        "Bonus feat"
+      ]
+    },
+    {
+      "level": 11,
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 14,
+      "choices": [
+        "Bonus feat"
+      ]
+    },
+    {
+      "level": 15,
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 18,
+      "choices": [
+        "Bonus feat"
+      ]
+    },
+    {
+      "level": 19,
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

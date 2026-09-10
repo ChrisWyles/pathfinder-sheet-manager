@@ -1,0 +1,586 @@
+{
+  "slug": "armiger",
+  "name": "Armiger",
+  "group": "practitioner",
+  "url": "http://spheresofpower.wikidot.com/armiger",
+  "source": "Spheres of Power wiki",
+  "hitDie": 10,
+  "alignment": "Any",
+  "role": "The armiger is formidable in both ranged and melee combat, able to master a variety of weapons",
+  "classSkills": [
+    "Acrobatics",
+    "Climb",
+    "Craft",
+    "Intimidate",
+    "Knowledge (dungeoneering)",
+    "Knowledge (geography)",
+    "Knowledge (local)",
+    "Knowledge (nobility)",
+    "Perception",
+    "Profession",
+    "Ride",
+    "Sense Motive",
+    "Sleight of Hand",
+    "Survival",
+    "Swim"
+  ],
+  "skillRanksPerLevel": 4,
+  "babProgression": "FULL",
+  "saveProgressions": {
+    "fort": "GOOD",
+    "ref": "GOOD",
+    "will": "POOR"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+1",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+0",
+      "special": [
+        "Combat training",
+        "customized weapons (3 weapons)",
+        "quick change"
+      ],
+      "columns": {
+        "Combat Talents": "0",
+        "Talents Granted per Customized Weapon": "1"
+      },
+      "choices": [
+        "Combat training",
+        "customized weapons (3 weapons)"
+      ]
+    },
+    {
+      "level": 2,
+      "bab": "+2",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+0",
+      "special": [
+        "Prowess"
+      ],
+      "columns": {
+        "Combat Talents": "1",
+        "Talents Granted per Customized Weapon": "1"
+      },
+      "choices": [
+        "Prowess"
+      ]
+    },
+    {
+      "level": 3,
+      "bab": "+3",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+1",
+      "special": [
+        "Focusing switch"
+      ],
+      "columns": {
+        "Combat Talents": "1",
+        "Talents Granted per Customized Weapon": "2"
+      },
+      "choices": []
+    },
+    {
+      "level": 4,
+      "bab": "+4",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+1",
+      "special": [
+        "Prowess"
+      ],
+      "columns": {
+        "Combat Talents": "2",
+        "Talents Granted per Customized Weapon": "2"
+      },
+      "choices": [
+        "Prowess",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+5",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+1",
+      "special": [
+        "Enhanced customization +1",
+        "rapid assault"
+      ],
+      "columns": {
+        "Combat Talents": "2",
+        "Talents Granted per Customized Weapon": "2"
+      },
+      "choices": []
+    },
+    {
+      "level": 6,
+      "bab": "+6/+1",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+2",
+      "special": [
+        "Prowess"
+      ],
+      "columns": {
+        "Combat Talents": "3",
+        "Talents Granted per Customized Weapon": "2"
+      },
+      "choices": [
+        "Prowess"
+      ]
+    },
+    {
+      "level": 7,
+      "bab": "+7/+2",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+2",
+      "special": [
+        "Lightning change"
+      ],
+      "columns": {
+        "Combat Talents": "3",
+        "Talents Granted per Customized Weapon": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+8/+3",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+2",
+      "special": [
+        "Prowess"
+      ],
+      "columns": {
+        "Combat Talents": "4",
+        "Talents Granted per Customized Weapon": "3"
+      },
+      "choices": [
+        "Prowess",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+9/+4",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+3",
+      "special": [
+        "Enhanced customization +2"
+      ],
+      "columns": {
+        "Combat Talents": "4",
+        "Talents Granted per Customized Weapon": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+10/+5",
+      "fortSave": "+7",
+      "refSave": "+7",
+      "willSave": "+3",
+      "special": [
+        "Prowess"
+      ],
+      "columns": {
+        "Combat Talents": "5",
+        "Talents Granted per Customized Weapon": "3"
+      },
+      "choices": [
+        "Prowess"
+      ]
+    },
+    {
+      "level": 11,
+      "bab": "+11/+6/+1",
+      "fortSave": "+7",
+      "refSave": "+7",
+      "willSave": "+3",
+      "special": [
+        "Customized weapons (4 weapons)"
+      ],
+      "columns": {
+        "Combat Talents": "5",
+        "Talents Granted per Customized Weapon": "4"
+      },
+      "choices": [
+        "Customized weapons (4 weapons)"
+      ]
+    },
+    {
+      "level": 12,
+      "bab": "+12/+7/+2",
+      "fortSave": "+8",
+      "refSave": "+8",
+      "willSave": "+4",
+      "special": [
+        "Prowess"
+      ],
+      "columns": {
+        "Combat Talents": "6",
+        "Talents Granted per Customized Weapon": "4"
+      },
+      "choices": [
+        "Prowess",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+13/+8/+3",
+      "fortSave": "+8",
+      "refSave": "+8",
+      "willSave": "+4",
+      "special": [
+        "Enhanced customization +3"
+      ],
+      "columns": {
+        "Combat Talents": "6",
+        "Talents Granted per Customized Weapon": "4"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+14/+9/+4",
+      "fortSave": "+9",
+      "refSave": "+9",
+      "willSave": "+4",
+      "special": [
+        "Prowess"
+      ],
+      "columns": {
+        "Combat Talents": "7",
+        "Talents Granted per Customized Weapon": "4"
+      },
+      "choices": [
+        "Prowess"
+      ]
+    },
+    {
+      "level": 15,
+      "bab": "+15/+10/+5",
+      "fortSave": "+9",
+      "refSave": "+9",
+      "willSave": "+5",
+      "special": [
+        "Lightning assault"
+      ],
+      "columns": {
+        "Combat Talents": "7",
+        "Talents Granted per Customized Weapon": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 16,
+      "bab": "+16/+11/+6/+1",
+      "fortSave": "+10",
+      "refSave": "+10",
+      "willSave": "+5",
+      "special": [
+        "Prowess"
+      ],
+      "columns": {
+        "Combat Talents": "8",
+        "Talents Granted per Customized Weapon": "5"
+      },
+      "choices": [
+        "Prowess",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+17/+12/+7/+2",
+      "fortSave": "+10",
+      "refSave": "+10",
+      "willSave": "+5",
+      "special": [
+        "Enhanced customization +4"
+      ],
+      "columns": {
+        "Combat Talents": "8",
+        "Talents Granted per Customized Weapon": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 18,
+      "bab": "+18/+13/+8/+3",
+      "fortSave": "+11",
+      "refSave": "+11",
+      "willSave": "+6",
+      "special": [
+        "Prowess"
+      ],
+      "columns": {
+        "Combat Talents": "9",
+        "Talents Granted per Customized Weapon": "5"
+      },
+      "choices": [
+        "Prowess"
+      ]
+    },
+    {
+      "level": 19,
+      "bab": "+19/+14/+9/+4",
+      "fortSave": "+11",
+      "refSave": "+11",
+      "willSave": "+6",
+      "special": [
+        "Customized weapons (5 weapons)"
+      ],
+      "columns": {
+        "Combat Talents": "9",
+        "Talents Granted per Customized Weapon": "6"
+      },
+      "choices": [
+        "Customized weapons (5 weapons)"
+      ]
+    },
+    {
+      "level": 20,
+      "bab": "+20/+15/+10/+5",
+      "fortSave": "+12",
+      "refSave": "+12",
+      "willSave": "+6",
+      "special": [
+        "Prowess",
+        "unlimited assault"
+      ],
+      "columns": {
+        "Combat Talents": "10",
+        "Talents Granted per Customized Weapon": "6"
+      },
+      "choices": [
+        "Prowess",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Combat Talents",
+    "Talents Granted per Customized Weapon"
+  ],
+  "features": [
+    {
+      "name": "Combat Training",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "An armiger may combine combat spheres and talents to create powerful martial techniques. Armigers use the Proficient talent progression. When they gain their first level in the armiger class, armigers may choose either Charisma, Intelligence or Wisdom as their practitioner modifier."
+    },
+    {
+      "name": "Customized Weapons",
+      "type": "Ex",
+      "levels": [
+        1,
+        11,
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 1st level, an armiger may customize up to three sets of weapons in a process that takes 8 hours of modification, drilling, and practice each, reworking scabbards, modifying grips, adding hooks and straps, and other tweaks to suit her personal fighting style. Each set may consist of: a single weapon, a pair of weapons that are wielded simultaneously, up to 10 identical thrown weapons, or up to 50 pieces of ammunition. A given weapon cannot be part of more than one set simultaneously. The armiger always treats her active weapon as if it were masterwork.\n\nThe armiger may choose to customize a new weapon by spending 8 hours, choosing which existing customizations to lose. The armiger must be proficient with the weapon to customize it and may not customize siege weapons. If the armiger possesses proficiency with shields, she may customize a shield with one of her weapon customization sets, either as a single weapon or as part of a pair of weapons. The enhancement bonus from enhanced customization only applies to using the shield as a weapon.\n\nThe customization process allows the armiger to train in additional talents unique to each customized weapon. At first level, each customized weapon grants a single sphere or talent. A customized weapon must possess a base sphere before additional talents of that sphere may be added unless the armiger possesses that sphere, such as through the bonus talents gained from possessing the combat training class feature, from the Extra Combat Talent feat, or levels in another class. The armiger may not use talents gained from a customized weapon to qualify for feats or to meet other prerequisites unless otherwise noted. Customization talents may be changed with the same action required to customize a new weapon. Spheres and talents that grant skill retraining never grant it when gained via a customized weapon.\n\nThe armiger may only benefit from the talents granted by one customized weapon at a time. The weapon she is currently gaining talents from is the active weapon. A customized weapon may be activated as part of drawing it or otherwise recovering it (such as picking it up from the ground) with no action cost. The active weapon m"
+    },
+    {
+      "name": "Quick Change",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 1st level, an armiger gains the benefits of the Quick Draw feat with her customized weapons and may stow customized weapons as a free action once per round, plus one additional time at 5th level and every 5 levels thereafter. This class feature counts as possessing the Quick Draw feat for the purposes of meeting the prerequisites of other feats, though any feat qualified for this way may only be applied to customized weapons."
+    },
+    {
+      "name": "Prowess",
+      "type": "",
+      "levels": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 2nd level and every even level thereafter, the armiger may gain a prowess from the following list. Each prowess may only be selected once unless otherwise noted. Any time a prowess requires selecting a specific customized weapon, the benefits of that prowess may be moved to a different weapon at any time a new weapon is customized. All prowesses are extraordinary abilities unless noted.\n\n• Armored Armiger\n\nThe armiger gains Armor Training from the Equipment sphere as a bonus talent. If the armiger already possesses this talent or otherwise possesses proficiency with heavy armor, she instead gains an Equipment talent of her choice.\n\n• Bare-Fisted Training\n\nThe armiger may choose unarmed strikes or a natural weapon as a customized weapon, training to quickly switch away from her other weapons. She may make unarmed strikes or a natural attack her active weapon as a free action or any time she stows her active weapon. Additionally, the armiger gains her choice of the Open Hand sphere or the Boxing sphere (or a talent from either of those spheres if she already possesses the base sphere) as a bonus talent. The armiger's unarmed strike counts as a single weapon for the purpose of customization and thus can only be part of a single weapon set.\n\n• Champion [CS]\n\nThe armiger gains a Champion feat of her choice as a bonus feat. She must meet the prerequisites of the feat. This prowess can be gained multiple times.\n\n• Clockwork Custom Weapons (Su) [CS]\n\nYou learn how to outfit your weapons with clockwork dials and mechanisms that also act as minor supernatural ritual charms. Whenever you successfully damage an opponent with one of your customized weapons while using a melee attack action, you may expend your martial focus to force the opponent to succeed on a Will saving throw (DC 10 + 1/2 your class level + your practitioner modifier) or be slowed (as the Time sphere alter time effect) for 1 round.\n\n• Costumed Combatant [LotS]\n\nThe armiger gains the Subterfuge sphere as a bonus sphere. Whenever she stows an active weapon and draws another customized weapon, she may spend martial focus to use fast disguise as part of the action to draw a new weapon.\n\n• Customized Bond\n\n"
+    },
+    {
+      "name": "Focusing Switch",
+      "type": "Ex",
+      "levels": [
+        3
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, while using her active weapon, whenever the armiger succeeds on a combat maneuver, confirms a critical hit, or reduces a foe to 0 or fewer hit points, she may regain martial focus by activating a different customized weapon as an immediate action, stowing the current weapon and drawing the new one as needed."
+    },
+    {
+      "name": "Rapid Assault",
+      "type": "Ex",
+      "levels": [
+        5
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Starting at 5th level, the armiger becomes an expert at rapidly integrating multiple weapons into her attack routines. Whenever the armiger successfully damages a creature or succeeds on a combat maneuver while using the attack action with a customized weapon, she may expend martial focus as a swift action to make an additional attack against that creature at her highest base attack bonus. This attack takes a -2 penalty on the attack roll and can only be taken with a customized weapon other than the one used in the triggering attack. At 10th level and every five levels thereafter, the armiger may make an additional attack, as long as each previous attack was successful, using a different customized weapon each time and increasing the attack penalty by 2 each time. The armiger cannot use the same weapon twice in the same attack sequence with this ability. The armiger may spend a move action to move up to her speed between the triggering action and her first additional attack."
+    },
+    {
+      "name": "Enhanced Customization",
+      "type": "Ex",
+      "levels": [
+        5,
+        9,
+        13,
+        17
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 5th level, the armiger treats the enhancement bonus of her active weapon set as if it were 1 higher. This bonus increases by +1 every four levels thereafter, though it cannot cause the total enhancement of the weapon to exceed +5. This bonus applies even if the weapon is not masterwork or does not already have at least a +1 bonus."
+    },
+    {
+      "name": "Lightning Change",
+      "type": "Ex",
+      "levels": [
+        7
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 7th level, once per round the armiger may stow her active weapon and draw and activate another customized weapon as a free action even when it is not her turn. This is in addition to the number of times per round the armiger may stow her weapons per round with quick change."
+    },
+    {
+      "name": "Lightning Assault",
+      "type": "Ex",
+      "levels": [
+        15
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 15th level, as a full-round action, the armiger may expend martial focus to make two attack actions. Each attack action must be made with a different customized weapon. This ability cannot be used to trigger her rapid assault ability."
+    },
+    {
+      "name": "Unlimited Assault",
+      "type": "Ex",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level, the armiger is no longer required to expend martial focus to activate her lightning assault ability and may trigger her rapid assault ability with the first of the granted attack actions to damage a creature."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 1,
+      "choices": [
+        "Combat training",
+        "customized weapons (3 weapons)"
+      ]
+    },
+    {
+      "level": 2,
+      "choices": [
+        "Prowess"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "Prowess",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 6,
+      "choices": [
+        "Prowess"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "Prowess",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 10,
+      "choices": [
+        "Prowess"
+      ]
+    },
+    {
+      "level": 11,
+      "choices": [
+        "Customized weapons (4 weapons)"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "Prowess",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 14,
+      "choices": [
+        "Prowess"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "Prowess",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 18,
+      "choices": [
+        "Prowess"
+      ]
+    },
+    {
+      "level": 19,
+      "choices": [
+        "Customized weapons (5 weapons)"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "Prowess",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

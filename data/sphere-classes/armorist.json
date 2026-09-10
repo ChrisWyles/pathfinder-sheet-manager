@@ -1,0 +1,609 @@
+{
+  "slug": "armorist",
+  "name": "Armorist",
+  "group": "spherecaster",
+  "url": "http://spheresofpower.wikidot.com/armorist",
+  "source": "Spheres of Power wiki",
+  "hitDie": 10,
+  "alignment": "Any",
+  "role": "Armorists are masters of combat who use items, rather than simple brute force, to dominate their enemies",
+  "classSkills": [
+    "Acrobatics",
+    "Climb",
+    "Craft",
+    "Intimidate",
+    "Knowledge (arcana)",
+    "Knowledge (engineering)",
+    "Knowledge (nobility)",
+    "Perception",
+    "Profession",
+    "Ride",
+    "Spellcraft",
+    "Swim",
+    "Use Magic Device"
+  ],
+  "skillRanksPerLevel": 4,
+  "babProgression": "FULL",
+  "saveProgressions": {
+    "fort": "GOOD",
+    "ref": "POOR",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+1",
+      "fortSave": "+2",
+      "refSave": "+0",
+      "willSave": "+2",
+      "special": [
+        "Bound equipment (+1)",
+        "casting",
+        "spell pool",
+        "summon equipment"
+      ],
+      "columns": {
+        "Max Bonus": "+0",
+        "Caster Level": "+0 (1)",
+        "Magic Talents": "0 (+2)"
+      },
+      "choices": []
+    },
+    {
+      "level": 2,
+      "bab": "+2",
+      "fortSave": "+3",
+      "refSave": "+0",
+      "willSave": "+3",
+      "special": [
+        "Arsenal trick"
+      ],
+      "columns": {
+        "Max Bonus": "+0",
+        "Caster Level": "+1",
+        "Magic Talents": "1"
+      },
+      "choices": [
+        "Arsenal trick"
+      ]
+    },
+    {
+      "level": 3,
+      "bab": "+3",
+      "fortSave": "+3",
+      "refSave": "+1",
+      "willSave": "+3",
+      "special": [
+        "Armor training",
+        "bound equipment (+2)"
+      ],
+      "columns": {
+        "Max Bonus": "+1",
+        "Caster Level": "+1",
+        "Magic Talents": "1"
+      },
+      "choices": []
+    },
+    {
+      "level": 4,
+      "bab": "+4",
+      "fortSave": "+4",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Arsenal trick"
+      ],
+      "columns": {
+        "Max Bonus": "+1",
+        "Caster Level": "+2",
+        "Magic Talents": "2"
+      },
+      "choices": [
+        "Arsenal trick",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+5",
+      "fortSave": "+4",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Bind implement",
+        "bound equipment (+3, 2x)"
+      ],
+      "columns": {
+        "Max Bonus": "+1",
+        "Caster Level": "+2",
+        "Magic Talents": "2"
+      },
+      "choices": []
+    },
+    {
+      "level": 6,
+      "bab": "+6/+1",
+      "fortSave": "+5",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Arsenal trick"
+      ],
+      "columns": {
+        "Max Bonus": "+2",
+        "Caster Level": "+3",
+        "Magic Talents": "3"
+      },
+      "choices": [
+        "Arsenal trick"
+      ]
+    },
+    {
+      "level": 7,
+      "bab": "+7/+2",
+      "fortSave": "+5",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Armor training",
+        "bound equipment (+4)"
+      ],
+      "columns": {
+        "Max Bonus": "+2",
+        "Caster Level": "+3",
+        "Magic Talents": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+8/+3",
+      "fortSave": "+6",
+      "refSave": "+2",
+      "willSave": "+6",
+      "special": [
+        "Arsenal trick"
+      ],
+      "columns": {
+        "Max Bonus": "+2",
+        "Caster Level": "+4",
+        "Magic Talents": "4"
+      },
+      "choices": [
+        "Arsenal trick",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+9/+4",
+      "fortSave": "+6",
+      "refSave": "+3",
+      "willSave": "+6",
+      "special": [
+        "Bound equipment (+5)"
+      ],
+      "columns": {
+        "Max Bonus": "+3",
+        "Caster Level": "+4",
+        "Magic Talents": "4"
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+10/+5",
+      "fortSave": "+7",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Arsenal trick",
+        "boost equipment",
+        "bound equipment (x3)"
+      ],
+      "columns": {
+        "Max Bonus": "+3",
+        "Caster Level": "+5",
+        "Magic Talents": "5"
+      },
+      "choices": [
+        "Arsenal trick"
+      ]
+    },
+    {
+      "level": 11,
+      "bab": "+11/+6/+1",
+      "fortSave": "+7",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Armor training",
+        "bound equipment (+6)"
+      ],
+      "columns": {
+        "Max Bonus": "+3",
+        "Caster Level": "+5",
+        "Magic Talents": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 12,
+      "bab": "+12/+7/+2",
+      "fortSave": "+8",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Arsenal trick"
+      ],
+      "columns": {
+        "Max Bonus": "+4",
+        "Caster Level": "+6",
+        "Magic Talents": "6"
+      },
+      "choices": [
+        "Arsenal trick",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+13/+8/+3",
+      "fortSave": "+8",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Bound equipment (+7)"
+      ],
+      "columns": {
+        "Max Bonus": "+4",
+        "Caster Level": "+6",
+        "Magic Talents": "6"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+14/+9/+4",
+      "fortSave": "+9",
+      "refSave": "+4",
+      "willSave": "+9",
+      "special": [
+        "Arsenal trick"
+      ],
+      "columns": {
+        "Max Bonus": "+4",
+        "Caster Level": "+7",
+        "Magic Talents": "7"
+      },
+      "choices": [
+        "Arsenal trick"
+      ]
+    },
+    {
+      "level": 15,
+      "bab": "+15/+10/+5",
+      "fortSave": "+9",
+      "refSave": "+5",
+      "willSave": "+9",
+      "special": [
+        "Armor training",
+        "bound equipment (+8, 4x)",
+        "quick summons"
+      ],
+      "columns": {
+        "Max Bonus": "+5",
+        "Caster Level": "+7",
+        "Magic Talents": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 16,
+      "bab": "+16/+11/+6/+1",
+      "fortSave": "+10",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Arsenal trick"
+      ],
+      "columns": {
+        "Max Bonus": "+5",
+        "Caster Level": "+8",
+        "Magic Talents": "8"
+      },
+      "choices": [
+        "Arsenal trick",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+17/+12/+7/+2",
+      "fortSave": "+10",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Bound equipment (+9)"
+      ],
+      "columns": {
+        "Max Bonus": "+5",
+        "Caster Level": "+8",
+        "Magic Talents": "8"
+      },
+      "choices": []
+    },
+    {
+      "level": 18,
+      "bab": "+18/+13/+8/+3",
+      "fortSave": "+11",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Arsenal trick"
+      ],
+      "columns": {
+        "Max Bonus": "+6",
+        "Caster Level": "+9",
+        "Magic Talents": "9"
+      },
+      "choices": [
+        "Arsenal trick"
+      ]
+    },
+    {
+      "level": 19,
+      "bab": "+19/+14/+9/+4",
+      "fortSave": "+11",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Armor training",
+        "bound equipment (+10)"
+      ],
+      "columns": {
+        "Max Bonus": "+6",
+        "Caster Level": "+9",
+        "Magic Talents": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+20/+15/+10/+5",
+      "fortSave": "+12",
+      "refSave": "+6",
+      "willSave": "+12",
+      "special": [
+        "Arsenal trick",
+        "bound equipment (5x)",
+        "infinite arsenal"
+      ],
+      "columns": {
+        "Max Bonus": "+6",
+        "Caster Level": "+10",
+        "Magic Talents": "10"
+      },
+      "choices": [
+        "Arsenal trick",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Max Bonus",
+    "Caster Level",
+    "Magic Talents"
+  ],
+  "features": [
+    {
+      "name": "Weapon and Armor Proficiency",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "An armorist is proficient with all simple and martial weapons, light armor, medium armor, and shields (except tower shields)."
+    },
+    {
+      "name": "Casting",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "An armorist may combine spheres and talents to create magical effects. An armorist is considered a Low-Caster. (Note: All casters gain 2 bonus talents and a casting tradition the first time they gain the casting class feature.)"
+    },
+    {
+      "name": "Spell Pool",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "An armorist gains a small reservoir of energy she can call on to create truly wondrous effects, called a spell pool. This pool contains a number of spell points equal to her class level + her casting ability modifier (minimum 1). This pool replenishes once per day after roughly 8 hours of rest."
+    },
+    {
+      "name": "Magic Talents",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "An armorist gains a magic talent at 2nd level and every 2 levels thereafter, according to Table: The Armorist."
+    },
+    {
+      "name": "Summon Equipment",
+      "type": "Su",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "An armorist may spend a spell point as a swift action or move action to conjure a weapon, shield, or suit of armor into her hands or directly onto her body, which stays for 1 minute per class level before disappearing.\n\nThe armorist must be proficient with the weapon or type of shield or armor to summon it, and in the case of exotic weapons, she must have studied a pre-existing version of the weapon for at least 1 week. This weapon, shield, or suit of armor is masterwork quality, and while antimagic barriers may prevent the armorist from summoning these items, the items themselves are not considered magical creations and so may not be dispelled. Ranged weapons come with 50 pieces of basic ammunition.\n\nWhen summoning armor, the armorist may also summon the suit directly onto a willing touched target's body as a standard action. When summoning armor onto her own or another target's body directly, their current armor disappears in favor of the new armor until the duration is over and the old armor returns. Dismissing a piece of summoned equipment is a free action.\n\nSummoned equipment is always considered masterwork quality and gains a +1 enhancement bonus for every 3 armorist levels the creator possesses, to a maximum of +6 at 18th level. These bonuses may be traded for special abilities according to Table: Bound Equipment. A piece of summoned equipment cannot have higher than a +5 enhancement bonus; enhancement bonuses beyond this amount must be traded for special abilities."
+    },
+    {
+      "name": "Bound Equipment",
+      "type": "Su",
+      "levels": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        10,
+        11,
+        13,
+        15,
+        17,
+        19,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "An armorist gains a bond with a specific weapon, shield, or suit of armor that is far greater than with her other summoned equipment. Bound equipment is summoned and treated just like summoned equipment, except it does not cost a spell point to summon, cannot be used by anyone other than the armorist herself (the item's magic does not function in another's hands), comes with limitless ammunition, and disappears 1 round after leaving the armorist's hands. She gains another piece of bound equipment at 5th level, 10th level, 15th level, and 20th level, and may bond implements beginning at 5th level.\n\nBound equipment is masterwork quality, and gains a +1 enhancement bonus for every odd armorist level possessed. A piece of bound equipment's enhancement bonus cannot exceed +1, +1 per 3 armorist levels (maximum +5); all enhancement bonus beyond this must be traded for special abilities.\n\nAn armorist may give her bound weapon special abilities from Table: Bound Equipment, trading enhancement bonus for other benefits. Bound equipment cannot be enchanted through any other means than gaining armorist levels and must retain at least a +1 enhancement bonus. Bound implements use the rules presented in the Magic Items chapter, granting the armorist enhancement bonuses to her caster level with one sphere, chosen when the implement is created. A piece of bound equipment may be an implement or a weapon/shield/suit of armor, but not both at the same time.\n\nOnce a piece of bound equipment has been selected, or once its special abilities have been chosen, they may only be changed if the armorist spends 8 hours (1 day) meditating to dismiss the old piece of bound equipment and create a new piece of bound equipment to take its place.\n\nThe armorist's bound equipment can be damaged and sundered, but always returns to full health the following day.\n\nA bound double-weapon must divide its enhancement bonuses and special abilities between the two ends (for example, a +5 bound quarterstaff could have a +3 bonus on one end and a +2 bonus on the other). Alternatively, the armorist may bind each end of the double weapon as a separate piece of bound equipment, thus granting full bonuses to each "
+    },
+    {
+      "name": "Arsenal Trick",
+      "type": "",
+      "levels": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level and every even-numbered level thereafter, the armorist gains an arsenal trick, representing the ways she has chosen to focus her study of equipment and its uses. Unless otherwise specified, an individual arsenal trick can only be gained once.\n\n• Additional Binding (requires bound equipment)\n\nThe armorist may bind an additional piece of equipment.\n\n• Advanced Armaments [LG]\n\nSource: Arcforge Players Compendium\n\nThe armorist can call more advanced armor and weaponry. When using summon equipment to call weapons which would have an enhancement bonus, the armorist may reduce the enhancement bonus of the summoned weapon in order to call a weapon worth a number of enhancement bonus points equal to the value of enhancement bonus sacrificed from the soulknife's Emulate Technological Melee Weapon or Emulate Technological Ranged Weapon blade skills table. The armorist cannot reduce a weapon's enhancement bonus below +1.\n\n• Agile Armor [LG]\n\nSource: Arcforge Players Compendium\n\nThe armorist's bound and summoned gear gains the floating and landing special abilities. The armorist adds quickness (+1) to the list of special abilities she may add to her bound and summoned armor.\n\n• Ammunition Specialist\n\nWhen the armorist summons a ranged weapon or calls a bound ranged weapon, she may summon non-basic ammunition. If it is a firearm it can be summoned with paper alchemical cartridges. Additionally, the armorist may summon up to 10 gp per armorist level of specialist ammunition; this ammunition replaces pieces of normal ammunition such that the summoned amount is still 50.\n\nThis arsenal trick can be taken twice. If taken a second time, increase the value of summoned non-basic ammunition to 25 gp per armorist level.\n\n• Arms of the Outer Planes\n\nThe armorist adds anarchic (+2), axiomatic (+2), holy (+2), and unholy (+2) to the list of special abilities she may add to her bound and summoned weapons.\n\n• Battle Magician (requires armorist 5)\n\nThe armorist's implements gain the exacting and meditation special abilities.\n\n• Bloody Equipment\n\nAll the armorist's bound and summoned weapons gain the blood dowsing special ability. The armorist adds thirsty (+1) to the special abi"
+    },
+    {
+      "name": "Armor Training",
+      "type": "Ex",
+      "levels": [
+        3,
+        7,
+        11,
+        15,
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Starting at 3rd level, an armorist learns to be more maneuverable while wearing armor. Whenever she is wearing armor, she reduces the armor check penalty by 1 (minimum 0) and increases the maximum Dexterity bonus allowed by her armor by 1. Every four levels thereafter (7th, 11th, 15th, and 19th) these bonuses increase by +1, to a maximum -5 reduction of the armor check penalty and a +5 increase of the maximum Dexterity bonus allowed.\n\nIn addition, an armorist can also move at her normal speed while wearing medium armor. At 7th level, an armorist can move at her normal speed while wearing heavy armor."
+    },
+    {
+      "name": "Boost Equipment",
+      "type": "",
+      "levels": [
+        10
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Beginning at 10th level, instead of summoning equipment, the armorist may touch a piece of magical equipment and spend a spell point to increase its enhancement bonus by half the bonus she may grant to summoned equipment (minimum +1). This has the same duration as summoned equipment and causes the item to count as summoned equipment for the purpose of arsenal tricks. This requires a standard action to boost equipment being wielded by another, but can be done with the same action cost as summoning equipment if the armorist is already touching or wielding the piece of equipment. The armorist must be able to summon a type of equipment (weapons, shields, or armor) in order to boost a piece of similar equipment.\n\nJust as with summoned equipment, a boost cannot raise a piece of equipment's enhancement bonus higher than +5, but can be traded for special abilities. Boosting an item a second time replaces the first boosting, and pieces of bound equipment cannot be boosted."
+    },
+    {
+      "name": "Quick Summons",
+      "type": "",
+      "levels": [
+        15
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 15th level, the armorist may summon or switch equipment onto herself as an immediate action or free action."
+    },
+    {
+      "name": "Infinite Arsenal",
+      "type": "Su",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At level 20, the armorist no longer needs to spend a spell point to summon equipment, and the duration of summoned equipment and boosted equipment increases to 1 hour per class level."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 2,
+      "choices": [
+        "Arsenal trick"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "Arsenal trick",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 6,
+      "choices": [
+        "Arsenal trick"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "Arsenal trick",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 10,
+      "choices": [
+        "Arsenal trick"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "Arsenal trick",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 14,
+      "choices": [
+        "Arsenal trick"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "Arsenal trick",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 18,
+      "choices": [
+        "Arsenal trick"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "Arsenal trick",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

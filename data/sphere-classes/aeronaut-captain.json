@@ -1,0 +1,137 @@
+{
+  "slug": "aeronaut-captain",
+  "name": "Aeronaut Captain",
+  "group": "practitioner",
+  "url": "http://spheresofpower.wikidot.com/aeronaut-captain",
+  "source": "Spheres of Power wiki",
+  "hitDie": null,
+  "alignment": "Any Hit Dice: d10 Requirements To qualify to become an aeronaut captain, a character must fulfill all the following criteria",
+  "role": "",
+  "classSkills": [
+    "Appraise",
+    "Bluff",
+    "Diplomacy",
+    "Fly",
+    "Heal",
+    "Intimidate",
+    "Knowledge",
+    "Knowledge",
+    "Knowledge",
+    "Knowledge",
+    "Perception",
+    "Profession",
+    "Survival"
+  ],
+  "skillRanksPerLevel": null,
+  "babProgression": null,
+  "saveProgressions": {
+    "fort": null,
+    "ref": null,
+    "will": null
+  },
+  "advancement": [],
+  "talentColumns": [],
+  "features": [
+    {
+      "name": "Weapon and Armor Proficiency",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "An aeronaut captain gains the Firearm Proficiency martial talent. If the aeronaut captain already possesses this talent, they may gain any one feat of their choice.\n\nFirearm Proficiency (discipline) You gain proficiency with all firearms (except siege weapons) and the Gunsmithing feat."
+    },
+    {
+      "name": "Combat Training",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "An aeronaut captain may combine combat spheres and talents to create powerful martial techniques. Aeronaut captains are considered Expert combatants and use Wisdom as their practitioner modifier."
+    },
+    {
+      "name": "Air of Command",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "An aeronaut captain gains a bonus equal to his aeronaut captain level to all Charisma-based skill checks made aboard any vessel of which he is the currently acting captain, as well as to any loyalty checks he makes."
+    },
+    {
+      "name": "Siege Engineer",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "The aeronaut captain gains the Siege Engineer feat, whether or not he meets the prerequisites. If the aeronaut captain already possesses the Siege Engineer feat or the Exotic Weapon Proficiency feat for any siege engine, he may immediately retrain them."
+    },
+    {
+      "name": "Veteran Sailor",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "An aeronaut captain gains a bonus equal to his class level to Craft (cartography), Heal, Profession (carpentry), Profession (chef), Profession (courtesan), Profession (navigator), Profession (sailor), Profession (siege engineer), and Profession (soldier)."
+    },
+    {
+      "name": "Inspire Crew",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "Beginning at 2nd level, an aeronaut captain may spend a standard action to grant a bonus perk of his choice to one large crew, two medium crews, or up to 4 small crews under his command. Every crew gains the same perk. The aeronaut captain does not need to be the officer leading that crew, so long as the crew can see and hear him and recognizes him as their captain. This perk lasts for 1 minute per aeronaut captain level. An aeronaut captain can use this ability a number of times per day equal to his aeronaut captain level."
+    },
+    {
+      "name": "Aura of Command",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "Beginning at 3rd level, all allies within 60 feet of the aeronaut captain or within a vessel he commands (including the aeronaut captain himself) receives a +2 morale bonus on saving throws against charm and compulsion spells and effects."
+    },
+    {
+      "name": "Advanced Inspire Crew",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "Beginning at 4th level, an aeronaut captain can activate inspire crew as a swift action instead of a standard action, and may grant this benefit to up to 2 large crews, 4 medium crews, or 8 small crews."
+    },
+    {
+      "name": "Master Commander",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "At 5th level, whenever the aeronaut captain uses his inspire crew ability he may grant 2 perks instead of 1.\n\nIn addition, the aeronaut captain can spend a standard action to rally his crew, granting all allies within 60 feet an additional saving throw against any one spell or effect that is targeting them. This save is made at the original DC. Spells and effects that do not allow saving throws are unaffected by this ability. An ally cannot benefit from this ability more than once per day."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [],
+  "notes": [
+    "no 20-level advancement table on the page — likely an archetype or prestige-style class that modifies a base class"
+  ]
+}

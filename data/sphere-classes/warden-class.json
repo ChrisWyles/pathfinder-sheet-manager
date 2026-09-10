@@ -1,0 +1,714 @@
+{
+  "slug": "warden-class",
+  "name": "Warden",
+  "group": "champion",
+  "url": "http://spheresofpower.wikidot.com/warden-class",
+  "source": "Spheres of Power wiki",
+  "hitDie": 10,
+  "alignment": "Any",
+  "role": "A warden defends their party using a combination of defensive magic, incredible reflexes, and sheer force of will",
+  "classSkills": [
+    "Climb",
+    "Craft",
+    "Diplomacy",
+    "Handle Animal",
+    "Heal",
+    "Intimidate",
+    "Knowledge (arcana)",
+    "Knowledge (history)",
+    "Knowledge (local)",
+    "Knowledge (nobility)",
+    "Perception",
+    "Profession",
+    "Sense Motive",
+    "Spellcraft",
+    "Swim"
+  ],
+  "skillRanksPerLevel": 4,
+  "babProgression": "THREE_QUARTER",
+  "saveProgressions": {
+    "fort": "GOOD",
+    "ref": "POOR",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+0",
+      "fortSave": "+2",
+      "refSave": "+0",
+      "willSave": "+2",
+      "special": [
+        "Blended training",
+        "casting",
+        "mystical guardian",
+        "spell pool",
+        "steadfast",
+        "vigil"
+      ],
+      "columns": {
+        "Blended Training Talents": "1 (+2 magic)",
+        "Caster Level": "+0"
+      },
+      "choices": [
+        "mystical guardian"
+      ]
+    },
+    {
+      "level": 2,
+      "bab": "+1",
+      "fortSave": "+3",
+      "refSave": "+0",
+      "willSave": "+3",
+      "special": [
+        "Guard (+1)",
+        "reinforcement"
+      ],
+      "columns": {
+        "Blended Training Talents": "2",
+        "Caster Level": "+1"
+      },
+      "choices": [
+        "reinforcement"
+      ]
+    },
+    {
+      "level": 3,
+      "bab": "+2",
+      "fortSave": "+3",
+      "refSave": "+1",
+      "willSave": "+3",
+      "special": [
+        "Indomitable",
+        "routine patrol",
+        "vigil ability"
+      ],
+      "columns": {
+        "Blended Training Talents": "3",
+        "Caster Level": "+2"
+      },
+      "choices": []
+    },
+    {
+      "level": 4,
+      "bab": "+3",
+      "fortSave": "+4",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Focusing guard",
+        "reinforcement"
+      ],
+      "columns": {
+        "Blended Training Talents": "4",
+        "Caster Level": "+3"
+      },
+      "choices": [
+        "reinforcement",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+3",
+      "fortSave": "+4",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Expanded guard (two)",
+        "projected empathy"
+      ],
+      "columns": {
+        "Blended Training Talents": "5",
+        "Caster Level": "+3"
+      },
+      "choices": [
+        "Expanded guard (two)"
+      ]
+    },
+    {
+      "level": 6,
+      "bab": "+4",
+      "fortSave": "+5",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Guard (+2)",
+        "reinforcement"
+      ],
+      "columns": {
+        "Blended Training Talents": "6",
+        "Caster Level": "+4"
+      },
+      "choices": [
+        "reinforcement"
+      ]
+    },
+    {
+      "level": 7,
+      "bab": "+5",
+      "fortSave": "+5",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Lingering guard",
+        "vigil ability"
+      ],
+      "columns": {
+        "Blended Training Talents": "7",
+        "Caster Level": "+5"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+6/+1",
+      "fortSave": "+6",
+      "refSave": "+2",
+      "willSave": "+6",
+      "special": [
+        "Reinforcement",
+        "self-sufficiency"
+      ],
+      "columns": {
+        "Blended Training Talents": "8",
+        "Caster Level": "+6"
+      },
+      "choices": [
+        "Reinforcement",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+6/+1",
+      "fortSave": "+6",
+      "refSave": "+3",
+      "willSave": "+6",
+      "special": [
+        "Improved patrol",
+        "improved indomitable"
+      ],
+      "columns": {
+        "Blended Training Talents": "9",
+        "Caster Level": "+6"
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+7/+2",
+      "fortSave": "+7",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Guard (+3)",
+        "reinforcement"
+      ],
+      "columns": {
+        "Blended Training Talents": "10",
+        "Caster Level": "+7"
+      },
+      "choices": [
+        "reinforcement"
+      ]
+    },
+    {
+      "level": 11,
+      "bab": "+8/+3",
+      "fortSave": "+7",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Expanded guard (three)",
+        "vigil ability"
+      ],
+      "columns": {
+        "Blended Training Talents": "11",
+        "Caster Level": "+8"
+      },
+      "choices": [
+        "Expanded guard (three)"
+      ]
+    },
+    {
+      "level": 12,
+      "bab": "+9/+4",
+      "fortSave": "+8",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Reinforcement"
+      ],
+      "columns": {
+        "Blended Training Talents": "12",
+        "Caster Level": "+9"
+      },
+      "choices": [
+        "Reinforcement",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+9/+4",
+      "fortSave": "+8",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "-"
+      ],
+      "columns": {
+        "Blended Training Talents": "13",
+        "Caster Level": "+9"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+10/+5",
+      "fortSave": "+9",
+      "refSave": "+4",
+      "willSave": "+9",
+      "special": [
+        "Guard (+4)",
+        "reinforcement"
+      ],
+      "columns": {
+        "Blended Training Talents": "14",
+        "Caster Level": "+10"
+      },
+      "choices": [
+        "reinforcement"
+      ]
+    },
+    {
+      "level": 15,
+      "bab": "+11/+6/+1",
+      "fortSave": "+9",
+      "refSave": "+5",
+      "willSave": "+9",
+      "special": [
+        "Vigil ability"
+      ],
+      "columns": {
+        "Blended Training Talents": "15",
+        "Caster Level": "+11"
+      },
+      "choices": []
+    },
+    {
+      "level": 16,
+      "bab": "+12/+7/+2",
+      "fortSave": "+10",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Reinforcement"
+      ],
+      "columns": {
+        "Blended Training Talents": "16",
+        "Caster Level": "+12"
+      },
+      "choices": [
+        "Reinforcement",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+12/+7/+2",
+      "fortSave": "+10",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Expanded guard (four)",
+        "tireless protector"
+      ],
+      "columns": {
+        "Blended Training Talents": "17",
+        "Caster Level": "+12"
+      },
+      "choices": [
+        "Expanded guard (four)"
+      ]
+    },
+    {
+      "level": 18,
+      "bab": "+13/+8/+3",
+      "fortSave": "+11",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Guard (+5)",
+        "reinforcement"
+      ],
+      "columns": {
+        "Blended Training Talents": "18",
+        "Caster Level": "+13"
+      },
+      "choices": [
+        "reinforcement"
+      ]
+    },
+    {
+      "level": 19,
+      "bab": "+14/+9/+4",
+      "fortSave": "+11",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Vigil ability"
+      ],
+      "columns": {
+        "Blended Training Talents": "19",
+        "Caster Level": "+14"
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+15/+10/+5",
+      "fortSave": "+12",
+      "refSave": "+6",
+      "willSave": "+12",
+      "special": [
+        "Reinforcement",
+        "warden of the many"
+      ],
+      "columns": {
+        "Blended Training Talents": "20",
+        "Caster Level": "+15"
+      },
+      "choices": [
+        "Reinforcement",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Blended Training Talents",
+    "Caster Level"
+  ],
+  "features": [
+    {
+      "name": "Weapon and Armor Proficiency",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "The warden is proficient with all simple weapons, light armor, and bucklers. In addition, if this is this character's first level in any class, they may select a martial tradition of their choice."
+    },
+    {
+      "name": "Casting",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A warden may combine spheres and talents to create magical effects. A warden is considered a Mid-Caster. (Note: All casters gain 2 bonus talents and a casting tradition the first time they gain the casting class feature.)"
+    },
+    {
+      "name": "Blended Training",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "The warden gains a combat or magic talent every time he gains a class level, according to Table: Warden. Wardens use their casting ability modifier as their practitioner modifier."
+    },
+    {
+      "name": "Spell Pool",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A warden gains a small reservoir of energy he can call on to create truly wondrous effects, called a spell pool. This pool contains a number of spell points equal to his class level + his casting ability modifier (minimum 1). This pool replenishes once per day after roughly 8 hours of rest."
+    },
+    {
+      "name": "Vigil",
+      "type": "Su",
+      "levels": [
+        1,
+        3,
+        7,
+        11,
+        15,
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Whereas some casters draw their magic from a divine presence or years of practice, the warden instead draws his magic from his will to protect. At 1st level, the warden chooses the source of his protective nature, known as a vigil. Once selected, this choice cannot be changed. (Vigils are listed below)\n\nAt 3rd level, the warden gains a vigil ability that augments his guard ability, in addition to gaining an additional vigil ability every 4 class levels beyond 3rd."
+    },
+    {
+      "name": "Mystical Guardian",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "A warden gains the Guardian sphere as a bonus sphere, although he must select the (patrol) package. The warden also gains the sphere associated with his vigil as a bonus sphere."
+    },
+    {
+      "name": "Steadfast",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A warden may make 1 additional attack of opportunity per round. For every 5 class levels that the warden possesses, he may make an additional 1 attack of opportunity per round. These additional attacks of opportunity stack with those granted by the Combat Reflexes or Muscular Reflexes feat."
+    },
+    {
+      "name": "Guard",
+      "type": "Su",
+      "levels": [
+        2,
+        6,
+        10,
+        14,
+        18
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level, as a standard action (or as a swift action by spending a spell point), the warden can form a mystical bond with a single ally within 30 feet, making them the warden's guarded ally. A guarded ally gains a +1 bonus to their AC. This bonus increases by 1 at 6th level and every four levels thereafter. The ally retains these benefits until the warden chooses a new guarded ally, or when he would fall unconscious or be killed.\n\nA creature can only benefit from one guard at a time. If a second guard would be established on the creature, the caster must attempt a magic skill check against the MSD of the original caster of guard. If the creature succeeds, the original guard is removed, and is no longer considered the guarded ally of the original warden. If the creature fails, their guard attempt has no effect.\n\nThe bonus to AC granted by this ability is considered the warden's guard bonus for the purpose of the warden's class abilities.\n\nNote: The range on this ability is for creating a guard. Once the guard is established, creatures benefiting from it can move beyond the creation range."
+    },
+    {
+      "name": "Reinforcement",
+      "type": "Su",
+      "levels": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 2nd level and every 2 levels thereafter, the warden gains new ways of defending or otherwise aiding his allies, and may select a reinforcement from the universal reinforcements list or the appropriate list of vigil-specific reinforcements. The DC of any saving throw called for by a reinforcement is equal to 10 + 1/2 the warden's level + the warden's casting ability modifier. Each reinforcement may only be selected once unless otherwise noted.\n\n• Universal Reinforcements\n\n• Bodyguard\n\nThe warden gains the Shield sphere as a bonus sphere. Additionally, at 5th level, the warden's projected empathy class feature may also be used with his Shield sphere abilities.\n\n• Champion Feat [EO3]\n\nThe warden gains a champion feat as a bonus feat. This reinforcement may be taken multiple times. Each time it is taken, he selects another champion feat.\n\n• Defend Ally\n\nThe warden gains the Defend Other talent from the Guardian sphere. Additionally, when he has his martial focus, the warden may use his Defend Other talent by expending an attack of opportunity instead of an immediate action.\n\n• Defended Companionship [BTH]\n\nThe warden gains one of the following spheres as a bonus talent: Beastmastery, Conjuration, Death, Leadership. The warden may grant his guard to one of his subordinates which does not count against the total number of guarded allies the warden may have at one time.\n\n• Distant Protector\n\nThe range of the warden's guard ability increases to 50 feet + 5 feet per warden level. This reinforcement can be selected twice, increasing the range of the warden's guard ability to medium range (100 feet + 10 feet per warden level).\n\n• Enchanted Reflexes\n\nThe warden gains Combat Reflexes as a bonus feat, and may use his casting ability modifier instead of his Dexterity modifier to determine the number of additional attacks of opportunity he can make per round.\n\n• Focused Vigil\n\nThe warden chooses a vigil that he possesses. The warden uses his class level as his caster level for his chosen vigil's associated sphere. This stacks normally with caster levels gained from other sources.\n\n• Greater Indomitable (requires warden 12)\n\nThe warden becomes immune to any unwilling teleport"
+    },
+    {
+      "name": "Indomitable",
+      "type": "Ex",
+      "levels": [
+        3
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, a warden's training develops, making him resolute against both physical and mental attacks. The warden gains a +2 bonus on saving throws against mind-affecting effects, and to his CMD."
+    },
+    {
+      "name": "Routine Patrol",
+      "type": "Ex",
+      "levels": [
+        3
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, the warden no longer requires having his martial focus when using his patrol ability of the Guardian sphere. Additionally, when the warden would use his patrol ability while he has martial focus, he may treat his warden level as his base attack bonus for the purposes of the increased threatened area."
+    },
+    {
+      "name": "Focusing Guard",
+      "type": "Ex",
+      "levels": [
+        4
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 4th level, the warden can regain his martial focus by using his guard ability as a standard action."
+    },
+    {
+      "name": "Expanded Guard",
+      "type": "",
+      "levels": [
+        5,
+        11,
+        17
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "The warden's incredible vigilance over his allies begins to broaden. At 5th level, the warden may have up to two guarded allies at one time. The warden may have an additional guarded ally at one time at 11th and 17th level. If the warden would attempt to guard another creature beyond this maximum, the warden must choose a guarded ally to lose the benefits of his guard."
+    },
+    {
+      "name": "Projected Empathy",
+      "type": "Su",
+      "levels": [
+        5
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 5th level, as long as the warden can see a guarded ally, they are considered to be 10 feet closer to the warden for the purposes of the range of magical sphere effects that he casts (including touch effects). This increases to 30 feet at 10th level, 100 feet at 15th level, and at 20th level is considered being adjacent to the warden."
+    },
+    {
+      "name": "Lingering Guard",
+      "type": "Su",
+      "levels": [
+        7
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 7th level, whenever the warden would fall unconscious or be killed, his guarded allies retains the benefits of being under his guard for an additional 2 rounds. If the warden would become conscious again before these rounds end, the warden's guard instead remains active."
+    },
+    {
+      "name": "Self Sufficiency",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "At 8th level, as long as he has a guarded ally, the warden is treated as being his own guarded ally, gaining the benefits as normal (except for abilities that explicitly require the warden to use his guard ability to apply a benefit to a guarded ally)."
+    },
+    {
+      "name": "Improved Indomitable",
+      "type": "Su",
+      "levels": [
+        9
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 9th level, the warden becomes an immovable guardian of his allies. The warden may roll any saving throws against teleportation effects twice and take the highest result, and may reduce any forced movement (such as a bull rush attempt) by 10 feet, to a minimum of 0 feet."
+    },
+    {
+      "name": "Improved Patrol",
+      "type": "Ex",
+      "levels": [
+        9
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 9th level, when the warden would use his patrol ability, his movement does not provoke attacks of opportunity. Additionally, the warden may expend his martial focus when using patrol to consider his base attack bonus as being 4 higher when calculating his threatened area with patrol."
+    },
+    {
+      "name": "Tireless Protector",
+      "type": "Su",
+      "levels": [
+        17
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 17th level, the warden becomes immune to fatigue, exhaustion, and nonlethal damage."
+    },
+    {
+      "name": "Warden of the Many",
+      "type": "Su",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level, the warden becomes an unstoppable protector of those under his charge, his resolve surpassing even the finality of death itself. The warden may have up to five guarded allies at one time. Additionally, whenever the warden would fall unconscious or be slain, his soul rises from his body, appearing barely visible and ethereal. While within this ethereal form, the warden may move in any direction (even up or down, albeit at half his normal speed), and may move through solid objects and living creatures, essentially being considered as an ethereal creature, except that he may still cast harmless spells and sphere effects upon his allies as long as he remains within this form.\n\nThe warden remains within this form for up to 1 minute, after which the soul returns to his body, immediately becoming stable and conscious again if he was unconscious, or linger for a moment if he was slain."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 1,
+      "choices": [
+        "mystical guardian"
+      ]
+    },
+    {
+      "level": 2,
+      "choices": [
+        "reinforcement"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "reinforcement",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "choices": [
+        "Expanded guard (two)"
+      ]
+    },
+    {
+      "level": 6,
+      "choices": [
+        "reinforcement"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "Reinforcement",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 10,
+      "choices": [
+        "reinforcement"
+      ]
+    },
+    {
+      "level": 11,
+      "choices": [
+        "Expanded guard (three)"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "Reinforcement",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 14,
+      "choices": [
+        "reinforcement"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "Reinforcement",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "choices": [
+        "Expanded guard (four)"
+      ]
+    },
+    {
+      "level": 18,
+      "choices": [
+        "reinforcement"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "Reinforcement",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

@@ -1,0 +1,334 @@
+{
+  "slug": "magemage",
+  "name": "Magemage",
+  "group": "spherecaster",
+  "url": "http://spheresofpower.wikidot.com/magemage",
+  "source": "Spheres of Power wiki",
+  "hitDie": 8,
+  "alignment": "",
+  "role": "",
+  "classSkills": [],
+  "skillRanksPerLevel": null,
+  "babProgression": null,
+  "saveProgressions": {
+    "fort": "POOR",
+    "ref": "POOR",
+    "will": "POOR"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+0",
+      "fortSave": "+0",
+      "refSave": "+0",
+      "willSave": "+1",
+      "special": [
+        "Aligned class",
+        "casting",
+        "don robes and magecap"
+      ],
+      "columns": {
+        "Caster Level": "+0",
+        "Magic Talents": "1 (+2)"
+      },
+      "choices": [
+        "don robes and magecap"
+      ]
+    },
+    {
+      "level": 2,
+      "bab": "+1",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+1",
+      "special": [
+        "Sagacity"
+      ],
+      "columns": {
+        "Caster Level": "+1",
+        "Magic Talents": "2"
+      },
+      "choices": []
+    },
+    {
+      "level": 3,
+      "bab": "+1",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+2",
+      "special": [
+        "Spellwrought mark"
+      ],
+      "columns": {
+        "Caster Level": "+1",
+        "Magic Talents": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 4,
+      "bab": "+2",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+2",
+      "special": [
+        "Knowledge is my sword"
+      ],
+      "columns": {
+        "Caster Level": "+2",
+        "Magic Talents": "4"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+2",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+3",
+      "special": [
+        "-"
+      ],
+      "columns": {
+        "Caster Level": "+2",
+        "Magic Talents": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 6,
+      "bab": "+3",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+3",
+      "special": [
+        "Wisdom is my orb"
+      ],
+      "columns": {
+        "Caster Level": "+3",
+        "Magic Talents": "6"
+      },
+      "choices": []
+    },
+    {
+      "level": 7,
+      "bab": "+3",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+4",
+      "special": [
+        "-"
+      ],
+      "columns": {
+        "Caster Level": "+3",
+        "Magic Talents": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+4",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+4",
+      "special": [
+        "Might is my scepter"
+      ],
+      "columns": {
+        "Caster Level": "+4",
+        "Magic Talents": "8"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+4",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+5",
+      "special": [
+        "-"
+      ],
+      "columns": {
+        "Caster Level": "+4",
+        "Magic Talents": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+5",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+5",
+      "special": [
+        "Magic is my crown"
+      ],
+      "columns": {
+        "Caster Level": "+5",
+        "Magic Talents": "10"
+      },
+      "choices": []
+    }
+  ],
+  "talentColumns": [
+    "Caster Level",
+    "Magic Talents"
+  ],
+  "features": [
+    {
+      "name": "Weapons and Armor Proficiency",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "A magemage gains no additional weapon or armor proficiencies."
+    },
+    {
+      "name": "Casting",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A magemage may combine spheres and talents to create magical effects. A magemage is considered a Low-Caster. (Note: All casters gain 2 bonus talents and a casting tradition the first time they gain the casting class feature.)"
+    },
+    {
+      "name": "Spell Pool",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "A magemage gains a small reservoir of energy she can call on to create truly wondrous effects, called a spell pool. This pool contains a number of spell points equal to her class level + her casting ability modifier (minimum 1). This pool replenishes once per day after roughly 8 hours of rest."
+    },
+    {
+      "name": "Magic Talents",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "A magemage gains a magic talent at every level, according to Table: Magemage."
+    },
+    {
+      "name": "Aligned Class",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Starting at 1st level, the magemage gains all the class features she would otherwise gain as a mageknight, essentially adding every magemage level to her mageknight level to determine what class features she gains and the effects of her mageknight class abilities. She still retains the Hit Dice, base attack bonus, saving throw bonuses, and skill ranks of the prestige class, but gains all other mageknight class features as well as those of the magemage prestige class."
+    },
+    {
+      "name": "Don Robes and Magecap",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 1st level, the magemage may use their practitioner modifier instead of the casting ability modifier associated with their casting tradition. In addition, the magemage gains Advanced Magic Training as a bonus feat. If the magemage already possesses Advanced Magic Training, she instead gains Extra Magic Talent."
+    },
+    {
+      "name": "Sagacity",
+      "type": "Ex",
+      "levels": [
+        2
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level, the magemage's new policy of learning, and even sometimes reading, before slaying her foes has given her a new outlook on magic. She gains a bonus on all Spellcraft checks equal to 2 + half her magemage level."
+    },
+    {
+      "name": "Spellwrought Mark",
+      "type": "Su",
+      "levels": [
+        3
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, when the magemage uses her knightknight mark of justice ability, the target suffers a -2 penalty to saving throws against the spells, spell-like abilities, and sphere abilities of the magemage, and the magemage gains a +2 bonus to saving throws against the spells, spell-like abilities, and sphere abilities of the target."
+    },
+    {
+      "name": "Knowledge Is My Sword",
+      "type": "Ex",
+      "levels": [
+        4
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 4th level, the magemage learns to leverage her power to her needs. Each day when the magemage regains spell points, she chooses one magic sphere she possesses. Until the magemage rests and regains spell points again, she gains a bonus to her caster level equal to her magemage level when using that sphere. This bonus cannot increase the magemage's caster level with that sphere above her Hit Dice."
+    },
+    {
+      "name": "Wisdom Is My Orb",
+      "type": "Ex",
+      "levels": [
+        6
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 6th level, the magemage gains a circumstance bonus on all concentration checks equal to half her magemage level."
+    },
+    {
+      "name": "Might Is My Scepter",
+      "type": "Ex",
+      "levels": [
+        8
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 8th level, as long as the magemage has a point of gallantry, her resist magic mageknight ability applies to all saving throws the magemage makes, not just saving throws against spells, spell-like abilities, and magic sphere effects."
+    },
+    {
+      "name": "Magic Is My Crown",
+      "type": "Su",
+      "levels": [
+        10
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 10th level, the magemage may treat her weapon as an implement for the sphere selected with knowledge is my sword. The implement's effective enhancement bonus is equal to the weapon's enhancement bonus (maximum +5).\n\nU: Part of Ultimate Spheres of Power and does not need to be bought separately from that book"
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 1,
+      "choices": [
+        "don robes and magecap"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": [
+    "10-level class (prestige/advanced) — advances an existing class"
+  ]
+}

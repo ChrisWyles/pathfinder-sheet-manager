@@ -1,0 +1,646 @@
+{
+  "slug": "dragoon-class",
+  "name": "Dragoon",
+  "group": "champion",
+  "url": "http://spheresofpower.wikidot.com/dragoon-class",
+  "source": "Spheres of Power wiki",
+  "hitDie": 8,
+  "alignment": "Any",
+  "role": ", assuming it is a servant, but that is far from the truth",
+  "classSkills": [
+    "Acrobatics",
+    "Bluff",
+    "Climb",
+    "Craft",
+    "Diplomacy",
+    "Intimidate",
+    "Knowledge (local)",
+    "Perception",
+    "Perform",
+    "Profession",
+    "Sense Motive",
+    "Spellcraft",
+    "Use Magic Device"
+  ],
+  "skillRanksPerLevel": 4,
+  "babProgression": "THREE_QUARTER",
+  "saveProgressions": {
+    "fort": "GOOD",
+    "ref": "POOR",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+0",
+      "fortSave": "+2",
+      "refSave": "+0",
+      "willSave": "+2",
+      "special": [
+        "Casting",
+        "blended training",
+        "spell pool",
+        "dragon bond",
+        "drake companion",
+        "brutal bond"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "1 (+2 magic)",
+        "Caster Level": "+0 (1)"
+      },
+      "choices": [
+        "Casting",
+        "brutal bond"
+      ]
+    },
+    {
+      "level": 2,
+      "bab": "+1",
+      "fortSave": "+3",
+      "refSave": "+0",
+      "willSave": "+3",
+      "special": [
+        "Drake talent",
+        "share spells"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "2",
+        "Caster Level": "+1"
+      },
+      "choices": [
+        "Drake talent"
+      ]
+    },
+    {
+      "level": 3,
+      "bab": "+2",
+      "fortSave": "+3",
+      "refSave": "+1",
+      "willSave": "+3",
+      "special": [
+        "Draconic might +1",
+        "dragon bond (bite)"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "3",
+        "Caster Level": "+2"
+      },
+      "choices": []
+    },
+    {
+      "level": 4,
+      "bab": "+3",
+      "fortSave": "+4",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Drake talent",
+        "shared vigor"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "4",
+        "Caster Level": "+3"
+      },
+      "choices": [
+        "Drake talent",
+        "shared vigor",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+3",
+      "fortSave": "+4",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Dragon caller (close)"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "5",
+        "Caster Level": "+3"
+      },
+      "choices": []
+    },
+    {
+      "level": 6,
+      "bab": "+4",
+      "fortSave": "+5",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Dragon bond (wings)",
+        "drake talent"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "6",
+        "Caster Level": "+4"
+      },
+      "choices": [
+        "drake talent"
+      ]
+    },
+    {
+      "level": 7,
+      "bab": "+5",
+      "fortSave": "+5",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Draconic might +2"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "7",
+        "Caster Level": "+5"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+6/+1",
+      "fortSave": "+6",
+      "refSave": "+2",
+      "willSave": "+6",
+      "special": [
+        "Drake talent",
+        "improved dragon bond"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "8",
+        "Caster Level": "+6"
+      },
+      "choices": [
+        "Drake talent",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+6/+1",
+      "fortSave": "+6",
+      "refSave": "+3",
+      "willSave": "+6",
+      "special": [
+        "Dragon bond (hit points) dragon caller (medium)"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "9",
+        "Caster Level": "+6"
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+7/+2",
+      "fortSave": "+7",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Drake talent"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "10",
+        "Caster Level": "+7"
+      },
+      "choices": [
+        "Drake talent"
+      ]
+    },
+    {
+      "level": 11,
+      "bab": "+8/+3",
+      "fortSave": "+7",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Draconic might +3"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "11",
+        "Caster Level": "+8"
+      },
+      "choices": []
+    },
+    {
+      "level": 12,
+      "bab": "+9/+4",
+      "fortSave": "+8",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Dragon bond (bonded might)",
+        "drake talent"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "12",
+        "Caster Level": "+9"
+      },
+      "choices": [
+        "drake talent",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+9/+4",
+      "fortSave": "+8",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Deathless bond"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "13",
+        "Caster Level": "+9"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+10/+5",
+      "fortSave": "+9",
+      "refSave": "+4",
+      "willSave": "+9",
+      "special": [
+        "Drake talent"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "14",
+        "Caster Level": "+10"
+      },
+      "choices": [
+        "Drake talent"
+      ]
+    },
+    {
+      "level": 15,
+      "bab": "+11/+6/+1",
+      "fortSave": "+9",
+      "refSave": "+5",
+      "willSave": "+9",
+      "special": [
+        "Draconic might +4",
+        "dragon bond (advanced bite)"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "15",
+        "Caster Level": "+11"
+      },
+      "choices": []
+    },
+    {
+      "level": 16,
+      "bab": "+12/+7/+2",
+      "fortSave": "+10",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Drake talent",
+        "greater dragon bond"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "16",
+        "Caster Level": "+12"
+      },
+      "choices": [
+        "Drake talent",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+12/+7/+2",
+      "fortSave": "+10",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "United healing"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "17",
+        "Caster Level": "+12"
+      },
+      "choices": [
+        "United healing"
+      ]
+    },
+    {
+      "level": 18,
+      "bab": "+13/+8/+3",
+      "fortSave": "+11",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Dragon bond (swift)",
+        "drake talent"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "18",
+        "Caster Level": "+13"
+      },
+      "choices": [
+        "drake talent"
+      ]
+    },
+    {
+      "level": 19,
+      "bab": "+14/+9/+4",
+      "fortSave": "+11",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Draconic might +5"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "19",
+        "Caster Level": "+14"
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+15/+10/+5",
+      "fortSave": "+12",
+      "refSave": "+6",
+      "willSave": "+12",
+      "special": [
+        "Dragon soul",
+        "drake talent"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "20",
+        "Caster Level": "+15"
+      },
+      "choices": [
+        "Dragon soul",
+        "drake talent",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Combat & Magic Talents",
+    "Caster Level"
+  ],
+  "features": [
+    {
+      "name": "Proficiencies",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "Dragoons are proficient with simple weapons, as well as light armor and bucklers. In addition, if this is this character's first level in any class, they may select a martial tradition of their choice."
+    },
+    {
+      "name": "Casting",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "A dragoon may combine spheres and talents to create magical effects. A dragoon is considered a Mid-Caster. She may use either Wisdom or Charisma as her casting ability modifier and must make this choice at 1st level. (Note: all casters may select a casting tradition the first time they gain the casting class feature.)"
+    },
+    {
+      "name": "Spell Pool",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A dragoon gains a small reservoir of energy she can call on to create truly wondrous effects, called a spell pool. This pool contains a number of spell points equal to her level + her casting ability modifier (minimum: 1). This pool replenishes once per day after roughly 8 hours of rest."
+    },
+    {
+      "name": "Blended Training",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A dragoon gains combat or magic talents according to Table: Dragoon, gaining her choice of combat or magic talents at each level she would gain a talent. Dragoons use their casting ability modifier as their practitioner modifier."
+    },
+    {
+      "name": "Dragon Bond",
+      "type": "Su",
+      "levels": [
+        1,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 1st level, as long as a dragoon is adjacent to her drake companion, she can spend 1 spell point as a move action action to draw upon its draconic might to empower herself for 1 minute. If she does so, she gains a +2 bonus to either her Strength, Dexterity, or Charisma score and she gains temporary hit points equal to her class level + her casting modifier which last until this ability ends. She can expend her martial focus as a free action to refresh these temporary hit points. At 8th level and again at 16th level, these bonuses increases by +2 (to +4 at 8th level and +6 at 16th level).\n\nAt 3rd level, she also gains a bite attack as a primary natural weapon which deals 1d6 natural damage. Due to the mystical nature of the transformation, the damage of this natural attack is unaffected by her size.\n\nAt 6th level, she also grows a pair of wings which give her a flight speed of 60 feet (good maneuverability).\n\nAt 9th level, whenever she uses her draconic bond, as long as her drake companion is within 60 feet of her when she does, it gains temporary hit points equal to her class level + her casting modifier for the duration of this ability. It can expend its martial focus as a free action to refresh these temporary hit points.\n\nAt 12th level, whenever she uses her draconic bond, as long as her drake companion is with 60 feet of her, it gains the benefit of her draconic might class feature.\n\nAt 15th level, her bite attack instead deals 1d10 damage and has its critical range increased to 19-20/x2.\n\nAt 18th level, she can instead use this ability as a swift action."
+    },
+    {
+      "name": "Drake Companion",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 1st level, a dragoon forms a close bond. A dragoon gains a legendary drake companion (see below)."
+    },
+    {
+      "name": "Brutal Bond",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 1st level, both the dragoon and her drake companion gain the Berserker sphere as a bonus talent. In addition, the dragoon uses her class level in place of her base attack bonus to determine the effects of Berserker sphere abilities."
+    },
+    {
+      "name": "Drake Talent",
+      "type": "Ex",
+      "levels": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 2nd level and every even level thereafter, a dragoon's drake companion gains a combat talent; although it may not select the beastmastery sphere or any other sphere talent which would grant it a familiar, animal companion, eidolon, or drake companion. A dragoon's drake uses Strength as its practitioner ability modifier."
+    },
+    {
+      "name": "Share Spells",
+      "type": "Ex",
+      "levels": [
+        2
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level, a dragoon may use a magical sphere ability with a target of “You” on her drake companion (as a touch range spell) instead of on herself. A dragoon may use a magical sphere ability on her drake companion even if it would normally not affect creatures of the companion's type (dragon)."
+    },
+    {
+      "name": "Draconic Might",
+      "type": "Ex",
+      "levels": [
+        3,
+        7,
+        11,
+        15,
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, as long as a dragoon is within 60 feet of her drake companion, she treats her base attack bonus as 1 higher for the purpose of her combat maneuver bonus and the effects of combat talents which rely on her base attack bonus. At 7th level and every four levels afterwards, this increase to her base attack bonus increases by 1, to a maximum of 5 at 19th level (this does not allow her to treat her base attack bonus as though it was higher than her dragoon level)."
+    },
+    {
+      "name": "Shared Vigor",
+      "type": "Su",
+      "levels": [
+        4
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 4th level, as long as a dragoon's drake companion is within 60 feet of her, whenever the dragoon or her drake companion would take damage, they can choose to reduce the other's temporary hit points instead of taking the damage themselves."
+    },
+    {
+      "name": "Dragon Caller",
+      "type": "Su",
+      "levels": [
+        5
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 5th level, as a standard action, a dragoon can call her drake companion. This functions as teleport ability of the warp sphere, using the dragoon's caster level. When used, the drake companion appears adjacent to the dragoon (or as close as possible if all adjacent spaces are occupied). If the drake companion is out of range, the ability is wasted. The dragoon can spend 1 spell point to increase the range of this ability to medium.\n\nAt 9th level, this ability's default range increases to medium, and the dragoon can spend 1 spell point to increase its range to long."
+    },
+    {
+      "name": "Deathless Bond",
+      "type": "Su",
+      "levels": [
+        13
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 13th level, if a dragoon is reduced to 0 or fewer hit points (but is not dead) and her drake companion has 1 or more hit points, she gains the benefits of the Diehard and Deathless Initiate feats."
+    },
+    {
+      "name": "United Healing",
+      "type": "Su",
+      "levels": [
+        17
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 17th level, as long as a dragoon is within 60 feet of her drake companion, if either herself or her drake companion would recover hit points, she may choose to allocate that healing to whomever she wishes."
+    },
+    {
+      "name": "Dragon Soul",
+      "type": "Ex",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 20th level, a dragoon changes her type to dragon (if it wasn't already). Whenever she uses her draconic bond, she no longer has to select a single ability score, gaining the listed effects for all of the listed ability scores. In addition, she no longer needs to expend her martial focus to recover the temporary hit points gained from draconic bond, instead refreshing them instantly at the beginning of her turn."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 1,
+      "choices": [
+        "Casting",
+        "brutal bond"
+      ]
+    },
+    {
+      "level": 2,
+      "choices": [
+        "Drake talent"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "Drake talent",
+        "shared vigor",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 6,
+      "choices": [
+        "drake talent"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "Drake talent",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 10,
+      "choices": [
+        "Drake talent"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "drake talent",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 14,
+      "choices": [
+        "Drake talent"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "Drake talent",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "choices": [
+        "United healing"
+      ]
+    },
+    {
+      "level": 18,
+      "choices": [
+        "drake talent"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "Dragon soul",
+        "drake talent",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

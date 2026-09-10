@@ -1,0 +1,678 @@
+{
+  "slug": "necros",
+  "name": "Necros",
+  "group": "champion",
+  "url": "http://spheresofpower.wikidot.com/necros",
+  "source": "Spheres of Power wiki",
+  "hitDie": 8,
+  "alignment": "Any",
+  "role": "For a necros, their",
+  "classSkills": [
+    "Bluff",
+    "Craft",
+    "Diplomacy",
+    "Intimidate",
+    "Knowledge (arcana)",
+    "Knowledge (religion)",
+    "Perception",
+    "Perform",
+    "Profession",
+    "Sense Motive",
+    "Spellcraft",
+    "Use Magic Device"
+  ],
+  "skillRanksPerLevel": 4,
+  "babProgression": "THREE_QUARTER",
+  "saveProgressions": {
+    "fort": "GOOD",
+    "ref": "POOR",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+0",
+      "fortSave": "+2",
+      "refSave": "+0",
+      "willSave": "+2",
+      "special": [
+        "Casting",
+        "blended training",
+        "channel energy",
+        "corpse puppet",
+        "deathbound",
+        "spell pool"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "1 (+2 magic)",
+        "Caster Level": "+0 (1)"
+      },
+      "choices": [
+        "Casting",
+        "deathbound"
+      ]
+    },
+    {
+      "level": 2,
+      "bab": "+1",
+      "fortSave": "+3",
+      "refSave": "+0",
+      "willSave": "+3",
+      "special": [
+        "Rebuke undead",
+        "undead affinity"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "2",
+        "Caster Level": "+1"
+      },
+      "choices": []
+    },
+    {
+      "level": 3,
+      "bab": "+2",
+      "fortSave": "+3",
+      "refSave": "+1",
+      "willSave": "+3",
+      "special": [
+        "Fleshcraft"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "3",
+        "Caster Level": "+2"
+      },
+      "choices": []
+    },
+    {
+      "level": 4,
+      "bab": "+3",
+      "fortSave": "+4",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Decaying form",
+        "preserve flesh"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "4",
+        "Caster Level": "+3"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+3",
+      "fortSave": "+4",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Darkvision",
+        "flesh bond"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "5",
+        "Caster Level": "+3"
+      },
+      "choices": []
+    },
+    {
+      "level": 6,
+      "bab": "+4",
+      "fortSave": "+5",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Necrotic shield"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "6",
+        "Caster Level": "+4"
+      },
+      "choices": []
+    },
+    {
+      "level": 7,
+      "bab": "+5",
+      "fortSave": "+5",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Advanced fleshcraft",
+        "fleshcraft"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "7",
+        "Caster Level": "+5"
+      },
+      "choices": [
+        "Advanced fleshcraft"
+      ]
+    },
+    {
+      "level": 8,
+      "bab": "+6/+1",
+      "fortSave": "+6",
+      "refSave": "+2",
+      "willSave": "+6",
+      "special": [
+        "Decaying form",
+        "fear aura"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "8",
+        "Caster Level": "+6"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+6/+1",
+      "fortSave": "+6",
+      "refSave": "+3",
+      "willSave": "+6",
+      "special": [
+        "Undead rebirth"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "9",
+        "Caster Level": "+6"
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+7/+2",
+      "fortSave": "+7",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Multicrafting"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "10",
+        "Caster Level": "+7"
+      },
+      "choices": []
+    },
+    {
+      "level": 11,
+      "bab": "+8/+3",
+      "fortSave": "+7",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Fleshcraft",
+        "greater flesh bond"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "11",
+        "Caster Level": "+8"
+      },
+      "choices": []
+    },
+    {
+      "level": 12,
+      "bab": "+9/+4",
+      "fortSave": "+8",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Decaying form",
+        "see in darkness"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "12",
+        "Caster Level": "+9"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+9/+4",
+      "fortSave": "+8",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Improved necrotic shield"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "13",
+        "Caster Level": "+9"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+10/+5",
+      "fortSave": "+9",
+      "refSave": "+4",
+      "willSave": "+9",
+      "special": [
+        "Fleshcrafting artisan"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "14",
+        "Caster Level": "+10"
+      },
+      "choices": []
+    },
+    {
+      "level": 15,
+      "bab": "+11/+6/+1",
+      "fortSave": "+9",
+      "refSave": "+5",
+      "willSave": "+9",
+      "special": [
+        "Fleshcraft"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "15",
+        "Caster Level": "+11"
+      },
+      "choices": []
+    },
+    {
+      "level": 16,
+      "bab": "+12/+7/+2",
+      "fortSave": "+10",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Dead skin",
+        "decaying form"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "16",
+        "Caster Level": "+12"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+12/+7/+2",
+      "fortSave": "+10",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Unholy revivification"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "17",
+        "Caster Level": "+12"
+      },
+      "choices": []
+    },
+    {
+      "level": 18,
+      "bab": "+13/+8/+3",
+      "fortSave": "+11",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Master multicrafting"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "18",
+        "Caster Level": "+13"
+      },
+      "choices": []
+    },
+    {
+      "level": 19,
+      "bab": "+14/+9/+4",
+      "fortSave": "+11",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Fleshcraft"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "19",
+        "Caster Level": "+14"
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+15/+10/+5",
+      "fortSave": "+12",
+      "refSave": "+6",
+      "willSave": "+12",
+      "special": [
+        "Fleshcrafting master",
+        "lich form"
+      ],
+      "columns": {
+        "Combat & Magic Talents": "20",
+        "Caster Level": "+15"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Combat & Magic Talents",
+    "Caster Level"
+  ],
+  "features": [
+    {
+      "name": "Proficiencies",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "Necros's are proficient with simple weapons, as well as light armor and bucklers. In addition, if this is this character's first level in any class, they may select a martial tradition of their choice."
+    },
+    {
+      "name": "Casting",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "A necros may combine spheres and talents to create magical effects. A necros is considered a Mid-Caster. They may use either Intelligence or Charisma as their casting ability modifier and must make this choice at 1st level. (Note: all casters may select a casting tradition the first time they gain the casting class feature.)"
+    },
+    {
+      "name": "Spell Pool",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A necros gains a small reservoir of energy they can call on to create truly wondrous effects, called a spell pool. This pool contains a number of spell points equal to their level + their casting ability modifier (minimum: 1). This pool replenishes once per day after roughly 8 hours of rest."
+    },
+    {
+      "name": "Blended Training",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A necros gains combat or magic talents according to Table: Necros, gaining their choice of combat or magic talents at each level they would gain a talent. Necros's use their casting ability modifier as their practitioner modifier. (See Deathbound)"
+    },
+    {
+      "name": "Channel Energy",
+      "type": "Su",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 1st level, a necros can channel negative energy as the Cleric class feature a total number of times per day equal to 3 + their casting ability modifier, using their casting ability modifier in place of Charisma when determining its associated saving throw."
+    },
+    {
+      "name": "Corpse Puppet",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 1st level, a necros may create a corpse puppet (see below) from the corpse of a deceased Medium or Small humanoid or a four legged animal (other animal corpses may be allowed upon GM approval). A necros cannot have an animal companion, familiar, or drake companion as long as they possess a corpse puppet. Unlike most undead, this corpse puppet is not mindless, retaining a spark of its former intelligence. As such, they are not limited to basic orders. Corpse puppets are perfectly preserved at the point at which they are created, although they can be allowed to rot if the necros desires.\n\nA necros can break the connection between themselves and their corpse puppet as a full round action, causing it to revert to a normal corpse. To form a connection with a new corpse, they must spend 1 hour with the new corpse, causing it to gain hit dice equal to their old corpse puppet."
+    },
+    {
+      "name": "Deathbound",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "A necros must select the Death sphere as their 1st level talent and uses their class level as their caster level with the Death sphere. This stacks normally with caster levels gained from other sources."
+    },
+    {
+      "name": "Rebuke Undead",
+      "type": "Ex",
+      "levels": [
+        2
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level, a necros gains the Command Undead feat."
+    },
+    {
+      "name": "Undead Affinity",
+      "type": "Ex",
+      "levels": [
+        2
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level, a necros is treated as an undead creature for the purpose of how positive and negative energy affect them."
+    },
+    {
+      "name": "Fleshcraft",
+      "type": "Ex",
+      "levels": [
+        3,
+        7,
+        11,
+        15,
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, a necros can spend 1 spell point or use of channel energy to manipulate the flesh of any undead under their control including their corpse puppet (if the necros is undead, they cannot use this ability on themselves); this ability can be used when animating an undead with the reanimate ability of the Death sphere. This alteration of a creature lasts for 1 day. An undead creature's flesh can be modified in the following ways (an ability can only be selected once unless otherwise stated):\n\nAdditional Limbs: The undead is granted an additional pair of arms, a head, legs, or a tail (selecting a tail also grants either a sting or tail slap natural attack); every pair of legs an undead gains increases it speed by 20 feet, and it it possesses 4 or more legs, it is treated as a quadruped for the purpose of how much it can carry (this ability can be selected multiple times).\n\nAdvanced Attacks: The undead gains the Improved Natural Attack feat for all of its natural attacks.\n\nCombat Talent: The undead gains a combat sphere and a talent from that sphere (this ability can be selected multiple times, although each sphere can only be selected once). Mindless undead are innately aware of how to use these abilities, but can only select from the following spheres: Athletics, Berserker, Brute, Guardian, Wrestling. Undead use Strength as their practitioner modifier.\n\nImprove Natural Armor: The undead gains a +2 bonus to its natural armor. For every 3 hit dice the undead possesses past its first, this bonus increases by +1.\n\nNecrotic Bomb: The undead is filled with necrotic energy; whenever it would be destroyed, it deals negative energy damage equal to 1d6 + its hit dice to all creatures within 30 feet of itself. For every 3 hit dice it possesses beyond its first, this negative energy damage increases by +1d6. A necros can choose to destroy an undead with this ability as a swift action as long as it is within 60 feet of himself.\n\nNegative Strikes: The undead's natural attacks deal an additional +1d6 negative energy damage. For every 5 hit dice it possesses beyond its first, this negative energy damage increases by +1d6\n\nNatural Attack: The undead is granted a natural "
+    },
+    {
+      "name": "Decaying Form",
+      "type": "Ex",
+      "levels": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 4th level, a necros's body begins to become more akin to an undead's, gaining DR 2/bludgeoning and magic. At 8th, 12th, and 16th level, this damage reduction increases by 2."
+    },
+    {
+      "name": "Preserve Flesh",
+      "type": "Ex",
+      "levels": [
+        4
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 4th level, a necros can restore an undead creature they control to whatever state they wish, being able to alter it as though they were using the shapeshift ability of the Alteration sphere and being treated as though they had the perfect imitation talent. In addition, an undead controlled by the necros does not rot unless they desire."
+    },
+    {
+      "name": "Darkvision",
+      "type": "Ex",
+      "levels": [
+        5
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 5th level, a necros gains darkvision 60 feet. If they already possess darkvision, it instead increases by 30 feet. At 12th level, the necros gains the see in darkness universal ability."
+    },
+    {
+      "name": "Flesh Bond",
+      "type": "Su",
+      "levels": [
+        5
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 5th level, whenever a necros grants an undead a fleshcrafter ability, they become attuned to that creature. The necros knows the creature's exact hit point total, and as a standard action can see through the undead's eyes as though they were their own as long as the undead is on the same plane as him. Doing so leaves the necros helpless, although they can issue mental commands to the undead while using this ability. At 11th level, the necros can directly control an undead whose eyes they are seeing through."
+    },
+    {
+      "name": "Necrotic Shield",
+      "type": "Su",
+      "levels": [
+        6
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 6th level, whenever a necros uses their fleshcrafter class feature on an undead, it gains temporary hit points equal to the necros's class level + their casting ability modifier. These temporary hit points last until the fleshcrafting ends, and can be restored by the necros by expending 1 use of channel energy while within 60 feet of the undead.\n\nAt 13th level, the amount of temporary hit points gained is doubled."
+    },
+    {
+      "name": "Advanced Fleshcraft",
+      "type": "Ex",
+      "levels": [
+        7
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 7th level, a necros can also select an advanced fleshcraft to add to an undead in place of a normal fleshcrafting ability. An undead can only have a single ability from the advanced fleshcraft list:\n\nAdvanced Critical: All of the undead's natural attacks increase their critical threat range by 1; this increase stacks with Improved Critical and the keen enhancement, but is applied last\n\nBlindsense: The undead gains blindsense out to a range of 30 feet\n\nBurrow: The undead gains a burrow speed equal to 1/2 its base speed\n\nGrab: Pick bite, claw, pincers, slam, or tail slap attacks. Whenever the undead makes a successful attack of the selected type, it can attempt a free combat maneuver check. If successful, the undead grapples the target. This ability only works on creatures of a size equal to or smaller than the undead. Undead with this ability receive a +4 bonus on CMB checks made to grapple.\n\nGrowth: The undead's size increases by 1 step (to a maximum of Gargantuan), gaining a +4 size bonus to Strength, a -2 penalty to Dexterity, and 2 additional hit points per hit die\n\nRend: Whenever the undead makes two successful claw attacks against the same target in 1 round, its claws latch onto the flesh and deal extra damage. This damage is equal to the damage dealt by one claw attack plus 1-1/2 times the undead's Strength modifier. The undead must have a claw attack to select this ability\n\nTrip: Whenever the undead makes a successful bite attack, it can attempt a free combat maneuver check. If successful, the target is knocked prone. If the check fails, the undead is not tripped in return. This ability only works on creatures of a size equal to or smaller than the undead. The undead must have a bite attack to select this ability\n\nWings: The undead grows a pair of wings, gaining a flight speed of 60 feet (good maneuverability)"
+    },
+    {
+      "name": "Fear Aura",
+      "type": "Su",
+      "levels": [
+        8
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 8th level, a necros radiates a 5-foot-radius fear aura as a free action. Enemies in the area must succeed on a Will save (DC 10 + 1/2 their class level + their casting ability modifier) or become shaken. A creature who successfully saves cannot be affected by that necros's fear aura for 24 hours."
+    },
+    {
+      "name": "Undead Rebirth",
+      "type": "Su",
+      "levels": [
+        9
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 9th level, a necros can spend 5 uses of channel energy to restore an undead creature to unlife. This works as the resuscitate talent from the Life sphere, healing 5d8+casting ability modifier to determine its effects."
+    },
+    {
+      "name": "Multicrafting",
+      "type": "Ex",
+      "levels": [
+        10
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 10th level, whenever a necros uses their fleshcrafting ability, they can spend an additional spell point or use of channel energy to have it affect a number of creatures equal to their casting ability modifier. If they do so, none of the creatures can gain an ability from the advanced fleshcraft class feature."
+    },
+    {
+      "name": "Fleshcrafting Artisan",
+      "type": "Ex",
+      "levels": [
+        14
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 14th level, a necros can apply two abilities from the advanced fleshcrafting ability to an undead."
+    },
+    {
+      "name": "Dead Skin",
+      "type": "Ex",
+      "levels": [
+        16
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 16th level, a necros becomes immune to nonlethal damage."
+    },
+    {
+      "name": "Unholy Revivification",
+      "type": "Ex",
+      "levels": [
+        17
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 17th level, a necros can use their undead rebirth ability on himself as a free action which can be taken at any time."
+    },
+    {
+      "name": "Master Multicrafting",
+      "type": "Ex",
+      "levels": [
+        18
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 18th level, whenever a necros uses their multicrafting ability, they can apply a single advanced talent to all undead affected by it."
+    },
+    {
+      "name": "Fleshcrafting Master",
+      "type": "Ex",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level, a necros can apply three abilities from the advanced fleshcrafting ability to an undead."
+    },
+    {
+      "name": "Lich Form",
+      "type": "Ex",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level, a living necros gains the lich template (if they are an undead or construct, they gain the rejuvenation ability of the lich template), removing their Constitution score. In addition, their phylactery comes into existence instantly, requiring no effort or payment from the necros to do so."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 1,
+      "choices": [
+        "Casting",
+        "deathbound"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 7,
+      "choices": [
+        "Advanced fleshcraft"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

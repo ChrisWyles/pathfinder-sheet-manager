@@ -1,0 +1,551 @@
+{
+  "slug": "wraith",
+  "name": "Wraith",
+  "group": "spherecaster",
+  "url": "http://spheresofpower.wikidot.com/wraith",
+  "source": "Spheres of Power wiki",
+  "hitDie": 8,
+  "alignment": "Any",
+  "role": "Eerie casters able to slip out of phase with reality and leap into susceptible minds, seizing control, making them perfect for infiltration and espionage",
+  "classSkills": [
+    "Bluff",
+    "Craft",
+    "Disguise",
+    "Fly",
+    "Intimidate",
+    "Knowledge (arcana)",
+    "Knowledge (history)",
+    "Knowledge (nobility)",
+    "Knowledge (religion)",
+    "Linguistics",
+    "Perception",
+    "Profession",
+    "Sense Motive",
+    "Spellcraft",
+    "Stealth",
+    "Use Magic Device"
+  ],
+  "skillRanksPerLevel": 4,
+  "babProgression": "THREE_QUARTER",
+  "saveProgressions": {
+    "fort": "POOR",
+    "ref": "GOOD",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+0",
+      "fortSave": "+0",
+      "refSave": "+2",
+      "willSave": "+2",
+      "special": [
+        "Casting",
+        "haunt path (path sphere)",
+        "spell pool",
+        "wraith form"
+      ],
+      "columns": {
+        "Caster Level": "+0 (1)",
+        "Magic Talents": "0(+2)"
+      },
+      "choices": [
+        "haunt path (path sphere)"
+      ]
+    },
+    {
+      "level": 2,
+      "bab": "+1",
+      "fortSave": "+0",
+      "refSave": "+3",
+      "willSave": "+3",
+      "special": [
+        "Haunt path (path possession)",
+        "possession"
+      ],
+      "columns": {
+        "Caster Level": "+1",
+        "Magic Talents": "1"
+      },
+      "choices": [
+        "Haunt path (path possession)"
+      ]
+    },
+    {
+      "level": 3,
+      "bab": "+2",
+      "fortSave": "+1",
+      "refSave": "+3",
+      "willSave": "+3",
+      "special": [
+        "Wraith haunt"
+      ],
+      "columns": {
+        "Caster Level": "+2",
+        "Magic Talents": "2"
+      },
+      "choices": []
+    },
+    {
+      "level": 4,
+      "bab": "+3",
+      "fortSave": "+1",
+      "refSave": "+4",
+      "willSave": "+4",
+      "special": [
+        "Haunt path (path skill)"
+      ],
+      "columns": {
+        "Caster Level": "+3",
+        "Magic Talents": "3"
+      },
+      "choices": [
+        "Haunt path (path skill)",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+3",
+      "fortSave": "+1",
+      "refSave": "+4",
+      "willSave": "+4",
+      "special": [
+        "Wraith haunt"
+      ],
+      "columns": {
+        "Caster Level": "+3",
+        "Magic Talents": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 6,
+      "bab": "+4",
+      "fortSave": "+2",
+      "refSave": "+5",
+      "willSave": "+5",
+      "special": [
+        "Possession (extraordinary abilities)"
+      ],
+      "columns": {
+        "Caster Level": "+4",
+        "Magic Talents": "4"
+      },
+      "choices": []
+    },
+    {
+      "level": 7,
+      "bab": "+5",
+      "fortSave": "+2",
+      "refSave": "+5",
+      "willSave": "+5",
+      "special": [
+        "Wraith haunt"
+      ],
+      "columns": {
+        "Caster Level": "+5",
+        "Magic Talents": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+6/+1",
+      "fortSave": "+2",
+      "refSave": "+6",
+      "willSave": "+6",
+      "special": [
+        "Haunt path (improved path possession)"
+      ],
+      "columns": {
+        "Caster Level": "+6",
+        "Magic Talents": "6"
+      },
+      "choices": [
+        "Haunt path (improved path possession)",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+6/+1",
+      "fortSave": "+3",
+      "refSave": "+6",
+      "willSave": "+6",
+      "special": [
+        "Wraith haunt"
+      ],
+      "columns": {
+        "Caster Level": "+6",
+        "Magic Talents": "6"
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+7/+2",
+      "fortSave": "+3",
+      "refSave": "+7",
+      "willSave": "+7",
+      "special": [
+        "Greater possession"
+      ],
+      "columns": {
+        "Caster Level": "+7",
+        "Magic Talents": "7"
+      },
+      "choices": [
+        "Greater possession"
+      ]
+    },
+    {
+      "level": 11,
+      "bab": "+8/+3",
+      "fortSave": "+3",
+      "refSave": "+7",
+      "willSave": "+7",
+      "special": [
+        "Wraith haunt"
+      ],
+      "columns": {
+        "Caster Level": "+8",
+        "Magic Talents": "8"
+      },
+      "choices": []
+    },
+    {
+      "level": 12,
+      "bab": "+9/+4",
+      "fortSave": "+4",
+      "refSave": "+8",
+      "willSave": "+8",
+      "special": [
+        "Possession (supernatural abilities)"
+      ],
+      "columns": {
+        "Caster Level": "+9",
+        "Magic Talents": "9"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+9/+4",
+      "fortSave": "+4",
+      "refSave": "+8",
+      "willSave": "+8",
+      "special": [
+        "Wraith haunt"
+      ],
+      "columns": {
+        "Caster Level": "+9",
+        "Magic Talents": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+10/+5",
+      "fortSave": "+4",
+      "refSave": "+9",
+      "willSave": "+9",
+      "special": [
+        "Haunt path (greater path possession)"
+      ],
+      "columns": {
+        "Caster Level": "+10",
+        "Magic Talents": "10"
+      },
+      "choices": [
+        "Haunt path (greater path possession)"
+      ]
+    },
+    {
+      "level": 15,
+      "bab": "+11/+6/+1",
+      "fortSave": "+5",
+      "refSave": "+9",
+      "willSave": "+9",
+      "special": [
+        "Wraith haunt"
+      ],
+      "columns": {
+        "Caster Level": "+11",
+        "Magic Talents": "11"
+      },
+      "choices": []
+    },
+    {
+      "level": 16,
+      "bab": "+12/+7/+2",
+      "fortSave": "+5",
+      "refSave": "+10",
+      "willSave": "+10",
+      "special": [
+        "Possession (spell-like abilities)"
+      ],
+      "columns": {
+        "Caster Level": "+12",
+        "Magic Talents": "12"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+12/+7/+2",
+      "fortSave": "+5",
+      "refSave": "+10",
+      "willSave": "+10",
+      "special": [
+        "Wraith haunt"
+      ],
+      "columns": {
+        "Caster Level": "+12",
+        "Magic Talents": "12"
+      },
+      "choices": []
+    },
+    {
+      "level": 18,
+      "bab": "+13/+8/+3",
+      "fortSave": "+6",
+      "refSave": "+11",
+      "willSave": "+11",
+      "special": [
+        "Possession (spheres)"
+      ],
+      "columns": {
+        "Caster Level": "+13",
+        "Magic Talents": "13"
+      },
+      "choices": [
+        "Possession (spheres)"
+      ]
+    },
+    {
+      "level": 19,
+      "bab": "+14/+9/+4",
+      "fortSave": "+6",
+      "refSave": "+11",
+      "willSave": "+11",
+      "special": [
+        "Wraith haunt"
+      ],
+      "columns": {
+        "Caster Level": "+14",
+        "Magic Talents": "14"
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+15/+10/+5",
+      "fortSave": "+6",
+      "refSave": "+12",
+      "willSave": "+12",
+      "special": [
+        "Wraith form mastery"
+      ],
+      "columns": {
+        "Caster Level": "+15",
+        "Magic Talents": "15"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Caster Level",
+    "Magic Talents"
+  ],
+  "features": [
+    {
+      "name": "Weapon and Armor Proficiencies",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "The wraith is proficient with all simple weapons, scythes, and light armor."
+    },
+    {
+      "name": "Casting",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A wraith may combine spheres and talents to create magical effects. A wraith is a Mid-Caster. (Note: All casters gain 2 bonus talents and a casting tradition the first time they gain the casting class feature.)"
+    },
+    {
+      "name": "Spell Pool",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A wraith gains a small reservoir of energy he can call on to create truly wondrous effects, called a spell pool. This pool contains a number of spell points equal to his class level + his casting ability modifier (minimum 1). This pool replenishes once per day after roughly 8 hours of rest."
+    },
+    {
+      "name": "Magic Talents",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "A wraith gains 3/4ths of a magic talent per level, according to Table: The Wraith."
+    },
+    {
+      "name": "Haunt Path",
+      "type": "",
+      "levels": [
+        1,
+        2,
+        4,
+        8,
+        14
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 1st level, the wraith chooses a haunt path. Once selected, this choice cannot be changed. Path skills are always class skills for wraiths with that path.\n\nAt 1st level, each path grants the listed path sphere, or a talent from that sphere if it is already possessed, as a bonus magic talent and uses his class level as his caster level with the path sphere. This stacks normally with caster levels gained from other sources.\n\nAt 2nd level, the wraith gains a path possession, granting additional options for his possession ability.\n\nAt 4th level, the wraith gains an insight bonus to the listed skill equal to half his class level.\n\nAt 8th level, the wraith gains an improved path possession, granting further options to his possession ability.\n\nAt 14th level, the wraith gains a greater path possession, granting a final expansion of options to his possession ability."
+    },
+    {
+      "name": "Wraith Form",
+      "type": "Su",
+      "levels": [
+        1,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 1st level, for a number of rounds per day equal to his class level plus his casting ability modifier, the wraith may gain the incorporeal subtype, with the following modifications:\n\nThe wraith takes half damage from non-magic weapons.\n\nThe wraith cannot make weapon or natural weapon attacks while in wraith form unless he uses a weapon with the ghost touch special ability.\n\nEffects originating from corporeal sources that do not deal damage have a 20% chance to fail against the wraith instead of the normal 50%. Force effect are not subject to this failure chance.\n\nThe wraith retains all worn equipment not exceeding his maximum load as well as the benefits from any magic items that grant a continuous effect, but gains no benefit from physical armor or shields.\n\nThe wraith uses normal movement speeds (treat moving through solid objects as ground movement).\n\nWhen not on or in a solid or liquid, the wraith falls slowly and may glide, moving with a speed of 30 feet with maneuverability (perfect), but falling 1 foot for every 5 feet traveled (unless possessing a fly speed).\n\nActivating this ability is a move action and ending it is a free action. He may not activate this ability if carrying a load greater than his maximum load. Should the wraith become corporeal while in a solid object, he is immediately shunted to the nearest empty space, taking 1d6 untyped damage per 5 feet traveled."
+    },
+    {
+      "name": "Possession",
+      "type": "Su",
+      "levels": [
+        2,
+        6,
+        12,
+        16,
+        18
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level, the wraith may attempt to possess a creature within his natural reach as a standard action. This is a mind-affecting possession effect. The challenge rating of the creature determines the duration of the possession, per the Table: Possession Duration (creatures such as animal companions, Conjuration sphere companions, and familiars are treated as having a CR of their Hit Dice - 2 for this purpose).\n\nThis effect can be resisted with a Will save with a DC of 10 + half his wraith level + his casting ability modifier. A successful save to resist or end a possession increases the spell point cost for that individual wraith to possess that creature by 1 for 24 hours. This cost increase is cumulative, but is reset by a successful possession. Unless otherwise noted, creatures are aware of a failed possession attempt, having a feeling of a hostile force, but gain no other information. If the wraith is successful, his body is absorbed by and his life force occupies the host body.\n\nThe duration of an ongoing possession may be reset with the same action and spell point cost that was required to initiate it.\n\nThere are two types of possession: passive and active. The wraith chooses which to initiate as part of attempting possession.\n\n• Passive Possession\n\nPassive possession grants no control over the possessed creature, though shares the creature's senses and may communicate telepathically with it. Attempting to passively possess an unwilling target costs a spell point.\n\nThe wraith maintains his Intelligence, Wisdom, Charisma, level, class, base attack bonus, alignment, mental abilities, extraordinary abilities not derived from physical form, combat talents, supernatural abilities, and magical abilities such as spells, sphere abilities, and spell-like abilities. Should the host become dazed, stunned, or unconscious, the wraith may control their body as normal as if actively possessing the host for the duration of the dazed, stunned, or unconscious condition. Targeted mind-affecting effects apply only to the mind in control of the body; if the wraith is not controlling the host, then the wraith is not the target. When successfully attempting a passive possession"
+    },
+    {
+      "name": "Wraith Haunts",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "At 3rd level and every odd level thereafter, the wraith gains one haunt from the following list. Each haunt may only be selected once unless otherwise noted. If a haunt calls for a saving throw, the DC is 10 + 1/2 his wraith level + his casting ability modifier. All wraith haunts are considered supernatural abilities unless noted.\n\n• Amnesiac Possession\n\nAs part of ending a possession, the wraith may force the host creature to succeed on a Will save or forget the duration of the possession as the Amnesia talent of the Mind sphere.\n\n• Benevolent Passenger\n\nWhen possessing an object or a willing creature, the wraith gains the benefits of the Silent Spell and Still Spell metamagic feats. If the wraith already possesses either of these feats, reduce the spell point cost of the possessed feat by 1 (minimum 0).\n\n• Consume Host\n\nWhile possessing a living creature, the wraith may spend a spell point as a move action to deal 1d6 untyped damage per 2 class levels to the host. A successful Fortitude save halves this damage. The wraith heals a number of hit points equal to the damage dealt. A creature that successfully saves against this ability becomes immune to it for the duration of the possession.\n\n• Deep Phase\n\nWhile in wraith form, the wraith may spend a spell point as a move action to attempt to pass through objects thicker than his own space. The wraith may move up to his speed through solid matter. If the wraith does not end his movement in a space he could occupy, he is shunted back to his starting position, taking 1d6 untyped damage per 5 feet traveled.\n\n• Disorienting Possession\n\nWhen the wraith's active possession ends, he may force the possessed creature to attempt a Fortitude save or be nauseated for a number of rounds equal to the wraith's casting ability modifier. A successful save reduces this to being sickened for 1 round.\n\n• Dominate Ooze\n\nThe wraith may possess mindless creatures of the ooze type, bypassing the immunity to mind-affecting effects granted by the ooze type.\n\n• Expanded Path Possession (requires haunt path, path sphere of the selected path)\n\nThe wraith gains the path possession ability of a path he does not possess. This wraith haunt may be"
+    },
+    {
+      "name": "Greater Possession",
+      "type": "",
+      "levels": [
+        10
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 10th level, when the wraith succeeds in actively possessing a target, he may choose to maintain control of that target while moving on to another. The wraith may choose to exit the creature, appearing in an adjacent square or the nearest available square. The wraith may act normally, dividing his actions between the actively possessed creature and himself. Multiple creatures may be actively possessed; actions are divided between all possessed creatures and the wraith. For example, if the wraith possesses an orc, the wraith may spend his next standard action to possess the nearby goblin, then move the orc up to its speed (a move action), and cast a quickened sphere effect (a swift action). The following round, the goblin could reload a light crossbow (a move action), the orc could make an attack action (a standard action), and the wraith would still have a swift action. The number of creatures possessed at one time may not exceed the wraith's casting ability modifier (minimum 2). The wraith may choose to end his control of any possessed creature as a free action."
+    },
+    {
+      "name": "Wraith Form Mastery",
+      "type": "",
+      "levels": [
+        1,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level, the wraith may remain in wraith form for any number of rounds in a day. Any instances of the extra wraith form and lingering incorporeality wraith haunts may immediately be retrained for other wraith haunts for which the wraith qualifies."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 1,
+      "choices": [
+        "haunt path (path sphere)"
+      ]
+    },
+    {
+      "level": 2,
+      "choices": [
+        "Haunt path (path possession)"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "Haunt path (path skill)",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "Haunt path (improved path possession)",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 10,
+      "choices": [
+        "Greater possession"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 14,
+      "choices": [
+        "Haunt path (greater path possession)"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 18,
+      "choices": [
+        "Possession (spheres)"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

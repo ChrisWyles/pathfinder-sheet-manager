@@ -1,0 +1,578 @@
+{
+  "slug": "blacksmith",
+  "name": "Blacksmith",
+  "group": "practitioner",
+  "url": "http://spheresofpower.wikidot.com/blacksmith",
+  "source": "Spheres of Power wiki",
+  "hitDie": 10,
+  "alignment": "Any",
+  "role": "Blacksmiths support their party by crafting and maintaining potent weapons and armor, and wade into battle leveling powerful blows",
+  "classSkills": [
+    "Appraise",
+    "Climb",
+    "Craft",
+    "Disable Device",
+    "Intimidate",
+    "Knowledge (engineering)",
+    "Knowledge (local)",
+    "Perception",
+    "Profession",
+    "Survival",
+    "Swim",
+    "Use Magic Device"
+  ],
+  "skillRanksPerLevel": 4,
+  "babProgression": "FULL",
+  "saveProgressions": {
+    "fort": "GOOD",
+    "ref": "POOR",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+1",
+      "fortSave": "+2",
+      "refSave": "+0",
+      "willSave": "+2",
+      "special": [
+        "Combat training",
+        "equipment specialist",
+        "maintenance",
+        "thunderous blows +1d6"
+      ],
+      "columns": {
+        "Combat Talents": "1"
+      },
+      "choices": [
+        "equipment specialist",
+        "maintenance"
+      ]
+    },
+    {
+      "level": 2,
+      "bab": "+2",
+      "fortSave": "+3",
+      "refSave": "+0",
+      "willSave": "+3",
+      "special": [
+        "Skilled craftsman",
+        "smithing insight"
+      ],
+      "columns": {
+        "Combat Talents": "2"
+      },
+      "choices": [
+        "smithing insight"
+      ]
+    },
+    {
+      "level": 3,
+      "bab": "+3",
+      "fortSave": "+3",
+      "refSave": "+1",
+      "willSave": "+3",
+      "special": [
+        "Artisan savant (Craft Wondrous Item)",
+        "reforge",
+        "thunderous blows +2d6"
+      ],
+      "columns": {
+        "Combat Talents": "3"
+      },
+      "choices": [
+        "Artisan savant (Craft Wondrous Item)"
+      ]
+    },
+    {
+      "level": 4,
+      "bab": "+4",
+      "fortSave": "+4",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Smithing insight"
+      ],
+      "columns": {
+        "Combat Talents": "4"
+      },
+      "choices": [
+        "Smithing insight",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+5",
+      "fortSave": "+4",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Artisan Savant (Craft Magic Arms and Armor)",
+        "thunderous blows +3d6"
+      ],
+      "columns": {
+        "Combat Talents": "5"
+      },
+      "choices": [
+        "Artisan Savant (Craft Magic Arms and Armor)"
+      ]
+    },
+    {
+      "level": 6,
+      "bab": "+6/+1",
+      "fortSave": "+5",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Smithing insight"
+      ],
+      "columns": {
+        "Combat Talents": "6"
+      },
+      "choices": [
+        "Smithing insight"
+      ]
+    },
+    {
+      "level": 7,
+      "bab": "+7/+2",
+      "fortSave": "+5",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Thunderous blows +4d6"
+      ],
+      "columns": {
+        "Combat Talents": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+8/+3",
+      "fortSave": "+6",
+      "refSave": "+2",
+      "willSave": "+6",
+      "special": [
+        "Smithing insight"
+      ],
+      "columns": {
+        "Combat Talents": "8"
+      },
+      "choices": [
+        "Smithing insight",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+9/+4",
+      "fortSave": "+6",
+      "refSave": "+3",
+      "willSave": "+6",
+      "special": [
+        "Rapid maintenance",
+        "thunderous blows +5d6"
+      ],
+      "columns": {
+        "Combat Talents": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+10/+5",
+      "fortSave": "+7",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Smithing insight"
+      ],
+      "columns": {
+        "Combat Talents": "10"
+      },
+      "choices": [
+        "Smithing insight"
+      ]
+    },
+    {
+      "level": 11,
+      "bab": "+11/+6/+1",
+      "fortSave": "+7",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Thunderous blows +6d6"
+      ],
+      "columns": {
+        "Combat Talents": "11"
+      },
+      "choices": []
+    },
+    {
+      "level": 12,
+      "bab": "+12/+7/+2",
+      "fortSave": "+8",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Smithing insight"
+      ],
+      "columns": {
+        "Combat Talents": "12"
+      },
+      "choices": [
+        "Smithing insight",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+13/+8/+3",
+      "fortSave": "+8",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Rapid maintenance",
+        "thunderous blows +7d6"
+      ],
+      "columns": {
+        "Combat Talents": "13"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+14/+9/+4",
+      "fortSave": "+9",
+      "refSave": "+4",
+      "willSave": "+9",
+      "special": [
+        "Smithing insight"
+      ],
+      "columns": {
+        "Combat Talents": "14"
+      },
+      "choices": [
+        "Smithing insight"
+      ]
+    },
+    {
+      "level": 15,
+      "bab": "+15/+10/+5",
+      "fortSave": "+9",
+      "refSave": "+5",
+      "willSave": "+9",
+      "special": [
+        "Thunderous blows +8d6"
+      ],
+      "columns": {
+        "Combat Talents": "15"
+      },
+      "choices": []
+    },
+    {
+      "level": 16,
+      "bab": "+16/+11/+6/+1",
+      "fortSave": "+10",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Smithing insight"
+      ],
+      "columns": {
+        "Combat Talents": "16"
+      },
+      "choices": [
+        "Smithing insight",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+17/+12/+7/+2",
+      "fortSave": "+10",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Rapid maintenance",
+        "thunderous blows +9d6"
+      ],
+      "columns": {
+        "Combat Talents": "17"
+      },
+      "choices": []
+    },
+    {
+      "level": 18,
+      "bab": "+18/+13/+8/+3",
+      "fortSave": "+11",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Smithing insight"
+      ],
+      "columns": {
+        "Combat Talents": "18"
+      },
+      "choices": [
+        "Smithing insight"
+      ]
+    },
+    {
+      "level": 19,
+      "bab": "+19/+14/+9/+4",
+      "fortSave": "+11",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Thunderous blows +10d6"
+      ],
+      "columns": {
+        "Combat Talents": "19"
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+20/+15/+10/+5",
+      "fortSave": "+12",
+      "refSave": "+6",
+      "willSave": "+12",
+      "special": [
+        "Smith's masterpiece",
+        "smithing insight"
+      ],
+      "columns": {
+        "Combat Talents": "20"
+      },
+      "choices": [
+        "Smith's masterpiece",
+        "smithing insight",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Combat Talents"
+  ],
+  "features": [
+    {
+      "name": "Combat Training",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A blacksmith may combine combat spheres and talents to create powerful martial techniques. Blacksmiths are considered Expert combatants and use Constitution as their practitioner modifier."
+    },
+    {
+      "name": "Equipment Specialist",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "The blacksmith gains one talent from the Equipment sphere as a bonus talent at 1st level."
+    },
+    {
+      "name": "Maintenance",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "Starting at 1st level, the blacksmith learns how to maintain and optimize his equipment and that of his party members by sharpening weapons, tightening armor straps, replacing padding, and performing other tasks that allow him and his companions to get the most out of their gear each day. Whenever the party has at least 8 consecutive hours of rest time (or the equivalent of 8 hour's rest, such as 2 hour's rest with a ring of sustenance or similar ability), the blacksmith can set aside a small period of time to perform these maintenance tasks without interfering with his normal rest to give him and a number of allies equal to 1 + his Constitution modifier (minimum 1) one of the following benefits for 24 hours, or until their next 8 hour or longer rest, whichever comes first. The blacksmith may select a different maintenance for each ally to be affected.\n\n• Armor Maintenance\n\nThe blacksmith and his allies reduce the armor check penalty of all armor they wear by 1 (minimum 0), and increase the armor bonus of their worn armor (but not shields) by +1. The armor bonus increases by +1 and the armor check penalty is reduced by an additional 1 at 5th level and every 5 levels thereafter. For the purposes of this ability, a standard set of clothing or similar equivalent (such as a wizard's robes) is treated as light armor with an armor bonus and armor check penalty of 0.\n\n• Clarifying Reinforcements\n\nThe blacksmith hammers thin lead linings into helmets and head gear, sews small packets of smelling salts into glove linings, and performs other tasks that give his allies an advantage in resisting harmful mental effects; all creatures affected by this maintenance gain a +1 competence bonus to Will saves, plus an additional +1 for every 5 class levels the blacksmith possesses.\n\n• Cobbling\n\nThe blacksmith reinforces his allies' footwear, giving them a firmer tread and providing sturdier protection; the blacksmith and his allies ignore the first square of difficult terrain they enter each round; at 5th level and every five levels thereafter, they may ignore one additional square of difficult terrain each round.\n\n• Fortifying Reinforcements\n\nThe blacksmith adds special herbal pac"
+    },
+    {
+      "name": "Thunderous Blows",
+      "type": "Ex",
+      "levels": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Starting at 1st level, the blacksmith becomes particularly adept at striking crafted creations in exactly the right place and manner to damage them most effectively. When the blacksmith makes an attack action or attack of opportunity, he deals an additional 1d6 damage if making a successful sunder attempt or if attacking a construct or object (including animated objects). This damage increases by 1d6 at 3rd level and every two levels thereafter. The blacksmith never provokes attacks of opportunity for attempting the sunder combat maneuver, and whenever the blacksmith chooses to destroy an item held or worn by a creature with a sunder attempt any excess damage is applied to the item's wielder. The blacksmith counts as having the Improved Sunder feat for determining prerequisites.\n\nAt 3rd level, the blacksmith has learned how to swing his weapons in a way that shatters scales and claws as easily as manufactured armor and weapons. The blacksmith may make a special sunder attempt as an attack action, targeting a creature's natural armor or natural weapons. If the blacksmith chooses to sunder the creature's natural armor, on a successful check he deals damage to the creature equal to his normal weapon damage (bonus damage from thunderous blows is not applied when using sunder in this manner) and it takes a penalty to its natural armor bonus equal to the number of bonus damage dice granted by his thunderous blows class feature; a creature's natural armor bonus cannot be reduced below 0 in this manner. Any amount of magical healing removes this penalty, as does a DC 15 Heal check, which can be made as a standard action.\n\nIf the blacksmith chooses to sunder the creature's natural weapon, on a successful check he deals damage to the creature equal to his normal weapon damage and it takes a penalty to attack rolls with that natural weapon equal to the number of bonus damage dice granted by his thunderous blows class feature for 1 round."
+    },
+    {
+      "name": "Skilled Craftsman",
+      "type": "Ex",
+      "levels": [
+        2
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Starting at 2nd level, the blacksmith may use Profession (blacksmith) in place of all Craft and Spellcraft skill checks made to create, modify, repair, and enchant weapons, armor, and shields, and he gains a competence bonus equal to 1/2 his class level (minimum 1) on all Profession (blacksmith) checks. In addition, the smith learns to quickly repair damaged objects, restoring 2 hit points per class level he possesses to an object as a standard action that provokes an attack of opportunity. If the object has the broken condition, this condition is removed if the object is restored to at least half its original hit points. All of the pieces of an object must be present for this ability to function. Magic items can be repaired by this ability, but the blacksmith's class level must be equal to or higher than the caster level of the object. This ability does not affect creatures (including constructs). This ability has no effect on objects that have been warped or otherwise transmuted, but it can still repair damage done to such items. This ability can be used to repair nonmagical weapons, armor, and shields that have been destroyed, as long as all the pieces are together in an accessible location. At 5th level, the blacksmith no longer provokes an attack of opportunity for using this ability."
+    },
+    {
+      "name": "Smithing Insight",
+      "type": "Ex",
+      "levels": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "The blacksmith's expertise in crafting and maintaining weapons and equipment has given him a broader and deeper insight into the strengths and weaknesses of all kinds of equipment. Unless otherwise noted, a blacksmith cannot select an individual smithing insight more than once. At 2nd level and every 2 levels thereafter the blacksmith gains one smithing insight from the following list:\n\n• Alchemical Maintenance [Apoc]\n\nSource: Spheres Apocrypha: Armor Talents 2\n\nYou gain the Alchemy sphere for the (formulae) package and must select the Armor Maintenance Kit talent with the free (formulae) talent granted by that package.\n\nYou may expend an armor maintenance kit when performing a maintenance to gain a unique benefit:\n\nPolish: You may expend a polish kit when performing the polish maintenance to allow the maintenance to be used one additional time per day per ray that could be deflected by the polish kit.\n\nLubrication: You may expend a lubrication kit when applying the armor maintenance to apply the lubrication kit's bonus to the armor maintenance.\n\n• Animal Grooming (Ex) [BTH]\n\nThe blacksmith gains the Beastmastery sphere as a bonus talent.\n\nIf the blacksmith possesses the maintenance class feature, by treating or grooming the ally as appropriate, the blacksmith can perform maintenance options on natural weapons, natural armor, and other body parts and appendages. Treat a creature's natural weapons as manufactured weapons, natural armor as worn armor, and other body parts or appendages as the correct equipment when appropriate (such as a horse's hooves as boots for the cobbling maintenance). If a maintenance would affect any number of manufactured weapons, it instead affects up to two of the ally's natural weapons. Maintenance performed on an ally this way can take the form of grooming or pet care, such as cleaning and mending horseshoes, filing fangs and claws, or buffing and waxing shells to apply chosen maintenance options.\n\nWhen performing maintenance, the blacksmith can perform maintenance for one subordinate that does not count against the normal maximum number of allies he can perform maintenance for.\n\nSpecial: If the blacksmith possesses an archetype which"
+    },
+    {
+      "name": "Artisan Savant",
+      "type": "",
+      "levels": [
+        3,
+        5
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "Starting at 3rd level, the blacksmith becomes proficient in creating powerful magic equipment, treating his class level as his caster level for crafting feats and abilities and using the appropriate Craft skill (weapons, armor, bows, etc.) for the check to complete the item. In addition, the blacksmith gains Craft Wondrous Item as a bonus feat at 3rd level, and Craft Magic Arms and Armor at 5th level.\n\nNote: If using Spheres of Power, you may exchange these feats for Craft Marvelous Items and Smith Magical Weapons And Armor, respectively."
+    },
+    {
+      "name": "Reforge",
+      "type": "Ex",
+      "levels": [
+        3
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "From 3rd level on, the blacksmith's experience with crafting excellent equipment allows him to manipulate and rework magical equipment without damaging or sacrificing its magical potency. The blacksmith can spend 1 hour per total effective bonus (minimum 1 hour) of an enchanted armor, weapon, or shield (enhancement bonus plus permanent special ability bonus equivalents) at an operational forge to reforge the equipment into another equivalent item at no additional cost; weapons into weapons of another type, armor into a separate type of armor, and shields into weapons, armor, or other types of shields; a heavy shield can be converted into a light shield or vice versa, and a tower shield can be converted into any other type of shield, but bucklers, light shields and heavy shields cannot be converted into tower shields. When reforging, the blacksmith cannot exchange one piece of equipment for another that is not predominantly made out of the same dominant material; a greatclub can be reforged into a quarterstaff or spear, but not into a bastard sword, and a suit of platemail could be reforged into a breastplate or chain shirt, but not into a suit of leather armor. The new weapon or armor must be the same size or smaller as the original.\n\nIn addition, the blacksmith can restore a magic weapon, armor, or shield that has been destroyed by a sunder attack or similar ability; if the blacksmith can acquire all the broken pieces of the equipment, he may restore it to its original complete condition, including all enchantments, with 8 hours of work at an operational forge.\n\nAuthor's Note: Reforge allows a blacksmith to change the type of item (i.e. longsword to greatsword, armor to armor, etc.). Reforge cannot alter the item's special abilities (i.e. you cannot change flaming to frost, etc.). When reforging an item with a special ability that can only be placed on specific categories of items (i.e. keen for weapons, mind-buttressing on armors), changing that item's form does not allow that special ability to apply to an \"invalid\" item (i.e. a bludgeoning weapon cannot benefit from keen, light armor cannot benefit from mind-buttressing). The resulting reforged item would re"
+    },
+    {
+      "name": "Rapid Maintenance",
+      "type": "Ex",
+      "levels": [
+        9,
+        13,
+        17
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "The blacksmith's skill at performing maintenance improves and he may now perform multiple maintenances at once. At 9th, 13th, and 17th level, the blacksmith may perform 1 additional maintenance during an 8 hour rest (for a total of 4 maintenances per affected creature at 17th level)."
+    },
+    {
+      "name": "Smith's Masterpiece",
+      "type": "",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 20th level the blacksmith reaches the pinnacle of his craft. Throughout his career, the blacksmith has collected and hoarded special materials, crafting secrets, and scraps of ancient rituals, all in preparation for his ultimate life's work. The blacksmith crafts a single magic armor, weapon, or shield of his choice, imbuing it with power beyond what any normal piece of equipment can contain. The crafted item has a +5 enhancement bonus, and the smith may choose up to +8 effective enhancement bonus' worth of special abilities to apply to this piece of equipment; once chosen, these enhancements cannot be changed. This ability supersedes the normal restriction preventing equipment from exceeding a total enhancement bonus of +10 including class abilities. As long as the blacksmith and his masterpiece are on the same plane, the blacksmith can recall the masterpiece to himself with 1 minute of concentration, even if it is currently in another creature's possession."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 1,
+      "choices": [
+        "equipment specialist",
+        "maintenance"
+      ]
+    },
+    {
+      "level": 2,
+      "choices": [
+        "smithing insight"
+      ]
+    },
+    {
+      "level": 3,
+      "choices": [
+        "Artisan savant (Craft Wondrous Item)"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "Smithing insight",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "choices": [
+        "Artisan Savant (Craft Magic Arms and Armor)"
+      ]
+    },
+    {
+      "level": 6,
+      "choices": [
+        "Smithing insight"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "Smithing insight",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 10,
+      "choices": [
+        "Smithing insight"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "Smithing insight",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 14,
+      "choices": [
+        "Smithing insight"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "Smithing insight",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 18,
+      "choices": [
+        "Smithing insight"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "Smith's masterpiece",
+        "smithing insight",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

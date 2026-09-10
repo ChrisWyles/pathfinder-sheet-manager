@@ -1,0 +1,595 @@
+{
+  "slug": "striker",
+  "name": "Striker",
+  "group": "practitioner",
+  "url": "http://spheresofpower.wikidot.com/striker",
+  "source": "Spheres of Power wiki",
+  "hitDie": 10,
+  "alignment": "Any",
+  "role": "A striker is meant to stay in the front lines, gaining tension to tear through her foes with devastating counter attacks",
+  "classSkills": [
+    "Acrobatics",
+    "Climb",
+    "Craft",
+    "Escape Artist",
+    "Fly",
+    "Heal",
+    "Intimidate",
+    "Knowledge (nature)",
+    "Perception",
+    "Perform",
+    "Profession",
+    "Ride",
+    "Sense Motive",
+    "Sleight of Hand",
+    "Stealth",
+    "Survival",
+    "Swim"
+  ],
+  "skillRanksPerLevel": 4,
+  "babProgression": "FULL",
+  "saveProgressions": {
+    "fort": "GOOD",
+    "ref": "GOOD",
+    "will": "POOR"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+1",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+0",
+      "special": [
+        "AC bonus",
+        "bare knuckles",
+        "combat training",
+        "tension",
+        "tension techniques"
+      ],
+      "columns": {
+        "Combat Talents": "1"
+      },
+      "choices": [
+        "bare knuckles",
+        "tension"
+      ]
+    },
+    {
+      "level": 2,
+      "bab": "+2",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+0",
+      "special": [
+        "Striker art",
+        "tension boost"
+      ],
+      "columns": {
+        "Combat Talents": "2"
+      },
+      "choices": []
+    },
+    {
+      "level": 3,
+      "bab": "+3",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+1",
+      "special": [
+        "Drill knuckle",
+        "uncanny dodge"
+      ],
+      "columns": {
+        "Combat Talents": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 4,
+      "bab": "+4",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+1",
+      "special": [
+        "Desperate tension"
+      ],
+      "columns": {
+        "Combat Talents": "4"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+5",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+1",
+      "special": [
+        "Striker art",
+        "tension training"
+      ],
+      "columns": {
+        "Combat Talents": "5"
+      },
+      "choices": [
+        "tension training"
+      ]
+    },
+    {
+      "level": 6,
+      "bab": "+6/+1",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+2",
+      "special": [
+        "Drill knuckle"
+      ],
+      "columns": {
+        "Combat Talents": "6"
+      },
+      "choices": []
+    },
+    {
+      "level": 7,
+      "bab": "+7/+2",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+2",
+      "special": [
+        "Pummeling punisher",
+        "tension boost"
+      ],
+      "columns": {
+        "Combat Talents": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+8/+3",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+2",
+      "special": [
+        "Striker art"
+      ],
+      "columns": {
+        "Combat Talents": "8"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+9/+4",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+3",
+      "special": [
+        "Drill knuckle"
+      ],
+      "columns": {
+        "Combat Talents": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+10/+5",
+      "fortSave": "+7",
+      "refSave": "+7",
+      "willSave": "+3",
+      "special": [
+        "Rising tension"
+      ],
+      "columns": {
+        "Combat Talents": "10"
+      },
+      "choices": []
+    },
+    {
+      "level": 11,
+      "bab": "+11/+6/+1",
+      "fortSave": "+7",
+      "refSave": "+7",
+      "willSave": "+3",
+      "special": [
+        "Striker art",
+        "tension training"
+      ],
+      "columns": {
+        "Combat Talents": "11"
+      },
+      "choices": [
+        "tension training"
+      ]
+    },
+    {
+      "level": 12,
+      "bab": "+12/+7/+2",
+      "fortSave": "+8",
+      "refSave": "+8",
+      "willSave": "+4",
+      "special": [
+        "Drill knuckle",
+        "improved uncanny dodge"
+      ],
+      "columns": {
+        "Combat Talents": "12"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+13/+8/+3",
+      "fortSave": "+8",
+      "refSave": "+8",
+      "willSave": "+4",
+      "special": [
+        "Tension boost"
+      ],
+      "columns": {
+        "Combat Talents": "13"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+14/+9/+4",
+      "fortSave": "+9",
+      "refSave": "+9",
+      "willSave": "+4",
+      "special": [
+        "Striker art"
+      ],
+      "columns": {
+        "Combat Talents": "14"
+      },
+      "choices": []
+    },
+    {
+      "level": 15,
+      "bab": "+15/+10/+5",
+      "fortSave": "+9",
+      "refSave": "+9",
+      "willSave": "+5",
+      "special": [
+        "Drill knuckle"
+      ],
+      "columns": {
+        "Combat Talents": "15"
+      },
+      "choices": []
+    },
+    {
+      "level": 16,
+      "bab": "+16/+11/+6/+1",
+      "fortSave": "+10",
+      "refSave": "+10",
+      "willSave": "+5",
+      "special": [
+        "Rising tension"
+      ],
+      "columns": {
+        "Combat Talents": "16"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+17/+12/+7/+2",
+      "fortSave": "+10",
+      "refSave": "+10",
+      "willSave": "+5",
+      "special": [
+        "Striker art",
+        "tension training"
+      ],
+      "columns": {
+        "Combat Talents": "17"
+      },
+      "choices": [
+        "tension training"
+      ]
+    },
+    {
+      "level": 18,
+      "bab": "+18/+13/+8/+3",
+      "fortSave": "+11",
+      "refSave": "+11",
+      "willSave": "+6",
+      "special": [
+        "Drill knuckle"
+      ],
+      "columns": {
+        "Combat Talents": "18"
+      },
+      "choices": []
+    },
+    {
+      "level": 19,
+      "bab": "+19/+14/+9/+4",
+      "fortSave": "+11",
+      "refSave": "+11",
+      "willSave": "+6",
+      "special": [
+        "Tension boost"
+      ],
+      "columns": {
+        "Combat Talents": "19"
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+20/+15/+10/+5",
+      "fortSave": "+12",
+      "refSave": "+12",
+      "willSave": "+6",
+      "special": [
+        "Striker art",
+        "ultimate tension"
+      ],
+      "columns": {
+        "Combat Talents": "20"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Combat Talents"
+  ],
+  "features": [
+    {
+      "name": "Combat Training",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A striker may combine combat spheres and talents to create powerful martial techniques. Strikers are considered Expert practitioners and use Constitution as their practitioner modifier."
+    },
+    {
+      "name": "AC Bonus",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "When wearing light armor or no armor, not carrying a shield, and unencumbered, the striker adds her Constitution bonus (if any) to her AC and her CMD; this bonus cannot exceed her class level. (A 1st level striker with 16 Constitution still gains only a +1 bonus to her armor class from this class feature.) This AC bonus does not stack with any class features which share the same name as it.\n\nThis bonus to AC applies even against touch attacks or when the striker is flat-footed. She loses these bonuses when she is immobilized or helpless, when she wears medium or heavy armor, uses a shield, or when she carries a medium or heavy load.\n\nWiki Note: This stacks with the Equipment Sphere's Unarmored Training talent. You can also get Unarmored Training as a Striker Art. (Source)"
+    },
+    {
+      "name": "Bare Knuckles",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "The striker gains their choice of Boxing, Brute, or Open Hand as a bonus sphere. If she already possesses Boxing, Brute, or Open Hand, she can choose to gain either a sphere she does not have or a talent from the sphere she does possess."
+    },
+    {
+      "name": "Tension",
+      "type": "Ex",
+      "levels": [
+        1,
+        2,
+        5,
+        7,
+        11,
+        13,
+        17,
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A striker is at home in battle, thriving on the raw energy of combat to fuel her attacks. A striker begins the day with no tension, but can gain tension in the following ways (a striker cannot gain tension from each of these more than once per round and a striker must be in combat to gain tension):\n\nOffensive Pressure: Whenever the striker successfully damages a creature with an unarmed strike or makes a successful combat maneuver check against a creature to initiate a combat maneuver, she gains 1 tension.\n\nDefensive Determination: Whenever the striker takes damage from an attack originating from a creature (including spells, spell-like abilities, and supernatural abilities), she gains 1 tension. A striker does not gain tension from attacks made against her while she is flat-footed or unaware.\n\nManeuvering Momentum: Whenever the striker moves 10 ft. or more during her turn (this cannot be forced movement), she gains 1 tension.\n\nHer tension goes up or down throughout the day, but usually cannot go higher than her Constitution modifier (minimum 1), though some feats, abilities, and magic items may affect this maximum. At 3rd level and every three levels afterward, her maximum tension increases by 1. If a striker spends 1 minute or longer outside of combat, she loses all tension she possesses."
+    },
+    {
+      "name": "Tension Techniques",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A striker can spend tension in order to accomplish incredible feats and each tension technique can only be used once per round (if an ability does not have an associated action listed, using it is a free action which can be done during anyone's turn). Unless stated otherwise, you must activate a tension technique before any applicable rolls are made. For example, if you activate Expert Guard, you must do so before making a saving throw.\n\n1 Tension\n\nExpert Guard: For each tension a striker spends on this tension technique, she gains a +1 circumstance bonus on all saves until the beginning of her next turn.\n\nFiery Offense: For each tension a striker spends on this tension technique, she gains a +1 circumstance bonus to attack and damage rolls made with unarmed strikes until the beginning of her next turn.\n\nLight Step: The striker spends a swift action and selects a single creature, all movement she makes until the beginning of her next turn does not provoke attacks of opportunity from that creature.\n\nStalwart Form: For each tension a striker spends on this tension technique, she gains DR 1/- until the beginning of her next turn; this damage reduction stacks with similar damage reduction.\n\nTimely Dodge: For each tension a striker spends on this tension technique, she gains a +1 dodge bonus to her armor class until the beginning of her next turn.\n\n2 Tension\n\nCritical Knuckle: The striker increases the critical threat range of her unarmed strikes by 1 until the beginning of her next turn; this bonus stacks with other increases to the striker's unarmed strikes critical threat range, but is applied last.\n\nPerfect Offensive: The striker automatically confirms a critical threat made with an unarmed strike.\n\nSwift Focus: The striker spends a swift action to regain martial focus.\n\n3 Tension\n\nRapid Pummel: Whenever a striker makes an attack action with an unarmed strike or attempts a combat maneuver check as a standard action, she can spend a swift action to make an additional attack with an unarmed strike with a -2 penalty (she can wait until the results of the attack roll before deciding to use this tension technique) once per turn.\n\nSecond Chance: The striker can reroll "
+    },
+    {
+      "name": "Striker Art",
+      "type": "Ex",
+      "levels": [
+        2,
+        5,
+        8,
+        11,
+        14,
+        17,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level and every three levels thereafter, a striker gains a striker art from the following list (striker arts with the [Tension] tag add new tension techniques):\n\n• Adrenaline Rush [Tension] [LG]\n\nSource: Arcforge Players Compendium\n\nWhen the striker uses speed step, she may spend an additional point of tension to not provoke attacks of opportunity for moving.\n\n• Adrenaline Surge [Tension]\n\nFor every tension the striker spends on this tension technique, she gains a number of temporary hit points equal to her Constitution modifier (minimum 1); these temporary hit points last for 1 minute or until lost, whichever comes first, and stack with other sources of temporary hit points including itself.\n\n• Area Strike [Tension] [LG]\n\nSource: Arcforge Players Compendium\n\nThe striker may spend 2 tension to have the next natural attack she makes target all creatures in a 15-foot cone or a 25-foot line. For each additional tension you spend to activate this adaptation, the striker may increase the cone's length by 5 feet or increase the line's length by 10 feet. Regardless of how many creatures are hit by this attack, she cannot apply the effects of an attack action to more than one target (as if she were making an attack with a scatter weapon).\n\n• Armored Striker\n\nThe striker retains her AC bonus class feature while wearing medium armor. This talent can be selected a second time, allowing the striker to retain her AC bonus class feature while wearing heavy armor.\n\n• Avenging Burst [Tension] [LG]\n\nSource: Arcforge Players Compendium\n\nWhen the striker is hit by a melee attack, she may spend 1 point of tension as an immediate action to vent energy on the attacker. The attacker takes 1d4 points of fire and electricity damage per 2 striker levels (Reflex save half, DC 10 + 1/2 the striker's level + her practitioner modifier). The striker may spend 1 additional point of tension to increase the damage dice from 1d4 to 1d6, or 2 additional points of tension to increase them from 1d4 to 1d8.\n\n• Biotic Invigoration [Tension] [LG]\n\nSource: Arcforge Players Compendium\n\nWhen the striker would receive healing, she may spend 1 tension to increase that healing by her striker level. By"
+    },
+    {
+      "name": "Tension Boost",
+      "type": "Ex",
+      "levels": [
+        1,
+        2,
+        7,
+        13,
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level, a striker gains 1 tension at the start of her first turn in combat (including surprise rounds). At 7th level and every six levels thereafter, she gains an additional tension at the start of her first turn in combat."
+    },
+    {
+      "name": "Drill Knuckle",
+      "type": "Ex",
+      "levels": [
+        3,
+        6,
+        9,
+        12,
+        15,
+        18
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, a striker gains the ability to break through even the hardiest of foes. A striker ignores up to 2 points of damage reduction or hardness whenever she makes an attack with an unarmed strike. At 6th level and every 3 levels thereafter, she can ignore an additional 1 point of damage reduction or hardness."
+    },
+    {
+      "name": "Uncanny Dodge",
+      "type": "Ex",
+      "levels": [
+        3
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, a striker gains the ability to react to danger before her senses would normally allow her to do so. She cannot be caught flat-footed, nor does she lose her Dexterity bonus to AC if the attacker is invisible. She still loses her Dexterity bonus to armor class if immobilized. A striker with this ability can still lose her Dexterity bonus to armor class if a creature successfully uses the feint action against her. If a striker already has uncanny dodge from a different class, she automatically gains improved uncanny dodge (see below) instead."
+    },
+    {
+      "name": "Desperate Tension",
+      "type": "Ex",
+      "levels": [
+        4
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 4th level, if the striker starts her turn with 0 tension, she gains 1 tension (this is gained before the tension gained from tension boost, rising tension, or ultimate tension)."
+    },
+    {
+      "name": "Tension Training",
+      "type": "Ex",
+      "levels": [
+        1,
+        5,
+        11,
+        17
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 5th level and every six levels thereafter, a striker learns new ways to gain tension; she can select one of the following new methods through which to gain tension (a striker cannot gain tension from any of these more than once per round); a striker cannot regain tension if any of these tension training abilities are used against a helpless or unaware creature, or on a creature that has fewer Hit Dice than half the striker's character level:\n\nCritical Offense: Whenever the striker confirms a critical hit with an unarmed strike while in the heat of combat, she gains 1 tension.\n\nDeadly Offense: Whenever the striker reduces a creature's hit points to 0 or less with an unarmed strike, she gains 1 tension.\n\nDeceptive Taunt: Whenever a striker makes a successful Bluff check to feint in combat against a creature, she gains 1 tension.\n\nThreatening Taunt: Whenever the striker makes a successful Intimidate check to demoralize a creature, she gains 1 tension.\n\nVictorious Defense: Whenever the striker makes a successful saving throw against a non-harmless effect, she gains 1 tension."
+    },
+    {
+      "name": "Pummeling Punisher",
+      "type": "Ex",
+      "levels": [
+        7
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 7th level, whenever a striker uses her rapid pummel tension technique, she can spend an additional 2 tension to make two attacks instead of one; both of these attacks suffer a -4 penalty."
+    },
+    {
+      "name": "Rising Tension",
+      "type": "Ex",
+      "levels": [
+        10,
+        16
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 10th level, a striker gains 1 tension at the start of her turn. At 16th level, she instead gains 2 tension at the start of her turn."
+    },
+    {
+      "name": "Improved Uncanny Dodge",
+      "type": "Ex",
+      "levels": [
+        12
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 12th level and higher, a striker can no longer be flanked. This defense denies a rogue the ability to sneak attack the striker by flanking her, unless the attacker has at least four more rogue levels than the target has striker levels.\n\nIf a character already has uncanny dodge (see above) from another class, the levels from the classes that grant uncanny dodge stack to determine the minimum rogue level required to flank the character."
+    },
+    {
+      "name": "Ultimate Tension",
+      "type": "Ex",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level, a striker gains 7 tension at the start of her first turn in combat (including surprise rounds). She also has no limit to how much tension she can possess, and if she possesses the high tension striker art, she can immediately swap it for another striker art. The striker also reduces the cost of all abilities which require tension by 1, to a minimum of 1."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 1,
+      "choices": [
+        "bare knuckles",
+        "tension"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "choices": [
+        "tension training"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 11,
+      "choices": [
+        "tension training"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "choices": [
+        "tension training"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}
