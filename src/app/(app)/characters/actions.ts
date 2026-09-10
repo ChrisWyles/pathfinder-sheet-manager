@@ -40,6 +40,7 @@ const createSchema = z.object({
   abilities: abilitySchema,
   className: z.string().min(1).max(80),
   classLevel: z.number().int().min(1).max(20),
+  gameClassId: z.string().min(1).optional(),
   hitDie: z.number().int().min(4).max(12),
   skillRanksPerLevel: z.number().int().min(0).max(12),
   babProgression: z.enum(["FULL", "THREE_QUARTER", "HALF"]),
@@ -72,8 +73,38 @@ export async function createCharacter(input: CreateCharacterInput) {
     return { error: "That doesn't look like a Discord webhook URL." };
   }
 
+  // When a library class is chosen, take its chassis as authoritative rather
+  // than trusting the client-supplied numbers.
+  let chassis = {
+    name: data.className,
+    hitDie: data.hitDie,
+    skillRanksPerLevel: data.skillRanksPerLevel,
+    babProgression: data.babProgression,
+    fortProgression: data.fortProgression,
+    refProgression: data.refProgression,
+    willProgression: data.willProgression,
+  };
+  let gameClassId: string | null = null;
+  if (data.gameClassId) {
+    const gc = await prisma.gameClass.findUnique({
+      where: { id: data.gameClassId },
+    });
+    if (gc) {
+      gameClassId = gc.id;
+      chassis = {
+        name: data.className || gc.name,
+        hitDie: gc.hitDie,
+        skillRanksPerLevel: gc.skillRanksPerLevel,
+        babProgression: gc.babProgression,
+        fortProgression: gc.fortProgression,
+        refProgression: gc.refProgression,
+        willProgression: gc.willProgression,
+      };
+    }
+  }
+
   const conMod = abilityModifier(data.abilities.CON);
-  const maxHp = estimateStartingHp(data.hitDie, data.classLevel, conMod);
+  const maxHp = estimateStartingHp(chassis.hitDie, data.classLevel, conMod);
 
   const character = await prisma.character.create({
     data: {
@@ -95,14 +126,15 @@ export async function createCharacter(input: CreateCharacterInput) {
       discordWebhookUrl: data.discordWebhookUrl || null,
       classes: {
         create: {
-          name: data.className,
+          name: chassis.name,
+          gameClassId,
           levels: data.classLevel,
-          hitDie: data.hitDie,
-          skillRanksPerLevel: data.skillRanksPerLevel,
-          babProgression: data.babProgression,
-          fortProgression: data.fortProgression,
-          refProgression: data.refProgression,
-          willProgression: data.willProgression,
+          hitDie: chassis.hitDie,
+          skillRanksPerLevel: chassis.skillRanksPerLevel,
+          babProgression: chassis.babProgression,
+          fortProgression: chassis.fortProgression,
+          refProgression: chassis.refProgression,
+          willProgression: chassis.willProgression,
           isFavoredClass: true,
         },
       },

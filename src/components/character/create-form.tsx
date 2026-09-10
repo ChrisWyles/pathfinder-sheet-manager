@@ -12,7 +12,9 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import {
   Select,
   SelectContent,
+  SelectGroup,
   SelectItem,
+  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
@@ -25,6 +27,32 @@ import {
 import { isValidDiscordWebhookUrl } from "@/lib/discord/webhook";
 import { abilityModifier } from "@/lib/rules/abilities";
 import { ABILITIES, type AbilityKey } from "@/lib/rules/types";
+
+export interface ClassOption {
+  id: string | null;
+  name: string;
+  system: "PATHFINDER_1E" | "SPHERES_OF_POWER";
+  group: string;
+  hitDie: number;
+  babProgression: "FULL" | "THREE_QUARTER" | "HALF";
+  fortProgression: "GOOD" | "POOR";
+  refProgression: "GOOD" | "POOR";
+  willProgression: "GOOD" | "POOR";
+  skillRanksPerLevel: number;
+}
+
+const PRESET_OPTIONS: ClassOption[] = CLASS_PRESETS.map((p) => ({
+  id: null,
+  name: p.name,
+  system: "PATHFINDER_1E",
+  group: "Pathfinder 1e",
+  hitDie: p.hitDie,
+  babProgression: p.babProgression,
+  fortProgression: p.fortProgression,
+  refProgression: p.refProgression,
+  willProgression: p.willProgression,
+  skillRanksPerLevel: p.skillRanksPerLevel,
+}));
 
 const STANDARD_ARRAY: Record<AbilityKey, number> = {
   STR: 15,
@@ -40,8 +68,23 @@ function fmtMod(score: number) {
   return m >= 0 ? `+${m}` : `${m}`;
 }
 
-export function CreateCharacterForm() {
+function humanBab(p: string) {
+  return p === "THREE_QUARTER" ? "3/4" : p.toLowerCase();
+}
+
+export function CreateCharacterForm({ classes }: { classes: ClassOption[] }) {
   const [pending, startTransition] = useTransition();
+
+  const options = classes.length > 0 ? classes : PRESET_OPTIONS;
+  const groups = useMemo(() => {
+    const map = new Map<string, ClassOption[]>();
+    for (const o of options) {
+      const list = map.get(o.group) ?? [];
+      list.push(o);
+      map.set(o.group, list);
+    }
+    return [...map.entries()];
+  }, [options]);
 
   const [system, setSystem] =
     useState<(typeof RULES_SYSTEMS)[number]["value"]>("PATHFINDER_1E");
@@ -50,8 +93,10 @@ export function CreateCharacterForm() {
   const [alignment, setAlignment] = useState("");
   const [size, setSize] = useState("MEDIUM");
   const [baseSpeed, setBaseSpeed] = useState(30);
-  const [presetName, setPresetName] = useState(CLASS_PRESETS[4].name); // Fighter
-  const [className, setClassName] = useState(CLASS_PRESETS[4].name);
+  const [classKey, setClassKey] = useState(
+    () => (options.find((o) => o.name === "Fighter") ?? options[0]).name,
+  );
+  const [className, setClassName] = useState(classKey);
   const [classLevel, setClassLevel] = useState(1);
   const [abilities, setAbilities] = useState<Record<AbilityKey, number>>({
     STR: 10,
@@ -63,9 +108,9 @@ export function CreateCharacterForm() {
   });
   const [webhook, setWebhook] = useState("");
 
-  const preset = useMemo(
-    () => CLASS_PRESETS.find((p) => p.name === presetName) ?? CLASS_PRESETS[4],
-    [presetName],
+  const selected = useMemo(
+    () => options.find((o) => o.name === classKey) ?? options[0],
+    [options, classKey],
   );
 
   const webhookState =
@@ -93,14 +138,15 @@ export function CreateCharacterForm() {
         size: size as CreateArg["size"],
         baseSpeed,
         abilities,
-        className: className.trim() || preset.name,
+        className: className.trim() || selected.name,
         classLevel,
-        hitDie: preset.hitDie,
-        skillRanksPerLevel: preset.skillRanksPerLevel,
-        babProgression: preset.babProgression,
-        fortProgression: preset.fortProgression,
-        refProgression: preset.refProgression,
-        willProgression: preset.willProgression,
+        gameClassId: selected.id ?? undefined,
+        hitDie: selected.hitDie,
+        skillRanksPerLevel: selected.skillRanksPerLevel,
+        babProgression: selected.babProgression,
+        fortProgression: selected.fortProgression,
+        refProgression: selected.refProgression,
+        willProgression: selected.willProgression,
         discordWebhookUrl: webhook.trim(),
       });
       if (result?.error) toast.error(result.error);
@@ -197,23 +243,28 @@ export function CreateCharacterForm() {
           <CardTitle>Class</CardTitle>
         </CardHeader>
         <CardContent className="grid gap-4 sm:grid-cols-2">
-          <Field label="Class chassis">
+          <Field label="Class">
             <Select
-              value={presetName}
+              value={classKey}
               onValueChange={(v) => {
                 if (!v) return;
-                setPresetName(v);
+                setClassKey(v);
                 setClassName(v);
               }}
             >
               <SelectTrigger>
                 <SelectValue />
               </SelectTrigger>
-              <SelectContent>
-                {CLASS_PRESETS.map((p) => (
-                  <SelectItem key={p.name} value={p.name}>
-                    {p.name}
-                  </SelectItem>
+              <SelectContent className="max-h-80">
+                {groups.map(([label, list]) => (
+                  <SelectGroup key={label}>
+                    <SelectLabel>{label}</SelectLabel>
+                    {list.map((o) => (
+                      <SelectItem key={o.name} value={o.name}>
+                        {o.name}
+                      </SelectItem>
+                    ))}
+                  </SelectGroup>
                 ))}
               </SelectContent>
             </Select>
@@ -238,9 +289,9 @@ export function CreateCharacterForm() {
             />
           </Field>
           <div className="text-muted-foreground self-end text-sm">
-            d{preset.hitDie} HD · BAB{" "}
-            {preset.babProgression.replace("_", "-").toLowerCase()} ·{" "}
-            {preset.skillRanksPerLevel} skill ranks/level
+            d{selected.hitDie} HD · BAB {humanBab(selected.babProgression)} ·{" "}
+            {selected.skillRanksPerLevel} skill ranks/level
+            {selected.id ? "" : " · from preset"}
           </div>
         </CardContent>
       </Card>

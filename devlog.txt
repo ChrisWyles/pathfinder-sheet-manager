@@ -1,0 +1,11 @@
+npm notice run pathfinder-sheet-manager@0.1.0 dev
+npm notice run next dev
+▲ Next.js 16.3.4 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.50.85:3000
+- Environments: .env
+✓ Ready in 435ms
+✓ Running next.config.ts took 44ms
+
+ GET /characters/new 307 in 478ms (next.js: 235ms, application-code: 243ms)
+ GET /characters/new 200 in 648ms (next.js: 8ms, application-code: 640ms)
