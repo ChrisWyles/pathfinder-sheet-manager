@@ -311,54 +311,8 @@ const CLASSES: {
       },
     ],
   },
-  {
-    name: "Incanter",
-    system: "SPHERES_OF_POWER",
-    hitDie: 8,
-    babProgression: "THREE_QUARTER",
-    fortProgression: "POOR",
-    refProgression: "POOR",
-    willProgression: "GOOD",
-    skillRanksPerLevel: 4,
-    classSkills: [
-      "Appraise",
-      "Craft",
-      "Fly",
-      "Knowledge (arcana)",
-      "Knowledge (planes)",
-      "Knowledge (religion)",
-      "Profession",
-      "Sense Motive",
-      "Spellcraft",
-      "Use Magic Device",
-    ],
-    features: [
-      {
-        name: "Casting",
-        level: 1,
-        description:
-          "High Caster: caster level equals class level, spell points equal to level + casting modifier.",
-      },
-      {
-        name: "Magic Talents",
-        level: 1,
-        description:
-          "Gain a magic talent at 1st level and every level thereafter.",
-      },
-      {
-        name: "Spell Points",
-        level: 1,
-        description:
-          "A pool used to power sphere effects, refreshed after a full rest.",
-      },
-      {
-        name: "Improved Focus",
-        level: 2,
-        description:
-          "Reduced penalties while maintaining concentration on sphere effects.",
-      },
-    ],
-  },
+  // Spheres classes are seeded by `scripts/scrape-sphere-classes.ts` (39 of
+  // them, with full advancement tables and per-level choices), not here.
 ];
 
 const FEATS: {
