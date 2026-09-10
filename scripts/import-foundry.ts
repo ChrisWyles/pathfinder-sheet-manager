@@ -6,6 +6,8 @@ import { join } from "node:path";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "@prisma/client";
 
+import { normalizePgUrl } from "../src/lib/pg-url";
+
 /**
  * Bulk-import rules content from the Foundry VTT `pf1` game system and the
  * "Pathfinder 1e Spheres" module.
@@ -33,11 +35,12 @@ function flag(name: string): string | undefined {
 const PACKS_DIR = flag("packs");
 const DRY_RUN = args.includes("--dry-run");
 
-const connectionString =
+const connectionString = normalizePgUrl(
   process.env.DATABASE_URL ||
-  process.env.DIRECT_URL ||
-  process.env.DATABASE_URL_UNPOOLED ||
-  "";
+    process.env.DIRECT_URL ||
+    process.env.DATABASE_URL_UNPOOLED ||
+    "",
+);
 const prisma = new PrismaClient({
   adapter: new PrismaPg({ connectionString }),
 });

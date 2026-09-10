@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -58,12 +58,12 @@ export default async function LevelUpPage({
             The guided flow is coming next. For now, here&apos;s the checklist.
           </p>
         </div>
-        <Button
-          variant="outline"
-          render={<Link href={`/characters/${character.id}`} />}
+        <Link
+          href={`/characters/${character.id}`}
+          className={buttonVariants({ variant: "outline" })}
         >
           Back to sheet
-        </Button>
+        </Link>
       </div>
 
       <Card>

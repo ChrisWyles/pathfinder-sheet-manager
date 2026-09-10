@@ -6,7 +6,7 @@ import { DeleteCharacterButton } from "@/components/character/delete-character-b
 import { DiscordWebhookCard } from "@/components/character/discord-webhook-card";
 import { RollPanel } from "@/components/character/roll-panel";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { requireSession } from "@/lib/auth-helpers";
 import { ABILITY_META, RULES_SYSTEMS } from "@/lib/constants";
@@ -75,12 +75,12 @@ export default async function CharacterSheetPage({ params }: Params) {
           </p>
         </div>
         <div className="flex gap-2">
-          <Button
-            variant="outline"
-            render={<Link href={`/characters/${character.id}/level-up`} />}
+          <Link
+            href={`/characters/${character.id}/level-up`}
+            className={buttonVariants({ variant: "outline" })}
           >
             Level up
-          </Button>
+          </Link>
           <DeleteCharacterButton
             characterId={character.id}
             name={character.name}

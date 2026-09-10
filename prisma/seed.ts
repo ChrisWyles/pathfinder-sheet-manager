@@ -3,11 +3,14 @@ import "../load-env";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "@prisma/client";
 
-const connectionString =
+import { normalizePgUrl } from "../src/lib/pg-url";
+
+const connectionString = normalizePgUrl(
   process.env.DATABASE_URL ||
-  process.env.DIRECT_URL ||
-  process.env.DATABASE_URL_UNPOOLED ||
-  "";
+    process.env.DIRECT_URL ||
+    process.env.DATABASE_URL_UNPOOLED ||
+    "",
+);
 const prisma = new PrismaClient({
   adapter: new PrismaPg({ connectionString }),
 });

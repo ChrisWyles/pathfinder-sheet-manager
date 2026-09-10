@@ -2,7 +2,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 
 import { auth } from "@/auth";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 
 const FEATURES = [
   {
@@ -41,9 +41,9 @@ export default async function HomePage() {
           your table&apos;s Discord.
         </p>
         <div className="flex gap-3 pt-2">
-          <Button size="lg" render={<Link href="/signin" />}>
+          <Link href="/signin" className={buttonVariants({ size: "lg" })}>
             Sign in with Discord
-          </Button>
+          </Link>
         </div>
       </div>
 

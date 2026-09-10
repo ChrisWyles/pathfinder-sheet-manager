@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -32,7 +32,9 @@ export default async function DashboardPage() {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold">Your characters</h1>
-        <Button render={<Link href="/characters/new" />}>New character</Button>
+        <Link href="/characters/new" className={buttonVariants()}>
+          New character
+        </Link>
       </div>
 
       {characters.length === 0 ? (
@@ -45,7 +47,9 @@ export default async function DashboardPage() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <Button render={<Link href="/characters/new" />}>Start one</Button>
+            <Link href="/characters/new" className={buttonVariants()}>
+              Start one
+            </Link>
           </CardContent>
         </Card>
       ) : (
