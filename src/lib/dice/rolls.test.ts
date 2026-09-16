@@ -14,6 +14,7 @@ import {
 
 const derived: DerivedStats = {
   totalLevel: 5,
+  abilityScores: { STR: 16, DEX: 14, CON: 14, INT: 10, WIS: 12, CHA: 8 },
   abilityMods: { STR: 3, DEX: 2, CON: 2, INT: 0, WIS: 1, CHA: -1 },
   baseAttackBonus: 5,
   attackSequence: [5],

@@ -38,3 +38,35 @@ const SIZE_STEALTH: Record<CreatureSizeKey, number> = {
 export function sizeStealthModifier(size: CreatureSizeKey): number {
   return SIZE_STEALTH[size];
 }
+
+/** Size modifier to Fly checks (half the Stealth table, same direction). */
+const SIZE_FLY: Record<CreatureSizeKey, number> = {
+  FINE: 8,
+  DIMINUTIVE: 6,
+  TINY: 4,
+  SMALL: 2,
+  MEDIUM: 0,
+  LARGE: -2,
+  HUGE: -4,
+  GARGANTUAN: -6,
+  COLOSSAL: -8,
+};
+
+export function sizeFlyModifier(size: CreatureSizeKey): number {
+  return SIZE_FLY[size];
+}
+
+/** Size modifier for whichever skill this is — only Stealth and Fly have one. */
+export function sizeSkillModifier(
+  skillName: string,
+  size: CreatureSizeKey,
+): number {
+  switch (skillName.trim().toLowerCase()) {
+    case "stealth":
+      return sizeStealthModifier(size);
+    case "fly":
+      return sizeFlyModifier(size);
+    default:
+      return 0;
+  }
+}

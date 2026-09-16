@@ -38,6 +38,8 @@ describe("computeDerivedStats", () => {
     expect(d.initiative).toBe(2);
     expect(d.speed).toBe(30);
     expect(d.armorCheckPenalty).toBe(4);
+    // effective scores are echoed back for the sheet to display
+    expect(d.abilityScores).toEqual(input.abilityScores);
   });
 
   it("applies size and typed modifiers for a large barbarian", () => {

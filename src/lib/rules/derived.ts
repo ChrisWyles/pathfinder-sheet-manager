@@ -81,6 +81,7 @@ export function computeDerivedStats(input: DerivedInput): DerivedStats {
 
   return {
     totalLevel,
+    abilityScores: input.abilityScores,
     abilityMods: mods,
     baseAttackBonus,
     attackSequence: attackSequenceFromBab(baseAttackBonus),

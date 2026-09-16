@@ -60,6 +60,8 @@ export interface DerivedInput {
 
 export interface DerivedStats {
   totalLevel: number;
+  /** Effective ability scores, after racial/enhancement/inherent adjustments. */
+  abilityScores: Record<AbilityKey, number>;
   abilityMods: Record<AbilityKey, number>;
   baseAttackBonus: number;
   /** Full-attack iterative bonuses, highest first, e.g. [11, 6, 1]. */
