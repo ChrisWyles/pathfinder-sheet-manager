@@ -11,6 +11,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { requireSession } from "@/lib/auth-helpers";
 import { ABILITY_META, RULES_SYSTEMS } from "@/lib/constants";
 import { prisma } from "@/lib/prisma";
+import {
+  favoredClassBonusTalentsEarned,
+  parseFavoredClassBonusMechanic,
+} from "@/lib/rules/favored-class-bonus";
 import { deriveCharacter } from "@/lib/rules/snapshot";
 import { ABILITIES } from "@/lib/rules/types";
 
@@ -52,7 +56,48 @@ export default async function CharacterSheetPage({ params }: Params) {
     character.classes.map((c) => `${c.name} ${c.levels}`).join(" / ") ||
     "No class";
 
-  const scores: Record<string, number> = {
+  type ClassData = {
+    favoredBonusNote?: string | null;
+    customCastingTradition?: {
+      drawbacks: string[];
+      boons: string[];
+      bonusSpellPoints: number;
+      sphereDrawbacks: { name: string; sphereName: string }[];
+    } | null;
+    customMartialTradition?: {
+      equipmentSphere: string;
+      disciplineTalent: string | null;
+      secondTalent: string | null;
+      baseSphere: string | null;
+      bonus:
+        | { type: "sphere"; name: string }
+        | { type: "talent"; name: string; fromSphere: string | null }
+        | { type: "equipment"; name: string }
+        | null;
+    } | null;
+  };
+  const classData = character.classes
+    .map((c) => (c.data ?? null) as ClassData | null)
+    .find(
+      (d) => d?.customCastingTradition || d?.customMartialTradition,
+    );
+  const customCasting = classData?.customCastingTradition ?? null;
+  const customMartial = classData?.customMartialTradition ?? null;
+
+  const favoredClassRow =
+    character.classes.find((c) => c.isFavoredClass) ?? character.classes[0] ?? null;
+  const favoredBonusNote =
+    ((favoredClassRow?.data ?? null) as ClassData | null)?.favoredBonusNote || "";
+  const fcbMechanic = favoredBonusNote
+    ? parseFavoredClassBonusMechanic(favoredBonusNote)
+    : null;
+  const fcbTalentsEarned =
+    fcbMechanic && favoredClassRow
+      ? favoredClassBonusTalentsEarned(fcbMechanic, favoredClassRow.levels)
+      : 0;
+  const fcbNextLevel = fcbMechanic ? (fcbTalentsEarned + 1) * fcbMechanic.every : null;
+
+  const baseScores: Record<string, number> = {
     STR: character.strength,
     DEX: character.dexterity,
     CON: character.constitution,
@@ -95,21 +140,30 @@ export default async function CharacterSheetPage({ params }: Params) {
               <CardTitle>Ability scores</CardTitle>
             </CardHeader>
             <CardContent className="grid grid-cols-3 gap-3 sm:grid-cols-6">
-              {ABILITIES.map((key) => (
-                <div
-                  key={key}
-                  className="rounded-md border p-3 text-center"
-                  title={ABILITY_META[key].label}
-                >
-                  <div className="text-muted-foreground text-xs">{key}</div>
-                  <div className="text-xl font-semibold tabular-nums">
-                    {scores[key]}
+              {ABILITIES.map((key) => {
+                const total = derived.abilityScores[key];
+                const delta = total - baseScores[key];
+                return (
+                  <div
+                    key={key}
+                    className="rounded-md border p-3 text-center"
+                    title={ABILITY_META[key].label}
+                  >
+                    <div className="text-muted-foreground text-xs">{key}</div>
+                    <div className="text-xl font-semibold tabular-nums">
+                      {total}
+                    </div>
+                    <div className="text-muted-foreground text-sm tabular-nums">
+                      {sign(derived.abilityMods[key])}
+                    </div>
+                    {delta !== 0 && (
+                      <div className="text-muted-foreground text-[10px] tabular-nums">
+                        {baseScores[key]} {sign(delta)}
+                      </div>
+                    )}
                   </div>
-                  <div className="text-muted-foreground text-sm tabular-nums">
-                    {sign(derived.abilityMods[key])}
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </CardContent>
           </Card>
 
@@ -122,6 +176,12 @@ export default async function CharacterSheetPage({ params }: Params) {
                 label="Hit points"
                 value={`${character.currentHp} / ${character.maxHp}`}
               />
+              {character.maxSpellPoints != null && (
+                <Stat
+                  label="Spell points"
+                  value={`${character.spellPoints ?? 0} / ${character.maxSpellPoints}`}
+                />
+              )}
               <Stat label="Initiative" value={sign(derived.initiative)} />
               <Stat label="Speed" value={`${derived.speed} ft.`} />
               <Stat label="AC" value={derived.ac} />
@@ -209,6 +269,125 @@ export default async function CharacterSheetPage({ params }: Params) {
               )}
             </CardContent>
           </Card>
+
+          {favoredBonusNote && (
+            <Card>
+              <CardHeader>
+                <CardTitle>Favored class bonus</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-2 text-sm">
+                <p>{favoredBonusNote}</p>
+                {fcbMechanic && (
+                  <p className="text-muted-foreground">
+                    +1{" "}
+                    {fcbMechanic.spheres.length
+                      ? `${fcbMechanic.spheres.join("/")} sphere `
+                      : ""}
+                    talent every {fcbMechanic.every} levels in{" "}
+                    {favoredClassRow?.name} — <strong>{fcbTalentsEarned}</strong>{" "}
+                    earned so far
+                    {fcbNextLevel ? `, next at level ${fcbNextLevel}` : ""}.
+                  </p>
+                )}
+              </CardContent>
+            </Card>
+          )}
+
+          {(customCasting || customMartial) && (
+            <Card>
+              <CardHeader>
+                <CardTitle>
+                  {customCasting && customMartial
+                    ? "Traditions"
+                    : customCasting
+                      ? "Casting tradition"
+                      : "Martial tradition"}
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3 text-sm">
+                {customCasting && (
+                  <>
+                    <div>
+                      <div className="text-muted-foreground text-xs">
+                        Drawbacks
+                      </div>
+                      {customCasting.drawbacks.length === 0 ? (
+                        <p className="text-muted-foreground">None.</p>
+                      ) : (
+                        <ul className="list-inside list-disc">
+                          {customCasting.drawbacks.map((d) => (
+                            <li key={d}>{d}</li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                    <div>
+                      <div className="text-muted-foreground text-xs">
+                        Boons
+                      </div>
+                      {customCasting.boons.length === 0 ? (
+                        <p className="text-muted-foreground">None.</p>
+                      ) : (
+                        <ul className="list-inside list-disc">
+                          {customCasting.boons.map((b) => (
+                            <li key={b}>{b}</li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                    {customCasting.bonusSpellPoints > 0 && (
+                      <p className="text-muted-foreground">
+                        +{customCasting.bonusSpellPoints} bonus spell points
+                        from unspent drawbacks.
+                      </p>
+                    )}
+                    {customCasting.sphereDrawbacks.length > 0 && (
+                      <div>
+                        <div className="text-muted-foreground text-xs">
+                          Sphere-specific drawbacks
+                        </div>
+                        <ul className="list-inside list-disc">
+                          {customCasting.sphereDrawbacks.map((d) => (
+                            <li key={d.name}>
+                              {d.name} ({d.sphereName})
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </>
+                )}
+                {customMartial && (
+                  <ul className="list-inside list-disc">
+                    <li>{customMartial.equipmentSphere} sphere (automatic)</li>
+                    {customMartial.disciplineTalent && (
+                      <li>{customMartial.disciplineTalent} (discipline)</li>
+                    )}
+                    {customMartial.secondTalent && (
+                      <li>{customMartial.secondTalent}</li>
+                    )}
+                    {customMartial.baseSphere && (
+                      <li>{customMartial.baseSphere} sphere</li>
+                    )}
+                    {customMartial.bonus?.type === "sphere" && (
+                      <li>{customMartial.bonus.name} sphere (bonus)</li>
+                    )}
+                    {customMartial.bonus?.type === "talent" && (
+                      <li>
+                        {customMartial.bonus.name}
+                        {customMartial.bonus.fromSphere
+                          ? ` (from ${customMartial.bonus.fromSphere})`
+                          : ""}
+                      </li>
+                    )}
+                    {customMartial.bonus?.type === "equipment" && (
+                      <li>{customMartial.bonus.name} (bonus)</li>
+                    )}
+                  </ul>
+                )}
+              </CardContent>
+            </Card>
+          )}
 
           <Card>
             <CardHeader>

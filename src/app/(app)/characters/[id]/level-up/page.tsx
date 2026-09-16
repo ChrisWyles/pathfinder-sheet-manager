@@ -12,6 +12,10 @@ import {
 } from "@/components/ui/card";
 import { requireSession } from "@/lib/auth-helpers";
 import { prisma } from "@/lib/prisma";
+import {
+  favoredClassBonusTalentsEarned,
+  parseFavoredClassBonusMechanic,
+} from "@/lib/rules/favored-class-bonus";
 import { deriveCharacter } from "@/lib/rules/snapshot";
 
 export const metadata: Metadata = { title: "Level up" };
@@ -33,6 +37,20 @@ export default async function LevelUpPage({
   const derived = deriveCharacter(character);
   const nextLevel = derived.totalLevel + 1;
 
+  const favoredClassRow =
+    character.classes.find((c) => c.isFavoredClass) ?? character.classes[0] ?? null;
+  const favoredBonusNote =
+    ((favoredClassRow?.data ?? null) as { favoredBonusNote?: string | null } | null)
+      ?.favoredBonusNote || "";
+  const fcbMechanic = favoredBonusNote
+    ? parseFavoredClassBonusMechanic(favoredBonusNote)
+    : null;
+  const nextClassLevel = (favoredClassRow?.levels ?? 0) + 1;
+  const fcbGrantsTalentThisLevel =
+    fcbMechanic != null &&
+    favoredClassBonusTalentsEarned(fcbMechanic, nextClassLevel) >
+      favoredClassBonusTalentsEarned(fcbMechanic, favoredClassRow?.levels ?? 0);
+
   const steps = [
     "Choose the class for this level (existing class or a new multiclass).",
     "Roll or take average hit points, add your Constitution modifier.",
@@ -45,6 +63,9 @@ export default async function LevelUpPage({
     character.system === "SPHERES_OF_POWER"
       ? "Update caster level, spell points and any new spheres or talents."
       : "Update spells known / prepared and other per-level resources.",
+    fcbGrantsTalentThisLevel && fcbMechanic
+      ? `Favored class bonus: add 1 bonus ${fcbMechanic.spheres.length ? `${fcbMechanic.spheres.join("/")} sphere ` : ""}talent (${favoredBonusNote}).`
+      : null,
   ].filter(Boolean) as string[];
 
   return (
