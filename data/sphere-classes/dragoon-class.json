@@ -553,6 +553,130 @@
       "description": "At 20th level, a dragoon changes her type to dragon (if it wasn't already). Whenever she uses her draconic bond, she no longer has to select a single ability score, gaining the listed effects for all of the listed ability scores. In addition, she no longer needs to expend her martial focus to recover the temporary hit points gained from draconic bond, instead refreshing them instantly at the beginning of her turn."
     }
   ],
+  "archetypes": [
+    {
+      "name": "-Mech Dragoon",
+      "summary": ""
+    },
+    {
+      "name": "-Spellscale",
+      "summary": ""
+    },
+    {
+      "name": "-Violent Brute",
+      "summary": ""
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Aasimar",
+      "bonus": "+1/5 of a Life sphere talent."
+    },
+    {
+      "race": "Ceptu",
+      "bonus": "+1/5 of a Mind or Telekinesis sphere talent."
+    },
+    {
+      "race": "Changeling",
+      "bonus": "+1/5 of an Illusion sphere talent."
+    },
+    {
+      "race": "Dhampir",
+      "bonus": "+1/5 of an Death sphere talent."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "+1/2 point of damage from a charge while mounted."
+    },
+    {
+      "race": "Elf",
+      "bonus": "+1/6 of a new magical talent."
+    },
+    {
+      "race": "Fetchling",
+      "bonus": "+1/5 of a Dark sphere talent."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "+1/5 of an Illusion sphere talent."
+    },
+    {
+      "race": "Goblin",
+      "bonus": "+1/5 of an Destruction or Scoundrel sphere talent."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "+1/5 of a Scout sphere talent."
+    },
+    {
+      "race": "Half-Elf",
+      "bonus": "+1/6 of an Extra Drake Power feat."
+    },
+    {
+      "race": "Human",
+      "bonus": "+1/6 of a combat sphere talent."
+    },
+    {
+      "race": "Ifrit",
+      "bonus": "+1/5 of a Destruction or Fire Nature sphere talent."
+    },
+    {
+      "race": "Judow",
+      "bonus": "+1/5 of a Dark sphere talent."
+    },
+    {
+      "race": "Kitsune",
+      "bonus": "+1/5 of an Alteration or Illusion sphere talent."
+    },
+    {
+      "race": "Kobold",
+      "bonus": "+1/6 of an Extra Drake Power feat."
+    },
+    {
+      "race": "Mirrorkin",
+      "bonus": "+1/5 of an Alteration or Fate sphere talent."
+    },
+    {
+      "race": "Orc",
+      "bonus": "+1/2 damage on damage from a Destruction talent."
+    },
+    {
+      "race": "Oread",
+      "bonus": "+1/5 of an Earth or Metal Nature sphere talent."
+    },
+    {
+      "race": "Rhyzala",
+      "bonus": "+1/5 of a Time sphere talent."
+    },
+    {
+      "race": "Shadow Fey",
+      "bonus": "+1/5 of a Warp sphere talent."
+    },
+    {
+      "race": "Sylph",
+      "bonus": "+1/5 of a Weather sphere talent."
+    },
+    {
+      "race": "Tiefling",
+      "bonus": "+1/6 of a Extra Drake Power feat."
+    },
+    {
+      "race": "Undine",
+      "bonus": "+1/5 of a Spirit or Water Nature sphere talent."
+    },
+    {
+      "race": "Vanara",
+      "bonus": "+1/5 of an Athletics sphere talent."
+    },
+    {
+      "race": "Veryx",
+      "bonus": "+1/5 of a Mind sphere talent."
+    },
+    {
+      "race": "Xodai",
+      "bonus": "+1/5 of a Fate sphere talent."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

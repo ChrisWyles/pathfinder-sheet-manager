@@ -1,0 +1,691 @@
+{
+  "slug": "agent",
+  "name": "Agent",
+  "group": "operative",
+  "url": "http://spheresofpower.wikidot.com/agent",
+  "source": "Spheres of Power wiki",
+  "hitDie": 8,
+  "alignment": "Any",
+  "role": "An agent is invaluable at slipping past all sorts of defenses and infiltrating secure areas undetected",
+  "classSkills": [],
+  "skillRanksPerLevel": 6,
+  "babProgression": "THREE_QUARTER",
+  "saveProgressions": {
+    "fort": "POOR",
+    "ref": "GOOD",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+0",
+      "fortSave": "+0",
+      "refSave": "+2",
+      "willSave": "+2",
+      "special": [
+        "Discerning strike +1d4",
+        "ploy",
+        "skill expertise",
+        "surgical finesse"
+      ],
+      "columns": {
+        "Any": "0",
+        "Utility": "1"
+      },
+      "choices": [
+        "skill expertise",
+        "surgical finesse"
+      ]
+    },
+    {
+      "level": 2,
+      "bab": "+1",
+      "fortSave": "+0",
+      "refSave": "+3",
+      "willSave": "+3",
+      "special": [
+        "Conspiracy",
+        "devious technique"
+      ],
+      "columns": {
+        "Any": "1",
+        "Utility": "1"
+      },
+      "choices": [
+        "Conspiracy",
+        "devious technique"
+      ]
+    },
+    {
+      "level": 3,
+      "bab": "+2",
+      "fortSave": "+1",
+      "refSave": "+3",
+      "willSave": "+3",
+      "special": [
+        "Discerning strike +2d6",
+        "web of secrets"
+      ],
+      "columns": {
+        "Any": "1",
+        "Utility": "2"
+      },
+      "choices": [
+        "web of secrets"
+      ]
+    },
+    {
+      "level": 4,
+      "bab": "+3",
+      "fortSave": "+1",
+      "refSave": "+4",
+      "willSave": "+4",
+      "special": [
+        "Efficient heist"
+      ],
+      "columns": {
+        "Any": "2",
+        "Utility": "2"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+3",
+      "fortSave": "+1",
+      "refSave": "+4",
+      "willSave": "+4",
+      "special": [
+        "Coordinated combat +1",
+        "discerning strike +2d8"
+      ],
+      "columns": {
+        "Any": "2",
+        "Utility": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 6,
+      "bab": "+4",
+      "fortSave": "+2",
+      "refSave": "+5",
+      "willSave": "+5",
+      "special": [
+        "Conspiratorial ploy"
+      ],
+      "columns": {
+        "Any": "3",
+        "Utility": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 7,
+      "bab": "+5",
+      "fortSave": "+2",
+      "refSave": "+5",
+      "willSave": "+5",
+      "special": [
+        "Discerning strike +3d8"
+      ],
+      "columns": {
+        "Any": "3",
+        "Utility": "4"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+6/+1",
+      "fortSave": "+2",
+      "refSave": "+6",
+      "willSave": "+6",
+      "special": [
+        "Silent engagement"
+      ],
+      "columns": {
+        "Any": "4",
+        "Utility": "4"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+6/+1",
+      "fortSave": "+3",
+      "refSave": "+6",
+      "willSave": "+6",
+      "special": [
+        "Coordinated combat +2",
+        "discerning strike +4d8"
+      ],
+      "columns": {
+        "Any": "4",
+        "Utility": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+7/+2",
+      "fortSave": "+3",
+      "refSave": "+7",
+      "willSave": "+7",
+      "special": [
+        "Devastating disclosure"
+      ],
+      "columns": {
+        "Any": "5",
+        "Utility": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 11,
+      "bab": "+8/+3",
+      "fortSave": "+3",
+      "refSave": "+7",
+      "willSave": "+7",
+      "special": [
+        "Discerning strike +5d8"
+      ],
+      "columns": {
+        "Any": "5",
+        "Utility": "6"
+      },
+      "choices": []
+    },
+    {
+      "level": 12,
+      "bab": "+9/+4",
+      "fortSave": "+4",
+      "refSave": "+8",
+      "willSave": "+8",
+      "special": [
+        "Just a bad dream",
+        "sensory shutdown"
+      ],
+      "columns": {
+        "Any": "6",
+        "Utility": "6"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+9/+4",
+      "fortSave": "+4",
+      "refSave": "+8",
+      "willSave": "+8",
+      "special": [
+        "Coordinated combat +3",
+        "discerning strike +6d8"
+      ],
+      "columns": {
+        "Any": "6",
+        "Utility": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+10/+5",
+      "fortSave": "+4",
+      "refSave": "+9",
+      "willSave": "+9",
+      "special": [
+        "Always a clue"
+      ],
+      "columns": {
+        "Any": "7",
+        "Utility": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 15,
+      "bab": "+11/+6/+1",
+      "fortSave": "+5",
+      "refSave": "+9",
+      "willSave": "+9",
+      "special": [
+        "Discerning strike +7d8"
+      ],
+      "columns": {
+        "Any": "7",
+        "Utility": "8"
+      },
+      "choices": []
+    },
+    {
+      "level": 16,
+      "bab": "+12/+7/+2",
+      "fortSave": "+5",
+      "refSave": "+10",
+      "willSave": "+10",
+      "special": [
+        "You do not know me"
+      ],
+      "columns": {
+        "Any": "8",
+        "Utility": "8"
+      },
+      "choices": [
+        "You do not know me",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+12/+7/+2",
+      "fortSave": "+5",
+      "refSave": "+10",
+      "willSave": "+10",
+      "special": [
+        "Coordinated combat +4",
+        "discerning strike +8d8"
+      ],
+      "columns": {
+        "Any": "8",
+        "Utility": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 18,
+      "bab": "+13/+8/+3",
+      "fortSave": "+6",
+      "refSave": "+11",
+      "willSave": "+11",
+      "special": [
+        "Twin technique"
+      ],
+      "columns": {
+        "Any": "9",
+        "Utility": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 19,
+      "bab": "+14/+9/+4",
+      "fortSave": "+6",
+      "refSave": "+11",
+      "willSave": "+11",
+      "special": [
+        "Discerning strike +9d8"
+      ],
+      "columns": {
+        "Any": "9",
+        "Utility": "10"
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+15/+10/+5",
+      "fortSave": "+6",
+      "refSave": "+12",
+      "willSave": "+12",
+      "special": [
+        "Ghost",
+        "what were we doing?"
+      ],
+      "columns": {
+        "Any": "10",
+        "Utility": "10"
+      },
+      "choices": [
+        "Ghost",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Any",
+    "Utility"
+  ],
+  "features": [
+    {
+      "name": "Weapon and Armor Proficiencies",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "Agents are proficient with simple and martial weapons as well as light armor and bucklers."
+    },
+    {
+      "name": "Skill Expertise",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "An agent may combine spheres and talents to perform incredible acts of guile. Whenever the agent gains a skill talent, they must choose a skill sphere to spend it on. The first time a character spends a skill talent on a given skill sphere, they gain that sphere's base abilities instead of gaining a talent within the sphere.\n\nAfter a character possesses a base sphere, spending an additional skill talent on that sphere gains them one of that sphere's talents. Agents are considered Journeyman operatives and choose Intelligence, Wisdom, or Charisma as their operative ability modifier. The Journeyman skill talent progression is reprinted in the Agent table for ease of reference.\n\n(Talents under Any can be any skill talent that the agent qualifies for, while talents listed under Utility must have the [utility] tag.)"
+    },
+    {
+      "name": "Discerning Strike",
+      "type": "Ex",
+      "levels": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "An agent deals additional precision damage upon hitting a target that is unable to defend itself effectively against an attack. Discerning strike can be used on any target that is flat-footed or otherwise denied its Dexterity bonus to Armor Class against the attack (whether or not the target has a Dexterity bonus) as well as any target that is threatened by an ally of the agent (other than the agent). The agent can outwit a target as a cost to deal discerning strike damage to it outside the above conditions. If the agent would deal discerning strike damage a second or subsequent time to the same target on the same round, it is reduced to 1 point per die. This damage is not multiplied on a critical hit. Anything that prevents the additional damage from critical hits likewise prevents precision damage. The agent cannot deal discerning strike damage to a creature with total concealment or farther than 30 feet away.\n\nDiscerning strike deals an additional +1d4 damage at 1st level. This damage increases to 2d6 at 3rd level. At 5th level, the damage dice increase to 2d8. At 7th level and every odd level thereafter, the damage increases by +1d8 (3d8 at 7th, 4d8 at 9th, and so on).\n\nYou can use this ability to meet prerequisites as if it were sneak attack with the same number of dice. Additions and improvements to the sneak attack ability can be applied to discerning strike, but if the benefit is not based on the number of damage dice then you cannot apply it to both sneak attack and discerning strike; you must pick one or the other to improve when you gain the option."
+    },
+    {
+      "name": "Ploy",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "The agent is trained in special techniques by their organization to move unnoticed wherever they are needed. At 1st level, the agent chooses a ploy from the options at the end of the class description. The agent's ploy grants a bonus skill sphere and a new ability.\n\nAuthor's Note: In the case of ploys which grant a combat sphere, the agent uses their operative modifier as their practitioner modifier."
+    },
+    {
+      "name": "Surgical Finesse",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "An agent gains Weapon Finesse as a bonus feat. In addition, they can apply their operative ability modifier, instead of their Strength or Dexterity modifier, on damage rolls with melee or thrown weapon attacks."
+    },
+    {
+      "name": "Conspiracy",
+      "type": "",
+      "levels": [
+        2
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "By 2nd level, the agent becomes trusted with some of their organization's collected secrets. The agent chooses an agent conspiracy (listed at the end of the class description), which grants them another skill sphere and unlocks other abilities at later levels.\n\nIf the agent has the conspiracy feature from another class, the agent must choose the same conspiracy but combines the levels in both classes to determine save DCs for both classes and to determine the effects of that conspiracy from both classes. These combined levels can grant improvements to abilities but not new abilities.\n\n(Gaining a base sphere a second time grants a bonus talent from that sphere.)"
+    },
+    {
+      "name": "Devious Technique",
+      "type": "Ex",
+      "levels": [
+        2
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 2nd level, the agent learns to take full advantage of a compromised target. Whenever the agent hits with a discerning strike, the agent can choose a single devious technique to apply to the attack. They gain a devious technique option from their ploy.\n\nIn addition, they gain the following options. If an option allows a saving throw, the DC is 10 + 1/2 agent level + agent's operative ability modifier.\n\n• Sensory Slash\n\nA creature damaged by the agent's discerning strike takes a -2 penalty to Perception for 1 minute per agent level. At 6th level and every four levels thereafter, this penalty increases by 1 (to a maximum of -6 at 18th level). In addition, the creature must succeed at a Reflex saving throw or be deafened or partially blinded (agent's choice). A creature can spend a move action to attempt another save to remove this condition. A partially blinded target treats all creatures as having concealment.\n\nAt 6th level, the agent can disable any imprecise sense the creature has (such as scent or blindsense) instead of deafening it or muddle a special precise sense (such as blindsight) to give creatures sensed through it concealment instead of partially blinding the target. The agent can also deliver this devious technique as a melee touch attack as a standard action that doesn't deal damage.\n\nAt 10th level, this ability has the option to give the blinded condition or to interfere with one other sense, such as tactile sense or blindsight. The creature can spend a standard action to attempt an additional save against this ability (rather than a move action). In addition, the agent can use sensory slash as a ranged touch attack as long as they are within 60 feet of their target. At 14th level, the agent affects the creature even on a successful save, but a successful save reduces the duration to until the end of the agent's turn. On a failed save, the agent can cause this ability to become permanent.\n\nThis effect can be removed by remove blindness/deafness, greater restoration, miracle, or wish spell.\n\n• Throat Punch\n\nIf the discerning strike target needs to breathe, it takes a penalty on auditory skill uses (including many Bluff, Diplomacy, and Intimidate us"
+    },
+    {
+      "name": "Web of Secrets",
+      "type": "Ex",
+      "levels": [
+        3
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, the agent's network of co-conspirators reaches far enough to regularly send them useful information. As part of gathering information or preparing plans in a settlement, the agent gets an additional benefit determined by the conspiracy they chose."
+    },
+    {
+      "name": "Efficient Heist",
+      "type": "Ex",
+      "levels": [
+        4
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Starting at 4th level, the agent is quick and efficient at acquiring assigned items and deploying the right tool for the job. The agent can stow an item as a free action once per turn and can draw a tool as part of the action to use it. In addition, the agent knows how to fit a lot into a tight space, increasing their Strength score by 4 for purposes of calculating their carrying capacity."
+    },
+    {
+      "name": "Coordinated Combat",
+      "type": "Ex",
+      "levels": [
+        5,
+        9,
+        13,
+        17
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 5th level, the agent learns to make optimal use of their allies' support. The agent gets a +1 bonus to attack rolls as long as an ally threatens that creature or the agent's attack roll or weapon damage gets a bonus from an ally's recent action (including aid another, a skill, a spell, or an ability). A bonus from an ally can only trigger coordinated combat if it was added since end of the agent's last turn. The agent's conspiracy adds an additional way to get this bonus. Any attack with this bonus triggers the agent's discerning strike damage (subject to its usual limit per round, range, and not through total concealment). The bonus increases by 1 at 9th level and every four levels thereafter (+3 at 13th and +4 at 17th)."
+    },
+    {
+      "name": "Conspiratorial Ploy",
+      "type": "Ex",
+      "levels": [
+        6
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 6th level, the agent learns to use their ploy with allied operatives. The effect is determined by the ploy they chose at 1st level."
+    },
+    {
+      "name": "Silent Engagement",
+      "type": "Ex",
+      "levels": [
+        8
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Starting at 8th level, the agent's attacks are quick and silent. When the agent deals discerning strike damage to a creature, the agent attempts a Stealth check and the Perception DC to hear the attack is equal to the agent's Stealth check result. They reduce the Stealth penalty for sniping and hidden combat maneuvers by an amount equal to their agent level (minimum 0 for bull rush, drag, grapple, or reposition).\n\nIn addition, the agent can use any of their devious techniques as a touch attack. Doing so deals no damage and works only on targets that could be subject to discerning strike. An affected target does not realize they have been affected until they take an action affected by the devious technique unless they succeed at a Will save to disbelieve this ability (similar to disbelieving an illusion, using the devious technique's save DC). If the effect is immediately obvious, the creature at first assumes it is noticing something in the area rather than targeting it. (A blinded creature might think the lights had gone out, for example.)"
+    },
+    {
+      "name": "Devastating Disclosure",
+      "type": "Ex",
+      "levels": [
+        10
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 10th level, the agent can exploit what they have discovered to leave rivals speechless. As part of a successful Bluff check to lie or convey an implausible truth using evidence that takes at least 1 minute, Diplomacy check to improve an attitude, or Intimidate check to demand cooperation, the agent can invoke the target's motivation and give proof of accessing that motivation (such as stealing an item, meeting someone the individual cares about, or infiltrating a personally important refuge) to either make the target dumbfounded for 1 hour or else give the target the choice of being enraged or frightened for 4 rounds and then livid or shaken for 1 hour.\n\nA successful Will save reduces the condition to shocked, livid, or shaken, respectively, and the duration to 1 round. The target is then immune to the agent's devastating disclosure using that motivation indefinitely and the agent cannot attempt to use a different motivation in a devastating disclosure to that target for 24 hours. The creature can attempt to reduce the dumbfounded condition with 1 minute of reflection (Will save DC 10 + 1/2 agent level + operative ability modifier).\n\nThe agent can instead add this effect to an ally's skill check of an appropriate type by successfully invoking the opponent's motivation as part of aiding the ally's skill check."
+    },
+    {
+      "name": "Just a Bad Dream",
+      "type": "Ex",
+      "levels": [
+        12
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 12th level, an agent can start to remove any memory of themselves from a creature, causing fuzzy recollection of the agent and their actions. If the agent deals damage with their discerning strike ability and knocks a creature unconscious, they can force that creature to attempt a Will saving throw (DC equals 10 + 1/2 the agent's level + their operative ability modifier). If this saving throw fails, the creature forgets any specific details about the agent they might have known (such as specific interactions) as well as any situations in which the agent was involved (such as heists or other events). This only applies to memories formed over 1 hour per agent level; memories further back than that are unaffected. The agent can use this ability against an unconscious creature without the need to deal damage by invoking a motivation (they can subconsciously understand things you whisper to them), although doing so takes 10 minutes. This is a mind-affecting effect.\n\nAn affected creature reminded of a circumstance involving the agent attempts an additional saving throw with a +2 bonus to remember the agent, but failing this saving throw a second time cements the forgetting, no longer allowing them to remember without magical aid. A creature who succeeds at a saving throw against this ability cannot be affected by it for 1 month. Modify memory or greater restoration can restore the lost memory.\n\nAt 16th level, the agent can reduce the time needed to use this ability without dealing damage to 1 minute. The agent can also remove memories from as long ago as 1 day per level, as well as choose to selectively leave certain memories in place.\n\nA creature that succeeds at its saving throw is immune for 1 day instead of 1 month. The agent can also affect a number of unconscious creatures at once equal to their operative ability modifier."
+    },
+    {
+      "name": "Always a Clue",
+      "type": "Ex",
+      "levels": [
+        14
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 14th level, the agent is so well-versed in deception and trickery that they can learn a great deal from enemy attempts at misdirection. Whenever the agent succeeds at a Perception check to notice a creature using Sleight of Hand or Stealth, the agent can spend 1 use of skill leverage to deduce the location of the nearest item that the opposing creature has hidden or protected (which might be hidden on their person). If the agent knows any of the creature's motivations, they can instead learn the location of the nearest item related to that motivation or a specific item of the agent's choice related to that motivation. In addition, the agent's ploy grants another use for this ability.\n\nFinally, whenever the agent picks up an item, they can spend 1 use of skill leverage as a swift action to deduce the owner's strongest feeling about the item and whether it is closely related to one of the owner's motivations (use the previous owner if there is no current owner)."
+    },
+    {
+      "name": "You Do not Know Me",
+      "type": "Ex",
+      "levels": [
+        16
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 16th level, the agent can imbue a single page of written text with their just a bad dream ability, the effects of which last for a number of days equal to the agent's operative ability modifier. Due to the personal nature of this text, the agent must choose a specific motivation when they write it. Only creatures who have that motivation are affected. Reading this page of dialogue takes 1 minute, and additionally can cause the creature to forget the agent's face, knowing only the most vague of details about them."
+    },
+    {
+      "name": "Twin Technique",
+      "type": "Ex",
+      "levels": [
+        18
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 18th level, the agent can use two devious techniques simultaneously on the same discerning strike."
+    },
+    {
+      "name": "Ghost",
+      "type": "Ex",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 20th level, the agent can use their just a bad dream class feature on an unconscious creature as a full-round action. The agent can also choose to remove all memory of the agent, the agent's allies, and their actions from the creature's memory. By invoking one of the target's motivations, the agent can also implant a single false memory into the creature's mind of a span of time no longer than the action the agent spent implanting the memory. This memory can be disproven with evidence, although the creature remains unaware of the source of this false memory even if it is disproven."
+    },
+    {
+      "name": "Agent Ploys",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "An agent can choose one of the following ploys at 1st level. It grants a skill sphere and a special ability. The agent's ploy cannot be changed except by retraining. At 2nd level, the ploy grants an option for the devious technique class feature, which improves the discerning strike ability. At 6th level, the ploy grants a conspiratorial ploy ability related to completing missions alongside allies with varying skillsets. At 14th level, the ploy grants another way to use the always a clue class feature.\n\n• Agility [LG]\n\nSource: Arcforge Players Compendium\n\nThe agent specializes in mobility and the use of terrain to their advantage.\n\nSphere: Athletics\n\nFeature: Thrilling Engagement (Ex): When the agent or the target are balancing, climbing, airborne, or swimming, the agent may use discerning strike on the target as if they were denied their Dexterity bonus to AC.\n\nDevious Technique Option: Confound: The agent's continual darting assault leaves the target unable to respond to threats. The target becomes battered and cannot make attacks of opportunity for one round.\n\nSwift of Foot (Ex): At 6th level, the agent gains an +20 foot enhancement bonus to all of their movement speeds. This bonus increases by 10 feet at 12th level and every 4 levels thereafter. An agent carrying a medium or heavy load loses this extra speed.\n\nConspiratorial Ploy: Try to Keep Up (Ex): Allies within 60 feet who can see or hear the agent benefit from any Athletics packages that the agent possesses. This does not grant the ally any other talents or benefits of the Athletics sphere, nor does it grant them skill ranks. Allies lose this benefit when they go 1 round out of range of the agent or are unable to see or hear the agent.\n\nAlways a Clue: When an agent succeeds at a skill check to move through an enemy's threatened area without provoking an attack of opportunity, the agent can spend 1 use of skill leverage to deduce a location that the enemy is trying to reach or that they do not wish the agent to reach.\n\n• Bravado\n\nThe agent specializes in creating and exploiting distractions.\n\nSphere: Bluster\n\nFeature: Distracting Attack (Ex): Whenever the agent makes an attack, they can attempt a Bluff o"
+    },
+    {
+      "name": "Agent Conspiracies",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "An agent can choose one of the following conspiracies at 2nd level. It grants a skill sphere. At 3rd level, it determines the benefit of the web of secrets class feature. At 5th level, it opens up another way to use the coordinated combat class feature. Once chosen, the agent's conspiracy cannot be changed (without retraining).\n\n• Censorship\n\nThe agent hunts down dangerous information, especially magical secrets. A censorship conspiracy might protect the innocent from evil magic, try to keep a guild's secret techniques from being copied by those who would misuse it, or destroy anyone who even gets close to a secret at the heart of a government or magical artifact.\n\nSphere: Spellhacking\n\nWeb of Secrets: The agent's co-conspirators track magical activity in the region. The agent can attempt a free Diplomacy check to gather information about a magic item, spellcaster, magical phenomenon, or creature with magical abilities within a week's travel of the local settlement.\n\nCoordinated Combat Option: The agent's coordinated combat bonus and discerning strike damage apply as long as an ally has succeeded at a Knowledge (arcana or religion) check or Spellcraft check to learn about the target or the target's items since the end of the agent's last turn and told the agent. Coordinated combat also applies if any other creature succeeded at a dispel check or caster level check for a spell or ability that targets the creature or an item or spell on it since the end of the agent's last turn.\n\n• Collusion\n\nThe agent interferes with diplomatic ventures and arranges clandestine alliances. A collusion conspiracy might be tied to a political movement, a noble house, or even a business.\n\nSphere: Communication\n\nWeb of Secrets: The agent's co-conspirators watch potential allies or rivals closely. The agent can attempt a free Diplomacy check to gather information about a creature active in the local settlement.\n\nCoordinated Combat Option: The agent's coordinated combat bonus and discerning strike damage also apply as long as an ally has successfully used any language-dependent skill or ability on the target or the agent since the end of the agent's last turn.\n\n• Counterintelligence\n\nTh"
+    }
+  ],
+  "archetypes": [
+    {
+      "name": "Blackpowder Slayer",
+      "summary": "Blackpowder slayers are agents who are especially adept at using firearms to accomplish their goals."
+    },
+    {
+      "name": "Cutthroat [LG]",
+      "summary": "Cutthroats embody a more aggressive and flagrant distortion of subterfuge, using their agility and combat expertise to control the flow of an engagement."
+    },
+    {
+      "name": "Erudite Pugilist",
+      "summary": "Erudite pugilists are most effective when using their own body to strike foes."
+    },
+    {
+      "name": "Imposter",
+      "summary": "Imposters are particularly skilled at taking on fake roles, often to the point that even their allies can't figure out what they're really thinking."
+    },
+    {
+      "name": "Superstar Spy",
+      "summary": "Superstar spies act out in the open, using their fame itself as a weapon to confuse their targets."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Any",
+      "bonus": "+1 ignored damage reduction on discerning strikes (for each time an agent takes this favored class bonus, their discerning strike damage ignores that much damage reduction a creature may possess)."
+    },
+    {
+      "race": "Any",
+      "bonus": "Add +1/5 to devious technique saving throw DC."
+    },
+    {
+      "race": "Any",
+      "bonus": "Add +1 foot to the agent's movement speed. In combat this option's effect is rounded down to the nearest multiple of five (having no effect until selected five times)."
+    },
+    {
+      "race": "Any",
+      "bonus": "Add +1 foot to the range increment of weapons the agent throws. In combat this option's effect is rounded down to the nearest multiple of five (having no effect until selected five times)."
+    },
+    {
+      "race": "Any",
+      "bonus": "+1/4 bonus to Fortitude saving throws."
+    },
+    {
+      "race": "Any",
+      "bonus": "Add +1/3 bonus to discerning strike damage."
+    },
+    {
+      "race": "Any",
+      "bonus": "Gain a +1/2 insight bonus to two class skills of the agent's choice. This bonus stacks with itself but not with other insight bonuses."
+    },
+    {
+      "race": "Catfolk",
+      "bonus": "Add +1/2 to discerning strike damage with natural weapons granted by the catfolk race."
+    },
+    {
+      "race": "Tieflings",
+      "bonus": "+1/5 of a use of their darkness spell-like ability. After selecting this favored class bonus 10 times, they can use their darkness spell-like ability as a swift action."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 1,
+      "choices": [
+        "skill expertise",
+        "surgical finesse"
+      ]
+    },
+    {
+      "level": 2,
+      "choices": [
+        "Conspiracy",
+        "devious technique"
+      ]
+    },
+    {
+      "level": 3,
+      "choices": [
+        "web of secrets"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "You do not know me",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "Ghost",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

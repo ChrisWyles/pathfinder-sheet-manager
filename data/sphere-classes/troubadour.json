@@ -577,6 +577,29 @@
       "description": "At 20th level, the troubadour has become a master of all of his roles. Whenever he prepares a persona, he can choose to prepare 2 personas at once. He may assume either of them or his base persona as a free action usable once per round. If he changes a prepared persona through the quick change class feature, he may choose either of his prepared personas to switch with the new persona."
     }
   ],
+  "archetypes": [
+    {
+      "name": "-Binder",
+      "summary": "Binders share their bodies with otherworldly beings."
+    },
+    {
+      "name": "-Clone",
+      "summary": "Clones specialize in copying the personas of others."
+    },
+    {
+      "name": "-Method Actor",
+      "summary": "To truly assume a role, a skilled actor must not only change the way they appear but also the ways in which they interact with the world and the values they operate by. Method actors excel in establishing stringent doctrines by which to live, but at the same time are capable of changing their obligations at a moment's notice."
+    },
+    {
+      "name": "-Polymath [SM-]",
+      "summary": "Polymaths reinforce their acting prowess with an arsenal of well-honed skills."
+    },
+    {
+      "name": "-Ringmaster",
+      "summary": "Ringmasters specialize in empowering a whole troupe of allies."
+    }
+  ],
+  "favoredClassBonuses": [],
   "abilityScoreIncreases": [
     4,
     8,

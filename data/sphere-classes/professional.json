@@ -1,0 +1,598 @@
+{
+  "slug": "professional",
+  "name": "Professional",
+  "group": "operative",
+  "url": "http://spheresofpower.wikidot.com/professional",
+  "source": "Spheres of Power wiki",
+  "hitDie": null,
+  "alignment": "",
+  "role": "",
+  "classSkills": [],
+  "skillRanksPerLevel": null,
+  "babProgression": "THREE_QUARTER",
+  "saveProgressions": {
+    "fort": "POOR",
+    "ref": "GOOD",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+0",
+      "fortSave": "+0",
+      "refSave": "+2",
+      "willSave": "+2",
+      "special": [
+        "Bonus talent",
+        "consummate professional",
+        "methodical edge (first method)",
+        "professional method",
+        "skill expertise"
+      ],
+      "columns": {
+        "Any": "1",
+        "Utility": "0"
+      },
+      "choices": [
+        "Bonus talent",
+        "consummate professional",
+        "professional method",
+        "skill expertise"
+      ]
+    },
+    {
+      "level": 2,
+      "bab": "+1",
+      "fortSave": "+0",
+      "refSave": "+3",
+      "willSave": "+3",
+      "special": [
+        "Methodical edge (second method)"
+      ],
+      "columns": {
+        "Any": "2",
+        "Utility": "1"
+      },
+      "choices": []
+    },
+    {
+      "level": 3,
+      "bab": "+2",
+      "fortSave": "+1",
+      "refSave": "+3",
+      "willSave": "+3",
+      "special": [
+        "Professional interest +2"
+      ],
+      "columns": {
+        "Any": "3",
+        "Utility": "1"
+      },
+      "choices": [
+        "Professional interest +2"
+      ]
+    },
+    {
+      "level": 4,
+      "bab": "+3",
+      "fortSave": "+1",
+      "refSave": "+4",
+      "willSave": "+4",
+      "special": [
+        "Savvy method (first method)"
+      ],
+      "columns": {
+        "Any": "3",
+        "Utility": "2"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+3",
+      "fortSave": "+1",
+      "refSave": "+4",
+      "willSave": "+4",
+      "special": [
+        "Bonus talent"
+      ],
+      "columns": {
+        "Any": "4",
+        "Utility": "2"
+      },
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 6,
+      "bab": "+4",
+      "fortSave": "+2",
+      "refSave": "+5",
+      "willSave": "+5",
+      "special": [
+        "Savvy method (second method)"
+      ],
+      "columns": {
+        "Any": "5",
+        "Utility": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 7,
+      "bab": "+5",
+      "fortSave": "+2",
+      "refSave": "+5",
+      "willSave": "+5",
+      "special": [
+        "Contingent planning 1/day"
+      ],
+      "columns": {
+        "Any": "6",
+        "Utility": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+6/+1",
+      "fortSave": "+2",
+      "refSave": "+6",
+      "willSave": "+6",
+      "special": [
+        "Methodical progression (first method)"
+      ],
+      "columns": {
+        "Any": "6",
+        "Utility": "4"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+6/+1",
+      "fortSave": "+3",
+      "refSave": "+6",
+      "willSave": "+6",
+      "special": [
+        "Bonus talent",
+        "professional interest +3"
+      ],
+      "columns": {
+        "Any": "7",
+        "Utility": "4"
+      },
+      "choices": [
+        "Bonus talent",
+        "professional interest +3"
+      ]
+    },
+    {
+      "level": 10,
+      "bab": "+7/+2",
+      "fortSave": "+3",
+      "refSave": "+7",
+      "willSave": "+7",
+      "special": [
+        "Methodical progression (second method)"
+      ],
+      "columns": {
+        "Any": "8",
+        "Utility": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 11,
+      "bab": "+8/+3",
+      "fortSave": "+3",
+      "refSave": "+7",
+      "willSave": "+7",
+      "special": [
+        "Improved consummate professional"
+      ],
+      "columns": {
+        "Any": "9",
+        "Utility": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 12,
+      "bab": "+9/+4",
+      "fortSave": "+4",
+      "refSave": "+8",
+      "willSave": "+8",
+      "special": [
+        "Corner the market",
+        "innovative methods (first method)"
+      ],
+      "columns": {
+        "Any": "9",
+        "Utility": "6"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+9/+4",
+      "fortSave": "+4",
+      "refSave": "+8",
+      "willSave": "+8",
+      "special": [
+        "Bonus talent"
+      ],
+      "columns": {
+        "Any": "10",
+        "Utility": "6"
+      },
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 14,
+      "bab": "+10/+5",
+      "fortSave": "+4",
+      "refSave": "+9",
+      "willSave": "+9",
+      "special": [
+        "Innovative methods (second method)"
+      ],
+      "columns": {
+        "Any": "11",
+        "Utility": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 15,
+      "bab": "+11/+6/+1",
+      "fortSave": "+5",
+      "refSave": "+9",
+      "willSave": "+9",
+      "special": [
+        "Contingent planning 2/day",
+        "professional interest +4"
+      ],
+      "columns": {
+        "Any": "12",
+        "Utility": "7"
+      },
+      "choices": [
+        "professional interest +4"
+      ]
+    },
+    {
+      "level": 16,
+      "bab": "+12/+7/+2",
+      "fortSave": "+5",
+      "refSave": "+10",
+      "willSave": "+10",
+      "special": [
+        "Methodical conclusion (first method)"
+      ],
+      "columns": {
+        "Any": "12",
+        "Utility": "8"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+12/+7/+2",
+      "fortSave": "+5",
+      "refSave": "+10",
+      "willSave": "+10",
+      "special": [
+        "Bonus talent"
+      ],
+      "columns": {
+        "Any": "13",
+        "Utility": "8"
+      },
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 18,
+      "bab": "+13/+8/+3",
+      "fortSave": "+6",
+      "refSave": "+11",
+      "willSave": "+11",
+      "special": [
+        "Methodical conclusion (second method)"
+      ],
+      "columns": {
+        "Any": "14",
+        "Utility": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 19,
+      "bab": "+14/+9/+4",
+      "fortSave": "+6",
+      "refSave": "+11",
+      "willSave": "+11",
+      "special": [
+        "Pivotal innovation"
+      ],
+      "columns": {
+        "Any": "15",
+        "Utility": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+15/+10/+5",
+      "fortSave": "+6",
+      "refSave": "+12",
+      "willSave": "+12",
+      "special": [
+        "Best in the business"
+      ],
+      "columns": {
+        "Any": "15",
+        "Utility": "10"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Any",
+    "Utility"
+  ],
+  "features": [
+    {
+      "name": "Weapon and Armor Proficiencies",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "Professionals are proficient with simple weapons, plus the hand crossbow, rapier, sap, shortbow, short sword, and sword cane, as well as light armor and bucklers."
+    },
+    {
+      "name": "Skill Expertise",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "A professional may combine skill spheres and talents to perfect incredible acts of guile. Whenever the professional gains a skill talent, they must choose a skill sphere to spend it on. The first time a character spends a skill talent on a sphere, they gain that sphere's base abilities instead of gaining a talent within the sphere.\n\nAfter a character possesses a base sphere, spending an additional skill talent on that sphere gains them one of that sphere's talents. Professionals are considered Virtuoso operatives and choose Intelligence, Wisdom, or Charisma as their operative ability modifier. The Virtuoso skill talent progression is reprinted in the professional table for ease of reference. (Talents under Any can be any skill talent that the professional qualifies for, while talents listed under Utility must have the [utility] tag.)"
+    },
+    {
+      "name": "Bonus Talents",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "At 1st level and again every four levels thereafter (5th, 9th, 13th, 17th), the professional gains a bonus skill talent she qualifies for."
+    },
+    {
+      "name": "Consummate Professional",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 1st level a professional chooses one Profession skill. She unlocks skill leverage with that skill and may use her operative ability modifier instead of the usual one for this skill.\n\nIn addition, for each level of Professional she has, she gains a bonus skill rank in that skill.\n\nFinally, she chooses a skill that the Profession skill might be used together with. She unlocks skill leverage with this paired skill and gains the option to use her modifier with her chosen Profession in place of her modifier for the paired skill. Knowledge (local) is a common paired skill, but the professional can choose any skill that makes sense from the following list: Appraise, Acrobatics, Artistry, Craft, Diplomacy, Handle Animal, Heal, one Knowledge skill, Linguistics, one Lore skill, one Perform skill, Ride, Sense Motive, Sleight of Hand, Survival.\n\n• Adventurer Professions\n\nMany adventurers take a Profession skill that aligns with their needs as an adventurer, such as Profession (adventurer), Profession (mercenary), Profession (soldier), or Profession (dungeoneer). They may use this skill to find the best prices on equipment, the best inns and taverns to select during their journey, and know the best times of day to practice their trade, as appropriate to the selected skill."
+    },
+    {
+      "name": "Professional Method",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "A professional gains two sets of abilities referred to as methods, representations of her varied skill sets and broad opportunities. Each method grants five different abilities.\n\nA professional selects one professional method when she takes her 1st level of professional, and her second when she takes her 2nd level of professional. Once made, these choices cannot be changed.\n\nDescriptions of the methods she can choose from appear at the end of the class features. If a method ability allows a target to attempt a saving throw to resist its effects (including spell-like abilities), the DC is equal to 10 + half her professional level + her operative ability modifier unless stated otherwise.\n\nMethodical Edge: At 1st level (for her first method) or 2nd level (for her second method) a professional selects her method from the list at the end of the class description and gains an ability that helps define her approach to problem solving.\n\nSavvy Method: A professional progresses in her method to gain a new ability at 4th level (for her first method) or 6th level (for her second method). This ability gives her a new way to use her professional interest to overcome obstacles or get an edge against her rivals.\n\nMethodical Progression: Master of her profession at 8th level (for her first method) or 10th level (for her second method), the professional unlocks a new ability that allows her to exceed her peers.\n\nInnovative Methods: At 12th level (for her first method) or 14th level (for her second method), the professional has progressed to a point where innovation is commonplace for her, adding a whole new form of utility to her repertoire.\n\nMethodical Conclusion: At 16th level (for her first method) or 18th level (for her second method), the professional gains a powerful ability unique to her method, the ultimate finale of her method."
+    },
+    {
+      "name": "Professional Interest",
+      "type": "Ex",
+      "levels": [
+        3,
+        9,
+        15
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 3rd level, a professional may gather information as part of 8 hours spent earning income with Profession or a similar skill such as Perform or Sleight of Hand. (As described in Pathfinder Unchained, a character can earn income equal to her Profession check result by working for a single day.) When she does, she selects one specific creature, location, item, political position, or sustained phenomenon that she is aware of as the subject of her interest. For example, she may choose “the shady woman at the tavern,” “Bluebird Waterfall,” “the Master of Coin,” or “these constant thunderstorms.” During this time, she may roll 1d3+1 skill checks to gather information on the chosen topic. She may use Perception, Stealth, or the same Profession skill instead of Diplomacy for this skill check to gather Information, but if she does the DC increases by 4 unless she chose Profession and the topic is relevant to the Profession skill.\n\nAfter she finishes working, she gains a +2 insight bonus to all Appraise, Knowledge, Lore, Perception, Perform, Profession, Sense Motive, and Survival checks regarding or directly involving her interest. These bonuses last until she uses this ability again. The bonus increases to +3 at 9th level and +4 at 15th level."
+    },
+    {
+      "name": "Contingent Planning",
+      "type": "Ex",
+      "levels": [
+        7,
+        15
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 7th level, a professional learns to always be prepared for any situation. She knows how to prepare plans in the same manner as [plan] talents. As part of 8 hours spent working to earn income with Profession or a similar skill, she can purchase or otherwise gather goods and equipment to help her during her adventures. She can do this as part of the same action to use her professional interest ability. When she does, she makes twice as much money as usual and places it in a special fund called her contingency fund, which is used to buy useful items.\n\nAs with [plan] talents, the player does not declare what these items are until the professional reveals them. When she finishes preparing the fund, the professional can spend additional money into the fund, up to its maximum. The total amount in the fund cannot exceed 200 gp times her professional level.\n\nThese gold pieces are considered spent and cannot be used in any other way. Once per day, she may spend a full-round action to pull an item out of a backpack, pouch, saddlebag, or extradimensional space; this item can have a market value no more than the amount of gold remaining in her contingency fund. Deduct the market value of the item from the amount of gold in the contingency fund. If she has any [plan] talents, she can prepare those plans while earning money as well, and she can spend a use of contingent planning to reveal a [plan] talent; however, she cannot spend a plan to reveal additional items purchased with her contingency fund.\n\nAt 15th level, the professional can reveal an item with this plan twice a day and the fund's value increases to 400 gp times per professional level."
+    },
+    {
+      "name": "Improved Consummate Professional",
+      "type": "Ex",
+      "levels": [
+        11
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 11th level, the professional learns to avoid obvious pitfalls and problems common to her selected profession. Once per day, a professional may treat any d20 roll of 1-9 on a skill check using either skill she selected with consummate professional as if she had rolled a 10."
+    },
+    {
+      "name": "Corner the Market",
+      "type": "Ex",
+      "levels": [
+        12
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 12th level, a professional knows when to leverage her position in matters involving her chosen vocation. Any creature who buys or sells any goods or services has a 50% chance of having heard of the professional's incredible skill and is willing to converse briefly with her even if they are unfriendly. If she successfully makes an impressive display of her Profession skill for someone who had already heard of her, their attitude improves to friendly (if it was lower) for 1 day and she can use Profession in place of Diplomacy to make a request or negotiate a bargain with them.\n\nIn addition, with 1 minute of effort, she can make an impressive display of skill using her chosen Profession skill suitable to impress any creature with a language (even if they have not heard of her). She can choose any DC she likes for the display, but as normal for an impressive display of skill the chosen DC must at least equal 20 + target's Hit Dice or 15 + target's modifier with that skill (whichever is higher) for her display to affect them. This might be language-dependent, visual, and/or auditory depending on how she demonstrates her profession."
+    },
+    {
+      "name": "Pivotal Innovation",
+      "type": "Ex",
+      "levels": [
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 19th level, the professional makes a discovery or figures out a way to do her work in a way no one ever has before, likely drawing worldwide interest in her services or the attention of beings from other planes of existence. She gains a skill talent or a feat that has a prerequisite that includes skill ranks. If the feat or talent has other prerequisites, she does not have to meet all of them; if she could qualify for the feat or talent if not for a single prerequisite, this class feature counts as that prerequisite for the purpose of gaining that feat or talent. This does not allow her to use abilities she does not have, even if the feat or talent would improve them."
+    },
+    {
+      "name": "Best in the Business",
+      "type": "Ex",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level, a professional is the best in the world at her chosen vocation. Whenever she attempts a Profession check, she may treat her d20 roll as a 20. She can also spend 1 use of skill leverage to get a 20 on a check with her consummate professional paired skill. In addition, she increases the maximum value of her contingent planning's contingency fund to 20,000 gp."
+    },
+    {
+      "name": "Professional Methods",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "• Adaptation\n\nThe professional is a dilettante capable of quickly learning whatever she needs to.\n\n• Methodical Edge: Skill Flexibility (Ex)\n\nThe professional can take a move action to gain the benefit of a feat she does not possess. This bonus feat must be selected from the Extra Skill Talent feat or any feat which requires skill talents or specific skill ranks as prerequisites. This effect lasts for 1 minute. The professional must meet all the feat's prerequisites. She may use this ability a number of times per day equal to 3 + 1/2 her professional level.\n\nThe professional can use this ability again before the duration expires to replace the previous feat with another choice. If a feat has a daily use limitation (such as with Nature Magic from Pathfinder Roleplaying Game Advanced Class Guide), any uses of that feat while using this ability count toward that feat's daily limit.\n\n• Savvy Method: Extended Adaptation (Ex)\n\nThe professional selects a number of skill talents or feats which she does not possess equal to her operative ability modifier, plus one additional skill talent or feat for every ability she possesses from the Adaptation method. Whenever she uses skill flexibility to gain only these chosen feats or skill talents (through the Extra Skill Talent feat), she may have the effects of skill flexibility last for 1 hour rather than 1 minute. The professional may re-choose which feats and skill talents are selected by this ability every time she gains level.\n\n• Methodical Progression: Complex Skill Flexibility (Ex)\n\nThe professional can use skill flexibility to gain the benefit of two feats at the same time. She may select one feat as a swift action or two feats as a move action. She may use one of these feats to meet a prerequisite of the second feat; doing so means that she cannot replace a feat currently fulfilling another's prerequisite without also replacing those feats that require it. Each individual feat selected counts toward her daily uses of this ability.\n\n• Innovative Methods: Shared Skill Flexibility (Ex)\n\nAs a standard action, the professional may spend two uses of her skill flexibility ability to grant a single feat which could be selected "
+    }
+  ],
+  "archetypes": [
+    {
+      "name": "Trader",
+      "summary": "Traders excel at managing logistics."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Any",
+      "bonus": "Gain 1/6 of a skill talent."
+    },
+    {
+      "race": "Any",
+      "bonus": "Gain a +1/2 bonus to the professional's consummate professional skills."
+    },
+    {
+      "race": "Any",
+      "bonus": "Deal an extra 1/2 precision to damage on attacks against any creature that the professional succeeded at a skill check against on the same turn she attacked as long as the check was part of a swift or move action. This damage cannot be dealt more than once per round to the same target."
+    },
+    {
+      "race": "Aasimar",
+      "bonus": "Gain +1/2 sacred bonus to three class skills of the professional's choice. This bonus stacks with itself but not with other sacred bonuses."
+    },
+    {
+      "race": "Tieflings",
+      "bonus": "Gain +1/2 profane bonus to three class skills of the professional's choice. This bonus stacks with itself but not with other profane bonuses."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 1,
+      "choices": [
+        "Bonus talent",
+        "consummate professional",
+        "professional method",
+        "skill expertise"
+      ]
+    },
+    {
+      "level": 3,
+      "choices": [
+        "Professional interest +2"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "choices": [
+        "Bonus talent",
+        "professional interest +3"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 15,
+      "choices": [
+        "professional interest +4"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "choices": [
+        "Bonus talent"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

@@ -530,6 +530,29 @@
       "description": "At 20th level the sage gains a powerful esotery from the following list that acts as his signature technique. The sage cannot select a signature technique unless he possesses the corresponding esoteric training package. Signature techniques follow all other rules for esoteries, including determining saving throw DCs and the number of ki points that can be spent when activating them.\n\n• Desiccate Essence (Manipulator) [AoP2]\n\nThe sage may make a single melee touch attack using his chi gong ability as a full-round action; if successful, the target of this attack must succeed at a Will saving throw or lose all ki points, martial focus, and spell points that they possess, in addition to suffering 2 permanent negative levels. A target that succeeds at their saving throw instead suffers 1 temporary negative level for 24 hours.\n\n• Devastation Wave (Ki Blaster)\n\nThe sage's ki blast now uses d10s instead of d6s for its damage dice. In addition, the sage may use a full round action to fire a powered up version of his ki blast. Instead of a ranged touch attack, the sage's ki blast fires in a 10 ft. radius, 60 ft. long horizontal column originating from his square. Any creature within the area of this column takes damage as though hit by the sage's ki blast (Reflex save for half).\n\n• Heart Stopper (Chakra Disruptor)\n\nThe sage may make a single melee touch attack using his chi gong ability as a full round action; if successful, the target of this attack must make a Fortitude save or die. Even creatures that are not technically living, such as constructs and undead, can be affected by this technique as the sage's ki tears through their bodies and disrupts the energies that animate them.\n\n• Physical Perfection (Enhancer)\n\nThe sage gains a +5 inherent bonus to each of his physical ability scores (Constitution, Dexterity, and Strength), gains DR 5/-, and increases his ki pool by 5 points. In addition, the sage no longer takes penalties to his ability scores for aging and cannot be magically aged. Any such penalties that he has already taken are removed. Age bonuses still accrue, and the sage still dies of old age when his time is up, but he doubles the maximum age limit for his "
     }
   ],
+  "archetypes": [
+    {
+      "name": "Battleshifter",
+      "summary": "Battleshifters are Sages who focus on shapeshifting themselves during battle."
+    },
+    {
+      "name": "Confluence",
+      "summary": "Confluences are particularly attuned to nature's powers."
+    },
+    {
+      "name": "Resolute",
+      "summary": "The Resolute Sage can strengthen their body to resist attacks."
+    },
+    {
+      "name": "Votary",
+      "summary": "Votaries are considered the most dedicated of sages, renouncing worldly pleasures and material wealth in exchange for a greater connection with the universe around them."
+    },
+    {
+      "name": "Wand Master",
+      "summary": "Wand Masters specialize in channeling their power through wands and spell engines."
+    }
+  ],
+  "favoredClassBonuses": [],
   "abilityScoreIncreases": [
     4,
     8,

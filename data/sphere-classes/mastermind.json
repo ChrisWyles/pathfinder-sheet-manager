@@ -1,0 +1,757 @@
+{
+  "slug": "mastermind",
+  "name": "Mastermind",
+  "group": "operative",
+  "url": "http://spheresofpower.wikidot.com/mastermind",
+  "source": "Spheres of Power wiki",
+  "hitDie": 8,
+  "alignment": "Any",
+  "role": ")) 5th-Level Dispiriting Deconstruction (Ex) Magical Scheme [plan] (Su) (requires Use Magic Device 5 ranks, Faction sphere ((supply) package)) Remembered Remedy [plan] (Ex) Spell Solution [plan] (Su) 8th-Level Make an Opening* (Ex) Ready for Anything (Ex) Rehearsed Riposte [plan] (Ex) Training Scheme [plan] (Ex) 11th-Level Effective Teamwork (Ex) Exploit Opportunity* (Ex) Magical Contingency (Sp) ",
+  "classSkills": [],
+  "skillRanksPerLevel": 8,
+  "babProgression": "THREE_QUARTER",
+  "saveProgressions": {
+    "fort": "POOR",
+    "ref": "POOR",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+0",
+      "fortSave": "+0",
+      "refSave": "+0",
+      "willSave": "+2",
+      "special": [
+        "Conspiracy",
+        "expose vulnerability 1d6",
+        "insightful defense",
+        "overseer",
+        "schemer",
+        "skill expertise"
+      ],
+      "columns": {
+        "Any": "1",
+        "Utility": "0"
+      },
+      "choices": [
+        "overseer",
+        "skill expertise"
+      ]
+    },
+    {
+      "level": 2,
+      "bab": "+1",
+      "fortSave": "+0",
+      "refSave": "+0",
+      "willSave": "+3",
+      "special": [
+        "Mastermind trick"
+      ],
+      "columns": {
+        "Any": "2",
+        "Utility": "1"
+      },
+      "choices": [
+        "Mastermind trick"
+      ]
+    },
+    {
+      "level": 3,
+      "bab": "+2",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+3",
+      "special": [
+        "Deadly expertise +2",
+        "expose vulnerability 2d6",
+        "web of secrets"
+      ],
+      "columns": {
+        "Any": "3",
+        "Utility": "1"
+      },
+      "choices": [
+        "web of secrets"
+      ]
+    },
+    {
+      "level": 4,
+      "bab": "+3",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Put off-guard",
+        "spur action"
+      ],
+      "columns": {
+        "Any": "3",
+        "Utility": "2"
+      },
+      "choices": [
+        "Put off-guard",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+3",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Expose vulnerability 3d6",
+        "mastermind trick",
+        "unsurprised"
+      ],
+      "columns": {
+        "Any": "4",
+        "Utility": "2"
+      },
+      "choices": [
+        "mastermind trick"
+      ]
+    },
+    {
+      "level": 6,
+      "bab": "+4",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Quick study"
+      ],
+      "columns": {
+        "Any": "5",
+        "Utility": "3"
+      },
+      "choices": [
+        "Quick study"
+      ]
+    },
+    {
+      "level": 7,
+      "bab": "+5",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Expose vulnerability 4d6",
+        "schemer (standard)"
+      ],
+      "columns": {
+        "Any": "6",
+        "Utility": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+6/+1",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+6",
+      "special": [
+        "Mastermind trick",
+        "stratagem"
+      ],
+      "columns": {
+        "Any": "6",
+        "Utility": "4"
+      },
+      "choices": [
+        "Mastermind trick",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+6/+1",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+6",
+      "special": [
+        "Deadly expertise +3/d8",
+        "expose vulnerability 5d6"
+      ],
+      "columns": {
+        "Any": "7",
+        "Utility": "4"
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+7/+2",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Spur action (2 allies or spur standard action)"
+      ],
+      "columns": {
+        "Any": "8",
+        "Utility": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 11,
+      "bab": "+8/+3",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Expose vulnerability 6d6",
+        "mastermind trick"
+      ],
+      "columns": {
+        "Any": "9",
+        "Utility": "5"
+      },
+      "choices": [
+        "mastermind trick"
+      ]
+    },
+    {
+      "level": 12,
+      "bab": "+9/+4",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Informed prediction"
+      ],
+      "columns": {
+        "Any": "9",
+        "Utility": "6"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+9/+4",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Expose vulnerability 7d6",
+        "schemer (move)"
+      ],
+      "columns": {
+        "Any": "10",
+        "Utility": "6"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+10/+5",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+9",
+      "special": [
+        "Mastermind trick"
+      ],
+      "columns": {
+        "Any": "11",
+        "Utility": "7"
+      },
+      "choices": [
+        "Mastermind trick"
+      ]
+    },
+    {
+      "level": 15,
+      "bab": "+11/+6/+1",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+9",
+      "special": [
+        "Deadly expertise +4/d10",
+        "expose vulnerability 8d6"
+      ],
+      "columns": {
+        "Any": "12",
+        "Utility": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 16,
+      "bab": "+12/+7/+2",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Spur action (3 allies or spur same action as that spent)"
+      ],
+      "columns": {
+        "Any": "12",
+        "Utility": "8"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "12/+7/+2",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Expose vulnerability 9d6",
+        "mastermind trick",
+        "windows of the soul"
+      ],
+      "columns": {
+        "Any": "13",
+        "Utility": "8"
+      },
+      "choices": [
+        "mastermind trick"
+      ]
+    },
+    {
+      "level": 18,
+      "bab": "+13/+8/+3",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Puppet master"
+      ],
+      "columns": {
+        "Any": "14",
+        "Utility": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 19,
+      "bab": "+14/+9/+4",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Expose vulnerability 10d6",
+        "master plan"
+      ],
+      "columns": {
+        "Any": "15",
+        "Utility": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+15/+10/+5",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+12",
+      "special": [
+        "Always prepared",
+        "mastermind trick"
+      ],
+      "columns": {
+        "Any": "15",
+        "Utility": "10"
+      },
+      "choices": [
+        "mastermind trick",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Any",
+    "Utility"
+  ],
+  "features": [
+    {
+      "name": "Weapon and Armor Proficiencies",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "Masterminds are proficient with simple weapons, plus the rapier, sap, shortbow, short sword, and sword cane (Pathfinder Roleplaying Game: Ultimate Equipment), as well as light armor and bucklers."
+    },
+    {
+      "name": "Skill Expertise",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "A mastermind may combine skill spheres and talents to perform incredible acts of guile. Whenever the mastermind gains a skill talent, they must choose a skill sphere to spend it on. The first time a character spends a skill talent on a sphere, they gain that sphere's base abilities instead of gaining a talent within the sphere.\n\nAfter a character possesses a base sphere, spending an additional skill talent on that sphere gains them one of that sphere's talents. Masterminds are considered Virtuoso operatives and choose one of their Intelligence, Wisdom, or Charisma as their operative ability modifier. The virtuoso skill talent progression is reprinted in the Mastermind table for ease of reference. (Talents under Any can be any skill talent that the mastermind qualifies for, while talents listed under Utility must have the [utility] tag.)"
+    },
+    {
+      "name": "Conspiracy",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "The mastermind chooses a conspiracy (listed at the end of this class description), which grants them another skill sphere and a class feature related to that sphere. Their conspiracy also determines which ability score modifier is their key ability modifier, which is used for certain class features."
+    },
+    {
+      "name": "Expose Vulnerability",
+      "type": "Ex",
+      "levels": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A mastermind knows how to turn almost any information into a weapon. As a move action, the mastermind can attempt a skill check to understand a target creature within 30 feet. This can be either a Knowledge check about the target (DC 10 + target's Hit Dice + target's Wisdom modifier) or a Sense Motive check (DC 15 + the target's base attack bonus + target's Charisma modifier). If the check succeeds, the mastermind spots a vulnerability that allows the next attack to hit that opponent to deal an additional 1d6 points of precision damage (which also counts as the same type of damage). The extra damage is not multiplied on a critical hit. Immunity and protections against critical hits also apply to precision damage. The damage increases by one die for every two mastermind levels after 1st (3rd, 5th, and so on). The extra damage is subject to an extra requirement depending on the skill used.\n\nKnowledge: The damage can be dealt only if the target is off-balance either because it is denied its Dexterity bonus to AC or because it is threatened by a creature other than the one dealing the damage. This is a language-dependent effect on any number of allies within 30 feet of the mastermind when the vulnerability was exposed (including the mastermind).\n\nSense Motive: The damage can be dealt only from an angle the target is not defending well because either the target or the attacker has moved at least 10 feet since the end of the mastermind's last turn. This is a language-dependent effect on the target which allows allies (including the mastermind and those farther than 30 feet away) or traps that make attacks to deal the damage. The mastermind can choose to exclude certain sources from dealing this extra damage or only allow the damage to be dealt by certain sources of the mastermind's choice.\n\nOnce the extra damage is dealt, it is expended. The exposed vulnerability expires if unused by the end of the mastermind's next turn. Using expose vulnerability again ends any previous use of expose vulnerability.\n\nSome mastermind tricks allow the mastermind to augment their expose vulnerability ability. If the trick is marked with an asterisk (*), only one such trick can be applie"
+    },
+    {
+      "name": "Insightful Defense",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "When wearing light or no armor and not using a shield, a mastermind adds 1 point of their key ability modifier (if positive) per mastermind class level as a bonus to their Armor Class and Reflex saving throws (in addition to their full Dexterity modifier). For example, a 3rd-level mastermind with a key ability modifier of +4 would receive a +3 bonus to AC and Reflex saves. This bonus to AC applies even against touch attacks or when the mastermind is flat-footed. They lose this bonus when they are immobilized or helpless, when they wear medium or heavy armor, when they carry a shield, or when they carry a medium or heavy load.\n\nThis feature does not stack with any other way to add an additional ability score modifier (besides Dexterity) to the mastermind's Armor Class or Reflex saves; if they have more than one such ability, they add only the higher bonus (which might be a partial bonus, if the mastermind's level is less than their key ability modifier)."
+    },
+    {
+      "name": "Overseer",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "A mastermind gains either the Communication skill sphere or Faction skill sphere as a bonus sphere. (If they already have that sphere, they gain a talent they qualify for from that sphere as a bonus talent.)"
+    },
+    {
+      "name": "Schemer",
+      "type": "Ex",
+      "levels": [
+        1,
+        7,
+        13
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "The mastermind can prepare for future contingencies without their player defining what those preparations are right away. Instead, the player declares what the plan was only when revealing the plan. This preparation takes 1 hour and follows the rules for plans in Using Spheres of Guile (including weight limits). This class feature counts as one [plan] talent for the purpose of determining how many plans the mastermind has available. At first, a scheme can be a circumstantial asset.\n\nA circumstantial asset can be a clue or object specific to the circumstance that grants the mastermind (or an ally they give it to) a +2 circumstance bonus on a single skill check. The bonus increases by 1 at 5th level and every four levels thereafter. This might take the form of personal or logistical information (such as one of a person's bluffing tells or a guard's habits), identifying clothing or papers that do not grant special privileges (such as clothing matching a group of servants or cultists), a highly circumstantial tool (such as a lockpicking lever that helps open loose locks like this particular one). If the circumstance is especially unusual, the GM might call for a relevant Knowledge or Lore check or rule the item simply is not available. This asset cannot be one that can allow the mastermind to entirely bypass an obstacle or enemy; it can only make this specific skill check easier.\n\nThe item can be reused only to retry that check. The asset is not generally useful for other purposes, although it might be usable in a very similar circumstance. As normal for a plan, revealing an item is normally a full-round action to produce it from where it was stored (the mastermind can store it anywhere, but must be the one to reveal it).\n\nThis ability counts as the Brilliant Planner feat (Pathfinder Roleplaying Game: Ultimate Intrigue) for the purpose of meeting prerequisites. If the mastermind has the Faction sphere, this feature also counts as the Logistical Genius talent and they can reveal a benefit from their faction (such as a borrowed item or retainer) as a plan. If the plan has a price, the mastermind pays its price only upon revealing it; this payment can come from assets "
+    },
+    {
+      "name": "Mastermind Trick",
+      "type": "",
+      "levels": [
+        2,
+        5,
+        8,
+        11,
+        14,
+        17,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level and every three levels thereafter, the mastermind gains a mastermind trick from the list at the end of this class description."
+    },
+    {
+      "name": "Deadly Expertise",
+      "type": "Ex",
+      "levels": [
+        3,
+        9,
+        15
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Starting at 3rd level, the mastermind gets a +2 bonus on attack rolls for attacks against the current target of their expose vulnerability class feature. The bonus increases by 1 at 9th and 15th levels. As a full-round action, the mastermind can expose vulnerability, move up to half their speed, and make a single attack in any order.\n\nStarting at 9th level, when the mastermind (not an ally) deals the extra damage with their expose vulnerability ability, the damage dice increases to d8s. This improves to d10s at 15th level."
+    },
+    {
+      "name": "Web of Secrets",
+      "type": "Ex",
+      "levels": [
+        3
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Also at 3rd level, the mastermind's network of conspirators reaches far enough to regularly send them useful information. As part of spending 1 hour in a settlement preparing plans or gathering information, the mastermind can glean information determined by the conspiracy they chose."
+    },
+    {
+      "name": "Put Off-Guard",
+      "type": "Ex",
+      "levels": [
+        4
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "Starting at 4th level, the mastermind can get around a target's defenses when exposing its vulnerability. When they successfully expose vulnerability on a creature using a move, standard, or full-round action, the mastermind can choose one of the following options or an option granted by their conspiracy. The mastermind cannot put the same creature off-guard more than once per round. If the option allows a skill check, the mastermind can reuse the d20 roll from expose vulnerability.\n\nPredictable (Knowledge): The mastermind uses the practical advice task and its bonus applies to all allies (including the mastermind) within 30 feet. Each ally can use the bonus only once and only before the end of the mastermind's next turn. The bonus increases by 1 for the mastermind (not other allies) at 10th level and 16th level.\n\nUncertain (Sense Motive): The mastermind uses the assess tactics task and the target becomes uncertain until the end of the turn that the bonus is expended. The bonus from assess tactics increases by 2 at 10th level and 16th level."
+    },
+    {
+      "name": "Spur Action",
+      "type": "Ex",
+      "levels": [
+        4,
+        10,
+        16
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Also at 4th level, the mastermind can direct their allies to act at exactly the right moment. As a standard action, the mastermind urges one ally that can see or hear them to act. The ally can spend an immediate action at the end of the mastermind's turn as if it were a move action, a swift action, or a 5-foot step.\n\nStarting at 10th level, the mastermind can spend a full-round action to either target two allies or else to allow a single ally to spend their immediate action as a standard action.\n\nThe number of allies the mastermind can spur with a full-round action increases to three at 16th level. When targeting a single ally, the mastermind gains the option to spend a swift, move, standard, or full-round action to allow that ally to spend their immediate action as the same action the mastermind spent."
+    },
+    {
+      "name": "Unsurprised",
+      "type": "Ex",
+      "levels": [
+        5
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Starting at 5th level, the mastermind can add their key ability modifier instead of their Dexterity modifier to initiative rolls (if higher). They also get a competence bonus to skill checks to avoid being surprised equal to half their mastermind level."
+    },
+    {
+      "name": "Quick Study",
+      "type": "Ex",
+      "levels": [
+        6
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 6th level, the mastermind learns to pick up whatever ability is needed. When the mastermind gains this ability, they choose a total number of feats and skill talents equal to their key ability modifier. They must qualify for each one.\n\nWhenever the mastermind gains a level, they can replace any number of those already chosen. The mastermind can use quick study to gain one of the chosen options without any assistance.\n\nOnce per day, the mastermind can temporarily gain a feat or skill talent they do not have by meditating, studying, or training for 10 minutes. Normally, this feat or talent is chosen from a prepared list, but the mastermind can choose any feat or talent by hiring a trainer for a day or by using other means suitable for retraining to gain the feat or talent. This bonus feat or talent cannot be used to meet prerequisites and lasts for 1 hour. If the gained feat is a teamwork feat, the mastermind can grant it to a number of allies equal to their key ability modifier if those allies also study for 10 minutes. The allies need not meet the prerequisites."
+    },
+    {
+      "name": "Stratagem",
+      "type": "Ex",
+      "levels": [
+        8
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 8th level, the mastermind can expose vulnerability as a standard action to apply a stratagem. They can also apply a stratagem by using expose vulnerability with deadly expertise. The stratagem only takes effect if the creature meets the requirements before the mastermind exposes the vulnerability and the mastermind successfully uses the listed skill to expose the vulnerability. If the requirements cease to be met, the stratagem has no further effect. If a stratagem allows a saving throw, the DC is 10 + 1/2 mastermind level + key ability modifier.\n\nOnce the mastermind applies a stratagem to a target, that target becomes immune to that stratagem from that mastermind for 1 minute. The mastermind cannot apply a stratagem to a target the first time they expose that target's vulnerability in a day unless they studied the target for at least 3 rounds beforehand.\n\nThe mastermind has access to the following stratagems in addition to one granted by their conspiracy.\n\n• Reckless Hubris (Sense Motive)\n\nRequirements: Since the start of the mastermind's last turn, the target was attacked or subject to a hostile effect that allowed a saving throw or spell resistance from at least two different creatures but it did not fail any saving throws, and any other attack or effect missed, was negated by spell resistance, or had its damage reduced by at least half due to damage reduction, energy resistance, immunities, or a successful save (actions nullified by immunities or from creatures it now believes dead or helpless do not count).\n\nEffect: For 3 rounds, the target provokes attacks of opportunity more easily and hits from those attacks of opportunity apply a penalty to its provoking action. The target takes a -4 penalty on concentration checks to cast defensively. Any attack of opportunity that hits the target applies a -4 penalty to the attack roll, skill check, concentration check, or save DC of the effect that provoked the attack (if any). The penalties from this stratagem are not cumulative. The mastermind can make any attacks of opportunity on the target with a ranged weapon if within 30 feet. Up to once per turn, the target's melee attack provokes attacks of opportunity as"
+    },
+    {
+      "name": "Informed Prediction",
+      "type": "Ex",
+      "levels": [
+        12
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Starting at 12th level, the mastermind can more easily predict the tactics of opponents they know about. The more they know about the opponent's motivations, the more advantages they gain.\n\n• Improved Uncanny Dodge (requires any motivation)\n\nThe opponent cannot flank the mastermind. This prevents sneak attack and similar forms of precision damage due to flanking except from an opponent with at least four more levels in classes that grant the damage than the mastermind's level.\n\n• Gauge Focus (requires a major motivation)\n\nThe mastermind can predict the target's roll for an upcoming attack of opportunity or opposed skill check as a free action once per turn. To do so, the mastermind must choose an action that would immediately provoke an attack of opportunity or opposed skill check from the opponent and spend 1 use of skill leverage. The opponent rolls the die in secret and the GM reveals only whether the d20 is low (1-7), medium (8-13), or high (14-20). The mastermind can then either take the chosen action, in which case the opponent uses that d20 roll, or take another action, in which case that d20 roll is discarded.\n\n• Utterly Predictable (requires three motivations)\n\nThe mastermind can spend 1 use of skill leverage to take 10 on any skill check that they have unlocked skill leverage for against the opponent."
+    },
+    {
+      "name": "Windows of the Soul",
+      "type": "Ex",
+      "levels": [
+        17
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Starting at 17th level, the mastermind can read opponents with perfect clarity. After adopting this approach as a swift action, the mastermind gains a gaze attack with a range of 30 feet that allows them to intuit the approximate surface thoughts of any creature that fails its Will save for 1 round.\n\nThe Will save DC is 10 + 1/2 mastermind level + key ability modifier. A creature who succeeds becomes immune to that mastermind's windows of the soul for 24 hours unless the mastermind knows any of the creature's motivations."
+    },
+    {
+      "name": "Puppet Master",
+      "type": "Ex",
+      "levels": [
+        18
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 18th level, the mastermind knows how to keep their allies on task. Allies currently following the mastermind's orders or within 60 feet of the mastermind get a +2 morale bonus on Will saving throws if the mastermind knows any of their major motivations. If a mind-affecting effect would force such an ally to act against any of its motivations that the mastermind knows, the effect immediately ends on that ally. Whenever an ally fails a Will save while within 60 feet of the mastermind, the mastermind can verbally remind them of one of their motivations as an immediate action to allow them to roll the saving throw again; they must use the new result."
+    },
+    {
+      "name": "Master Plan",
+      "type": "Ex",
+      "levels": [
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 19th level, the mastermind can even incorporate enemy actions into their plans. The mastermind can reveal a plan as an immediate action whenever an enemy within 30 feet takes a distracting action (generally, any action other than movement that could provoke attacks of opportunity if there were any foe threatening the creature)."
+    },
+    {
+      "name": "Always Prepared",
+      "type": "Ex",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level, the mastermind perfects their skills of planning and foresight. They cannot be surprised and are never flat-footed. In addition, they can reveal a plan after expending them all. To reveal a plan without one available, the mastermind must succeed at a DC 25 Knowledge check appropriate to the challenge at hand. The DC increases by 5 each time the mastermind succeeds. On a failure, the mastermind cannot try again until they next prepare plans.\n\nPreparing plans resets the DC to 25."
+    },
+    {
+      "name": "Mastermind Conspiracies",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "A mastermind can choose one of the following conspiracies at 1st level. It grants a skill sphere and a special ability. At 3rd level, it determines the benefit of the web of secrets class feature. At 4th and 8th level, it grants an additional option with the put off-guard and stratagem abilities, respectively.\n\nOnce chosen, the mastermind's conspiracy cannot be changed (without retraining).\n\n• Censorship\n\nThe mastermind knows that language is dangerous, especially words of magical power, and trains to silence those that are too dangerous. Censorship masterminds lead factions trying to contain evil magic, secret cabals of magical researchers, and inquisitions on overzealous crusades.\n\nSphere: Spellhacking\n\nKey Ability: Intelligence\n\n• Feature: Hacker's Exposition (Ex)\n\nThe mastermind can use Spellcraft in place of Knowledge to expose vulnerability of any creature with magic (spells, spell-like abilities, or supernatural abilities). If they use Spellcraft and spend a move, standard, or longer action, they expose a vulnerability in the target's magic as well as in its defenses. When the expose vulnerability damage is dealt (by anyone), the mastermind can use the Spellhacking sphere hack magic ability on the target or any effect from the target as an immediate action.\n\n• Web of Secrets\n\nThe mastermind's collaborators share word of magic in the region. The mastermind can identify a spell, magic item, or unique magical effect within a week's travel as if they could study it using magic and had rolled a 20 on the die. Until the mastermind next contacts their web of secrets, they can spend 1 use of skill leverage to take 10 on any Spellcraft check about any magic within a week's travel of where they are preparing plans.\n\n• Put Off-Guard Option: Careless (Knowledge)\n\nThe extra damage can be dealt by a damaging effect that the target failed a saving throw against (only once, even if the effect causes damage repeatedly, and expending that vulnerability). Regardless of how the damage is dealt, the target cannot speak above a whisper for 1 minute and has a 20% spell failure for spells cast with verbal components until then (if the damage was dealt by an attack of opportunity"
+    },
+    {
+      "name": "Mastermind Tricks",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "A mastermind can choose from any of the following tricks. Tricks with the [plan] tag count as a [plan] talent for determining the number of plans a mastermind can prepare. Some mastermind tricks allow the mastermind to augment their expose vulnerability class feature. If the trick is marked with an asterisk (*), only one such trick can be applied to each activation of expose vulnerability.\n\n• Brilliant Trapper [plan] (Ex)\n\nWhether by laying a trap yourself or directing an ally who can create traps, you can reveal a plan to be a trap. The trap can be any that you or an ally who was present could have created when you last prepared plans with value no higher than your temporary resource maximum. Other tricks similar to traps can also be revealed this way, such as sabotage placed with Disable Device or dredged terrain from the Survivalism sphere.\n\nRevealing the trap is normally a standard action. If you have affected a creature with a stratagem, you can reveal this plan as an immediate action when that opponent takes an action that could trigger the trap. Any costs for the trap are spent when you reveal it, and that is when any checks required for the trap are rolled, but the character attempting such a skill check can take 10 on the check.\n\n• Delegate Scheme [plan] (Ex)\n\nYou can allow allies to participate more directly in your schemes. Any ally present when you prepare your plans can reveal your plans with your permission. You can permit the ally to spend your authorizations or money to pay for a Faction sphere benefit revealed as a plan. Otherwise, they must pay any cost for the plan. They can modify the plan with their own abilities.\n\nIf you are unconscious, dead, or petrified, any ally who knows this can reveal a purchased item as a plan to resuscitate you (such as a healer's kit or an item useful in reaching you).\n\n• Distant Orchestrator (Ex)\n\nThe range of your expose vulnerability, put off-guard, and stratagem each increase to 60 feet.\n\n• Fake Death [plan] (Su)\n\nYou always have a plan to fake your own death. You can reveal this plan as an immediate action whenever you take damage. When you reveal a faked death, you can automatically get a 20 on a Bluff check"
+    }
+  ],
+  "archetypes": [
+    {
+      "name": "Ambuscader [CS]",
+      "summary": "Ambuscader know how to mix their plotting with more direct applications of martial power."
+    },
+    {
+      "name": "Malfeasant [CS]",
+      "summary": "Malfeasants excel at mixing magic into their schemes."
+    },
+    {
+      "name": "Saboteur",
+      "summary": "Saboteurs are exceptionally good at foiling the plans of their enemies."
+    },
+    {
+      "name": "Squad Operator",
+      "summary": "Squad operators focus on managing a small team of specialists instead of a larger network of confidants."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Any",
+      "bonus": "+1 ignored damage reduction on expose vulnerability (for each time a mastermind takes this favored class benefit, any attack that deals their expose vulnerability damage ignores that many points of damage reduction)."
+    },
+    {
+      "race": "Any",
+      "bonus": "Add +1/4 bonus to Will saving throws."
+    },
+    {
+      "race": "Any",
+      "bonus": "Add +1/3 to expose vulnerability damage."
+    },
+    {
+      "race": "Any",
+      "bonus": "Gain a +1/2 insight bonus to two class skills of the mastermind's choice. This bonus stacks with itself but not with other insight bonuses."
+    },
+    {
+      "race": "Any",
+      "bonus": "Gain 1/6 of a mastermind trick."
+    },
+    {
+      "race": "Aasimar",
+      "bonus": "Gain a + 1/2 sacred bonus on skill checks using trained class skills to influence friendly or helpful good creatures. This bonus stacks with itself but not with other sacred bonuses."
+    },
+    {
+      "race": "Tieflings",
+      "bonus": "Gain a + 1/2 profane bonus on skill checks using trained class skills against unfriendly or hostile good creatures. This bonus stacks with itself but not with other profane bonuses."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 1,
+      "choices": [
+        "overseer",
+        "skill expertise"
+      ]
+    },
+    {
+      "level": 2,
+      "choices": [
+        "Mastermind trick"
+      ]
+    },
+    {
+      "level": 3,
+      "choices": [
+        "web of secrets"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "Put off-guard",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "choices": [
+        "mastermind trick"
+      ]
+    },
+    {
+      "level": 6,
+      "choices": [
+        "Quick study"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "Mastermind trick",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 11,
+      "choices": [
+        "mastermind trick"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 14,
+      "choices": [
+        "Mastermind trick"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "choices": [
+        "mastermind trick"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "mastermind trick",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

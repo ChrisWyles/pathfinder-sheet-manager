@@ -504,6 +504,138 @@
       "description": "At 20th level the mageknight may effortlessly combine magic and combat. Choose two mystic combat abilities that cost a spell point to use. She may use these abilities without spending a spell point."
     }
   ],
+  "archetypes": [
+    {
+      "name": "Broadcast Blade",
+      "summary": "Broadcast blades can use the power of the Warp sphere to attack a broader area."
+    },
+    {
+      "name": "Divine Lariat",
+      "summary": "Divine Lariats are masters of a magical lasso."
+    },
+    {
+      "name": "Doomblade",
+      "summary": "Doomblades can create a destructive blast in the shape of a weapon and make attacks with it."
+    },
+    {
+      "name": "Dragoon",
+      "summary": "Dragoons ride trusty steeds into battle."
+    },
+    {
+      "name": "Dread Crusader",
+      "summary": "Dread crusaders use the power of Death through their deathly weapons."
+    },
+    {
+      "name": "Dustbringer",
+      "summary": "Dustbringers are particularly efficient at destroying things with their bare hands."
+    },
+    {
+      "name": "Grim Disciple",
+      "summary": "Grim disciples can use the powers of Fate to haunt their enemies."
+    },
+    {
+      "name": "Herculean Scion",
+      "summary": "Herculean scions use their divine heritage to fuel their tremendous powers."
+    },
+    {
+      "name": "Kinetic Scourge",
+      "summary": "Kinetic scourges use energy tethers to link to their foes and perform a variety of combat techniques."
+    },
+    {
+      "name": "Knightknight",
+      "summary": "Truly a paragon of martial prowess, the knightknight reigns over the battlefield as lord and conqueror without the need for pitiful magic. Knightknights are often knights."
+    },
+    {
+      "name": "Knight-Summoner",
+      "summary": "Knight-summoners can summon special, powerful mounts to aid them in battle."
+    },
+    {
+      "name": "Marshal Controller [CS]",
+      "summary": "Marshal controllers are champions who can create powerful wards and patrol the battlefield to impose their own rules upon it."
+    },
+    {
+      "name": "Martial Mageknight [CS]",
+      "summary": "The Martial Mageknight has learned to blend martial and magic talents to create a more distinctive style."
+    },
+    {
+      "name": "Plaguebringer",
+      "summary": "Plaguebringers are masters of disease and ailments."
+    },
+    {
+      "name": "Resizer",
+      "summary": "Resizers are capable of growing and shrinking at-will."
+    },
+    {
+      "name": "Sun Warrior",
+      "summary": "Sun warriors are masters of the Light sphere and can use the Glory talent in ways no others can."
+    },
+    {
+      "name": "Utterdark Champion",
+      "summary": "Utterdark champions are evil warriors who use the Dark sphere to envelop and terrify their foes."
+    },
+    {
+      "name": "Wardmage",
+      "summary": "Wardmages can create mystic wards to intercept attacks."
+    },
+    {
+      "name": "Warrior of Holy Light",
+      "summary": "Warriors of holy light are divine warriors who use Light to smite their foes."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Aasimar",
+      "bonus": "Gain a +1/6 bonus to all saving throws made against effects originating from outsiders."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "+1/6 bonus to all saving throws vs. magic. This stacks with the resist magic class feature."
+    },
+    {
+      "race": "Elf",
+      "bonus": "+1/2 to all Acrobatics checks made to avoid attacks of opportunity, and to Escape Artist checks made to escape a grapple."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "Increase the bonuses and penalties bestowed by the mageknight's marked ability by +1/8."
+    },
+    {
+      "race": "Goblin",
+      "bonus": "Gain a +1 foot increase to the mageknight's base move speed. In combat, this only has an effect for every five increases to the movement's speed."
+    },
+    {
+      "race": "Half-elf",
+      "bonus": "Choose a single mystic combat with a duration measured in rounds. Increase the duration of that mystic combat by 1/2 a round (maximum 4 rounds per mystic combat). This may be taken and applied to different mystic combats."
+    },
+    {
+      "race": "Half-orc",
+      "bonus": "Gain +1/6 of a bonus combat feat."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "Gain +1/6 of a mystic combat."
+    },
+    {
+      "race": "Human",
+      "bonus": "Gain +1/6 of a bonus magic talent."
+    },
+    {
+      "race": "Merfolk",
+      "bonus": "Gain +1 foot to the mageknight's land base movement. In combat, this only has an effect for every five increases to the movement's speed."
+    },
+    {
+      "race": "Orc",
+      "bonus": "Increase the mageknight's effective level by +1/5 when determining the potency of mystic combat abilities."
+    },
+    {
+      "race": "Skinwalker",
+      "bonus": "+1/4 CL with the shapeshift ability of the Alteration sphere when using it on only yourself. This stacks normally with caster levels gained from other sources."
+    },
+    {
+      "race": "Tiefling",
+      "bonus": "Gain a +1/6 bonus to attack rolls made against outsiders."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

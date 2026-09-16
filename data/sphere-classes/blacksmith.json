@@ -480,6 +480,106 @@
       "description": "At 20th level the blacksmith reaches the pinnacle of his craft. Throughout his career, the blacksmith has collected and hoarded special materials, crafting secrets, and scraps of ancient rituals, all in preparation for his ultimate life's work. The blacksmith crafts a single magic armor, weapon, or shield of his choice, imbuing it with power beyond what any normal piece of equipment can contain. The crafted item has a +5 enhancement bonus, and the smith may choose up to +8 effective enhancement bonus' worth of special abilities to apply to this piece of equipment; once chosen, these enhancements cannot be changed. This ability supersedes the normal restriction preventing equipment from exceeding a total enhancement bonus of +10 including class abilities. As long as the blacksmith and his masterpiece are on the same plane, the blacksmith can recall the masterpiece to himself with 1 minute of concentration, even if it is currently in another creature's possession."
     }
   ],
+  "archetypes": [
+    {
+      "name": "-Artificer [LotS, CS]",
+      "summary": "Artificers specialize in crafting specific types of items."
+    },
+    {
+      "name": "-Barista [Apoc]",
+      "summary": "Baristas specialize in brewing drinks for their allies."
+    },
+    {
+      "name": "-Disciple of Goibniu",
+      "summary": "Disciples of Goibniu are more familiar with fey and the natural world."
+    },
+    {
+      "name": "-Essence Smith [Apoc, CS]",
+      "summary": "The Essence Smith is a Champion who specializes in forging magical items."
+    },
+    {
+      "name": "-Fleshforger",
+      "summary": "…This one's probably self-explanatory."
+    },
+    {
+      "name": "-Iron Chef",
+      "summary": "Iron Chefs are experts at creating food and providing a variety of effects to those who eat their meals."
+    },
+    {
+      "name": "-Master-At-Arms [DRS]",
+      "summary": "The master-at-arms specializes in training and equipping their allies."
+    },
+    {
+      "name": "-Peltmonger [LotS, CS]",
+      "summary": "Peltmongers focus on equipment whose components came from living creatures."
+    },
+    {
+      "name": "-Spellforge [CS]",
+      "summary": "Spellforges are blacksmiths who specialize in Creation magic."
+    },
+    {
+      "name": "-Techsmith",
+      "summary": "Techsmiths focus more on mechanical tools than magical ones."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Aasimar",
+      "bonus": "Weapons you craft deal +1/4 points of damage to evil creatures when you wield them."
+    },
+    {
+      "race": "Cherufe",
+      "bonus": "Add +1/2 point of fire damage to thunderous blows."
+    },
+    {
+      "race": "Created",
+      "bonus": "Gain +1/8 of a creation point."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "Gain +1/8 of a blacksmith insight."
+    },
+    {
+      "race": "Elf",
+      "bonus": "Gain a +1/2 bonus on all Craft or Profession (blacksmith) checks made to craft any weapon from Elven Heritage of the Equipment sphere."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "Gain +1/6 of an item creation feat."
+    },
+    {
+      "race": "Goblin",
+      "bonus": "Increase the bonus granted when performing the sharpen weapons maintenance by +1/4."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "Reduce the penalty for using a weapon you are not proficient with which you crafted yourself by 1/3. When this penalty reaches 0, you are considered proficient with any weapon you craft yourself."
+    },
+    {
+      "race": "Hobgoblin",
+      "bonus": "Add +1/2 hit points and +1/4th hardness to your worn and wielded equipment."
+    },
+    {
+      "race": "Human",
+      "bonus": "Add +1/2 to all Profession (blacksmith) checks made to craft a weapon you are proficient with."
+    },
+    {
+      "race": "Leshy",
+      "bonus": "Gain a +1/2 bonus on all Craft or Profession (blacksmith) checks made to craft any weapon or armor made primarily out of wood."
+    },
+    {
+      "race": "Orc",
+      "bonus": "Gain a +1/2 bonus on all Craft or Profession (blacksmith) checks made to craft any weapon from the Orc Heritage talent of the Equipment sphere."
+    },
+    {
+      "race": "Tatulani",
+      "bonus": "Gain +1/8 of a blacksmith insight."
+    },
+    {
+      "race": "Tiefling",
+      "bonus": "Weapons you craft yourself deal +1/4 points of fire damage while you wield them."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

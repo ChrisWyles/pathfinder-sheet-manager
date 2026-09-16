@@ -622,6 +622,122 @@
       "description": "At 20th level, a living necros gains the lich template (if they are an undead or construct, they gain the rejuvenation ability of the lich template), removing their Constitution score. In addition, their phylactery comes into existence instantly, requiring no effort or payment from the necros to do so."
     }
   ],
+  "archetypes": [
+    {
+      "name": "Brutal Necromancer",
+      "summary": ""
+    },
+    {
+      "name": "Necrotech Savant",
+      "summary": ""
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Aasimar",
+      "bonus": "+1 hit point to all undeadcreated by the necros."
+    },
+    {
+      "race": "Ceptu",
+      "bonus": "+1/6 of combat talent to your corpse puppet."
+    },
+    {
+      "race": "Changeling",
+      "bonus": "+1/5 of an Illusion sphere talent."
+    },
+    {
+      "race": "Dhampir",
+      "bonus": "+1/5 of an Death sphere talent."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "+1/2 point of damage to negative energy damage you deal."
+    },
+    {
+      "race": "Elf",
+      "bonus": "+1/6 of a new magic talent."
+    },
+    {
+      "race": "Fetchling",
+      "bonus": "+1/5 of a Dark sphere talent."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "+1/5 of an Illusion sphere talent."
+    },
+    {
+      "race": "Goblin",
+      "bonus": "+1/5 of an Destruction or Scoundrel sphere talent."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "+1/5 of a Scout sphere talent."
+    },
+    {
+      "race": "Human",
+      "bonus": "+1/6 of a combat sphere talent."
+    },
+    {
+      "race": "Ifrit",
+      "bonus": "+1/5 of a Destruction or Fire Nature sphere talent."
+    },
+    {
+      "race": "Judow",
+      "bonus": "+1/5 of a Dark sphere talent."
+    },
+    {
+      "race": "Kitsune",
+      "bonus": "+1 to Disguise checks made by undead you create."
+    },
+    {
+      "race": "Kobold",
+      "bonus": "+1/6 of a magic talent."
+    },
+    {
+      "race": "Mirrorkin",
+      "bonus": "+1/5 of an Alteration or Fate sphere talent."
+    },
+    {
+      "race": "Orc",
+      "bonus": "+1/2 point of damage to negative energy damage to corpse puppet attacks."
+    },
+    {
+      "race": "Oread",
+      "bonus": "+1/2 point of healing to undead with negative energy attacks."
+    },
+    {
+      "race": "Rhyzala",
+      "bonus": "+1/6 of an additional free action 5' for undead created by the necros."
+    },
+    {
+      "race": "Shadow Fey",
+      "bonus": "+1/5 of a Warp sphere talent."
+    },
+    {
+      "race": "Sylph",
+      "bonus": "+1/5 of a Weather sphere talent."
+    },
+    {
+      "race": "Tiefling",
+      "bonus": "+1/6 of a combat talent."
+    },
+    {
+      "race": "Undine",
+      "bonus": "+1/2 point of healing to undead with negative energy attacks."
+    },
+    {
+      "race": "Vanara",
+      "bonus": "+1/5 of an Athletics sphere talent."
+    },
+    {
+      "race": "Veryx",
+      "bonus": "+1/5 of a Mind sphere talent."
+    },
+    {
+      "race": "Xodai",
+      "bonus": "+1 hit point to all undead created by the necros."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

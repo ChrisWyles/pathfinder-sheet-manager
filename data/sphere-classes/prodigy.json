@@ -600,6 +600,45 @@
       "description": "At 20th level, when the prodigy starts a sequence, it automatically begins with a number of links equal to half her casting ability modifier. The prodigy may gain the benefit of any number of talents with her adaptation ability as a swift action. Each individual talent selected counts toward the prodigy's daily uses of adaptation."
     }
   ],
+  "archetypes": [
+    {
+      "name": "Battle-Born",
+      "summary": "Battle-born are prodigies who focus on martial prowess instead of blending martial and magical skill."
+    },
+    {
+      "name": "Chromamancer",
+      "summary": "Chromamancers are capable of channeling the power of colors in various forms."
+    },
+    {
+      "name": "Exploitant",
+      "summary": "Exploitants are exceptionally flexible, able to learn almost any sort of talent."
+    },
+    {
+      "name": "Extemporizer",
+      "summary": "Extemporizers specialize in developing new techniques to use in battle."
+    },
+    {
+      "name": "Gutter Rat",
+      "summary": "Gutter rats excel at using rogue-ish skills to adapt to varying situations."
+    },
+    {
+      "name": "Mimic",
+      "summary": "Mimics specialize in copying the abilities of those around them."
+    },
+    {
+      "name": "Sync [DRS]",
+      "summary": "Syncs move to a rhythm of their own."
+    },
+    {
+      "name": "Void Dancer [DRS]",
+      "summary": "Void Dancers channel the inhuman might of a powerful outsider bound to their body."
+    },
+    {
+      "name": "DRS Prodigy Class Features [DRS]",
+      "summary": "This page contains new or alternative class features for prodigy published by DRS."
+    }
+  ],
+  "favoredClassBonuses": [],
   "abilityScoreIncreases": [
     4,
     8,

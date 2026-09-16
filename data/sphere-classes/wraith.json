@@ -476,6 +476,106 @@
       "description": "At 20th level, the wraith may remain in wraith form for any number of rounds in a day. Any instances of the extra wraith form and lingering incorporeality wraith haunts may immediately be retrained for other wraith haunts for which the wraith qualifies."
     }
   ],
+  "archetypes": [
+    {
+      "name": "Baobhan Sith",
+      "summary": "Baobhan sith are wraiths who seek to emulate the vampiric seducers of the darker fairy courts."
+    },
+    {
+      "name": "Collective [CS]",
+      "summary": "Collectives exist as a powerful hive mind."
+    },
+    {
+      "name": "Draugr [CS]",
+      "summary": "Draugr are champions who channel a spirit of wrath and use the Berserker sphere."
+    },
+    {
+      "name": "Matagot [CS, Catgirl HB]",
+      "summary": "Matagots permanently become small felines, rather than transforming into a ghostly form."
+    },
+    {
+      "name": "Mistshade",
+      "summary": "Mistshades are capable of transforming into mist."
+    },
+    {
+      "name": "Swarmheart",
+      "summary": "Swarmhearts are capable of transforming into a swarm of vermin."
+    },
+    {
+      "name": "Unbodied",
+      "summary": "Unbodied wraiths can exist permanently in an incorporeal form."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Aasimar",
+      "bonus": "Gain +1/4 sacred bonus on saves against effects that would end possession."
+    },
+    {
+      "race": "Alraun",
+      "bonus": "Gain +1/8 bonus to possession DC."
+    },
+    {
+      "race": "Cecaelia",
+      "bonus": "+1/5 possession DC vs. creatures of the aberration type."
+    },
+    {
+      "race": "Dhampir",
+      "bonus": "Gain +1/8 bonus to path sphere DCs."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "Increase the failure chance of magic effects originating from a corporeal source while in wraith form by 1%."
+    },
+    {
+      "race": "Elf",
+      "bonus": "Add +1 foot to all of the wraith's speeds while incorporeal. In combat, this only has an effect for every five increases to the movement's speed."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "Gain +1 round of wraith form per day."
+    },
+    {
+      "race": "Goblin",
+      "bonus": "Gain +1 round of wraith form per day."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "Gain +1/6 of a new wraith haunt."
+    },
+    {
+      "race": "Hobgoblin",
+      "bonus": "Gain +1/6 of a new combat feat."
+    },
+    {
+      "race": "Human",
+      "bonus": "Gain +1/6 of a new magic talent."
+    },
+    {
+      "race": "Kobold",
+      "bonus": "+1/5 possession DC vs. creatures of the dragon type."
+    },
+    {
+      "race": "Leshy",
+      "bonus": "+1/5 possession DC vs. creatures of the plant type."
+    },
+    {
+      "race": "Orc",
+      "bonus": "Increase effective class level by +1/3 when determining what creatures of the animal and magical beast types you can possess."
+    },
+    {
+      "race": "Sidhier",
+      "bonus": "+1/5 possession DC vs. creatures of the fey type."
+    },
+    {
+      "race": "Skinwalker",
+      "bonus": "+1/5 possession DC vs. creatures of the animal and magical beast types."
+    },
+    {
+      "race": "Tiefling",
+      "bonus": "Gain +1/8 bonus to possession DC."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

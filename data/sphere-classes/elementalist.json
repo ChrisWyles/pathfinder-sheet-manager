@@ -507,6 +507,138 @@
       "description": "At 20th level, the elementalist's body has become one with the energy he weaves. His elemental defense increases to resistance 20, and he gains immunity to sneak attacks and critical hits, and gains DR 10/magic."
     }
   ],
+  "archetypes": [
+    {
+      "name": "Admixture Savant",
+      "summary": "Admixture savants specialize in mixing blast types together to create more potent blasts."
+    },
+    {
+      "name": "Arcanophage",
+      "summary": "The Arcanophage specializes in mimicking the powers they've seen - but the more they imitate, the higher the chance of triggering Wild Magic becomes!"
+    },
+    {
+      "name": "Arcanopulser [CS]",
+      "summary": "The Arcanopulser is a Champion that can use the Mana sphere to create pulsating shots of power."
+    },
+    {
+      "name": "Earth Warrior",
+      "summary": "Earth warriors specialize in manipulating the earth for offense, defense, and movement."
+    },
+    {
+      "name": "Electrokinetic",
+      "summary": "Electrokinetics master electric blasts to hurl lightning at their foes."
+    },
+    {
+      "name": "Elemontalist",
+      "summary": "Elemontalists are proud warriors of the citric arts, drawing powerful and refreshing might from the most powerful of scurvy deterrents."
+    },
+    {
+      "name": "Flame Warrior",
+      "summary": "Flame warriors are experts at manipulating fire to serve their purposes."
+    },
+    {
+      "name": "Geomancer",
+      "summary": "Geomancers trade their mastery of destruction for control over the Nature sphere."
+    },
+    {
+      "name": "Martial Elementalist [CS]",
+      "summary": "Martial elementalists are capable of using the combat spheres."
+    },
+    {
+      "name": "Metal Warrior",
+      "summary": "Metal warriors can conduct electrical power through their bodies to shock their foes."
+    },
+    {
+      "name": "Natural Warrior",
+      "summary": "Natural warriors manipulate chemical acids and are at home in natural environments."
+    },
+    {
+      "name": "Sablesavant [DRS]",
+      "summary": "Sablesavants mix and swirl their destructive magics with cloying darkness. This archetype uses the Polished Dark sphere rework."
+    },
+    {
+      "name": "Soul Adept",
+      "summary": "Soul adepts focus on etheric energies and manipulate the powers of Death."
+    },
+    {
+      "name": "Tenebrous Stalker",
+      "summary": "Tenebrous stalkers are elementalists who specialize in Dark and Illusion."
+    },
+    {
+      "name": "Twinsoul Elementalist",
+      "summary": "Twinsoul elementalists create elemental conduits that act as companions."
+    },
+    {
+      "name": "Water Warrior",
+      "summary": "Water warriors can manipulate water well and are resistant to damage from the cold."
+    },
+    {
+      "name": "Wind Warrior",
+      "summary": "Wind warriors shape the air to strike at their foes and shield their bodies."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Aasimar",
+      "bonus": "Deal +1/2 damage to evil outsiders and undead with your destructive blasts."
+    },
+    {
+      "race": "Cherufe",
+      "bonus": "All destructive blasts deal an additional +1/4 fire damage."
+    },
+    {
+      "race": "Cuazaj",
+      "bonus": "All destructive blasts deal an additional +1/4 electricity damage."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "+1 energy resistance to acid, cold, electricity, fire, or sonic (maximum 10 per energy type). This stacks with the energy resistance normally gained through this class or any other source."
+    },
+    {
+      "race": "Elf",
+      "bonus": "+1 foot to one movement type the elementalist possesses. In combat, this only has an effect for every five increases to the movement's speed."
+    },
+    {
+      "race": "Fenghuang",
+      "bonus": "Gain +1/6 of a dodge bonus to AC."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "+1/6 of a magic talent."
+    },
+    {
+      "race": "Goblin",
+      "bonus": "Add +1/2 to damage rolls the elementalist makes with destructive blasts against an opponent he is flanking or an opponent that is denied its Dexterity bonus to AC."
+    },
+    {
+      "race": "Half-elf",
+      "bonus": "+1/6 bonus to all damage dealt with unarmed strikes."
+    },
+    {
+      "race": "Half-orc",
+      "bonus": "Increase the damage dealt with all destructive blasts not augmented by favored element by +1/2."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "Gain +1/6 of a dodge bonus to AC."
+    },
+    {
+      "race": "Human",
+      "bonus": "Gain +1/6 of a bonus magic talent."
+    },
+    {
+      "race": "Merfolk",
+      "bonus": "Gain DR 1/piercing for every 6 times this benefit is taken."
+    },
+    {
+      "race": "Orc",
+      "bonus": "Deal an additional +1/2 bonus damage vs. objects when using a destructive blast."
+    },
+    {
+      "race": "Tiefling",
+      "bonus": "All destructive blasts deal an additional +1/4 negative energy damage. This extra negative energy damage has no effect on undead, or other targets normally healed by negative energy."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

@@ -462,6 +462,98 @@
       "description": "At 20th level, the commander may have up to three enhanced tactics active at a time, and may activate or switch all three enhanced tactics using the same action as long as he uses the largest activation action."
     }
   ],
+  "archetypes": [
+    {
+      "name": "-Administrator [CS]",
+      "summary": "Administrators are capable of wielding the most frightening force in the cosmos: bureaucracy."
+    },
+    {
+      "name": "-Bearon [CS]",
+      "summary": "The Bearon is a Commander who grants Bear powers to allies and has a support network of bears that can come to their aid."
+    },
+    {
+      "name": "-Braveheart",
+      "summary": "Bravehearts are Commanders who use raging songs to encourage their allies."
+    },
+    {
+      "name": "-Courtly Tactician [DRS]",
+      "summary": "A commander which represents their local lord. Uses the DRS Kingking supplement."
+    },
+    {
+      "name": "-Dreadlord [CS]",
+      "summary": "The Dreadlord is a master of minions - especially those raised from the dead."
+    },
+    {
+      "name": "-Emissary [CS] [LG]",
+      "summary": "Emissaries couple their strategic knowledge with intense research and analytical acumen"
+    },
+    {
+      "name": "-Feylord [CS]",
+      "summary": "Feylords use the Fallen Fey sphere to power a variety of magical effects."
+    },
+    {
+      "name": "-Noble",
+      "summary": "Nobles use the Leadership sphere to manage and strengthen a cohort of followers."
+    },
+    {
+      "name": "-Vanguard",
+      "summary": "The Vanguard leads from the front of a battle rather than the rear and specializes in directly aiding their allies."
+    },
+    {
+      "name": "-Visionary General [CS]",
+      "summary": "Visionary Generals can use the Divination sphere to augment their commands."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Aasimar",
+      "bonus": "Gain +1/2 bonus to Diplomacy checks made to improve a creature's attitude."
+    },
+    {
+      "race": "Alraun",
+      "bonus": "+1/5 racial bonus to the Diplomacy skill."
+    },
+    {
+      "race": "Cecaelia",
+      "bonus": "+1/4 ranks in Diplomacy for determining the range and effects of Warleader sphere abilities while both you and the target are in an aquatic environment."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "Gain +1/8 bonus to attack rolls against the target of your racial hatred for yourself and all allies under the effects of your tactics or shouts."
+    },
+    {
+      "race": "Elf",
+      "bonus": "Add +1/4 to Stealth checks made by allies under the effect of one of your tactics."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "Add a +1/8 bonus to attack rolls against the target of your racial hatred for yourself and all allies under the effects of your tactics."
+    },
+    {
+      "race": "Goblin",
+      "bonus": "Gain+1/2 bonus on Ride checks."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "Gain +1/8 of a logistical specialty."
+    },
+    {
+      "race": "Hobgoblin",
+      "bonus": "Your lingering commands class feature lasts an additional +1/4 rounds."
+    },
+    {
+      "race": "Human",
+      "bonus": "Gain +1/6 of an enhanced tactic"
+    },
+    {
+      "race": "Orc",
+      "bonus": "Increase the save DC and duration for any shout you know from the Warleader sphere by +1/5."
+    },
+    {
+      "race": "Tiefling",
+      "bonus": "Attacks made by allies benefiting from one of your enhanced tactics deal an additional +1/4 fire damage."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

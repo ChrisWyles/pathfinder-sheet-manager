@@ -482,6 +482,106 @@
       "description": "At 20th level, an eliciter may permanently enslave a target's mind. Once per day as a standard action, the eliciter may make a touch attack against a target and attempt to dominate it. This is a compulsion, mind-affecting effect. The target is allowed a Will save (DC 10 + 1/2 his eliciter level + his casting ability modifier + his Persuasive bonus) and on a failed save, the target becomes devoted to the eliciter, gaining a disposition of helpful and obeying any orders the eliciter gives to the exclusion of all other activities except those necessary for survival (eating, sleeping, etc.). The target never obeys obviously self-destructive commands, and is allowed a new save with a +2 bonus to throw off the compulsion if asked to do something against its nature. A DC 25 Sense Motive check reveals the target is under compulsion.\n\nThe eliciter may only have one target dominated in this fashion at a time; if the eliciter successfully uses this ability to dominate a second target, the first is immediately released from service."
     }
   ],
+  "archetypes": [
+    {
+      "name": "Bellwether [CS]",
+      "summary": "Bellwethers are more adept at ordinary means of social communication than most eliciters."
+    },
+    {
+      "name": "Dark Presence",
+      "summary": "The dark presence uses the War sphere to impose their will on the battlefield."
+    },
+    {
+      "name": "Empathic Duelist [CS]",
+      "summary": "The Empathic Duelist trades some of their focus on mental domination for the ability to form connections with the creatures of the world."
+    },
+    {
+      "name": "Fright Wright",
+      "summary": "Fright wrights are particularly good at causing fear in their enemies."
+    },
+    {
+      "name": "Hypnotist",
+      "summary": "Hypnotists can manipulate their own mind to provide flashes of insight."
+    },
+    {
+      "name": "Id",
+      "summary": "Ids focus on their emotions to the exclusion of other mental powers."
+    },
+    {
+      "name": "Proclaimer [CS] [LG]",
+      "summary": "Proclaimers use their manipulative arts to tap into grand visions of futurity"
+    },
+    {
+      "name": "Sympath",
+      "summary": "Sympaths create a phantom to give power to their emotions."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Aasimar",
+      "bonus": "Gain a +1/4 bonus to your effective class level when determining the effects of all abilities associated with one emotion."
+    },
+    {
+      "race": "Alraun",
+      "bonus": "Gain +1/6th of a bonus emotion."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "+1/3 bonus to saves against mind-altering effects."
+    },
+    {
+      "race": "Elf",
+      "bonus": "Increase the duration of all hypnotism effects by 1/4 of a round."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "+1/3 to the DC of the fascinate hypnosis."
+    },
+    {
+      "race": "Goblin",
+      "bonus": "Gain a +1/2 bonus to Bluff checks."
+    },
+    {
+      "race": "Half-elf",
+      "bonus": "+1/4 of an extra use of hypnotism per day."
+    },
+    {
+      "race": "Half-orc",
+      "bonus": "When using the liberate hypnotism ability, the target gains a +1/4 bonus to their Will save."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "Gain a +1/4 bonus to Diplomacy, Bluff, Intimidate, and Sense Motive checks."
+    },
+    {
+      "race": "Human",
+      "bonus": "Gain +1/6 of a bonus emotion."
+    },
+    {
+      "race": "Leshy",
+      "bonus": "+1/5 persuasive bonus vs. creatures of the plant type."
+    },
+    {
+      "race": "Merfolk",
+      "bonus": "Increase the range of the eliciter's hypnotism by 5 feet for every 3 times this benefit is taken."
+    },
+    {
+      "race": "Orc",
+      "bonus": "Gain a +1/2 bonus to Intimidation checks made to demoralize opponents, and to Bluff checks made to feint in combat."
+    },
+    {
+      "race": "Sidhier",
+      "bonus": "Gain 1/6th of a Mind sphere talent."
+    },
+    {
+      "race": "Skinwalker",
+      "bonus": "+1/5 persuasive bonus vs. creatures of the animal and magical beast types."
+    },
+    {
+      "race": "Tiefling",
+      "bonus": "Gain a +1 bonus to MSB checks made to overcome the spell resistance of outsiders."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

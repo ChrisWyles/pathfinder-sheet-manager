@@ -491,5 +491,111 @@
       "Blended Training Talents",
       "Caster Level"
     ]
+  },
+  {
+    "slug": "advisor",
+    "name": "Advisor",
+    "group": "operative",
+    "hitDie": 8,
+    "babProgression": "THREE_QUARTER",
+    "levels": 20,
+    "features": 24,
+    "talentColumns": [
+      "Any",
+      "Utility"
+    ]
+  },
+  {
+    "slug": "agent",
+    "name": "Agent",
+    "group": "operative",
+    "hitDie": 8,
+    "babProgression": "THREE_QUARTER",
+    "levels": 20,
+    "features": 20,
+    "talentColumns": [
+      "Any",
+      "Utility"
+    ]
+  },
+  {
+    "slug": "conduit",
+    "name": "Conduit",
+    "group": "operative",
+    "hitDie": null,
+    "babProgression": "FULL",
+    "levels": 20,
+    "features": 22,
+    "talentColumns": [
+      "Any",
+      "Utility"
+    ]
+  },
+  {
+    "slug": "courser",
+    "name": "Courser",
+    "group": "operative",
+    "hitDie": 10,
+    "babProgression": "FULL",
+    "levels": 20,
+    "features": 21,
+    "talentColumns": [
+      "Fast Movement",
+      "Any",
+      "Utility"
+    ]
+  },
+  {
+    "slug": "envoy",
+    "name": "Envoy",
+    "group": "operative",
+    "hitDie": 6,
+    "babProgression": "HALF",
+    "levels": 20,
+    "features": 22,
+    "talentColumns": [
+      "AC Bonus",
+      "Any",
+      "Utility"
+    ]
+  },
+  {
+    "slug": "genius",
+    "name": "Genius",
+    "group": "operative",
+    "hitDie": 8,
+    "babProgression": "THREE_QUARTER",
+    "levels": 20,
+    "features": 8,
+    "talentColumns": [
+      "Any Talents",
+      "Utility Talents"
+    ]
+  },
+  {
+    "slug": "mastermind",
+    "name": "Mastermind",
+    "group": "operative",
+    "hitDie": 8,
+    "babProgression": "THREE_QUARTER",
+    "levels": 20,
+    "features": 22,
+    "talentColumns": [
+      "Any",
+      "Utility"
+    ]
+  },
+  {
+    "slug": "professional",
+    "name": "Professional",
+    "group": "operative",
+    "hitDie": null,
+    "babProgression": "THREE_QUARTER",
+    "levels": 20,
+    "features": 12,
+    "talentColumns": [
+      "Any",
+      "Utility"
+    ]
   }
 ]

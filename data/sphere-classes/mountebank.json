@@ -606,6 +606,130 @@
       "description": "At 20th level, a mountebank unlocks all skills in which she has at least 5 or more ranks. In addition, she permanently increases her Intelligence and Charisma scores by 2."
     }
   ],
+  "archetypes": [
+    {
+      "name": "-Back Alley Grifter",
+      "summary": ""
+    },
+    {
+      "name": "-Mental Manipulator",
+      "summary": ""
+    },
+    {
+      "name": "-Phantom Thief",
+      "summary": ""
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Aasimar",
+      "bonus": "+1/5 of a Life sphere talent."
+    },
+    {
+      "race": "Ceptu",
+      "bonus": "+1/5 of a Mind or Telekinesis sphere talent."
+    },
+    {
+      "race": "Changeling",
+      "bonus": "+1/5 of an Illusion sphere talent."
+    },
+    {
+      "race": "Dhampir",
+      "bonus": "+1/5 of an Death sphere talent."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "+1/5 of an Equipment sphere talent."
+    },
+    {
+      "race": "Elf",
+      "bonus": "+1/6 of a new magical talent."
+    },
+    {
+      "race": "Fetchling",
+      "bonus": "+1/5 of a Dark sphere talent."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "+1/5 of an Illusion sphere talent."
+    },
+    {
+      "race": "Goblin",
+      "bonus": "+1/5 of an Destruction or Scoundrel sphere talent."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "+1/5 of a Scout sphere talent."
+    },
+    {
+      "race": "Half-Elf",
+      "bonus": "+1/6 of a social talent."
+    },
+    {
+      "race": "Human",
+      "bonus": "+1/6 of a Combat sphere talent."
+    },
+    {
+      "race": "Ifrit",
+      "bonus": "+1/5 of a Destruction or Fire Nature sphere talent."
+    },
+    {
+      "race": "Judow",
+      "bonus": "+1/5 of a Dark sphere talent."
+    },
+    {
+      "race": "Kitsune",
+      "bonus": "+1/5 of an Alteration or Illusion sphere talent."
+    },
+    {
+      "race": "Kobold",
+      "bonus": "+1/6 of a new magical talent."
+    },
+    {
+      "race": "Mirrorkin",
+      "bonus": "+1/5 of an Alteration or Fate sphere talent."
+    },
+    {
+      "race": "Orc",
+      "bonus": "+1/2 damage on damage from a Destruction talent."
+    },
+    {
+      "race": "Oread",
+      "bonus": "+1/5 of an Earth or Metal Nature sphere talent."
+    },
+    {
+      "race": "Rhyzala",
+      "bonus": "+1/5 of a Time sphere talent."
+    },
+    {
+      "race": "Shadow Fey",
+      "bonus": "+1/5 of a Warp sphere talent."
+    },
+    {
+      "race": "Sylph",
+      "bonus": "+1/5 of a Weather sphere talent."
+    },
+    {
+      "race": "Tiefling",
+      "bonus": "+1/2 damage on damage from a Destruction talent."
+    },
+    {
+      "race": "Undine",
+      "bonus": "+1/5 of a Spirit or Water Nature sphere talent."
+    },
+    {
+      "race": "Vanara",
+      "bonus": "+1/5 of an Athletics sphere talent."
+    },
+    {
+      "race": "Veryx",
+      "bonus": "+1/5 of a Mind sphere talent."
+    },
+    {
+      "race": "Xodai",
+      "bonus": "+1/2 a point of damage with Fencing sphere talents when flanking."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

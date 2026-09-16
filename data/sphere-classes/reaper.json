@@ -587,6 +587,150 @@
       "description": "At 20th level, a reaper faces a choice. Their occult studies have almost completely devoured their soul, and they must choose to reclaim or surrender their soul.\n\nIf the reaper surrenders their soul, they undergo a final transformation listed in the apotheosis ability of their chosen cult. If they instead reclaim their soul, the reaper reasserts their identity and purges the corruption their occult teachings have caused.\n\nA reclaimed soul causes the reaper to lose all benefits of the cult class feature except for the permanent favored prey gained at 1st level. In exchange, the reaper immediately gains five combat feats of their choice, fast healing 5, and becomes immune to ability damage, ability drain, death effects, and level drain."
     }
   ],
+  "archetypes": [
+    {
+      "name": "Chem Dog",
+      "summary": ""
+    },
+    {
+      "name": "Disciple of the Monstrous Arts [Youxia HB]",
+      "summary": ""
+    },
+    {
+      "name": "Flagellant [LG]",
+      "summary": ""
+    },
+    {
+      "name": "Hunt Master [Apoc]",
+      "summary": ""
+    },
+    {
+      "name": "Machine Cultist",
+      "summary": ""
+    },
+    {
+      "name": "Magekiller",
+      "summary": ""
+    },
+    {
+      "name": "Mythos Hunter [SM-]",
+      "summary": ""
+    },
+    {
+      "name": "Partisan [LC:RA]",
+      "summary": ""
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Aasimar",
+      "bonus": "+1/5 of a Life sphere talent."
+    },
+    {
+      "race": "Ceptu",
+      "bonus": "+1/5 of a Telekinesis sphere talent."
+    },
+    {
+      "race": "Changeling",
+      "bonus": "+1/5 of an Illusion sphere talent."
+    },
+    {
+      "race": "Dhampir",
+      "bonus": "+1/5 of an Death sphere talent."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "+1/5 of an Enhancement sphere talent."
+    },
+    {
+      "race": "Elf",
+      "bonus": "+1/6 of a new magic sphere talent."
+    },
+    {
+      "race": "Fetchling",
+      "bonus": "+1/5 of a Dark sphere talent."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "+1/5 of an Illusion sphere talent."
+    },
+    {
+      "race": "Goblin",
+      "bonus": "+1/5 of an Destruction or Scoundrel sphere talent."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "+1/5 of a Scout sphere talent."
+    },
+    {
+      "race": "Half-Elf",
+      "bonus": "+1/6 of an Extra Reaper Technique feat."
+    },
+    {
+      "race": "Human",
+      "bonus": "+1/6 of a combat sphere talent."
+    },
+    {
+      "race": "Ifrit",
+      "bonus": "+1/5 of a Destruction or Fire Nature sphere talent."
+    },
+    {
+      "race": "Judow",
+      "bonus": "+1/6 of an Extra Reaper Technique feat."
+    },
+    {
+      "race": "Kitsune",
+      "bonus": "+1/5 of an Alteration or Illusion sphere talent."
+    },
+    {
+      "race": "Kobold",
+      "bonus": "+1/5 of an Enhancement sphere talent."
+    },
+    {
+      "race": "Mirrorkin",
+      "bonus": "+1/5 of an Alteration or Fate sphere talent."
+    },
+    {
+      "race": "Orc",
+      "bonus": "+1/5 of a Destruction sphere talent."
+    },
+    {
+      "race": "Oread",
+      "bonus": "+1/5 of an Earth or Metal Nature sphere talent."
+    },
+    {
+      "race": "Rhyzala",
+      "bonus": "+1/5 of a Time sphere talent."
+    },
+    {
+      "race": "Shadow Fey",
+      "bonus": "+1/5 of a Warp sphere talent."
+    },
+    {
+      "race": "Sylph",
+      "bonus": "+1/5 of a Weather sphere talent."
+    },
+    {
+      "race": "Tiefling",
+      "bonus": "+1/6 of a combat sphere talent."
+    },
+    {
+      "race": "Undine",
+      "bonus": "+1/5 of a Nature sphere talent."
+    },
+    {
+      "race": "Vanara",
+      "bonus": "+1/5 of an Athletics sphere talent."
+    },
+    {
+      "race": "Veryx",
+      "bonus": "+1/5 of a Mind sphere talent."
+    },
+    {
+      "race": "Xodai",
+      "bonus": "+1/5 of a Fate sphere talent."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

@@ -633,6 +633,74 @@
       "description": "• Audacity\n\nUse your words to cut your opponents down.\n\nWhim Spheres: Athletics and Bluster.\n\n• Freestyle Antics (Ex)\n\nAt 2nd level, the bravo's confounding strike ability can also be triggered whenever he succeeds at an Acrobatics, Bluff, or Intimidate check that targets a creature (such as a check to avoid an attack of opportunity, feint, demoralize, etc.). Additionally, whenever the bravo would normally trigger his confounding strike ability, he can expend his martial focus and outwit the creature as a cost to deliver a quip against them instead of its normal effects.\n\nAt 5th level, the bravo does not need to expend his martial focus to quip this way. Alternatively, he can still expend his martial focus to deliver this quip as part of a creature failing their saving throw against his confounding strike ability.\n\nWiki Note: The bravo does not need the confounding strike class feature to activate a quip in the way described in the first paragraph of this ability (such as if it is replaced by an archetype or alternate class feature), although the 5th level ability wouldn't function due to its reliance on confounding strike.\n\n• Exploit Uncertainty: Too Slow (Ex)\n\nAt 5th level, the bravo's exploit uncertainty bonus also applies as a dodge bonus against the outwitted creature's attacks.\n\n• Incredible Stunt: Flow State (Ex)\n\nAt 10th level, the bravo can use this incredible stunt as part of a move action to move to enter a state of pure flow with his movements. The bravo gains a 10-foot enhancement bonus to all movement modes he possesses. Whenever the bravo rolls a skill check associated with his current movement mode, any natural roll of a 14 or lower is treated as a 15. At 20th level, this improves to treat any such roll as if he had rolled a 20.\n\nAdditionally, the bravo ignores all difficult terrain when he moves, and may charge or run through squares that contain allies (and enemies if he succeeds an Acrobatics check to move through their square) without impeding his movement.\n\n• Overwhelming Antics (Ex)\n\nAt 15th level, whenever the bravo avoids an attack using his cunning celerity ability, he can use a quip against the attacker as an immediate action. Whenever "
     }
   ],
+  "archetypes": [
+    {
+      "name": "Allusionist [SM-]",
+      "summary": "Allusionists build their signature style by mimicking the great techniques and exploits of others."
+    },
+    {
+      "name": "Daredevil [DRS]",
+      "summary": "These daredevils are far less methodical than a typical bravo, and instead can sweep themselves up in the heat of the moment for their own edge in combat."
+    },
+    {
+      "name": "Dreadnought [DRS]",
+      "summary": "Less flighty than the typical bravo, a dreadnought is a hulking mass of scar tissue and sheer stubbornness that refuses to drop."
+    },
+    {
+      "name": "Dynamo [3PP]",
+      "summary": "Dynamos weave otherworldly power into their techniques, baffling foes by conflating the impossible with the implausible in the heat of battle."
+    },
+    {
+      "name": "Eclectic [SM-]",
+      "summary": "Eclectics pursue multiple distinct whims, presenting a bizarre amalgamation of unique styles."
+    },
+    {
+      "name": "Quicksilver [DRS]",
+      "summary": "Quicksilvers possess a supernatural deftness-and charm-that allows them to blur the lines of reality."
+    },
+    {
+      "name": "Serendipitist [SM-]",
+      "summary": "A serendipitist elevates their flamboyance into desperate gambles, throwing themselves wholeheartedly into peril and clutching whatever shreds of luck they can obtain."
+    },
+    {
+      "name": "Smasher",
+      "summary": "Smashers, as the name suggests, excel at turning everyday items into dangerous weaponry."
+    },
+    {
+      "name": "Tracer [DRS]",
+      "summary": "Without the focus on their versatile talent, these ‘tracers' are able to prioritize training on dodging and weaving through the battlefield unharmed, as well as being quick on their feet when they need to be."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Any",
+      "bonus": "Gain a +1/3 competence bonus on Acrobatics checks to move through a creature's threatened area or space."
+    },
+    {
+      "race": "Any",
+      "bonus": "Gain +2% to the bravo's dodge pool."
+    },
+    {
+      "race": "Any",
+      "bonus": "Gain +1/6 of a sphere talent associated with one of the bravo's whim spheres."
+    },
+    {
+      "race": "Any",
+      "bonus": "Gain +1/3 competence bonus to Escape Artist checks attempted to escape a grapple or pin."
+    },
+    {
+      "race": "Any",
+      "bonus": "Gain a +1/4 insight bonus to saving throws against effects that cause confused, dazed, stunned, or any disorientation condition."
+    },
+    {
+      "race": "Any",
+      "bonus": "Gain +1/3 of a talent that can be added to his spontaneous technique ability's pool of prepared talents."
+    },
+    {
+      "race": "U",
+      "bonus": "Part of Ultimate Spheres of Power and does not need to be bought separately from that book"
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

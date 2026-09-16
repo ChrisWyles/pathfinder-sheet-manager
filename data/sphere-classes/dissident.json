@@ -592,6 +592,46 @@
       "description": "The dissident commits herself to her struggle wholeheartedly, as she embraces her diversity of mind, heart, and soul.\n\nAt 20th level, whenever the dissident would become weakly or moderately attuned to a side of her struggle, she can choose to become strongly attuned instead.\n\nAdditionally, whenever the dissident is completely attuned to a side of her struggle, she gains unique benefits as listed in her strife.\n\nLastly, whenever the dissident is balanced in her struggle, she gains fast healing 5, and a +2 bonus to her caster level and base attack bonus when determining the effects of her combat sphere abilities (this base attack bonus increase cannot cause her base attack bonus to exceed her Hit Dice). Her pool of skill leverage also increases by 2."
     }
   ],
+  "archetypes": [
+    {
+      "name": "Apastron [SM-]",
+      "summary": "Apastra (singular Apastron) seek to wield the powers of separate extremes simultaneously, receiving only glimpses of clarity as to how the two opposite ambitions can be reconciled."
+    },
+    {
+      "name": "Symbiont [DRS]",
+      "summary": "Symbionts possess such a deep connection to their strife that it can be manifested physically."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Any",
+      "bonus": "Gain +1/6 of a dissident nuance."
+    },
+    {
+      "race": "Any",
+      "bonus": "Gain +1/4 to the saving throw DC of the dissident's class features."
+    },
+    {
+      "race": "Any",
+      "bonus": "Gain +1/3 morale bonus to saving throws (or to the skill check DC) made to resist an effect that invokes any of the dissident's motivations."
+    },
+    {
+      "race": "Any",
+      "bonus": "Gain +1/8 of a talent for each side of the dissident's struggle, as per the divided skill set class feature."
+    },
+    {
+      "race": "Any",
+      "bonus": "Gain +1/2 to the DC to discover the dissident's alignment, motivation (except her motivation), or similar information (as the dissonant heart ability)."
+    },
+    {
+      "race": "Any",
+      "bonus": "Gain +1/3 insight bonus to any skill check the dissident attempts to discover a creature's motivation."
+    },
+    {
+      "race": "U",
+      "bonus": "Part of Ultimate Spheres of Power and does not need to be bought separately from that book"
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

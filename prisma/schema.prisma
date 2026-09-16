@@ -112,6 +112,11 @@ enum RollKind {
   CUSTOM
 }
 
+enum TraditionKind {
+  CASTING
+  MARTIAL
+}
+
 // ---------------------------------------------------------------------------
 // Auth.js (NextAuth) — database session strategy via @auth/prisma-adapter
 // ---------------------------------------------------------------------------
@@ -450,6 +455,10 @@ model Feat {
 
   name          String
   featTypes     String[] @default([]) // e.g. ["Combat", "Metamagic"]
+  /** Magic sphere this feat is tied to (e.g. "Destruction"), when scraped
+   * from that sphere's own "Sphere Feats" list — distinct from featTypes,
+   * which holds the PF1e/SoP category tags (Combat, Racial, Drawback, …). */
+  sphereName    String   @default("")
   prerequisites String   @default("")
   benefit       String   @default("")
   description   String   @default("")
@@ -552,6 +561,51 @@ model Talent {
 
   @@unique([name, source])
   @@index([name])
+}
+
+// ---------------------------------------------------------------------------
+// Casting / martial tradition building blocks (see src/lib/rules/casting-tradition.ts)
+// ---------------------------------------------------------------------------
+
+model TraditionDrawback {
+  id   String        @id @default(cuid())
+  kind TraditionKind
+
+  name        String
+  description String @default("")
+  /// Combat sphere name — only set for MARTIAL (sphere-specific) drawbacks.
+  sphereName  String @default("")
+  /// Usually 1; some general drawbacks "count as 2" toward the boon/spell-point economy.
+  costInDrawbacks  Int      @default(1)
+  prerequisites    String[] @default([])
+  incompatibleWith String[] @default([])
+
+  source String  @default("")
+  isSrd  Boolean @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([kind, name, sphereName])
+  @@index([kind])
+}
+
+model TraditionBoon {
+  id   String @id @default(cuid())
+  name String @unique
+
+  description     String   @default("")
+  costInDrawbacks Int      @default(2)
+  prerequisites   String[] @default([])
+  repeatable      Boolean  @default(false)
+  /// Best-effort parsed mechanical grants: [{ type: "sphere"|"talent"|"feat", name }]
+  grants Json @default("[]")
+
+  source String  @default("")
+  isSrd  Boolean @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 model Item {

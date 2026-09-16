@@ -520,6 +520,86 @@
       "description": "At 20th level, the technician gains a permanent +2 bonus to all mental ability scores."
     }
   ],
+  "archetypes": [
+    {
+      "name": "-Adamantine Scientist",
+      "summary": "Adamantine Scientists are exceptionally good at punching their foes with augmented gloves."
+    },
+    {
+      "name": "-Innovator [SUE]",
+      "summary": "Innovators are Tinker-savvy inventors and able to invent and reinvent to meet challenges."
+    },
+    {
+      "name": "-Mad Scientist",
+      "summary": "Mad Scientists mix magic and mechanics to create magnificent monstrosities."
+    },
+    {
+      "name": "-Mythbreaker",
+      "summary": "Mythbreakers know that magic is often less mighty than it seems - and with the right tools, they can be dispelled more effectively."
+    },
+    {
+      "name": "-Rigger",
+      "summary": "Riggers excel at using the Tech sphere and jury-rigging devices together."
+    },
+    {
+      "name": "-Suit Pilots",
+      "summary": "Suit pilots have one goal, and one goal only: Creating the best suit of powered armor they can."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Aasimar",
+      "bonus": "Increase the benefit of your danger sense class feature by +1/3."
+    },
+    {
+      "race": "Created",
+      "bonus": "Gain +1/8th of a new invention."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "Increase the range of your trap insight class feature by 1 foot."
+    },
+    {
+      "race": "Elf",
+      "bonus": "For every 4 times this favored class bonus is taken, your inventions count as possessing one fewer improvements when calculating the penalties other creatures suffers when using them."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "Gain +1/8th of a new invention."
+    },
+    {
+      "race": "Goblin",
+      "bonus": "Gain 1/3rd of an additional gadget each day which can only be used as a detonator."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "Add a +1/2 bonus to all Disable Device checks made to pick a lock or disarm or reset a trap."
+    },
+    {
+      "race": "Hobgoblin",
+      "bonus": "When you deal fire, cold, electricity, or acid damage with an invention, your invention ignores 1 point of resistance for that particular element."
+    },
+    {
+      "race": "Human",
+      "bonus": "Gain +1/6th of a technical insight."
+    },
+    {
+      "race": "Kobold",
+      "bonus": "Gain 1/6th of a Trap sphere talent."
+    },
+    {
+      "race": "Orc",
+      "bonus": "Gain +1 energy resistance to one kind of energy (+10 maximum per energy type)."
+    },
+    {
+      "race": "Tatulani",
+      "bonus": "Gain +1/6th of a technical insight."
+    },
+    {
+      "race": "Tiefling",
+      "bonus": "Whenever you deal damage to a target within 30 ft. that is either flat-footed, that you are flanking, or that has lost its Dexterity bonus to ac, you deal an additional +1/2 damage to that target."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

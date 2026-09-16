@@ -596,6 +596,150 @@
       "description": "At 20th level the shifter becomes a master of Alteration magic. Whenever she changes her own form with a shapeshift it is considered an extraordinary ability instead of a magical effect. This means it does not provoke an attack of opportunity, cannot be dispelled or countered, and can be used within an antimagic field. Changes to herself have an unlimited duration without the need to spend any spell points."
     }
   ],
+  "archetypes": [
+    {
+      "name": "Apex Shifter",
+      "summary": "Apex shifters excel at changing the shapes they can take."
+    },
+    {
+      "name": "Beastlord",
+      "summary": "Beastlords can use the Mind sphere and command various types of beasts."
+    },
+    {
+      "name": "Beastmind",
+      "summary": "Beastminds gain the mind and body of beasts, allowing them to evade effects that would affect others."
+    },
+    {
+      "name": "Champion Shifter [DRS]",
+      "summary": "A Champion Shifter can utility their wit and martial prowess as they shift forms."
+    },
+    {
+      "name": "Dimension Shifter",
+      "summary": "Dimension shifters can use the powers of the Warp sphere to teleport around the battlefield."
+    },
+    {
+      "name": "Elemental Scion",
+      "summary": "Elemental scions are specialists at transforming into elemental forms."
+    },
+    {
+      "name": "Famine Spirit",
+      "summary": "Famine spirits can use the powers of Death to sap the powers of their foes and consume bodies whole."
+    },
+    {
+      "name": "Fey Incarnate",
+      "summary": "Fey incarnate become increasingly fey-like as they use the Fallen Fey sphere."
+    },
+    {
+      "name": "Forceful Shifter",
+      "summary": "Forceful Shifters have reduced magical powers, but more powerful martial abilities."
+    },
+    {
+      "name": "Martial Shifter [CS]",
+      "summary": "The Martial Shifter is more adept at combat techniques than most of their peers."
+    },
+    {
+      "name": "Night Terror [DRS]",
+      "summary": "A Night Terror is an ultimate hunter in the shadows. This archetype uses the Polished Dark sphere rework."
+    },
+    {
+      "name": "Nocturnal Predator",
+      "summary": "Nocturnal predators use the Dark sphere to stalk their prey."
+    },
+    {
+      "name": "Pack Master",
+      "summary": "Pack masters can gain animal companions to fight at their side."
+    },
+    {
+      "name": "Paragon [CS]",
+      "summary": "Paragons focus on perfecting their form."
+    },
+    {
+      "name": "Protean",
+      "summary": "Proteans are chaotic shifters who can temporarily gain access to additional Alteration talents."
+    },
+    {
+      "name": "Radiant Protean",
+      "summary": "Radiant proteans can use the Light sphere while shapeshifting to gain additional powers."
+    },
+    {
+      "name": "Spellvampire",
+      "summary": "Spellvampires specialize in mimicking foes and, eventually, can learn to steal even their very power through the Mana sphere."
+    },
+    {
+      "name": "DRS Shifter Class Features [DRS]",
+      "summary": "This page contains new or alternative class features for shifter published by DRS."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Aasimar",
+      "bonus": "Gains a +1/2 bonus to all Handle Animal checks."
+    },
+    {
+      "race": "Alraun",
+      "bonus": "+5 feet to the range of blood sense."
+    },
+    {
+      "race": "Cuazaj",
+      "bonus": "+1/5 electricity damage with natural attacks."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "+1/3 bonus to Swim checks made to resist nonlethal damage from exhaustion, Constitution checks made to continue running, Constitution checks made to avoid nonlethal damage from a forced march, Constitution checks made to hold the shifter's breath, Constitution checks made to avoid nonlethal damage from starvation or thirst, Fortitude saves made to avoid nonlethal damage from hot or cold environments, and Fortitude saves made to resist damage from suffocation."
+    },
+    {
+      "race": "Elf",
+      "bonus": "+1/3 to the shifter's natural armor bonus while using a form from the Alteration sphere other than Blank Transformation."
+    },
+    {
+      "race": "Fenghuang",
+      "bonus": "Add +1 foot to the shifter's fly speed. In combat this option has no effect unless the shifter has selected it five times (or another increment of five)."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "+1/2 bonus on Diplomacy and Intimidate checks to change a creature's attitude."
+    },
+    {
+      "race": "Goblin",
+      "bonus": "Add +1/2 to all checks using wild empathy."
+    },
+    {
+      "race": "Half-elf",
+      "bonus": "Reduce the attack roll penalties for secondary natural attacks by 1/8, to a minimum of 0. This stacks with benefits provided by the Multiattack feat."
+    },
+    {
+      "race": "Half-orc",
+      "bonus": "Gain +1/6 of a bestial trait."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "Increase the number of negative hit points you can possess before dying by 1, and gain a +1/4 bonus to Survival checks."
+    },
+    {
+      "race": "Human",
+      "bonus": "Add a +1/2 bonus on Diplomacy and Intimidate checks to change a creature's attitude."
+    },
+    {
+      "race": "Kobold",
+      "bonus": "+1 damage with the breath weapon granted by Dragon Transformation."
+    },
+    {
+      "race": "Merfolk",
+      "bonus": "Gain +2.5 feet to the shifter's swim speed. In combat, this only has an effect for every two increases to the movement's speed."
+    },
+    {
+      "race": "Orc",
+      "bonus": "Choose one natural attack gained through bestial traits. Increase the die size of the natural attack by 1 step for every 6 times this benefit is gained."
+    },
+    {
+      "race": "Skinwalker",
+      "bonus": "Gain 1/6th of an Alteration sphere talent."
+    },
+    {
+      "race": "Tiefling",
+      "bonus": "Deal an additional +1/2 damage when attacking targets the shifter is flanking, or who are denied their Dexterity bonus to AC."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

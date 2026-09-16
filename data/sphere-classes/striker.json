@@ -527,6 +527,90 @@
       "description": "At 20th level, a striker gains 7 tension at the start of her first turn in combat (including surprise rounds). She also has no limit to how much tension she can possess, and if she possesses the high tension striker art, she can immediately swap it for another striker art. The striker also reduces the cost of all abilities which require tension by 1, to a minimum of 1."
     }
   ],
+  "archetypes": [
+    {
+      "name": "Barfighter",
+      "summary": "Barfighters are Strikers who specialize in drinking as they brawl."
+    },
+    {
+      "name": "Black Powder Brawler",
+      "summary": "Black Powder Brawlers are experts with the use of firearms, and integrate them into their combat style instead of relying on their fists."
+    },
+    {
+      "name": "Chaos Shifter",
+      "summary": "Chaos Shifters use mutagenic formulas to become true monsters on the battlefield."
+    },
+    {
+      "name": "Elemental Fist [CS]",
+      "summary": "Elemental fists can use the powers of nature to augment their blows."
+    },
+    {
+      "name": "Evolutionist [LG]",
+      "summary": "Evolutionists couple martial grit with immense morphic potential, drawing on the tension of combat to force their transformations into wild and dangerous new forms."
+    },
+    {
+      "name": "Shadowed Fist",
+      "summary": "Shadowed Fists are stealthy strikers that can learn the arts of the ninja to help them assassinate their foes."
+    },
+    {
+      "name": "Skirmishing Scout",
+      "summary": "Skirmishing Scouts are darting combatants who are always on the move."
+    },
+    {
+      "name": "Strong Style Grappler",
+      "summary": "Strong Style Grapplers focus on grappling foes to quickly and effectively bring them down."
+    },
+    {
+      "name": "Voidrusher [CS] [DRS]",
+      "summary": "Voidrushers combine their innate talents with the inhuman might of a powerful outsider bound to their flesh."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Aasimar",
+      "bonus": "Add +1/4 cold damage to your unarmed strikes."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "Increase the damage reduction/hardness penetration of drill knuckle by +1/3."
+    },
+    {
+      "race": "Elf",
+      "bonus": "Gain +1/6 additional maximum tension."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "Gain +1/6 of a striker art."
+    },
+    {
+      "race": "Goblin",
+      "bonus": "Gain +1/5 to your CMB with a combat maneuver of your choice."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "Add +1/4 additional points of damage to your unarmed strikes."
+    },
+    {
+      "race": "Hobgoblin",
+      "bonus": "Add +1/2 to your total damage when making a critical hit with an unarmed strike."
+    },
+    {
+      "race": "Human",
+      "bonus": "Gain +1 ft. to your movement speed (this ability does nothing until selected 5 times)."
+    },
+    {
+      "race": "Kobold",
+      "bonus": "Gain 1/6th of a Scoundrel sphere talent."
+    },
+    {
+      "race": "Orc",
+      "bonus": "Gain +1/3 virtual talent in an unarmed sphere for the purposes of determining the damage of your unarmed strikes."
+    },
+    {
+      "race": "Tiefling",
+      "bonus": "Add +1/4 fire damage to your unarmed strikes."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

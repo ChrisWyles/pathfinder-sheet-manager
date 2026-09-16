@@ -1,0 +1,743 @@
+{
+  "slug": "courser",
+  "name": "Courser",
+  "group": "operative",
+  "url": "http://spheresofpower.wikidot.com/courser",
+  "source": "Spheres of Power wiki",
+  "hitDie": 10,
+  "alignment": "Any",
+  "role": "Coursers are survivors at their very core-being both vigilant and resourceful, they provide a careful eye and a full stomach to any group they find themselves in",
+  "classSkills": [],
+  "skillRanksPerLevel": 6,
+  "babProgression": "FULL",
+  "saveProgressions": {
+    "fort": "GOOD",
+    "ref": "GOOD",
+    "will": "POOR"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+1",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+0",
+      "special": [
+        "Forage",
+        "skill expertise",
+        "survivalist"
+      ],
+      "columns": {
+        "Fast Movement": "+0 ft.",
+        "Any": "0",
+        "Utility": "1"
+      },
+      "choices": [
+        "skill expertise"
+      ]
+    },
+    {
+      "level": 2,
+      "bab": "+2",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+0",
+      "special": [
+        "Fast movement",
+        "venture"
+      ],
+      "columns": {
+        "Fast Movement": "+10 ft.",
+        "Any": "1",
+        "Utility": "1"
+      },
+      "choices": []
+    },
+    {
+      "level": 3,
+      "bab": "+3",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+1",
+      "special": [
+        "Determined stalker",
+        "vigilant"
+      ],
+      "columns": {
+        "Fast Movement": "+10 ft.",
+        "Any": "1",
+        "Utility": "2"
+      },
+      "choices": [
+        "Determined stalker"
+      ]
+    },
+    {
+      "level": 4,
+      "bab": "+4",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+1",
+      "special": [
+        "Harrying assault",
+        "venture"
+      ],
+      "columns": {
+        "Fast Movement": "+10 ft.",
+        "Any": "2",
+        "Utility": "2"
+      },
+      "choices": [
+        "Harrying assault",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+5",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+1",
+      "special": [
+        "Relentless",
+        "stalwart"
+      ],
+      "columns": {
+        "Fast Movement": "+10 ft.",
+        "Any": "2",
+        "Utility": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 6,
+      "bab": "+6/+1",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+2",
+      "special": [
+        "Distant advance",
+        "venture"
+      ],
+      "columns": {
+        "Fast Movement": "+20 ft.",
+        "Any": "3",
+        "Utility": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 7,
+      "bab": "+7/+2",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+2",
+      "special": [
+        "Resourceful foraging (first terrain)"
+      ],
+      "columns": {
+        "Fast Movement": "+20 ft.",
+        "Any": "3",
+        "Utility": "4"
+      },
+      "choices": [
+        "Resourceful foraging (first terrain)"
+      ]
+    },
+    {
+      "level": 8,
+      "bab": "+8/+3",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+2",
+      "special": [
+        "Venture"
+      ],
+      "columns": {
+        "Fast Movement": "+20 ft.",
+        "Any": "4",
+        "Utility": "4"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+9/+4",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+3",
+      "special": [
+        "Deadly assault",
+        "withstand force"
+      ],
+      "columns": {
+        "Fast Movement": "+20 ft.",
+        "Any": "4",
+        "Utility": "5"
+      },
+      "choices": [
+        "Deadly assault"
+      ]
+    },
+    {
+      "level": 10,
+      "bab": "+10/+5",
+      "fortSave": "+7",
+      "refSave": "+7",
+      "willSave": "+3",
+      "special": [
+        "Forage improvement",
+        "harrying assault (improved)",
+        "venture"
+      ],
+      "columns": {
+        "Fast Movement": "+30 ft.",
+        "Any": "5",
+        "Utility": "5"
+      },
+      "choices": [
+        "harrying assault (improved)"
+      ]
+    },
+    {
+      "level": 11,
+      "bab": "+11/+6/+1",
+      "fortSave": "+7",
+      "refSave": "+7",
+      "willSave": "+3",
+      "special": [
+        "Resourceful foraging (second terrain)"
+      ],
+      "columns": {
+        "Fast Movement": "+30 ft.",
+        "Any": "5",
+        "Utility": "6"
+      },
+      "choices": [
+        "Resourceful foraging (second terrain)"
+      ]
+    },
+    {
+      "level": 12,
+      "bab": "+12/+7/+2",
+      "fortSave": "+8",
+      "refSave": "+8",
+      "willSave": "+4",
+      "special": [
+        "Venture"
+      ],
+      "columns": {
+        "Fast Movement": "+30 ft.",
+        "Any": "6",
+        "Utility": "6"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+13/+8/+3",
+      "fortSave": "+8",
+      "refSave": "+8",
+      "willSave": "+4",
+      "special": [
+        "Opportune stalker"
+      ],
+      "columns": {
+        "Fast Movement": "+30 ft.",
+        "Any": "6",
+        "Utility": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+14/+9/+4",
+      "fortSave": "+9",
+      "refSave": "+9",
+      "willSave": "+4",
+      "special": [
+        "Tireless",
+        "venture"
+      ],
+      "columns": {
+        "Fast Movement": "+40 ft.",
+        "Any": "7",
+        "Utility": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 15,
+      "bab": "+15/+10/+5",
+      "fortSave": "+9",
+      "refSave": "+9",
+      "willSave": "+5",
+      "special": [
+        "Resourceful foraging (third terrain)",
+        "unyielding"
+      ],
+      "columns": {
+        "Fast Movement": "+40 ft.",
+        "Any": "7",
+        "Utility": "8"
+      },
+      "choices": [
+        "Resourceful foraging (third terrain)"
+      ]
+    },
+    {
+      "level": 16,
+      "bab": "+16/+11/+6/+1",
+      "fortSave": "+10",
+      "refSave": "+10",
+      "willSave": "+5",
+      "special": [
+        "Harrying assault (improved)",
+        "venture"
+      ],
+      "columns": {
+        "Fast Movement": "+40 ft.",
+        "Any": "8",
+        "Utility": "8"
+      },
+      "choices": [
+        "Harrying assault (improved)",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+17/+12/+7/+2",
+      "fortSave": "+10",
+      "refSave": "+10",
+      "willSave": "+5",
+      "special": [
+        "Tenacious stalker"
+      ],
+      "columns": {
+        "Fast Movement": "+40 ft.",
+        "Any": "8",
+        "Utility": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 18,
+      "bab": "+18/+13/+8/+3",
+      "fortSave": "+11",
+      "refSave": "+11",
+      "willSave": "+6",
+      "special": [
+        "Incredible vitality",
+        "venture"
+      ],
+      "columns": {
+        "Fast Movement": "+50 ft.",
+        "Any": "9",
+        "Utility": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 19,
+      "bab": "+19/+14/+9/+4",
+      "fortSave": "+11",
+      "refSave": "+11",
+      "willSave": "+6",
+      "special": [
+        "Opportune stalker improvement",
+        "resourceful forager (fourth terrain)"
+      ],
+      "columns": {
+        "Fast Movement": "+50 ft.",
+        "Any": "9",
+        "Utility": "10"
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+20/+15/+10/+5",
+      "fortSave": "+12",
+      "refSave": "+12",
+      "willSave": "+6",
+      "special": [
+        "Forage improvement",
+        "master courser",
+        "venture"
+      ],
+      "columns": {
+        "Fast Movement": "+50 ft.",
+        "Any": "10",
+        "Utility": "10"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Fast Movement",
+    "Any",
+    "Utility"
+  ],
+  "features": [
+    {
+      "name": "Weapon and Armor Proficiencies",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "Coursers are proficient with simple and martial weapons as well as light armor and bucklers."
+    },
+    {
+      "name": "Skill Expertise",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "A courser may combine skill spheres and talents to perfect incredible acts of guile. Whenever the courser gains a skill talent, they must choose a skill sphere to spend it on. The first time a character spends a skill talent on a sphere, they gain that sphere's base abilities instead of gaining a talent within the sphere.\n\nAfter a character possesses a base sphere, spending an additional skill talent on that sphere gains them one of that sphere's talents.\n\nCoursers are considered Journeyman operatives and choose Intelligence, Wisdom, or Charisma as their operative ability modifier. The Journeyman skill talent progression is reprinted in the courser table for ease of reference. (Talents under Any can be any skill talent that the courser qualifies for, while talents listed under Utility must have the [utility] tag.)"
+    },
+    {
+      "name": "Forage",
+      "type": "Ex",
+      "levels": [
+        1,
+        10,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A courser is an expert of surviving off of the land and its bounty; whether that be gathering edible berries or hunting and preparing various wild animals, the courser is capable of turning either source of food into a bountiful banquet.\n\nAt 1st level, the courser may spend 1 hour to hunt, forage, and prepare a meal from the terrain for a number of Medium-sized creatures equal to 3 + the courser's ranks in Survival. During the hour spent foraging, the courser gains the meal's benefits, allowing them to benefit from effects that would protect them from a hostile environment while foraging.\n\nAny creature who eats the meal (which takes 10 minutes to do so) is granted benefits depending on the terrain it was foraged from (or one of the terrains if the surrounding area has multiple terrains) for 24 hours or until the creature rests or eats another meal, whatever comes first. If a meal grants the benefit of an acclimation, it does not count towards the maximum number of acclimations the creature can benefit from at one time.\n\nCold or Desert: Creatures who eat this meal gain the benefits of the conditioning Navigation sphere acclimation (in the (wilderness) package), and gain either cold resistance 5 (for cold terrain) or fire resistance 5 (for desert terrain). At 10th level, these resistances stack with other sources. At 20th level, such creatures become immune to the fatigued and exhausted conditions, as well as to cold damage (for cold terrain) or fire damage (for desert terrain).\n\nForest: Creatures who eat this meal suffer no penalty to their speed or to Acrobatics or Stealth checks due to undergrowth and similar plant life, and increase any cover bonuses conferred by naturally occurring terrain by +1. At 10th level, the meal also confers greensight up to 30 feet (allowing them to see through thick plant matter as though transparent), which improves to 120 feet at 20th level.\n\nJungle: Creatures who eat this meal gain the benefits of the immunization Navigation sphere acclimation (in the Extreme Acclimation talent), and can climb at half their base speed instead of one-quarter; this improves to their full base speed at 10th level, and twice their base speed at 20th "
+    },
+    {
+      "name": "Survivalist",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A courser gains the Navigation sphere and either the Herbalism or Survivalism sphere as a bonus sphere at 1st level."
+    },
+    {
+      "name": "Courser Ventures",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "Starting at 2nd level, the courser gains one venture, plus an additional venture for every 2 levels of courser attained after 2nd level. Unless otherwise noted, an individual venture cannot be selected more than once. The courser ventures are listed at the end of the class description."
+    },
+    {
+      "name": "Fast Movement",
+      "type": "Ex",
+      "levels": [
+        2
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level, the courser gains a +10-foot enhancement bonus to their land speed. This bonus increases by 10 feet at 6th level, and every 4 courser levels thereafter. The courser loses these benefits when they wear medium or heavy armor, or is carrying a heavy load."
+    },
+    {
+      "name": "Determined Stalker",
+      "type": "Ex",
+      "levels": [
+        3
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 3rd level, whenever the courser would make an attack of opportunity provoked by an enemy's movement, they can instead expend the attack of opportunity and move up to their speed (after the provoking creature completes their movement).\n\nThe courser must end this movement so that the provoking creature is within the courser's reach, or as close as possible if they are unable to reach the creature. This movement does not provoke attacks of opportunity from the provoking creature, and may only be used against an individual creature once per round.\n\nAt 8th level, the courser can choose to still make the attack of opportunity against the provoking creature before they move, but they can only move half the normal amount towards the creature."
+    },
+    {
+      "name": "Vigilant",
+      "type": "Ex",
+      "levels": [
+        3
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, the courser adds 1/2 their level as an untyped bonus on Perception checks attempted to notice a creature using Stealth and on Survival checks attempted to follow tracks (minimum +1)."
+    },
+    {
+      "name": "Harrying Assault",
+      "type": "Ex",
+      "levels": [
+        4,
+        10,
+        16
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 4th level, whenever the courser successfully hits a creature with an attack, they can apply one of the following effects to the damaged creature as part of the attack. The courser can only apply such a benefit to an attack once per round. If the effect requires a saving throw, the DC is equal to 10 + 1/2 their courser level + their Wisdom modifier.\n\nThe courser can select from the following options:\n\nCarve Tendon: The creature's movement speed is reduced by half its base speed (minimum 0 feet) for a number of rounds equal to the courser's Wisdom modifier (minimum 1); a successful Fortitude save negates this effect. If this would reduce a creature's movement speed to 0 feet, they also fall prone. At 10th level, on a failed save, the creature's movement speed is reduced to 0 for 1 round, and halved for the remaining duration. A successful Fortitude save instead reduces the creature's base speed by a quarter, and reduces the duration of the effect to 1 round. At 16th level, on a failed save, the creature takes 1d4 points of Dexterity damage, and must spend a standard action to stand up from prone for the duration of this effect. On a successful save, the creature's movement speed is still halved for the duration.\n\nHampering Smash: The creature suffers a -2 penalty to Strength- and Dexterity-based ability checks and skill checks, and the courser treats the creature's AC and CMD as being 2 lower for a number of rounds equal to the courser's Wisdom modifier (minimum 2); a successful Fortitude save reduces the duration of this effect to 1 round. For every 6 courser levels beyond 4th they possess, this penalty and the reduction to AC and CMD increases by 2.\n\nNick Artery: The creature suffers an amount of bleed damage equal to the courser's class level (Reflex halves). At 10th level, on a failed save, the creature becomes easier to track due to this injury, even after the wound is healed. As long as the creature is bleeding and for 1 hour after (or until the creature is restored to their maximum hit point total, whichever comes first), the DC required to track the creature reduces by 5. At 16th level, the amount of bleed damage doubles.\n\nThese penalties do not stack w"
+    },
+    {
+      "name": "Relentless",
+      "type": "Ex",
+      "levels": [
+        5
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 5th level, the courser may still take the run and charge actions while fatigued or exhausted, in addition to suffering no numerical penalties or speed reduction due to being fatigued, exhausted, or sickened.\n\nAdditionally, the courser reduces any reductions to their movement or any forced movement they make (such as a bull rush) by 10 feet (minimum 5 feet)."
+    },
+    {
+      "name": "Stalwart",
+      "type": "Ex",
+      "levels": [
+        5
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 5th level, the courser can use mental and physical resilience to avoid certain attacks. If they attempt a Fortitude or Will saving throw against an attack that has a reduced effect on a successful save, they instead avoid the effect entirely. A helpless courser does not gain the benefit of the stalwart ability."
+    },
+    {
+      "name": "Distant Advance",
+      "type": "Ex",
+      "levels": [
+        6
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 6th level, whenever a creature within close range of the courser moves (and they can perceive them), the courser can spend an immediate action to move up to their speed towards the creature (although this movement is made after the creature finishes their movement). This has the same limitations as the determined stalker class feature."
+    },
+    {
+      "name": "Resourceful Foraging",
+      "type": "Ex",
+      "levels": [
+        7,
+        11,
+        15
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 7th level, the courser becomes more aware of the plentiful flora and fauna around them, understanding the underlying routes that connect all types of plants and animals. Choose one terrain listed in the forage ability (the cold, desert, jungle and swamp terrains are considered separate terrains for this purpose).\n\nWhen foraging to create a meal, the courser may choose the benefits of their chosen terrain instead of their current terrain, even if they are not in the chosen terrain. The courser may choose an additional terrain at 11th level and every 4 courser levels thereafter."
+    },
+    {
+      "name": "Deadly Assault",
+      "type": "",
+      "levels": [
+        9
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 9th level, whenever the courser uses their harrying assault ability, they can spend a swift action as part of the successful attack to apply two harrying assault options instead of one, attempting an individual saving throw (if any) against each option.\n\nAlternatively, the courser can choose to apply one harrying assault option as normal, causing any saving throws associated with the option to be rolled twice, taking the lowest result."
+    },
+    {
+      "name": "Withstand Force",
+      "type": "Ex",
+      "levels": [
+        9
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 9th level, whenever the courser attempts a Reflex saving throw for half damage, they may spend an immediate action to instead attempt a Fortitude saving throw against the effect (at the same DC). This ability benefits from stalwart and unyielding as normal."
+    },
+    {
+      "name": "Opportune Stalker",
+      "type": "Ex",
+      "levels": [
+        13,
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 13th level, the courser may use their determined stalker ability against creatures they threaten even if a creature's movement would not normally provoke an attack of opportunity, as long as the creature has fewer Hit Dice than the courser's character level and the courser is aware of the creature's presence. This includes if the creature takes a 5-foot step, or has an ability that would allow them to move from their square without usually provoking an attack of opportunity.\n\nAt 19th level, the courser can use this ability regardless of the creature's Hit Dice."
+    },
+    {
+      "name": "Tireless",
+      "type": "Ex",
+      "levels": [
+        14
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 14th level, the courser is unburdened by physical exhaustion. The courser needs to only sleep 1 hour per day to gain the benefits of 8 hours of sleep, and does not need to eat or drink to survive, nor do they suffer any penalties for dehydration or starvation. This does not allow the courser to prepare spells or recover daily resources more than once per day."
+    },
+    {
+      "name": "Unyielding",
+      "type": "Ex",
+      "levels": [
+        15
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 15th level, the courser's resilience improves. If they attempt a Fortitude or Will saving throw against an attack that normally deals reduced damage on a successful save, they take half the damage on a failed save. A helpless courser does not gain the benefit of unyielding."
+    },
+    {
+      "name": "Tenacious Stalker",
+      "type": "Ex",
+      "levels": [
+        17
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 17th level, the courser can move normally even when affected by abilities that usually impede movement, such as the paralyzed, staggered, and stunned conditions, entangle, slow, etc. If the courser breaks free from a grapple or other form of restraint, they can move their speed as part of the action made to escape as long as it required at least a move action to do so.\n\nIf the courser uses their determined stalker or distant advance class features while restrained in this way, they can immediately attempt to break free as a free action usable outside of their turn, gaining their vigilant bonus to the attempt."
+    },
+    {
+      "name": "Incredible Vitality",
+      "type": "Ex",
+      "levels": [
+        18
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 18th level, whenever the courser attempts a Fortitude save, they can roll twice and take the better result. If they fail a Fortitude saving throw against an effect that has a duration longer than 1 hour, the courser gains a new saving throw at the end of each hour to end the effect."
+    },
+    {
+      "name": "Master Courser",
+      "type": "Ex",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level, the courser is immune to ability damage and drain inflicted to their physical ability scores, as well as to the fatigued and exhausted conditions, and nonlethal damage. Additionally, the courser no longer needs to sleep, and can instead spend 10 minutes engaged in quiet or non-strenuous activities to gain the benefits of 8 hours of sleep. This does not allow the courser to prepare spells or recover daily resources more than once per day."
+    }
+  ],
+  "archetypes": [
+    {
+      "name": "Gourmand",
+      "summary": "Gourmands excel in creating exceptionally delicious meals for others."
+    },
+    {
+      "name": "Nomad",
+      "summary": "Nomads are wanderers who truly prefer life out on the road."
+    },
+    {
+      "name": "Ravener",
+      "summary": "Raveners are fearsome coursers who try to consume their foes whenever possible."
+    },
+    {
+      "name": "Survivor [DRS]",
+      "summary": "Incredibly durable and capable of travelling far without tiring, these coursers do not see nature as a place to thrive, but to endure."
+    },
+    {
+      "name": "Venator [DRS]",
+      "summary": "Venators prefer the use of traps to herd their prey."
+    },
+    {
+      "name": "Wildspeaker [CS]",
+      "summary": "Wildspeakers are most adept at working with their animal allies."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Any",
+      "bonus": "Add +1/3 to the bonuses to Perception and Survival granted by the vigilant class feature."
+    },
+    {
+      "race": "Any",
+      "bonus": "Add +1 foot to the courser's base speed. In combat this option's effect is rounded down to the nearest multiple of five (having no effect until selected five times)."
+    },
+    {
+      "race": "Any",
+      "bonus": "Feed 1 additional creature with the courser's forage class feature."
+    },
+    {
+      "race": "Any",
+      "bonus": "Gain 1/6 of a courser venture."
+    },
+    {
+      "race": "Any",
+      "bonus": "Gain 1/6 of a Navigation, Survivalism or Herbalism talent."
+    },
+    {
+      "race": "Tengu",
+      "bonus": "Add +1/2 precision damage to hits with the courser's bite after moving at least 10 feet in the same turn."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 1,
+      "choices": [
+        "skill expertise"
+      ]
+    },
+    {
+      "level": 3,
+      "choices": [
+        "Determined stalker"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "Harrying assault",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 7,
+      "choices": [
+        "Resourceful foraging (first terrain)"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "choices": [
+        "Deadly assault"
+      ]
+    },
+    {
+      "level": 10,
+      "choices": [
+        "harrying assault (improved)"
+      ]
+    },
+    {
+      "level": 11,
+      "choices": [
+        "Resourceful foraging (second terrain)"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 15,
+      "choices": [
+        "Resourceful foraging (third terrain)"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "Harrying assault (improved)",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

@@ -24,10 +24,14 @@ const asJson = (v: unknown): Prisma.InputJsonValue =>
  *   npm run scrape:classes -- --only incanter --refresh
  *   npm run scrape:classes -- --write-db
  *
+ * Also captures, per class, its Archetypes (name + summary) and Favored Class
+ * Bonuses (per-race flavor text) — both live on the same page, just skipped by
+ * the class-features/choices walk above.
+ *
  * Output: data/sphere-classes/<slug>.json  (+ _index.json summary).
  * HTML cached under .cache/spheres/ (git-ignored). Rate-limited, descriptive UA.
  * Content is Open Game Content (see ATTRIBUTION.md); legacy "Old" sections,
- * archetypes, feats and [HB]/[3PP] material are skipped.
+ * feats and [HB]/[3PP] material are skipped.
  */
 
 const BASE = "http://spheresofpower.wikidot.com";
@@ -47,7 +51,7 @@ const ONLY = optVal("only");
 const REFRESH = has("refresh");
 const WRITE_DB = has("write-db");
 
-type Group = "spherecaster" | "practitioner" | "champion";
+type Group = "spherecaster" | "practitioner" | "champion" | "operative";
 
 interface ClassMeta {
   slug: string;
@@ -103,6 +107,18 @@ const CLASSES: ClassMeta[] = [
     ["theorist", "Theorist"],
     ["troubadour", "Troubadour"],
     ["warden-class", "Warden"],
+  ]),
+  // From /using-spheres-of-guile — Drop Dead Studios' skill-based companion
+  // to Spheres of Power/Might.
+  ...g("operative", [
+    ["advisor", "Advisor"],
+    ["agent", "Agent"],
+    ["conduit", "Conduit"],
+    ["courser", "Courser"],
+    ["envoy", "Envoy"],
+    ["genius", "Genius"],
+    ["mastermind", "Mastermind"],
+    ["professional", "Professional"],
   ]),
 ];
 
@@ -220,6 +236,14 @@ interface Feature {
   isChoice: boolean;
   description: string;
 }
+interface Archetype {
+  name: string;
+  summary: string;
+}
+interface FavoredClassBonus {
+  race: string;
+  bonus: string;
+}
 interface ClassData {
   slug: string;
   name: string;
@@ -240,6 +264,8 @@ interface ClassData {
   advancement: LevelRow[];
   talentColumns: string[];
   features: Feature[];
+  archetypes: Archetype[];
+  favoredClassBonuses: FavoredClassBonus[];
   abilityScoreIncreases: number[];
   choicesByLevel: { level: number; choices: string[] }[];
   notes: string[];
@@ -268,6 +294,158 @@ function inferSave(l1: string): "GOOD" | "POOR" | null {
   return n >= 2 ? "GOOD" : "POOR";
 }
 
+/**
+ * The first "Archetypes" h1 region: each h2 is an archetype name, the `<p>`
+ * immediately after it (if any) its summary. Wikidot pages sometimes repeat
+ * whole sections further down (transcluded nav/related-pages blocks), so only
+ * the first occurrence is captured.
+ */
+function parseArchetypes(
+  $: cheerio.CheerioAPI,
+  content: CheerioSet,
+): Archetype[] {
+  const out: Archetype[] = [];
+  let inSection = false;
+  let done = false;
+  let current: Archetype | null = null;
+  const flush = () => {
+    if (current && current.name) out.push(current);
+    current = null;
+  };
+  content.find("h1, h2, p").each((_i, el) => {
+    const tag = (el as { tagName?: string }).tagName?.toLowerCase() ?? "";
+    const raw = clean($(el).text());
+    if (!raw) return;
+    if (tag === "h1") {
+      flush();
+      if (inSection) {
+        inSection = false;
+        done = true;
+      } else if (!done && /^archetypes?$/i.test(raw)) {
+        inSection = true;
+      }
+      return;
+    }
+    if (!inSection) return;
+    if (tag === "h2") {
+      flush();
+      current = { name: raw, summary: "" };
+      return;
+    }
+    if (current && !current.summary) current.summary = raw.slice(0, 500);
+  });
+  flush();
+  return out;
+}
+
+/** "Catfolk can also choose from the following:" -> "Catfolk"; any "of any
+ * race" wording collapses to the universal "Any" bucket. */
+function raceFromAnnouncement(raw: string): string | null {
+  if (/\bany race\b/i.test(raw)) return "Any";
+  const m = raw.match(
+    /^([A-Za-z][A-Za-z' -]{1,24}?)\s+(?:can (?:also )?choose|may (?:also )?choose)\b/i,
+  );
+  return m ? clean(m[1]) : null;
+}
+
+/** A raw DOM node as seen through domhandler (what cheerio wraps) — loosely
+ * typed here the same way the rest of this file casts `el.tagName`. */
+interface RawNode {
+  type?: string;
+  tagName?: string;
+  data?: string;
+  nextSibling?: RawNode | null;
+}
+
+/**
+ * Extracts one favored-class-bonus entry from a `<strong>Race:</strong>`
+ * label: the race name (its own `<sup>` footnote markers, e.g.
+ * "Aasimar<sup>ARG</sup>", are stripped), and the bonus text, which is
+ * everything between this `<strong>` and the next one (or the end of its
+ * parent) — the wiki sometimes packs many "Race: bonus" pairs into a single
+ * shared `<p>`, separated only by `<br>` tags, rather than one per element.
+ */
+function entryFromStrongLabel(
+  $: cheerio.CheerioAPI,
+  strongEl: RawNode,
+): FavoredClassBonus | null {
+  const raceClone = $(strongEl as never).clone();
+  raceClone.find("sup").remove();
+  const label = clean(raceClone.text());
+  if (!label.endsWith(":")) return null;
+  const race = label.slice(0, -1).trim();
+  if (!race) return null;
+
+  let bonus = "";
+  let node: RawNode | null | undefined = strongEl.nextSibling;
+  while (node) {
+    const tag = node.tagName?.toLowerCase();
+    if (node.type === "tag" && tag === "strong") break;
+    if (node.type === "text") bonus += node.data ?? "";
+    else if (!(node.type === "tag" && tag === "br")) bonus += $(node as never).text();
+    node = node.nextSibling;
+  }
+  bonus = clean(bonus).replace(/^:\s*/, "").trim();
+  return bonus ? { race: clean(race), bonus: bonus.slice(0, 500) } : null;
+}
+
+/**
+ * The first "Favored Class Bonuses" h1 region. The wiki always marks a race
+ * label as `<strong>Race:</strong>`, but its cardinality per paragraph
+ * varies — most classes give each race its own `<p>`/`<li>`, some (e.g.
+ * Mountebank, Dragoon) pack the entire race list into one or two shared
+ * `<p>` elements separated by `<br>` — so entries are read off every
+ * `<strong>` tag in the section directly rather than off paragraph/list-item
+ * boundaries. A handful of Guile classes instead use no bold labels at all:
+ * a `<p>` announcing "<Race> can choose from the following:" followed by
+ * unlabeled `<li>` items until the next announcement.
+ */
+function parseFavoredClassBonuses(
+  $: cheerio.CheerioAPI,
+  content: CheerioSet,
+): FavoredClassBonus[] {
+  const out: FavoredClassBonus[] = [];
+  let inSection = false;
+  let done = false;
+  let raceContext: string | null = null;
+  content.find("h1, p, li, strong").each((_i, el) => {
+    const tag = (el as { tagName?: string }).tagName?.toLowerCase() ?? "";
+    if (tag === "h1") {
+      const raw = clean($(el).text());
+      if (inSection) {
+        inSection = false;
+        done = true;
+      } else if (!done && /^favou?red class bonus(es)?$/i.test(raw)) {
+        inSection = true;
+        raceContext = null;
+      }
+      return;
+    }
+    if (!inSection) return;
+
+    if (tag === "strong") {
+      const entry = entryFromStrongLabel($, el as unknown as RawNode);
+      if (entry) out.push(entry);
+      return;
+    }
+
+    // Only reachable for text with no bold race label at all — the
+    // "announcement + unlabeled li" convention.
+    if ($(el).find("strong").length > 0) return;
+    const raw = clean($(el).text());
+    if (!raw) return;
+    if (tag === "p") {
+      const announced = raceFromAnnouncement(raw);
+      if (announced) raceContext = announced;
+      return;
+    }
+    if (tag === "li" && raceContext) {
+      out.push({ race: raceContext, bonus: raw.slice(0, 500) });
+    }
+  });
+  return out;
+}
+
 function parseClass(html: string, meta: ClassMeta): ClassData {
   const $ = cheerio.load(html);
   const content = $("#page-content");
@@ -287,6 +465,8 @@ function parseClass(html: string, meta: ClassMeta): ClassData {
     advancement: [],
     talentColumns: [],
     features: [],
+    archetypes: [],
+    favoredClassBonuses: [],
     abilityScoreIncreases: [4, 8, 12, 16, 20],
     choicesByLevel: [],
     notes: [],
@@ -489,6 +669,9 @@ function parseClass(html: string, meta: ClassMeta): ClassData {
   });
   flush();
 
+  data.archetypes = parseArchetypes($, content);
+  data.favoredClassBonuses = parseFavoredClassBonuses($, content);
+
   if (!seenFeatures)
     data.notes.push("no 'Class Features/Abilities' heading found");
   if (data.advancement.length === 0)
@@ -567,6 +750,8 @@ async function writeToDb(classes: ClassData[]) {
         advancement: c.advancement,
         choicesByLevel: c.choicesByLevel,
         abilityScoreIncreases: c.abilityScoreIncreases,
+        archetypes: c.archetypes,
+        favoredClassBonuses: c.favoredClassBonuses,
       });
       const gameClass = await prisma.gameClass.upsert({
         where: {
@@ -652,7 +837,9 @@ async function main() {
     console.log(
       `  ${meta.name.padEnd(18)} HD ${data.hitDie ?? "?"}  ${lvls} levels  ${
         data.features.length
-      } features  ${data.choicesByLevel.length} levels-with-choices${flag}`,
+      } features  ${data.archetypes.length} archetypes  ${
+        data.favoredClassBonuses.length
+      } FCBs${flag}`,
     );
   }
 

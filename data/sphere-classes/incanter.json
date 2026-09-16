@@ -452,6 +452,102 @@
       "description": "At 1st level, the incanter may choose a series of specializations, gaining additional abilities at the cost of some versatility. Every specialization costs a number of the incanter's bonus feats, as indicated by the chart below. Each specialization costs either 1, 2, or 3 specialization points. The incanter cannot have more than 5 points worth of specializations.\n\nHe uses his incanter level as their effective cleric, sorcerer, or wizard level when determining the power of these abilities.\n\nMost specializations come into effect beginning at 1st level. However, if the incanter possesses multiple specializations, he may only gain the benefits of one at 1st level, plus another at every odd level after 1st. Two specializations that both only cost 1 specialization point count as a single specialization for this purpose.\n\n• Admixture Adept (2 specialization points)\n\nThe incanter gains the Admixture talent as a bonus magic talent. He also gains an admixture pool as an admixture savant (see elementalist archetypes in chapter 4) of half his incanter level (minimum 1). These levels stack with admixture savant levels for determining the size of his admixture pool.\n\n• Channel Energy (2 specialization points)\n\nThe incanter may channel energy as the cleric class feature a total number of times per day equal to 3 + his casting ability modifier, using his casting ability modifier in place of Charisma when determining its associated saving throw. He must choose whether to channel positive or negative energy when he gains this ability. Once this choice is made, it cannot be changed.\n\n• Cleric Domains (1 specialization point)\n\nThe incanter gains the powers and abilities associated with one cleric domain of his choice, using his incanter level as his cleric level. This stacks with levels from other classes that grant domains, but only if the domains chosen by both classes are the same. This does not grant domain spells. He uses his casting ability modifier in place of Wisdom when determining the power of his domains, and he may choose subdomains. He may take this specialization multiple times. Each time it is taken, he gains another domain.\n\n• Familiar (1-2 specialization points)\n\nT"
     }
   ],
+  "archetypes": [
+    {
+      "name": "Archmage",
+      "summary": "Trained in all magic, true Archmagi are capable of diverting their studies to quickly master all variants of magical knowledge."
+    },
+    {
+      "name": "Frostweaver",
+      "summary": "Frostweavers have incredible control over ice."
+    },
+    {
+      "name": "Reincarnated Master",
+      "summary": "The reincarnated master is exceptionally resistant to the grasp of death."
+    },
+    {
+      "name": "DRS Incanter Class Features [DRS]",
+      "summary": "This page contains new or alternative class features for incanter published by DRS."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Aasimar",
+      "bonus": "Gain a +1/2 bonus to all Spellcraft checks."
+    },
+    {
+      "race": "Alraun",
+      "bonus": "Gain 1/6th of a Mind sphere talent."
+    },
+    {
+      "race": "Cecaelia",
+      "bonus": "+1/5 of a (water) talent from the Nature sphere."
+    },
+    {
+      "race": "Cherufe",
+      "bonus": "Gain 1/6th of a Nature sphere talent from the (fire) package."
+    },
+    {
+      "race": "Created",
+      "bonus": "+1/2 racial bonus on Craft checks made when casting Creation sphere effects."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "+1/6 of an item crafting feat."
+    },
+    {
+      "race": "Elf",
+      "bonus": "+1/6 of a metamagic feat."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "+1/6 bonus to the DCs associated with one sphere of the incanter's choice."
+    },
+    {
+      "race": "Goblin",
+      "bonus": "Gain a +1/5 bonus to the incanter's caster level with one sphere, but gain a cumulative 1% chance of wild magic happening when using an effect from that sphere. This stacks with the Wild Magic casting drawback."
+    },
+    {
+      "race": "Half-elf",
+      "bonus": "Gain +1/6 of a new bonus magic talent."
+    },
+    {
+      "race": "Half-orc",
+      "bonus": "Gain a +1/5 bonus to your effective class level when determining the strength and save DCs of a sorcerer bloodline."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "Choose any incanter ability with a number of uses per day equal to 3 + the incanter's casting ability modifier. The incanter may use this ability an additional 1/2 times per day."
+    },
+    {
+      "race": "Human",
+      "bonus": "Gain +1/6 of a bonus magic talent."
+    },
+    {
+      "race": "Leshy",
+      "bonus": "Gain 1/6th of a Nature sphere talent from the (plant) package."
+    },
+    {
+      "race": "Merfolk",
+      "bonus": "Choose a sphere. Whenever the incanter creates an effect from that sphere, the effect endures for 1/2 a round after the duration expires, or the incanter stops concentrating."
+    },
+    {
+      "race": "Orc",
+      "bonus": "Choose one sphere specialization ability or domain ability that can be used a number of times per day equal to 3 + the incanter's casting ability modifier. The incanter may use that ability an additional +1/2 times per day."
+    },
+    {
+      "race": "Sidhier",
+      "bonus": "Gain +1/6 Fallen Fey sphere save DC."
+    },
+    {
+      "race": "Skinwalker",
+      "bonus": "Gain +1/6 Alteration sphere save DC."
+    },
+    {
+      "race": "Tiefling",
+      "bonus": "Gain a +1/2 bonus to all concentration checks."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

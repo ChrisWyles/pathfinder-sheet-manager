@@ -1,0 +1,729 @@
+{
+  "slug": "conduit",
+  "name": "Conduit",
+  "group": "operative",
+  "url": "http://spheresofpower.wikidot.com/conduit",
+  "source": "Spheres of Power wiki",
+  "hitDie": null,
+  "alignment": "",
+  "role": "",
+  "classSkills": [],
+  "skillRanksPerLevel": null,
+  "babProgression": "FULL",
+  "saveProgressions": {
+    "fort": "GOOD",
+    "ref": "POOR",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+1",
+      "fortSave": "+2",
+      "refSave": "+0",
+      "willSave": "+2",
+      "special": [
+        "Evoke dweomer (1/day)",
+        "font-bound esoterica",
+        "internal font",
+        "skill expertise",
+        "thaumic charge (one item)",
+        "quasi-caster",
+        "wondercrafter"
+      ],
+      "columns": {
+        "Any": "0",
+        "Utility": "1"
+      },
+      "choices": [
+        "skill expertise",
+        "wondercrafter"
+      ]
+    },
+    {
+      "level": 2,
+      "bab": "+2",
+      "fortSave": "+3",
+      "refSave": "+0",
+      "willSave": "+3",
+      "special": [
+        "Conduit wonder",
+        "exhaust dweomer",
+        "magical magnetism +1"
+      ],
+      "columns": {
+        "Any": "1",
+        "Utility": "1"
+      },
+      "choices": []
+    },
+    {
+      "level": 3,
+      "bab": "+3",
+      "fortSave": "+3",
+      "refSave": "+1",
+      "willSave": "+3",
+      "special": [
+        "Arcane shatter +2d8",
+        "magical expertise",
+        "spell sight",
+        "unravel arcana"
+      ],
+      "columns": {
+        "Any": "1",
+        "Utility": "2"
+      },
+      "choices": [
+        "unravel arcana"
+      ]
+    },
+    {
+      "level": 4,
+      "bab": "+4",
+      "fortSave": "+4",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Conduit wonder",
+        "wondercrafter"
+      ],
+      "columns": {
+        "Any": "2",
+        "Utility": "2"
+      },
+      "choices": [
+        "wondercrafter",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+5",
+      "fortSave": "+4",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Arcane ward",
+        "evoke dweomer (2/day)",
+        "mana recycling"
+      ],
+      "columns": {
+        "Any": "2",
+        "Utility": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 6,
+      "bab": "+6/+1",
+      "fortSave": "+5",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Arcane shatter +3d8",
+        "conduit wonder",
+        "manifold evocation",
+        "magical magnetism +2"
+      ],
+      "columns": {
+        "Any": "3",
+        "Utility": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 7,
+      "bab": "+7/+2",
+      "fortSave": "+5",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Effortless hack",
+        "font ability (unravel arcana)"
+      ],
+      "columns": {
+        "Any": "3",
+        "Utility": "4"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+8/+3",
+      "fortSave": "+6",
+      "refSave": "+2",
+      "willSave": "+6",
+      "special": [
+        "Spell sight",
+        "conduit wonder"
+      ],
+      "columns": {
+        "Any": "4",
+        "Utility": "4"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+9/+4",
+      "fortSave": "+6",
+      "refSave": "+2",
+      "willSave": "+6",
+      "special": [
+        "Arcane shatter +4d8",
+        "evoke dweomer (3/day)",
+        "wondercrafter"
+      ],
+      "columns": {
+        "Any": "4",
+        "Utility": "5"
+      },
+      "choices": [
+        "wondercrafter"
+      ]
+    },
+    {
+      "level": 10,
+      "bab": "+10/+5",
+      "fortSave": "+7",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Conduit wonder",
+        "evolve dweomer",
+        "font ability (evolve dweomer)",
+        "magical magnetism +3"
+      ],
+      "columns": {
+        "Any": "5",
+        "Utility": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 11,
+      "bab": "+11/+6/+1",
+      "fortSave": "+7",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Arcane shatter (improved)",
+        "arcane ward (improved)",
+        "metamagic marvel"
+      ],
+      "columns": {
+        "Any": "5",
+        "Utility": "6"
+      },
+      "choices": [
+        "metamagic marvel"
+      ]
+    },
+    {
+      "level": 12,
+      "bab": "+12/+7/+2",
+      "fortSave": "+8",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Arcane shatter +5d8",
+        "conduit wonder"
+      ],
+      "columns": {
+        "Any": "6",
+        "Utility": "6"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+13/+8/+3",
+      "fortSave": "+8",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Evoke dweomer (4/day)"
+      ],
+      "columns": {
+        "Any": "6",
+        "Utility": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+14/+9/+4",
+      "fortSave": "+9",
+      "refSave": "+4",
+      "willSave": "+9",
+      "special": [
+        "Conduit wonder",
+        "magical magnetism +4",
+        "wondercrafter"
+      ],
+      "columns": {
+        "Any": "7",
+        "Utility": "7"
+      },
+      "choices": [
+        "wondercrafter"
+      ]
+    },
+    {
+      "level": 15,
+      "bab": "+15/+10/+5",
+      "fortSave": "+9",
+      "refSave": "+5",
+      "willSave": "+9",
+      "special": [
+        "Arcane shatter +6d8",
+        "thaumic charge (two items)"
+      ],
+      "columns": {
+        "Any": "7",
+        "Utility": "8"
+      },
+      "choices": []
+    },
+    {
+      "level": 16,
+      "bab": "+16/+11/+6/+1",
+      "fortSave": "+10",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Conduit wonder",
+        "quick evocation"
+      ],
+      "columns": {
+        "Any": "8",
+        "Utility": "8"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+17/+12/+7/+2",
+      "fortSave": "+10",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Evoke dweomer (5/day)",
+        "font ability (protoarcanum)",
+        "universal font"
+      ],
+      "columns": {
+        "Any": "8",
+        "Utility": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 18,
+      "bab": "+18/+13/+8/+3",
+      "fortSave": "+11",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Arcane shatter +7d8",
+        "conduit wonder",
+        "magical magnetism +5"
+      ],
+      "columns": {
+        "Any": "9",
+        "Utility": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 19,
+      "bab": "+19/+14/+9/+4",
+      "fortSave": "+11",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Wondercrafter"
+      ],
+      "columns": {
+        "Any": "9",
+        "Utility": "10"
+      },
+      "choices": [
+        "Wondercrafter"
+      ]
+    },
+    {
+      "level": 20,
+      "bab": "+20/+15/+10/+5",
+      "fortSave": "+12",
+      "refSave": "+6",
+      "willSave": "+12",
+      "special": [
+        "Apogean font",
+        "conduit wonder",
+        "paragon of quasi-arcana",
+        "thaumic charge (3 items)"
+      ],
+      "columns": {
+        "Any": "10",
+        "Utility": "10"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Any",
+    "Utility"
+  ],
+  "features": [
+    {
+      "name": "Weapon and Armor Proficiencies",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "Conduits are proficient with simple and martial weapons, light armor, medium armor, and shields (except tower shields). If this is the character's first level in any class, they may exchange their proficiencies with martial weapons, medium armor, and shields (except bucklers) to select a martial tradition of their choice."
+    },
+    {
+      "name": "Skill Expertise",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "A conduit may combine skill spheres and talents to perform incredible acts of guile. Conduits are considered Journeyman operatives and choose their Intelligence, Wisdom, or Charisma modifier as their operative ability modifier.\n\nSpecial: If you are using Spheres of Might, the conduit can also choose combat talents in place of their skill talents, using their operative ability modifier as their practitioner modifier. A conduit that chooses to do this is treated as having the blended training class feature."
+    },
+    {
+      "name": "Internal Font",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "The conduit possesses an inner reserve of restricted magic, known as their font. At 1st level, the conduit chooses a single font, granting them a unique esoterica to that font, and granting access to a number of wonders that are unique to that font. Once chosen, a font cannot be changed."
+    },
+    {
+      "name": "Evoke Dweomer",
+      "type": "Sp",
+      "levels": [
+        1,
+        5,
+        9,
+        13,
+        17
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 1st level, the conduit can call upon the magic within an object to evoke certain effects. As a standard action (unless changed due to an applied talent or the sphere effect itself), the conduit can produce an effect from a magical item that they are touching (or an unattended object within their natural reach), known as an esoterica. Some esoterica require a sphere or spell of a certain school to be within the item's construction requirements to be produced, and are listed within its description.\n\nAn esoterica's caster level, magic skill bonus and magic skill defense is equal to the conduit's level and uses the conduit's Constitution modifier as its casting ability modifier. The conduit can only use a specific esoterica once per day, plus an additional time per day for every 4 conduit levels beyond 1st they possess.\n\nIf an esoterica offers the choice of applying talents (or other options) to a base effect, they can only choose a single choice for that specific instance. If the esoterica has a spell point cost (including the talents that augment it), the cost is considered to be automatically fulfilled."
+    },
+    {
+      "name": "Thaumic Charge",
+      "type": "Su",
+      "levels": [
+        1,
+        15,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 1st level, the conduit can spend 1 hour holding an object to instill a thaumic charge within it-this hour must be uninterrupted and requires a great deal of focus to achieve. The conduit can only have a single item instilled with thaumic charge at a time; instilling it within a second item causes the first one to lose its thaumic charge. At 15th and 20th level, the conduit can have an additional item instilled with thaumic charge at one time.\n\nIf the object is magical, while thaumically charged, the item's caster level becomes equal to their conduit level (if higher). Additionally, the item cannot produce a mishap if the conduit does not wish it to (although a forced mishap from another source ignores this protection).\n\nIf the object is non-magical, it becomes magical with a faint universal aura."
+    },
+    {
+      "name": "Wondercrafter",
+      "type": "",
+      "levels": [
+        1,
+        4,
+        9,
+        14,
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 1st level, the conduit gains the Spellhacking sphere as a bonus sphere. The bonus (hack) talent that the conduit chooses as part of gaining the base sphere must be one that targets magical items.\n\nAt 4th level and every 5 levels thereafter, the conduit gains a bonus talent from the Spellhacking sphere."
+    },
+    {
+      "name": "Quasi-Caster",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 1st level, the conduit is treated as if they had the casting class feature and treats their conduit levels as levels in a casting class as well as their magic skill bonus for the purposes of meeting the prerequisites for feats."
+    },
+    {
+      "name": "Conduit Wonders",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "At 2nd level and every 2 levels thereafter, the conduit gains new ways of using their own strange font of magic. Each wonder can only be selected once unless otherwise noted. Wonders marked with an asterisk (*) add additional esoterica that they can produce. Unless otherwise noted, a wonder's saving throw DC is equal to 10 + 1/2 the conduit's level + the conduit's operative modifier."
+    },
+    {
+      "name": "Magical Magnetism",
+      "type": "",
+      "levels": [
+        2,
+        6,
+        10,
+        14,
+        18
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level, the conduit gains a +1 bonus to dispel checks made to hack magical items, as well as to attack and damage rolls against creatures that have an active (hack) talent on a magical item they are attending, or a creature that is under the effects of magical effect (or an instantaneous magical effect within the last round). This bonus increases by 1 for every 4 conduit levels beyond 2nd they possess."
+    },
+    {
+      "name": "Exhaust Dweomer",
+      "type": "",
+      "levels": [
+        2
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level, the conduit can exhaust an equipped magical item from a willing creature within their natural reach to augment the conduit's abilities, causing its magical properties to be suppressed (becoming a nonmagical item) for 3 rounds (or 1 round if it is thaumically charged), after which the item recovers its magical properties.\n\nFor the purposes of this ability, an “equipped magical item” is one that either occupies an item slot, or is a set of armor, implement, shield, or weapon (this excludes ammunition and weapons treated as such, such as acupuncture needles). An artifact, cursed or intelligent item cannot be exhausted, nor can otherwise freestanding and “non-equipment” items (such as a magical trap, etc.).\n\nWhen the conduit produces an esoterica, they can exhaust the magical item to increase its caster level by an amount equal to the conduit's magical magnetism bonus."
+    },
+    {
+      "name": "Unravel Arcana",
+      "type": "Su",
+      "levels": [
+        3
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 3rd level, the conduit learns how to unravel their own arcane meddling, often with great effect. The conduit can dismiss a non-utility (hack) talent they have applied to an attended object, affecting the creature attending it with an effect of the conduit's choice, chosen from below. Unless otherwise specified, the object must be within close range (using their Spellhacking range) of the conduit to unravel arcana. If such an effect has a saving throw, it uses their Spellhacking save DC. When using the unravel arcana ability, the conduit may choose from the following effects:\n\nArcane Shatter: The conduit can unravel arcana as part of successfully hitting a creature with a weapon attack, dealing 1d8 + 1d8 force damage for every 3 conduit levels they possess, as well as causing the hacked object to become suppressed for 1 round (as the Counterspell feat). At 11th level, the conduit can choose to increase the damage to 1d8 + 1d8 per 2 conduit levels they possess, or have it burst out in a 15-foot cone (centered on the target), dealing the force damage to all creatures within the area.\n\nArcane Ward: At 5th level, the conduit can unravel arcana as an immediate action whenever they suffer damage, reducing the damage dealt by an amount of d6s equal to the conduit's arcane shatter damage dice, or twice as much dice if the conduit exhausts a magical item. At 11th level, the conduit can choose to use this effect as a free action usable outside of their turn, or gain DR/- equal to the number of dice rolled as part of using this option (which stacks with similar sources), which lasts until the end of their next turn.\n\nAt 7th level, the conduit gains an additional unravel arcana ability from their font."
+    },
+    {
+      "name": "Magical Expertise",
+      "type": "",
+      "levels": [
+        3
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, the conduit gains a bonus equal to 1/2 their conduit level to Knowledge checks to recall information about artifacts and magical items, and to Spellcraft and Use Magic Device checks.\n\nAdditionally, the conduit can disable magic traps, and may use their Use Magic Device modifier in place of their Disable Device modifier when doing so."
+    },
+    {
+      "name": "Spell Sight",
+      "type": "Sp",
+      "levels": [
+        3,
+        8
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, the conduit can spend a move action and concentrate on a single item or creature within 60 feet to determine if it is magical (as the base Divination sphere divine ability).\n\nAt 8th level, this ability instead becomes constant, granting the conduit an automatic Spellcraft check whenever they come within 60 feet of a new magical source. Additionally, the conduit can detect a lingering aura for up to 1 day per conduit level they possess, regardless of the aura's original strength."
+    },
+    {
+      "name": "Mana Recycling",
+      "type": "",
+      "levels": [
+        5
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 5th level, the conduit can spend an additional daily use of an esoterica to gain the benefits of exhausting the item without actually suppressing it. Additionally, the conduit can spend two daily uses of an esoterica as a free action to regain one daily use of a different esoterica."
+    },
+    {
+      "name": "Manifold Evocation",
+      "type": "",
+      "levels": [
+        6
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 6th level, whenever the conduit produces an esoterica from a thaumically charged item, they can add two of the listed options instead of one. They can also exhaust any magical item to add an additional option."
+    },
+    {
+      "name": "Effortless Hack",
+      "type": "",
+      "levels": [
+        7
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 7th level, the conduit can use the Spellhacking sphere hack magic ability on magical items as a swift action, instead of a standard action."
+    },
+    {
+      "name": "Evolve Dweomer",
+      "type": "",
+      "levels": [
+        10
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 10th level, the conduit's font of inner magic can deeply change a magical item when they thaumically charge it, increasing its power greatly. As long as an object remains thaumically charged by the conduit, it gains increased benefits, depending on the type of object:\n\nBoost Arcana (wondrous item, see text): If the object grants an enhancement bonus to an ability score, the granted bonus increases by 2. If the object grants a deflection or resistance bonus, the bonus increases by 1. If the object is an ioun stone, it grants its resonance benefit (as if placed within a wayfinder). If the object requires a command word, it can be done so as a swift action by exhausting the item.\n\nExploit Fundamentals (spell engine): The spell engine gains 1 temporary spell point for as long as it remains thaumically charged-this temporary spell point is not replenished if the spell engine loses and regains thaumic charge within the same day. Whenever the conduit produces an esoterica while holding a spell engine, they can gain access to the talents and spheres within it by paying any costs associated as part of doing so, allowing them to use said talents with an esoterica (for example, if they possess a spell engine that has the Life sphere with the cure ability, they could use this ability when using the stay the path esoterica to allow them to augment the spell engine's cure with Deeper Healing).\n\nThese benefits are only granted to the conduit and cease functioning as long as such an object is held or otherwise equipped by another creature.\n\nThe conduit also gains an additional evolve dweomer option from their font."
+    },
+    {
+      "name": "Metamagic Marvel",
+      "type": "",
+      "levels": [
+        11
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "At 11th level, whenever the conduit produces an esoterica, they can exhaust the magical item to apply one of the following metamagic feats to the produced effect: Elemental Spell, Empower Spell, Enlarge Spell, Extend Spell, or Widen Spell. A metamagic feat applied to an esoterica does not require spell points to be spent, nor does it increase the casting time of the esoterica."
+    },
+    {
+      "name": "Quick Evocation",
+      "type": "",
+      "levels": [
+        16
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 16th level, the conduit can exhaust a thaumically charged magical item to evoke dweomer as a swift action."
+    },
+    {
+      "name": "Protoarcanum",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "At 17th level, the conduit gains a unique esoterica they can produce, known as a protoarcanum. A protoarcanum is produced as a full-round action, and requires the conduit to spend five daily uses of any esoterica (and any combination of such). After they use a protoarcanum, the conduit cannot use the same one for 1 minute."
+    },
+    {
+      "name": "Universal Font",
+      "type": "",
+      "levels": [
+        17
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 17th level, whenever the conduit would evoke dweomer, they ignore the sphere or spell requirements of an esoterica. If the conduit produces an esoterica that meets its normal requirements, it gains a +3 competence bonus to its caster level."
+    },
+    {
+      "name": "Paragon of Quasi-Arcana",
+      "type": "",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level, the conduit automatically succeeds at any Use Magic Device checks involving their thaumically charged objects. Additionally, the conduit chooses a single esoterica that they can produce (excluding a protoarcanum); the chosen esoterica can be used any number of times per day, although its ‘daily uses' cannot be spent when using a protoarcanum."
+    }
+  ],
+  "archetypes": [
+    {
+      "name": "Runescriber",
+      "summary": "Runescribers use runes scribed upon their body instead of magical objects to draw magic from."
+    },
+    {
+      "name": "Interdictor",
+      "summary": "Interdictors are less focused on evoking magic from objects, and instead use an object's innate magic against those using them."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Any",
+      "bonus": "Gain 1/6 of a conduit wonder."
+    },
+    {
+      "race": "Any",
+      "bonus": "Gain +1/5 to Spellhacking save DC"
+    },
+    {
+      "race": "Any",
+      "bonus": "+1/3 bonus to arcane shatter damage (and other abilities based on the arcane shatter damage die)"
+    },
+    {
+      "race": "Any",
+      "bonus": "+1/3 to the bonuses to Knowledge and Spellcraft granted by the magical expertise class feature."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 1,
+      "choices": [
+        "skill expertise",
+        "wondercrafter"
+      ]
+    },
+    {
+      "level": 3,
+      "choices": [
+        "unravel arcana"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "wondercrafter",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "choices": [
+        "wondercrafter"
+      ]
+    },
+    {
+      "level": 11,
+      "choices": [
+        "metamagic marvel"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 14,
+      "choices": [
+        "wondercrafter"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 19,
+      "choices": [
+        "Wondercrafter"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

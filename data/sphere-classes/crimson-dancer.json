@@ -560,6 +560,57 @@
       "description": "At 14th level, when struck by an ability or attack that measures its damage in dice, the crimson dancer may maximize that damage to gain 2 points of vitae. This causes the damage to bypass any temporary hit points she may have, and the damage cannot be redirected or delayed. If the damage would be less than 1/4 of her maximum hit points, she increases it to that amount instead. This feature may be used to gain vitae multiple times each round."
     }
   ],
+  "archetypes": [],
+  "favoredClassBonuses": [
+    {
+      "race": "Any",
+      "bonus": "Gain 1/6th of a Blood sphere talent."
+    },
+    {
+      "race": "Any",
+      "bonus": "Gain 1/6th of a Duelist sphere talent."
+    },
+    {
+      "race": "Aasimar",
+      "bonus": "Gain 1/8th of a bonus feat. Bonus feats selected must have the Blood or Duelist spheres as a prerequisite."
+    },
+    {
+      "race": "Dhampir",
+      "bonus": "The first time each round the crimson dancer gains vitae, she gains an additional +1/6 points of vitae."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "Add +1/2 additional damage with the Burst feature."
+    },
+    {
+      "race": "Changeling",
+      "bonus": "Increase the DC of the crimson dancer's Hemolytic Art class features by 1/4."
+    },
+    {
+      "race": "Elf",
+      "bonus": "The crimson dancer's bloodletting bleed damage increases by +1/4 points."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "Add 1/4th of a spell point to the crimson dancer's spell pool."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "Gain 1/6th of a Fencing sphere talent."
+    },
+    {
+      "race": "Human",
+      "bonus": "The crimson dancer's base land speed increases by 1ft. (this ability does nothing until selected 5 times)."
+    },
+    {
+      "race": "Orc",
+      "bonus": "Gain 1/8th of a Hemolytic Art."
+    },
+    {
+      "race": "Tiefling",
+      "bonus": "When the crimson dancer applies bloodletting for the first time to a creature, they suffer +1/2 fire damage. A creature can only suffer from this damage once every 24 hours."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

@@ -22,6 +22,11 @@
     "import:foundry": "tsx scripts/import-foundry.ts",
     "scrape:spheres": "tsx scripts/scrape-spheres.ts",
     "scrape:classes": "tsx scripts/scrape-sphere-classes.ts",
+    "scrape:traditions": "tsx scripts/scrape-traditions.ts",
+    "scrape:equipment-talents": "tsx scripts/scrape-equipment-talents.ts",
+    "scrape:sphere-talents": "tsx scripts/scrape-sphere-talents.ts",
+    "seed:skill-descriptions": "tsx scripts/seed-skill-descriptions.ts",
+    "scrape:feats": "tsx scripts/scrape-feats.ts",
     "postinstall": "prisma generate"
   },
   "dependencies": {

@@ -439,6 +439,106 @@
       "description": "Beginning at 10th level, a hedgewitch may select one of the following grand secrets in place of a secret, or any grand secret from the list associated with her path:\n\n• Arcane Builder\n\nThe hedgewitch selects one type of magic item (potions, wondrous items, and so on). She creates items of this type 25% faster than normal and gain a +4 bonus on Spellcraft checks (or other checks, as appropriate) to craft items of this type. She may select this secret multiple times; its effects do not stack. Each time she selects this secret, it applies to another type of magic item.\n\n• Extra Magic Item\n\nThe hedgewitch can magically adjust her personal space in slight ways, allowing her to wear one additional magic item without it interfering with the other ones. She gains an untyped item slot that can hold any item of any slot, such as a second headband, a second pair of gloves, or third ring. This extra magic item can be stolen, sundered, or removed just like any other item.\n\n• Metamagic Master\n\nThe hedgewitch chooses one metamagic feat she possesses. Using this metamagic feat costs 1 fewer spell point to use, to a minimum of 1. She may select this secret multiple times. The effects do not stack. Each time it is selected, she chooses another metamagic feat."
     }
   ],
+  "archetypes": [
+    {
+      "name": "Dendrite",
+      "summary": "An Archetype from Worlds of Power, the Dendrite is a rare class that can use Constitution for its Casting Ability Modifier, and uses the Green Magic and Herbology paths for a very druidic feel."
+    },
+    {
+      "name": "Dragonblooded Mortal",
+      "summary": "Dragonblooded mortals are capable of becoming more and more like dragons over time."
+    },
+    {
+      "name": "Entropic Sage",
+      "summary": "Entropic sages specialize in using the Destruction sphere to annihilate their foes."
+    },
+    {
+      "name": "Guileful Hedgewitch [CS]",
+      "summary": "Guileful hedgewitches are more capable with mundane techniques than their peers."
+    },
+    {
+      "name": "Iron Mage",
+      "summary": "Iron Mages are commanders who can use the War sphere and have many strategies to support their allies with."
+    },
+    {
+      "name": "Martial Hedgewitch [CS]",
+      "summary": "The Martial Hedgewitch is more capable at combat than most of their peers."
+    },
+    {
+      "name": "Triple Goddess",
+      "summary": "Triple Goddesses are the masters of Life, Death, and Fate."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Aasimar",
+      "bonus": "Gain a +1/2 bonus to all Use Magic Device checks."
+    },
+    {
+      "race": "Alraun",
+      "bonus": "+1/5 of a secret from the charlatanism path. You must possess the charlatanism path or the amateur hedgewitch secret to benefit from this option."
+    },
+    {
+      "race": "Cecaelia",
+      "bonus": "+1/4 CL with the (water) package of the Nature sphere. This stacks normally with caster levels gained from other sources."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "+1/4 bonus to Fortitude saves."
+    },
+    {
+      "race": "Elf",
+      "bonus": "+1/2 to two Knowledge skills of the hedgewitch's choice."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "+1/2 bonus to any skill of the hedgewitch's choice."
+    },
+    {
+      "race": "Goblin",
+      "bonus": "Gain a +1/4 bonus to Reflex saves."
+    },
+    {
+      "race": "Half-elf",
+      "bonus": "+1/6 bonus to all class skills gained through paths."
+    },
+    {
+      "race": "Half-orc",
+      "bonus": "Gain +1/4 of a use per day of one of your path powers."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "Gain +1/6 of a new hedgewitch secret."
+    },
+    {
+      "race": "Human",
+      "bonus": "Gain +1/6 of a bonus magic talent."
+    },
+    {
+      "race": "Kobold",
+      "bonus": "+1/5 of a secret from the charlatanism path. You must possess the charlatanism path or the amateur hedgewitch secret to benefit from this option."
+    },
+    {
+      "race": "Leshy",
+      "bonus": "+1/5 of a secret from the herbology path. You must possess the herbology path or the amateur hedgewitch secret to benefit from this option."
+    },
+    {
+      "race": "Merfolk",
+      "bonus": "Gain a +1/2 bonus to Diplomacy and Bluff checks made to ask favors or to convince a creature of the truthfulness of your words."
+    },
+    {
+      "race": "Orc",
+      "bonus": "Choose a path power usable 3 + 1/2 the hedgewitch's level times per day. The hedgewitch may use this power an additional 1/2 times per day."
+    },
+    {
+      "race": "Skinwalker",
+      "bonus": "+1/5 of a secret from the green magic path. You must possess the green magic path or the amateur hedgewitch secret to benefit from this option."
+    },
+    {
+      "race": "Tiefling",
+      "bonus": "Choose a path power usable a number of times per day equal to 3 + 1/2 the hedgewitch's level. The hedgewitch may use this power an additional 1/2 times per day."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

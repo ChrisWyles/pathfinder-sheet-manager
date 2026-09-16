@@ -1,0 +1,726 @@
+{
+  "slug": "envoy",
+  "name": "Envoy",
+  "group": "operative",
+  "url": "http://spheresofpower.wikidot.com/envoy",
+  "source": "Spheres of Power wiki",
+  "hitDie": 6,
+  "alignment": "Any",
+  "role": "Envoys thrive the most in social situations",
+  "classSkills": [],
+  "skillRanksPerLevel": 6,
+  "babProgression": "HALF",
+  "saveProgressions": {
+    "fort": "POOR",
+    "ref": "POOR",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+0",
+      "fortSave": "+0",
+      "refSave": "+0",
+      "willSave": "+2",
+      "special": [
+        "Dispiriting words (-2)",
+        "exhausting words",
+        "forte",
+        "incredible confidence",
+        "influence",
+        "skill expertise",
+        "weakening words 1d10"
+      ],
+      "columns": {
+        "AC Bonus": "+0",
+        "Any": "1",
+        "Utility": "0"
+      },
+      "choices": [
+        "skill expertise"
+      ]
+    },
+    {
+      "level": 2,
+      "bab": "+1",
+      "fortSave": "+0",
+      "refSave": "+0",
+      "willSave": "+3",
+      "special": [
+        "Flair",
+        "wordless disparagement"
+      ],
+      "columns": {
+        "AC Bonus": "+0",
+        "Any": "2",
+        "Utility": "1"
+      },
+      "choices": []
+    },
+    {
+      "level": 3,
+      "bab": "+1",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+3",
+      "special": [
+        "Confident presence",
+        "powerful personality +1"
+      ],
+      "columns": {
+        "AC Bonus": "+0",
+        "Any": "3",
+        "Utility": "1"
+      },
+      "choices": []
+    },
+    {
+      "level": 4,
+      "bab": "+2",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Forte ability",
+        "harsh words"
+      ],
+      "columns": {
+        "AC Bonus": "+1",
+        "Any": "3",
+        "Utility": "2"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+2",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Dispiriting words (-3)",
+        "flair",
+        "rapid persuasion",
+        "weakening words 2d10"
+      ],
+      "columns": {
+        "AC Bonus": "+1",
+        "Any": "4",
+        "Utility": "2"
+      },
+      "choices": []
+    },
+    {
+      "level": 6,
+      "bab": "+3",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Forte ability"
+      ],
+      "columns": {
+        "AC Bonus": "+1",
+        "Any": "5",
+        "Utility": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 7,
+      "bab": "+3",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Critical words",
+        "flair"
+      ],
+      "columns": {
+        "AC Bonus": "+1",
+        "Any": "6",
+        "Utility": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+4",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+6",
+      "special": [
+        "Powerful personality +2",
+        "unyielding voice"
+      ],
+      "columns": {
+        "AC Bonus": "+2",
+        "Any": "6",
+        "Utility": "4"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+4",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+6",
+      "special": [
+        "Flair",
+        "personable presence"
+      ],
+      "columns": {
+        "AC Bonus": "+2",
+        "Any": "7",
+        "Utility": "4"
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+5",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Dispiriting words (-4)",
+        "forte ability",
+        "weakening words 3d10"
+      ],
+      "columns": {
+        "AC Bonus": "+2",
+        "Any": "8",
+        "Utility": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 11,
+      "bab": "+5",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Complex phrase",
+        "flair"
+      ],
+      "columns": {
+        "AC Bonus": "+2",
+        "Any": "9",
+        "Utility": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 12,
+      "bab": "+6/+1",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Boundless words",
+        "calming presence"
+      ],
+      "columns": {
+        "AC Bonus": "+3",
+        "Any": "9",
+        "Utility": "6"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+6/+1",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Flair",
+        "powerful personality +3"
+      ],
+      "columns": {
+        "AC Bonus": "+3",
+        "Any": "10",
+        "Utility": "6"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+7/+2",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+9",
+      "special": [
+        "Forte ability",
+        "wavering words"
+      ],
+      "columns": {
+        "AC Bonus": "+3",
+        "Any": "11",
+        "Utility": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 15,
+      "bab": "+7/+2",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+9",
+      "special": [
+        "Dispiriting words (-5)",
+        "flair",
+        "mercurial influence",
+        "weakening words 4d10"
+      ],
+      "columns": {
+        "AC Bonus": "+3",
+        "Any": "12",
+        "Utility": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 16,
+      "bab": "+8/+3",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Stabilizing presence"
+      ],
+      "columns": {
+        "AC Bonus": "+4",
+        "Any": "12",
+        "Utility": "8"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+8/+3",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Crushing words",
+        "flair"
+      ],
+      "columns": {
+        "AC Bonus": "+4",
+        "Any": "13",
+        "Utility": "8"
+      },
+      "choices": []
+    },
+    {
+      "level": 18,
+      "bab": "+9/+4",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Powerful personality +4",
+        "forte ability"
+      ],
+      "columns": {
+        "AC Bonus": "+4",
+        "Any": "14",
+        "Utility": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 19,
+      "bab": "+9/+4",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Flair"
+      ],
+      "columns": {
+        "AC Bonus": "+4",
+        "Any": "15",
+        "Utility": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+10/+5",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+12",
+      "special": [
+        "Dispiriting words (-6)",
+        "epic socialite",
+        "phenomenal charisma",
+        "weakening words 5d10"
+      ],
+      "columns": {
+        "AC Bonus": "+5",
+        "Any": "15",
+        "Utility": "10"
+      },
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "AC Bonus",
+    "Any",
+    "Utility"
+  ],
+  "features": [
+    {
+      "name": "Weapon and Armor Proficiencies",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": false,
+      "description": "Envoys are proficient with simple weapons. They are not proficient with armor or shields except for bucklers."
+    },
+    {
+      "name": "Skill Expertise",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": true,
+      "description": "An envoy may combine skill spheres and talents to perform incredible acts of guile. Whenever the envoy gains a skill talent, they must choose a skill sphere to spend it on. The first time a character spends a skill talent on a sphere, they gain that sphere's base abilities instead of gaining a talent within the sphere.\n\nAfter a character possesses a base sphere, spending an additional skill talent on that sphere gains them one of that sphere's talents. Envoys are considered Virtuoso operatives and choose their Intelligence, Wisdom, or Charisma modifier as their operative ability modifier. The Virtuoso skill talent progression is reprinted in the Envoy table for ease of reference. (Talents under Any can be any skill talent that the envoy qualifies for, while talents listed under Utility must have the [utility] tag.)"
+    },
+    {
+      "name": "Dispiriting Words",
+      "type": "Ex",
+      "levels": [
+        1,
+        5,
+        10,
+        15,
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "An envoy's words can cut surprisingly deep wounds. As a swift action, the envoy chooses a creature that can hear and understand him within close range (25 feet + 5 feet per 2 envoy levels), making them dispirited for 1 minute.\n\nThe envoy can only have a single instance of dispiriting words applied to a target at one time, overriding any other non-instantaneous phrases he previously applied. Instantaneous phrases do not override previously applied instances of dispiriting words.\n\nWhile dispirited, the target suffers a -2 penalty to ability checks and skill checks attempted using a single ability score of the envoy's choice, in addition to the DC required to affect them with skills of the chosen ability score. This penalty increases by 1 per 5 envoy levels he possesses. This is a language-dependent, mind-affecting emotion effect, and is generally considered a non-hostile action unless otherwise stated. Additionally, the envoy can instead use this ability as a standard action, adding a single [phrase] ability to it. If a [phrase] requires a saving throw, the DC is equal to 10 + 1/2 his envoy level + his Charisma modifier.\n\nThe envoy gains the following [phrase] abilities; he can only choose a [phrase] if he meets its prerequisites:\n\nExhausting Words: The dispirited penalty also applies to the creature's attack and damage rolls. The dispirited creature can attempt a Will save at the end of each of their turns to reduce the penalties associated with being dispirited by 1; removing the dispirited status if the penalty is reduced to 0.\n\nWeakening Words: The dispirited creature suffers an amount of nonlethal damage equal to 1d10 + his Charisma modifier (Will halves); increasing by 1d10 per 5 envoy levels he possesses. Additionally, if the creature's nonlethal damage equals or exceeds half their current hit point total, they become fatigued. This phrase is considered a hostile action. If the envoy has influence (see below) over the creature, this nonlethal damage changes to 2d10 + his Charisma modifier, plus 1d10 per 3 envoy levels he possesses.\n\nHarsh Words (requires 4th level): Whenever the creature fails a roll penalized by dispirited words, they must succeed at a Wil"
+    },
+    {
+      "name": "Forte",
+      "type": "",
+      "levels": [
+        1,
+        4,
+        6,
+        10,
+        14,
+        18
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Adept at persuasion and discussion, envoys generally have a specialty in a certain aspect of conversation or personability. At 1st level, the envoy chooses a single forte, gaining the sphere associated with his forte and a talent from that sphere as bonus skill talents. The envoy also gains a forte ability at 1st level, plus an additional ability from his chosen forte at 4th level, 6th level and every four levels thereafter. If a forte ability would call for a saving throw, it is equal to the forte sphere's DC.\n\nAdditionally, the envoy can use his operative ability modifier instead of the ability score modifier associated with his forte sphere's associated skill when attempting such checks.\n\nNote: If an envoy takes a forte that has a combat sphere as its forte sphere, he can spend his skill talents to gain talents from that sphere, and uses his operative modifier as his practitioner modifier when determining its effects. This is treated as gaining a combat talent progression for the purposes of being able to maintain martial focus, but does not grant the envoy the ability to gain a martial tradition. [Utility] talents cannot be used to gain combat talents unless they have the [utility] tag (which can be introduced using the variant rule).\n\nFor an envoy to take a forte that has a magic sphere as its forte sphere, he must first possess a spell pool and caster level, such as from an archetype or the Basic Magic Training feat. An envoy that takes such a forte can spend his skill talents to gain magic talents from that sphere.\n\nIf an envoy ability would require an associated skill check, you can choose to either make a Spellcraft check, or a Diplomacy check using your caster level in place of your Diplomacy ranks (if higher). With GM discretion, you can choose another skill instead of Diplomacy if it is more apt (such as using Bluff with the Allure forte)."
+    },
+    {
+      "name": "Incredible Confidence",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "When wearing no armor, not carrying a shield, and unencumbered, the envoy adds his Charisma modifier (if any) to his AC and CMD. These bonuses increase by +1 for every 4 envoy levels possessed. This AC bonus does not stack with similar class features or other ways to add an additional ability score to the envoy's AC; if he has more than one such ability, he uses the highest extra ability score modifier.\n\nThis bonus to AC applies even against touch attacks or when the envoy is flat-footed. He loses these bonuses when he is immobilized or helpless, when he wears any armor, uses a shield, or when he carries a medium or heavy load."
+    },
+    {
+      "name": "Influence",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "The envoy can be a formidable force of personality, gaining leverage over people through careful conversation.\n\nThe envoy can spend 1 hour (or 10 minutes by spending 1 use of skill leverage) in conversation with a single creature to gain influence over them for 3 days. The time taken to gain influence over a creature is not interrupted by simple breaks in conversation, but any major disturbances or breaks (such as combat) may delay or halt such attempts.\n\nIf the creature is unfriendly or hostile towards the envoy, he can outwit them as a standard action (that provokes attacks of opportunity) by using his forte sphere's associated skill, gaining influence over them for 1 minute on a success. The DC of the check is equal to 15 + the creature's ranks in Sense Motive + their Wisdom modifier, or 15 + the creature's Will save modifier (whichever is higher). Creatures that the envoy has influenced this way are no longer influenced if the envoy becomes dumbfounded or shocked.\n\nThe envoy can spend influence in the following ways:\n\nDeep Discouragement: If the envoy has influence over a creature, he may choose two ability scores instead of one when using his dispiriting words ability on them. Alternatively, he can expend his influence over a creature to affect all ability scores.\n\nGossip: The envoy can spend 1 minute and expend his influence over a creature to have them reveal a secret they know of - either accidentally or purposefully - that generally fits the theme of conversation (generally decided when the envoy uses this ability). As a general rule of thumb, the quality of the secret is dependent on the attitude and relationship the envoy has with the creature: an unfriendly creature may cut themselves off midsentence, whereas a helpful creature may provide intricate details.\n\nTrusted Words: As a standard action, the envoy can expend his influence over a creature to immediately alter their attitude towards himself or another creature by one step in either direction for 8 hours. If the envoy invokes a motivation when expending influence in this way, the creature's attitude instead changes by two steps for the duration, or by one step and the attitude adjustment becomes"
+    },
+    {
+      "name": "Flair",
+      "type": "Ex",
+      "levels": [
+        2,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "Starting at 2nd level, the envoy gains one flair, plus an additional flair at 5th level and every 2 levels of envoy thereafter. Unless otherwise noted, an individual flair cannot be selected more than once. If a flair would call for a saving throw, it is equal to 10 + the 1/2 the envoy's class level + his Charisma modifier. The full list of flairs are listed at the end of the class description."
+    },
+    {
+      "name": "Wordless Disparagement",
+      "type": "Ex",
+      "levels": [
+        2
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level, whenever the envoy uses his dispiriting words ability, he can increase the action cost by one step (swift to move, move to standard, standard to full-round, and full-round to 1 round) or outwit the target as a cost to allow him to affect creatures with his dispiriting words ability regardless of language.\n\nIf the target does not share a language with the envoy, any saving throws attempted as part of the ability gains a +4 bonus."
+    },
+    {
+      "name": "Confident Presence",
+      "type": "Ex",
+      "levels": [
+        3
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, an envoy can instill vigor and resolve into those around him, emitting a 30-foot aura of palpable confidence.\n\nThe envoy's confident presence has a pool of temporary hit points equal to 3 x his envoy level, plus his Charisma modifier; this pool replenishes after 8 hours of rest. Allies within this aura can spend temporary hit points from this pool as if it were their own whenever they suffer damage.\n\nThis ability only functions while the envoy is conscious, and not if he is dazed, dead, frightened, helpless, panicked, paralyzed, shocked, stunned, or unconscious. An ally cannot draw from the envoy's confident presence pool if they cannot benefit from morale bonuses.\n\nSome abilities allow the envoy to regain temporary hit points within his confident presence; unless otherwise specified, these abilities can only be applied once per round, and any creature involved in the trigger of the ability must have a CR of at least his character level - 3.\n\nWhenever the envoy or an ally he can perceive regains a use of skill leverage, or he inflicts a disorientation condition or the impressed or fascinated condition, his confident presence regains an amount of temporary hit points equal to 3 + his Charisma modifier. Once the envoy regains temporary hit points this way, he cannot do so again for 1 hour."
+    },
+    {
+      "name": "Powerful Personality",
+      "type": "Ex",
+      "levels": [
+        3,
+        8,
+        13,
+        18
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 3rd level, the envoy gains a +1 competence bonus to the DCs of sphere abilities associated with his forte sphere and envoy class features. This bonus increases by 1 at 8th level and every five levels thereafter."
+    },
+    {
+      "name": "Rapid Persuasion",
+      "type": "Ex",
+      "levels": [
+        5
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 5th level, the envoy further develops his ability to persuade and get to know those around him. The envoy only has to spend 10 minutes talking to a single creature to gain influence over them, or just 1 minute when he spends 1 use of skill leverage.\n\nAdditionally, whenever the envoy attempts to gain influence over a creature by outwitting them, he can increase the DC to do so by 10 to make the attempt as a move action."
+    },
+    {
+      "name": "Unyielding Voice",
+      "type": "Ex",
+      "levels": [
+        8
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 8th level, the envoy becomes immune to effects that would make him unable to speak (such as a silence spell or the throat punch ability of the agent class). This does not allow the envoy to speak while he is underwater (or in a similar environment where he cannot breathe) or unconscious."
+    },
+    {
+      "name": "Personable Presence",
+      "type": "Ex",
+      "levels": [
+        9
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 9th level, an envoy's ability to charm and influence people becomes so strong that any attempts made against him and those around him are near impossible. An envoy is immune to charm effects. All allies within 20 feet gain a +4 morale bonus on saving throws against charm effects. This ability only functions while the envoy is conscious (not if he is unconscious or dead)."
+    },
+    {
+      "name": "Complex Phrase",
+      "type": "",
+      "levels": [
+        11
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 11th level, the envoy may use his dispiriting words ability as a full-round action to apply the effects of two [phrase] abilities instead of one. If both phrases require an initial saving throw, the envoy attempts a single saving throw against the ability; any additional saving throws after the initial use of dispiriting words are made individually."
+    },
+    {
+      "name": "Boundless Words",
+      "type": "Ex",
+      "levels": [
+        12
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 12th level, the envoy gains the ability to speak and understand the language of any intelligent creature, including regional dialects and non-verbal languages.\n\nAdditionally, the envoy's dispiriting words class feature loses the language-dependent descriptor."
+    },
+    {
+      "name": "Calming Presence",
+      "type": "Ex",
+      "levels": [
+        12
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 12th level, the envoy's demeanor is hard to rattle, making it difficult to stir the emotions of him and those around him. The envoy is immune to anger, disorientation, and fear effects. All allies within 20 feet of the envoy gain a +4 morale bonus to saving throws against harmful emotion effects."
+    },
+    {
+      "name": "Mercurial Influence",
+      "type": "Ex",
+      "levels": [
+        15
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 15th level, the envoy becomes almost supernaturally fast at connecting deeply with an individual. The envoy only has to spend 1 minute talking to a single creature to gain influence over them, or just 1 round when he spends 1 use of skill leverage.\n\nAdditionally, whenever the envoy attempts to gain influence over a creature by outwitting them as a move action, he does not need to increase the DC to do so."
+    },
+    {
+      "name": "Stabilizing Presence",
+      "type": "Ex",
+      "levels": [
+        16
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 16th level, the envoy is immune to compulsion effects. All allies within 20 feet gain a +4 morale bonus on saving throws against compulsion effects.\n\nThis ability only functions while the envoy is conscious (not if he is unconscious or dead)."
+    },
+    {
+      "name": "Epic Socialite",
+      "type": "Ex",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level, the envoy's conversational abilities become almost magical. The envoy only needs to spend 1 round speaking with a creature to gain influence over them or a standard action by spending 1 use of skill leverage. The envoy also reduces the action cost when attempting to gain influence over a creature by outwitting them from a move action to a swift action."
+    },
+    {
+      "name": "Phenomenal Charisma",
+      "type": "Ex",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level, the envoy cannot suffer penalties to his Charisma-based skill checks, nor can he suffer from Charisma damage or drain. Finally, the envoy gains the following influence use:\n\n• Dire Request\n\nThe envoy can spend 1 minute speaking with a creature, expending his influence over the creature and invoking a major motivation to make a single request of them (no save). The creature must fulfill the request until it is completed, regardless of how long it takes (if the task is open-ended, it instead remains in effect for 1 day per envoy level he possesses). For every 24 hours that the target fails to obey the request, they suffer 2 permanent negative levels. These negative levels are removed 24 hours after the target obeys the request, and are cumulative (but cannot exceed the creature's maximum Hit Dice - 1). This effect can only be removed with a limited wish, miracle or wish spell. This is a compulsion effect."
+    },
+    {
+      "name": "Envoy Fortes",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "An envoy can choose one of the following fortes at 1st level. It grants a skill sphere and a special ability. The forte grants an additional ability at 4th level, 6th level, and every four levels thereafter. Once chosen, the envoy's forte cannot be changed (without retraining).\n\n• Allure [DRS]\n\nSource: Diamond Spheres: Thaumic Potential\n\nThese envoys are often found to be the ‘queen bee' of a group, acting as a source of inspiration in many forms to those around them.\n\nForte Sphere: Mind\n\n• Entice Flexibility (Ex)\n\nWhenever the envoy uses a Mind sphere charm on a creature he has influence over, the creature treats his requests as being one step more reasonable (requests normally against their nature are treated as something they would not normally do for example). Additionally, the envoy gains a bonus to Bluff and Diplomacy checks against creature's they have influence over equal to 2 + his powerful personality bonus.\n\n• Stirring Influence\n\nAt 4th level, whenever the envoy gains or expends his influence over a non-allied creature, his confident presence regains an amount of temporary hit points equal to 1/2 his envoy level + his Charisma modifier (minimum 2).\n\n• Enchanting Words [phrase]\n\nAt 6th level, whenever the envoy uses dispiriting words, he can also use a Mind sphere lesser charm on the creature as part of the same action, ignoring the daily limit he can target an individual creature with a lesser charm. If the envoy has influence over the creature or outwits the creature as a cost, he can use a greater charm instead, paying any costs associated with it.\n\n• Mental Conditioning\n\nAt 10th level, creatures under the envoy's influence suffer a -2 penalty to saves against mind-affecting effects. The envoy can expend his influence over a creature as part of using a mind-affecting effect on them, forcing them to roll twice and take the lowest result against the saving throw.\n\n• Cognitive Switch\n\nAt 14th level, the envoy can spend a swift action and choose a creature currently affected by one of his charms that he can see, swapping the current (charm) talent applied to the creature with a different (charm) talent he possesses (paying any of its associated costs). "
+    },
+    {
+      "name": "Envoy Flairs",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "Starting at 2nd level, the envoy gains one flair, plus an additional flair at 5th level and every 2 levels of envoy thereafter. Unless otherwise noted, an individual flair cannot be selected more than once.\n\nIf a flair calls for a saving throw, the DC is equal to 10 + the 1/2 the envoy's class level + his Charisma modifier.\n\n• Adaptable Skill Set\n\nThe envoy gains a bonus talent from his forte sphere, which can be changed to another talent from his forte sphere with 8 hours of rest.\n\n• Armored Emissary\n\nThe envoy gains proficiency in light armor and shields (except tower shields). Additionally, the envoy retains his incredible confidence class feature while wearing light armor, except that he may only add his Charisma modifier to his AC, and does not receive any additional bonuses beyond his Charisma modifier as normal for the class feature.\n\nThis flair can be selected a second time, granting the envoy proficiency with medium armor and allowing him to retain his incredible confidence class feature while wearing medium armor (with the same limitations as above).\n\n• Careful Poisoner\n\nThe envoy never risks accidentally poisoning himself when he uses a poison, and may apply a poison to a weapon, trap, or consumable as a move action.\n\n• Enduring Impression\n\nWhenever the envoy successfully uses the Intimidate skill to force a creature to act friendly towards him, the duration of the attitude change increases to 8 hours.\n\nAdditionally, whenever the envoy successfully uses the Intimidate skill to force a creature to act friendly towards him, the target must succeed at a Will save at the end of the intimidation or count as having the same attitude towards him as they initially did, and the target will not report him to the authorities for intimidating them.\n\n• Pure Understanding\n\nThe envoy can use his emotion and mind-affecting abilities on creatures that possess an immunity to such effects, instead treating it as a +5 bonus to the saving throw (or the DC of a skill check).\n\n• Spread Rumor\n\nThe envoy can spend 10 minutes and expend his influence on a creature to spread a rumor about them within a settlement. The envoy must attempt a DC 15 Bluff or Diplomacy check (dependi"
+    }
+  ],
+  "archetypes": [
+    {
+      "name": "Aristarch",
+      "summary": "Aristarchs excel at discouraging those who bother them, using their intellect to shatter the confidence of their foes."
+    },
+    {
+      "name": "Beguiler [CS]",
+      "summary": "Beguilers weave magic and skill together to persuade their targets."
+    },
+    {
+      "name": "Idol",
+      "summary": "Idols are masters of their communities, using wit and charm to gain the support of the masses."
+    },
+    {
+      "name": "Luminary",
+      "summary": "Luminaries are kind, inspiring leaders who always know what to say to help those in need."
+    },
+    {
+      "name": "Officer [CS] [DRS]",
+      "summary": "Officers understand that sometimes, violence is the only way to reach peace."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Any",
+      "bonus": "Gain a +1/3 bonus on Sense Motive checks attempted to determine if a creature is lying."
+    },
+    {
+      "race": "Any",
+      "bonus": "Add +1/5 to the envoy's incredible confidence class ability."
+    },
+    {
+      "race": "Any",
+      "bonus": "Gain 1/6 of a flair."
+    },
+    {
+      "race": "Any",
+      "bonus": "Increase the total number of temporary hit points in the envoy's confident presence by 1 point."
+    },
+    {
+      "race": "Any",
+      "bonus": "Gain a +1/3 bonus on Diplomacy checks attempted to gain influence over a creature or to improve the attitude of a creature."
+    },
+    {
+      "race": "Any",
+      "bonus": "Gain 1/6 of a skill talent from the envoy's forte sphere."
+    },
+    {
+      "race": "Aasimar",
+      "bonus": "Add +1/5 of a use of the aasimar's daylight spell-like ability. After selecting this favored class bonus 10 times, they can use their daylight spell-like ability as a swift action."
+    }
+  ],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 1,
+      "choices": [
+        "skill expertise"
+      ]
+    },
+    {
+      "level": 4,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

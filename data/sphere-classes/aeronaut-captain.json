@@ -123,6 +123,8 @@
       "description": "At 5th level, whenever the aeronaut captain uses his inspire crew ability he may grant 2 perks instead of 1.\n\nIn addition, the aeronaut captain can spend a standard action to rally his crew, granting all allies within 60 feet an additional saving throw against any one spell or effect that is targeting them. This save is made at the original DC. Spells and effects that do not allow saving throws are unaffected by this ability. An ally cannot benefit from this ability more than once per day."
     }
   ],
+  "archetypes": [],
+  "favoredClassBonuses": [],
   "abilityScoreIncreases": [
     4,
     8,

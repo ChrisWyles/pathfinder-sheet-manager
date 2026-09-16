@@ -1,0 +1,484 @@
+{
+  "slug": "genius",
+  "name": "Genius",
+  "group": "operative",
+  "url": "http://spheresofpower.wikidot.com/genius",
+  "source": "Spheres of Power wiki",
+  "hitDie": 8,
+  "alignment": "Any",
+  "role": "",
+  "classSkills": [],
+  "skillRanksPerLevel": 8,
+  "babProgression": "THREE_QUARTER",
+  "saveProgressions": {
+    "fort": "POOR",
+    "ref": "POOR",
+    "will": "GOOD"
+  },
+  "advancement": [
+    {
+      "level": 1,
+      "bab": "+0",
+      "fortSave": "+0",
+      "refSave": "+0",
+      "willSave": "+2",
+      "special": [
+        "Flexible Training",
+        "eureka (+2)",
+        "invocations"
+      ],
+      "columns": {
+        "Any Talents": "0",
+        "Utility Talents": "1"
+      },
+      "choices": []
+    },
+    {
+      "level": 2,
+      "bab": "+1",
+      "fortSave": "+0",
+      "refSave": "+0",
+      "willSave": "+3",
+      "special": [
+        "Skill comfort +1"
+      ],
+      "columns": {
+        "Any Talents": "0",
+        "Utility Talents": "1"
+      },
+      "choices": []
+    },
+    {
+      "level": 3,
+      "bab": "+2",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+3",
+      "special": [
+        "Invocations"
+      ],
+      "columns": {
+        "Any Talents": "0",
+        "Utility Talents": "2"
+      },
+      "choices": []
+    },
+    {
+      "level": 4,
+      "bab": "+3",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Any Talents": "1",
+        "Utility Talents": "2"
+      },
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 5,
+      "bab": "+3",
+      "fortSave": "+1",
+      "refSave": "+1",
+      "willSave": "+4",
+      "special": [
+        "Eureka (+3)"
+      ],
+      "columns": {
+        "Any Talents": "1",
+        "Utility Talents": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 6,
+      "bab": "+4",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Skill comfort +2"
+      ],
+      "columns": {
+        "Any Talents": "1",
+        "Utility Talents": "3"
+      },
+      "choices": []
+    },
+    {
+      "level": 7,
+      "bab": "+5",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+5",
+      "special": [
+        "Invocations"
+      ],
+      "columns": {
+        "Any Talents": "1",
+        "Utility Talents": "4"
+      },
+      "choices": []
+    },
+    {
+      "level": 8,
+      "bab": "+6/+1",
+      "fortSave": "+2",
+      "refSave": "+2",
+      "willSave": "+6",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Any Talents": "2",
+        "Utility Talents": "4"
+      },
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 9,
+      "bab": "+6/+1",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+6",
+      "special": [
+        "Eureka (+4)"
+      ],
+      "columns": {
+        "Any Talents": "2",
+        "Utility Talents": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 10,
+      "bab": "+7/+2",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Skill comfort +3"
+      ],
+      "columns": {
+        "Any Talents": "2",
+        "Utility Talents": "5"
+      },
+      "choices": []
+    },
+    {
+      "level": 11,
+      "bab": "+8/+3",
+      "fortSave": "+3",
+      "refSave": "+3",
+      "willSave": "+7",
+      "special": [
+        "Invocations"
+      ],
+      "columns": {
+        "Any Talents": "2",
+        "Utility Talents": "6"
+      },
+      "choices": []
+    },
+    {
+      "level": 12,
+      "bab": "+9/+4",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Any Talents": "3",
+        "Utility Talents": "6"
+      },
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 13,
+      "bab": "+9/+4",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+8",
+      "special": [
+        "Eureka (+5)"
+      ],
+      "columns": {
+        "Any Talents": "3",
+        "Utility Talents": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 14,
+      "bab": "+10/+5",
+      "fortSave": "+4",
+      "refSave": "+4",
+      "willSave": "+9",
+      "special": [
+        "Skill comfort +4"
+      ],
+      "columns": {
+        "Any Talents": "3",
+        "Utility Talents": "7"
+      },
+      "choices": []
+    },
+    {
+      "level": 15,
+      "bab": "+11/+6/+1",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+9",
+      "special": [
+        "Invocations"
+      ],
+      "columns": {
+        "Any Talents": "3",
+        "Utility Talents": "8"
+      },
+      "choices": []
+    },
+    {
+      "level": 16,
+      "bab": "+12/+7/+2",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Bonus feat"
+      ],
+      "columns": {
+        "Any Talents": "4",
+        "Utility Talents": "8"
+      },
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 17,
+      "bab": "+12/+7/+2",
+      "fortSave": "+5",
+      "refSave": "+5",
+      "willSave": "+10",
+      "special": [
+        "Eureka (+6)"
+      ],
+      "columns": {
+        "Any Talents": "4",
+        "Utility Talents": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 18,
+      "bab": "+13/+8/+3",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Skill comfort +5"
+      ],
+      "columns": {
+        "Any Talents": "4",
+        "Utility Talents": "9"
+      },
+      "choices": []
+    },
+    {
+      "level": 19,
+      "bab": "+14/+9/+4",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+11",
+      "special": [
+        "Invocations"
+      ],
+      "columns": {
+        "Any Talents": "4",
+        "Utility Talents": "10"
+      },
+      "choices": []
+    },
+    {
+      "level": 20,
+      "bab": "+15/+10/+5",
+      "fortSave": "+6",
+      "refSave": "+6",
+      "willSave": "+12",
+      "special": [
+        "Bonus feat",
+        "master invoker"
+      ],
+      "columns": {
+        "Any Talents": "5",
+        "Utility Talents": "10"
+      },
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "talentColumns": [
+    "Any Talents",
+    "Utility Talents"
+  ],
+  "features": [
+    {
+      "name": "Proficiencies",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "The genius is proficient with simple weapons, as well as light armor and bucklers. In addition, if this is the character's first level in any class, the genius may select a martial tradition of their choice."
+    },
+    {
+      "name": "Trade Tradition",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "If this is this character's first level in any class, the genius may select a trade tradition of their choice, and have an adroit trade rank. The genius gains a number of skill ranks at each level equal to 8 + their Intelligence modifier."
+    },
+    {
+      "name": "Flexible Training",
+      "type": "Ex",
+      "levels": [
+        1
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A genius gains combat or skill talents (some of which are required to be [utility] talents) using the trained talent progression. When he gains his first level in the genius archetype, a genius chooses either Charisma, Intelligence or Wisdom as his practitioner modifier and operative modifier. Whenever the genius rests for 8 hours (or the equivalent), he may change any and all non-utility combat and skill talents gained from genius levels, choosing new spheres and new talents.\n\nCombat and skill talents gained as part of levels taken in other classes, as part of a martial or trade tradition, or talents gained from taking the Extra Combat Talent or Extra Skill Talent feat are not eligible to be changed in this fashion."
+    },
+    {
+      "name": "Eureka",
+      "type": "Ex",
+      "levels": [
+        1,
+        5,
+        9,
+        13,
+        17
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 1st level, as part of attempting a skill check, crafting an item (such as an Herbalism sphere concoction or Alchemy sphere formulae), or using an ability whose effects could be altered based on the number of skill ranks the user possesses (such as a Bluster sphere quip or a Warleader Sphere shout), the genius may increase his effective skill ranks in a single skill by 2 for the purpose of the skill check or item.\n\nThis bonus increases by +1 at 5th level, and by an additional +1 for every 4 levels thereafter to a maximum of +6 at 17th level.\n\nEvery time the genius uses eureka, there is a 15% chance the genius will suffer backlash; for the purpose of the skill check, item, or other ability, the genius is considered to have 0 ranks in the chosen skill. In addition, the genius suffers a -1 penalty to attack rolls, saving throws, skill checks, and to their effective ranks in all skills (minimum 0), which lasts until he rests for 8 hours. This penalty is cumulative; every time the genius suffers backlash in a day, these penalties increase by 1."
+    },
+    {
+      "name": "Invocations",
+      "type": "",
+      "levels": [
+        1,
+        3,
+        7,
+        11,
+        15,
+        19
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "A genius may use invocations a number of times per day equal to his practitioner ability modifier + 1/2 his class level, which refreshes when he rests for eight hours. Whenever an invocation calls for a saving throw, the DC is equal to 10 + 1/2 his thaumaturge level + his thaumaturge's practitioner ability modifier. A thaumaturge may only use invocations of his level or lower. Using an invocation is a free action that may be taken even when it is not the thaumaturge's turn, but the thaumaturge cannot use multiple invocations as part of the same saving throw, check, or use of eureka.\n\nA genius' invocations are extraordinary rather than supernatural abilities. Rather than their casting ability modifier, the genius instead uses their practitioner modifier for all effects related to invocations. In addition, several of the genius' invocations are altered or replaced from the normal thaumaturge invocations.\n\n• Skill Mimicry\n\nAt 1st level, when the genius sees a creature attempt a Wisdom or Charisma-based skill check, he may spend an invocation to use that creature's modifier on checks attempted for that skill for a number of minutes equal to his practitioner modifier. This bonus includes ability score, class, feat, trait, and class skill bonuses but not other bonuses, such as circumstance, competence, insight, sacred, nor any bonus granted by a spell or magic item.\n\n• Talent Shift\n\nAt 1st level, the genius may spend an invocation to swap one talent gained from flexible combat training for another talent. Any prerequisites of the talent must still be met. He keeps this talent for a number of rounds equal to his practitioner modifier; afterwards the talent is lost. The original talent is regained after a 10 minute rest.\n\n• Meditation\n\nAt 1st level, the genius may reroll a failed Knowledge check. The genius may only use this ability once for any given Knowledge check.\n\n• Empowered Attack\n\nAt 3rd level, when using eureka to augment a sphere effect, the thaumaturge may use an invocation to grant himself a bonus to attack rolls equal to his eureka bonus for a number of rounds equal to his practitioner ability modifier.\n\n• Empowered Defense\n\nAt 3rd level, when using eureka "
+    },
+    {
+      "name": "Skill Comfort",
+      "type": "Ex",
+      "levels": [
+        2,
+        6,
+        10,
+        14,
+        18
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 2nd level, a genius gains a +1 bonus to all skill checks with which they have unlocked skill leverage. This bonus increases by 1 for every 4 additional genius levels possessed, to a maximum of +5 at 18th level."
+    },
+    {
+      "name": "Bonus Feats",
+      "type": "",
+      "levels": [
+        1
+      ],
+      "levelInferred": true,
+      "isChoice": true,
+      "description": "At 4th level and every 4 levels thereafter, the genius gains a bonus feat. These bonus feats must be combat feats, the Extra Skill Talent feat, or any feat which requires skill talents or specific skill ranks as prerequisites."
+    },
+    {
+      "name": "Master Invoker",
+      "type": "",
+      "levels": [
+        20
+      ],
+      "levelInferred": false,
+      "isChoice": false,
+      "description": "At 20th level, the genius selects two invocations other than rebuke death; he may use these invocations at will without using one of his invocations per day.\n\nU: Part of Ultimate Spheres of Power and does not need to be bought separately from that book"
+    }
+  ],
+  "archetypes": [],
+  "favoredClassBonuses": [],
+  "abilityScoreIncreases": [
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "choicesByLevel": [
+    {
+      "level": 4,
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 8,
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 12,
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 16,
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    },
+    {
+      "level": 20,
+      "choices": [
+        "Bonus feat",
+        "ability score increase (+1, core PF1e)"
+      ]
+    }
+  ],
+  "notes": []
+}

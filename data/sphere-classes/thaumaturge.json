@@ -459,6 +459,158 @@
       "description": "At 20th level, the thaumaturge selects two invocations other than rebuke death; he may use these invocations at will without using one of his invocations per day."
     }
   ],
+  "archetypes": [
+    {
+      "name": "Devourer",
+      "summary": "Devourers can use their forbidden lore immediately after consuming power from enemies, but suffer a greater chance of backlash the rest of the time."
+    },
+    {
+      "name": "Ebonmage [DRS]",
+      "summary": "An ebonmage is talented perfection, warlocks and magi which reach into the darkness of this world to wield for their own. This archetype uses the Polished Dark sphere rework."
+    },
+    {
+      "name": "Eldritch Cultist",
+      "summary": "Eldritch cultists may become confused by their knowledge, but also gain the Divination sphere."
+    },
+    {
+      "name": "Experimentalist",
+      "summary": "Experimentalists can create useful alchemic brews using their forbidden alchemy."
+    },
+    {
+      "name": "Gambler [CS/3PP]",
+      "summary": "The Gambler is a martial combatant with a focus on chance."
+    },
+    {
+      "name": "Genius",
+      "summary": "Geniuses are particularly adept at using skills, along with a small amount of martial ability. Though officially an archetype, it is presented as a class due to the significant number of changes to the entire class."
+    },
+    {
+      "name": "Knight of Willpower",
+      "summary": "Knights of willpower can receive a truly incredible boost to their power, but also have a great chance of backlash."
+    },
+    {
+      "name": "Martial Thaumaturge [CS]",
+      "summary": "Martial thaumaturges can access the combat spheres, although they're not as focused on it as Savants."
+    },
+    {
+      "name": "Pact Master",
+      "summary": "Pact masters can summon a powerful companion to aid them."
+    },
+    {
+      "name": "Pactmage",
+      "summary": "Pactmages form bargains and agreements with powerful creatures or outsiders."
+    },
+    {
+      "name": "Savant",
+      "summary": "The Savant is the martial version of the Thaumaturge. Though officially an archetype, it is presented as a class on its own page because it is different on almost every level."
+    },
+    {
+      "name": "Soulfire Master",
+      "summary": "Soulfire masters can burn their own endurance to cast powerful magics."
+    },
+    {
+      "name": "Unseen Horror",
+      "summary": "Unseen horrors can control invisible, mindless forces."
+    },
+    {
+      "name": "Void Gazer",
+      "summary": "Void gazers can use the Dark sphere to cloud the sight of foes."
+    },
+    {
+      "name": "Wild Mage",
+      "summary": "The Wild Mage realizes that raw magic is difficult to control without risk - so they throw caution to the wind in return for pure power."
+    },
+    {
+      "name": "DRS Thaumaturge Class Features [DRS]",
+      "summary": "This page contains new or alternative class features for thaumaturge published by DRS."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Aasimar",
+      "bonus": "Increase the temporary hit points granted by lingering blessing by +1/2."
+    },
+    {
+      "race": "Alraun",
+      "bonus": "+1/6 to forbidden lore (or similar ability) bonus when using the Mind sphere."
+    },
+    {
+      "race": "Cecaelia",
+      "bonus": "+1/6 to forbidden lore (or similar ability) bonus when using the (water) package of the Nature sphere."
+    },
+    {
+      "race": "Cherufe",
+      "bonus": "+1/8 forbidden lore (or similar ability) bonus when casting sphere effects with the fire descriptor. (Note: All Nature sphere (fire) geomancing abilities have the fire descriptor.)"
+    },
+    {
+      "race": "Created",
+      "bonus": "+1/6 to forbidden lore (or similar ability) bonus when using the Creation sphere."
+    },
+    {
+      "race": "Cuazaj",
+      "bonus": "+1/8 forbidden lore (or similar ability) bonus when casting sphere effects with the electricity descriptor."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "Increase the duration of empowered defense by 1/4 of a round."
+    },
+    {
+      "race": "Elf",
+      "bonus": "+1/6 bonus to the thaumaturge's occult knowledge bonuses."
+    },
+    {
+      "race": "Fenghuang",
+      "bonus": "+1/8 forbidden lore (or similar ability) bonus when using the Weather sphere."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "Reduce the thaumaturge's forbidden lore backlash percent chance by 1/4 of a percent."
+    },
+    {
+      "race": "Goblin",
+      "bonus": "Gain +1/4 of a spell point."
+    },
+    {
+      "race": "Half-elf",
+      "bonus": "Gain +1/6 of a bonus magic talent."
+    },
+    {
+      "race": "Half-orc",
+      "bonus": "Increase the duration of empowered defense by 1/4 of a round."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "Gain +1/4 of a daily use of invocations."
+    },
+    {
+      "race": "Human",
+      "bonus": "Increase the thaumaturge's forbidden lore bonus by +1/8, but increase the backlash percentage chance by 5% for every 8 times this is gained."
+    },
+    {
+      "race": "Leshy",
+      "bonus": "+1/8 forbidden lore (or similar ability) bonus when using the (plantlife) package of the Nature sphere."
+    },
+    {
+      "race": "Merfolk",
+      "bonus": "Increase the save DCs of the thaumaturge's invocations by +1/6."
+    },
+    {
+      "race": "Orc",
+      "bonus": "Whenever the thaumaturge uses the Nature sphere to deal damage (for example, increasing a fire's size or using a tree to pummel a target), increase the damage dealt by +1/2."
+    },
+    {
+      "race": "Sidhier",
+      "bonus": "+1/8 forbidden lore (or similar ability) bonus when using the Fallen Fey sphere."
+    },
+    {
+      "race": "Skinwalker",
+      "bonus": "+1/8 to forbidden lore (or similar ability) bonus when using the Alteration sphere."
+    },
+    {
+      "race": "Tiefling",
+      "bonus": "Increase the duration of the lingering pain invocation by 1/4 of a round."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

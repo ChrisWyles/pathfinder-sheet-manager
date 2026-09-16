@@ -495,6 +495,114 @@
       "description": "At level 20, the fey adept can make one of his illusions permanent. Only one illusion may be made permanent in this way at one time. If another illusion is designated as permanent, the previous permanent illusion ends."
     }
   ],
+  "archetypes": [
+    {
+      "name": "Auteur [CS]",
+      "summary": "Auteurs are especially adept at using illusions to influence others."
+    },
+    {
+      "name": "Dreamtwister",
+      "summary": "Dreamtwisters are especially adept at slipping illusions into the minds of their enemies."
+    },
+    {
+      "name": "Inspired Inventor [CS] [LG]",
+      "summary": "Inspired Inventors use the Tinker sphere to create illusion-inspired machines."
+    },
+    {
+      "name": "Immersed [SM-]",
+      "summary": "Immersed indulge in illusions, trading their truesight for more skilled fabrication."
+    },
+    {
+      "name": "Regisseur [SM-]",
+      "summary": "Forsaking a connection to some quasi-real underpinning of reality, regisseure (singular regisseur) study numerous theatrical techniques to distort perceptions of existence."
+    },
+    {
+      "name": "Seelie Disciple",
+      "summary": "Seelie disciples are musically-inclined and capable of fascinating their targets."
+    },
+    {
+      "name": "Sidhe Invoker",
+      "summary": "Sidhe invokers manipulate the plane of faerie instead of using shadowstuff."
+    },
+    {
+      "name": "Skulk",
+      "summary": "Skulks are experts at using the Dark sphere to manipulate shade and shadows."
+    },
+    {
+      "name": "Solipsist",
+      "summary": "Solipsists are excellent at modifying the abstract states of reality to their benefit."
+    },
+    {
+      "name": "Unseelie Disciple",
+      "summary": "Unseelie disciples are capable of making sneak attacks and taking rogue talents."
+    },
+    {
+      "name": "Word Witch",
+      "summary": "Word witches are experts with the Creation sphere and can speak words of creation to create effects."
+    },
+    {
+      "name": "Wunderkind [WoP]",
+      "summary": "The Wunderkind is essentially a complete change to the Fey Adept's abilities, making it closer to an alternate class than an archetype. Their abilities focus on the manipulation of emotions and illusions."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Aasimar",
+      "bonus": "Gain +1/6 of an additional use of truesight per day."
+    },
+    {
+      "race": "Created",
+      "bonus": "+1/4 of an extra use of shadowstuff per day."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "+1/2 to the hardness of objects made using shadowstuff with the create reality ability."
+    },
+    {
+      "race": "Elf",
+      "bonus": "Increase the saving throw penalty bestowed by the fey adept's shadowmark by +1/6."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "Increase the duration of all illusions by 1/4 of a round."
+    },
+    {
+      "race": "Goblin",
+      "bonus": "Gain a +1/2 bonus to Stealth checks and Perception checks made in dim light and darkness."
+    },
+    {
+      "race": "Half-elf",
+      "bonus": "+1/4 of an extra use of shadowstuff per day."
+    },
+    {
+      "race": "Half-orc",
+      "bonus": "Increase the damage dealt by the fey adept's shadowmarks by +1/2."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "Gain a +1/2 bonus to Stealth checks."
+    },
+    {
+      "race": "Human",
+      "bonus": "+1/2 increase the hit points of creatures and objects made using the create reality shadowstuff ability. These hit points are added after the reduction is applied for the creature or item being made with shadowstuff."
+    },
+    {
+      "race": "Merfolk",
+      "bonus": "Increase shadowmark's range by 5 feet."
+    },
+    {
+      "race": "Orc",
+      "bonus": "Increase the fey adept's darkvision range by 5 feet."
+    },
+    {
+      "race": "Sidhier",
+      "bonus": "+1/8th use on entropic hope per day."
+    },
+    {
+      "race": "Tiefling",
+      "bonus": "Increase the duration of the shadowmark's penalty by 1 round."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

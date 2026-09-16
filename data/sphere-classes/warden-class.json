@@ -612,6 +612,70 @@
       "description": "At 20th level, the warden becomes an unstoppable protector of those under his charge, his resolve surpassing even the finality of death itself. The warden may have up to five guarded allies at one time. Additionally, whenever the warden would fall unconscious or be slain, his soul rises from his body, appearing barely visible and ethereal. While within this ethereal form, the warden may move in any direction (even up or down, albeit at half his normal speed), and may move through solid objects and living creatures, essentially being considered as an ethereal creature, except that he may still cast harmless spells and sphere effects upon his allies as long as he remains within this form.\n\nThe warden remains within this form for up to 1 minute, after which the soul returns to his body, immediately becoming stable and conscious again if he was unconscious, or linger for a moment if he was slain."
     }
   ],
+  "archetypes": [
+    {
+      "name": "Custodian",
+      "summary": "Custodians excel at guarding specific individuals."
+    },
+    {
+      "name": "Empathetic Guardian",
+      "summary": "Empathetic Guardians can use the power of Eliciter emotions to bolster their allies."
+    },
+    {
+      "name": "Jailer",
+      "summary": "Jailers are Wardens who excel at locking down enemies."
+    },
+    {
+      "name": "Keeper",
+      "summary": "Keepers focus somewhat more on the magical side of their abilities as Wardens."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Aasimar",
+      "bonus": "The warden's guarded allies gain a +1/4 to AC against evil creatures."
+    },
+    {
+      "race": "Alraun",
+      "bonus": "Gain 1/6th of a Nature sphere talent."
+    },
+    {
+      "race": "Cuazaj",
+      "bonus": "+1 cold or sonic resistance. This stacks with resistance gained from other sources."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "+1/2 to delayed damage pool."
+    },
+    {
+      "race": "Elf",
+      "bonus": "Gain +1 foot to your movement speed when determining base speed when using patrol (this ability does nothing until selected 5 times)."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "The warden's guarded allies gain +1/3 on saving throws against illusion effects."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "The warden's guarded allies gain a +1/4 dodge AC against attacks of opportunity."
+    },
+    {
+      "race": "Human",
+      "bonus": "+1/6 of a reinforcement."
+    },
+    {
+      "race": "Leshy",
+      "bonus": "The warden's guarded allies gain a +1/4 to CMD against grapple and disarm combat maneuvers."
+    },
+    {
+      "race": "Oread",
+      "bonus": "The warden's guarded allies gain a +1/4 to CMD against trip and bull-rush combat maneuvers."
+    },
+    {
+      "race": "Orc",
+      "bonus": "+1 to AC against critical confirmation rolls."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

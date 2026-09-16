@@ -109,6 +109,8 @@
       "description": "At level 5, the waking sleeper gains incredible control of her combat techniques. The bonus to Strength and to Will saves increases to +6, and a total of five sleeper training feats may be selected when in a state of recall. In addition, the waking sleeper may, as a free action every round, change two of the selected feats without leaving her state of recall.\n\nAlignment: The willingness to take the risks of training means that neutrality is rare among waking sleepers.\n\nHit Die: d10\n\nClass Skills: Acrobatics (Dex), Climb (Str), Craft (Int), Handle Animal (Cha), Knowledge (Nobility) (Int), Perception (Wis), Profession (Wis), Ride (Dex), Swim (Str), Use Magic Device (Cha)\n\nSkill Ranks at Each Level: 4 + Int modifier"
     }
   ],
+  "archetypes": [],
+  "favoredClassBonuses": [],
   "abilityScoreIncreases": [
     4,
     8,

@@ -130,6 +130,8 @@
       "description": "At 5th level the forest lord's inherent bonus to Strength increases to +6 and their Climb speed increases to 40 ft. The forest lord is considered a native inhabitant of any cryptwood he enters; he does not suffer adverse effects and instead gains any templates or bonuses granted to animals within the area."
     }
   ],
+  "archetypes": [],
+  "favoredClassBonuses": [],
   "abilityScoreIncreases": [
     4,
     8,

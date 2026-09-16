@@ -109,6 +109,8 @@
       "description": "The realmwalker's mastery over planar travel and acclimatization allows them to travel between planes. At 5th level, once per day as a standard action, the realmwalker may open a portal to any other plane, which remains open for up to 1 minute, but may be closed by the realmwalker as a standard action. Any creature may spend a move action to enter the portal to be safely transported to the portal's destination. Involuntary movement or unwilling creatures cannot enter the portal.\n\nThe realmwalker may designate a specific place they are familiar with on the destination plane (either having a clear mental image, knowing about its existence, etc.). If the realmwalker chooses such a place, the portal has no chance of failure, so long as that specific place exists. Otherwise, the portal becomes connected to a random location on the plane, as though the “similar area” result were rolled on the Warp sphere True Teleport advanced talent Table: Mishap."
     }
   ],
+  "archetypes": [],
+  "favoredClassBonuses": [],
   "abilityScoreIncreases": [
     4,
     8,

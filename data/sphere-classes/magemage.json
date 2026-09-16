@@ -301,6 +301,8 @@
       "description": "At 10th level, the magemage may treat her weapon as an implement for the sphere selected with knowledge is my sword. The implement's effective enhancement bonus is equal to the weapon's enhancement bonus (maximum +5).\n\nU: Part of Ultimate Spheres of Power and does not need to be bought separately from that book"
     }
   ],
+  "archetypes": [],
+  "favoredClassBonuses": [],
   "abilityScoreIncreases": [
     4,
     8,

@@ -422,6 +422,89 @@
       "description": "At 1st level, a conscript may choose specializations, gaining additional abilities at the cost of some versatility. Every specialization costs a number of the conscript's bonus feats, as indicated on Table: Conscript Specializations. Each specialization costs either 1, 2, or 3 specialization points. A conscript cannot have more than 5 points worth of specializations.\n\n• Armor Training (Ex) (1 point)\n\nStarting at 3rd level, the conscript learns to be more maneuverable while wearing armor. Whenever he is wearing armor, the conscript reduces the armor check penalty by 1 (to a minimum of 0) and increases the maximum Dexterity bonus allowed by his armor by 1. At 6th level and every four levels thereafter (10th, 14th, and 18th), these bonuses increase by +1 each time, to a maximum -5 reduction of the armor check penalty and a +5 increase of the maximum Dexterity bonus allowed.\n\nIn addition, he can also move at his normal speed while wearing medium armor. At 8th level, he can move at his normal speed while wearing heavy armor.\n\n• Banner (Ex) (1 point)\n\nFrom 2nd level on, the conscript gains a banner that becomes a symbol of inspiration to his allies and companions. As long as the conscript's banner is clearly visible, all allies within 60 ft. receive a +1 morale bonus on saving throws against fear and a +1 morale bonus on attack rolls made as part of a charge. At 6th level, and every four levels thereafter, these bonuses increase by +1. The banner must be at least Small or larger and must be carried or displayed by the conscript or a creature he is currently using as a mount.\n\n• Barbarian Training (Ex) (2 points) [Conq. HB]\n\nAt 1st level, the conscript gains the Berserker sphere as a bonus sphere. If he already possesses a drawback that would remove berserking, he instead buys off that drawback.\n\nThe conscript is treated as having the barbarian's rage class feature, and treats his conscript levels as barbarian levels for the purposes of qualifying for feats, prerequisites, and determining the effects of rage powers. The conscript may use a rage power while berserking as though it were an (adrenaline) talent. The conscript may use rage powers as though they were (adrena"
     }
   ],
+  "archetypes": [],
+  "favoredClassBonuses": [
+    {
+      "race": "Aasimar",
+      "bonus": "Add +1 to rolls made to stabilize when dying."
+    },
+    {
+      "race": "Alraun",
+      "bonus": "+1/6 Sleight of Hand ranks when determining the effects of the Scoundrel sphere."
+    },
+    {
+      "race": "Cecaelia",
+      "bonus": "+1/5 to save DCs for Athletics sphere effects while using the swim movement mode."
+    },
+    {
+      "race": "Cherufe",
+      "bonus": "+1 fire resistance. This stacks with resistance gained from other sources."
+    },
+    {
+      "race": "Created",
+      "bonus": "Increase the chance to negate critical hits and precision damage by +1%."
+    },
+    {
+      "race": "Cuazaj",
+      "bonus": "+1 acid or electricity resistance. This stacks with resistance gained from other sources."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "Add +1 to your CMD when resisting a bull rush, pull, or reposition combat maneuvers."
+    },
+    {
+      "race": "Elf",
+      "bonus": "Gain a +1 bonus to your CMD when resisting a disarm or sunder."
+    },
+    {
+      "race": "Fenghuang",
+      "bonus": "+1/5 to save DCs for Athletics sphere effects while using the fly movement mode."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "Add +1 to your CMD when resisting a dirty trick or steal maneuver."
+    },
+    {
+      "race": "Goblin",
+      "bonus": "Add +1/2 to damage rolls the conscript makes with weapon attacks against an opponent he is flanking or an opponent that is denied its Dexterity bonus to AC."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "Add +1 to your CMD when resisting a grapple or trip."
+    },
+    {
+      "race": "Hobgoblin",
+      "bonus": "Add +1/2 damage to your first attack made at the end of a charge."
+    },
+    {
+      "race": "Human",
+      "bonus": "Gain +1/6 of a combat talent."
+    },
+    {
+      "race": "Kobold",
+      "bonus": "Gain +1/6 Trap sphere save DC."
+    },
+    {
+      "race": "Orc",
+      "bonus": "Increase the total number of negative hit points you can reach before dying by 2."
+    },
+    {
+      "race": "Sidhier",
+      "bonus": "Gain damage reduction 1/cold iron for every 4 times this option is taken. This stacks with damage reduction gained from other sources."
+    },
+    {
+      "race": "Skinwalker",
+      "bonus": "+1/6 to save DCs for Berserker sphere effects delivered by natural attacks."
+    },
+    {
+      "race": "Tatulani",
+      "bonus": "+1/5 damage with claw attacks."
+    },
+    {
+      "race": "Tiefling",
+      "bonus": "Gain a +1/2 profane bonus on three conscript class skills."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

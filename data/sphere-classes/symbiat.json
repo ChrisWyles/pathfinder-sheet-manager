@@ -563,6 +563,134 @@
       "description": "At 20th level, a symbiat may use two psionic effects at once by spending 2 rounds of psionic power each round. Each effect must be begun separately, and ending one effect does not necessitate ending the other."
     }
   ],
+  "archetypes": [
+    {
+      "name": "Battlemind [CS]",
+      "summary": "Battleminds are champions who use the Leadership sphere to obtain and direct allies."
+    },
+    {
+      "name": "Bloodscarred",
+      "summary": "Bloodscarred are symbiats with vampiric attributes and powers."
+    },
+    {
+      "name": "Cerebral Singer [CS]",
+      "summary": "Cerebral singers focus their powers on songs and minds, rather than raw force."
+    },
+    {
+      "name": "Champion Symbiat [CS]",
+      "summary": "Champion symbiats have learned some martial skills."
+    },
+    {
+      "name": "Chronomancer",
+      "summary": "Chronomancers have psionic control over time."
+    },
+    {
+      "name": "Egregore",
+      "summary": "Egregore can use their Mind abilities to fortify the minds of their allies and attack the minds of their foes."
+    },
+    {
+      "name": "Gravecrawler",
+      "summary": "Gravecrawlers are infested with psychic insects or aberrations."
+    },
+    {
+      "name": "Hekatonkheires",
+      "summary": "Hekatonkheires gain an increasing number of telekinetic limbs."
+    },
+    {
+      "name": "Invidian",
+      "summary": "Invidians have an inner demon that gives them power over Dark."
+    },
+    {
+      "name": "Malefactor",
+      "summary": "Malefactors specialize in cursing and bringing harm to their enemies."
+    },
+    {
+      "name": "Mistwalker",
+      "summary": "Mistwalkers can transform into mist to move and attack."
+    },
+    {
+      "name": "Operative",
+      "summary": "Operatives are stealthy warriors with outstanding skill in Illusion or War."
+    },
+    {
+      "name": "Synapse",
+      "summary": "Synapses can use the Warp sphere to teleport more in combat."
+    },
+    {
+      "name": "Technopath [LG]",
+      "summary": "Technopaths make use of the Technomancy sphere to interface with technology and use machines to help their allies."
+    },
+    {
+      "name": "Telekinetic Warrior",
+      "summary": "Telekinetic warriors are combatants familiar with the Telekinesis sphere."
+    },
+    {
+      "name": "Vector [CS]",
+      "summary": "The Vector is a martially-oriented Symbiat with powerful telekinetic abilities."
+    },
+    {
+      "name": "Warmonger",
+      "summary": "Warmongers are geniuses when it comes to War."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Aasimar",
+      "bonus": "When using a Mind sphere ability on an evil creature, increase the DC by +1/4."
+    },
+    {
+      "race": "Cecaelia",
+      "bonus": "Add +1 to the total number of rounds the symbiat can use psionics per day."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "+1/4 bonus to Will saves."
+    },
+    {
+      "race": "Elf",
+      "bonus": "Gain +1 foot to the symbiat's land base movement. In combat, this only has an effect for every five increases to the movement's speed. This bonus stacks with the symbiat's pushed movement, and applies under the same circumstances."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "+1/6 bonus to DCs associated with a sphere of the gnome's choosing other than the Mind sphere."
+    },
+    {
+      "race": "Goblin",
+      "bonus": "Increase the number of rounds the symbiat may use psionics by 1."
+    },
+    {
+      "race": "Half-elf",
+      "bonus": "Increase the number of rounds the symbiat may use psionics by 1."
+    },
+    {
+      "race": "Half-orc",
+      "bonus": "Increase the number of rounds the symbiat may use psionics by 1."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "Add +1/2 to the AC bonus granted by trapsense."
+    },
+    {
+      "race": "Human",
+      "bonus": "Gain a +1/4 bonus to all Perception and Sense Motive. This stacks with the ESP class feature."
+    },
+    {
+      "race": "Merfolk",
+      "bonus": "Increase the number of rounds the symbiat may use psionics per day by 1."
+    },
+    {
+      "race": "Orc",
+      "bonus": "Gain a +1 bonus to concentration checks made to cast defensively."
+    },
+    {
+      "race": "Sidhier",
+      "bonus": "+1/2 round of planar balancer."
+    },
+    {
+      "race": "Tiefling",
+      "bonus": "Gain 1/6 of a bonus combat feat."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

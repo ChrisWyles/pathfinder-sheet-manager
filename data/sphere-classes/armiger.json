@@ -489,6 +489,110 @@
       "description": "At 20th level, the armiger is no longer required to expend martial focus to activate her lightning assault ability and may trigger her rapid assault ability with the first of the granted attack actions to damage a creature."
     }
   ],
+  "archetypes": [
+    {
+      "name": "-Antiquarian [CS]",
+      "summary": "Antiquarians focus on using magical foci to improve the casting power they gain from their weapons."
+    },
+    {
+      "name": "-Awakener [CS]",
+      "summary": "The Awakener can summon the spirit of their weapon to wield it."
+    },
+    {
+      "name": "-Battlefield Tinker",
+      "summary": "The Battlefield Tinker can combine multiple weapons and shields together to create an improbable - but potent - weapon."
+    },
+    {
+      "name": "-Bladewalker [CS]",
+      "summary": "Bladewalkers are specialists in teleportation, and can get around the battlefield even faster than most warpers."
+    },
+    {
+      "name": "-Bounty Hunter",
+      "summary": "The Bounty Hunter is an expert with the tools needed to find a target and bring them in."
+    },
+    {
+      "name": "-Machinehead",
+      "summary": "Machineheads use the Tech sphere to create and use specialized weaponry."
+    },
+    {
+      "name": "-Stancemaster",
+      "summary": "Stancemasters swap customized weapons for specialized combat stances."
+    },
+    {
+      "name": "-Taskmaster [SUE]",
+      "summary": "Taskmasters are cybernetically enhanced master-at-arms, able to learn, adapt, and change their fighting style with ease."
+    },
+    {
+      "name": "-Witchwarper [CS] [LG]",
+      "summary": "Witchwarpers learn to harness many different disciplines of magic spanning many realities, drawing upon whichever model of reality best suits their need in the moment."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Aasimar",
+      "bonus": "Gain +1/6 of a granted talent for 1 customized weapon. This talent must be from the Guardian sphere."
+    },
+    {
+      "race": "Cecaelia",
+      "bonus": "Gain 1/6th of an Athletics sphere (motion) or (swim) talent."
+    },
+    {
+      "race": "Cherufe",
+      "bonus": "Gain 1/6th of an Athletics sphere (motion) or (leap) talent."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "Gain +1/6 of a granted talent for 1 customized weapon. This weapon must be from those listed in the Dwarven Heritage from the Equipment sphere."
+    },
+    {
+      "race": "Elf",
+      "bonus": "Gain +1/6 of a granted talent for 1 customized weapon. This weapon must be from those listed in Elven Heritage from the Equipment sphere."
+    },
+    {
+      "race": "Fenghuang",
+      "bonus": "Gain 1/6th of an Athletics sphere (motion) or (fly) talent."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "Gain +1/6 of a granted talent for 1 customized weapon. This weapon must be from those listed in Gnomish Heritage from the Equipment sphere."
+    },
+    {
+      "race": "Goblin",
+      "bonus": "Gain +1/6 of a granted talent for 1 customized weapon. This talent must be from the Athletics sphere."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "Gain +1/6 of a granted talent for 1 customized weapon. This weapon must be from those listed in Halfling Heritage from the Equipment sphere."
+    },
+    {
+      "race": "Hobgoblin",
+      "bonus": "Gain +1 to your CMD against disarm, steal, and sunder attempts targeting a customized weapon."
+    },
+    {
+      "race": "Human",
+      "bonus": "Gain +1/6 of a prowess."
+    },
+    {
+      "race": "Leshy",
+      "bonus": "+1/3 damage with clubs, quarter staves, and greatclubs when dealing damage with a customized weapon."
+    },
+    {
+      "race": "Kobold",
+      "bonus": "Gain +1/2 damage with all Trap sphere traps that deal damage."
+    },
+    {
+      "race": "Orc",
+      "bonus": "Gain +1/6 of a granted talent for 1 customized weapon. This weapon must be from those listed in the Orc Heritage talent of the equipment sphere."
+    },
+    {
+      "race": "Tatulani",
+      "bonus": "Gain +1/6 of a granted talent for 1 customized weapon."
+    },
+    {
+      "race": "Tiefling",
+      "bonus": "Add +1/4 on rolls to confirm critical hits with customized weapons."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,

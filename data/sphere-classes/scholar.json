@@ -463,6 +463,102 @@
       "description": "At 20th level, the scholar chooses any one material imposition she knows; the scholar no longer needs to expend her martial focus for uses of this imposition, never provokes an attack of opportunity for activating it, and may activate it as a swift action. If the scholar chooses a material imposition that grants an explosive option, any bonus damage it deals and the save DC for flashbangs modified by it are determined as though the scholar's class level were 4 levels higher than it actually is."
     }
   ],
+  "archetypes": [
+    {
+      "name": "Astrologian [CS]",
+      "summary": "Astrologian scholars can invoke zodiac signs for greater power."
+    },
+    {
+      "name": "Caller [CS]",
+      "summary": "The Caller is an expert in summoning allies to their side."
+    },
+    {
+      "name": "Doctor",
+      "summary": "Doctors are scholars who focus their efforts on medicine, eventually learning to be more effective at healing allies and even protecting them from the Doctor's abilities."
+    },
+    {
+      "name": "Engineer [DRS]",
+      "summary": "Engineers are scholars who develop explosive technologies to harness their scientific prowess. The engineer is a Tinker sphere-reliant archetype."
+    },
+    {
+      "name": "Fell Archaeologist",
+      "summary": "Fell archaeologists specialize in traps and acquiring dangerous, forbidden knowledge."
+    },
+    {
+      "name": "Harmacist",
+      "summary": "Harmacists are better at inflicting others with poison and disease than curing it."
+    },
+    {
+      "name": "Slime Savant",
+      "summary": "Slime savants specialize in the creation and manipulation of oozes."
+    },
+    {
+      "name": "Stitcher [CS]",
+      "summary": "Stitchers are experts at healing both the living and the dead."
+    },
+    {
+      "name": "Surveyor [CS]",
+      "summary": "Surveyors are particularly adept at studying battlefields instead of creatures."
+    }
+  ],
+  "favoredClassBonuses": [
+    {
+      "race": "Aasimar",
+      "bonus": "Add +1 to Heal checks made when using your medical training, advanced medical training, or expert medical training class features."
+    },
+    {
+      "race": "Alraun",
+      "bonus": "Gain 1/6th of an Alchemy sphere talent from the (poison) package."
+    },
+    {
+      "race": "Cecaelia",
+      "bonus": "+1 foot range when using tentacle sense. This option has no effect unless the scholar has selected it five times (or another increment of five)."
+    },
+    {
+      "race": "Cuazaj",
+      "bonus": "+1/2 use of cuazaj lightning per day."
+    },
+    {
+      "race": "Dwarf",
+      "bonus": "Gain +1/8 of a scholar's knack."
+    },
+    {
+      "race": "Elf",
+      "bonus": "Treat your Intelligence as +1/4 point higher when determining your carrying capacity with careful packer, and when determining the save DCs for your material impositions."
+    },
+    {
+      "race": "Gnome",
+      "bonus": "Add +1/2 to all Disable Device and Use Magic Device checks made to control, manipulate, or sabotage a clockwork device or creature."
+    },
+    {
+      "race": "Goblin",
+      "bonus": "Add +1/2 points of damage to the damage dealt by your flashbangs."
+    },
+    {
+      "race": "Halfling",
+      "bonus": "Gain +1/8 of a material imposition."
+    },
+    {
+      "race": "Hobgoblin",
+      "bonus": "Choose one combat sphere; gain a +1/8 bonus to hit, combat maneuver bonus, combat maneuver defense, ability DCs, and all other functions of the sphere normally determined by your base attack bonus when using talents or abilities granted by that sphere. You may select a different sphere each time you gain this benefit."
+    },
+    {
+      "race": "Human",
+      "bonus": "Increase the save DC and damage of your flashbangs by +1/5."
+    },
+    {
+      "race": "Leshy",
+      "bonus": "+1/5 bonus from ancestral memory."
+    },
+    {
+      "race": "Tatulani",
+      "bonus": "Increase bonus from technological by +1/4th."
+    },
+    {
+      "race": "Tiefling",
+      "bonus": "Add +1/2 fire damage to your flashbangs; if you know the Brimstone material imposition, increase the saving throw DC for your sulfuric detonations by +1/4."
+    }
+  ],
   "abilityScoreIncreases": [
     4,
     8,
