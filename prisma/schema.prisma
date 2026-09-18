@@ -455,13 +455,20 @@ model Feat {
 
   name          String
   featTypes     String[] @default([]) // e.g. ["Combat", "Metamagic"]
-  /** Magic sphere this feat is tied to (e.g. "Destruction"), when scraped
-   * from that sphere's own "Sphere Feats" list — distinct from featTypes,
-   * which holds the PF1e/SoP category tags (Combat, Racial, Drawback, …). */
-  sphereName    String   @default("")
+  /** Magic sphere(s) this feat is tied to (e.g. ["Destruction"]), when
+   * scraped from a sphere's own "Sphere Feats" list — distinct from
+   * featTypes, which holds the PF1e/SoP category tags (Combat, Racial,
+   * Drawback, …). A feat can genuinely require, or offer a choice of,
+   * more than one sphere (e.g. "Death or Fate sphere"), hence an array
+   * rather than a single value. */
+  sphereNames   String[] @default([])
   prerequisites String   @default("")
   benefit       String   @default("")
   description   String   @default("")
+  /** Deep link to this feat's entry on the source wiki page, e.g.
+   * "http://spheresofpower.wikidot.com/combat-feats#toc12" — points at the
+   * page's own heading anchor when the source has one. */
+  sourceUrl     String   @default("")
 
   source      String  @default("")
   isSrd       Boolean @default(false)
@@ -545,6 +552,9 @@ model Talent {
   talentTypes   String[] @default([])
   prerequisites String   @default("")
   description   String   @default("")
+  /** Deep link to this talent's entry on the source wiki page — see
+   * Feat.sourceUrl. */
+  sourceUrl     String   @default("")
 
   source      String  @default("")
   isSrd       Boolean @default(false)

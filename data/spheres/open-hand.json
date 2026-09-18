@@ -11,210 +11,240 @@
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki [Apoc]",
-      "description": "You may perform the trip combat maneuver against swimming creatures. If you succeed, instead of making the target prone you make them off-balanced. An off-balance creature loses its Dexterity bonus to Armor Class, and opponents gain a +2 bonus on attacks against it as long as it remains in water. Treat this as if you had made the creature prone for abilities that depend on knocking down or targetting a prone creature. The off-balanced creature may right itself as a move action that provokes attacks of opportunity. Associated Feat: Sea Hunter."
+      "description": "You may perform the trip combat maneuver against swimming creatures. If you succeed, instead of making the target prone you make them off-balanced. An off-balance creature loses its Dexterity bonus to Armor Class, and opponents gain a +2 bonus on attacks against it as long as it remains in water. Treat this as if you had made the creature prone for abilities that depend on knocking down or targetting a prone creature. The off-balanced creature may right itself as a move action that provokes attacks of opportunity. Associated Feat: Sea Hunter.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc4"
     },
     {
       "name": "Axe Kick",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "When making an attack action, attack of opportunity, or additional attack granted by a class feature or talent with an unarmed strike, you may add 1.5x your Strength bonus on the damage roll rather than just your Strength bonus (this talent does not apply to off-hand attacks or other attacks where a half Strength modifier is specified). On attacks targeting prone creatures, you instead deal 2x your Strength modifier on the damage roll for your unarmed strikes.\n\nAuthor's Note: This only applies to attacks where you use your Strength modifier. Axe Kick does not work if you use a different ability modifier for damage."
+      "description": "When making an attack action, attack of opportunity, or additional attack granted by a class feature or talent with an unarmed strike, you may add 1.5x your Strength bonus on the damage roll rather than just your Strength bonus (this talent does not apply to off-hand attacks or other attacks where a half Strength modifier is specified). On attacks targeting prone creatures, you instead deal 2x your Strength modifier on the damage roll for your unarmed strikes.\n\nAuthor's Note: This only applies to attacks where you use your Strength modifier. Axe Kick does not work if you use a different ability modifier for damage.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc5"
     },
     {
       "name": "Capoeira Spin",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Whenever you make an attack with an unarmed strike while prone, the penalty to attack rolls is reduced by 2. In addition, you may spend an immediate action to stand up from being prone without provoking an attack of opportunity as a part of an attack action made with an unarmed strike, dealing an additional +2 damage. At +10 base attack bonus, this additional damage increases to +5 and you no longer take a penalty on attack rolls made with unarmed strikes while prone."
+      "description": "Whenever you make an attack with an unarmed strike while prone, the penalty to attack rolls is reduced by 2. In addition, you may spend an immediate action to stand up from being prone without provoking an attack of opportunity as a part of an attack action made with an unarmed strike, dealing an additional +2 damage. At +10 base attack bonus, this additional damage increases to +5 and you no longer take a penalty on attack rolls made with unarmed strikes while prone.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc6"
     },
     {
       "name": "Cooperative Clothesline",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki [Apoc]",
-      "description": "Whenever you fail a trip combat maneuver against an enemy threatened by an ally, as an immediate action the ally may attempt a trip attempt against the enemy. This does not provoke attacks of opportunity."
+      "description": "Whenever you fail a trip combat maneuver against an enemy threatened by an ally, as an immediate action the ally may attempt a trip attempt against the enemy. This does not provoke attacks of opportunity.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc7"
     },
     {
       "name": "Counterbalance",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Whenever a creature within your threatened area misses you with a melee attack, you may expend your martial focus to perform a trip attempt against that creature as an immediate action that does not provoke an attack of opportunity. If the creature's attack roll was penalized by an ability such as Power Attack, that creature's CMD to resist this trip attempt suffers an equal penalty."
+      "description": "Whenever a creature within your threatened area misses you with a melee attack, you may expend your martial focus to perform a trip attempt against that creature as an immediate action that does not provoke an attack of opportunity. If the creature's attack roll was penalized by an ability such as Power Attack, that creature's CMD to resist this trip attempt suffers an equal penalty.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc8"
     },
     {
       "name": "Fading Slide",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "When you have martial focus, when a creature makes a melee attack or combat maneuver against you, you may spend an immediate action to make a touch attack against that creature, dealing damage equal to your practitioner modifier + your base attack bonus. Regardless of if your attack is successful or not, you then immediately fall prone (you may not use this talent if you are unable to become prone or already prone). At +10 base attack bonus, this talent instead deals damage equal to your unarmed strike."
+      "description": "When you have martial focus, when a creature makes a melee attack or combat maneuver against you, you may spend an immediate action to make a touch attack against that creature, dealing damage equal to your practitioner modifier + your base attack bonus. Regardless of if your attack is successful or not, you then immediately fall prone (you may not use this talent if you are unable to become prone or already prone). At +10 base attack bonus, this talent instead deals damage equal to your unarmed strike.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc9"
     },
     {
       "name": "Focusing Breath",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "As a move action, you may regain your martial focus and end the battered condition, if you have it."
+      "description": "As a move action, you may regain your martial focus and end the battered condition, if you have it.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc11"
     },
     {
       "name": "Grasping Hand",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Once per round when you make a successful unarmed strike against a prone creature using the attack action, you may attempt a grapple check against that creature with a -2 penalty as an immediate action that does not provoke attacks of opportunity."
+      "description": "Once per round when you make a successful unarmed strike against a prone creature using the attack action, you may attempt a grapple check against that creature with a -2 penalty as an immediate action that does not provoke attacks of opportunity.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc12"
     },
     {
       "name": "Greater Trip",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "You gain a +1 competence bonus to your trip combat maneuver checks, as well as to your CMD vs. that maneuver. This bonus increases by +1 for 4 points of base attack bonus you possess. This bonus does not stack with the bonus to this maneuver provided by the Improved or Greater Trip feats. Associated Feat: Improved Trip."
+      "description": "You gain a +1 competence bonus to your trip combat maneuver checks, as well as to your CMD vs. that maneuver. This bonus increases by +1 for 4 points of base attack bonus you possess. This bonus does not stack with the bonus to this maneuver provided by the Improved or Greater Trip feats. Associated Feat: Improved Trip.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc13"
     },
     {
       "name": "Hard Landing",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Whenever you successfully trip a creature, they become battered for one round. Additionally, you always treat prone creatures within reach as being battered for the purposes of talents and class abilities, and they cannot perform attacks of opportunity against you for performing combat maneuvers as long as they remain prone."
+      "description": "Whenever you successfully trip a creature, they become battered for one round. Additionally, you always treat prone creatures within reach as being battered for the purposes of talents and class abilities, and they cannot perform attacks of opportunity against you for performing combat maneuvers as long as they remain prone.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc14"
     },
     {
       "name": "Hurricane Kick",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "As a full-round action, you may move up to 10 ft. in any direction (this movement does not provoke attacks of opportunity); each time you move 5 ft. while using this talent, if a creature is within your reach, you may make an unarmed attack against them with a -2 penalty; you may only make a single attack against a creature with this talent. For every 5 points of base attack bonus you possess, you may move an additional 5 feet."
+      "description": "As a full-round action, you may move up to 10 ft. in any direction (this movement does not provoke attacks of opportunity); each time you move 5 ft. while using this talent, if a creature is within your reach, you may make an unarmed attack against them with a -2 penalty; you may only make a single attack against a creature with this talent. For every 5 points of base attack bonus you possess, you may move an additional 5 feet.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc15"
     },
     {
       "name": "Iron Fist",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Your unarmed strikes ignore an amount of hardness equal to 1/2 your base attack bonus (minimum 1) (this stacks with similar effects). You can take this talent a second time, instead allowing your unarmed strikes to ignore an amount of hardness equal to your base attack bonus."
+      "description": "Your unarmed strikes ignore an amount of hardness equal to 1/2 your base attack bonus (minimum 1) (this stacks with similar effects). You can take this talent a second time, instead allowing your unarmed strikes to ignore an amount of hardness equal to your base attack bonus.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc16"
     },
     {
       "name": "Joint Lock",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Whenever you deal damage with an unarmed strike to a grappled creature, that creature gains the entangled condition for 1 round. At +10 base attack bonus, the duration increases to 2 rounds."
+      "description": "Whenever you deal damage with an unarmed strike to a grappled creature, that creature gains the entangled condition for 1 round. At +10 base attack bonus, the duration increases to 2 rounds.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc17"
     },
     {
       "name": "Judo Throw",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "As long as you have martial focus, you may make a trip attempt as a standard action which does not provoke an attack of opportunity. If this trip attempt is successful, you may choose for the creature to land in any square adjacent to you.\n\nThis movement does not provoke attacks of opportunity, and you cannot throw the creature into a space occupied by other creatures. You may expend your martial focus as a free action when you trip a creature with this talent to deal damage equal to your unarmed strike. In addition, for every 5 points your trip attempt exceeds the target's CMD, you deal +1d10 bludgeoning damage to them. At +10 base attack bonus, you may instead choose for the creature to land in any square within your natural reach."
+      "description": "As long as you have martial focus, you may make a trip attempt as a standard action which does not provoke an attack of opportunity. If this trip attempt is successful, you may choose for the creature to land in any square adjacent to you.\n\nThis movement does not provoke attacks of opportunity, and you cannot throw the creature into a space occupied by other creatures. You may expend your martial focus as a free action when you trip a creature with this talent to deal damage equal to your unarmed strike. In addition, for every 5 points your trip attempt exceeds the target's CMD, you deal +1d10 bludgeoning damage to them. At +10 base attack bonus, you may instead choose for the creature to land in any square within your natural reach.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc18"
     },
     {
       "name": "Kick-Off",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Whenever you make a successful attack with an unarmed strike using an attack action, you may spend a swift action to move 10 ft. away from the target of your attack. This movement does not provoke an attack of opportunity from the target of your attack. For every 5 points of base attack bonus you possess, you may move an additional 5 ft. with this talent."
+      "description": "Whenever you make a successful attack with an unarmed strike using an attack action, you may spend a swift action to move 10 ft. away from the target of your attack. This movement does not provoke an attack of opportunity from the target of your attack. For every 5 points of base attack bonus you possess, you may move an additional 5 ft. with this talent.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc19"
     },
     {
       "name": "Ladder Strike",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Whenever you are within melee range of a battered creature, you can make a single roll as a standard action; this roll is treated both as an Acrobatics check to jump vertically or horizontally (being treated as though you had a running start) and an attack action against that creature which must be made with an unarmed strike. Any movement from this talent does not provoke an attack of opportunity from the creature.\n\nAt +10 base attack bonus, if you end the movement from this talent within melee range of another creature, you may use it again as a move action, but the attack granted from this talent is not treated as an attack action."
+      "description": "Whenever you are within melee range of a battered creature, you can make a single roll as a standard action; this roll is treated both as an Acrobatics check to jump vertically or horizontally (being treated as though you had a running start) and an attack action against that creature which must be made with an unarmed strike. Any movement from this talent does not provoke an attack of opportunity from the creature.\n\nAt +10 base attack bonus, if you end the movement from this talent within melee range of another creature, you may use it again as a move action, but the attack granted from this talent is not treated as an attack action.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc20"
     },
     {
       "name": "Mystic Fists",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "When you have martial focus, your unarmed strikes are treated as though they were magic for the purpose of damage reduction and damaging incorporeal creatures. For every 5 points of base attack bonus you possess, you can select a material or component of your alignment, treating your unarmed strikes as the chosen material or alignment for the purpose of damage reduction. Once chosen, these choices cannot be changed."
+      "description": "When you have martial focus, your unarmed strikes are treated as though they were magic for the purpose of damage reduction and damaging incorporeal creatures. For every 5 points of base attack bonus you possess, you can select a material or component of your alignment, treating your unarmed strikes as the chosen material or alignment for the purpose of damage reduction. Once chosen, these choices cannot be changed.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc23"
     },
     {
       "name": "Shattering Palm",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "The first time you make a successful disarm or sunder attempt in a round using an attack action with an unarmed strike, you can make an additional disarm or sunder attempt as a free action which does not provoke an attack of opportunity. Also as long as you have martial focus, your unarmed strikes gain the sunder and disarm weapon special properties."
+      "description": "The first time you make a successful disarm or sunder attempt in a round using an attack action with an unarmed strike, you can make an additional disarm or sunder attempt as a free action which does not provoke an attack of opportunity. Also as long as you have martial focus, your unarmed strikes gain the sunder and disarm weapon special properties.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc28"
     },
     {
       "name": "Sliding Heelkick",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Whenever you make a successful attack with an unarmed strike at the end of a charge, you may attempt to trip the target of your attack as a free action (without provoking an attack of opportunity). Regardless of if your trip attempt is successful or not, you then immediately fall prone. You may not use this talent if you are unable to become prone or already prone."
+      "description": "Whenever you make a successful attack with an unarmed strike at the end of a charge, you may attempt to trip the target of your attack as a free action (without provoking an attack of opportunity). Regardless of if your trip attempt is successful or not, you then immediately fall prone. You may not use this talent if you are unable to become prone or already prone.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc29"
     },
     {
       "name": "Snap Kick",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Whenever you succeed on a trip combat maneuver against a creature, they provoke an attack of opportunity from you (you can choose to wait until the creature is prone before resolving this attack of opportunity), this attack of opportunity considers “whenever a creature lands prone” and “whenever you succeed on a trip combat maneuver” to be part of the same trigger, and you can not take more than one attack of opportunity due to this circumstance. If your attack of opportunity is successful, the creature must make a successful Reflex save or become staggered until the end of their next turn.\n\nNote: This attack of opportunity from this ability must be made as an unarmed strike."
+      "description": "Whenever you succeed on a trip combat maneuver against a creature, they provoke an attack of opportunity from you (you can choose to wait until the creature is prone before resolving this attack of opportunity), this attack of opportunity considers “whenever a creature lands prone” and “whenever you succeed on a trip combat maneuver” to be part of the same trigger, and you can not take more than one attack of opportunity due to this circumstance. If your attack of opportunity is successful, the creature must make a successful Reflex save or become staggered until the end of their next turn.\n\nNote: This attack of opportunity from this ability must be made as an unarmed strike.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc30"
     },
     {
       "name": "Spinning Heel Kick",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Whenever you make a successful unarmed strike against a creature using the attack action, you may make an additional attack with a -2 penalty against a foe that is adjacent to the first and also within your reach."
+      "description": "Whenever you make a successful unarmed strike against a creature using the attack action, you may make an additional attack with a -2 penalty against a foe that is adjacent to the first and also within your reach.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc31"
     },
     {
       "name": "Suppressive Rush",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "As a special attack action, you may expend your martial focus to make two attacks with your unarmed strike, targeting the creature's touch AC and dealing 1/2 damage on a successful attack (making more than one successful attack with this talent still only counts as a single successful attack for the purpose of feats and class features which grant bonuses upon landing multiple successful attacks); each attack after the first is made as a free action. The creature may choose to automatically block all of these attacks, in which case your unarmed strikes automatically miss, but that creature then takes a -2 penalty to all attack and damage rolls until they take a Total Defense action or until they are not subject to any hostile actions for one round. For every 4 points of base attack bonus you possess, you may make an additional unarmed strike as part of this attack action, and the penalty that creature takes for blocking your Suppressive Rush increases by -2."
+      "description": "As a special attack action, you may expend your martial focus to make two attacks with your unarmed strike, targeting the creature's touch AC and dealing 1/2 damage on a successful attack (making more than one successful attack with this talent still only counts as a single successful attack for the purpose of feats and class features which grant bonuses upon landing multiple successful attacks); each attack after the first is made as a free action. The creature may choose to automatically block all of these attacks, in which case your unarmed strikes automatically miss, but that creature then takes a -2 penalty to all attack and damage rolls until they take a Total Defense action or until they are not subject to any hostile actions for one round. For every 4 points of base attack bonus you possess, you may make an additional unarmed strike as part of this attack action, and the penalty that creature takes for blocking your Suppressive Rush increases by -2.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc32"
     },
     {
       "name": "Sweeping Kick",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Whenever you make a successful unarmed strike against a creature using the attack action, you may make a trip attempt against that creature with a -2 penalty as an immediate action that doesn't provoke an attack of opportunity."
+      "description": "Whenever you make a successful unarmed strike against a creature using the attack action, you may make a trip attempt against that creature with a -2 penalty as an immediate action that doesn't provoke an attack of opportunity.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc33"
     },
     {
       "name": "Tear Flesh",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "You may deal bludgeoning, piercing, or slashing damage with your unarmed strikes, rather than only bludgeoning damage, chosen each time you make an unarmed attack. Whenever you deal unarmed strike damage to a target as an attack action, you may spend a swift action to rip the damaged creature's flesh; the creature takes 1 bleed damage and has their natural armor reduced by 1 (minimum 0) for as long as they are suffering this bleed damage. For every 6 base attack bonus you possess, the bleed damage and natural armor reduction caused by this talent increase by 1."
+      "description": "You may deal bludgeoning, piercing, or slashing damage with your unarmed strikes, rather than only bludgeoning damage, chosen each time you make an unarmed attack. Whenever you deal unarmed strike damage to a target as an attack action, you may spend a swift action to rip the damaged creature's flesh; the creature takes 1 bleed damage and has their natural armor reduced by 1 (minimum 0) for as long as they are suffering this bleed damage. For every 6 base attack bonus you possess, the bleed damage and natural armor reduction caused by this talent increase by 1.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc35"
     },
     {
       "name": "Waving Hand",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "You may spend a swift action to cause a creature damaged by your unarmed strike to gain the battered condition until the end of your next turn. Also as long as you have martial focus, your unarmed strikes gain the distracting and performance weapon special properties."
+      "description": "You may spend a swift action to cause a creature damaged by your unarmed strike to gain the battered condition until the end of your next turn. Also as long as you have martial focus, your unarmed strikes gain the distracting and performance weapon special properties.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc39"
     },
     {
       "name": "Air Cannon",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Prerequisites: Open Hand sphere, base attack bonus +5.\n\nYou can make unarmed strikes with such force that it creates howling winds. As a standard action, you may expend your martial focus to create a cone of air. This deals bludgeoning damage equal to twice your base unarmed strike damage die to all creatures within a close range cone (25 ft. + 5 ft. per 2 base attack bonus). Targets are allowed a Reflex save for half damage."
+      "description": "Prerequisites: Open Hand sphere, base attack bonus +5.\n\nYou can make unarmed strikes with such force that it creates howling winds. As a standard action, you may expend your martial focus to create a cone of air. This deals bludgeoning damage equal to twice your base unarmed strike damage die to all creatures within a close range cone (25 ft. + 5 ft. per 2 base attack bonus). Targets are allowed a Reflex save for half damage.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc42"
     },
     {
       "name": "Devil's Strikes",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Prerequisites: Open Hand sphere, base attack bonus +6.\n\nYou may spend a move action to rapidly spin in place, generating heat and friction that cause the next unarmed strike you make before the start of your next turn to deal an additional amount of fire damage equal to your base attack bonus. While this talent is active, the hellish flames around your limbs cause your unarmed strikes to be treated as magical weapons when attacking incorporeal creatures; if your unarmed strikes would already be magical, such as because you are currently wearing an amulet of mighty fists, they instead deal full damage against incorporeal creatures. Creatures killed while this talent is active require those attempting to resurrect them to make a caster level check equal to 10 + your base attack bonus or fail. This is a supernatural effect."
+      "description": "Prerequisites: Open Hand sphere, base attack bonus +6.\n\nYou may spend a move action to rapidly spin in place, generating heat and friction that cause the next unarmed strike you make before the start of your next turn to deal an additional amount of fire damage equal to your base attack bonus. While this talent is active, the hellish flames around your limbs cause your unarmed strikes to be treated as magical weapons when attacking incorporeal creatures; if your unarmed strikes would already be magical, such as because you are currently wearing an amulet of mighty fists, they instead deal full damage against incorporeal creatures. Creatures killed while this talent is active require those attempting to resurrect them to make a caster level check equal to 10 + your base attack bonus or fail. This is a supernatural effect.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc43"
     },
     {
       "name": "God Hand",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Prerequisites: Open Hand sphere, Mystic Fists, base attack bonus +10.\n\nYour unarmed strikes cause all fast healing and regeneration a creature may possess to cease functioning for 1 round.\n\nWhenever you deal damage to a creature or object with your unarmed strike using an attack action, if that creature would be reduced to 0 or fewer hit points, it is instantly killed and transformed into fine dust. If you deal damage in this manner to an object, reducing the object to 0 hp disintegrates the object (or a 10 ft. cube, if the object is particularly large). This is a supernatural effect."
+      "description": "Prerequisites: Open Hand sphere, Mystic Fists, base attack bonus +10.\n\nYour unarmed strikes cause all fast healing and regeneration a creature may possess to cease functioning for 1 round.\n\nWhenever you deal damage to a creature or object with your unarmed strike using an attack action, if that creature would be reduced to 0 or fewer hit points, it is instantly killed and transformed into fine dust. If you deal damage in this manner to an object, reducing the object to 0 hp disintegrates the object (or a 10 ft. cube, if the object is particularly large). This is a supernatural effect.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc45"
     },
     {
       "name": "Soul Sunder",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Prerequisites: Open Hand sphere, Mystic Fists, base attack bonus +15.\n\nWhen making an attack action with an unarmed strike, you may expend your martial focus. Any creature struck must make a Will save or become ethereal for 1 round per point of base attack bonus you possess. They may attempt a new Will save each round as a full-round action to end this effect early. Once a creature has become ethereal via this talent, you may not affect them with it again for 24 hours, though other creatures may use it on them normally. This is a supernatural effect."
+      "description": "Prerequisites: Open Hand sphere, Mystic Fists, base attack bonus +15.\n\nWhen making an attack action with an unarmed strike, you may expend your martial focus. Any creature struck must make a Will save or become ethereal for 1 round per point of base attack bonus you possess. They may attempt a new Will save each round as a full-round action to end this effect early. Once a creature has become ethereal via this talent, you may not affect them with it again for 24 hours, though other creatures may use it on them normally. This is a supernatural effect.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc48"
     },
     {
       "name": "Yoga Strikes",
       "sphereName": "Open Hand",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Prerequisites: Open Hand sphere, base attack bonus +5.\n\nOn your turn, whenever you use the attack action to attack with an unarmed strike or perform a combat maneuver, you may spend a move action to treat your reach as being 5 ft. larger than it actually is for every 5 points of base attack bonus you possess.\n\nSpheres of Might by Drop Dead Studios Using Spheres of Might Classes Armiger Blacksmith Commander Conscript Scholar Sentinel Striker Technician Prestige Classes Aeronaut Captain Spheres Alchemy Athletics Barrage Barroom Beastmastery Berserker Boxing Brute Dual Wielding Duelist Equipment Fencing Gladiator Guardian Lancer Leadership Open Hand Scoundrel Scout Shield Sniper Tech Trap Warleader Wrestling Pilot (3PP) Rules About Legendary Talents Martial Traditions Martial Packages Practitioner Feats Practitioner Traits Practitioner FCB's Practitioner Bestiary Associated Feats & Skills Ultimate Engineering (Tinker) Starfinder Conversion [3pp] Get Spheres of Might on DriveThruRPG Mythic Spheres of Might Ultimate Engineering The Conqueror's Handbook The General's Handbook The Highlander's Handbook The Inventor's Handbook The Inventor's Handbook 2 The Jester's Handbook Woodfaring Adventures The Youxia's Handbook Spheres Apocrypha Alch. Formulae Alch. Poisons Alch. Poisons 2 Armor Talents Astrologian Archetype Debilitating Talents Pugilists Racial Ranged Swashbucklers Tandem Tricks & Traps"
+      "description": "Prerequisites: Open Hand sphere, base attack bonus +5.\n\nOn your turn, whenever you use the attack action to attack with an unarmed strike or perform a combat maneuver, you may spend a move action to treat your reach as being 5 ft. larger than it actually is for every 5 points of base attack bonus you possess.\n\nSpheres of Might by Drop Dead Studios Using Spheres of Might Classes Armiger Blacksmith Commander Conscript Scholar Sentinel Striker Technician Prestige Classes Aeronaut Captain Spheres Alchemy Athletics Barrage Barroom Beastmastery Berserker Boxing Brute Dual Wielding Duelist Equipment Fencing Gladiator Guardian Lancer Leadership Open Hand Scoundrel Scout Shield Sniper Tech Trap Warleader Wrestling Pilot (3PP) Rules About Legendary Talents Martial Traditions Martial Packages Practitioner Feats Practitioner Traits Practitioner FCB's Practitioner Bestiary Associated Feats & Skills Ultimate Engineering (Tinker) Starfinder Conversion [3pp] Get Spheres of Might on DriveThruRPG Mythic Spheres of Might Ultimate Engineering The Conqueror's Handbook The General's Handbook The Highlander's Handbook The Inventor's Handbook The Inventor's Handbook 2 The Jester's Handbook Woodfaring Adventures The Youxia's Handbook Spheres Apocrypha Alch. Formulae Alch. Poisons Alch. Poisons 2 Armor Talents Astrologian Archetype Debilitating Talents Pugilists Racial Ranged Swashbucklers Tandem Tricks & Traps",
+      "sourceUrl": "http://spheresofpower.wikidot.com/open-hand#toc49"
     }
   ]
 }

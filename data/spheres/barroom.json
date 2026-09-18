@@ -11,7 +11,8 @@
       "sphereName": "Barroom",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "You may treat an improvised weapon as though it had one of the following special features (chosen upon first picking up an improvised weapon and may be changed once per round as a free action): blocking, brace, deadly, disarm, distracting, double (this may not be applied to improvised light weapons), grapple, nonlethal, performance, reach (this may only be applied to two handed improvised weapons), sunder, or trip. If the GM chooses, he may pose reasonable limitations on which items can gain which special features (for example, a sack of flour wouldn't have reach, while a sandwich wouldn't have deadly).\n\nIn addition, the improvised weapon has its damage increased by 1 size category and has its critical threat range increased to 19–20, with a critical multiplier of ×2. At +10 base attack bonus, improvised weapons have their critical threat range increased to 18-20 and you may apply two of the listed special features to improvised weapons. Associated Feat: Improvised Weapon Mastery"
+      "description": "You may treat an improvised weapon as though it had one of the following special features (chosen upon first picking up an improvised weapon and may be changed once per round as a free action): blocking, brace, deadly, disarm, distracting, double (this may not be applied to improvised light weapons), grapple, nonlethal, performance, reach (this may only be applied to two handed improvised weapons), sunder, or trip. If the GM chooses, he may pose reasonable limitations on which items can gain which special features (for example, a sack of flour wouldn't have reach, while a sandwich wouldn't have deadly).\n\nIn addition, the improvised weapon has its damage increased by 1 size category and has its critical threat range increased to 19–20, with a critical multiplier of ×2. At +10 base attack bonus, improvised weapons have their critical threat range increased to 18-20 and you may apply two of the listed special features to improvised weapons. Associated Feat: Improvised Weapon Mastery",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc5"
     },
     {
       "name": "Bottle Rocket",
@@ -20,7 +21,8 @@
         "eo3/apoc"
       ],
       "source": "Spheres of Power wiki",
-      "description": "The range increment of improvised weapons you wield is increased to 20 feet for two-handed weapons, 30 feet for one-handed weapons, and 50 feet for light weapons. Additionally, you may break a weapon to make a ranged attack action as if it were a scatter weapon with a range of 15 feet."
+      "description": "The range increment of improvised weapons you wield is increased to 20 feet for two-handed weapons, 30 feet for one-handed weapons, and 50 feet for light weapons. Additionally, you may break a weapon to make a ranged attack action as if it were a scatter weapon with a range of 15 feet.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc7"
     },
     {
       "name": "Charming Drunk",
@@ -29,14 +31,16 @@
         "utility"
       ],
       "source": "Spheres of Power wiki",
-      "description": "As long as you have the drunk status, you gain a +2 competence bonus to Bluff, Diplomacy, and Perform checks, increasing by +1 for every 3 base attack bonus you possess. You may also expend your drunk status as a free action to reroll a Bluff or Diplomacy check, but you must take the new result, even if it is worse. If you do so, you take a -5 on Bluff and Diplomacy checks for the next 10 minutes."
+      "description": "As long as you have the drunk status, you gain a +2 competence bonus to Bluff, Diplomacy, and Perform checks, increasing by +1 for every 3 base attack bonus you possess. You may also expend your drunk status as a free action to reroll a Bluff or Diplomacy check, but you must take the new result, even if it is worse. If you do so, you take a -5 on Bluff and Diplomacy checks for the next 10 minutes.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc9"
     },
     {
       "name": "Chasing the Dragon",
       "sphereName": "Barroom",
       "talentTypes": [],
       "source": "Spheres of Power wiki [LG]",
-      "description": "You may consume a drug or stimulant instead of imbibing an alcoholic drink to gain the drunk status, but you gain the status for double the duration (twice Constitution modifier rounds + 1 per 2 points of base attack bonus). When using hard drinker or any other ability that allows you to rapidly take a drink, you may consume a drug or stimulant instead of a drink (this counts as consuming a stimulant rapidly). You may ignore the negative effects of the drug or addiction so long as you retain the drunk status."
+      "description": "You may consume a drug or stimulant instead of imbibing an alcoholic drink to gain the drunk status, but you gain the status for double the duration (twice Constitution modifier rounds + 1 per 2 points of base attack bonus). When using hard drinker or any other ability that allows you to rapidly take a drink, you may consume a drug or stimulant instead of a drink (this counts as consuming a stimulant rapidly). You may ignore the negative effects of the drug or addiction so long as you retain the drunk status.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc10"
     },
     {
       "name": "Competitive Spirit",
@@ -45,35 +49,40 @@
         "utility"
       ],
       "source": "Spheres of Power wiki [DRS]",
-      "description": "You can pose a menace or make an impressive display of skill using Diplomacy as part of consuming an alcoholic beverage, and can use your Constitution modifier instead of your Charisma modifier when doing so. You gain a +1 circumstance bonus to such checks for each alcoholic beverage beyond the first you have consumed within the last hour (to a maximum bonus equal to 1 + your practitioner modifier).\n\nAdditionally, as long as you can see a drunk creature, there is a 50% chance whenever you consume a drink that it does not count towards the number of drinks you can consume before becoming sickened."
+      "description": "You can pose a menace or make an impressive display of skill using Diplomacy as part of consuming an alcoholic beverage, and can use your Constitution modifier instead of your Charisma modifier when doing so. You gain a +1 circumstance bonus to such checks for each alcoholic beverage beyond the first you have consumed within the last hour (to a maximum bonus equal to 1 + your practitioner modifier).\n\nAdditionally, as long as you can see a drunk creature, there is a 50% chance whenever you consume a drink that it does not count towards the number of drinks you can consume before becoming sickened.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc11"
     },
     {
       "name": "Double Chug",
       "sphereName": "Barroom",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "As a move action, you can draw and drink two non-magical alcoholic drinks or one magical drink and one non-magical drink; doing so doubles the duration of the drunk status and grants you a +1 circumstance bonus on all saving throws while drunk. You must have two open hands in order to perform a double chug. At +10 base attack bonus, performing a double chug lets you expend your drunk status twice before actually losing it."
+      "description": "As a move action, you can draw and drink two non-magical alcoholic drinks or one magical drink and one non-magical drink; doing so doubles the duration of the drunk status and grants you a +1 circumstance bonus on all saving throws while drunk. You must have two open hands in order to perform a double chug. At +10 base attack bonus, performing a double chug lets you expend your drunk status twice before actually losing it.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc12"
     },
     {
       "name": "Drinking Partners",
       "sphereName": "Barroom",
       "talentTypes": [],
       "source": "Spheres of Power wiki [DRS]",
-      "description": "Whenever an ally you can see imbibes an alcoholic drink or potion (and does so as a move action or longer), you can retrieve or grab an alcoholic drink or potion within your natural reach and imbibe it as an immediate action (which does not provoke attacks of opportunity).\n\nIf you have the drunk status and are within 10 feet of an ally who also has the drunk status, you treat your base attack bonus as being 2 higher for the purposes of determining the benefits of any talents or effects that rely on being drunk—this includes (drunk) talents."
+      "description": "Whenever an ally you can see imbibes an alcoholic drink or potion (and does so as a move action or longer), you can retrieve or grab an alcoholic drink or potion within your natural reach and imbibe it as an immediate action (which does not provoke attacks of opportunity).\n\nIf you have the drunk status and are within 10 feet of an ally who also has the drunk status, you treat your base attack bonus as being 2 higher for the purposes of determining the benefits of any talents or effects that rely on being drunk—this includes (drunk) talents.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc13"
     },
     {
       "name": "Drunken Boxer",
       "sphereName": "Barroom",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "As long as you have the drunk status, you may deal lethal damage with your unarmed strikes and you do not provoke attacks of opportunity for using them. If you would normally be able to do this, you are treated as one size larger for the amount of damage your unarmed strikes deal. You can expend your drunk status to deal maximum damage with an unarmed strike as a free action."
+      "description": "As long as you have the drunk status, you may deal lethal damage with your unarmed strikes and you do not provoke attacks of opportunity for using them. If you would normally be able to do this, you are treated as one size larger for the amount of damage your unarmed strikes deal. You can expend your drunk status to deal maximum damage with an unarmed strike as a free action.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc14"
     },
     {
       "name": "Everything Is A Drink",
       "sphereName": "Barroom",
       "talentTypes": [],
       "source": "Spheres of Power wiki [Apoc]",
-      "description": "You consider any beverage, alcoholic or not, to be an alcoholic beverage. This means that even water can potentially cause you to become drunk, and that potions, extracts and even alchemy formulae can grant you the drunk status, and that they may potentially sicken you from drinking too many.\n\nAlternatively, when drinking an alcoholic drink, you can consider it to be nonalcoholic. This allows you to drink as many alcoholic drinks as you desire without gaining the drunk status nor contributing to how many alcoholic drinks you have had before gaining the sickened condition.\n\nYou choose whether or not to consider a drink as alcoholic or not alcoholic at the time of drinking."
+      "description": "You consider any beverage, alcoholic or not, to be an alcoholic beverage. This means that even water can potentially cause you to become drunk, and that potions, extracts and even alchemy formulae can grant you the drunk status, and that they may potentially sicken you from drinking too many.\n\nAlternatively, when drinking an alcoholic drink, you can consider it to be nonalcoholic. This allows you to drink as many alcoholic drinks as you desire without gaining the drunk status nor contributing to how many alcoholic drinks you have had before gaining the sickened condition.\n\nYou choose whether or not to consider a drink as alcoholic or not alcoholic at the time of drinking.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc15"
     },
     {
       "name": "Expanded Breaker",
@@ -82,28 +91,32 @@
         "eo3"
       ],
       "source": "Spheres of Power wiki",
-      "description": "If you possess the brutal breaker ability, you may treat an improvised weapon as having the fragile weapon special feature regardless of its hardness or material for the purposes of feats or other talents you possess. In addition, you can break an improvised weapon regardless of its hardness of material. This ability does not allow you to break magic items or creatures being used as improvised weapons.\n\nIn addition, whenever you use a (smash) talent as part of a given action, you may expend your martial focus to use a second (smash) talent, provided that (smash) talent can apply to that action."
+      "description": "If you possess the brutal breaker ability, you may treat an improvised weapon as having the fragile weapon special feature regardless of its hardness or material for the purposes of feats or other talents you possess. In addition, you can break an improvised weapon regardless of its hardness of material. This ability does not allow you to break magic items or creatures being used as improvised weapons.\n\nIn addition, whenever you use a (smash) talent as part of a given action, you may expend your martial focus to use a second (smash) talent, provided that (smash) talent can apply to that action.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc16"
     },
     {
       "name": "Focusing Break",
       "sphereName": "Barroom",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Whenever you grant a weapon you wield the broken or destroyed condition, you may regain your martial focus as an immediate action."
+      "description": "Whenever you grant a weapon you wield the broken or destroyed condition, you may regain your martial focus as an immediate action.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc17"
     },
     {
       "name": "Focusing Buzz",
       "sphereName": "Barroom",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Whenever you drink an alcoholic beverage as a move action, you regain your martial focus."
+      "description": "Whenever you drink an alcoholic beverage as a move action, you regain your martial focus.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc18"
     },
     {
       "name": "High On Fumes",
       "sphereName": "Barroom",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "You may expend your martial focus as a swift action to gain the drunk status as though you had imbibed an alcoholic beverage."
+      "description": "You may expend your martial focus as a swift action to gain the drunk status as though you had imbibed an alcoholic beverage.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc19"
     },
     {
       "name": "Improvised Shield",
@@ -112,42 +125,48 @@
         "eo3"
       ],
       "source": "Spheres of Power wiki",
-      "description": "As a free action, you may wield an improvised weapon as an improvised shield for a round. When wielded as an improvised shield, the weapon's damage die is decreased by 2 sizes, and the weapon grants a shield bonus: light weapons grant +1 shield bonus, one-handed weapons grant a +2 shield bonus, and two-handed weapons grant a +4 shield bonus. Just as with all shields, you lose this shield bonus to AC if you use the improvised shield to attack, unless you possess the ability to make shield bashes without sacrificing shield bonus. An improvised shield counts as a regular shield for the Shield sphere.\n\nWhenever you are wielding a shield with the fragile special feature and a target scores a critical hit against you, you may break your shield to change the critical hit into a normal hit."
+      "description": "As a free action, you may wield an improvised weapon as an improvised shield for a round. When wielded as an improvised shield, the weapon's damage die is decreased by 2 sizes, and the weapon grants a shield bonus: light weapons grant +1 shield bonus, one-handed weapons grant a +2 shield bonus, and two-handed weapons grant a +4 shield bonus. Just as with all shields, you lose this shield bonus to AC if you use the improvised shield to attack, unless you possess the ability to make shield bashes without sacrificing shield bonus. An improvised shield counts as a regular shield for the Shield sphere.\n\nWhenever you are wielding a shield with the fragile special feature and a target scores a critical hit against you, you may break your shield to change the critical hit into a normal hit.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc21"
     },
     {
       "name": "Iron Liver",
       "sphereName": "Barroom",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Double the number of drinks you can consume before gaining the sickened condition. You cannot develop an addiction to alcohol.\n\nAdditionally, you gain a +2 circumstance bonus on Fortitude saves against poisons and effects that would cause the sickened or nauseated conditions. At +10 base attack bonus, this bonus increases to +5."
+      "description": "Double the number of drinks you can consume before gaining the sickened condition. You cannot develop an addiction to alcohol.\n\nAdditionally, you gain a +2 circumstance bonus on Fortitude saves against poisons and effects that would cause the sickened or nauseated conditions. At +10 base attack bonus, this bonus increases to +5.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc22"
     },
     {
       "name": "Liquid Courage",
       "sphereName": "Barroom",
       "talentTypes": [],
       "source": "Spheres of Power wiki [DRS]",
-      "description": "As long as you have the drunk status, you gain a +1 morale bonus to Dexterity-based skill checks and Bluff, Diplomacy, Intimidate, and Perform checks, increasing by +1 per 7 points of base attack bonus you possess.\n\nYou can also expend your drunk status as a free action to increase any morale bonuses you are benefitting from (excluding bonuses to ability scores) by +1 for a number of rounds equal to your Constitution modifier (minimum 1). This includes the morale bonus granted by this talent.\n\nAssociated Feat: Extreme Mood Swings (Inner Sea Taverns)."
+      "description": "As long as you have the drunk status, you gain a +1 morale bonus to Dexterity-based skill checks and Bluff, Diplomacy, Intimidate, and Perform checks, increasing by +1 per 7 points of base attack bonus you possess.\n\nYou can also expend your drunk status as a free action to increase any morale bonuses you are benefitting from (excluding bonuses to ability scores) by +1 for a number of rounds equal to your Constitution modifier (minimum 1). This includes the morale bonus granted by this talent.\n\nAssociated Feat: Extreme Mood Swings (Inner Sea Taverns).",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc23"
     },
     {
       "name": "Perfect Break",
       "sphereName": "Barroom",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Whenever an improvised weapon you wield would be destroyed, you may instead break it evenly into two new improvised weapons, each 1 size smaller than the original improvised weapon which was destroyed. This talent fails if the new improvised weapons would be Tiny or smaller. You may still allow a weapon to be destroyed normally."
+      "description": "Whenever an improvised weapon you wield would be destroyed, you may instead break it evenly into two new improvised weapons, each 1 size smaller than the original improvised weapon which was destroyed. This talent fails if the new improvised weapons would be Tiny or smaller. You may still allow a weapon to be destroyed normally.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc24"
     },
     {
       "name": "Surprise",
       "sphereName": "Barroom",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Whenever you attack a target with a weapon they did not know about (a hidden weapon, or an improvised weapon from the environment that hasn't been wielded or used to make an attack yet), they become battered until the end of your next turn. Additionally, your first attack with that weapon gains a +1 circumstance bonus for every 4 points of base attack bonus you possess. Associated Feat: Catch Off-Guard."
+      "description": "Whenever you attack a target with a weapon they did not know about (a hidden weapon, or an improvised weapon from the environment that hasn't been wielded or used to make an attack yet), they become battered until the end of your next turn. Additionally, your first attack with that weapon gains a +1 circumstance bonus for every 4 points of base attack bonus you possess. Associated Feat: Catch Off-Guard.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc27"
     },
     {
       "name": "Up, Down And…",
       "sphereName": "Barroom",
       "talentTypes": [],
       "source": "Spheres of Power wiki [Apoc]",
-      "description": "While you have the drunk status, you eliminate the penalties to your armor class and melee attacks while prone. Additionally, if you strike an enemy while prone, and then attack them again within one round while standing (or vice versa), you can expend your martial focus to target their flat-footed armor class for the second attack.\n\nSpecial: If you possess the Capoeira Spin talent from the Open Hand sphere, you always eliminate all penalties from being prone rather than only when drunk, and you can stand up without provoking attacks of opportunity as a free action made as part of an attack action while you have the drunk status, rather than an immediate action. At +10 base attack bonus, you instead gain a +2 bonus to attack rolls made while prone."
+      "description": "While you have the drunk status, you eliminate the penalties to your armor class and melee attacks while prone. Additionally, if you strike an enemy while prone, and then attack them again within one round while standing (or vice versa), you can expend your martial focus to target their flat-footed armor class for the second attack.\n\nSpecial: If you possess the Capoeira Spin talent from the Open Hand sphere, you always eliminate all penalties from being prone rather than only when drunk, and you can stand up without provoking attacks of opportunity as a free action made as part of an attack action while you have the drunk status, rather than an immediate action. At +10 base attack bonus, you instead gain a +2 bonus to attack rolls made while prone.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc28"
     },
     {
       "name": "Tavernmonger",
@@ -156,14 +175,16 @@
         "utility"
       ],
       "source": "Spheres of Power wiki [DRS]",
-      "description": "Once you spend a cumulative 100 gp at a tavern, you receive a 25% discount on any food, drink, or services provided by the tavern. Additionally, you do not increase the Diplomacy DC to improve the attitude of a group—if you have the drunk status, the normal DC increase instead becomes an equivalent bonus to your check.\n\nWhile in a tavern (or similar establishment, up to GMs discretion), you can grant a gift to the entirety of the establishment, typically in the form of costless drinks to its patrons. This involves spending 10% of the heroic NPC wealth of the average level of NPC among the patrons (although you can alter this amount depending on your intended reach), and the attitude adjustment is granted to all patrons (to a maximum of friendly) for 1 day. During this time, you can gather information within the establishment in only 2d6 minutes (or 1d4 minutes if a majority of the patrons are at least friendly towards you).\n\nAssociated Feats: Drunken Sing-Along and Tavern Regular (Inner Sea Taverns)"
+      "description": "Once you spend a cumulative 100 gp at a tavern, you receive a 25% discount on any food, drink, or services provided by the tavern. Additionally, you do not increase the Diplomacy DC to improve the attitude of a group—if you have the drunk status, the normal DC increase instead becomes an equivalent bonus to your check.\n\nWhile in a tavern (or similar establishment, up to GMs discretion), you can grant a gift to the entirety of the establishment, typically in the form of costless drinks to its patrons. This involves spending 10% of the heroic NPC wealth of the average level of NPC among the patrons (although you can alter this amount depending on your intended reach), and the attitude adjustment is granted to all patrons (to a maximum of friendly) for 1 day. During this time, you can gather information within the establishment in only 2d6 minutes (or 1d4 minutes if a majority of the patrons are at least friendly towards you).\n\nAssociated Feats: Drunken Sing-Along and Tavern Regular (Inner Sea Taverns)",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc29"
     },
     {
       "name": "You Want Some?",
       "sphereName": "Barroom",
       "talentTypes": [],
       "source": "Spheres of Power wiki [Apoc]",
-      "description": "If you have an alcoholic beverage (or other non-directly harmful liquid) in one hand when you make an attack action, you can force the target of the attack action to drink from it if you succeed on the attack action and the target is within your natural reach. Forcing a creature to drink an alcoholic beverage grants them a Reflex save to avoid drinking, and on failure makes that creature sickened for 1 round, and potentially other effects based off the drink (such as gaining the drunk condition).\n\nAdditionally, when you succeed on a check made to maintain a grapple, you can choose to force a creature to drink from an alcoholic beverage you have in your hand instead of the other options, or you can make a joint move action as part of the grapple check to draw a beverage and force the creature to drink from it, applying the same effects as above. At +10 base attack bonus, you can instead force a creature to drink a magical potion or beverage, or any other directly harmful drink (such as a mug of lava or acid, or a poisoned mug of alcohol)."
+      "description": "If you have an alcoholic beverage (or other non-directly harmful liquid) in one hand when you make an attack action, you can force the target of the attack action to drink from it if you succeed on the attack action and the target is within your natural reach. Forcing a creature to drink an alcoholic beverage grants them a Reflex save to avoid drinking, and on failure makes that creature sickened for 1 round, and potentially other effects based off the drink (such as gaining the drunk condition).\n\nAdditionally, when you succeed on a check made to maintain a grapple, you can choose to force a creature to drink from an alcoholic beverage you have in your hand instead of the other options, or you can make a joint move action as part of the grapple check to draw a beverage and force the creature to drink from it, applying the same effects as above. At +10 base attack bonus, you can instead force a creature to drink a magical potion or beverage, or any other directly harmful drink (such as a mug of lava or acid, or a poisoned mug of alcohol).",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc30"
     },
     {
       "name": "Bellowing Shanty",
@@ -172,7 +193,8 @@
         "drunk"
       ],
       "source": "Spheres of Power wiki [DRS]",
-      "description": "As long as you have the drunk status, you gain an alchemical bonus to Perform (act, comedy, oratory, and sing) checks equal to 1/2 your base attack bonus.\n\nYou can expend your drunk status as a free action to increase the range and radius of any extraordinary or supernatural ability that relies on auditory components you use by 10 feet + 5 feet for every 5 points of base attack bonus you possess, as well as the save DC of such effects, by 1 until the end of your next turn."
+      "description": "As long as you have the drunk status, you gain an alchemical bonus to Perform (act, comedy, oratory, and sing) checks equal to 1/2 your base attack bonus.\n\nYou can expend your drunk status as a free action to increase the range and radius of any extraordinary or supernatural ability that relies on auditory components you use by 10 feet + 5 feet for every 5 points of base attack bonus you possess, as well as the save DC of such effects, by 1 until the end of your next turn.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc32"
     },
     {
       "name": "Drunken Insight",
@@ -182,7 +204,8 @@
         "utility"
       ],
       "source": "Spheres of Power wiki",
-      "description": "You can reroll one Intelligence or Wisdom-based skill check as a free action, but you must take the new result, even if it is worse. Each time you use this talent during the same day beyond the first, you take a cumulative -2 penalty on the reroll granted by this talent."
+      "description": "You can reroll one Intelligence or Wisdom-based skill check as a free action, but you must take the new result, even if it is worse. Each time you use this talent during the same day beyond the first, you take a cumulative -2 penalty on the reroll granted by this talent.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc33"
     },
     {
       "name": "Dulled Senses",
@@ -191,7 +214,8 @@
         "drunk"
       ],
       "source": "Spheres of Power wiki [DRS]",
-      "description": "For a number of rounds equal to your practitioner modifier (minimum 1), you gain DR 3/piercing or slashing and ignore all disorientation and pain effects that you would suffer from, the effects' duration elapsing normally during this time—this DR increases by 1 per 4 points of base attack bonus you possess.\n\nAdditionally, at the beginning of your next turn, you can make a Fortitude save against a single disorientation or pain effect from which you are currently suffering against its original DC (or 10 + the source's CR, if it did not have a DC), ending the effect on a successful save.\n\nAssociated Feat: Implacable (Inner Sea Taverns)."
+      "description": "For a number of rounds equal to your practitioner modifier (minimum 1), you gain DR 3/piercing or slashing and ignore all disorientation and pain effects that you would suffer from, the effects' duration elapsing normally during this time—this DR increases by 1 per 4 points of base attack bonus you possess.\n\nAdditionally, at the beginning of your next turn, you can make a Fortitude save against a single disorientation or pain effect from which you are currently suffering against its original DC (or 10 + the source's CR, if it did not have a DC), ending the effect on a successful save.\n\nAssociated Feat: Implacable (Inner Sea Taverns).",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc34"
     },
     {
       "name": "False Courage",
@@ -200,7 +224,8 @@
         "drunk"
       ],
       "source": "Spheres of Power wiki",
-      "description": "You ignore all fear effects from which you are currently suffering until the beginning of your next turn. At the beginning of your next turn, you can make a Will saving throw against one fear effect from which you are currently suffering (if a fear effect from which you are currently suffering does not have a DC, its DC is treated as 10 + the source's CR), ending that effect on a successful save."
+      "description": "You ignore all fear effects from which you are currently suffering until the beginning of your next turn. At the beginning of your next turn, you can make a Will saving throw against one fear effect from which you are currently suffering (if a fear effect from which you are currently suffering does not have a DC, its DC is treated as 10 + the source's CR), ending that effect on a successful save.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc35"
     },
     {
       "name": "Had A Few",
@@ -209,7 +234,8 @@
         "drunk"
       ],
       "source": "Spheres of Power wiki",
-      "description": "You gain an amount of temporary hit points equal to your Constitution modifier + your base attack bonus that last for 1 minute."
+      "description": "You gain an amount of temporary hit points equal to your Constitution modifier + your base attack bonus that last for 1 minute.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc36"
     },
     {
       "name": "Menacing Belch",
@@ -218,7 +244,8 @@
         "drunk"
       ],
       "source": "Spheres of Power wiki",
-      "description": "As a standard action, you may make an Intimidate check to demoralize all hostile creatures within 30 ft. Associated Feat: Dazzling Display."
+      "description": "As a standard action, you may make an Intimidate check to demoralize all hostile creatures within 30 ft. Associated Feat: Dazzling Display.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc37"
     },
     {
       "name": "Miracle Drink",
@@ -227,7 +254,8 @@
         "drunk"
       ],
       "source": "Spheres of Power wiki",
-      "description": "You gain a +2 alchemical bonus to your Strength, Dexterity, or Charisma (your choice) for a number of rounds equal to your Constitution modifier (minimum 1), +1 round per 4 points of base attack bonus you possess. At 10 base attack bonus, this alchemical bonus increases to +4."
+      "description": "You gain a +2 alchemical bonus to your Strength, Dexterity, or Charisma (your choice) for a number of rounds equal to your Constitution modifier (minimum 1), +1 round per 4 points of base attack bonus you possess. At 10 base attack bonus, this alchemical bonus increases to +4.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc38"
     },
     {
       "name": "Nice And Loose",
@@ -236,7 +264,8 @@
         "drunk"
       ],
       "source": "Spheres of Power wiki",
-      "description": "As a free action that can be taken even when it's not your turn, you may roll twice when making a Reflex saving throw and take the better result. Alternatively, you may gain a bonus on Escape Artist checks equal to 1/2 your base attack bonus (minimum 1) for a number of rounds equal to your base attack bonus."
+      "description": "As a free action that can be taken even when it's not your turn, you may roll twice when making a Reflex saving throw and take the better result. Alternatively, you may gain a bonus on Escape Artist checks equal to 1/2 your base attack bonus (minimum 1) for a number of rounds equal to your base attack bonus.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc39"
     },
     {
       "name": "Purge",
@@ -245,7 +274,8 @@
         "drunk"
       ],
       "source": "Spheres of Power wiki",
-      "description": "As a move action, you can cause yourself to throw up, granting yourself a new save against any ingested poison from which you are currently suffering with a circumstance bonus to your Fortitude save equal to your practitioner modifier. In addition, select one adjacent square to yourself, causing it to be treated as difficult terrain for 1 minute. If a creature enters that square, it must make a Reflex saving throw or fall prone. For every 5 points of base attack bonus you possess, you can select an additional adjacent square to be treated as difficult terrain. Clearing a square of difficult terrain is a standard action."
+      "description": "As a move action, you can cause yourself to throw up, granting yourself a new save against any ingested poison from which you are currently suffering with a circumstance bonus to your Fortitude save equal to your practitioner modifier. In addition, select one adjacent square to yourself, causing it to be treated as difficult terrain for 1 minute. If a creature enters that square, it must make a Reflex saving throw or fall prone. For every 5 points of base attack bonus you possess, you can select an additional adjacent square to be treated as difficult terrain. Clearing a square of difficult terrain is a standard action.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc40"
     },
     {
       "name": "Reeling Steps",
@@ -254,7 +284,8 @@
         "drunk"
       ],
       "source": "Spheres of Power wiki",
-      "description": "Until the beginning of your next turn, any movement you make or combat maneuvers you attempt do not provoke attacks of opportunity; you also gain an alchemical bonus on Perform (dance) checks equal to 1/2 your base attack bonus as long as you have the drunk status. At +10 base attack bonus, creatures cannot apply their Dexterity bonus to their CMD against combat maneuvers you attempt while using this talent and you can expend your drunk status to treat a Perform (dance) check as though you rolled a 15."
+      "description": "Until the beginning of your next turn, any movement you make or combat maneuvers you attempt do not provoke attacks of opportunity; you also gain an alchemical bonus on Perform (dance) checks equal to 1/2 your base attack bonus as long as you have the drunk status. At +10 base attack bonus, creatures cannot apply their Dexterity bonus to their CMD against combat maneuvers you attempt while using this talent and you can expend your drunk status to treat a Perform (dance) check as though you rolled a 15.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc41"
     },
     {
       "name": "Seeing Double",
@@ -263,7 +294,8 @@
         "drunk"
       ],
       "source": "Spheres of Power wiki [Apoc]",
-      "description": "When you make an attack action, you can make an additional attack as a free action against the same target. This additional attack has a 50% chance to miss. At base attack bonus +10, it only has a 20% chance to miss.\n\nAuthor's Note: This talent may only be used once per qualifying attack action, even if you can expend the drunk status multiple times."
+      "description": "When you make an attack action, you can make an additional attack as a free action against the same target. This additional attack has a 50% chance to miss. At base attack bonus +10, it only has a 20% chance to miss.\n\nAuthor's Note: This talent may only be used once per qualifying attack action, even if you can expend the drunk status multiple times.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc42"
     },
     {
       "name": "Stupored Drop",
@@ -272,7 +304,8 @@
         "drunk"
       ],
       "source": "Spheres of Power wiki [Apoc]",
-      "description": "As an immediate action, you fall prone and gain the benefits of the evasion ability until the start of your next turn. At the beginning of your next turn, if you have martial focus, you may stand up as a move action without provoking attacks of opportunity. At 10 base attack bonus, you may use this talent as a free action that can be taken even when it is not your turn and gain improved evasion."
+      "description": "As an immediate action, you fall prone and gain the benefits of the evasion ability until the start of your next turn. At the beginning of your next turn, if you have martial focus, you may stand up as a move action without provoking attacks of opportunity. At 10 base attack bonus, you may use this talent as a free action that can be taken even when it is not your turn and gain improved evasion.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc43"
     },
     {
       "name": "Calamitous Coercion",
@@ -281,7 +314,8 @@
         "smash"
       ],
       "source": "Spheres of Power wiki [DRS]",
-      "description": "You can break a weapon as part of attempting a Bluff, Intimidate, or Perform check to gain a circumstance bonus to the attempt equal to the object's hardness (minimum +1, maximum equal to 2 + your base attack bonus).\n\nAlternatively, you can break a weapon or attempt to break an object within your natural reach as a standard action. If you succeed, you can make an Intimidate check to demoralize all hostile creatures within 30 feet.\n\nAssociated Feats: Dazzling Display, Destructive Persuasion (Champions of Corruption).\n\nUtility Option: This talent can be taken as a utility talent by having its benefits not apply to Intimidate checks made to demoralize or Bluff checks to feint."
+      "description": "You can break a weapon as part of attempting a Bluff, Intimidate, or Perform check to gain a circumstance bonus to the attempt equal to the object's hardness (minimum +1, maximum equal to 2 + your base attack bonus).\n\nAlternatively, you can break a weapon or attempt to break an object within your natural reach as a standard action. If you succeed, you can make an Intimidate check to demoralize all hostile creatures within 30 feet.\n\nAssociated Feats: Dazzling Display, Destructive Persuasion (Champions of Corruption).\n\nUtility Option: This talent can be taken as a utility talent by having its benefits not apply to Intimidate checks made to demoralize or Bluff checks to feint.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc45"
     },
     {
       "name": "Crude Shot",
@@ -290,7 +324,8 @@
         "smash"
       ],
       "source": "Spheres of Power wiki [DRS]",
-      "description": "As part of performing an attack action, you can break a weapon to make a dirty trick combat maneuver against the target of your attack as an immediate action—if your original attack hits, you gain a +2 circumstance bonus to the dirty trick attempt (or a +4 circumstance bonus if the attack was a successful critical hit)."
+      "description": "As part of performing an attack action, you can break a weapon to make a dirty trick combat maneuver against the target of your attack as an immediate action—if your original attack hits, you gain a +2 circumstance bonus to the dirty trick attempt (or a +4 circumstance bonus if the attack was a successful critical hit).",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc46"
     },
     {
       "name": "Interceding Crash",
@@ -300,7 +335,8 @@
         "eo3"
       ],
       "source": "Spheres of Power wiki",
-      "description": "When a creature makes a melee or ranged attack against you, you may spend an attack of opportunity to break a weapon you are wielding. Make an attack roll as if you were making an attack of opportunity. If the result is greater than the attack roll total of the attack roll, you may roll your weapon's damage die + your practitioner modifier (minimum 1) and reduce the damage taken by that result. If this would reduce the damage taken to 0, the attack counts as a miss for the purposes of abilities that trigger on a hit or a miss.\n\nIf you have the ability to draw weapons as a free action (such as the Quick Draw feat or Equipment sphere Fast Draw talent), you may draw a weapon (or improvised weapon) as part of using this ability."
+      "description": "When a creature makes a melee or ranged attack against you, you may spend an attack of opportunity to break a weapon you are wielding. Make an attack roll as if you were making an attack of opportunity. If the result is greater than the attack roll total of the attack roll, you may roll your weapon's damage die + your practitioner modifier (minimum 1) and reduce the damage taken by that result. If this would reduce the damage taken to 0, the attack counts as a miss for the purposes of abilities that trigger on a hit or a miss.\n\nIf you have the ability to draw weapons as a free action (such as the Quick Draw feat or Equipment sphere Fast Draw talent), you may draw a weapon (or improvised weapon) as part of using this ability.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc47"
     },
     {
       "name": "Jagged Edge",
@@ -310,7 +346,8 @@
         "eo3"
       ],
       "source": "Spheres of Power wiki",
-      "description": "You know how to break an object to use its jagged edges to your advantage. You may break a melee or thrown weapon when you attack a creature to deal 1d4 points of bleed damage to that opponent. Associated Feat: Splintering Weapon."
+      "description": "You know how to break an object to use its jagged edges to your advantage. You may break a melee or thrown weapon when you attack a creature to deal 1d4 points of bleed damage to that opponent. Associated Feat: Splintering Weapon.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc48"
     },
     {
       "name": "Shatter",
@@ -320,7 +357,8 @@
         "eo3"
       ],
       "source": "Spheres of Power wiki",
-      "description": "You may break a weapon when attacking a creature to deal 1d4 points of additional damage on that attack. This damage is multiplied on a critical hit. This additional damage increases by an additional 1d4 for every 4 base attack bonus you possess.\n\nIf you threaten a critical hit while using this talent, you gain a +4 bonus on the roll to confirm the critical hit, and if it is confirmed, the weapon is destroyed. If you apply a second effect that would give your weapon the broken condition, you forgo this additional benefit. Associated Feat: Chairbreaker."
+      "description": "You may break a weapon when attacking a creature to deal 1d4 points of additional damage on that attack. This damage is multiplied on a critical hit. This additional damage increases by an additional 1d4 for every 4 base attack bonus you possess.\n\nIf you threaten a critical hit while using this talent, you gain a +4 bonus on the roll to confirm the critical hit, and if it is confirmed, the weapon is destroyed. If you apply a second effect that would give your weapon the broken condition, you forgo this additional benefit. Associated Feat: Chairbreaker.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc49"
     },
     {
       "name": "Sudden Crash",
@@ -330,7 +368,8 @@
         "eo3"
       ],
       "source": "Spheres of Power wiki",
-      "description": "As part of making an attack, you may break a weapon. A creature damaged by this attack gains the battered condition until the end of your turn. If this attack was performed as an attack action, the damaged creature must also succeed at a Fortitude save or have all movement speeds they possessed reduced by half for 1 round plus 1 round per 5 base attack bonus (minimum 5 feet). A creature subject to an effect which removes the battered condition also removes this movement penalty."
+      "description": "As part of making an attack, you may break a weapon. A creature damaged by this attack gains the battered condition until the end of your turn. If this attack was performed as an attack action, the damaged creature must also succeed at a Fortitude save or have all movement speeds they possessed reduced by half for 1 round plus 1 round per 5 base attack bonus (minimum 5 feet). A creature subject to an effect which removes the battered condition also removes this movement penalty.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc50"
     },
     {
       "name": "Take To Go",
@@ -340,21 +379,24 @@
         "eo3"
       ],
       "source": "Spheres of Power wiki",
-      "description": "As part of performing an attack action, you may break a weapon. If your attack is successful, you may move into any square the target threatens (to a maximum of half your movement speed). This movement does not provoke attacks of opportunity from that creature, but otherwise provokes attacks of opportunity as normal. If you were not within the creature's threatened area (such as by breaking and throwing an improvised thrown weapon at range or because the creature does not threaten the square you made the attack from), you may instead take a 5-foot step and subtract 5 feet from your total movement during your next turn.\n\nIn addition, whenever you move, you can pick up an unattended item as part of that movement. You must have a free hand to pick up an item this way. Picking up an item this way does not provoke attacks of opportunity. Whenever you would use this ability, you may attempt to instead pick up multiple, smaller and closely gathered items that could be held in one hand (such as a stack of plates or a fistful of nails) this way equal to your practitioner modifier (minimum 1). Smaller items are generally two sizes smaller (or smaller) than the practitioner. Associated Feat: Grab and Go."
+      "description": "As part of performing an attack action, you may break a weapon. If your attack is successful, you may move into any square the target threatens (to a maximum of half your movement speed). This movement does not provoke attacks of opportunity from that creature, but otherwise provokes attacks of opportunity as normal. If you were not within the creature's threatened area (such as by breaking and throwing an improvised thrown weapon at range or because the creature does not threaten the square you made the attack from), you may instead take a 5-foot step and subtract 5 feet from your total movement during your next turn.\n\nIn addition, whenever you move, you can pick up an unattended item as part of that movement. You must have a free hand to pick up an item this way. Picking up an item this way does not provoke attacks of opportunity. Whenever you would use this ability, you may attempt to instead pick up multiple, smaller and closely gathered items that could be held in one hand (such as a stack of plates or a fistful of nails) this way equal to your practitioner modifier (minimum 1). Smaller items are generally two sizes smaller (or smaller) than the practitioner. Associated Feat: Grab and Go.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc51"
     },
     {
       "name": "Alchemical Dragon",
       "sphereName": "Barroom",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Prerequisites: Alchemy sphere, Barroom sphere.\n\nYou may choose to imbibe any liquid alchemical weapon you are currently holding (such as alchemist's fire or liquid ice), treating it as though it was an alcoholic beverage. When you do, you may spit it out in a 10-ft. cone as a standard action as long as you do so within a number of rounds equal to your practitioner modifier (if you do not, the alchemical weapon is wasted), forcing all creatures within that cone to make a successful Reflex save or take damage as though they were directly hit by the alchemical item, taking 1/2 damage on a successful save. If you imbibe a new liquid alchemical weapon before spitting a previously imbibed one, the previously imbibed liquid alchemical weapon is wasted. For every 5 base attack bonus you possess, the area of this cone increases by 5 ft."
+      "description": "Prerequisites: Alchemy sphere, Barroom sphere.\n\nYou may choose to imbibe any liquid alchemical weapon you are currently holding (such as alchemist's fire or liquid ice), treating it as though it was an alcoholic beverage. When you do, you may spit it out in a 10-ft. cone as a standard action as long as you do so within a number of rounds equal to your practitioner modifier (if you do not, the alchemical weapon is wasted), forcing all creatures within that cone to make a successful Reflex save or take damage as though they were directly hit by the alchemical item, taking 1/2 damage on a successful save. If you imbibe a new liquid alchemical weapon before spitting a previously imbibed one, the previously imbibed liquid alchemical weapon is wasted. For every 5 base attack bonus you possess, the area of this cone increases by 5 ft.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc53"
     },
     {
       "name": "Blazewater",
       "sphereName": "Barroom",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Prerequisite: Barroom sphere, base attack bonus +7.\n\nWhenever you would be able to imbibe an alcoholic beverage, you may instead pour it onto a weapon you or an adjacent ally is wielding and set it ablaze. For one minute, that weapon gains the flaming burst magic weapon special ability, except the effect is considered extraordinary rather than magical."
+      "description": "Prerequisite: Barroom sphere, base attack bonus +7.\n\nWhenever you would be able to imbibe an alcoholic beverage, you may instead pour it onto a weapon you or an adjacent ally is wielding and set it ablaze. For one minute, that weapon gains the flaming burst magic weapon special ability, except the effect is considered extraordinary rather than magical.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc54"
     },
     {
       "name": "Devastating Burst",
@@ -364,7 +406,8 @@
         "eo3"
       ],
       "source": "Spheres of Power wiki",
-      "description": "Prerequisites: Barroom sphere (Barroom Expert), base attack bonus +10.\n\nAs part of an attack action, you may expend your martial focus and break a weapon. Your attack is treated as a critical threat and you must roll to confirm the critical hit as normal. A critical hit made this way has a critical multiplier of x2, even if it would normally be higher. After using this talent, you cannot use this (smash) talent for 1 minute."
+      "description": "Prerequisites: Barroom sphere (Barroom Expert), base attack bonus +10.\n\nAs part of an attack action, you may expend your martial focus and break a weapon. Your attack is treated as a critical threat and you must roll to confirm the critical hit as normal. A critical hit made this way has a critical multiplier of x2, even if it would normally be higher. After using this talent, you cannot use this (smash) talent for 1 minute.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc55"
     },
     {
       "name": "Dumbfounding Crack",
@@ -374,35 +417,40 @@
         "eo3"
       ],
       "source": "Spheres of Power wiki",
-      "description": "Prerequisites: Barroom sphere, base attack bonus +5.\n\nWhenever you attack a creature, you may break your weapon and expend your martial focus. If your attack is successful, the creature must succeed at a Will saving throw or become confused for 1 round, plus 1 round per 3 points of base attack bonus you possess."
+      "description": "Prerequisites: Barroom sphere, base attack bonus +5.\n\nWhenever you attack a creature, you may break your weapon and expend your martial focus. If your attack is successful, the creature must succeed at a Will saving throw or become confused for 1 round, plus 1 round per 3 points of base attack bonus you possess.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc56"
     },
     {
       "name": "Eternal Buzz",
       "sphereName": "Barroom",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Prerequisite: Barroom sphere, High on Fumes, Iron Liver, base attack bonus +15.\n\nYou may spend a swift action to gain the drunk status, whether or not you have anything to drink. In addition, your blood is treated as an alcoholic beverage. Any creature who attempts to swallow you whole must pass a Fortitude save or become sickened for as long as you are inside of it."
+      "description": "Prerequisite: Barroom sphere, High on Fumes, Iron Liver, base attack bonus +15.\n\nYou may spend a swift action to gain the drunk status, whether or not you have anything to drink. In addition, your blood is treated as an alcoholic beverage. Any creature who attempts to swallow you whole must pass a Fortitude save or become sickened for as long as you are inside of it.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc57"
     },
     {
       "name": "Go Limp",
       "sphereName": "Barroom",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Prerequisite: Barroom sphere, base attack bonus +5.\n\nAs long as you possess the drunk status, whenever you receive damage, you may convert 1/2 of it into nonlethal damage; this talent ceases to function if you are immune to nonlethal damage or currently helpless."
+      "description": "Prerequisite: Barroom sphere, base attack bonus +5.\n\nAs long as you possess the drunk status, whenever you receive damage, you may convert 1/2 of it into nonlethal damage; this talent ceases to function if you are immune to nonlethal damage or currently helpless.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc58"
     },
     {
       "name": "Good For What Ails Ya",
       "sphereName": "Barroom",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Prerequisite: Barroom sphere.\n\nWhenever you imbibe a non-magical alcoholic drink, you regain an amount of hit points equal to your base attack bonus; this healing cannot increase your hit points above 1/2 of your maximum hit points. At +10 base attack bonus, this healing can instead not increase your hit points above 3/4 of your maximum hit points."
+      "description": "Prerequisite: Barroom sphere.\n\nWhenever you imbibe a non-magical alcoholic drink, you regain an amount of hit points equal to your base attack bonus; this healing cannot increase your hit points above 1/2 of your maximum hit points. At +10 base attack bonus, this healing can instead not increase your hit points above 3/4 of your maximum hit points.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc59"
     },
     {
       "name": "Magic In The Spirits",
       "sphereName": "Barroom",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Prerequisite: Barroom sphere, base attack bonus +4.\n\nSo long as you have the drunk status, any weapon you wield gains a +1 enhancement bonus per 4 base attack bonus you possess (maximum: +5). This does not stack with any enhancement bonus the weapon might already possess. This is a supernatural effect."
+      "description": "Prerequisite: Barroom sphere, base attack bonus +4.\n\nSo long as you have the drunk status, any weapon you wield gains a +1 enhancement bonus per 4 base attack bonus you possess (maximum: +5). This does not stack with any enhancement bonus the weapon might already possess. This is a supernatural effect.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc60"
     },
     {
       "name": "Murky Brew",
@@ -411,14 +459,16 @@
         "drunk"
       ],
       "source": "Spheres of Power wiki [DRS]",
-      "description": "Prerequisites: Barroom sphere.\n\nAs long as you have the drunk status, you gain a +2 bonus to saving throws and AC against effects that affect you based on your alignment (such as holy smite, or an Enmity Fate sphere word), as well as to Use Magic Device checks to emulate an alignment. This bonus increases by +1 per 6 points of base attack bonus you possess. While drunk, you produce no alignment aura.\n\nYou can expend your drunk status as a free action to be treated as having no alignment for any harmful effect reliant on it for 1 round per 2 points of base attack bonus you possess.\n\nAssociated Feat: Muddled Morals (Inner Sea Taverns)."
+      "description": "Prerequisites: Barroom sphere.\n\nAs long as you have the drunk status, you gain a +2 bonus to saving throws and AC against effects that affect you based on your alignment (such as holy smite, or an Enmity Fate sphere word), as well as to Use Magic Device checks to emulate an alignment. This bonus increases by +1 per 6 points of base attack bonus you possess. While drunk, you produce no alignment aura.\n\nYou can expend your drunk status as a free action to be treated as having no alignment for any harmful effect reliant on it for 1 round per 2 points of base attack bonus you possess.\n\nAssociated Feat: Muddled Morals (Inner Sea Taverns).",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc61"
     },
     {
       "name": "Perfect Relaxation",
       "sphereName": "Barroom",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Prerequisites: Barroom sphere, Nice and Loose, base attack bonus +10.\n\nYou gain improved evasion while using the Nice and Loose talent; you can also end the duration of your Escape Artist bonus to be treated as though you were under the effects of a freedom of movement spell for 1 round as a supernatural effect."
+      "description": "Prerequisites: Barroom sphere, Nice and Loose, base attack bonus +10.\n\nYou gain improved evasion while using the Nice and Loose talent; you can also end the duration of your Escape Artist bonus to be treated as though you were under the effects of a freedom of movement spell for 1 round as a supernatural effect.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc62"
     },
     {
       "name": "Rejuvenating Spirits",
@@ -427,7 +477,8 @@
         "eo3"
       ],
       "source": "Spheres of Power wiki",
-      "description": "Prerequisites: Barroom sphere (Good For What Ails Ya), base attack bonus +6.\n\nSo long as you have the drunk status, you gain fast healing equal to 1/2 your base attack bonus. This healing cannot increase your hit points above 1/2 of your maximum hit point total, and is suppressed for 1 round if you would suffer cold or negative energy damage.\n\nAt +15 base attack bonus, the fast healing becomes regeneration (cold or negative energy), which still cannot increase your hit points above 1/2 your maximum hit point total."
+      "description": "Prerequisites: Barroom sphere (Good For What Ails Ya), base attack bonus +6.\n\nSo long as you have the drunk status, you gain fast healing equal to 1/2 your base attack bonus. This healing cannot increase your hit points above 1/2 of your maximum hit point total, and is suppressed for 1 round if you would suffer cold or negative energy damage.\n\nAt +15 base attack bonus, the fast healing becomes regeneration (cold or negative energy), which still cannot increase your hit points above 1/2 your maximum hit point total.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc63"
     },
     {
       "name": "Swaying Dodge",
@@ -437,7 +488,8 @@
         "eo3"
       ],
       "source": "Spheres of Power wiki",
-      "description": "Prerequisites: Barroom sphere, base attack bonus +4.\n\nYou gain a dodge pool equal to 40% + 10% per 3 points of base attack bonus you possess for a number of rounds equal to your practitioner modifier. Whenever you are attacked, you may reduce the dodge pool by any amount in increments of 5% to gain an equivalent amount of miss chance (maximum 50%) against the attack. This miss chance does not stack with other non-concealment miss chances.\n\nIf you use this talent and already have a dodge pool from this talent (such as from a prior use), your dodge pool refills instead of granting you an additional pool.\n\nBarroom Sphere Class Options Archetypes Barfighter (Striker) Barfighters are Strikers who specialize in drinking as they brawl. Smasher (Bravo) Smashers, as the name suggests, excel at turning everyday items into dangerous weaponry. The Stupor Monk (Monk) Whereas most monks find enlightenment through physical and mental training, these monks find it at the bottom of a bottle.\n\nSpheres of Might by Drop Dead Studios Using Spheres of Might Classes Armiger Blacksmith Commander Conscript Scholar Sentinel Striker Technician Prestige Classes Aeronaut Captain Spheres Alchemy Athletics Barrage Barroom Beastmastery Berserker Boxing Brute Dual Wielding Duelist Equipment Fencing Gladiator Guardian Lancer Leadership Open Hand Scoundrel Scout Shield Sniper Tech Trap Warleader Wrestling Pilot (3PP) Rules About Legendary Talents Martial Traditions Martial Packages Practitioner Feats Practitioner Traits Practitioner FCB's Practitioner Bestiary Associated Feats & Skills Ultimate Engineering (Tinker) Starfinder Conversion [3pp] Get Spheres of Might on DriveThruRPG Mythic Spheres of Might Ultimate Engineering The Conqueror's Handbook The General's Handbook The Highlander's Handbook The Inventor's Handbook The Inventor's Handbook 2 The Jester's Handbook Woodfaring Adventures The Youxia's Handbook Spheres Apocrypha Alch. Formulae Alch. Poisons Alch. Poisons 2 Armor Talents Astrologian Archetype Debilitating Talents Pugilists Racial Ranged Swashbucklers Tandem Tricks & Traps"
+      "description": "Prerequisites: Barroom sphere, base attack bonus +4.\n\nYou gain a dodge pool equal to 40% + 10% per 3 points of base attack bonus you possess for a number of rounds equal to your practitioner modifier. Whenever you are attacked, you may reduce the dodge pool by any amount in increments of 5% to gain an equivalent amount of miss chance (maximum 50%) against the attack. This miss chance does not stack with other non-concealment miss chances.\n\nIf you use this talent and already have a dodge pool from this talent (such as from a prior use), your dodge pool refills instead of granting you an additional pool.\n\nBarroom Sphere Class Options Archetypes Barfighter (Striker) Barfighters are Strikers who specialize in drinking as they brawl. Smasher (Bravo) Smashers, as the name suggests, excel at turning everyday items into dangerous weaponry. The Stupor Monk (Monk) Whereas most monks find enlightenment through physical and mental training, these monks find it at the bottom of a bottle.\n\nSpheres of Might by Drop Dead Studios Using Spheres of Might Classes Armiger Blacksmith Commander Conscript Scholar Sentinel Striker Technician Prestige Classes Aeronaut Captain Spheres Alchemy Athletics Barrage Barroom Beastmastery Berserker Boxing Brute Dual Wielding Duelist Equipment Fencing Gladiator Guardian Lancer Leadership Open Hand Scoundrel Scout Shield Sniper Tech Trap Warleader Wrestling Pilot (3PP) Rules About Legendary Talents Martial Traditions Martial Packages Practitioner Feats Practitioner Traits Practitioner FCB's Practitioner Bestiary Associated Feats & Skills Ultimate Engineering (Tinker) Starfinder Conversion [3pp] Get Spheres of Might on DriveThruRPG Mythic Spheres of Might Ultimate Engineering The Conqueror's Handbook The General's Handbook The Highlander's Handbook The Inventor's Handbook The Inventor's Handbook 2 The Jester's Handbook Woodfaring Adventures The Youxia's Handbook Spheres Apocrypha Alch. Formulae Alch. Poisons Alch. Poisons 2 Armor Talents Astrologian Archetype Debilitating Talents Pugilists Racial Ranged Swashbucklers Tandem Tricks & Traps",
+      "sourceUrl": "http://spheresofpower.wikidot.com/barroom#toc64"
     }
   ]
 }

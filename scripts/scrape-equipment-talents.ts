@@ -71,6 +71,7 @@ interface EquipmentTalent {
   name: string;
   isDiscipline: boolean;
   description: string;
+  sourceUrl: string;
 }
 
 /** Strips the "(discipline)" tag and any bracketed source tag (e.g. "[LG]",
@@ -90,7 +91,10 @@ function cleanTalentName(raw: string): string {
  * "Discipline Talents" h1 region that immediately follows it. Stops at
  * "Legendary Talents" (or any other h1) — those are deliberately excluded.
  */
-function parseEquipmentSpherePage(html: string): EquipmentTalent[] {
+function parseEquipmentSpherePage(
+  html: string,
+  pageUrl: string,
+): EquipmentTalent[] {
   const $ = cheerio.load(html);
   const content = $("#page-content");
   content.find("script, style, .code").remove();
@@ -100,7 +104,11 @@ function parseEquipmentSpherePage(html: string): EquipmentTalent[] {
   let seenEquipment = false;
   let seenDiscipline = false;
   let done = false;
-  let current: { name: string; isDiscipline: boolean } | null = null;
+  let current: {
+    name: string;
+    isDiscipline: boolean;
+    sourceUrl: string;
+  } | null = null;
   const bodyBuf: string[] = [];
 
   const flush = () => {
@@ -109,6 +117,7 @@ function parseEquipmentSpherePage(html: string): EquipmentTalent[] {
         name: cleanTalentName(current.name),
         isDiscipline: current.isDiscipline,
         description: bodyBuf.join(" "),
+        sourceUrl: current.sourceUrl,
       });
     }
     current = null;
@@ -141,7 +150,12 @@ function parseEquipmentSpherePage(html: string): EquipmentTalent[] {
 
     if (tag === "h4") {
       flush();
-      current = { name: raw, isDiscipline: section === "discipline" };
+      const id = $(el).attr("id");
+      current = {
+        name: raw,
+        isDiscipline: section === "discipline",
+        sourceUrl: id ? `${pageUrl}#${id}` : pageUrl,
+      };
       return;
     }
     if (current) bodyBuf.push(raw);
@@ -168,12 +182,14 @@ async function writeToDb(talents: EquipmentTalent[]) {
           sphereName: "Equipment",
           talentTypes: t.isDiscipline ? ["discipline"] : [],
           description: t.description,
+          sourceUrl: t.sourceUrl,
           source: SOURCE,
           isSrd: true,
         },
         update: {
           talentTypes: t.isDiscipline ? ["discipline"] : [],
           description: t.description,
+          sourceUrl: t.sourceUrl,
         },
       });
     }
@@ -187,7 +203,10 @@ async function main() {
   await mkdir(OUT_DIR, { recursive: true });
 
   const html = await getHtml("equipment-sphere");
-  const talents = parseEquipmentSpherePage(html);
+  const talents = parseEquipmentSpherePage(
+    html,
+    `${BASE}/equipment-sphere`,
+  );
   const disciplineCount = talents.filter((t) => t.isDiscipline).length;
   console.log(
     `Equipment sphere: ${talents.length} talents (${disciplineCount} discipline, ${talents.length - disciplineCount} standard); legendary talents skipped.`,

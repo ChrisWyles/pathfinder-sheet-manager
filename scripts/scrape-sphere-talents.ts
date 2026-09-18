@@ -118,6 +118,7 @@ interface SphereTalent {
   sphereName: string;
   name: string;
   description: string;
+  sourceUrl: string;
 }
 
 /**
@@ -132,7 +133,11 @@ interface SphereTalent {
  * those, and anything after them (including the page's later
  * self-transclusion), are excluded.
  */
-function parseSpherePage(html: string, sphereName: string): SphereTalent[] {
+function parseSpherePage(
+  html: string,
+  sphereName: string,
+  pageUrl: string,
+): SphereTalent[] {
   const $ = cheerio.load(html);
   const content = $("#page-content");
   content.find("script, style, .code").remove();
@@ -141,7 +146,7 @@ function parseSpherePage(html: string, sphereName: string): SphereTalent[] {
   const seenHeadings = new Set<string>();
   let collecting = false;
   let done = false;
-  let current: { name: string } | null = null;
+  let current: { name: string; sourceUrl: string } | null = null;
   const bodyBuf: string[] = [];
 
   const flush = () => {
@@ -150,6 +155,7 @@ function parseSpherePage(html: string, sphereName: string): SphereTalent[] {
         sphereName,
         name: cleanTalentName(current.name),
         description: bodyBuf.join(" "),
+        sourceUrl: current.sourceUrl,
       });
     }
     current = null;
@@ -184,7 +190,8 @@ function parseSpherePage(html: string, sphereName: string): SphereTalent[] {
 
     if (tag === "h4") {
       flush();
-      current = { name: raw };
+      const id = $(el).attr("id");
+      current = { name: raw, sourceUrl: id ? `${pageUrl}#${id}` : pageUrl };
       return;
     }
     if (current) bodyBuf.push(raw);
@@ -212,11 +219,13 @@ async function writeToDb(talents: SphereTalent[]) {
           sphereName: t.sphereName,
           talentTypes: [],
           description: t.description,
+          sourceUrl: t.sourceUrl,
           source,
           isSrd: true,
         },
         update: {
           description: t.description,
+          sourceUrl: t.sourceUrl,
         },
       });
     }
@@ -233,7 +242,7 @@ async function main() {
   for (const sphereName of BASE_MARTIAL_SPHERES) {
     const slug = slugFor(sphereName);
     const html = await getHtml(slug);
-    const talents = parseSpherePage(html, sphereName);
+    const talents = parseSpherePage(html, sphereName, `${BASE}/${slug}`);
     console.log(`${sphereName}: ${talents.length} talents`);
     all.push(...talents);
   }

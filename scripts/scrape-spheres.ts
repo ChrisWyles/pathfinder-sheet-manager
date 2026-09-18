@@ -43,10 +43,18 @@ const opt = (f: string) => {
   return i >= 0 ? args[i + 1] : undefined;
 };
 const ONLY = opt("only");
+const TYPE = opt("type") as SphereType | undefined;
 const REFRESH = has("refresh");
 const WRITE_DB = has("write-db");
 const INCLUDE_3PP = has("include-3pp");
 const INCLUDE_HB = has("include-hb");
+// Write only the Sphere catalog rows (name/type/description), skipping each
+// sphere's talent list — for topping up Sphere rows (e.g. the Might/Guile
+// types, needed so the wizard can resolve a talent's sphere type) without
+// re-writing talents already covered by scrape-sphere-talents.ts /
+// scrape-equipment-talents.ts under a different `source` tag, which would
+// just duplicate them.
+const SPHERES_ONLY = has("spheres-only");
 
 type SphereType = "MAGIC" | "MIGHT" | "GUILE";
 interface SphereMeta {
@@ -166,6 +174,7 @@ interface ScrapedTalent {
   talentTypes: string[];
   source: string;
   description: string;
+  sourceUrl: string;
 }
 interface ScrapedSphere {
   slug: string;
@@ -300,6 +309,7 @@ function parseSphere(html: string, meta: SphereMeta): ScrapedSphere {
         .trim()
         .slice(0, 2500);
 
+      const headingId = $(el).attr("id");
       sphere.talents.push({
         name: parsed.name,
         sphereName: meta.name,
@@ -314,6 +324,7 @@ function parseSphere(html: string, meta: SphereMeta): ScrapedSphere {
           ? `Spheres of Power wiki [${parsed.supplementTag}]`
           : "Spheres of Power wiki",
         description: body,
+        sourceUrl: headingId ? `${sphere.url}#${headingId}` : sphere.url,
       });
       return;
     }
@@ -356,6 +367,10 @@ async function writeToDb(spheres: ScrapedSphere[]) {
         },
         update: { description: s.description, type: s.type },
       });
+      if (SPHERES_ONLY) {
+        console.log(`  db: ${s.name} (sphere row only)`);
+        continue;
+      }
       for (const t of s.talents) {
         // Talent names repeat across spheres (e.g. "Extended Range"), so the
         // sphere name is folded into `source` to keep [name, source] unique.
@@ -368,6 +383,7 @@ async function writeToDb(spheres: ScrapedSphere[]) {
             sphereName: t.sphereName,
             talentTypes: t.talentTypes,
             description: t.description,
+            sourceUrl: t.sourceUrl,
             source: talentSource,
             isSrd: true,
           },
@@ -375,6 +391,7 @@ async function writeToDb(spheres: ScrapedSphere[]) {
             description: t.description,
             talentTypes: t.talentTypes,
             sphereId: row.id,
+            sourceUrl: t.sourceUrl,
           },
         });
       }
@@ -388,9 +405,10 @@ async function writeToDb(spheres: ScrapedSphere[]) {
 // --- main ------------------------------------------------------------
 
 async function main() {
-  const targets = ONLY ? SPHERES.filter((s) => s.slug === ONLY) : SPHERES;
+  let targets = ONLY ? SPHERES.filter((s) => s.slug === ONLY) : SPHERES;
+  if (TYPE) targets = targets.filter((s) => s.type === TYPE);
   if (targets.length === 0) {
-    console.error(`No sphere matches --only ${ONLY}`);
+    console.error(`No sphere matches --only ${ONLY} --type ${TYPE}`);
     process.exitCode = 1;
     return;
   }

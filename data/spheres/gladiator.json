@@ -11,7 +11,8 @@
       "sphereName": "Gladiator",
       "talentTypes": [],
       "source": "Spheres of Power wiki [LG]",
-      "description": "Whenever a creature fails a saving throw against one of your abilities, you may boast as a swift action."
+      "description": "Whenever a creature fails a saving throw against one of your abilities, you may boast as a swift action.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc5"
     },
     {
       "name": "Awesome Impression",
@@ -21,35 +22,40 @@
         "lots"
       ],
       "source": "Spheres of Power wiki",
-      "description": "Whenever you affect a creature with the impressed condition (from Spheres of Guile), the DC of any Bluff, Diplomacy, Intimidate, or Perform checks attempted against the impressed creature by you are reduced by either 4 or your practitioner modifier, whichever is greater. This replaces the normal DC modifier of being impressed."
+      "description": "Whenever you affect a creature with the impressed condition (from Spheres of Guile), the DC of any Bluff, Diplomacy, Intimidate, or Perform checks attempted against the impressed creature by you are reduced by either 4 or your practitioner modifier, whichever is greater. This replaces the normal DC modifier of being impressed.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc6"
     },
     {
       "name": "Derision",
       "sphereName": "Gladiator",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "When a creature misses when targeting you with an attack roll or fails on a combat maneuver against you, you may perform a boast as an immediate action."
+      "description": "When a creature misses when targeting you with an attack roll or fails on a combat maneuver against you, you may perform a boast as an immediate action.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc7"
     },
     {
       "name": "Fan Favorite",
       "sphereName": "Gladiator",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "You may perform a boast as a free action even when it is not your turn whenever you succeed on a saving throw against an effect originating from a hostile creature."
+      "description": "You may perform a boast as a free action even when it is not your turn whenever you succeed on a saving throw against an effect originating from a hostile creature.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc8"
     },
     {
       "name": "Master Of Fear",
       "sphereName": "Gladiator",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "You no longer need to expend your martial focus when using your strike fear ability, and may use your strike fear ability as a standard action rather than a full-round action."
+      "description": "You no longer need to expend your martial focus when using your strike fear ability, and may use your strike fear ability as a standard action rather than a full-round action.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc9"
     },
     {
       "name": "Motivational Audience",
       "sphereName": "Gladiator",
       "talentTypes": [],
       "source": "Spheres of Power wiki [Apoc]",
-      "description": "As long as you have martial focus, whenever an ally that can see you or hear you within 60 ft. would perform an action that would allow you to boast (such as confirming a critical hit, reducing an enemy to 0 or fewer hit points, etc.), you may expend your martial focus to boast as an immediate action, treating it as if you had performed the action."
+      "description": "As long as you have martial focus, whenever an ally that can see you or hear you within 60 ft. would perform an action that would allow you to boast (such as confirming a critical hit, reducing an enemy to 0 or fewer hit points, etc.), you may expend your martial focus to boast as an immediate action, treating it as if you had performed the action.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc10"
     },
     {
       "name": "Performance Fighter",
@@ -59,63 +65,72 @@
         "lots"
       ],
       "source": "Spheres of Power wiki",
-      "description": "You may make a performance combat check as a free action up to once per round rather than a swift action. In addition, you treat all weapons you are proficient in as if they had the performance weapon quality.\n\nAssociated Feats: Master Combat Performer, Performance Weapon Mastery (both Pathfinder Roleplaying Game: Ultimate Combat)."
+      "description": "You may make a performance combat check as a free action up to once per round rather than a swift action. In addition, you treat all weapons you are proficient in as if they had the performance weapon quality.\n\nAssociated Feats: Master Combat Performer, Performance Weapon Mastery (both Pathfinder Roleplaying Game: Ultimate Combat).",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc12"
     },
     {
       "name": "Picked Target",
       "sphereName": "Gladiator",
       "talentTypes": [],
       "source": "Spheres of Power wiki [SM—]",
-      "description": "Whenever a creature fails a saving throw against an ability that targets only them and is used as a standard or full-round action, you may perform a boast as a free action."
+      "description": "Whenever a creature fails a saving throw against an ability that targets only them and is used as a standard or full-round action, you may perform a boast as a free action.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc13"
     },
     {
       "name": "Punish The Meek",
       "sphereName": "Gladiator",
       "talentTypes": [],
       "source": "Spheres of Power wiki [Apoc]",
-      "description": "Whenever you use an attack action to deal damage to a creature that is currently demoralized by you, extend the duration of the demoralization by one round. Associated Feat: Demoralizing Lash."
+      "description": "Whenever you use an attack action to deal damage to a creature that is currently demoralized by you, extend the duration of the demoralization by one round. Associated Feat: Demoralizing Lash.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc14"
     },
     {
       "name": "Self Confidence",
       "sphereName": "Gladiator",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "You may perform a boast as a standard action to regain your martial focus. Doing so does not require the normal triggering condition for a boast."
+      "description": "You may perform a boast as a standard action to regain your martial focus. Doing so does not require the normal triggering condition for a boast.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc15"
     },
     {
       "name": "Showman's Takedown",
       "sphereName": "Gladiator",
       "talentTypes": [],
       "source": "Spheres of Power wiki [SM—]",
-      "description": "When you perform a coup de grace and deal only nonlethal damage, instead of attempting a Fortitude save to avoid death, the target must instead attempt a Fortitude save to avoid falling unconscious for 1 hour. The DC of this save is the same as that of a lethal coup de grace. Associated Feat: Merciful Takedown"
+      "description": "When you perform a coup de grace and deal only nonlethal damage, instead of attempting a Fortitude save to avoid death, the target must instead attempt a Fortitude save to avoid falling unconscious for 1 hour. The DC of this save is the same as that of a lethal coup de grace. Associated Feat: Merciful Takedown",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc16"
     },
     {
       "name": "Theatrical Boast",
       "sphereName": "Gladiator",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "The range of your boast increases to medium (100 ft. + 10 ft. per rank in Intimidate you possess)."
+      "description": "The range of your boast increases to medium (100 ft. + 10 ft. per rank in Intimidate you possess).",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc17"
     },
     {
       "name": "Trash Talker",
       "sphereName": "Gladiator",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "You may expend your martial focus when making a boast to apply two (boast) talents."
+      "description": "You may expend your martial focus when making a boast to apply two (boast) talents.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc18"
     },
     {
       "name": "Uncowed",
       "sphereName": "Gladiator",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "You gain a morale bonus equal to 1/2 your ranks in Intimidate to the DC of any check to demoralize you (minimum 1) and gain a +1 morale bonus on all saves against fear effects. For every 5 points of base attack bonus you possess, the bonus on saves against fear effects increases by +1.\n\nWhen a creature attempts to Intimidate you and fails, or when you succeed on a save against a fear effect, you may expend martial focus to make a demoralization check against the creature who initiated the effect."
+      "description": "You gain a morale bonus equal to 1/2 your ranks in Intimidate to the DC of any check to demoralize you (minimum 1) and gain a +1 morale bonus on all saves against fear effects. For every 5 points of base attack bonus you possess, the bonus on saves against fear effects increases by +1.\n\nWhen a creature attempts to Intimidate you and fails, or when you succeed on a save against a fear effect, you may expend martial focus to make a demoralization check against the creature who initiated the effect.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc19"
     },
     {
       "name": "Vengeful Boast",
       "sphereName": "Gladiator",
       "talentTypes": [],
       "source": "Spheres of Power wiki [Apoc]",
-      "description": "You may perform a boast as an immediate action whenever an ally you can perceive and is within the range of your boasts takes damage from an enemy attack that results in the ally being at or below half their maximum hit points."
+      "description": "You may perform a boast as an immediate action whenever an ally you can perceive and is within the range of your boasts takes damage from an enemy attack that results in the ally being at or below half their maximum hit points.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc20"
     },
     {
       "name": "Bloodthirst",
@@ -124,7 +139,8 @@
         "boast"
       ],
       "source": "Spheres of Power wiki",
-      "description": "Success spurs you to keep up the assault. You may make an attack against an enemy within the area of your boast using a wielded weapon as part of your boast."
+      "description": "Success spurs you to keep up the assault. You may make an attack against an enemy within the area of your boast using a wielded weapon as part of your boast.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc23"
     },
     {
       "name": "Caper",
@@ -133,7 +149,8 @@
         "boast"
       ],
       "source": "Spheres of Power wiki",
-      "description": "Your extravagant and unusual display confounds your foes. Until the start of your next turn, any creature within range of this boast that attempts to target you with an attack roll must make a Will save or lose their attack, though if making a full attack may still direct any remaining attacks toward other targets. If they targeted you with a spell, the spell or the portion of the spell targeting you is lost. Once a creature succeeds on a Will save against this ability, it is immune to your use of it for 24 hrs."
+      "description": "Your extravagant and unusual display confounds your foes. Until the start of your next turn, any creature within range of this boast that attempts to target you with an attack roll must make a Will save or lose their attack, though if making a full attack may still direct any remaining attacks toward other targets. If they targeted you with a spell, the spell or the portion of the spell targeting you is lost. Once a creature succeeds on a Will save against this ability, it is immune to your use of it for 24 hrs.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc24"
     },
     {
       "name": "Distracting Display",
@@ -142,7 +159,8 @@
         "boast"
       ],
       "source": "Spheres of Power wiki",
-      "description": "By calling attention to yourself, you allow your allies to slip from view. Allies other than yourself within range of this boast may immediately make a Stealth check even if they are observed until the end of your next turn. You may not benefit from the Stealth skill until this duration expires. You may choose to activate this boast as a standard action without the normal requirements for activating a boast."
+      "description": "By calling attention to yourself, you allow your allies to slip from view. Allies other than yourself within range of this boast may immediately make a Stealth check even if they are observed until the end of your next turn. You may not benefit from the Stealth skill until this duration expires. You may choose to activate this boast as a standard action without the normal requirements for activating a boast.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc25"
     },
     {
       "name": "Enthusiastic Cheer",
@@ -152,7 +170,8 @@
         "warden"
       ],
       "source": "Spheres of Power wiki",
-      "description": "One allied creature within range gains a number of temporary hit points equal to your Intimidate ranks (minimum 1). These temporary hit points last for 1 minute. For every 4 ranks in Intimidate you possess, you may affect an additional ally."
+      "description": "One allied creature within range gains a number of temporary hit points equal to your Intimidate ranks (minimum 1). These temporary hit points last for 1 minute. For every 4 ranks in Intimidate you possess, you may affect an additional ally.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc26"
     },
     {
       "name": "Exemplar",
@@ -161,7 +180,8 @@
         "boast"
       ],
       "source": "Spheres of Power wiki",
-      "description": "Your allies within range may roll their next attack or combat maneuver check before the start of your next turn twice and take the better result. You do not benefit from this reroll."
+      "description": "Your allies within range may roll their next attack or combat maneuver check before the start of your next turn twice and take the better result. You do not benefit from this reroll.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc27"
     },
     {
       "name": "Flamboyant Movement",
@@ -170,7 +190,8 @@
         "boast"
       ],
       "source": "Spheres of Power wiki [Apoc]",
-      "description": "You confuse enemies with flirtatious gestures before your attack. The next enemy you attack before the end of your next turn must succeed at a Will save, or else they are denied their Dexterity bonus to AC against your attack. Each time the same creature attempts a save against this effect they gain a cumulative +1 bonus to the save for the next 24 hours."
+      "description": "You confuse enemies with flirtatious gestures before your attack. The next enemy you attack before the end of your next turn must succeed at a Will save, or else they are denied their Dexterity bonus to AC against your attack. Each time the same creature attempts a save against this effect they gain a cumulative +1 bonus to the save for the next 24 hours.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc28"
     },
     {
       "name": "Inspire",
@@ -180,7 +201,8 @@
         "warden"
       ],
       "source": "Spheres of Power wiki",
-      "description": "You may grant yourself or one allied creature within range a +2 morale bonus to their next saving throw made within the next minute. For every 5 ranks in Intimidate you possess, the bonus increases by 1."
+      "description": "You may grant yourself or one allied creature within range a +2 morale bonus to their next saving throw made within the next minute. For every 5 ranks in Intimidate you possess, the bonus increases by 1.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc29"
     },
     {
       "name": "Inspiring Pose",
@@ -189,7 +211,8 @@
         "boast"
       ],
       "source": "Spheres of Power wiki",
-      "description": "One allied creature within range may make a new saving throw against any ongoing effect they are currently suffering from that normally grants a saving throw using the original DC, even if they have already failed the initial save and would not normally be granted another. For every 4 ranks in Intimidate you possess, you may affect an additional ally. Failing this additional save does not progress the effects of poisons, diseases, or similar effects that are normally incurred on a failed save."
+      "description": "One allied creature within range may make a new saving throw against any ongoing effect they are currently suffering from that normally grants a saving throw using the original DC, even if they have already failed the initial save and would not normally be granted another. For every 4 ranks in Intimidate you possess, you may affect an additional ally. Failing this additional save does not progress the effects of poisons, diseases, or similar effects that are normally incurred on a failed save.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc30"
     },
     {
       "name": "Menace",
@@ -198,7 +221,8 @@
         "boast"
       ],
       "source": "Spheres of Power wiki",
-      "description": "Hostile creatures within range of your boast cannot voluntarily move closer to you unless they succeed on a Will save. This lasts until the start of your next turn. This is a mind-affecting fear effect."
+      "description": "Hostile creatures within range of your boast cannot voluntarily move closer to you unless they succeed on a Will save. This lasts until the start of your next turn. This is a mind-affecting fear effect.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc33"
     },
     {
       "name": "Steel Braggart",
@@ -207,7 +231,8 @@
         "boast"
       ],
       "source": "Spheres of Power wiki",
-      "description": "You gain DR/- equal to half your ranks in Intimidate (minimum 1) until the start of your next turn. This damage reduction stacks with any other damage reduction you possess."
+      "description": "You gain DR/- equal to half your ranks in Intimidate (minimum 1) until the start of your next turn. This damage reduction stacks with any other damage reduction you possess.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc36"
     },
     {
       "name": "Cow Enemy",
@@ -216,7 +241,8 @@
         "demoralization"
       ],
       "source": "Spheres of Power wiki",
-      "description": "When you deal damage or succeed on a combat maneuver check against a creature while using the attack or standard action, you may make an Intimidate check to demoralize that creature as a swift action."
+      "description": "When you deal damage or succeed on a combat maneuver check against a creature while using the attack or standard action, you may make an Intimidate check to demoralize that creature as a swift action.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc40"
     },
     {
       "name": "Coward's Bane",
@@ -225,7 +251,8 @@
         "demoralization"
       ],
       "source": "Spheres of Power wiki",
-      "description": "You may roll twice and take the better result on the first attack of each round targeting a creature suffering from your demoralization."
+      "description": "You may roll twice and take the better result on the first attack of each round targeting a creature suffering from your demoralization.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc42"
     },
     {
       "name": "Daunting",
@@ -234,7 +261,8 @@
         "demoralization"
       ],
       "source": "Spheres of Power wiki",
-      "description": "When a creature that is under the effects of your demoralization misses you with an attack or fails on a combat maneuver check targeting you, they provoke an attack of opportunity from you."
+      "description": "When a creature that is under the effects of your demoralization misses you with an attack or fails on a combat maneuver check targeting you, they provoke an attack of opportunity from you.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc43"
     },
     {
       "name": "Frightful",
@@ -243,7 +271,8 @@
         "demoralization"
       ],
       "source": "Spheres of Power wiki",
-      "description": "You may escalate the effect of fear effects when you use the Intimidate skill to demoralize by increasing the demoralize DC. You may make a shaken creature frightened by increasing the DC by +10 and a frightened creature panicked by increasing the DC by +20. You must choose to apply this DC increase prior to making the check."
+      "description": "You may escalate the effect of fear effects when you use the Intimidate skill to demoralize by increasing the demoralize DC. You may make a shaken creature frightened by increasing the DC by +10 and a frightened creature panicked by increasing the DC by +20. You must choose to apply this DC increase prior to making the check.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc48"
     },
     {
       "name": "Hear Their Screams",
@@ -253,7 +282,8 @@
         "sa:bg"
       ],
       "source": "Spheres of Power wiki",
-      "description": "Whenever you attempt an Intimidate check to demoralize any number of creatures, your terrifying display causes creatures that have been successfully demoralized to begin screaming until the end of their next turn. Creatures who are screaming automatically allow any creature who can hear them to pinpoint their exact location without a Perception check, even if they are otherwise invisible. Additionally, this causes any screaming to break their stealth if they were actively stealthing. This does not negate any bonuses granted from invisibility (although it does allow creatures to pinpoint them) or any concealment the creature might have.\n\nYou may expend your martial focus when utilizing this talent to increase the duration by 1d4 rounds, plus an additional round for every 5 ranks in Intimidate that you possess. If you have at least 10 ranks in Intimidate, when expending martial focus with this ability creatures who are screaming no longer benefit from any bonuses from being difficult or impossible to see (such as invisibility). This includes any bonuses to attacks they might have, concealment, and any such similar bonus as long as it is granted due to vision of the creature being obscured."
+      "description": "Whenever you attempt an Intimidate check to demoralize any number of creatures, your terrifying display causes creatures that have been successfully demoralized to begin screaming until the end of their next turn. Creatures who are screaming automatically allow any creature who can hear them to pinpoint their exact location without a Perception check, even if they are otherwise invisible. Additionally, this causes any screaming to break their stealth if they were actively stealthing. This does not negate any bonuses granted from invisibility (although it does allow creatures to pinpoint them) or any concealment the creature might have.\n\nYou may expend your martial focus when utilizing this talent to increase the duration by 1d4 rounds, plus an additional round for every 5 ranks in Intimidate that you possess. If you have at least 10 ranks in Intimidate, when expending martial focus with this ability creatures who are screaming no longer benefit from any bonuses from being difficult or impossible to see (such as invisibility). This includes any bonuses to attacks they might have, concealment, and any such similar bonus as long as it is granted due to vision of the creature being obscured.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc49"
     },
     {
       "name": "Keep Them Low",
@@ -262,7 +292,8 @@
         "demoralization"
       ],
       "source": "Spheres of Power wiki [DRS]",
-      "description": "Whenever you successfully demoralize a hostile creature, you can find a loophole against a fear effect affecting 1 ally that can perceive you as an immediate action, using your Intimidate check result for determining its effects. If you demoralized multiple creatures in the same action, you can affect an equal number of allies with this ability.\n\nAllies affected by this ability gain a +1 morale bonus to saving throws, attack rolls, and skill checks for 1 round."
+      "description": "Whenever you successfully demoralize a hostile creature, you can find a loophole against a fear effect affecting 1 ally that can perceive you as an immediate action, using your Intimidate check result for determining its effects. If you demoralized multiple creatures in the same action, you can affect an equal number of allies with this ability.\n\nAllies affected by this ability gain a +1 morale bonus to saving throws, attack rolls, and skill checks for 1 round.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc50"
     },
     {
       "name": "Mage's Terror",
@@ -271,7 +302,8 @@
         "demoralization"
       ],
       "source": "Spheres of Power wiki [SM—]",
-      "description": "Creatures suffering from your demoralization suffer an additional -2 penalty on concentration checks. This penalty increases by 1 for every 4 ranks in Intimidate you possess. When a demoralized creature you threaten rolls a concentration check, you may spend martial focus to make them reroll the check and take the second result."
+      "description": "Creatures suffering from your demoralization suffer an additional -2 penalty on concentration checks. This penalty increases by 1 for every 4 ranks in Intimidate you possess. When a demoralized creature you threaten rolls a concentration check, you may spend martial focus to make them reroll the check and take the second result.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc51"
     },
     {
       "name": "Piercing Fear",
@@ -280,7 +312,8 @@
         "demoralization"
       ],
       "source": "Spheres of Power wiki",
-      "description": "You may expend martial focus as part of an Intimidate check to demoralize to overcome a creature's defenses, treating immunity to fear and mind-affecting effects as a +5 DC increase to the check's DC (the DC only increases by +5 once, regardless of if the creature has immunity to both fear and mind-affecting effects)."
+      "description": "You may expend martial focus as part of an Intimidate check to demoralize to overcome a creature's defenses, treating immunity to fear and mind-affecting effects as a +5 DC increase to the check's DC (the DC only increases by +5 once, regardless of if the creature has immunity to both fear and mind-affecting effects).",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc55"
     },
     {
       "name": "Ruthless Visage",
@@ -289,7 +322,8 @@
         "demoralization"
       ],
       "source": "Spheres of Power wiki [SM—]",
-      "description": "Whenever you demoralize a creature, that creature becomes battered for as long as they remain shaken. The battered penalty to CMD also applies to the target's AC against attack rolls."
+      "description": "Whenever you demoralize a creature, that creature becomes battered for as long as they remain shaken. The battered penalty to CMD also applies to the target's AC against attack rolls.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc56"
     },
     {
       "name": "Spectacle",
@@ -298,7 +332,8 @@
         "demoralization"
       ],
       "source": "Spheres of Power wiki",
-      "description": "Any time you confirm a critical hit or reduce an enemy to 0 or fewer hit points, you may use your strike fear ability as an immediate action."
+      "description": "Any time you confirm a critical hit or reduce an enemy to 0 or fewer hit points, you may use your strike fear ability as an immediate action.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc58"
     },
     {
       "name": "Aura Of Fear",
@@ -307,7 +342,8 @@
         "demoralization"
       ],
       "source": "Spheres of Power wiki",
-      "description": "Prerequisites: Gladiator sphere, Intimidate 7 ranks.\n\nAll hostile creatures that come within close range (25 ft. + 5 ft. per 2 base attack bonus) must make a Will save or be shaken for as long as they remain within the area of effect, +1d4 rounds. Once a creature has succeeded on this save, it is immune to your use of this ability for 24 hrs. If the creature is already shaken, it instead becomes frightened. Frightened creatures become panicked. Creatures with more Hit Dice than you are immune to this effect.\n\nThis is an extraordinary (fear) effect. You may suppress or resume this ability as a free action. This ability ceases to function if you are stunned, paralyzed, unconscious, dead, or otherwise incapacitated."
+      "description": "Prerequisites: Gladiator sphere, Intimidate 7 ranks.\n\nAll hostile creatures that come within close range (25 ft. + 5 ft. per 2 base attack bonus) must make a Will save or be shaken for as long as they remain within the area of effect, +1d4 rounds. Once a creature has succeeded on this save, it is immune to your use of this ability for 24 hrs. If the creature is already shaken, it instead becomes frightened. Frightened creatures become panicked. Creatures with more Hit Dice than you are immune to this effect.\n\nThis is an extraordinary (fear) effect. You may suppress or resume this ability as a free action. This ability ceases to function if you are stunned, paralyzed, unconscious, dead, or otherwise incapacitated.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc60"
     },
     {
       "name": "Break Discipline",
@@ -316,28 +352,32 @@
         "demoralization"
       ],
       "source": "Spheres of Power wiki [SM—]",
-      "description": "Prerequisites: Gladiator Sphere (Abandon All Hope)\n\nWhenever a creature becomes demoralized by you, they must attempt a Will save. On a failure, they cannot benefit from insight or competence bonuses so long as they remain demoralized."
+      "description": "Prerequisites: Gladiator Sphere (Abandon All Hope)\n\nWhenever a creature becomes demoralized by you, they must attempt a Will save. On a failure, they cannot benefit from insight or competence bonuses so long as they remain demoralized.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc62"
     },
     {
       "name": "Burn The Chaff",
       "sphereName": "Gladiator",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Prerequisites: Gladiator sphere, base attack bonus +10.\n\nWhenever you make a melee attack (including attacks of opportunity) against a target with a CR less than half your BAB that is suffering from a fear effect, your attack is an automatic critical hit. The target must pass a Fortitude save (DC 10 + damage dealt) or die."
+      "description": "Prerequisites: Gladiator sphere, base attack bonus +10.\n\nWhenever you make a melee attack (including attacks of opportunity) against a target with a CR less than half your BAB that is suffering from a fear effect, your attack is an automatic critical hit. The target must pass a Fortitude save (DC 10 + damage dealt) or die.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc63"
     },
     {
       "name": "Damnatio ad Gladium",
       "sphereName": "Gladiator",
       "talentTypes": [],
       "source": "Spheres of Power wiki [SM—]",
-      "description": "Prerequisites: Gladiator Sphere\n\nAs long as you have martial focus, you can deliver a coup de grace to cowering or stunned targets as if they were helpless. Associated Feat: Dastardly Finish"
+      "description": "Prerequisites: Gladiator Sphere\n\nAs long as you have martial focus, you can deliver a coup de grace to cowering or stunned targets as if they were helpless. Associated Feat: Dastardly Finish",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc64"
     },
     {
       "name": "Deafening Clangor",
       "sphereName": "Gladiator",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Prerequisites: Gladiator sphere, Strike Fear (demoralization), Shield sphere, Intimidate 5 ranks.\n\nWhenever you perform the strike fear demoralization, you may choose to strike a shield you are wielding with a weapon or limb to produce a deafening clangor. All targets (excluding yourself) within your strike fear range must pass a Fortitude save or become deafened for 1d4+1 rounds. You may warn your allies as a free action to cover their ears and protect them from the effects of the deafening clangor, but doing so gives enemies a +5 bonus to their saving throw against this effect."
+      "description": "Prerequisites: Gladiator sphere, Strike Fear (demoralization), Shield sphere, Intimidate 5 ranks.\n\nWhenever you perform the strike fear demoralization, you may choose to strike a shield you are wielding with a weapon or limb to produce a deafening clangor. All targets (excluding yourself) within your strike fear range must pass a Fortitude save or become deafened for 1d4+1 rounds. You may warn your allies as a free action to cover their ears and protect them from the effects of the deafening clangor, but doing so gives enemies a +5 bonus to their saving throw against this effect.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc65"
     },
     {
       "name": "Final Stand",
@@ -347,14 +387,16 @@
         "eo3"
       ],
       "source": "Spheres of Power wiki",
-      "description": "Prerequisites: Intimidate ranks 4, Gladiator sphere.\n\nWhile in this stance, whenever an ally that you can see would be reduced to 0 hit points or fewer, you can perform a boast once per round as a free action that can be taken outside of your normal turn. Additionally, allies who are unconscious can benefit from your boasts; a dying ally who is affected by your boast immediately becomes stabilized. When stabilized in this way, the ally still attempts stabilization checks; if they succeed, they regain 1 hit point, become conscious (if they were not already), and stop attempting stabilization checks."
+      "description": "Prerequisites: Intimidate ranks 4, Gladiator sphere.\n\nWhile in this stance, whenever an ally that you can see would be reduced to 0 hit points or fewer, you can perform a boast once per round as a free action that can be taken outside of your normal turn. Additionally, allies who are unconscious can benefit from your boasts; a dying ally who is affected by your boast immediately becomes stabilized. When stabilized in this way, the ally still attempts stabilization checks; if they succeed, they regain 1 hit point, become conscious (if they were not already), and stop attempting stabilization checks.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc67"
     },
     {
       "name": "For a Drop of Blood",
       "sphereName": "Gladiator",
       "talentTypes": [],
       "source": "Spheres of Power wiki [SM—]",
-      "description": "Prerequisites: Gladiator Sphere (Pathetic Yelp)\n\nWhen an enemy successfully deals damage to you and reduces your total pool of temporary hit points to 0, you may expend martial focus to boast as a free action."
+      "description": "Prerequisites: Gladiator Sphere (Pathetic Yelp)\n\nWhen an enemy successfully deals damage to you and reduces your total pool of temporary hit points to 0, you may expend martial focus to boast as a free action.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc68"
     },
     {
       "name": "Incredible Inspiration",
@@ -363,21 +405,24 @@
         "eo3"
       ],
       "source": "Spheres of Power wiki",
-      "description": "Prerequisites: Intimidate ranks 10, Gladiator sphere (Inspire (boast)).\n\nWhen using the Inspire (boast) talent, if the chosen ally succeeds the next saving throw they attempt within the next minute, and the effect allows for a reduced effect on a successful save, the ally instead avoids the effect entirely."
+      "description": "Prerequisites: Intimidate ranks 10, Gladiator sphere (Inspire (boast)).\n\nWhen using the Inspire (boast) talent, if the chosen ally succeeds the next saving throw they attempt within the next minute, and the effect allows for a reduced effect on a successful save, the ally instead avoids the effect entirely.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc70"
     },
     {
       "name": "Nightmare Fuel",
       "sphereName": "Gladiator",
       "talentTypes": [],
       "source": "Spheres of Power wiki",
-      "description": "Prerequisites: Gladiator sphere, Intimidate 10 ranks.\n\nWhenever you successfully demoralize a target or the target fails a Will save against a fear effect originating from you, you may expend your focus as a free action that may be taken even when it isn't your turn to force the target to pass a Will save or become permanently afraid of you. While the creature sees you or otherwise becomes aware that you are within 60 ft. of it, it becomes shaken until 1d4 rounds after it no longer believes you are nearby. This effect is permanent until removed by a break enchantment, heal, limited wish, miracle, wish spell, or similar effects. This is a mind-affecting fear effect."
+      "description": "Prerequisites: Gladiator sphere, Intimidate 10 ranks.\n\nWhenever you successfully demoralize a target or the target fails a Will save against a fear effect originating from you, you may expend your focus as a free action that may be taken even when it isn't your turn to force the target to pass a Will save or become permanently afraid of you. While the creature sees you or otherwise becomes aware that you are within 60 ft. of it, it becomes shaken until 1d4 rounds after it no longer believes you are nearby. This effect is permanent until removed by a break enchantment, heal, limited wish, miracle, wish spell, or similar effects. This is a mind-affecting fear effect.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc71"
     },
     {
       "name": "Shock And Awe",
       "sphereName": "Gladiator",
       "talentTypes": [],
       "source": "Spheres of Power wiki [LG]",
-      "description": "Prerequisites: Gladiator sphere (Cow Enemy (demoralization)).\n\nIf you have dealt weapon damage to multiple enemies in the same turn, you may attempt an Intimidate check to demoralize any number of the damaged enemies within range of your strike fear ability as a swift action."
+      "description": "Prerequisites: Gladiator sphere (Cow Enemy (demoralization)).\n\nIf you have dealt weapon damage to multiple enemies in the same turn, you may attempt an Intimidate check to demoralize any number of the damaged enemies within range of your strike fear ability as a swift action.",
+      "sourceUrl": "http://spheresofpower.wikidot.com/gladiator#toc73"
     }
   ]
 }
