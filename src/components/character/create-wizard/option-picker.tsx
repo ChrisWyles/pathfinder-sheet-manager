@@ -4,6 +4,7 @@ import { type ReactNode, useMemo, useState } from "react";
 
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 
 export interface PickerOption {
@@ -15,6 +16,11 @@ export interface PickerOption {
   badges?: string[];
   /** Rich preview shown under the label / badges. */
   preview?: ReactNode;
+  /** External source link (e.g. the wiki page this entry came from), shown
+   * as a small "wiki ↗" link that opens in a new tab. Rendered as a sibling
+   * of the option's button, not nested inside it — a nested <a> inside a
+   * <button> is invalid HTML and would fire both elements' click handlers. */
+  href?: string;
 }
 
 export function StatBadges({ items }: { items: string[] }) {
@@ -124,51 +130,82 @@ export function OptionPicker({
                 ? value.includes(o.value)
                 : o.value === value;
               return (
-                <button
-                  key={o.value}
-                  type="button"
-                  role={multiple ? "checkbox" : "radio"}
-                  aria-checked={selected}
-                  onClick={() =>
-                    multiple
-                      ? onChange(
-                          selected
-                            ? value.filter((v) => v !== o.value)
-                            : [...value, o.value],
-                        )
-                      : onChange(o.value)
-                  }
-                  className={cn(
-                    "flex w-full items-start gap-2.5 rounded-md border p-2.5 text-left text-sm transition-colors",
-                    selected
-                      ? "border-primary bg-accent"
-                      : "border-transparent hover:bg-muted/60",
-                  )}
-                >
-                  <span
+                <div key={o.value} className="relative">
+                  <button
+                    type="button"
+                    role={multiple ? "checkbox" : "radio"}
+                    aria-checked={selected}
+                    onClick={() =>
+                      multiple
+                        ? onChange(
+                            selected
+                              ? value.filter((v) => v !== o.value)
+                              : [...value, o.value],
+                          )
+                        : onChange(o.value)
+                    }
                     className={cn(
-                      "mt-0.5 flex size-4 shrink-0 items-center justify-center border",
-                      multiple ? "rounded-[4px]" : "rounded-full",
-                      selected ? "border-primary" : "border-input",
+                      "flex w-full items-start gap-2.5 rounded-md border p-2.5 text-left text-sm transition-colors",
+                      o.href && "pr-14",
+                      selected
+                        ? "border-primary bg-accent"
+                        : "border-transparent hover:bg-muted/60",
                     )}
                   >
-                    {selected &&
-                      (multiple ? (
-                        <span className="bg-primary size-2.5 rounded-[2px]" />
+                    <span
+                      className={cn(
+                        "mt-0.5 flex size-4 shrink-0 items-center justify-center border",
+                        multiple ? "rounded-[4px]" : "rounded-full",
+                        selected ? "border-primary" : "border-input",
+                      )}
+                    >
+                      {selected &&
+                        (multiple ? (
+                          <span className="bg-primary size-2.5 rounded-[2px]" />
+                        ) : (
+                          <span className="bg-primary size-2 rounded-full" />
+                        ))}
+                    </span>
+                    <span className="min-w-0 flex-1">
+                      {o.preview ? (
+                        <Tooltip>
+                          <TooltipTrigger
+                            render={
+                              <span className="cursor-help font-medium underline decoration-dotted underline-offset-2" />
+                            }
+                          >
+                            {o.label}
+                          </TooltipTrigger>
+                          <TooltipContent
+                            side="right"
+                            className="max-w-xs text-pretty whitespace-pre-wrap p-3 text-sm leading-relaxed sm:max-w-sm"
+                          >
+                            {o.preview}
+                          </TooltipContent>
+                        </Tooltip>
                       ) : (
-                        <span className="bg-primary size-2 rounded-full" />
-                      ))}
-                  </span>
-                  <span className="min-w-0 flex-1">
-                    <span className="font-medium">{o.label}</span>
-                    {o.badges?.length ? <StatBadges items={o.badges} /> : null}
-                    {o.preview ? (
-                      <span className="text-muted-foreground mt-1 block text-xs leading-snug">
-                        {o.preview}
-                      </span>
-                    ) : null}
-                  </span>
-                </button>
+                        <span className="font-medium">{o.label}</span>
+                      )}
+                      {o.badges?.length ? <StatBadges items={o.badges} /> : null}
+                      {o.preview ? (
+                        <span className="text-muted-foreground mt-1 block text-xs leading-snug">
+                          {o.preview}
+                        </span>
+                      ) : null}
+                    </span>
+                  </button>
+                  {o.href && (
+                    <a
+                      href={o.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="text-muted-foreground hover:text-foreground absolute top-2.5 right-2.5 text-xs underline decoration-dotted underline-offset-2"
+                    >
+                      wiki ↗
+                    </a>
+                  )}
+                </div>
               );
             })}
           </div>
