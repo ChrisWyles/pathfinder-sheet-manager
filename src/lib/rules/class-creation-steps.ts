@@ -182,6 +182,70 @@ export const CLASS_CREATION_STEPS: Record<string, ClassStepOverride> = {
       },
     },
   },
+  Reaper: {
+    // "Bloodletter" isn't a choice at all — it's a fixed grant (Duelist
+    // sphere or one of its talents, the Bloody Slasher drawback, and Ooze
+    // Ichor in place of Long Cuts) — so it's dropped from the auto-derived
+    // choice list and replaced with an info step spelling out what to add.
+    // "Cult" doesn't match its own feature ("Reaper Cult") by name, so the
+    // scraper's per-level token never gets flagged as a choice at all —
+    // hand-authored here instead, with the cult names as real options
+    // (their individual level-by-level abilities aren't modeled — see the
+    // class page for those).
+    ignoreTokens: ["bloodletter"],
+    add: [
+      {
+        level: 1,
+        tab: "class-features",
+        kind: "info",
+        title: "Bloodletter",
+        prompt:
+          "Automatic: gain the Duelist sphere (or a talent from it, if you already have the sphere), the Bloody Slasher drawback, and the Ooze Ichor talent in place of Long Cuts. Add these yourself on the Spheres & Talents step.",
+      },
+      {
+        level: 1,
+        tab: "class-features",
+        kind: "pick-option",
+        title: "Reaper cult",
+        prompt:
+          "Choose a cult to focus your occult study on — each grants a themed chain of abilities at 1st, 5th, and every 4 levels after (see the class page for the full list per cult).",
+        options: [
+          { value: "Cult of the Blight", label: "Cult of the Blight" },
+          { value: "Cult of the Chimera", label: "Cult of the Chimera" },
+          { value: "Cult of the Fang", label: "Cult of the Fang" },
+          {
+            value: "Cult of the Great Old Ones",
+            label: "Cult of the Great Old Ones",
+          },
+          { value: "Cult of the Haunt", label: "Cult of the Haunt" },
+          { value: "Cult of the Primordial", label: "Cult of the Primordial" },
+          { value: "Cult of the Raven", label: "Cult of the Raven" },
+        ],
+      },
+    ],
+    annotate: {
+      "Favored Prey": {
+        title: "Favored prey",
+        prompt:
+          "Choose a creature type from the ranger favored enemies table: Aberration, Animal, Construct, Dragon, Fey, Humanoid, Magical Beast, Monstrous Humanoid, Ooze, Outsider, Plant, Undead, or Vermin.",
+        options: [
+          "Aberration",
+          "Animal",
+          "Construct",
+          "Dragon",
+          "Fey",
+          "Humanoid",
+          "Magical Beast",
+          "Monstrous Humanoid",
+          "Ooze",
+          "Outsider",
+          "Plant",
+          "Undead",
+          "Vermin",
+        ].map((v) => ({ value: v, label: v })),
+      },
+    },
+  },
 };
 
 // ---------------------------------------------------------------------------
@@ -226,6 +290,27 @@ export function classifyTalentColumnName(name: string): TalentColumnKind | null 
   // pure spherecasters (e.g. Fey Adept), so it means magic talents.
   if (low.trim() === "talents") return "magic";
   return null;
+}
+
+export type TalentStepBucket = "combat" | "magic" | "flex" | "other";
+
+/**
+ * Classifies a `pick-talent` step's *title* (e.g. "Combat talents", "Magic
+ * talents", "Combat or magic talents") into a talent-slot bucket for the
+ * wizard's "N of M" progress counters. Distinct from
+ * `classifyTalentColumnName` above: a step title says "combat *or* magic"
+ * for a flexible pool (spend the pick on either), not "combat *and*
+ * magic" — so this treats "has both words" as its own "flex" bucket
+ * instead of folding it into "combined".
+ */
+export function classifyTalentStepTitle(title: string): TalentStepBucket {
+  const low = title.toLowerCase();
+  const hasMagic = /\bmagic\b/.test(low);
+  const hasCombat = /\bcombat\b|\bmartial\b/.test(low);
+  if (hasMagic && hasCombat) return "flex";
+  if (hasMagic) return "magic";
+  if (hasCombat) return "combat";
+  return "other";
 }
 
 /** Splits a cumulative-talents cell like "1 (+2 magic)" into the table's own
@@ -458,16 +543,39 @@ export function buildStepPlan(input: StepPlanInput): CreationChoiceStep[] {
         const token = raw.trim();
         if (!token || ignore.has(token.toLowerCase())) continue;
         const c = classifyToken(token, row, classData.talentColumns);
-        if (!c) continue;
-        steps.push({
-          classLevel: lvl,
-          tab: c.tab,
-          kind: c.kind,
-          count: c.count,
-          title: c.title,
-          prompt: c.prompt,
-          featureName: c.featureName,
-        });
+        if (c) {
+          steps.push({
+            classLevel: lvl,
+            tab: c.tab,
+            kind: c.kind,
+            count: c.count,
+            title: c.title,
+            prompt: c.prompt,
+            featureName: c.featureName,
+          });
+          continue;
+        }
+        // Unlike 4b below (whose feature-level `isChoice` flag is noisy and
+        // deliberately stays silent on an unrecognized token), a per-level
+        // token here was already vetted by the scraper as needing a
+        // decision (CHOICE_TOKEN_RE / a known choice feature name) — e.g.
+        // Reaper's "Favored Prey +2", which names no recognized keyword.
+        // Falling back to a generic choice instead of dropping it silently
+        // at least surfaces it; a class override can still refine it via
+        // `annotate`. The "ability score increase" token is the one
+        // deliberate exception — classifyToken nulls it out on purpose
+        // because the core ability-boost step (section 1) already covers it.
+        if (!/ability score increase/i.test(token)) {
+          steps.push({
+            classLevel: lvl,
+            tab: "class-features",
+            kind: "pick-option",
+            count: 1,
+            title: cap(token),
+            prompt: `Choose ${cap(token)}.`,
+            featureName: cap(token),
+          });
+        }
       }
     }
   }

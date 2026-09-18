@@ -4,6 +4,7 @@ import {
   buildStepPlan,
   casterTier,
   classifyTalentColumnName,
+  classifyTalentStepTitle,
   parseTalentColumnValue,
   type SphereClassData,
 } from "./class-creation-steps";
@@ -132,6 +133,125 @@ describe("buildStepPlan — generic spherecaster token classification", () => {
       ),
     ).toBe(true);
   });
+
+  it("still surfaces a per-level token the scraper flagged as a choice even when it matches no recognized keyword (e.g. Reaper's 'Favored Prey +2'), instead of dropping it silently", () => {
+    const plan = buildStepPlan({
+      className: "Testcaster",
+      classSlug: "testcaster",
+      system: "SPHERES_OF_POWER",
+      group: "spherecaster",
+      level: 1,
+      classData: {
+        slug: "testcaster",
+        group: "spherecaster",
+        talentColumns: ["Magic Talents"],
+        advancement: [{ level: 1, columns: { "Magic Talents": "1" } }],
+        choicesByLevel: [{ level: 1, choices: ["favored prey +2"] }],
+      },
+    });
+    const step = plan.find((s) => s.classLevel === 1 && s.kind === "pick-option");
+    expect(step).toBeTruthy();
+    expect(step!.title).toBe("Favored prey +2");
+  });
+
+  it("still never turns the 'ability score increase' token into a duplicate step (the core ability-boost step already covers it)", () => {
+    const plan = buildStepPlan({
+      className: "Testcaster",
+      classSlug: "testcaster",
+      system: "SPHERES_OF_POWER",
+      group: "spherecaster",
+      level: 4,
+      classData: {
+        slug: "testcaster",
+        group: "spherecaster",
+        talentColumns: ["Magic Talents"],
+        advancement: [{ level: 4, columns: { "Magic Talents": "1" } }],
+        choicesByLevel: [
+          { level: 4, choices: ["ability score increase (+1, core PF1e)"] },
+        ],
+      },
+    });
+    expect(plan.filter((s) => s.kind === "ability-boost")).toHaveLength(1);
+    // Spherecasters always get a level-1 "Casting tradition" pick-option
+    // step regardless of choicesByLevel content — what this test actually
+    // guards is that the "ability score increase" token itself never grows
+    // a second, duplicate pick-option step alongside the core boost.
+    expect(
+      plan.some(
+        (s) => s.kind === "pick-option" && /ability score increase/i.test(s.title),
+      ),
+    ).toBe(false);
+  });
+});
+
+describe("buildStepPlan — Reaper (Spheres of Might, L1) class-specific overrides", () => {
+  const reaperData: SphereClassData = {
+    slug: "reaper",
+    group: "champion",
+    talentColumns: ["Combat & Magic Talents"],
+    advancement: [
+      {
+        level: 1,
+        columns: { "Combat & Magic Talents": "1 (+2 magic)" },
+        choices: ["bloodletter", "casting", "favored prey +2"],
+      },
+    ],
+    choicesByLevel: [
+      { level: 1, choices: ["bloodletter", "casting", "favored prey +2"] },
+    ],
+  };
+  const plan = buildStepPlan({
+    className: "Reaper",
+    classSlug: "reaper",
+    system: "SPHERES_OF_POWER",
+    group: "champion",
+    level: 1,
+    classData: reaperData,
+    features: [
+      { name: "Casting", level: 1, isChoice: true },
+      { name: "Bloodletter", level: 1, isChoice: true },
+      { name: "Favored Prey", level: 1, isChoice: true },
+      { name: "Reaper Cult", level: 1, isChoice: true },
+    ],
+  });
+
+  it("replaces the raw 'bloodletter' choice token with a single info step describing the automatic grant", () => {
+    const bloodletter = plan.filter((s) => s.title === "Bloodletter");
+    expect(bloodletter).toHaveLength(1);
+    expect(bloodletter[0].kind).toBe("info");
+    expect(bloodletter[0].prompt).toMatch(/Duelist sphere/);
+    expect(bloodletter[0].prompt).toMatch(/Bloody Slasher/);
+    expect(bloodletter[0].prompt).toMatch(/Ooze Ichor/);
+  });
+
+  it("gives the auto-derived 'Favored Prey' token a clean title and the real ranger favored-enemy options", () => {
+    const step = plan.find((s) => s.featureName?.startsWith("Favored prey"));
+    expect(step).toBeTruthy();
+    expect(step!.title).toBe("Favored prey");
+    expect(step!.options?.map((o) => o.value)).toEqual([
+      "Aberration",
+      "Animal",
+      "Construct",
+      "Dragon",
+      "Fey",
+      "Humanoid",
+      "Magical Beast",
+      "Monstrous Humanoid",
+      "Ooze",
+      "Outsider",
+      "Plant",
+      "Undead",
+      "Vermin",
+    ]);
+  });
+
+  it("adds a 'Reaper cult' choice with every cult as an option, even though no scraped token names it", () => {
+    const cult = plan.filter((s) => s.title === "Reaper cult");
+    expect(cult).toHaveLength(1);
+    expect(cult[0].kind).toBe("pick-option");
+    expect(cult[0].options?.length).toBeGreaterThanOrEqual(7);
+    expect(cult[0].options?.map((o) => o.value)).toContain("Cult of the Raven");
+  });
 });
 
 describe("buildStepPlan — PF1e Fighter (L4)", () => {
@@ -242,6 +362,19 @@ describe("classifyTalentColumnName", () => {
     expect(classifyTalentColumnName("Caster Level")).toBeNull();
     expect(classifyTalentColumnName("Any")).toBeNull();
     expect(classifyTalentColumnName("Utility")).toBeNull();
+  });
+});
+
+describe("classifyTalentStepTitle", () => {
+  it("recognizes magic, combat, and flex (combat-or-magic) step titles", () => {
+    expect(classifyTalentStepTitle("Magic talents")).toBe("magic");
+    expect(classifyTalentStepTitle("Combat talents")).toBe("combat");
+    expect(classifyTalentStepTitle("Combat or magic talents")).toBe("flex");
+  });
+
+  it("falls back to 'other' for a title with neither word", () => {
+    expect(classifyTalentStepTitle("Talent")).toBe("other");
+    expect(classifyTalentStepTitle("Bonus talent")).toBe("other");
   });
 });
 
