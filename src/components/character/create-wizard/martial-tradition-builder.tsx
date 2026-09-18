@@ -2,6 +2,8 @@
 
 import { useMemo, useState } from "react";
 
+import { parseRepeatable } from "@/lib/rules/repeatable";
+
 import { FacetDropdown } from "./facet-dropdown";
 import { OptionPicker, type PickerOption } from "./option-picker";
 import { CollapsibleSection } from "./steps/collapsible-section";
@@ -95,10 +97,22 @@ export function MartialTraditionBuilder({ stepId }: { stepId: string }) {
     [data.martialDrawbacks],
   );
 
+  // A talent already used elsewhere in this tradition is excluded from a
+  // pool by default — unless it's explicitly repeatable (e.g. Armor
+  // Training: "up to two times") and hasn't hit its stated cap yet, in
+  // which case it stays pickable again.
+  function blockedElsewhere(t: TalentLite, usedCount: number): boolean {
+    if (usedCount === 0) return false;
+    const repeat = parseRepeatable(t.description, "talent");
+    if (!repeat.repeatable) return true;
+    return repeat.maxTakes != null && usedCount >= repeat.maxTakes;
+  }
+
   const secondTalentPool = useMemo(
     () =>
       equipmentTalents.filter((t) => {
-        if (t.id === pick.disciplineTalentId) return false;
+        const usedCount = t.id === pick.disciplineTalentId ? 1 : 0;
+        if (blockedElsewhere(t, usedCount)) return false;
         if (secondTalentFilter.length === 0) return true;
         const isDiscipline = t.talentTypes.includes("discipline");
         return secondTalentFilter.includes(isDiscipline ? "discipline" : "standard");
@@ -108,9 +122,12 @@ export function MartialTraditionBuilder({ stepId }: { stepId: string }) {
 
   const bonusEquipmentPool = useMemo(
     () =>
-      standardTalents.filter(
-        (t) => t.id !== pick.disciplineTalentId && t.id !== pick.secondTalentId,
-      ),
+      standardTalents.filter((t) => {
+        const usedCount =
+          (t.id === pick.disciplineTalentId ? 1 : 0) +
+          (t.id === pick.secondTalentId ? 1 : 0);
+        return !blockedElsewhere(t, usedCount);
+      }),
     [standardTalents, pick.disciplineTalentId, pick.secondTalentId],
   );
 
