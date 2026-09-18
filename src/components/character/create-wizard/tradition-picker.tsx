@@ -68,7 +68,9 @@ export function TraditionPicker({
 
   function pick(v: string) {
     if (v === BUILD) {
-      if (kind === "martial" && !state.customMartialTradition) {
+      const alreadyBuilding =
+        kind === "casting" ? state.customCastingTradition : state.customMartialTradition;
+      if (!alreadyBuilding) {
         // Collapse this picker in favor of the builder's own sections below
         // (it auto-expands "Your tradition" and "Equipment sphere").
         setPickerOpen(false);

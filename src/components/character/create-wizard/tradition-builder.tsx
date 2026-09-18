@@ -411,6 +411,11 @@ export function TraditionBuilder({ stepId }: { stepId: string }) {
               (level {state.level})
             </span>
           </div>
+          {summary.unspent > 0 && (
+            <p className="text-muted-foreground text-xs">
+              {summary.bonusSpellPointsProgression}
+            </p>
+          )}
           {summary.totalDrawbackCost < summary.boonCost && (
             <p className="text-destructive text-xs">
               Not enough drawback points for the selected boons yet.

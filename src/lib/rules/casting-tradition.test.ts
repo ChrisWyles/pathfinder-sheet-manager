@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import {
   bonusSpellPointsFromUnspentDrawbacks,
+  describeBonusSpellPointsProgression,
   isRepeatable,
   parseDrawbackCost,
   parseGrants,
@@ -46,6 +47,35 @@ describe("bonusSpellPointsFromUnspentDrawbacks", () => {
   it("caps at the 5-drawback row for anything beyond 5 unspent", () => {
     expect(bonusSpellPointsFromUnspentDrawbacks(9, 7)).toBe(
       bonusSpellPointsFromUnspentDrawbacks(5, 7),
+    );
+  });
+});
+
+describe("describeBonusSpellPointsProgression", () => {
+  it("describes each row of the source table", () => {
+    expect(describeBonusSpellPointsProgression(0)).toBe(
+      "No bonus spell points.",
+    );
+    expect(describeBonusSpellPointsProgression(1)).toBe(
+      "+1 spell point initially, plus an additional +1 every 6 levels.",
+    );
+    expect(describeBonusSpellPointsProgression(2)).toBe(
+      "+1 spell point initially, plus an additional +1 every 3 levels.",
+    );
+    expect(describeBonusSpellPointsProgression(3)).toBe(
+      "+1 spell point per odd caster level (1st, 3rd, 5th, …).",
+    );
+    expect(describeBonusSpellPointsProgression(4)).toBe(
+      "+1 spell point initially, plus an additional +1 every 1.5 levels (2nd, 3rd, 5th, 6th, …).",
+    );
+    expect(describeBonusSpellPointsProgression(5)).toBe(
+      "+1 spell point per caster level.",
+    );
+  });
+
+  it("caps at the 5-drawback row for anything beyond 5 unspent", () => {
+    expect(describeBonusSpellPointsProgression(9)).toBe(
+      describeBonusSpellPointsProgression(5),
     );
   });
 });

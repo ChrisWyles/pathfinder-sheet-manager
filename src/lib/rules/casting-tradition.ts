@@ -54,6 +54,35 @@ export function bonusSpellPointsFromUnspentDrawbacks(
   }
 }
 
+/**
+ * Prose description of how bonus spell points scale with caster level for a
+ * given number of unspent general drawbacks, per the same source table as
+ * `bonusSpellPointsFromUnspentDrawbacks` above:
+ *   1: "+1, +1 per 6 levels in casting classes"
+ *   2: "+1, +1 per 3 levels in casting classes"
+ *   3: "+1 per odd level in a casting class (1, 3, 5, etc.)"
+ *   4: "+1, +1 per 1.5 levels in a casting class (2, 3, 5, 6, etc.)"
+ *   5: "+1 per level in a casting class"
+ */
+export function describeBonusSpellPointsProgression(unspentDrawbacks: number): string {
+  const n = Math.max(0, Math.min(5, Math.floor(unspentDrawbacks)));
+  switch (n) {
+    case 0:
+      return "No bonus spell points.";
+    case 1:
+      return "+1 spell point initially, plus an additional +1 every 6 levels.";
+    case 2:
+      return "+1 spell point initially, plus an additional +1 every 3 levels.";
+    case 3:
+      return "+1 spell point per odd caster level (1st, 3rd, 5th, …).";
+    case 4:
+      return "+1 spell point initially, plus an additional +1 every 1.5 levels (2nd, 3rd, 5th, 6th, …).";
+    case 5:
+    default:
+      return "+1 spell point per caster level.";
+  }
+}
+
 export interface TraditionCostInput {
   /** Each selected drawback's cost (1, or 2 for "counts as 2" drawbacks). */
   drawbackCosts: number[];
@@ -66,6 +95,7 @@ export interface TraditionSummary {
   boonCost: number;
   unspent: number;
   bonusSpellPoints: number;
+  bonusSpellPointsProgression: string;
 }
 
 export function summarizeCastingTradition({
@@ -81,6 +111,7 @@ export function summarizeCastingTradition({
     boonCost,
     unspent,
     bonusSpellPoints: bonusSpellPointsFromUnspentDrawbacks(unspent, casterLevel),
+    bonusSpellPointsProgression: describeBonusSpellPointsProgression(unspent),
   };
 }
 
