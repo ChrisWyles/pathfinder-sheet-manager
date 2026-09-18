@@ -6,6 +6,13 @@ import { RULES_SYSTEMS } from "@/lib/constants";
 
 import { useWizard } from "../wizard-provider";
 
+// TEMP: Spheres of Power only, per request — remove this filter to restore
+// Pathfinder 1e as a selectable system (matches the same restriction already
+// applied to the class picker in class-step.tsx).
+const AVAILABLE_SYSTEMS = RULES_SYSTEMS.filter(
+  (s) => s.value === "SPHERES_OF_POWER",
+);
+
 export function SystemStep() {
   const { state, update } = useWizard();
 
@@ -25,7 +32,7 @@ export function SystemStep() {
           }
           className="gap-3"
         >
-          {RULES_SYSTEMS.map((s) => (
+          {AVAILABLE_SYSTEMS.map((s) => (
             <div key={s.value} className="flex items-start gap-3">
               <RadioGroupItem
                 value={s.value}

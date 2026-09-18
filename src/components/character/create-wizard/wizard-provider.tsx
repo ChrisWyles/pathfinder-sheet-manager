@@ -72,10 +72,13 @@ export interface FeatLite {
   id: string;
   name: string;
   featTypes: string[];
-  /** Magic sphere this feat is tied to (e.g. "Destruction"), when it's a sphere feat. */
-  sphereName: string;
+  /** Magic sphere(s) this feat is tied to (e.g. ["Destruction"]), when it's
+   * a sphere feat — a feat can require, or offer a choice of, more than one. */
+  sphereNames: string[];
   prerequisites: string;
   benefit: string;
+  /** Deep link to this feat's entry on the source wiki page. */
+  sourceUrl: string;
 }
 export interface SphereLite {
   id: string;
@@ -90,6 +93,8 @@ export interface TalentLite {
   description: string;
   /** e.g. "discipline" for an Equipment sphere discipline talent. */
   talentTypes: string[];
+  /** Deep link to this talent's entry on the source wiki page. */
+  sourceUrl: string;
 }
 export interface ItemLite {
   id: string;
@@ -140,6 +145,12 @@ export interface FeatPick {
   featId?: string;
   name: string;
   level: number;
+  /** Per the Spheres of Power "trade a bonus feat for a talent" rule: this
+   * slot grants an extra magic/combat talent slot instead of a feat. When
+   * set, `name`/`featId` are unused — the actual talent is picked on the
+   * Spheres & Talents step, which folds this into the matching bucket's
+   * total (see spheres-step.tsx). */
+  tradedFor?: "magic" | "combat";
 }
 export interface SpherePick {
   key: string;
@@ -261,7 +272,7 @@ const PRESET_CLASSES: WizardClass[] = CLASS_PRESETS.map((p) => ({
 
 function initialState(firstClass: WizardClass): WizardState {
   return {
-    system: "PATHFINDER_1E",
+    system: firstClass.system,
     classKey: firstClass.name,
     className: firstClass.name,
     archetype: "",
@@ -343,7 +354,13 @@ export function WizardProvider({
   const allClasses = props.classes.length > 0 ? props.classes : PRESET_CLASSES;
   const data: WizardData = { ...props, classes: allClasses };
 
-  const [state, dispatch] = useReducer(reducer, allClasses[0], initialState);
+  // TEMP: Spheres of Power only, per request — prefer a Spheres of Power
+  // class as the starting pick so the initial system/class stay consistent
+  // (system-step.tsx only offers Spheres of Power right now). Falls back to
+  // whatever's first if none exist, same as before.
+  const firstClass =
+    allClasses.find((c) => c.system === "SPHERES_OF_POWER") ?? allClasses[0];
+  const [state, dispatch] = useReducer(reducer, firstClass, initialState);
   const [pending, startTransition] = useTransition();
 
   const update = (patch: Partial<WizardState>) =>
@@ -472,10 +489,12 @@ export function WizardProvider({
             isClassSkill: false,
           })),
         feats: state.feats
-          .filter((f) => f.name.trim())
+          .filter((f) => f.name.trim() || f.tradedFor)
           .map((f) => ({
-            featId: f.featId,
-            name: f.name.trim(),
+            featId: f.tradedFor ? undefined : f.featId,
+            name: f.tradedFor
+              ? `Traded for a ${f.tradedFor === "magic" ? "Magic" : "Combat"} Talent`
+              : f.name.trim(),
             takenAtLevel: f.level,
           })),
         spheres: state.spheres

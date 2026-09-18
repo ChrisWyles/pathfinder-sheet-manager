@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 
+import { BuildSummaryPanel } from "@/components/character/create-wizard/build-summary-panel";
 import { WizardProvider } from "@/components/character/create-wizard/wizard-provider";
 import { WizardFooter } from "@/components/character/create-wizard/wizard-footer";
 import { WizardProgress } from "@/components/character/create-wizard/wizard-progress";
@@ -126,9 +127,10 @@ export default async function NewCharacterLayout({
         id: true,
         name: true,
         featTypes: true,
-        sphereName: true,
+        sphereNames: true,
         prerequisites: true,
         benefit: true,
+        sourceUrl: true,
       },
     }),
     prisma.sphere.findMany({
@@ -147,6 +149,7 @@ export default async function NewCharacterLayout({
         sphereName: true,
         description: true,
         talentTypes: true,
+        sourceUrl: true,
       },
     }),
     prisma.item.findMany({
@@ -227,22 +230,26 @@ export default async function NewCharacterLayout({
     id: f.id,
     name: f.name,
     featTypes: f.featTypes,
-    sphereName: f.sphereName,
-    prerequisites: clip(f.prerequisites, 160),
-    benefit: clip(f.benefit),
+    sphereNames: f.sphereNames,
+    // Uncut (matches the scraper's own 300/1000-char caps) — the wizard
+    // shows the full text in a hover tooltip, not just a cramped snippet.
+    prerequisites: clip(f.prerequisites, 300),
+    benefit: clip(f.benefit, 1000),
+    sourceUrl: f.sourceUrl,
   }));
   const sphereList: SphereLite[] = spheres.map((s) => ({
     id: s.id,
     name: s.name,
     type: s.type,
-    description: clip(s.description),
+    description: clip(s.description, 1000),
   }));
   const talentList: TalentLite[] = talents.map((t) => ({
     id: t.id,
     name: t.name,
     sphereName: t.sphereName,
-    description: clip(t.description),
+    description: clip(t.description, 1000),
     talentTypes: t.talentTypes,
+    sourceUrl: t.sourceUrl,
   }));
   const itemList: ItemLite[] = items.map((i) => ({
     id: i.id,
@@ -297,8 +304,15 @@ export default async function NewCharacterLayout({
         martialDrawbacks={martialDrawbackList}
       >
         <WizardProgress />
-        <div className="mt-4">{children}</div>
-        <WizardFooter />
+        <div className="mt-4 grid grid-cols-1 items-start gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
+          <div className="min-w-0 space-y-4">
+            {children}
+            <WizardFooter />
+          </div>
+          <div className="lg:sticky lg:top-4">
+            <BuildSummaryPanel />
+          </div>
+        </div>
       </WizardProvider>
     </div>
   );

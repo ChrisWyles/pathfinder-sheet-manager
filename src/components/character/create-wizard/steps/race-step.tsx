@@ -3,7 +3,6 @@
 import { useMemo, useState } from "react";
 
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { ABILITY_META, SIZE_OPTIONS } from "@/lib/constants";
 import {
@@ -17,6 +16,7 @@ import { ABILITIES, type AbilityKey } from "@/lib/rules/types";
 import { useWizard } from "../wizard-provider";
 import { FacetDropdown } from "../facet-dropdown";
 import { OptionPicker, type PickerOption } from "../option-picker";
+import { CollapsibleSection } from "./collapsible-section";
 import { Field, FieldGroup, sign } from "./field";
 
 const CUSTOM = "__custom__";
@@ -42,6 +42,8 @@ export function RaceStep() {
   const [bonus, setBonus] = useState<AbilityKey[]>([]);
   const [malus, setMalus] = useState<AbilityKey[]>([]);
   const [sizes, setSizes] = useState<string[]>([]);
+  const [raceSectionOpen, setRaceSectionOpen] = useState(true);
+  const [detailsSectionOpen, setDetailsSectionOpen] = useState(false);
 
   const selectedRace = useMemo(
     () => CORE_RACES.find((r) => r.name === state.raceKey) ?? null,
@@ -86,6 +88,8 @@ export function RaceStep() {
   function pickRace(value: string) {
     if (value === CUSTOM) {
       update({ raceKey: CUSTOM, race: "" });
+      setRaceSectionOpen(false);
+      setDetailsSectionOpen(true);
       return;
     }
     const r = CORE_RACES.find((x) => x.name === value);
@@ -97,6 +101,8 @@ export function RaceStep() {
       baseSpeed: r.speed,
       racial: { ...r.abilityAdjustments },
     }));
+    setRaceSectionOpen(false);
+    setDetailsSectionOpen(true);
   }
 
   function setRacial(key: AbilityKey, value: number) {
@@ -117,11 +123,13 @@ export function RaceStep() {
 
   return (
     <div className="space-y-6">
-      <Card>
-        <CardHeader>
-          <CardTitle>Race</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4">
+      <CollapsibleSection
+        title="Race"
+        summary={state.race || undefined}
+        open={raceSectionOpen}
+        onToggle={() => setRaceSectionOpen((o) => !o)}
+      >
+        <div className="space-y-4">
           <FieldGroup label="Filter races">
             <div className="flex flex-wrap items-center gap-2">
               <FacetDropdown
@@ -171,15 +179,17 @@ export function RaceStep() {
             onChange={pickRace}
             emptyText="No races match these filters."
           />
-        </CardContent>
-      </Card>
+        </div>
+      </CollapsibleSection>
 
       {isCustom && (
-        <Card>
-          <CardHeader>
-            <CardTitle>Custom race details</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
+        <CollapsibleSection
+          title="Custom race details"
+          summary={state.race.trim() || undefined}
+          open={detailsSectionOpen}
+          onToggle={() => setDetailsSectionOpen((o) => !o)}
+        >
+          <div className="space-y-4">
             <Field label="Race name">
               <Input
                 value={state.race}
@@ -235,16 +245,18 @@ export function RaceStep() {
                 ))}
               </div>
             </FieldGroup>
-          </CardContent>
-        </Card>
+          </div>
+        </CollapsibleSection>
       )}
 
       {selectedRace && (
-        <Card>
-          <CardHeader>
-            <CardTitle>{selectedRace.name}</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
+        <CollapsibleSection
+          title={selectedRace.name}
+          summary={adjSummary(selectedRace)}
+          open={detailsSectionOpen}
+          onToggle={() => setDetailsSectionOpen((o) => !o)}
+        >
+          <div className="space-y-4">
             <p className="text-muted-foreground text-sm">
               {selectedRace.description}
             </p>
@@ -289,8 +301,8 @@ export function RaceStep() {
                 · Speed {selectedRace.speed} ft.
               </p>
             </div>
-          </CardContent>
-        </Card>
+          </div>
+        </CollapsibleSection>
       )}
     </div>
   );
