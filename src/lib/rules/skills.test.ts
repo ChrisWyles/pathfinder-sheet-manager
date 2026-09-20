@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { computeSkillTotal } from "./skills";
+import { computeSkillTotal, findSkillTotal } from "./skills";
 import type { AbilityScores } from "./types";
 
 const scores: AbilityScores = {
@@ -83,5 +83,49 @@ describe("computeSkillTotal", () => {
       { abilityScores: scores, armorCheckPenalty: 0 },
     );
     expect(total).toBe(3);
+  });
+});
+
+describe("findSkillTotal", () => {
+  it("computes the total from the character's own rank row when one exists", () => {
+    const total = findSkillTotal(
+      "Bluff",
+      "CHA",
+      [
+        {
+          ranks: 4,
+          isClassSkill: true,
+          miscMod: 0,
+          skill: { name: "Bluff", keyAbility: "CHA", armorCheckPenalty: false },
+        },
+      ],
+      { abilityScores: scores, armorCheckPenalty: 0 },
+    );
+    expect(total).toBe(4 + 3 - 1); // ranks + class - CHA mod (8 -> -1)
+  });
+
+  it("matches the skill name case-insensitively", () => {
+    const total = findSkillTotal(
+      "bluff",
+      "CHA",
+      [
+        {
+          ranks: 2,
+          isClassSkill: false,
+          miscMod: 0,
+          skill: { name: "Bluff", keyAbility: "CHA", armorCheckPenalty: false },
+        },
+      ],
+      { abilityScores: scores, armorCheckPenalty: 0 },
+    );
+    expect(total).toBe(2 - 1);
+  });
+
+  it("falls back to untrained (just the ability mod) when there's no rank row", () => {
+    const total = findSkillTotal("Bluff", "CHA", [], {
+      abilityScores: scores,
+      armorCheckPenalty: 0,
+    });
+    expect(total).toBe(-1); // CHA mod only, 0 ranks, not a class skill
   });
 });

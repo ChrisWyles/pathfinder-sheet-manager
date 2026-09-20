@@ -5,10 +5,10 @@ import type {
   Item,
 } from "@prisma/client";
 
-import { applyAbilityAdjustments } from "./abilities";
+import { applyAbilityAdjustments, parseAbilityAdjustments } from "./abilities";
 import { computeDerivedStats } from "./derived";
+import { effectiveItemType, resolveItemStats } from "./inventory-item";
 import type {
-  AbilityKey,
   AbilityScores,
   ArmorContribution,
   DerivedInput,
@@ -32,13 +32,6 @@ function baseScores(c: Character): AbilityScores {
   };
 }
 
-function asAdjustments(
-  value: unknown,
-): Record<string, Partial<Record<AbilityKey, number>>> | null {
-  if (!value || typeof value !== "object") return null;
-  return value as Record<string, Partial<Record<AbilityKey, number>>>;
-}
-
 function asTypedModifiers(value: unknown): TypedModifiers {
   if (!value || typeof value !== "object") return {};
   return value as TypedModifiers;
@@ -53,23 +46,43 @@ function armorFromInventory(
     maxDexBonus: null,
     armorCheckPenalty: 0,
   };
-  const worn = inventory.find((i) => i.equipped && i.item?.type === type);
-  if (!worn?.item) return empty;
-  const custom = (worn.customData ?? {}) as Record<string, unknown>;
-  const num = (key: string, fallback: number | null) =>
-    typeof custom[key] === "number" ? (custom[key] as number) : fallback;
+  const worn = inventory.find(
+    (i) => i.equipped && effectiveItemType(i) === type,
+  );
+  if (!worn) return empty;
+  const stats = resolveItemStats(worn);
   return {
-    acBonus: num("acBonus", worn.item.acBonus ?? 0) ?? 0,
-    maxDexBonus: num("maxDexBonus", worn.item.maxDexBonus ?? null),
-    armorCheckPenalty:
-      num("armorCheckPenalty", worn.item.armorCheckPenalty ?? 0) ?? 0,
+    acBonus: stats.acBonus,
+    maxDexBonus: stats.maxDexBonus,
+    // Masterwork armor/shields reduce the check penalty by 1.
+    armorCheckPenalty: worn.masterwork
+      ? Math.max(0, stats.armorCheckPenalty - 1)
+      : stats.armorCheckPenalty,
   };
+}
+
+/** +1 to attack from an equipped masterwork weapon of the given reach —
+ * ranged if it has a range increment, melee otherwise (thrown weapons with
+ * a range increment count as ranged, matching the sheet's single
+ * melee/ranged attack values). */
+function masterworkWeaponBonus(
+  inventory: CharacterForDerivation["inventory"],
+  which: "melee" | "ranged",
+): number {
+  const hasMasterwork = inventory.some((i) => {
+    if (!i.equipped || !i.masterwork || effectiveItemType(i) !== "WEAPON") {
+      return false;
+    }
+    const rangeIncrement = resolveItemStats(i).rangeIncrement;
+    return which === "ranged" ? rangeIncrement != null : rangeIncrement == null;
+  });
+  return hasMasterwork ? 1 : 0;
 }
 
 export function toDerivedInput(c: CharacterForDerivation): DerivedInput {
   const abilityScores = applyAbilityAdjustments(
     baseScores(c),
-    asAdjustments(c.abilityModifiers),
+    parseAbilityAdjustments(c.abilityModifiers),
   );
 
   const armor = armorFromInventory(c.inventory, "ARMOR");
@@ -91,6 +104,8 @@ export function toDerivedInput(c: CharacterForDerivation): DerivedInput {
       acBonus: shield.acBonus,
       armorCheckPenalty: shield.armorCheckPenalty,
     },
+    meleeAttackBonus: masterworkWeaponBonus(c.inventory, "melee"),
+    rangedAttackBonus: masterworkWeaponBonus(c.inventory, "ranged"),
     modifiers: asTypedModifiers(c.modifiers),
   };
 }

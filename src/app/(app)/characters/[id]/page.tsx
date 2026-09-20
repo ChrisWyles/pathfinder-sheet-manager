@@ -2,21 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { CharacterSheetTabs } from "@/components/character/sheet/character-sheet-tabs";
 import { DeleteCharacterButton } from "@/components/character/delete-character-button";
-import { DiscordWebhookCard } from "@/components/character/discord-webhook-card";
-import { RollPanel } from "@/components/character/roll-panel";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { requireSession } from "@/lib/auth-helpers";
-import { ABILITY_META, RULES_SYSTEMS } from "@/lib/constants";
+import { RULES_SYSTEMS } from "@/lib/constants";
 import { prisma } from "@/lib/prisma";
 import {
   favoredClassBonusTalentsEarned,
   parseFavoredClassBonusMechanic,
 } from "@/lib/rules/favored-class-bonus";
 import { deriveCharacter } from "@/lib/rules/snapshot";
-import { ABILITIES } from "@/lib/rules/types";
 
 type Params = { params: Promise<{ id: string }> };
 
@@ -29,10 +26,6 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   return { title: character?.name ?? "Character" };
 }
 
-function sign(n: number) {
-  return n >= 0 ? `+${n}` : `${n}`;
-}
-
 export default async function CharacterSheetPage({ params }: Params) {
   const session = await requireSession();
   const { id } = await params;
@@ -43,7 +36,10 @@ export default async function CharacterSheetPage({ params }: Params) {
       classes: true,
       inventory: { include: { item: true }, orderBy: { name: "asc" } },
       feats: { orderBy: { takenAtLevel: "asc" } },
+      spheres: { orderBy: { name: "asc" } },
+      talents: { orderBy: { name: "asc" } },
       rollLogs: { orderBy: { createdAt: "desc" }, take: 10 },
+      skillRanks: { include: { skill: true } },
     },
   });
   if (!character) notFound();
@@ -97,7 +93,7 @@ export default async function CharacterSheetPage({ params }: Params) {
       : 0;
   const fcbNextLevel = fcbMechanic ? (fcbTalentsEarned + 1) * fcbMechanic.every : null;
 
-  const baseScores: Record<string, number> = {
+  const baseScores = {
     STR: character.strength,
     DEX: character.dexterity,
     CON: character.constitution,
@@ -133,289 +129,18 @@ export default async function CharacterSheetPage({ params }: Params) {
         </div>
       </div>
 
-      <div className="grid gap-6 lg:grid-cols-3">
-        <div className="space-y-6 lg:col-span-2">
-          <Card>
-            <CardHeader>
-              <CardTitle>Ability scores</CardTitle>
-            </CardHeader>
-            <CardContent className="grid grid-cols-3 gap-3 sm:grid-cols-6">
-              {ABILITIES.map((key) => {
-                const total = derived.abilityScores[key];
-                const delta = total - baseScores[key];
-                return (
-                  <div
-                    key={key}
-                    className="rounded-md border p-3 text-center"
-                    title={ABILITY_META[key].label}
-                  >
-                    <div className="text-muted-foreground text-xs">{key}</div>
-                    <div className="text-xl font-semibold tabular-nums">
-                      {total}
-                    </div>
-                    <div className="text-muted-foreground text-sm tabular-nums">
-                      {sign(derived.abilityMods[key])}
-                    </div>
-                    {delta !== 0 && (
-                      <div className="text-muted-foreground text-[10px] tabular-nums">
-                        {baseScores[key]} {sign(delta)}
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Derived stats</CardTitle>
-            </CardHeader>
-            <CardContent className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-              <Stat
-                label="Hit points"
-                value={`${character.currentHp} / ${character.maxHp}`}
-              />
-              {character.maxSpellPoints != null && (
-                <Stat
-                  label="Spell points"
-                  value={`${character.spellPoints ?? 0} / ${character.maxSpellPoints}`}
-                />
-              )}
-              <Stat label="Initiative" value={sign(derived.initiative)} />
-              <Stat label="Speed" value={`${derived.speed} ft.`} />
-              <Stat label="AC" value={derived.ac} />
-              <Stat label="Touch AC" value={derived.touchAc} />
-              <Stat label="Flat-footed" value={derived.flatFootedAc} />
-              <Stat label="Fortitude" value={sign(derived.saves.fort)} />
-              <Stat label="Reflex" value={sign(derived.saves.ref)} />
-              <Stat label="Will" value={sign(derived.saves.will)} />
-              <Stat label="BAB" value={sign(derived.baseAttackBonus)} />
-              <Stat
-                label="Attack sequence"
-                value={derived.attackSequence.map(sign).join(" / ")}
-              />
-              <Stat
-                label="Melee / Ranged"
-                value={`${sign(derived.meleeAttack)} / ${sign(derived.rangedAttack)}`}
-              />
-              <Stat label="CMB" value={sign(derived.cmb)} />
-              <Stat label="CMD" value={derived.cmd} />
-              <Stat
-                label="Armor check penalty"
-                value={`-${derived.armorCheckPenalty}`}
-              />
-            </CardContent>
-          </Card>
-
-          <RollPanel characterId={character.id} />
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Recent rolls</CardTitle>
-            </CardHeader>
-            <CardContent>
-              {character.rollLogs.length === 0 ? (
-                <p className="text-muted-foreground text-sm">No rolls yet.</p>
-              ) : (
-                <ul className="divide-y text-sm">
-                  {character.rollLogs.map((r) => (
-                    <li
-                      key={r.id}
-                      className="flex items-center justify-between gap-4 py-2"
-                    >
-                      <span className="font-medium">{r.label}</span>
-                      <span className="text-muted-foreground tabular-nums">
-                        {r.expression} → {r.total}
-                        {r.discordDelivered ? " · sent" : ""}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </CardContent>
-          </Card>
-        </div>
-
-        <div className="space-y-6">
-          <DiscordWebhookCard
-            characterId={character.id}
-            current={character.discordWebhookUrl}
-          />
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Equipment</CardTitle>
-            </CardHeader>
-            <CardContent>
-              {character.inventory.length === 0 ? (
-                <p className="text-muted-foreground text-sm">
-                  Nothing carried yet.
-                </p>
-              ) : (
-                <ul className="space-y-1 text-sm">
-                  {character.inventory.map((i) => (
-                    <li key={i.id} className="flex justify-between gap-2">
-                      <span>
-                        {i.name}
-                        {i.quantity > 1 ? ` ×${i.quantity}` : ""}
-                      </span>
-                      {i.equipped && (
-                        <span className="text-muted-foreground">equipped</span>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </CardContent>
-          </Card>
-
-          {favoredBonusNote && (
-            <Card>
-              <CardHeader>
-                <CardTitle>Favored class bonus</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-2 text-sm">
-                <p>{favoredBonusNote}</p>
-                {fcbMechanic && (
-                  <p className="text-muted-foreground">
-                    +1{" "}
-                    {fcbMechanic.spheres.length
-                      ? `${fcbMechanic.spheres.join("/")} sphere `
-                      : ""}
-                    talent every {fcbMechanic.every} levels in{" "}
-                    {favoredClassRow?.name} — <strong>{fcbTalentsEarned}</strong>{" "}
-                    earned so far
-                    {fcbNextLevel ? `, next at level ${fcbNextLevel}` : ""}.
-                  </p>
-                )}
-              </CardContent>
-            </Card>
-          )}
-
-          {(customCasting || customMartial) && (
-            <Card>
-              <CardHeader>
-                <CardTitle>
-                  {customCasting && customMartial
-                    ? "Traditions"
-                    : customCasting
-                      ? "Casting tradition"
-                      : "Martial tradition"}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3 text-sm">
-                {customCasting && (
-                  <>
-                    <div>
-                      <div className="text-muted-foreground text-xs">
-                        Drawbacks
-                      </div>
-                      {customCasting.drawbacks.length === 0 ? (
-                        <p className="text-muted-foreground">None.</p>
-                      ) : (
-                        <ul className="list-inside list-disc">
-                          {customCasting.drawbacks.map((d) => (
-                            <li key={d}>{d}</li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
-                    <div>
-                      <div className="text-muted-foreground text-xs">
-                        Boons
-                      </div>
-                      {customCasting.boons.length === 0 ? (
-                        <p className="text-muted-foreground">None.</p>
-                      ) : (
-                        <ul className="list-inside list-disc">
-                          {customCasting.boons.map((b) => (
-                            <li key={b}>{b}</li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
-                    {customCasting.bonusSpellPoints > 0 && (
-                      <p className="text-muted-foreground">
-                        +{customCasting.bonusSpellPoints} bonus spell points
-                        from unspent drawbacks.
-                      </p>
-                    )}
-                    {customCasting.sphereDrawbacks.length > 0 && (
-                      <div>
-                        <div className="text-muted-foreground text-xs">
-                          Sphere-specific drawbacks
-                        </div>
-                        <ul className="list-inside list-disc">
-                          {customCasting.sphereDrawbacks.map((d) => (
-                            <li key={d.name}>
-                              {d.name} ({d.sphereName})
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-                  </>
-                )}
-                {customMartial && (
-                  <ul className="list-inside list-disc">
-                    <li>{customMartial.equipmentSphere} sphere (automatic)</li>
-                    {customMartial.disciplineTalent && (
-                      <li>{customMartial.disciplineTalent} (discipline)</li>
-                    )}
-                    {customMartial.secondTalent && (
-                      <li>{customMartial.secondTalent}</li>
-                    )}
-                    {customMartial.baseSphere && (
-                      <li>{customMartial.baseSphere} sphere</li>
-                    )}
-                    {customMartial.bonus?.type === "sphere" && (
-                      <li>{customMartial.bonus.name} sphere (bonus)</li>
-                    )}
-                    {customMartial.bonus?.type === "talent" && (
-                      <li>
-                        {customMartial.bonus.name}
-                        {customMartial.bonus.fromSphere
-                          ? ` (from ${customMartial.bonus.fromSphere})`
-                          : ""}
-                      </li>
-                    )}
-                    {customMartial.bonus?.type === "equipment" && (
-                      <li>{customMartial.bonus.name} (bonus)</li>
-                    )}
-                  </ul>
-                )}
-              </CardContent>
-            </Card>
-          )}
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Feats</CardTitle>
-            </CardHeader>
-            <CardContent>
-              {character.feats.length === 0 ? (
-                <p className="text-muted-foreground text-sm">None recorded.</p>
-              ) : (
-                <ul className="space-y-1 text-sm">
-                  {character.feats.map((f) => (
-                    <li key={f.id}>{f.name}</li>
-                  ))}
-                </ul>
-              )}
-            </CardContent>
-          </Card>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function Stat({ label, value }: { label: string; value: string | number }) {
-  return (
-    <div className="rounded-md border p-3">
-      <div className="text-muted-foreground text-xs">{label}</div>
-      <div className="font-semibold tabular-nums">{value}</div>
+      <CharacterSheetTabs
+        character={character}
+        derived={derived}
+        baseScores={baseScores}
+        customCasting={customCasting}
+        customMartial={customMartial}
+        favoredBonusNote={favoredBonusNote}
+        favoredClassName={favoredClassRow?.name}
+        fcbMechanic={fcbMechanic}
+        fcbTalentsEarned={fcbTalentsEarned}
+        fcbNextLevel={fcbNextLevel}
+      />
     </div>
   );
 }

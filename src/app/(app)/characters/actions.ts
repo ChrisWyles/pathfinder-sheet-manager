@@ -4,10 +4,10 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { z } from "zod";
 
-import type { Prisma } from "@prisma/client";
+import { ArmorCategory, ItemType, WeaponCategory, type Prisma } from "@prisma/client";
 
 import { requireSession } from "@/lib/auth-helpers";
-import { isValidDiscordWebhookUrl } from "@/lib/discord/webhook";
+import { isValidDiscordWebhookUrl, sendToWebhook } from "@/lib/discord/webhook";
 import { prisma } from "@/lib/prisma";
 import { abilityModifier } from "@/lib/rules/abilities";
 import {
@@ -23,6 +23,7 @@ import {
   skillRanksBudget,
 } from "@/lib/rules/creation";
 import { summarizeCastingTradition } from "@/lib/rules/casting-tradition";
+import { readEffects } from "@/lib/rules/inventory-item";
 import { isHumanRace } from "@/lib/rules/races";
 import { ABILITIES, type AbilityKey } from "@/lib/rules/types";
 
@@ -596,6 +597,437 @@ export async function updateDiscordWebhook(
     data: { discordWebhookUrl: url || null },
   });
   if (count === 0) return { error: "Character not found." };
+
+  revalidatePath(`/characters/${characterId}`);
+  return { ok: true };
+}
+
+const resourcesSchema = z.object({
+  characterId: z.string().min(1),
+  currentHp: z.number().int().min(-999).max(9999),
+  tempHp: z.number().int().min(0).max(9999),
+  spellPoints: z.number().int().min(0).max(9999).nullable().optional(),
+});
+
+/** Updates the character's trackable-in-play resource pools (current/temp HP,
+ * and spell points for spherecasters) — everything else on the sheet is
+ * either computed or edited through level-up. */
+export async function updateResources(input: z.infer<typeof resourcesSchema>) {
+  const session = await requireSession();
+  const { characterId, currentHp, tempHp, spellPoints } =
+    resourcesSchema.parse(input);
+
+  const { count } = await prisma.character.updateMany({
+    where: { id: characterId, userId: session.user.id },
+    data: {
+      currentHp,
+      tempHp,
+      ...(spellPoints !== undefined ? { spellPoints } : {}),
+    },
+  });
+  if (count === 0) return { error: "Character not found." };
+
+  revalidatePath(`/characters/${characterId}`);
+  return { ok: true };
+}
+
+const damageReductionSchema = z.object({
+  characterId: z.string().min(1),
+  damageReduction: z.string().trim().max(60),
+});
+
+export async function updateDamageReduction(
+  input: z.infer<typeof damageReductionSchema>,
+) {
+  const session = await requireSession();
+  const { characterId, damageReduction } = damageReductionSchema.parse(input);
+
+  const { count } = await prisma.character.updateMany({
+    where: { id: characterId, userId: session.user.id },
+    data: { damageReduction },
+  });
+  if (count === 0) return { error: "Character not found." };
+
+  revalidatePath(`/characters/${characterId}`);
+  return { ok: true };
+}
+
+const discordFieldSchema = z.object({
+  name: z.string().min(1).max(80),
+  value: z.string().min(1).max(400),
+});
+const postInfoSchema = z.object({
+  characterId: z.string().min(1),
+  title: z.string().min(1).max(80),
+  fields: z.array(discordFieldSchema).min(1).max(10),
+});
+
+/** Posts a labeled block of sheet fields (e.g. the Hit Points section, as
+ * currently shown) to the character's Discord webhook — distinct from a
+ * dice roll, this is just "share this info," so it skips RollLog entirely. */
+export async function postInfoToDiscord(input: z.infer<typeof postInfoSchema>) {
+  const session = await requireSession();
+  const { characterId, title, fields } = postInfoSchema.parse(input);
+
+  const character = await prisma.character.findFirst({
+    where: { id: characterId, userId: session.user.id },
+    select: { name: true, discordWebhookUrl: true },
+  });
+  if (!character) return { error: "Character not found." };
+  if (!character.discordWebhookUrl) {
+    return { error: "No Discord webhook configured for this character." };
+  }
+
+  const send = await sendToWebhook(character.discordWebhookUrl, {
+    username: character.name,
+    embeds: [
+      {
+        title,
+        fields: fields.map((f) => ({ name: f.name, value: f.value, inline: true })),
+        color: 0x5865f2,
+        footer: { text: "Pathfinder Sheet Manager" },
+        timestamp: new Date().toISOString(),
+      },
+    ],
+  });
+  if (!send.ok) return { error: send.error ?? "Discord delivery failed." };
+  return { ok: true };
+}
+
+const GRIP_VALUES = ["one-hand", "two-hand", "ranged"] as const;
+const ARMOR_BUCKET_VALUES = ["LIGHT", "MEDIUM", "HEAVY", "SHIELD"] as const;
+const CONSUMABLE_BUCKET_VALUES = ["CONSUMABLE", "NON_CONSUMABLE"] as const;
+
+// d20pfsrd's weapon-table subcategory text (scraped into Item.data.subcategory)
+// that each grip bucket covers — light melee weapons count as one-handed.
+const GRIP_SUBCATEGORIES: Record<(typeof GRIP_VALUES)[number], string[]> = {
+  "one-hand": ["Light Melee Weapons", "One-Handed Melee Weapons"],
+  "two-hand": ["Two-Handed Melee Weapons"],
+  ranged: ["Ranged Weapons"],
+};
+
+const CONSUMABLE_ITEM_TYPES: ItemType[] = ["CONSUMABLE", "POTION", "SCROLL"];
+const NON_CONSUMABLE_ITEM_TYPES: ItemType[] = [
+  "GEAR",
+  "TOOL",
+  "WONDROUS",
+  "RING",
+  "ROD",
+  "STAFF",
+  "WAND",
+  "TREASURE",
+  "OTHER",
+];
+
+const itemSearchSchema = z.object({
+  query: z.string().trim().max(80).default(""),
+  types: z.array(z.nativeEnum(ItemType)).min(1),
+  weaponCategories: z.array(z.nativeEnum(WeaponCategory)).max(4).default([]),
+  grips: z.array(z.enum(GRIP_VALUES)).max(3).default([]),
+  armorBuckets: z.array(z.enum(ARMOR_BUCKET_VALUES)).max(4).default([]),
+  consumableBuckets: z.array(z.enum(CONSUMABLE_BUCKET_VALUES)).max(2).default([]),
+});
+
+/** Searches the shared item catalog, scoped to the given type(s) plus
+ * optional tab-specific filters — used by the equipment tab's "Add" picker
+ * so each sub-tab only offers items of its own kind (weapons, armor/
+ * shields, or everything else) narrowed further by proficiency/grip,
+ * armor weight class, or consumable-ness. */
+export async function searchItems(input: z.input<typeof itemSearchSchema>) {
+  await requireSession();
+  const { query, types, weaponCategories, grips, armorBuckets, consumableBuckets } =
+    itemSearchSchema.parse(input);
+
+  const and: Prisma.ItemWhereInput[] = [
+    { type: { in: types } },
+    ...(query ? [{ name: { contains: query, mode: "insensitive" as const } }] : []),
+  ];
+
+  if (weaponCategories.length > 0) {
+    and.push({ weaponCategory: { in: weaponCategories } });
+  }
+
+  if (grips.length > 0) {
+    const subcategories = new Set(grips.flatMap((g) => GRIP_SUBCATEGORIES[g]));
+    and.push({
+      OR: [...subcategories].map((s) => ({
+        data: { path: ["subcategory"], equals: s },
+      })),
+    });
+  }
+
+  if (armorBuckets.length > 0) {
+    and.push({
+      OR: armorBuckets.map((b) =>
+        b === "SHIELD"
+          ? { type: "SHIELD" as const }
+          : { type: "ARMOR" as const, armorCategory: b },
+      ),
+    });
+  }
+
+  if (consumableBuckets.length > 0) {
+    const itemTypes = new Set(
+      consumableBuckets.flatMap((b) =>
+        b === "CONSUMABLE" ? CONSUMABLE_ITEM_TYPES : NON_CONSUMABLE_ITEM_TYPES,
+      ),
+    );
+    and.push({ type: { in: [...itemTypes] } });
+  }
+
+  return prisma.item.findMany({
+    where: { AND: and },
+    orderBy: { name: "asc" },
+    take: 50,
+  });
+}
+
+const addInventoryItemSchema = z.object({
+  characterId: z.string().min(1),
+  itemId: z.string().min(1),
+});
+
+export async function addInventoryItem(
+  input: z.infer<typeof addInventoryItemSchema>,
+) {
+  const session = await requireSession();
+  const { characterId, itemId } = addInventoryItemSchema.parse(input);
+
+  const character = await prisma.character.findFirst({
+    where: { id: characterId, userId: session.user.id },
+    select: { id: true },
+  });
+  if (!character) return { error: "Character not found." };
+
+  const item = await prisma.item.findUnique({ where: { id: itemId } });
+  if (!item) return { error: "Item not found." };
+
+  await prisma.inventoryItem.create({
+    data: {
+      characterId,
+      itemId: item.id,
+      name: item.name,
+      weight: item.weight,
+      costCp: item.costCp,
+    },
+  });
+
+  revalidatePath(`/characters/${characterId}`);
+  return { ok: true };
+}
+
+const updateInventoryItemFlagsSchema = z.object({
+  characterId: z.string().min(1),
+  inventoryItemId: z.string().min(1),
+  equipped: z.boolean().optional(),
+  masterwork: z.boolean().optional(),
+});
+
+export async function updateInventoryItemFlags(
+  input: z.infer<typeof updateInventoryItemFlagsSchema>,
+) {
+  const session = await requireSession();
+  const { characterId, inventoryItemId, equipped, masterwork } =
+    updateInventoryItemFlagsSchema.parse(input);
+
+  const character = await prisma.character.findFirst({
+    where: { id: characterId, userId: session.user.id },
+    select: { id: true },
+  });
+  if (!character) return { error: "Character not found." };
+
+  const { count } = await prisma.inventoryItem.updateMany({
+    where: { id: inventoryItemId, characterId },
+    data: {
+      ...(equipped !== undefined ? { equipped } : {}),
+      ...(masterwork !== undefined ? { masterwork } : {}),
+    },
+  });
+  if (count === 0) return { error: "Item not found." };
+
+  revalidatePath(`/characters/${characterId}`);
+  return { ok: true };
+}
+
+const removeInventoryItemSchema = z.object({
+  characterId: z.string().min(1),
+  inventoryItemId: z.string().min(1),
+});
+
+export async function removeInventoryItem(
+  input: z.infer<typeof removeInventoryItemSchema>,
+) {
+  const session = await requireSession();
+  const { characterId, inventoryItemId } =
+    removeInventoryItemSchema.parse(input);
+
+  const character = await prisma.character.findFirst({
+    where: { id: characterId, userId: session.user.id },
+    select: { id: true },
+  });
+  if (!character) return { error: "Character not found." };
+
+  await prisma.inventoryItem.deleteMany({
+    where: { id: inventoryItemId, characterId },
+  });
+
+  revalidatePath(`/characters/${characterId}`);
+  return { ok: true };
+}
+
+async function requireOwnedCharacter(characterId: string) {
+  const session = await requireSession();
+  const character = await prisma.character.findFirst({
+    where: { id: characterId, userId: session.user.id },
+    select: { id: true },
+  });
+  return character ? session : null;
+}
+
+const updateInventoryItemDetailsSchema = z.object({
+  characterId: z.string().min(1),
+  inventoryItemId: z.string().min(1),
+  name: z.string().trim().min(1).max(200).optional(),
+  notes: z.string().trim().max(2000).optional(),
+});
+
+/** Renames an inventory item and/or edits its freeform description/notes. */
+export async function updateInventoryItemDetails(
+  input: z.infer<typeof updateInventoryItemDetailsSchema>,
+) {
+  const { characterId, inventoryItemId, name, notes } =
+    updateInventoryItemDetailsSchema.parse(input);
+  if (!(await requireOwnedCharacter(characterId))) {
+    return { error: "Character not found." };
+  }
+
+  const { count } = await prisma.inventoryItem.updateMany({
+    where: { id: inventoryItemId, characterId },
+    data: {
+      ...(name !== undefined ? { name } : {}),
+      ...(notes !== undefined ? { notes } : {}),
+    },
+  });
+  if (count === 0) return { error: "Item not found." };
+
+  revalidatePath(`/characters/${characterId}`);
+  return { ok: true };
+}
+
+const addInventoryItemEffectSchema = z.object({
+  characterId: z.string().min(1),
+  inventoryItemId: z.string().min(1),
+  name: z.string().trim().min(1).max(120),
+  description: z.string().trim().max(500).default(""),
+});
+
+/** Attaches an enchantment/enhancement/attachment to an inventory item —
+ * purely descriptive, tracked as freeform text rather than a computed
+ * mechanical bonus. */
+export async function addInventoryItemEffect(
+  input: z.infer<typeof addInventoryItemEffectSchema>,
+) {
+  const { characterId, inventoryItemId, name, description } =
+    addInventoryItemEffectSchema.parse(input);
+  if (!(await requireOwnedCharacter(characterId))) {
+    return { error: "Character not found." };
+  }
+
+  const row = await prisma.inventoryItem.findFirst({
+    where: { id: inventoryItemId, characterId },
+    select: { effects: true },
+  });
+  if (!row) return { error: "Item not found." };
+
+  const effects = readEffects(row.effects);
+  effects.push({ id: crypto.randomUUID(), name, description });
+  await prisma.inventoryItem.update({
+    where: { id: inventoryItemId },
+    data: { effects: asJson(effects) },
+  });
+
+  revalidatePath(`/characters/${characterId}`);
+  return { ok: true };
+}
+
+const removeInventoryItemEffectSchema = z.object({
+  characterId: z.string().min(1),
+  inventoryItemId: z.string().min(1),
+  effectId: z.string().min(1),
+});
+
+export async function removeInventoryItemEffect(
+  input: z.infer<typeof removeInventoryItemEffectSchema>,
+) {
+  const { characterId, inventoryItemId, effectId } =
+    removeInventoryItemEffectSchema.parse(input);
+  if (!(await requireOwnedCharacter(characterId))) {
+    return { error: "Character not found." };
+  }
+
+  const row = await prisma.inventoryItem.findFirst({
+    where: { id: inventoryItemId, characterId },
+    select: { effects: true },
+  });
+  if (!row) return { error: "Item not found." };
+
+  const effects = readEffects(row.effects).filter((e) => e.id !== effectId);
+  await prisma.inventoryItem.update({
+    where: { id: inventoryItemId },
+    data: { effects: asJson(effects) },
+  });
+
+  revalidatePath(`/characters/${characterId}`);
+  return { ok: true };
+}
+
+const customItemStatsSchema = z.object({
+  type: z.nativeEnum(ItemType),
+  description: z.string().trim().max(2000).default(""),
+  weaponCategory: z.nativeEnum(WeaponCategory).optional(),
+  damage: z.string().trim().max(40).optional(),
+  damageType: z.string().trim().max(40).optional(),
+  critRange: z.number().int().min(1).max(20).optional(),
+  critMultiplier: z.number().int().min(1).max(10).optional(),
+  rangeIncrement: z.number().int().min(0).max(2000).nullable().optional(),
+  armorCategory: z.nativeEnum(ArmorCategory).optional(),
+  acBonus: z.number().int().min(-20).max(50).optional(),
+  maxDexBonus: z.number().int().min(0).max(20).nullable().optional(),
+  armorCheckPenalty: z.number().int().min(0).max(20).optional(),
+  spellFailure: z.number().int().min(0).max(100).optional(),
+});
+
+const createCustomInventoryItemSchema = z.object({
+  characterId: z.string().min(1),
+  name: z.string().trim().min(1).max(200),
+  costCp: z.number().int().min(0).max(9_999_999).default(0),
+  weight: z.number().min(0).max(100000).default(0),
+  stats: customItemStatsSchema,
+});
+
+/** Creates a freeform, non-catalog inventory item — the player supplies
+ * every field by hand instead of picking from the shared Item library. All
+ * of its stats live in `customData`; `resolveItemStats` (shared by the
+ * sheet UI and derived-stat math) reads it the same way it reads a catalog
+ * item, so an equipped custom weapon/armor works exactly like a real one. */
+export async function createCustomInventoryItem(
+  input: z.infer<typeof createCustomInventoryItemSchema>,
+) {
+  const { characterId, name, costCp, weight, stats } =
+    createCustomInventoryItemSchema.parse(input);
+  if (!(await requireOwnedCharacter(characterId))) {
+    return { error: "Character not found." };
+  }
+
+  await prisma.inventoryItem.create({
+    data: {
+      characterId,
+      name,
+      costCp,
+      weight,
+      customData: asJson(stats),
+    },
+  });
 
   revalidatePath(`/characters/${characterId}`);
   return { ok: true };

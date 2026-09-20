@@ -55,7 +55,34 @@ export interface DerivedInput {
   classes: ClassProgression[];
   armor?: ArmorContribution;
   shield?: Pick<ArmorContribution, "acBonus" | "armorCheckPenalty">;
+  /** Equipment-derived attack bonuses (e.g. +1 from a masterwork weapon). */
+  meleeAttackBonus?: number;
+  rangedAttackBonus?: number;
   modifiers?: TypedModifiers;
+}
+
+/** One named term in a derived stat's calculation, e.g. { label: "Armor", value: 4 }. */
+export interface StatBreakdownLine {
+  label: string;
+  value: number;
+}
+
+export interface DerivedBreakdowns {
+  ac: StatBreakdownLine[];
+  touchAc: StatBreakdownLine[];
+  flatFootedAc: StatBreakdownLine[];
+  cmb: StatBreakdownLine[];
+  cmd: StatBreakdownLine[];
+  meleeAttack: StatBreakdownLine[];
+  rangedAttack: StatBreakdownLine[];
+  saves: {
+    fort: StatBreakdownLine[];
+    ref: StatBreakdownLine[];
+    will: StatBreakdownLine[];
+  };
+  initiative: StatBreakdownLine[];
+  speed: StatBreakdownLine[];
+  armorCheckPenalty: StatBreakdownLine[];
 }
 
 export interface DerivedStats {
@@ -78,4 +105,6 @@ export interface DerivedStats {
   speed: number;
   maxDexApplied: number;
   armorCheckPenalty: number;
+  /** Named terms behind every composite value above, for a "show your work" tooltip. */
+  breakdowns: DerivedBreakdowns;
 }

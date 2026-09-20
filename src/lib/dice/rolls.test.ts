@@ -30,6 +30,19 @@ const derived: DerivedStats = {
   speed: 30,
   maxDexApplied: 2,
   armorCheckPenalty: 4,
+  breakdowns: {
+    ac: [],
+    touchAc: [],
+    flatFootedAc: [],
+    cmb: [],
+    cmd: [],
+    meleeAttack: [],
+    rangedAttack: [],
+    saves: { fort: [], ref: [], will: [] },
+    initiative: [],
+    speed: [],
+    armorCheckPenalty: [],
+  },
 };
 
 describe("buildExpression", () => {

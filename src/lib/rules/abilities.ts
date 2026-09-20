@@ -2,6 +2,7 @@ import {
   ABILITIES,
   type AbilityKey,
   type AbilityScores,
+  type StatBreakdownLine,
   type TypedModifiers,
 } from "./types";
 
@@ -35,6 +36,37 @@ export function applyAbilityAdjustments(
     }
   }
   return result;
+}
+
+/** Parses a Character's freeform `abilityModifiers` JSON into the typed
+ * per-bucket adjustment shape `applyAbilityAdjustments` expects. */
+export function parseAbilityAdjustments(
+  value: unknown,
+): Record<string, Partial<Record<AbilityKey, number>>> | null {
+  if (!value || typeof value !== "object") return null;
+  return value as Record<string, Partial<Record<AbilityKey, number>>>;
+}
+
+function capitalize(s: string): string {
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+/** Named terms behind one ability's effective score — Base plus one line
+ * per adjustment bucket (racial, enhancement, ...) that affects it. */
+export function abilityBreakdown(
+  key: AbilityKey,
+  base: number,
+  adjustments: Record<string, Partial<Record<AbilityKey, number>>> | null,
+): StatBreakdownLine[] {
+  const lines: StatBreakdownLine[] = [{ label: "Base", value: base }];
+  if (!adjustments) return lines;
+  for (const [bucket, byAbility] of Object.entries(adjustments)) {
+    const delta = byAbility?.[key];
+    if (typeof delta === "number" && delta !== 0) {
+      lines.push({ label: capitalize(bucket), value: delta });
+    }
+  }
+  return lines;
 }
 
 export function sumAcModifiers(

@@ -27,6 +27,10 @@
     "scrape:sphere-talents": "tsx scripts/scrape-sphere-talents.ts",
     "seed:skill-descriptions": "tsx scripts/seed-skill-descriptions.ts",
     "scrape:feats": "tsx scripts/scrape-feats.ts",
+    "scrape:weapons": "tsx scripts/scrape-weapons.ts",
+    "scrape:armor": "tsx scripts/scrape-armor.ts",
+    "scrape:combat-maneuvers": "tsx scripts/scrape-combat-maneuvers.ts",
+    "scrape:maneuver-feats": "tsx scripts/scrape-maneuver-feats.ts",
     "postinstall": "prisma generate"
   },
   "dependencies": {

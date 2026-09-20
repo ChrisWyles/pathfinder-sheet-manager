@@ -230,6 +230,10 @@ model Character {
   // { "ac": { "natural": 1, "deflection": 1 }, "saves": { "fort": 1 }, "initiative": 2 }
   modifiers Json @default("{}")
 
+  // Freeform (e.g. "10/magic") — DR bypass types vary too much to compute,
+  // so this is entered by hand rather than derived.
+  damageReduction String @default("")
+
   // Spheres of Power casting pool (null for straight PF1e characters).
   spellPoints    Int?
   maxSpellPoints Int?
@@ -369,12 +373,16 @@ model InventoryItem {
   weight     Float   @default(0)
   costCp     Int     @default(0)
   equipped   Boolean @default(false)
+  // Masterwork quality: -1 armor check penalty (armor/shields), +1 to attack (weapons).
+  masterwork Boolean @default(false)
   slot       String  @default("")
   notes      String  @default("")
 
   // Snapshot / overrides for custom or edited items so the sheet is stable
   // even if the library entry later changes.
   customData Json @default("{}")
+  // Attached enchantments/enhancements/attachments: [{ id, name, description }]
+  effects Json @default("[]")
 
   character Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
   item      Item?     @relation(fields: [itemId], references: [id])

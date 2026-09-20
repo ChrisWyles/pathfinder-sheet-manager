@@ -1,6 +1,11 @@
 import { describe, expect, it } from "vitest";
 
-import { abilityModifier, applyAbilityAdjustments } from "./abilities";
+import {
+  abilityBreakdown,
+  abilityModifier,
+  applyAbilityAdjustments,
+  parseAbilityAdjustments,
+} from "./abilities";
 import type { AbilityScores } from "./types";
 
 const base: AbilityScores = {
@@ -41,5 +46,46 @@ describe("applyAbilityAdjustments", () => {
     expect(result.INT).toBe(6);
     expect(result.CON).toBe(13);
     expect(result.DEX).toBe(14);
+  });
+});
+
+describe("abilityBreakdown", () => {
+  it("is just Base when there are no adjustments", () => {
+    expect(abilityBreakdown("STR", 10, null)).toEqual([
+      { label: "Base", value: 10 },
+    ]);
+  });
+
+  it("adds one labeled line per nonzero bucket, capitalized, skipping zeros", () => {
+    const lines = abilityBreakdown("STR", 10, {
+      racial: { STR: 2 },
+      enhancement: { STR: 0 },
+      inherent: { STR: 4 },
+    });
+    expect(lines).toEqual([
+      { label: "Base", value: 10 },
+      { label: "Racial", value: 2 },
+      { label: "Inherent", value: 4 },
+    ]);
+    expect(lines.reduce((s, l) => s + l.value, 0)).toBe(16);
+  });
+
+  it("ignores buckets that don't touch this ability", () => {
+    const lines = abilityBreakdown("CHA", 10, { racial: { STR: 2 } });
+    expect(lines).toEqual([{ label: "Base", value: 10 }]);
+  });
+});
+
+describe("parseAbilityAdjustments", () => {
+  it("returns null for missing/non-object values", () => {
+    expect(parseAbilityAdjustments(null)).toBeNull();
+    expect(parseAbilityAdjustments(undefined)).toBeNull();
+    expect(parseAbilityAdjustments("nope")).toBeNull();
+  });
+
+  it("passes through a well-formed adjustments object", () => {
+    expect(parseAbilityAdjustments({ racial: { DEX: 2 } })).toEqual({
+      racial: { DEX: 2 },
+    });
   });
 });

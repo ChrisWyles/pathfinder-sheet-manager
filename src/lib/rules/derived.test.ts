@@ -102,4 +102,74 @@ describe("computeDerivedStats", () => {
     expect(d.ac).toBe(20);
     expect(d.touchAc).toBe(11);
   });
+
+  it("breaks every composite stat down into named terms that sum to the total", () => {
+    const sum = (lines: { value: number }[]) =>
+      lines.reduce((s, l) => s + l.value, 0);
+
+    const d = computeDerivedStats({
+      size: "LARGE",
+      baseSpeed: 40,
+      abilityScores: { STR: 20, DEX: 12, CON: 16, INT: 10, WIS: 10, CHA: 10 },
+      classes: [
+        {
+          levels: 8,
+          babProgression: "FULL",
+          fortProgression: "GOOD",
+          refProgression: "POOR",
+          willProgression: "POOR",
+        },
+      ],
+      armor: { acBonus: 4, maxDexBonus: 4, armorCheckPenalty: 3 },
+      meleeAttackBonus: 1,
+      rangedAttackBonus: 0,
+      modifiers: {
+        ac: { natural: 2, deflection: 1, dodge: 1 },
+        saves: { fort: 1 },
+        attack: 1,
+        cmb: 1,
+        cmd: 1,
+        initiative: 4,
+        speed: -10,
+      },
+    });
+
+    expect(sum(d.breakdowns.ac)).toBe(d.ac);
+    expect(sum(d.breakdowns.touchAc)).toBe(d.touchAc);
+    expect(sum(d.breakdowns.flatFootedAc)).toBe(d.flatFootedAc);
+    expect(sum(d.breakdowns.cmb)).toBe(d.cmb);
+    expect(sum(d.breakdowns.cmd)).toBe(d.cmd);
+    expect(sum(d.breakdowns.meleeAttack)).toBe(d.meleeAttack);
+    expect(sum(d.breakdowns.rangedAttack)).toBe(d.rangedAttack);
+    expect(sum(d.breakdowns.saves.fort)).toBe(d.saves.fort);
+    expect(sum(d.breakdowns.saves.ref)).toBe(d.saves.ref);
+    expect(sum(d.breakdowns.saves.will)).toBe(d.saves.will);
+    expect(sum(d.breakdowns.initiative)).toBe(d.initiative);
+    expect(sum(d.breakdowns.speed)).toBe(d.speed);
+    expect(sum(d.breakdowns.armorCheckPenalty)).toBe(d.armorCheckPenalty);
+  });
+
+  it("includes a Dex-penalty term in flat-footed AC's breakdown when Dex is negative", () => {
+    const d = computeDerivedStats({
+      size: "MEDIUM",
+      baseSpeed: 30,
+      abilityScores: { STR: 10, DEX: 4, CON: 10, INT: 10, WIS: 10, CHA: 10 },
+      classes: [
+        {
+          levels: 1,
+          babProgression: "THREE_QUARTER",
+          fortProgression: "POOR",
+          refProgression: "POOR",
+          willProgression: "POOR",
+        },
+      ],
+    });
+
+    const sum = (lines: { value: number }[]) =>
+      lines.reduce((s, l) => s + l.value, 0);
+    expect(sum(d.breakdowns.flatFootedAc)).toBe(d.flatFootedAc);
+    expect(
+      d.breakdowns.flatFootedAc.some((l) => l.label === "Dex penalty"),
+    ).toBe(true);
+  });
 });
