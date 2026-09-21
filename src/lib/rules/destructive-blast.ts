@@ -29,11 +29,31 @@ export interface DestructiveBlastTalentLike {
 export interface DestructiveBlastConfig {
   blastShapeTalentId: string | null;
   blastTypeTalentId: string | null;
+  /** Second (blast type) talent, applied via the Admixture talent — only
+   * meaningful when `admixture` is true. */
+  blastTypeTalentId2: string | null;
+  /** Whether the Admixture talent's effect is active on this blast (the
+   * card only offers this when the character has actually taken
+   * Admixture). */
+  admixture: boolean;
+  /** Admixture's extra cost when the two blast types aren't in the same
+   * group: true pays 1 extra spell point, false instead increases the
+   * blast's casting time by one step (not modeled numerically — see the
+   * card's note). Irrelevant when the two types share a group (free) or
+   * admixture isn't active. */
+  admixtureExtraSpellPoint: boolean;
   boosted: boolean;
 }
 
 export function emptyDestructiveBlastConfig(): DestructiveBlastConfig {
-  return { blastShapeTalentId: null, blastTypeTalentId: null, boosted: false };
+  return {
+    blastShapeTalentId: null,
+    blastTypeTalentId: null,
+    blastTypeTalentId2: null,
+    admixture: false,
+    admixtureExtraSpellPoint: true,
+    boosted: false,
+  };
 }
 
 /** Parses CharacterAction.sphereConfig JSON for a Destructive Blast row,
@@ -47,6 +67,13 @@ export function parseDestructiveBlastConfig(value: unknown): DestructiveBlastCon
       typeof v.blastShapeTalentId === "string" ? v.blastShapeTalentId : null,
     blastTypeTalentId:
       typeof v.blastTypeTalentId === "string" ? v.blastTypeTalentId : null,
+    blastTypeTalentId2:
+      typeof v.blastTypeTalentId2 === "string" ? v.blastTypeTalentId2 : null,
+    admixture: v.admixture === true,
+    admixtureExtraSpellPoint:
+      typeof v.admixtureExtraSpellPoint === "boolean"
+        ? v.admixtureExtraSpellPoint
+        : empty.admixtureExtraSpellPoint,
     boosted: v.boosted === true,
   };
 }
@@ -125,4 +152,59 @@ export function destructiveBlastSaveDC(
   castingAbilityMod: number,
 ): number {
   return 10 + Math.floor(Math.max(1, casterLevel) / 2) + castingAbilityMod;
+}
+
+/**
+ * Admixture (http://spheresofpower.wikidot.com/destruction#toc4): "You may
+ * either increase the casting time of your destructive blast by one step
+ * or spend an additional spell point to apply two (blast type) talents
+ * instead of 1. The resultant blast does half of its damage of each type
+ * and any additional effects of the blast types are applied normally. ...
+ * Special: You do not increase the casting time or spend an additional
+ * spell point when using the Admixture talent with two blast types from
+ * the same blast type group."
+ *
+ * The RAW die-size-mismatch table (use the smaller of the two dice sizes)
+ * and the "use the lower caster level of the two blast types" clause don't
+ * apply in this app's model — every blast type here shares the sphere's
+ * single base d6 die and the character's one caster level, so there's
+ * nothing for either rule to adjust between. Only the half-damage split
+ * and the same-group cost waiver are generically computable; each chosen
+ * talent's own further text (e.g. Special effects) is surfaced to the
+ * player, not parsed.
+ */
+
+/** A blast type talent's group for Admixture's cost waiver — the damage
+ * type it's tagged with (e.g. two "acid" blast types share a group). */
+export function destructiveBlastTypeGroup(
+  blastType: DestructiveBlastTalentLike | null,
+): string | null {
+  if (!blastType) return null;
+  return (
+    blastType.talentTypes.find((t) => t !== "blast type" && t !== "advanced") ??
+    null
+  );
+}
+
+/** Splits a blast's total damage dice count as evenly as possible between
+ * Admixture's two blast types ("half of its damage of each type"); an odd
+ * die goes to the first type. */
+export function destructiveBlastAdmixtureSplit(
+  count: number,
+): [first: number, second: number] {
+  const first = Math.ceil(count / 2);
+  return [first, count - first];
+}
+
+/** Admixture's extra cost: free when both blast types share a group,
+ * otherwise 1 spell point if the player chose to pay it that way (the
+ * "increase casting time by one step" alternative costs no spell points
+ * and isn't tracked numerically here). */
+export function destructiveBlastAdmixtureSpellPointCost(
+  admixture: boolean,
+  sameGroup: boolean,
+  extraSpellPoint: boolean,
+): number {
+  if (!admixture || sameGroup) return 0;
+  return extraSpellPoint ? 1 : 0;
 }

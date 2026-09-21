@@ -21,11 +21,14 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import {
+  destructiveBlastAdmixtureSpellPointCost,
+  destructiveBlastAdmixtureSplit,
   destructiveBlastBaseCost,
   destructiveBlastDamageType,
   destructiveBlastDice,
   destructiveBlastSaveDC,
   destructiveBlastSaveType,
+  destructiveBlastTypeGroup,
   parseDestructiveBlastConfig,
 } from "@/lib/rules/destructive-blast";
 import { formatRange } from "@/lib/rules/sphere-range";
@@ -76,13 +79,40 @@ export function DestructiveBlastCard({
     (t) => t.id === config.blastShapeTalentId,
   );
   const chosenType = blastTypes.find((t) => t.id === config.blastTypeTalentId);
+  const chosenType2 = blastTypes.find((t) => t.id === config.blastTypeTalentId2);
+
+  const hasAdmixture = destructionTalents.some((t) => t.name === "Admixture");
+  const admixtureActive = hasAdmixture && config.admixture && !!chosenType2;
+  const sameGroup =
+    admixtureActive &&
+    destructiveBlastTypeGroup(
+      chosenType?.talent ? { talentTypes: chosenType.talent.talentTypes } : null,
+    ) ===
+      destructiveBlastTypeGroup({
+        talentTypes: chosenType2!.talent!.talentTypes,
+      });
 
   const casterLevel = derived.totalLevel;
   const { count, sides } = destructiveBlastDice(casterLevel, config.boosted);
+  const [count1, count2] = admixtureActive
+    ? destructiveBlastAdmixtureSplit(count)
+    : [count, 0];
   const damageType = destructiveBlastDamageType(
     chosenType?.talent ? { talentTypes: chosenType.talent.talentTypes } : null,
   );
-  const spCost = destructiveBlastBaseCost(config.boosted);
+  const damageType2 = admixtureActive
+    ? destructiveBlastDamageType({ talentTypes: chosenType2!.talent!.talentTypes })
+    : null;
+  const admixtureCost = destructiveBlastAdmixtureSpellPointCost(
+    admixtureActive,
+    sameGroup,
+    config.admixtureExtraSpellPoint,
+  );
+  const spCost = destructiveBlastBaseCost(config.boosted) + admixtureCost;
+  const damageSummary =
+    admixtureActive && damageType2
+      ? `${count1}d${sides} ${damageType} + ${count2}d${sides} ${damageType2}`
+      : `${count}d${sides} ${damageType}`;
   const range = formatRange({ kind: "CLOSE" }, casterLevel);
   const saveType = destructiveBlastSaveType(chosenShape?.name ?? null);
   const castingAbilityMod = character.castingAbility
@@ -94,6 +124,10 @@ export function DestructiveBlastCard({
   for (const t of blastShapes) shapeItems[t.id] = t.name;
   const typeItems: Record<string, string> = { [NONE]: "None (bludgeoning)" };
   for (const t of blastTypes) typeItems[t.id] = t.name;
+  const type2Items: Record<string, string> = { [NONE]: "None" };
+  for (const t of blastTypes) {
+    if (t.id !== config.blastTypeTalentId) type2Items[t.id] = t.name;
+  }
 
   function save(patch: Partial<typeof config>) {
     const next = { ...config, ...patch };
@@ -103,6 +137,9 @@ export function DestructiveBlastCard({
         actionId: action.id,
         blastShapeTalentId: next.blastShapeTalentId,
         blastTypeTalentId: next.blastTypeTalentId,
+        blastTypeTalentId2: next.blastTypeTalentId2,
+        admixture: next.admixture,
+        admixtureExtraSpellPoint: next.admixtureExtraSpellPoint,
         boosted: next.boosted,
       });
       if (result?.error) toast.error(result.error);
@@ -118,6 +155,19 @@ export function DestructiveBlastCard({
   }
 
   function rollDamage() {
+    if (admixtureActive && damageType2) {
+      roll({
+        type: "custom",
+        label: `Destructive Blast damage (${damageType})`,
+        dice: `${count1}d${sides}`,
+      });
+      roll({
+        type: "custom",
+        label: `Destructive Blast damage (${damageType2})`,
+        dice: `${count2}d${sides}`,
+      });
+      return;
+    }
     roll({
       type: "custom",
       label: `Destructive Blast damage (${damageType})`,
@@ -176,14 +226,65 @@ export function DestructiveBlastCard({
           />
           Boost (+1 SP)
         </label>
+
+        {hasAdmixture && (
+          <label className="flex items-center gap-1 text-xs whitespace-nowrap">
+            <Checkbox
+              checked={config.admixture}
+              disabled={pending}
+              onCheckedChange={(c) =>
+                save({
+                  admixture: c === true,
+                  ...(c !== true ? { blastTypeTalentId2: null } : {}),
+                })
+              }
+            />
+            Admixture
+          </label>
+        )}
+
+        {hasAdmixture && config.admixture && (
+          <Select
+            items={type2Items}
+            value={config.blastTypeTalentId2 ?? NONE}
+            onValueChange={(v) =>
+              save({ blastTypeTalentId2: v === NONE ? null : v })
+            }
+          >
+            <SelectTrigger size="sm" className="max-w-[160px]">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              {Object.entries(type2Items).map(([value, label]) => (
+                <SelectItem key={value} value={value}>
+                  {label}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        )}
+
+        {admixtureActive && !sameGroup && (
+          <label className="flex items-center gap-1 text-xs whitespace-nowrap">
+            <Checkbox
+              checked={config.admixtureExtraSpellPoint}
+              disabled={pending}
+              onCheckedChange={(c) =>
+                save({ admixtureExtraSpellPoint: c === true })
+              }
+            />
+            Pay +1 SP (uncheck: +1 casting time step)
+          </label>
+        )}
       </div>
 
       <div className="flex flex-wrap items-center gap-2">
         <span className="text-muted-foreground text-xs">
-          {range} · {count}d{sides} {damageType}
+          {range} · {damageSummary}
           {saveType ? ` · DC ${saveDC} ${saveType[0]}${saveType.slice(1).toLowerCase()}` : ""}
           {" · "}
           {spCost} SP
+          {admixtureActive && sameGroup ? " (admixture free — same group)" : ""}
         </span>
 
         <Dialog open={castOpen} onOpenChange={setCastOpen}>
@@ -198,7 +299,7 @@ export function DestructiveBlastCard({
             <div className="space-y-3 text-sm">
               <div className="flex flex-wrap gap-1.5">
                 <Stat label="Range" value={range} />
-                <Stat label="Damage" value={`${count}d${sides} ${damageType}`} />
+                <Stat label="Damage" value={damageSummary} />
                 <Stat label="Spell cost" value={`${spCost} SP`} />
                 {!saveType && (
                   <>
@@ -240,6 +341,14 @@ export function DestructiveBlastCard({
                   <span className="font-medium">{chosenType.name}: </span>
                   <span className="text-muted-foreground whitespace-pre-wrap">
                     {chosenType.talent!.description}
+                  </span>
+                </div>
+              )}
+              {admixtureActive && chosenType2 && (
+                <div className="text-xs">
+                  <span className="font-medium">{chosenType2.name}: </span>
+                  <span className="text-muted-foreground whitespace-pre-wrap">
+                    {chosenType2.talent!.description}
                   </span>
                 </div>
               )}

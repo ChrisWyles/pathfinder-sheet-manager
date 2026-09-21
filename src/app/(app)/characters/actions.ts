@@ -1201,24 +1201,36 @@ const updateDestructiveBlastConfigSchema = z.object({
   actionId: z.string().min(1),
   blastShapeTalentId: z.string().min(1).nullable(),
   blastTypeTalentId: z.string().min(1).nullable(),
+  blastTypeTalentId2: z.string().min(1).nullable(),
+  admixture: z.boolean(),
+  admixtureExtraSpellPoint: z.boolean(),
   boosted: z.boolean(),
 });
 
-/** Saves the player's blast shape/blast type talent picks (and the "boost
- * for 1 spell point" toggle) on an auto-granted Destructive Blast action —
- * see src/lib/rules/destructive-blast.ts for how the sheet resolves these
- * into actual dice/damage type. */
+/** Saves the player's blast shape/blast type talent picks (the Admixture
+ * talent's second blast type and its SP-vs-casting-time cost choice, and
+ * the "boost for 1 spell point" toggle) on an auto-granted Destructive
+ * Blast action — see src/lib/rules/destructive-blast.ts for how the sheet
+ * resolves these into actual dice/damage type. */
 export async function updateDestructiveBlastConfig(
   input: z.infer<typeof updateDestructiveBlastConfigSchema>,
 ) {
-  const { characterId, actionId, blastShapeTalentId, blastTypeTalentId, boosted } =
-    updateDestructiveBlastConfigSchema.parse(input);
+  const {
+    characterId,
+    actionId,
+    blastShapeTalentId,
+    blastTypeTalentId,
+    blastTypeTalentId2,
+    admixture,
+    admixtureExtraSpellPoint,
+    boosted,
+  } = updateDestructiveBlastConfigSchema.parse(input);
   if (!(await requireOwnedCharacter(characterId))) {
     return { error: "Character not found." };
   }
 
   // Only trust talent ids that actually belong to this character.
-  const ids = [blastShapeTalentId, blastTypeTalentId].filter(
+  const ids = [blastShapeTalentId, blastTypeTalentId, blastTypeTalentId2].filter(
     (id): id is string => !!id,
   );
   const owned = ids.length
@@ -1229,6 +1241,15 @@ export async function updateDestructiveBlastConfig(
     : [];
   const ownedIds = new Set(owned.map((t) => t.id));
 
+  const resolvedBlastTypeTalentId =
+    blastTypeTalentId && ownedIds.has(blastTypeTalentId) ? blastTypeTalentId : null;
+  const resolvedBlastTypeTalentId2 =
+    blastTypeTalentId2 &&
+    ownedIds.has(blastTypeTalentId2) &&
+    blastTypeTalentId2 !== resolvedBlastTypeTalentId
+      ? blastTypeTalentId2
+      : null;
+
   const { count } = await prisma.characterAction.updateMany({
     where: { id: actionId, characterId },
     data: {
@@ -1237,10 +1258,10 @@ export async function updateDestructiveBlastConfig(
           blastShapeTalentId && ownedIds.has(blastShapeTalentId)
             ? blastShapeTalentId
             : null,
-        blastTypeTalentId:
-          blastTypeTalentId && ownedIds.has(blastTypeTalentId)
-            ? blastTypeTalentId
-            : null,
+        blastTypeTalentId: resolvedBlastTypeTalentId,
+        blastTypeTalentId2: resolvedBlastTypeTalentId2,
+        admixture,
+        admixtureExtraSpellPoint,
         boosted,
       }),
     },

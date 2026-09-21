@@ -1,11 +1,14 @@
 import { describe, expect, it } from "vitest";
 
 import {
+  destructiveBlastAdmixtureSpellPointCost,
+  destructiveBlastAdmixtureSplit,
   destructiveBlastBaseCost,
   destructiveBlastDamageType,
   destructiveBlastDice,
   destructiveBlastSaveDC,
   destructiveBlastSaveType,
+  destructiveBlastTypeGroup,
   emptyDestructiveBlastConfig,
   parseDestructiveBlastConfig,
 } from "./destructive-blast";
@@ -112,8 +115,54 @@ describe("parseDestructiveBlastConfig", () => {
     const config = {
       blastShapeTalentId: "shape1",
       blastTypeTalentId: "type1",
+      blastTypeTalentId2: "type2",
+      admixture: true,
+      admixtureExtraSpellPoint: false,
       boosted: true,
     };
     expect(parseDestructiveBlastConfig(config)).toEqual(config);
+  });
+
+  it("defaults admixtureExtraSpellPoint to true when missing", () => {
+    expect(parseDestructiveBlastConfig({ admixture: true }).admixtureExtraSpellPoint).toBe(
+      true,
+    );
+  });
+});
+
+describe("destructiveBlastTypeGroup", () => {
+  it("is null with no talent", () => {
+    expect(destructiveBlastTypeGroup(null)).toBeNull();
+  });
+
+  it("reads the tagged damage type, skipping 'advanced'", () => {
+    expect(destructiveBlastTypeGroup({ talentTypes: ["blast type", "acid"] })).toBe(
+      "acid",
+    );
+    expect(
+      destructiveBlastTypeGroup({
+        talentTypes: ["blast type", "fire", "advanced"],
+      }),
+    ).toBe("fire");
+  });
+});
+
+describe("destructiveBlastAdmixtureSplit", () => {
+  it("splits evenly, giving an odd die to the first type", () => {
+    expect(destructiveBlastAdmixtureSplit(4)).toEqual([2, 2]);
+    expect(destructiveBlastAdmixtureSplit(5)).toEqual([3, 2]);
+    expect(destructiveBlastAdmixtureSplit(1)).toEqual([1, 0]);
+  });
+});
+
+describe("destructiveBlastAdmixtureSpellPointCost", () => {
+  it("is free when admixture is off or the types share a group", () => {
+    expect(destructiveBlastAdmixtureSpellPointCost(false, false, true)).toBe(0);
+    expect(destructiveBlastAdmixtureSpellPointCost(true, true, true)).toBe(0);
+  });
+
+  it("costs 1 SP only when active, different groups, and paid in spell points", () => {
+    expect(destructiveBlastAdmixtureSpellPointCost(true, false, true)).toBe(1);
+    expect(destructiveBlastAdmixtureSpellPointCost(true, false, false)).toBe(0);
   });
 });
