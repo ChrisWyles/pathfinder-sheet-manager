@@ -3,6 +3,10 @@
 export const ABILITIES = ["STR", "DEX", "CON", "INT", "WIS", "CHA"] as const;
 export type AbilityKey = (typeof ABILITIES)[number];
 
+/** The three abilities Spheres of Power allows as a casting ability. */
+export const CASTING_ABILITIES = ["INT", "WIS", "CHA"] as const;
+export type CastingAbilityKey = (typeof CASTING_ABILITIES)[number];
+
 export type AbilityScores = Record<AbilityKey, number>;
 
 export const CREATURE_SIZES = [
