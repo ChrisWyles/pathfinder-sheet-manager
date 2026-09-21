@@ -198,6 +198,9 @@ export function CustomItemDialog({
             <>
               <Field label="Proficiency">
                 <Select
+                  items={Object.fromEntries(
+                    WEAPON_CATEGORIES.map((c) => [c.value, c.label]),
+                  )}
                   value={weaponCategory}
                   onValueChange={(v) => v && setWeaponCategory(v as WeaponCategory)}
                 >
@@ -264,6 +267,7 @@ export function CustomItemDialog({
             <>
               <Field label="Kind">
                 <Select
+                  items={{ ARMOR: "Armor", SHIELD: "Shield" }}
                   value={armorKind}
                   onValueChange={(v) => v && setArmorKind(v as "ARMOR" | "SHIELD")}
                 >
@@ -279,6 +283,9 @@ export function CustomItemDialog({
               {armorKind === "ARMOR" && (
                 <Field label="Weight class">
                   <Select
+                    items={Object.fromEntries(
+                      ARMOR_CATEGORIES.map((c) => [c.value, c.label]),
+                    )}
                     value={armorCategory}
                     onValueChange={(v) => v && setArmorCategory(v as ArmorCategory)}
                   >
