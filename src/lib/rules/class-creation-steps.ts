@@ -16,14 +16,18 @@
  * (optionally) an entry here — the wizard itself never changes.
  */
 
+import sphereSpecializationsData from "../../../data/sphere-classes/incanter-sphere-specializations.json";
+
 import {
   type CreationChoiceStep,
   type StepKind,
+  type StepOption,
   type StepTab,
   TAB_ORDER,
   kebab,
 } from "./creation";
 import { PF1E_CLASS_CHOICES } from "./pf1e-classes";
+import type { CastingAbilityKey } from "./types";
 
 // ---------------------------------------------------------------------------
 // Shapes of the data we read
@@ -112,7 +116,8 @@ export interface RegistryStep {
   title: string;
   prompt: string;
   count?: number;
-  options?: { value: string; label: string; description?: string }[];
+  options?: StepOption[];
+  budget?: number;
 }
 
 export interface ClassStepOverride {
@@ -122,16 +127,107 @@ export interface ClassStepOverride {
   annotate?: Record<string, Partial<CreationChoiceStep>>;
   /** Scraper choice tokens to drop for this class. */
   ignoreTokens?: string[];
+  /** Fixes the class's casting ability instead of letting the player
+   * choose from Int/Wis/Cha at creation — no class currently needs this,
+   * but the mechanism exists for one that does. */
+  castingAbility?: CastingAbilityKey;
 }
+
+// The incanter trades some of its versatility for a menu of add-on
+// abilities — see the class feature's full text (data/sphere-classes/
+// incanter.json) for the source. Hand-transcribed here since each option
+// needs its own description, which the generic scraper-choice step can't
+// express on its own.
+const INCANTER_SPECIALIZATIONS = [
+  {
+    name: "Admixture Adept",
+    cost: 2,
+    description:
+      "Gain the Admixture talent as a bonus magic talent, plus an admixture pool (as an admixture savant) equal to half your incanter level (minimum 1) — these levels stack with admixture savant levels for pool size.",
+  },
+  {
+    name: "Channel Energy",
+    cost: 2,
+    description:
+      "Channel energy as the cleric class feature, 3 + your casting ability modifier times per day, using your casting ability modifier in place of Charisma for the save DC. Choose positive or negative energy when you gain this ability — the choice can't be changed later.",
+  },
+  {
+    name: "Cleric Domains",
+    cost: 1,
+    description:
+      "Gain the powers of one cleric domain (no domain spells), using your incanter level as your cleric level and your casting ability modifier in place of Wisdom; you may choose subdomains. Repeatable — each additional pick grants another domain.",
+  },
+  {
+    name: "Familiar",
+    cost: 2,
+    description:
+      "Gain a familiar as the wizard's arcane bond option (1 point), or — for 2 points — a special Fey Servant or Omnimental Familiar instead. Your familiar becomes fey-typed; at 4th level it gains DR/cold iron equal to half your class level, at 8th you gain Improved Familiar (fey type only), and at 10th you may share an activated (fey-blessing) talent with it a number of times per day equal to 3 + your casting ability modifier.",
+  },
+  {
+    name: "Lay on Hands",
+    cost: 2,
+    description:
+      "Use lay on hands as a paladin: 1/2 your incanter level + your casting ability modifier uses per day, healing 1d6 per two incanter levels. Usable to harm undead instead (melee touch, no save). You don't gain paladin mercies from this alone, but you qualify for feats/abilities that require lay on hands.",
+  },
+  {
+    name: "Master of Mysteries",
+    cost: 2,
+    description:
+      "As a standard action (sustained each round, up to class level + casting ability modifier rounds/day), attune yourself so nearby enemy spellcasters (within 60 ft.) must beat your magical skill defense or their spell is weakened (caster level reduced, countered at 0) — outright countered at 6th level, redirectable at 11th, storable for later use at 16th, and sustainable as a move action at 20th.",
+  },
+  {
+    name: "Merciful Healer",
+    cost: 2,
+    description:
+      "Gain paladin mercies as a paladin of your level, triggered when you use the Life sphere's cure ability or your lay on hands ability.",
+  },
+  {
+    name: "Sorcerer Bloodline",
+    cost: 2,
+    description:
+      "Gain one sorcerer bloodline's powers (not its spells, feats, or bloodline arcana), using your casting ability modifier in place of Charisma. If another class already grants you the same bloodline, its levels stack with your incanter levels for that bloodline's powers.",
+  },
+  {
+    name: "Sword Birth",
+    cost: 3,
+    description:
+      "Gain armory arena at 1st level and enhanced armory at 3rd, as a lingchi warrior of your incanter level, plus an arsenal trick at 5th level and every 5 levels after — selected as if you were a lingchi warrior of your incanter level.",
+  },
+] as const;
+
+// "Sphere Specialization" (3 points, above) is itself a choice of *which*
+// sphere — every core sphere has its own write-up of what that grants, so
+// each becomes its own option rather than one generic "pick a sphere and
+// look it up yourself" entry. Scraped separately from the Incanter page's
+// "List of Sphere Specializations" appendix (scripts/scrape-incanter-
+// sphere-specializations.ts) since it sits well past where the normal
+// class-features scrape stops.
+const INCANTER_SPHERE_SPECIALIZATIONS = (
+  sphereSpecializationsData as { sphereName: string; description: string }[]
+).map((s) => ({
+  name: `Sphere Specialization: ${s.sphereName}`,
+  cost: 3,
+  description: s.description,
+}));
 
 export const CLASS_CREATION_STEPS: Record<string, ClassStepOverride> = {
   Incanter: {
     ignoreTokens: ["specializations"],
     annotate: {
       "Incanter Specializations": {
+        kind: "pick-weighted",
         title: "Incanter specialization",
         prompt:
-          "Spend bonus feats on specializations (max 5 specialization points).",
+          "At 1st level you may take one or more specializations, each costing 1-3 specialization points (5 points max total) — you use your incanter level as your effective cleric/sorcerer/wizard level for these abilities. With multiple specializations, only one applies at 1st level; you gain another at every odd level after that (two 1-point specializations together count as one for this limit).",
+        options: [...INCANTER_SPECIALIZATIONS, ...INCANTER_SPHERE_SPECIALIZATIONS].map(
+          (s) => ({
+            value: kebab(s.name),
+            label: s.name,
+            description: s.description,
+            cost: s.cost,
+          }),
+        ),
+        budget: 5,
       },
     },
   },

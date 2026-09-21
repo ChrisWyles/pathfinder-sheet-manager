@@ -276,6 +276,11 @@ export type StepKind =
   | "pick-talent"
   | "pick-sphere"
   | "pick-option"
+  /** Multi-select from options that each cost points against a shared
+   * budget — same visual language as the custom casting-tradition builder
+   * (a running total, over-budget warning) but generic to any point-buy
+   * choice. See `budget` below and `StepOption.cost`. */
+  | "pick-weighted"
   | "ability-boost"
   | "info";
 
@@ -283,6 +288,9 @@ export interface StepOption {
   value: string;
   label: string;
   description?: string;
+  /** Point cost against the step's `budget` — only meaningful for
+   * "pick-weighted" steps. */
+  cost?: number;
 }
 
 export interface CreationChoiceStep {
@@ -297,6 +305,9 @@ export interface CreationChoiceStep {
   /** How many selections to make (default 1). */
   count: number;
   options?: StepOption[];
+  /** Point budget for a "pick-weighted" step — the sum of selected
+   * options' `cost` is checked against this. */
+  budget?: number;
   /** Links back to a `ClassFeature.name` where applicable. */
   featureName?: string;
   fromRegistry?: boolean;

@@ -106,6 +106,52 @@ describe("buildStepPlan — Spheres spherecaster (Incanter, L5)", () => {
     expect(plan.some((s) => s.title === "Class specialization")).toBe(false);
   });
 
+  it("explains what an Incanter specialization is and lists every named option", () => {
+    const step = plan.find((s) => s.title === "Incanter specialization")!;
+    expect(step.prompt.length).toBeGreaterThan(50);
+    expect(step.prompt).toMatch(/specialization point/i);
+    expect(step.kind).toBe("pick-weighted");
+    expect(step.budget).toBe(5);
+
+    const names = step.options?.map((o) => o.label) ?? [];
+    for (const expected of [
+      "Admixture Adept",
+      "Channel Energy",
+      "Cleric Domains",
+      "Familiar",
+      "Lay on Hands",
+      "Master of Mysteries",
+      "Merciful Healer",
+      "Sorcerer Bloodline",
+      "Sphere Specialization",
+      "Sword Birth",
+    ]) {
+      expect(names.some((n) => n.startsWith(expected))).toBe(true);
+    }
+    // every option carries its own rules text, not just a bare name
+    expect(step.options?.every((o) => (o.description?.length ?? 0) > 30)).toBe(
+      true,
+    );
+    // every option costs points against the budget
+    expect(step.options?.every((o) => typeof o.cost === "number")).toBe(true);
+  });
+
+  it("expands Sphere Specialization into one option per sphere, not a single generic pick", () => {
+    const step = plan.find((s) => s.title === "Incanter specialization")!;
+    const sphereOptions =
+      step.options?.filter((o) => o.label.startsWith("Sphere Specialization: ")) ??
+      [];
+    // there's no bare "Sphere Specialization" option left over
+    expect(step.options?.some((o) => o.label === "Sphere Specialization")).toBe(
+      false,
+    );
+    expect(sphereOptions.length).toBeGreaterThan(15);
+    expect(
+      sphereOptions.some((o) => o.label === "Sphere Specialization: Destruction"),
+    ).toBe(true);
+    expect(sphereOptions.every((o) => o.cost === 3)).toBe(true);
+  });
+
   it("does not turn the plain 'Casting' feature into a step", () => {
     expect(plan.some((s) => s.title.toLowerCase() === "casting")).toBe(false);
   });

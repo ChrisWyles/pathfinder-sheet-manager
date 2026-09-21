@@ -9,8 +9,78 @@ import type { CreationChoiceStep } from "@/lib/rules/creation";
 import { ABILITIES } from "@/lib/rules/types";
 
 import { useWizard } from "../wizard-provider";
-import { OptionPicker } from "../option-picker";
+import { OptionPicker, type PickerOption } from "../option-picker";
 import { sign } from "./field";
+
+/** A multi-select choice where every option costs points against a shared
+ * budget (e.g. Incanter specializations) — same visual language as the
+ * custom casting-tradition builder: a running total pinned above a
+ * browsable, multi-select list. */
+function WeightedPicker({ step }: { step: CreationChoiceStep }) {
+  const { state, setChoice } = useWizard();
+  const values = state.choices[step.id] ?? [];
+  const options = step.options ?? [];
+  const budget = step.budget ?? 0;
+
+  const selected = options.filter((o) => values.includes(o.value));
+  const spent = selected.reduce((s, o) => s + (o.cost ?? 0), 0);
+  const overBudget = spent > budget;
+
+  const pickerOptions: PickerOption[] = options.map((o) => ({
+    value: o.value,
+    label: o.label,
+    preview: o.description,
+    badges:
+      o.cost != null ? [`${o.cost} pt${o.cost === 1 ? "" : "s"}`] : undefined,
+  }));
+
+  return (
+    <div className="space-y-3">
+      <p className="text-muted-foreground text-sm">{step.prompt}</p>
+
+      <div className="space-y-2 rounded-md border p-3">
+        {selected.length === 0 ? (
+          <p className="text-muted-foreground text-sm">
+            Nothing selected yet.
+          </p>
+        ) : (
+          <ul className="list-inside list-disc text-sm">
+            {selected.map((o) => (
+              <li key={o.value}>
+                {o.label}
+                {o.cost != null &&
+                  ` (${o.cost} pt${o.cost === 1 ? "" : "s"})`}
+              </li>
+            ))}
+          </ul>
+        )}
+        <div className="flex flex-wrap gap-x-4 gap-y-1 border-t pt-2 text-sm">
+          <span>
+            Points spent: <strong>{spent}</strong> / {budget}
+          </span>
+        </div>
+        {overBudget && (
+          <p className="text-destructive text-xs">
+            Over budget by {spent - budget} point{spent - budget === 1 ? "" : "s"}.
+          </p>
+        )}
+      </div>
+
+      <OptionPicker
+        multiple
+        aria-label={step.title}
+        options={pickerOptions}
+        value={values}
+        onChange={(v) => setChoice(step.id, v)}
+        groupBy={(o) =>
+          o.value.startsWith("sphere-specialization-")
+            ? "Sphere Specialization"
+            : "General"
+        }
+      />
+    </div>
+  );
+}
 
 function StepControl({ step }: { step: CreationChoiceStep }) {
   const { state, setChoice, finalAbilities } = useWizard();
@@ -24,6 +94,10 @@ function StepControl({ step }: { step: CreationChoiceStep }) {
 
   if (step.kind === "info") {
     return <p className="text-muted-foreground text-sm">{step.prompt}</p>;
+  }
+
+  if (step.kind === "pick-weighted") {
+    return <WeightedPicker step={step} />;
   }
 
   return (

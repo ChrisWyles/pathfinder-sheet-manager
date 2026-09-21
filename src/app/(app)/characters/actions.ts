@@ -4,7 +4,13 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { z } from "zod";
 
-import { ArmorCategory, ItemType, WeaponCategory, type Prisma } from "@prisma/client";
+import {
+  ActionSpeed,
+  ArmorCategory,
+  ItemType,
+  WeaponCategory,
+  type Prisma,
+} from "@prisma/client";
 
 import { requireSession } from "@/lib/auth-helpers";
 import { isValidDiscordWebhookUrl, sendToWebhook } from "@/lib/discord/webhook";
@@ -25,6 +31,7 @@ import {
 import { summarizeCastingTradition } from "@/lib/rules/casting-tradition";
 import { readEffects } from "@/lib/rules/inventory-item";
 import { isHumanRace } from "@/lib/rules/races";
+import { sphereGrantedAbility } from "@/lib/rules/sphere-abilities";
 import { ABILITIES, type AbilityKey } from "@/lib/rules/types";
 
 const SIZES = [
@@ -134,6 +141,11 @@ const createSchema = z.object({
   // Flavor text from the class's scraped per-race favored class bonuses —
   // there is no mechanical favored-class-bonus concept in this app.
   favoredBonusNote: z.string().max(400).default(""),
+  // The ability governing spell points/casting (Spheres of Power: chosen
+  // from Int/Wis/Cha at creation). Undefined when the class fixes one or
+  // the player hasn't picked yet — spellPoints then falls back to the
+  // best of the three, same as before this was tracked.
+  castingAbility: z.enum(["INT", "WIS", "CHA"]).optional(),
   customCastingTradition: customCastingTraditionSchema,
   customMartialTradition: customMartialTraditionSchema,
   hitDie: z.number().int().min(4).max(12),
@@ -419,11 +431,16 @@ export async function createCharacter(input: CreateCharacterInput) {
 
   let spellPoints: number | null = null;
   if (data.system === "SPHERES_OF_POWER" && group === "spherecaster") {
-    const castMod = Math.max(
-      abilityModifier(final.INT),
-      abilityModifier(final.WIS),
-      abilityModifier(final.CHA),
-    );
+    // Prefer the player's chosen casting ability; fall back to the best of
+    // the three mental abilities when none was chosen (old characters, or
+    // a class that hadn't prompted for one yet).
+    const castMod = data.castingAbility
+      ? abilityModifier(final[data.castingAbility])
+      : Math.max(
+          abilityModifier(final.INT),
+          abilityModifier(final.WIS),
+          abilityModifier(final.CHA),
+        );
     spellPoints =
       Math.max(1, level + castMod) +
       (customCastingSummary?.bonusSpellPoints ?? 0);
@@ -461,6 +478,7 @@ export async function createCharacter(input: CreateCharacterInput) {
           hpRolls,
           spellPoints,
           maxSpellPoints: spellPoints,
+          castingAbility: data.castingAbility ?? null,
           discordWebhookUrl: data.discordWebhookUrl || null,
           data: {
             creation: {
@@ -529,6 +547,26 @@ export async function createCharacter(input: CreateCharacterInput) {
             name: s.name,
           })),
         });
+
+        // Each sphere that grants a free base ability (see
+        // src/lib/rules/sphere-abilities.ts) gets it added to the Actions
+        // section automatically — e.g. taking Destruction grants
+        // Destructive Blast.
+        const grantedActions = data.spheres
+          .map((s) => sphereGrantedAbility(s.name))
+          .filter((a): a is NonNullable<typeof a> => !!a)
+          .map((a) => ({
+            characterId: cid,
+            name: a.actionName,
+            description: a.description,
+            // The actual range scales with caster level and is computed
+            // at render time (see src/lib/rules/sphere-range.ts) from the
+            // registry's rangeKind — nothing static to store here.
+            sphereName: a.sphereName,
+          }));
+        if (grantedActions.length > 0) {
+          await tx.characterAction.createMany({ data: grantedActions });
+        }
       }
 
       if (data.talents.length > 0) {
@@ -604,14 +642,16 @@ export async function updateDiscordWebhook(
 
 const resourcesSchema = z.object({
   characterId: z.string().min(1),
-  currentHp: z.number().int().min(-999).max(9999),
-  tempHp: z.number().int().min(0).max(9999),
+  currentHp: z.number().int().min(-999).max(9999).optional(),
+  tempHp: z.number().int().min(0).max(9999).optional(),
   spellPoints: z.number().int().min(0).max(9999).nullable().optional(),
 });
 
 /** Updates the character's trackable-in-play resource pools (current/temp HP,
  * and spell points for spherecasters) — everything else on the sheet is
- * either computed or edited through level-up. */
+ * either computed or edited through level-up. Each field is independently
+ * optional so a focused widget (e.g. a Combat-tab spell points box) can
+ * update just one without needing the others' current values on hand. */
 export async function updateResources(input: z.infer<typeof resourcesSchema>) {
   const session = await requireSession();
   const { characterId, currentHp, tempHp, spellPoints } =
@@ -620,8 +660,8 @@ export async function updateResources(input: z.infer<typeof resourcesSchema>) {
   const { count } = await prisma.character.updateMany({
     where: { id: characterId, userId: session.user.id },
     data: {
-      currentHp,
-      tempHp,
+      ...(currentHp !== undefined ? { currentHp } : {}),
+      ...(tempHp !== undefined ? { tempHp } : {}),
       ...(spellPoints !== undefined ? { spellPoints } : {}),
     },
   });
@@ -645,6 +685,27 @@ export async function updateDamageReduction(
   const { count } = await prisma.character.updateMany({
     where: { id: characterId, userId: session.user.id },
     data: { damageReduction },
+  });
+  if (count === 0) return { error: "Character not found." };
+
+  revalidatePath(`/characters/${characterId}`);
+  return { ok: true };
+}
+
+const martialFocusSchema = z.object({
+  characterId: z.string().min(1),
+  martialFocus: z.boolean(),
+});
+
+export async function updateMartialFocus(
+  input: z.infer<typeof martialFocusSchema>,
+) {
+  const session = await requireSession();
+  const { characterId, martialFocus } = martialFocusSchema.parse(input);
+
+  const { count } = await prisma.character.updateMany({
+    where: { id: characterId, userId: session.user.id },
+    data: { martialFocus },
   });
   if (count === 0) return { error: "Character not found." };
 
@@ -1028,6 +1089,163 @@ export async function createCustomInventoryItem(
       customData: asJson(stats),
     },
   });
+
+  revalidatePath(`/characters/${characterId}`);
+  return { ok: true };
+}
+
+const rollModifierSchema = z.object({
+  label: z.string().trim().min(1).max(60),
+  value: z.number().int().min(-100).max(100),
+});
+
+const rollSlotSchema = z.object({
+  label: z.string().trim().max(60).default(""),
+  diceSides: z.number().int().min(1).max(1000).nullable().default(null),
+  diceCount: z.number().int().min(0).max(100).default(1),
+  scalePerLevels: z.number().int().min(0).max(20).default(0),
+  scaleSource: z.string().trim().max(80).default(""),
+  modifiers: z.array(rollModifierSchema).max(10).default([]),
+});
+
+const createCharacterActionSchema = z.object({
+  characterId: z.string().min(1),
+  name: z.string().trim().min(1).max(120),
+  description: z.string().trim().max(2000).default(""),
+  actionSpeed: z.nativeEnum(ActionSpeed).default("STANDARD"),
+  range: z.string().trim().max(60).default(""),
+  roll1: rollSlotSchema.optional(),
+  roll2: rollSlotSchema.optional(),
+  linkedFeatIds: z.array(z.string().min(1)).max(20).default([]),
+  linkedTalentIds: z.array(z.string().min(1)).max(20).default([]),
+});
+
+/** Creates a player-defined custom action for the Combat tab's Actions
+ * section — a class feature, improvised maneuver, or anything else not
+ * already covered by a weapon attack or a standard combat maneuver. */
+export async function createCharacterAction(
+  input: z.infer<typeof createCharacterActionSchema>,
+) {
+  const {
+    characterId,
+    name,
+    description,
+    actionSpeed,
+    range,
+    roll1,
+    roll2,
+    linkedFeatIds,
+    linkedTalentIds,
+  } = createCharacterActionSchema.parse(input);
+  if (!(await requireOwnedCharacter(characterId))) {
+    return { error: "Character not found." };
+  }
+
+  // Only trust feat/talent ids that actually belong to this character.
+  const [feats, talents] = await Promise.all([
+    linkedFeatIds.length
+      ? prisma.characterFeat.findMany({
+          where: { id: { in: linkedFeatIds }, characterId },
+          select: { id: true },
+        })
+      : [],
+    linkedTalentIds.length
+      ? prisma.characterTalent.findMany({
+          where: { id: { in: linkedTalentIds }, characterId },
+          select: { id: true },
+        })
+      : [],
+  ]);
+
+  await prisma.characterAction.create({
+    data: {
+      characterId,
+      name,
+      description,
+      actionSpeed,
+      range,
+      roll1: roll1 ? asJson(roll1) : undefined,
+      roll2: roll2 ? asJson(roll2) : undefined,
+      linkedFeatIds: feats.map((f) => f.id),
+      linkedTalentIds: talents.map((t) => t.id),
+    },
+  });
+
+  revalidatePath(`/characters/${characterId}`);
+  return { ok: true };
+}
+
+const removeCharacterActionSchema = z.object({
+  characterId: z.string().min(1),
+  actionId: z.string().min(1),
+});
+
+export async function removeCharacterAction(
+  input: z.infer<typeof removeCharacterActionSchema>,
+) {
+  const { characterId, actionId } = removeCharacterActionSchema.parse(input);
+  if (!(await requireOwnedCharacter(characterId))) {
+    return { error: "Character not found." };
+  }
+
+  await prisma.characterAction.deleteMany({
+    where: { id: actionId, characterId },
+  });
+
+  revalidatePath(`/characters/${characterId}`);
+  return { ok: true };
+}
+
+const updateDestructiveBlastConfigSchema = z.object({
+  characterId: z.string().min(1),
+  actionId: z.string().min(1),
+  blastShapeTalentId: z.string().min(1).nullable(),
+  blastTypeTalentId: z.string().min(1).nullable(),
+  boosted: z.boolean(),
+});
+
+/** Saves the player's blast shape/blast type talent picks (and the "boost
+ * for 1 spell point" toggle) on an auto-granted Destructive Blast action —
+ * see src/lib/rules/destructive-blast.ts for how the sheet resolves these
+ * into actual dice/damage type. */
+export async function updateDestructiveBlastConfig(
+  input: z.infer<typeof updateDestructiveBlastConfigSchema>,
+) {
+  const { characterId, actionId, blastShapeTalentId, blastTypeTalentId, boosted } =
+    updateDestructiveBlastConfigSchema.parse(input);
+  if (!(await requireOwnedCharacter(characterId))) {
+    return { error: "Character not found." };
+  }
+
+  // Only trust talent ids that actually belong to this character.
+  const ids = [blastShapeTalentId, blastTypeTalentId].filter(
+    (id): id is string => !!id,
+  );
+  const owned = ids.length
+    ? await prisma.characterTalent.findMany({
+        where: { id: { in: ids }, characterId },
+        select: { id: true },
+      })
+    : [];
+  const ownedIds = new Set(owned.map((t) => t.id));
+
+  const { count } = await prisma.characterAction.updateMany({
+    where: { id: actionId, characterId },
+    data: {
+      sphereConfig: asJson({
+        blastShapeTalentId:
+          blastShapeTalentId && ownedIds.has(blastShapeTalentId)
+            ? blastShapeTalentId
+            : null,
+        blastTypeTalentId:
+          blastTypeTalentId && ownedIds.has(blastTypeTalentId)
+            ? blastTypeTalentId
+            : null,
+        boosted,
+      }),
+    },
+  });
+  if (count === 0) return { error: "Action not found." };
 
   revalidatePath(`/characters/${characterId}`);
   return { ok: true };

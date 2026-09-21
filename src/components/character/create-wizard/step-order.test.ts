@@ -13,6 +13,7 @@ function state(overrides: Partial<WizardState> = {}): WizardState {
     archetype: "",
     level: 1,
     favoredBonusNote: "",
+    castingAbility: null,
     customCastingTradition: null,
     customMartialTradition: null,
     name: "",

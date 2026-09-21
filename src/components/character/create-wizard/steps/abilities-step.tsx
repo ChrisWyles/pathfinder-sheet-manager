@@ -100,6 +100,9 @@ export function AbilitiesStep() {
             <div className="flex flex-wrap items-center gap-3">
               <Field label="Budget">
                 <Select
+                  items={Object.fromEntries(
+                    POINT_BUY_BUDGETS.map((b) => [String(b.value), b.label]),
+                  )}
                   value={String(state.pointBuyBudget)}
                   onValueChange={(v) =>
                     v && update({ pointBuyBudget: Number(v) })

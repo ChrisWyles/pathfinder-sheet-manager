@@ -26,7 +26,11 @@ import {
   stepsByTab,
 } from "@/lib/rules/creation";
 import { isHumanRace } from "@/lib/rules/races";
-import { ABILITIES, type AbilityKey } from "@/lib/rules/types";
+import {
+  ABILITIES,
+  type AbilityKey,
+  type CastingAbilityKey,
+} from "@/lib/rules/types";
 
 import { WIZARD_STEPS, type WizardStepDef } from "./step-order";
 
@@ -201,6 +205,9 @@ export interface WizardState {
   level: number;
   /** Flavor text from the class's scraped per-race favored class bonuses — there is no mechanical favored-class-bonus concept in this app. */
   favoredBonusNote: string;
+  /** The ability governing spell points/casting — chosen from Int/Wis/Cha
+   * unless the class fixes one (see CLASS_CREATION_STEPS[x].castingAbility). */
+  castingAbility: CastingAbilityKey | null;
   /** Set by the tradition builder when the player builds their own casting tradition. */
   customCastingTradition: {
     drawbackIds: string[];
@@ -278,6 +285,7 @@ function initialState(firstClass: WizardClass): WizardState {
     archetype: "",
     level: 1,
     favoredBonusNote: "",
+    castingAbility: null,
     customCastingTradition: null,
     customMartialTradition: null,
     name: "",
@@ -465,6 +473,7 @@ export function WizardProvider({
         classLevel: state.level,
         gameClassId: selectedClass.id ?? undefined,
         favoredBonusNote: state.favoredBonusNote.trim(),
+        castingAbility: state.castingAbility ?? undefined,
         customCastingTradition: state.customCastingTradition ?? undefined,
         customMartialTradition: state.customMartialTradition ?? undefined,
         hitDie: selectedClass.hitDie,
