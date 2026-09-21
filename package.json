@@ -31,6 +31,7 @@
     "scrape:armor": "tsx scripts/scrape-armor.ts",
     "scrape:combat-maneuvers": "tsx scripts/scrape-combat-maneuvers.ts",
     "scrape:maneuver-feats": "tsx scripts/scrape-maneuver-feats.ts",
+    "scrape:incanter-specializations": "tsx scripts/scrape-incanter-sphere-specializations.ts",
     "postinstall": "prisma generate"
   },
   "dependencies": {

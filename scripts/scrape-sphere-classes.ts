@@ -602,7 +602,7 @@ function parseClass(html: string, meta: ClassMeta): ClassData {
   const flush = () => {
     if (current && !seenNames.has(current.name.toLowerCase())) {
       seenNames.add(current.name.toLowerCase());
-      current.description = bodyBuf.join("\n\n").slice(0, 2200);
+      current.description = bodyBuf.join("\n\n").slice(0, 8000);
       current.isChoice =
         CHOICE_RE.test(current.name) ||
         CHOICE_RE.test(current.description.slice(0, 700));
@@ -663,7 +663,7 @@ function parseClass(html: string, meta: ClassMeta): ClassData {
       return;
     }
     // h3/h4/p/li inside a feature are its sub-content (option lists, tables …).
-    if (current && bodyBuf.join(" ").length < 2200) {
+    if (current && bodyBuf.join(" ").length < 8000) {
       bodyBuf.push(tag === "h3" || tag === "h4" ? `• ${raw}` : raw);
     }
   });
