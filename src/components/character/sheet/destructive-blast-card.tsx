@@ -43,6 +43,17 @@ type CharacterAction = CharacterWithRelations["actions"][number];
 
 const NONE = "__none__";
 
+/** Cascade Failure (http://spheresofpower.wikidot.com/destruction#toc5):
+ * "When a creature receives damage from your destructive blast, it
+ * suffers a -1 penalty on all saving throws against your destructive
+ * blasts until the end of your next turn. This penalty stacks with
+ * itself if a target is damaged by your destructive blast more than once
+ * in a round." A passive reminder, not something this app computes
+ * (there's no per-target save-penalty tracking) — just surfaced as text
+ * when the character has the talent. */
+const CASCADE_FAILURE_NOTE =
+  "Target creature receives -1 on all saves against your destructive blasts until the end of your next turn. This can stack if hit multiple times in a single turn.";
+
 /** Destruction sphere's base ability, auto-granted when the sphere is
  * taken (see src/lib/rules/sphere-abilities.ts). A compact bar picks one
  * known blast shape talent and one known blast type talent (the sphere's
@@ -82,6 +93,9 @@ export function DestructiveBlastCard({
   const chosenType2 = blastTypes.find((t) => t.id === config.blastTypeTalentId2);
 
   const hasAdmixture = destructionTalents.some((t) => t.name === "Admixture");
+  const hasCascadeFailure = destructionTalents.some(
+    (t) => t.name === "Cascade Failure",
+  );
   const admixtureActive = hasAdmixture && config.admixture && !!chosenType2;
   const sameGroup =
     admixtureActive &&
@@ -349,6 +363,14 @@ export function DestructiveBlastCard({
                   <span className="font-medium">{chosenType2.name}: </span>
                   <span className="text-muted-foreground whitespace-pre-wrap">
                     {chosenType2.talent!.description}
+                  </span>
+                </div>
+              )}
+              {hasCascadeFailure && (
+                <div className="text-xs">
+                  <span className="font-medium">Cascade Failure: </span>
+                  <span className="text-muted-foreground whitespace-pre-wrap">
+                    {CASCADE_FAILURE_NOTE}
                   </span>
                 </div>
               )}
