@@ -1,5 +1,13 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
+import { FeatsEditorDialog } from "./feats-editor-dialog";
+import { TalentsEditorDialog } from "./talents-editor-dialog";
 import type { CharacterWithRelations } from "./types";
 
 export function TalentsTab({ character }: { character: CharacterWithRelations }) {
@@ -8,6 +16,9 @@ export function TalentsTab({ character }: { character: CharacterWithRelations })
       <Card>
         <CardHeader>
           <CardTitle>Feats</CardTitle>
+          <CardAction>
+            <FeatsEditorDialog characterId={character.id} feats={character.feats} />
+          </CardAction>
         </CardHeader>
         <CardContent>
           {character.feats.length === 0 ? (
@@ -42,6 +53,9 @@ export function TalentsTab({ character }: { character: CharacterWithRelations })
       <Card>
         <CardHeader>
           <CardTitle>Talents</CardTitle>
+          <CardAction>
+            <TalentsEditorDialog characterId={character.id} talents={character.talents} />
+          </CardAction>
         </CardHeader>
         <CardContent>
           {character.talents.length === 0 ? (

@@ -1272,6 +1272,158 @@ export async function updateDestructiveBlastConfig(
   return { ok: true };
 }
 
+/** Full feat/talent catalogs for the Talents tab's edit dialogs — fetched
+ * lazily when a dialog opens rather than on every character page load,
+ * since (like the creation wizard's own copy of this query) these run
+ * 1000+ rows with no cap. */
+export async function listFeatCatalog() {
+  await requireSession();
+  return prisma.feat.findMany({
+    orderBy: { name: "asc" },
+    select: {
+      id: true,
+      name: true,
+      featTypes: true,
+      sphereNames: true,
+      prerequisites: true,
+      benefit: true,
+      sourceUrl: true,
+    },
+  });
+}
+
+export async function listTalentCatalog() {
+  await requireSession();
+  return prisma.talent.findMany({
+    orderBy: { name: "asc" },
+    select: {
+      id: true,
+      name: true,
+      sphereName: true,
+      talentTypes: true,
+      description: true,
+      sourceUrl: true,
+    },
+  });
+}
+
+const addCharacterFeatSchema = z.object({
+  characterId: z.string().min(1),
+  name: z.string().trim().min(1).max(200),
+  featId: z.string().min(1).optional(),
+});
+
+/** Adds one feat instance — trusts `featId` only if it actually names a
+ * catalog feat, otherwise records `name` as a freeform custom feat (same
+ * fallback the creation wizard's Feats step allows). */
+export async function addCharacterFeat(
+  input: z.infer<typeof addCharacterFeatSchema>,
+) {
+  const { characterId, name, featId } = addCharacterFeatSchema.parse(input);
+  if (!(await requireOwnedCharacter(characterId))) {
+    return { error: "Character not found." };
+  }
+
+  const feat = featId
+    ? await prisma.feat.findUnique({ where: { id: featId }, select: { id: true, name: true } })
+    : null;
+
+  await prisma.characterFeat.create({
+    data: {
+      characterId,
+      name: feat?.name ?? name,
+      featId: feat?.id,
+    },
+  });
+
+  revalidatePath(`/characters/${characterId}`);
+  return { ok: true };
+}
+
+const removeCharacterFeatSchema = z.object({
+  characterId: z.string().min(1),
+  characterFeatId: z.string().min(1),
+});
+
+export async function removeCharacterFeat(
+  input: z.infer<typeof removeCharacterFeatSchema>,
+) {
+  const { characterId, characterFeatId } =
+    removeCharacterFeatSchema.parse(input);
+  if (!(await requireOwnedCharacter(characterId))) {
+    return { error: "Character not found." };
+  }
+
+  await prisma.characterFeat.deleteMany({
+    where: { id: characterFeatId, characterId },
+  });
+
+  revalidatePath(`/characters/${characterId}`);
+  return { ok: true };
+}
+
+const addCharacterTalentSchema = z.object({
+  characterId: z.string().min(1),
+  name: z.string().trim().min(1).max(200),
+  sphereName: z.string().trim().max(200).default(""),
+  talentId: z.string().min(1).optional(),
+});
+
+/** Adds one talent instance — trusts `talentId`/its catalog sphereName
+ * only if it actually names a catalog talent, otherwise records `name`
+ * under the given freeform `sphereName` (same fallback the wizard's
+ * Spheres & Talents step allows). */
+export async function addCharacterTalent(
+  input: z.infer<typeof addCharacterTalentSchema>,
+) {
+  const { characterId, name, sphereName, talentId } =
+    addCharacterTalentSchema.parse(input);
+  if (!(await requireOwnedCharacter(characterId))) {
+    return { error: "Character not found." };
+  }
+
+  const talent = talentId
+    ? await prisma.talent.findUnique({
+        where: { id: talentId },
+        select: { id: true, name: true, sphereName: true },
+      })
+    : null;
+
+  await prisma.characterTalent.create({
+    data: {
+      characterId,
+      name: talent?.name ?? name,
+      sphereName: talent?.sphereName ?? sphereName,
+      talentId: talent?.id,
+    },
+  });
+
+  revalidatePath(`/characters/${characterId}`);
+  return { ok: true };
+}
+
+const removeCharacterTalentSchema = z.object({
+  characterId: z.string().min(1),
+  characterTalentId: z.string().min(1),
+});
+
+export async function removeCharacterTalent(
+  input: z.infer<typeof removeCharacterTalentSchema>,
+) {
+  const { characterId, characterTalentId } =
+    removeCharacterTalentSchema.parse(input);
+  if (!(await requireOwnedCharacter(characterId))) {
+    return { error: "Character not found." };
+  }
+
+  await prisma.characterTalent.deleteMany({
+    where: { id: characterTalentId, characterId },
+  });
+
+  revalidatePath(`/characters/${characterId}`);
+  return { ok: true };
+}
+
 export async function deleteCharacter(characterId: string) {
   const session = await requireSession();
   await prisma.character.deleteMany({
