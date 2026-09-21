@@ -8,8 +8,9 @@ export type CharacterWithRelations = Prisma.CharacterGetPayload<{
     inventory: { include: { item: true } };
     feats: true;
     spheres: true;
-    talents: true;
+    talents: { include: { talent: true } };
     rollLogs: true;
     skillRanks: { include: { skill: true } };
+    actions: true;
   };
 }>;

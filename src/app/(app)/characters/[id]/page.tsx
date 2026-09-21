@@ -37,9 +37,10 @@ export default async function CharacterSheetPage({ params }: Params) {
       inventory: { include: { item: true }, orderBy: { name: "asc" } },
       feats: { orderBy: { takenAtLevel: "asc" } },
       spheres: { orderBy: { name: "asc" } },
-      talents: { orderBy: { name: "asc" } },
+      talents: { include: { talent: true }, orderBy: { name: "asc" } },
       rollLogs: { orderBy: { createdAt: "desc" }, take: 10 },
       skillRanks: { include: { skill: true } },
+      actions: { orderBy: { createdAt: "asc" } },
     },
   });
   if (!character) notFound();

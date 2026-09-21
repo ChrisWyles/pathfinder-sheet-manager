@@ -4,7 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { DerivedStats } from "@/lib/rules/types";
 
+import { ActionsSection } from "./actions-section";
 import { CombatManeuverDialog } from "./combat-maneuver-dialog";
+import { CombatResourceBar } from "./combat-resource-bar";
 import type { CharacterWithRelations } from "./types";
 import { WeaponsSection } from "./weapons-section";
 import { useCharacterRoll } from "../use-character-roll";
@@ -22,6 +24,13 @@ export function CombatTab({
 
   return (
     <div className="space-y-4">
+      <CombatResourceBar
+        characterId={character.id}
+        spellPoints={character.spellPoints}
+        maxSpellPoints={character.maxSpellPoints}
+        martialFocus={character.martialFocus}
+      />
+
       <div className="flex flex-wrap gap-2">
         <Card size="sm" className="min-w-[160px] flex-1">
           <CardHeader>
@@ -74,6 +83,15 @@ export function CombatTab({
         </CardHeader>
         <CardContent>
           <WeaponsSection character={character} derived={derived} />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Actions</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ActionsSection character={character} derived={derived} />
         </CardContent>
       </Card>
     </div>
